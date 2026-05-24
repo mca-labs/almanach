@@ -15,6 +15,7 @@
     "publish": "tsx src/cli.ts publish",
     "daily": "tsx src/cli.ts daily",
     "migrate": "tsx src/db/migrate.ts",
+    "backfill:tempest": "tsx scripts/backfill-tempest.ts",
     "seed:quotes": "tsx scripts/seed-quotes.ts",
     "seed:breeding": "tsx scripts/seed-breeding.ts",
     "site:dev": "astro dev --root site",
