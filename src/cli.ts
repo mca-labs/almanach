@@ -1,17 +1,26 @@
+import { persistSkyEvents } from './almanac/index.js';
 import { sql } from './db/client.js';
+import { birdweatherModule } from './ingest/birdweather/index.js';
+import { tempestModule } from './ingest/tempest/index.js';
+import { runDaily } from './orchestrator/daily.js';
+import { synthesizeForDate } from './synthesize/index.js';
 
 type Command = 'ingest' | 'almanac' | 'synthesize' | 'publish' | 'daily';
 
 interface CliOptions {
   date?: string;
   source?: string;
+  since?: string;
 }
 
 function parseArgs(argv: string[]): { command: Command; options: CliOptions } {
   const [, , raw, ...rest] = argv;
   const valid: readonly Command[] = ['ingest', 'almanac', 'synthesize', 'publish', 'daily'];
   if (!raw || !valid.includes(raw as Command)) {
-    console.error(`Usage: tsx src/cli.ts <${valid.join('|')}> [--date YYYY-MM-DD] [--source NAME]`);
+    console.error(
+      `Usage: tsx src/cli.ts <${valid.join('|')}> ` +
+        `[--date YYYY-MM-DD] [--source tempest|birdweather] [--since YYYY-MM-DD]`,
+    );
     process.exit(2);
   }
   const options: CliOptions = {};
@@ -24,37 +33,59 @@ function parseArgs(argv: string[]): { command: Command; options: CliOptions } {
     } else if (arg === '--source' && next) {
       options.source = next;
       i++;
+    } else if (arg === '--since' && next) {
+      options.since = next;
+      i++;
     }
   }
   return { command: raw as Command, options };
 }
 
-async function runIngest(_opts: CliOptions): Promise<void> {
-  // TODO: route to tempest / birdweather modules.
-  console.log('ingest: not yet wired (next commit).');
+function defaultSince(opts: CliOptions): Date {
+  if (opts.since) return new Date(`${opts.since}T00:00:00Z`);
+  return new Date(Date.now() - 2 * 86400000); // 48 h de marge
 }
 
-async function runAlmanac(_opts: CliOptions): Promise<void> {
-  // TODO: call almanac.computeForDate(date).
-  console.log('almanac: not yet wired (next commit).');
+async function runIngest(opts: CliOptions): Promise<void> {
+  const since = defaultSince(opts);
+  if (!opts.source || opts.source === 'tempest') {
+    await tempestModule.ingest(since);
+  }
+  if (!opts.source || opts.source === 'birdweather') {
+    await birdweatherModule.ingest(since);
+  }
 }
 
-async function runSynthesize(_opts: CliOptions): Promise<void> {
-  // TODO: call synthesize.forDate(date).
-  console.log('synthesize: not yet wired (next commit).');
+async function runAlmanac(opts: CliOptions): Promise<void> {
+  const forDate = opts.date ?? new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Toronto',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date());
+  await persistSkyEvents(forDate);
 }
 
-async function runPublish(_opts: CliOptions): Promise<void> {
-  // TODO: flip journal_entries.status → 'published' + trigger SITE_DEPLOY_HOOK_URL.
-  console.log('publish: not yet wired (next commit).');
+async function runSynthesize(opts: CliOptions): Promise<void> {
+  if (!opts.date) {
+    console.error('synthesize : --date YYYY-MM-DD requis');
+    process.exit(2);
+  }
+  await synthesizeForDate(opts.date);
 }
 
-async function runDaily(opts: CliOptions): Promise<void> {
-  // The orchestrator wires the four steps in order.
-  await runIngest(opts);
-  await runAlmanac(opts);
-  await runSynthesize(opts);
-  await runPublish(opts);
+async function runPublish(opts: CliOptions): Promise<void> {
+  if (!opts.date) {
+    console.error('publish : --date YYYY-MM-DD requis');
+    process.exit(2);
+  }
+  const rows = await sql<{ id: string }[]>`
+    update journal_entries
+       set status = 'published', published_at = now()
+     where entry_date = ${opts.date}::date and status = 'draft'
+     returning id
+  `;
+  console.log(`publish: ${rows.length} entrée(s) publiée(s).`);
 }
 
 async function main(): Promise<void> {
@@ -73,7 +104,7 @@ async function main(): Promise<void> {
       await runPublish(options);
       break;
     case 'daily':
-      await runDaily(options);
+      await runDaily(options.date ? { date: options.date } : {});
       break;
   }
 }

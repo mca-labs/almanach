@@ -161,10 +161,13 @@ async function loadBirds(forDate: string): Promise<BirdsSection> {
 }
 
 async function loadSky(forDate: string): Promise<SkySection> {
+  // « Le ciel ce soir » — perspective du lecteur du matin : on regarde la nuit
+  // qui SUIT la date du billet (entry_date + 1 jour). L'observation rétrospective
+  // de la veille reste portée par la section météo / oiseaux.
   const rows = await sql<{ category: string; title: string; detail: unknown; notable: boolean; propice_a: string | null }[]>`
     select category, title, detail, notable, propice_a
     from sky_events
-    where for_date = ${forDate}::date
+    where for_date = ${forDate}::date + 1
     order by notable desc, category, title
   `;
   return {
