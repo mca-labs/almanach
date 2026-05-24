@@ -28,3 +28,6 @@ Thumbs.db
 
 # Astro (added when site is scaffolded)
 .astro/
+
+# Local Netlify folder
+.netlify

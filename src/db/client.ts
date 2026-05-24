@@ -1,9 +1,11 @@
 import 'dotenv/config';
 import postgres from 'postgres';
 
-const url = process.env.DATABASE_URL;
+// Netlify Database injecte NETLIFY_DATABASE_URL au build/runtime.
+// On garde DATABASE_URL en fallback pour le dev local hors Netlify.
+const url = process.env.NETLIFY_DATABASE_URL ?? process.env.DATABASE_URL;
 if (!url) {
-  throw new Error('DATABASE_URL is not set. See .env.example.');
+  throw new Error('Neither NETLIFY_DATABASE_URL nor DATABASE_URL is set.');
 }
 
 export const sql = postgres(url, {

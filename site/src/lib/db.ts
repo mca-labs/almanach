@@ -7,9 +7,10 @@ let _sql: postgres.Sql | null = null;
 
 export function getSql(): postgres.Sql {
   if (_sql) return _sql;
-  const url = process.env.DATABASE_URL;
+  // Netlify Database expose NETLIFY_DATABASE_URL au build. Fallback DATABASE_URL pour le local.
+  const url = process.env.NETLIFY_DATABASE_URL ?? process.env.DATABASE_URL;
   if (!url) {
-    throw new Error('DATABASE_URL not set — la BD est requise au build du site.');
+    throw new Error('Neither NETLIFY_DATABASE_URL nor DATABASE_URL is set — la BD est requise au build du site.');
   }
   _sql = postgres(url, {
     ssl: url.includes('localhost') ? false : 'prefer',
