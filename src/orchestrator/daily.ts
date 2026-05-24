@@ -6,6 +6,7 @@ import { sql } from '../db/client.js';
 import { persistSkyEvents } from '../almanac/index.js';
 import { birdweatherModule } from '../ingest/birdweather/index.js';
 import { tempestModule } from '../ingest/tempest/index.js';
+import { resolveMany } from '../resolver/species-photo.js';
 import { synthesizeForDate } from '../synthesize/index.js';
 
 const TZ = 'America/Toronto';
@@ -54,16 +55,26 @@ export async function runDaily(opts: { date?: string } = {}): Promise<void> {
   const since = new Date(now.getTime() - 2 * 86400000);
 
   console.log(`daily: entryDate=${entryDate} skyDate=${skyDate}`);
-  console.log('1/4 ingest…');
+  console.log('1/5 ingest…');
   await tempestModule.ingest(since);
   await birdweatherModule.ingest(since);
 
-  console.log('2/4 almanac…');
+  console.log('2/5 resolve species photos (iNat, cached)…');
+  const speciesRows = await sql<{ taxon_scientific: string }[]>`
+    select distinct taxon_scientific
+    from observations
+    where source = 'birdweather' and kind = 'bird_audio'
+      and taxon_scientific is not null
+      and (observed_at at time zone 'America/Toronto')::date = ${entryDate}::date
+  `;
+  await resolveMany(speciesRows.map((r) => r.taxon_scientific));
+
+  console.log('3/5 almanac…');
   await persistSkyEvents(skyDate);
 
-  console.log('3/4 synthesize…');
+  console.log('4/5 synthesize…');
   await synthesizeForDate(entryDate);
 
-  console.log('4/4 publish…');
+  console.log('5/5 publish…');
   await publish(entryDate);
 }
