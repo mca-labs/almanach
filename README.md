@@ -1,13 +1,12 @@
 # Almanach du Val des Loups
 
-Un petit observatoire nature d'un seul lieu — le pont couvert de
+Un petit observatoire nature de notre maison près du pont couvert de
 Saint-Placide-de-Charlevoix, sur la rivière du Bras Nord-Ouest — qui agrège
 des capteurs autour de la propriété et publie chaque nuit une **édition figée**
 décrivant la veille.
 
-Un éditeur, pas un tableau de bord : chaque jour, on choisit *une* chose à
-remarquer, on la met en page avec retenue, et on laisse la densité vivre
-derrière un lien discret.
+C'est un almanach avec une direction éditoriale axée sur la lisibilité, la clarté et la simplicité et non un tableau de bord : chaque jour, on choisit *une* chose à
+signaler, on la met en page avec retenue, et on laisse la densité vivre derrière un lien discret.
 
 Projet personnel, open source (MIT).
 
