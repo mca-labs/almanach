@@ -22,6 +22,7 @@
     "site:build": "astro build --root site",
     "site:preview": "astro preview --root site",
     "site:check": "astro check --root site",
+    "site:serve": "serve site/dist -l tcp://0.0.0.0:${PORT:-3000}",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write ."
   },
@@ -30,7 +31,8 @@
     "astro": "^5.0.0",
     "astronomy-engine": "^2.1.19",
     "dotenv": "^16.4.5",
-    "postgres": "^3.4.5"
+    "postgres": "^3.4.5",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
