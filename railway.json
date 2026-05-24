@@ -1,0 +1,22 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "watchPatterns": [
+      "src/**",
+      "migrations/**",
+      "prompts/**",
+      "scripts/**",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "railway.json"
+    ]
+  },
+  "deploy": {
+    "startCommand": "npm run migrate && npm run daily",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 1,
+    "cronSchedule": "1 5 * * *"
+  }
+}

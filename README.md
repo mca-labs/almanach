@@ -70,10 +70,67 @@ Pendant le dev, le site Astro :
 npm run site:dev
 ```
 
-## Déploiement
+## Déploiement Railway
 
-Railway pour tout : Postgres, cron, build du site. Variables d'env reprises de
-`.env.example`.
+Le service de génération nocturne est configuré par
+[`railway.json`](railway.json) (config-as-code) : builder Nixpacks,
+`startCommand = "npm run migrate && npm run daily"`,
+`cronSchedule = "1 5 * * *"`, retry × 1 sur échec. Le site Astro
+(quand il sera ajouté) vivra dans un second service avec son propre
+`site/railway.json`.
+
+### Cron et changement d'heure
+
+Le cron Railway s'évalue en **UTC fixe**. `1 5 * * *` UTC correspond à :
+
+- **00 h 01 EST** (hiver, UTC−5) — heure cible
+- **01 h 01 EDT** (été, UTC−4) — un peu plus tard, toujours **après
+  minuit local**
+
+Le code n'assume rien de l'offset : à chaque tick, `src/orchestrator/daily.ts`
+recalcule la date locale `America/Toronto` et choisit `entryDate = veille`
+et `skyDate = ce soir`. La même config marche donc toute l'année, et un
+décalage occasionnel de quelques minutes lors d'une transition DST ne
+change rien à la sémantique.
+
+### Mise en route Railway (one-time, manuel)
+
+`railway.json` ne couvre que les sections build + deploy d'un service.
+Le reste se fait au dashboard, une fois par projet :
+
+1. **Créer le projet** sur Railway et le lier au repo GitHub
+   `mca-labs/almanach` (branche `main`).
+2. **Ajouter Postgres** (« + New » → Database → PostgreSQL, ou `railway add`).
+3. **Brancher `DATABASE_URL`** sur le service de génération via une
+   *reference variable* (`${{Postgres.DATABASE_URL}}`).
+4. **Saisir les secrets et variables** dans Settings → Variables (jamais
+   dans `railway.json`) : `WEATHERFLOW_TOKEN`, `ANTHROPIC_API_KEY`,
+   `SITE_DEPLOY_HOOK_URL` (optionnel), plus les non-secrets si on veut
+   surcharger les valeurs de [`.env.example`](.env.example).
+5. **Vérifier le cron** dans Settings → Cron Schedule : confirmer que
+   `1 5 * * *` est bien actif.
+6. **Bootstrap** : Lancer une première génération manuelle depuis le
+   dashboard (« Deploy ») ou en CLI Railway (`railway run npm run daily`)
+   pour amorcer la BD. Le backfill historique Tempest se lance à part :
+   `railway run npm run backfill:tempest` (≈ 5-10 min, idempotent).
+
+### ⚠️ Bug connu — cron en config-as-code (déc. 2025)
+
+Un bug a été observé où le `cronSchedule` défini dans `railway.json`
+restait bloqué et ne déclenchait pas. **Si la génération nocturne ne
+tourne pas après une journée**, contournement : régler le schedule
+directement dans Settings → Cron Schedule du dashboard, et garder ça
+jusqu'à confirmation que le bug est corrigé.
+
+### Pourquoi la sortie propre du process est critique
+
+Le job tourne en mode cron : Railway lance `startCommand`, attend qu'il
+sorte, puis ferme tout. Si le process ne sort pas (handle ouvert, socket
+en keepalive, promesse non awaited), Railway considère le run encore en
+cours et **saute la run suivante silencieusement**. Tous les entrypoints
+(`src/cli.ts`, `src/db/migrate.ts`, `scripts/backfill-tempest.ts`)
+ferment explicitement le pool Postgres et appellent `process.exit(0)`.
+À conserver lors de tout futur ajout.
 
 ## Licence
 

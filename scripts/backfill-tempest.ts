@@ -58,10 +58,14 @@ async function run(): Promise<void> {
   console.log(`backfill: total fetched=${totalFetched} inserted=${totalInserted}`);
 }
 
-run()
-  .then(() => sql.end())
-  .catch((err: unknown) => {
+(async () => {
+  try {
+    await run();
+    await sql.end({ timeout: 5 });
+    process.exit(0);
+  } catch (err) {
     console.error(err);
-    void sql.end();
+    await sql.end({ timeout: 5 }).catch(() => undefined);
     process.exit(1);
-  });
+  }
+})();

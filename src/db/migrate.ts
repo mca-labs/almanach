@@ -51,11 +51,16 @@ export async function migrate(): Promise<void> {
 
 const isEntrypoint = import.meta.url === `file://${process.argv[1]}`;
 if (isEntrypoint) {
-  migrate()
-    .then(() => sql.end())
-    .catch((err: unknown) => {
+  // Sortie propre — voir commentaire dans src/cli.ts.
+  (async () => {
+    try {
+      await migrate();
+      await sql.end({ timeout: 5 });
+      process.exit(0);
+    } catch (err) {
       console.error(err);
-      void sql.end();
+      await sql.end({ timeout: 5 }).catch(() => undefined);
       process.exit(1);
-    });
+    }
+  })();
 }
