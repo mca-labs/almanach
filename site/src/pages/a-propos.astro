@@ -1,0 +1,89 @@
+---
+import Base from '@/layouts/Base.astro';
+---
+
+<Base title="Almanach du Val des Loups — à propos" active="a-propos">
+  <header class="mast">
+    <div class="titleline">
+      <h1 class="title">À propos</h1>
+    </div>
+    <p class="condition">
+      L'Almanach du Val des Loups est le journal quotidien d'un seul lieu : la
+      forêt autour du pont couvert de Saint-Placide-de-Charlevoix. Chaque nuit,
+      après minuit, une nouvelle édition paraît et raconte la journée de la
+      veille.
+    </p>
+  </header>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>Le lieu</h2><span class="line"></span></div>
+    <p>
+      Tout est observé depuis un même point : le pont couvert de
+      Saint-Placide-de-Charlevoix (47,4° N · 70,6° O, 377 m), le dernier pont
+      couvert encore en service de Charlevoix. C'est le repère public de
+      l'almanach — il situe sans exposer, et il abrite cette vallée des orages
+      depuis bientôt un siècle.
+    </p>
+  </section>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>Les instruments</h2><span class="line"></span></div>
+    <p>
+      L'almanach ne détient pas de données : il les emprunte à des instruments
+      ouverts, et renvoie vers eux pour qui veut le détail brut.
+    </p>
+    <ul style="font-family:var(--serif);font-size:17px;line-height:1.7;padding-left:18px;margin:14px 0 0">
+      <li>
+        <a href="https://tempestwx.com/station/41129/" target="_blank" rel="noopener">Station météo Tempest</a>
+        — température, vent, pression, pluie, foudre et luminosité ; historique
+        continu depuis septembre 2021 pour les comparaisons « même date ».
+      </li>
+      <li>
+        <a href="https://app.birdweather.com/stations/6670" target="_blank" rel="noopener">BirdWeather (PUC)</a>
+        — identification et décompte des oiseaux par le son, avec extrait audio
+        sur chaque détection.
+      </li>
+      <li>
+        <a href="https://github.com/cosinekitty/astronomy" target="_blank" rel="noopener">astronomy-engine</a>
+        — éphémérides du soleil, de la lune et des planètes, calculées sur place
+        depuis les coordonnées de la station.
+      </li>
+      <li>
+        <a href="https://www.swpc.noaa.gov" target="_blank" rel="noopener">NOAA SWPC</a>
+        — indice K planétaire, pour la probabilité d'aurores.
+      </li>
+    </ul>
+  </section>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>La méthode</h2><span class="line"></span></div>
+    <p>
+      Le billet et la ligne de condition sont rédigés par une IA, à partir des
+      seules observations réelles du jour : jamais d'espèce, de chiffre ou
+      d'événement inventé. Les éphémérides, elles, regardent vers l'avant —
+      la nuit qui s'ouvre.
+    </p>
+    <p>
+      La page est figée pour sa date. Pour le temps qu'il fait à l'instant
+      même, ce sont les instruments ci-dessus qu'il faut consulter : l'almanach
+      édite, les sources diffusent.
+    </p>
+  </section>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>Le projet</h2><span class="line"></span></div>
+    <p>
+      L'Almanach du Val des Loups est un projet ouvert : son code est public
+      sur <a href="https://github.com/mca-labs/almanach" target="_blank" rel="noopener">GitHub</a>.
+      Il est conçu et tenu par
+      <a href="https://www.michaelcarpentier.com/" target="_blank" rel="noopener">Michael Carpentier</a>.
+    </p>
+  </section>
+
+  <footer>
+    <div class="row">
+      <a href="/">← retour à l'almanach</a>
+      <a href="/donnees">archives & données →</a>
+    </div>
+  </footer>
+</Base>

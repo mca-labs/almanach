@@ -21,6 +21,7 @@
     "site:dev": "astro dev --root site",
     "site:build": "astro build --root site",
     "site:preview": "astro preview --root site",
+    "site:check": "astro check --root site",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write ."
   },
@@ -32,6 +33,7 @@
     "postgres": "^3.4.5"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.9",
     "@types/node": "^22.10.0",
     "prettier": "^3.4.2",
     "tsx": "^4.19.2",

@@ -1,0 +1,41 @@
+---
+import Base from '@/layouts/Base.astro';
+import { publishedDates } from '@/lib/queries';
+
+const dates = await publishedDates();
+
+function frenchLong(iso: string): string {
+  const d = new Date(`${iso}T12:00:00Z`);
+  return new Intl.DateTimeFormat('fr-CA', {
+    timeZone: 'America/Toronto',
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(d);
+}
+---
+
+<Base title="Almanach du Val des Loups — archives" active="archives">
+  <header class="mast">
+    <div class="kicker">
+      <span>Archives</span>
+      <span>{dates.length} édition{dates.length > 1 ? 's' : ''} publiée{dates.length > 1 ? 's' : ''}</span>
+    </div>
+    <div class="titleline">
+      <h1 class="title"><em>Éditions</em> précédentes</h1>
+    </div>
+  </header>
+
+  <section class="blk">
+    {dates.length === 0 ? (
+      <p class="condition">Aucune édition pour l'instant.</p>
+    ) : (
+      <ul style="list-style:none;padding:0;margin:0;font-family:var(--serif);font-size:18px;line-height:2">
+        {dates.map((d) => (
+          <li><a href={`/archives/${d}`}>{frenchLong(d)}</a></li>
+        ))}
+      </ul>
+    )}
+  </section>
+</Base>

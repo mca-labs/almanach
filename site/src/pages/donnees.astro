@@ -1,0 +1,55 @@
+---
+import Base from '@/layouts/Base.astro';
+import { latestPublished, publishedDates } from '@/lib/queries';
+
+const entry = await latestPublished();
+const allDates = await publishedDates();
+---
+
+<Base title="Almanach du Val des Loups — données" active="archives">
+  <header class="mast">
+    <div class="titleline">
+      <h1 class="title">Données</h1>
+    </div>
+    <p class="condition">
+      La densité que la une garde derrière un lien : courbes complètes,
+      détections exhaustives, payloads sources. Disponible, jamais imposée.
+    </p>
+  </header>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>État</h2><span class="line"></span></div>
+    <ul style="font-family:var(--serif);font-size:17px;line-height:1.85;padding-left:18px;margin:14px 0 0">
+      <li>{allDates.length} édition{allDates.length > 1 ? 's' : ''} publiée{allDates.length > 1 ? 's' : ''}</li>
+      <li>Dernière édition : {entry ? entry.entry_date : '—'}</li>
+    </ul>
+  </section>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>Sources brutes</h2><span class="line"></span></div>
+    <p>
+      L'almanach ne réhéberge pas les données brutes — elles vivent chez les
+      instruments. Pour creuser :
+    </p>
+    <ul style="font-family:var(--serif);font-size:17px;line-height:1.7;padding-left:18px;margin:14px 0 0">
+      <li><a href="https://tempestwx.com/station/41129/" target="_blank" rel="noopener">Tempest 41129 — historique météo complet</a></li>
+      <li><a href="https://app.birdweather.com/stations/6670" target="_blank" rel="noopener">BirdWeather 6670 — toutes les détections, soundscapes, statistiques</a></li>
+    </ul>
+  </section>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>Courbes & vues détaillées</h2><span class="line"></span></div>
+    <p>
+      À venir : courbe de température année-en-cours vs moyenne « même date »
+      depuis 2021 (avec règle des trous §9.1), table complète des détections
+      par jour, payload brut Tempest pour audit.
+    </p>
+  </section>
+
+  <footer>
+    <div class="row">
+      <a href="/">← retour à l'almanach</a>
+      <a href="/archives">éditions précédentes →</a>
+    </div>
+  </footer>
+</Base>

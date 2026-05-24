@@ -1,0 +1,18 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd .. && npm ci && npm run site:build",
+    "watchPatterns": [
+      "site/**",
+      "src/db/**",
+      "package.json",
+      "package-lock.json"
+    ]
+  },
+  "deploy": {
+    "startCommand": "cd .. && npx astro preview --root site --host 0.0.0.0 --port $PORT",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 3
+  }
+}

@@ -1,0 +1,17 @@
+---
+interface Props {
+  active?: 'une' | 'archives' | 'a-propos';
+}
+const { active } = Astro.props;
+---
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="mark"><span class="leaf">&#10047;</span>&nbsp; Almanach du Val des Loups</span>
+    <nav class="nav">
+      <a class={active === 'une' ? 'on' : ''} href="/">Almanach</a>
+      <a class={active === 'archives' ? 'on' : ''} href="/archives">Archives</a>
+      <a class={active === 'a-propos' ? 'on' : ''} href="/a-propos">À propos</a>
+    </nav>
+  </div>
+</div>
