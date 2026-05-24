@@ -26,7 +26,12 @@
 //      servir, pour éviter des invalidations parasites.
 
 import { sql } from '../db/client.js';
-import { searchTaxonByScientificName, type InatPhoto } from './inat-client.js';
+import {
+  getTaxonByIdWithPhotos,
+  searchTaxonByScientificName,
+  type InatPhoto,
+  type InatTaxon,
+} from './inat-client.js';
 
 const TTL_OK_DAYS = 21;
 const TTL_NEGATIVE_DAYS = 7;
@@ -58,6 +63,18 @@ function isOpenPhoto(p: InatPhoto | null): boolean {
   if (!p) return false;
   if (!p.license_code) return false;
   return ACCEPTED_LICENSES.has(p.license_code.toLowerCase());
+}
+
+/** Si default_photo n'est pas open-licensed, on parcourt taxon_photos
+ *  dans l'ordre fourni par iNat (curatorial) et on renvoie la première
+ *  photo avec une licence acceptée. */
+function pickOpenPhoto(taxon: InatTaxon): InatPhoto | null {
+  if (isOpenPhoto(taxon.default_photo)) return taxon.default_photo;
+  const wrappers = taxon.taxon_photos ?? [];
+  for (const w of wrappers) {
+    if (isOpenPhoto(w.photo)) return w.photo;
+  }
+  return null;
 }
 
 function rowToPhoto(row: CachedRow): SpeciesPhoto | null {
@@ -173,7 +190,22 @@ export async function resolveSpeciesPhoto(sciName: string): Promise<SpeciesPhoto
     return null;
   }
 
-  if (!isOpenPhoto(taxon.default_photo)) {
+  // 2bis. Fallback : si default_photo n'est pas open, on récupère
+  // /v2/taxa/{id} avec taxon_photos et on prend la première open-licensed.
+  let openPhoto: InatPhoto | null = null;
+  if (isOpenPhoto(taxon.default_photo)) {
+    openPhoto = taxon.default_photo;
+  } else {
+    try {
+      const full = await getTaxonByIdWithPhotos(taxon.id);
+      if (full) openPhoto = pickOpenPhoto(full);
+    } catch (err) {
+      console.warn(`species-photo: fallback fetch failed for "${sciName}"`, err);
+      // pas de propagation : si le fallback échoue, on marque no_open_photo
+    }
+  }
+
+  if (!openPhoto) {
     await upsert({
       taxon_scientific: sciName,
       taxon_inat_id: taxon.id,
@@ -187,10 +219,7 @@ export async function resolveSpeciesPhoto(sciName: string): Promise<SpeciesPhoto
     return null;
   }
 
-  // isOpenPhoto a déjà validé : default_photo non-null, license dans la liste.
-  // On rebascule en non-null sans cast via une garde explicite.
-  const p = taxon.default_photo;
-  if (!p) return null; // unreachable, mais nécessaire pour le narrowing TS
+  const p = openPhoto;
   const photoUrl = p.medium_url ?? p.url;
   const license = p.license_code;
   const attribution = p.attribution;

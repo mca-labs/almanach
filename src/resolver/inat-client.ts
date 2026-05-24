@@ -15,10 +15,12 @@ const BASE = 'https://api.inaturalist.org/v2';
 const USER_AGENT = 'almanach-val-des-loups/0.1 (+https://github.com/mca-labs/almanach)';
 const MIN_INTERVAL_MS = 1100; // 1 req/s + marge
 
-// Champs à demander sur Taxon — verbatim copié dans species-photo.ts.
-const TAXA_FIELDS =
-  '(id:!t,name:!t,rank:!t,default_photo:(id:!t,license_code:!t,' +
-  'attribution:!t,attribution_name:!t,url:!t,square_url:!t,medium_url:!t))';
+// Sparse fieldsets v2 — verbatim, fait l'objet d'un test croisé en CI manuel.
+const PHOTO_FIELDS =
+  'id:!t,license_code:!t,attribution:!t,attribution_name:!t,' +
+  'url:!t,square_url:!t,medium_url:!t';
+const TAXA_SEARCH_FIELDS = `(id:!t,name:!t,rank:!t,default_photo:(${PHOTO_FIELDS}))`;
+const TAXON_FULL_FIELDS = `(id:!t,name:!t,rank:!t,default_photo:(${PHOTO_FIELDS}),taxon_photos:(photo:(${PHOTO_FIELDS})))`;
 
 let lastCallAt = 0;
 async function rateGate(): Promise<void> {
@@ -39,11 +41,16 @@ export interface InatPhoto {
   medium_url: string | null; // ≈ 500 px — c'est celui qu'on affiche
 }
 
+export interface InatTaxonPhotoWrapper {
+  photo: InatPhoto;
+}
+
 export interface InatTaxon {
   id: number;
   name: string;
   rank: string;
   default_photo: InatPhoto | null;
+  taxon_photos?: InatTaxonPhotoWrapper[] | null;
   matched_term?: string;
 }
 
@@ -52,12 +59,8 @@ interface InatTaxaResponse {
   results: InatTaxon[];
 }
 
-export async function searchTaxonByScientificName(sciName: string): Promise<InatTaxon | null> {
+async function getJson<T>(url: string): Promise<T> {
   await rateGate();
-  const url =
-    `${BASE}/taxa?q=${encodeURIComponent(sciName)}` +
-    `&rank=species&is_active=true&per_page=1` +
-    `&fields=${TAXA_FIELDS}`;
   const res = await fetch(url, {
     headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
   });
@@ -67,10 +70,26 @@ export async function searchTaxonByScientificName(sciName: string): Promise<Inat
   if (!res.ok) {
     throw new Error(`iNat HTTP ${res.status} ${res.statusText}`);
   }
-  const data = (await res.json()) as InatTaxaResponse;
+  return (await res.json()) as T;
+}
+
+export async function searchTaxonByScientificName(sciName: string): Promise<InatTaxon | null> {
+  const url =
+    `${BASE}/taxa?q=${encodeURIComponent(sciName)}` +
+    `&rank=species&is_active=true&per_page=1` +
+    `&fields=${TAXA_SEARCH_FIELDS}`;
+  const data = await getJson<InatTaxaResponse>(url);
   const first = data.results[0];
   if (!first) return null;
   // Garde-fou : on n'accepte que des matches "espèce", pas plus haut.
   if (first.rank !== 'species') return null;
   return first;
+}
+
+/** Récupère un taxon par id avec sa galerie complète (taxon_photos),
+ *  utilisé pour le fallback quand default_photo n'est pas open-licensed. */
+export async function getTaxonByIdWithPhotos(id: number): Promise<InatTaxon | null> {
+  const url = `${BASE}/taxa/${id}?fields=${TAXON_FULL_FIELDS}`;
+  const data = await getJson<InatTaxaResponse>(url);
+  return data.results[0] ?? null;
 }
