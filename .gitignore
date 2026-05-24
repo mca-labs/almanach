@@ -1,0 +1,30 @@
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Node / TS
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Astro (added when site is scaffolded)
+.astro/

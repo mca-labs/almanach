@@ -1,0 +1,525 @@
+<!doctype html>
+<!--
+  ALMANACH DU VAL DES LOUPS — maquette de référence v1 de la « édition du jour ».
+  À fournir à Claude Code AVEC le spec (docs/spec.md).
+
+  Rôle : figer COMPOSITION + ESTHÉTIQUE (§6). Registre almanach, palette froide sur papier
+  crème, retenue éditoriale — délibérément à l'opposé d'un tableau de bord dense.
+  Pièces signature (courbe température, jauge luminosité, horloge d'activité) en SVG/JS, zéro
+  dépendance externe (hors polices Google, avec repli système).
+
+  DONNÉES ILLUSTRATIVES. Les « TODO(data) » marquent où brancher les vraies sources.
+
+  PALETTE (fournie par Michael) : teal #9FB7B9 · sauge #BCC1BA · crème #F2E2D2.
+  Ajouts hors palette (lisibilité) : encre #2B3736, lien teal foncé #3F6764. Tout le reste
+  est dérivé de la palette.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Almanach du Val des Loups — édition du jour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,400..500&family=Spectral:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#2B3736; --ink-2:#566260; --ink-3:#6E766F;
+    --teal:#9FB7B9; --sage:#BCC1BA; --cream:#F2E2D2;
+    --paper:#FBF7F0; --surface:#F1E8D9;
+    --rule:rgba(43,55,54,.15); --rule-soft:#CDD5CF; --accent:#3F6764;
+    --serif:"Spectral",Georgia,"Times New Roman",serif;
+    --display:"Fraunces","Spectral",Georgia,serif;
+    --sans:"Spectral",Georgia,serif;
+    --maxw:720px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+    font-size:18px;line-height:1.66;font-weight:400;
+    background-image:radial-gradient(rgba(43,55,54,.025) 1px,transparent 1px);
+    background-size:4px 4px;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:3px}
+
+  /* quiet top bar with thin teal masthead stripe */
+  .topbar{border-top:3px solid var(--accent);border-bottom:1px solid var(--rule);
+    background:rgba(245,240,230,.85);backdrop-filter:saturate(1.05) blur(2px)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:52px}
+  .mark{font-family:var(--display);font-size:16px;font-weight:500;letter-spacing:.01em}
+  .mark .leaf{color:var(--accent)}
+  .nav{display:flex;gap:22px;font-size:13px;letter-spacing:.04em;color:var(--ink-2)}
+  .nav a{color:var(--ink-2)}
+  .nav a.on{color:var(--ink)}
+
+  .rv{opacity:0;transform:translateY(10px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+
+  /* masthead */
+  header.mast{padding:44px 0 30px;border-bottom:1px solid var(--rule)}
+  .kicker{display:flex;flex-direction:column;gap:3px;font-size:12.5px;letter-spacing:.05em;
+    text-transform:uppercase;color:var(--ink-3);font-family:var(--sans)}
+  .kicker a{color:inherit;text-decoration:none}
+  .kicker a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+  .titleline{display:flex;align-items:baseline;gap:14px;margin:14px 0 0;flex-wrap:wrap}
+  h1.title{font-family:var(--display);font-weight:400;font-size:clamp(28px,5.2vw,44px);line-height:1;
+    letter-spacing:-.01em;margin:0;font-optical-sizing:auto;color:var(--ink);white-space:nowrap}
+  h1.title em{font-style:italic;color:var(--accent);font-weight:400}
+  .ed{font-size:13px;color:var(--accent);font-family:var(--sans);letter-spacing:.04em;white-space:nowrap}
+  .condition{font-family:var(--display);font-style:italic;font-weight:300;
+    font-size:clamp(20px,2.6vw,25px);line-height:1.32;color:var(--ink-2);margin:22px 0 0;max-width:30em}
+
+  /* section + almanac-style rubric (no roman numerals) */
+  section.blk{padding:34px 0;border-bottom:1px solid var(--rule)}
+  .rubric{display:flex;align-items:center;gap:11px;margin:0 0 18px}
+  .rubric .orn{flex:none;color:var(--accent);display:block}
+  .rubric h2{font-family:var(--display);font-style:italic;font-weight:400;font-size:21px;
+    letter-spacing:0;text-transform:none;color:var(--ink);margin:0;white-space:nowrap}
+  .rubric .line{flex:1;height:1px;background:var(--rule-soft)}
+  .rubric .src{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-3)}
+  .rubric .src a{color:inherit;text-decoration:none}
+  .rubric .src a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+  .rubric.mini{gap:9px;margin:0 0 12px}
+  .rubric.mini h2{font-size:16px}
+
+  /* billet */
+  .billet p{font-size:19px;line-height:1.74;margin:0 0 16px}
+  .billet p:last-child{margin-bottom:0}
+  .billet .drop::first-letter{font-family:var(--display);font-size:3.1em;line-height:.78;float:left;
+    padding:6px 10px 0 0;color:var(--accent);font-weight:400}
+  .sign{font-style:italic;color:var(--ink-3);font-size:15px;margin-top:18px}
+  .more{margin-top:14px;font-family:var(--sans);font-size:14px;letter-spacing:.01em}
+  .more a{color:var(--accent)}
+
+  /* observation du jour */
+  .obs{display:grid;grid-template-columns:230px 1fr;gap:26px;align-items:center}
+  .photo{aspect-ratio:4/3;background:var(--surface);border:1px solid var(--rule-soft);border-radius:4px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:var(--ink-3)}
+  .photo .cap{font-family:var(--sans);font-size:11px;letter-spacing:.05em;text-transform:uppercase}
+  .obs .sp{font-family:var(--display);font-size:27px;font-weight:400;line-height:1.06}
+  .obs .lat{font-style:italic;color:var(--ink-2);font-size:16px;margin-top:2px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px;font-size:15px;color:var(--ink-2)}
+  .pill{background:rgba(159,183,185,.34);color:var(--ink);font-family:var(--sans);font-size:12.5px;
+    letter-spacing:.02em;padding:3px 11px;border-radius:20px}
+  .obs .note{font-family:var(--sans);font-size:13px;color:var(--ink-3);margin-top:11px}
+  .listen{display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding:6px 13px;font-family:var(--sans);
+    font-size:12.5px;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:999px;
+    cursor:pointer;transition:background .12s,color .12s}
+  .listen svg{flex:none}
+  .listen:hover,.listen[aria-expanded="true"]{background:var(--accent);color:var(--paper)}
+  .obsaudio{display:block;width:100%;max-width:340px;margin-top:12px;height:34px}
+
+  /* éphémérides */
+  .sky{display:flex;flex-wrap:wrap;gap:14px 26px;font-size:16px;color:var(--ink-2)}
+  .sky .it{display:flex;align-items:center;gap:9px}
+  .sky svg{flex:none}
+  .propice{margin-top:20px;font-family:var(--display);font-style:italic;font-size:19px;
+    line-height:1.5;color:var(--ink);border-left:2px solid var(--teal);padding-left:16px;max-width:34em}
+
+  /* plates = framed field-guide panels (cool outline on cream) */
+  .plate{position:relative;background:var(--surface);border:1px solid var(--rule-soft);border-radius:6px;padding:18px 18px 14px}
+  .ttip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--sans);
+    font-size:12px;padding:5px 9px;border-radius:5px;white-space:nowrap;opacity:0;
+    transform:translate(-50%,-135%);transition:opacity .1s;z-index:6;font-variant-numeric:tabular-nums}
+  .ttip.on{opacity:1}
+
+  /* le temps aujourd'hui */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule-soft);
+    border:1px solid var(--rule-soft);border-radius:5px;overflow:hidden;margin-bottom:22px}
+  .stat{background:var(--surface);padding:14px 16px}
+  .stat .k{font-family:var(--sans);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3)}
+  .stat .v{font-family:var(--display);font-size:25px;line-height:1.1;margin-top:5px;color:var(--ink)}
+  .stat .v small{font-size:14px;color:var(--ink-2)}
+  .stat .sub{font-family:var(--sans);font-size:11.5px;color:var(--ink-3);margin-top:2px}
+  .stat .sub.flag{color:var(--accent)}
+  figure{margin:0}
+  figcaption{font-family:var(--sans);font-size:12px;color:var(--ink-3);margin-top:8px;display:flex;
+    justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .legendrow{display:flex;gap:18px;font-family:var(--sans);font-size:12px;color:var(--ink-2);margin-bottom:8px}
+  .legendrow .sw{display:inline-block;width:18px;height:0;border-top-width:2px;border-top-style:solid;
+    vertical-align:middle;margin-right:6px}
+
+  .gauge{margin-top:22px}
+  .gauge .now{font-family:var(--display);font-size:18px;margin:2px 0 14px;color:var(--ink)}
+  .trackwrap{position:relative}
+  .luxtip{position:absolute;left:50%;bottom:100%;transform:translate(-50%,-7px);background:var(--ink);
+    color:var(--paper);font-family:var(--sans);font-size:12px;padding:5px 9px;border-radius:5px;
+    white-space:nowrap;opacity:0;transition:opacity .12s;pointer-events:none;font-variant-numeric:tabular-nums}
+  .luxtip.on{opacity:1}
+  .lmark{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;
+    background:var(--ink-3);border:2px solid var(--paper);cursor:pointer;z-index:3;transition:background .12s}
+  .lmark.peak{width:3px;height:23px;border-radius:2px;background:var(--ink);border:0}
+  .lmark:hover{background:var(--accent)}
+  .track{position:relative;height:15px;background:var(--paper);border:1px solid var(--rule-soft);border-radius:20px;overflow:hidden}
+  .fill{position:absolute;inset:0 auto 0 0;background:var(--teal);border-radius:20px}
+  .needle{position:absolute;top:-5px;width:2px;height:25px;background:var(--ink)}
+  .ticks{display:flex;justify-content:space-between;margin-top:13px;font-family:var(--sans);
+    font-size:11px;letter-spacing:.03em;color:var(--ink-3)}
+  .sun{margin-top:16px;font-family:var(--sans);font-size:13px;color:var(--ink-2)}
+  .sun b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+  .sun .arr{color:var(--accent);margin:0 5px}
+
+  /* horloge */
+  .clockwrap{display:flex;flex-direction:column;align-items:center;position:relative}
+  .ctip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);
+    font-family:var(--sans);font-size:12px;letter-spacing:.01em;padding:5px 9px;border-radius:5px;
+    white-space:nowrap;opacity:0;transform:translate(-50%,-130%);transition:opacity .12s;z-index:5}
+  .ctip.on{opacity:1}
+  .clocklegend{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:8px;
+    font-family:var(--sans);font-size:12px;color:var(--ink-2)}
+  .clocklegend .d{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:1px;margin-right:6px}
+
+  /* fragment */
+  .frag{font-family:var(--display);font-style:italic;font-weight:300;font-size:23px;line-height:1.5;
+    color:var(--ink);max-width:26em;margin:0}
+  .frag cite{display:block;font-family:var(--sans);font-style:normal;font-size:13px;letter-spacing:.04em;
+    color:var(--ink-3);margin-top:14px}
+
+  /* drawer */
+  details.drawer{border:1px solid var(--rule-soft);border-radius:6px;background:var(--surface);margin-top:6px}
+  details.drawer summary{list-style:none;cursor:pointer;padding:14px 18px;display:flex;align-items:center;
+    justify-content:space-between;font-family:var(--sans);font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2)}
+  details.drawer summary::-webkit-details-marker{display:none}
+  details.drawer summary .chev{transition:transform .2s;color:var(--accent)}
+  details.drawer[open] summary .chev{transform:rotate(180deg)}
+  .drawerbody{padding:6px 18px 20px}
+  .bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .bird{text-align:center}
+  .bphoto{width:100%;aspect-ratio:1;border-radius:6px;background:var(--paper);border:1px solid var(--rule-soft);
+    display:flex;align-items:center;justify-content:center;color:var(--ink-3);overflow:hidden}
+  .bphoto svg{width:34px;height:34px;opacity:.45}
+  .bname{margin-top:9px;font-size:13.5px;line-height:1.16}
+  .bname i{display:block;font-style:italic;color:var(--ink-3);font-size:11.5px;margin-top:1px}
+  /* agrandissement au survol : réservé aux espèces inattendues */
+  .rarebird{position:relative;color:var(--ink);font-weight:500;cursor:help;border-bottom:1px dotted var(--rule-soft)}
+  .rarebird:hover{border-bottom-color:var(--accent)}
+  .bzoom{position:absolute;left:50%;bottom:calc(100% + 12px);transform:translateX(-50%) scale(.96);
+    width:240px;max-width:500px;max-height:500px;aspect-ratio:1;border-radius:10px;background:var(--surface);
+    border:1px solid var(--rule-soft);box-shadow:0 16px 40px rgba(43,55,54,.22);display:flex;
+    align-items:center;justify-content:center;color:var(--ink-3);opacity:0;pointer-events:none;
+    transition:opacity .15s,transform .15s;z-index:30}
+  .bzoom svg{width:70px;height:70px;opacity:.4}
+  .rarebird:hover .bzoom{opacity:1;transform:translateX(-50%) scale(1)}
+  .rare{margin-top:18px;padding-top:14px;border-top:1px dashed var(--rule-soft);font-size:15px;color:var(--ink-2)}
+  .rare b{font-weight:500;color:var(--ink)}
+
+  footer{padding:30px 0 60px;color:var(--ink-3);font-family:var(--sans);font-size:12.5px;line-height:1.7}
+  footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:18px}
+  footer .mv{opacity:.85}
+
+  @media(max-width:560px){
+    .obs{grid-template-columns:1fr}
+    .photo{aspect-ratio:16/10}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .bgrid{grid-template-columns:repeat(2,1fr)}
+    .kicker{flex-direction:column;gap:4px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="mark"><span class="leaf">&#10047;</span>&nbsp; Almanach du Val des Loups</span>
+    <nav class="nav">
+      <a class="on" href="une.html">Almanach</a>
+      <a href="archives.html">Archives</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- EN-TÊTE -->
+  <header class="mast rv" style="animation-delay:.02s">
+    <div class="kicker">
+      <span>Pont couvert de Saint-Placide-de-Charlevoix</span>
+      <span><a href="https://maps.app.goo.gl/im6WzdgPWXcfj9Nx5" target="_blank" rel="noopener">47,4° N · 70,6° O · 370 m</a></span>
+    </div>
+    <div class="titleline">
+      <h1 class="title"><em>Hier,</em> samedi&nbsp;23&nbsp;mai</h1>
+      <span class="ed">an 2026 · 143<sup>e</sup>&nbsp;jour</span>
+    </div>
+    <!-- TODO(data): ligne de condition rédigée par la synthèse à partir des observations du jour -->
+    <p class="condition">Un après-midi clair et frais sur la forêt — la migration des passereaux bat son plein.</p>
+  </header>
+
+  <!-- BILLET (2 paragraphes) -->
+  <section class="blk rv billet" style="animation-delay:.08s">
+    <div class="rubric">
+      <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+      <h2>Billet</h2><span class="line"></span>
+    </div>
+    <!-- TODO(data): généré quotidiennement à partir des observations + sky_events. Toujours 2 paragraphes. -->
+    <p class="drop">L'air est resté sec toute la matinée, posé sur la vallée comme une nappe froide descendue du nord. C'est ce calme — vent presque nul, ciel ouvert — qui a fait du sous-bois une halte idéale pour les migrateurs cette nuit&nbsp;; on apprend vite, ici, que le beau temps des oiseaux n'est pas toujours le nôtre.</p>
+    <p>Une voix sortait du lot avant l'aube, fine et montante, presque grésillante&nbsp;: une paruline rayée, la première de la saison. Elle ne fait que passer — son nid se montera plus au nord, dans l'épinette — mais ce matin, au-dessus du pont, elle appartenait au Val.</p>
+    <!-- lien d'archive : seule porte vers les éditions précédentes (pas d'entrée de menu) -->
+    <p class="more"><a href="archives.html">lire les éditions précédentes →</a></p>
+  </section>
+
+  <!-- OBSERVATION DU JOUR -->
+  <section class="blk rv" style="animation-delay:.14s">
+    <div class="rubric">
+      <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+      <h2>Observation du jour</h2><span class="line"></span>
+      <span class="src"><a href="https://app.birdweather.com/stations/6670">BirdWeather PUC</a></span>
+    </div>
+    <div class="obs">
+      <!-- TODO(data): IMAGE DE RÉFÉRENCE EXTERNE (jamais une photo stockée). Source autorisée/licenciée. -->
+      <div class="photo">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6E766F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01M3.4 18c-.6-1.1-.9-2.4-.9-3.7C2.5 9.2 6 5.5 10.5 5.5c3.8 0 6.3 2.4 7 5.5l1.5 1.2c.3.2.5.5.5.9 0 .5-.4.9-.9.9H16l-2 6.5-3-3.5-2 2.5c-2.8 0-4.2-2-5.6-1.5Z"/></svg>
+        <span class="cap">image de référence</span>
+      </div>
+      <div>
+        <div class="sp">Paruline rayée</div>
+        <div class="lat">Setophaga striata</div>
+        <div class="meta">
+          <span>entendue à 06&nbsp;h&nbsp;44</span>
+          <span class="pill">confiance 97&nbsp;%</span>
+        </div>
+        <!-- TODO(data): statut via ref_breeding_calendar (atlas) -->
+        <div class="note">première de la saison · 1 nouvelle espèce aujourd'hui · en migration, ne niche pas ici</div>
+        <!-- TODO(data): bouton câblé à detection.soundscape.url (média BirdWeather, GraphQL) ; start_time/end_time bornent le chant dans l'extrait. Jeton de station à confirmer pour l'accès au média. Au build : oa.src = url ; oa.currentTime = start_time. -->
+        <button class="listen" id="listenBtn" type="button" aria-expanded="false">
+          <svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>Écouter
+        </button>
+        <audio class="obsaudio" id="obsAudio" controls preload="none" hidden></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITÉS DES OISEAUX -->
+  <section class="blk rv" style="animation-delay:.32s">
+    <div class="rubric">
+      <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+      <h2>Activités des oiseaux</h2><span class="line"></span>
+      <span class="src"><a href="https://app.birdweather.com/stations/6670">BirdWeather</a> · sur 24&nbsp;h</span>
+    </div>
+    <div class="plate clockwrap">
+      <div class="ctip" id="ctip"></div>
+      <!-- TODO(data): détections horaires + lever/coucher du soleil -->
+      <svg id="clock" viewBox="-20 -20 340 340" width="100%" style="max-width:330px" role="img" aria-label="Activité des oiseaux par heure en horloge 24h ; chœur au lever du jour, pic en après-midi."></svg>
+      <div class="clocklegend">
+        <span><span class="d" style="background:var(--ink)"></span>détections / heure</span>
+        <span><span class="d" style="background:var(--teal)"></span>jour</span>
+        <span><span class="d" style="background:#D8D2C6"></span>nuit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LES OISEAUX DU JOUR — sous Activités, ouvert par défaut -->
+  <section class="blk rv" style="animation-delay:.38s">
+    <details class="drawer" open>
+      <summary>Les oiseaux du jour — 25 espèces, 896 détections <span class="chev">&#9662;</span></summary>
+      <div class="drawerbody">
+        <!-- TODO(data): 8 espèces les plus détectées (vignettes .bphoto, sans agrandissement). L'agrandissement au survol (.bzoom ≤ 500×500) est réservé aux espèces inattendues ci-dessous. Toutes les images = référence EXTERNE licenciée, jamais une photo stockée. -->
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bird" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M16 7h.01M3.4 18c-.6-1.1-.9-2.4-.9-3.7C2.5 9.2 6 5.5 10.5 5.5c3.8 0 6.3 2.4 7 5.5l1.5 1.2c.3.2.5.5.5.9 0 .5-.4.9-.9.9H16l-2 6.5-3-3.5-2 2.5c-2.8 0-4.2-2-5.6-1.5Z"/></symbol></svg>
+        <div class="bgrid">
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Chardonneret jaune<i>Spinus tristis</i></div></div>
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Mésange à tête noire<i>Poecile atricapillus</i></div></div>
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Geai bleu<i>Cyanocitta cristata</i></div></div>
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Bruant chanteur<i>Melospiza melodia</i></div></div>
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Pic chevelu<i>Dryobates villosus</i></div></div>
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Sittelle à poitrine rousse<i>Sitta canadensis</i></div></div>
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Junco ardoisé<i>Junco hyemalis</i></div></div>
+          <div class="bird"><div class="bphoto"><svg><use href="#bird"/></svg></div><div class="bname">Roselin pourpré<i>Haemorhous purpureus</i></div></div>
+        </div>
+        <div class="rare"><b>Inattendu aujourd'hui :</b> <span class="rarebird">Paruline rayée<span class="bzoom"><svg><use href="#bird"/></svg></span></span> (première de la saison) · <span class="rarebird">Quiscale rouilleux<span class="bzoom"><svg><use href="#bird"/></svg></span></span> (rare au secteur). &nbsp;<a href="https://app.birdweather.com/stations/6670">Voir toutes les espèces sur BirdWeather →</a></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- MÉTÉO + LUMINOSITÉ -->
+  <section class="blk rv" style="animation-delay:.44s">
+    <div class="rubric">
+      <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+      <h2>Météo</h2><span class="line"></span>
+      <span class="src"><a href="https://tempestwx.com/station/41129/">Station météo Tempest</a></span>
+    </div>
+    <!-- TODO(data): valeurs Tempest, recopiées verbatim. Foudre via capteur Tempest. -->
+    <div class="stats">
+      <div class="stat"><div class="k">Vent</div><div class="v">1,4&nbsp;<small>km/h</small></div><div class="sub">faible · O</div></div>
+      <div class="stat"><div class="k">Pluie 24&nbsp;h</div><div class="v">0,0&nbsp;<small>mm</small></div><div class="sub">sec</div></div>
+      <div class="stat"><div class="k">Pression</div><div class="v">1020&nbsp;<small>hPa</small></div><div class="sub">en hausse</div></div>
+      <div class="stat"><div class="k">Foudre</div><div class="v">—</div><div class="sub flag">dernier éclair il y a 3&nbsp;j</div></div>
+    </div>
+
+    <figure class="plate">
+      <div class="ttip" id="temptip"></div>
+      <div class="legendrow">
+        <span><span class="sw" style="border-top-color:var(--accent)"></span>cette année</span>
+        <span><span class="sw" style="border-top-color:var(--ink-3);border-top-style:dashed"></span>moyenne 2021–2025, même date</span>
+      </div>
+      <!-- TODO(data): courbe Tempest (année en cours) vs moyenne des relevés Tempest de la station depuis 2021, même date -->
+      <svg id="temp" viewBox="0 0 660 170" width="100%" role="img" aria-label="Température sur 24 heures, cette année comparée à la moyenne 2021–2025."></svg>
+      <figcaption><span>température sur 24&nbsp;h</span><span>min 0&nbsp;°C · max 20&nbsp;°C</span></figcaption>
+    </figure>
+
+    <div class="gauge">
+      <div class="rubric mini">
+        <svg class="orn" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/></svg>
+        <h2>Luminosité</h2><span class="line"></span>
+      </div>
+      <!-- TODO(data): relevés 9h/14h/19h en lux (brightness Tempest, verbatim) EXTRAITS pour rédiger la description ci-dessous ; la jauge n'affiche que le PIC du jour, révélé au survol. -->
+      <div class="now">Journée claire en matinée, très lumineuse en après-midi, ensoleillée en début de soirée.</div>
+      <div class="trackwrap">
+        <div class="luxtip" id="luxtip"></div>
+        <div class="track"><div class="fill" style="width:80%"></div></div>
+        <span class="lmark peak" data-t="14 h" data-lux="≈ 44 000 lux (pic)" style="left:80%"></span>
+      </div>
+      <div class="ticks"><span>nuit</span><span>crépuscule</span><span>ciel couvert</span><span>soleil voilé</span><span>plein soleil</span></div>
+      <!-- TODO(data): lever, coucher et durée du jour via astronomy-engine (cohérents avec l'horloge) -->
+      <div class="sun">Lever <b>04 h 56</b> <span class="arr">→</span> durée du jour <b>15 h 26</b> <span class="arr">→</span> coucher <b>20 h 22</b></div>
+    </div>
+  </section>
+
+  <!-- ÉPHÉMÉRIDES — seul module prospectif (la nuit qui s'ouvre, jour de publication) -->
+  <section class="blk rv" style="animation-delay:.46s">
+    <div class="rubric">
+      <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+      <h2>Éphémérides : ce soir, le 24 mai 2026</h2><span class="line"></span>
+      <span class="src">almanach · astronomy-engine</span>
+    </div>
+    <!-- TODO(data): calculé pour la NUIT À VENIR (jour de publication), position du pont ; ISS/aurores/pluies d'étoiles seulement si notable -->
+    <div class="sky">
+      <span class="it">
+        <svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="#3F6764"/></svg>
+        Lune gibbeuse croissante, 57&nbsp;% — couchée à 01&nbsp;h&nbsp;56
+      </span>
+      <span class="it">
+        <svg width="17" height="17" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="none" stroke="#3F6764" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="9" ry="3.4" fill="none" stroke="#3F6764" stroke-width="1.2" transform="rotate(-20 12 12)"/></svg>
+        Vénus puis Jupiter, basses à l'ouest, dès la tombée du jour
+      </span>
+      <span class="it">
+        <svg width="17" height="17" viewBox="0 0 24 24"><path d="M5 19l3-7 3 5 2-9 3 11" fill="none" stroke="#6E766F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Coucher du soleil 20&nbsp;h&nbsp;22 · aurores improbables
+      </span>
+    </div>
+    <p class="propice">Ce soir est aux planètes et à la lune : assez de clarté pour marcher sans frontale jusqu'à deux heures. Mauvaise nuit pour le ciel profond — l'obscurité vraie ne dure qu'à peine trois heures.</p>
+  </section>
+
+  <!-- FRAGMENT — intemporel, en clôture -->
+  <section class="blk rv" style="animation-delay:.52s">
+    <div class="rubric">
+      <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+      <h2>Fragment</h2><span class="line"></span>
+      <span class="src">ref_quotes</span>
+    </div>
+    <!-- TODO(data): citation VÉRIFIÉE tirée de ref_quotes (jamais récitée de mémoire), attribuée à l'œuvre.
+         Privilégier le domaine public (Muir, Thoreau, Burroughs). Ci-dessous : ligne ORIGINALE de remplacement. -->
+    <blockquote class="frag">
+      « On apprend à voir une forêt à la vitesse où elle change, pas à celle où on la traverse. »
+      <cite>emplacement — citation tirée de <code>ref_quotes</code></cite>
+    </blockquote>
+  </section>
+
+  <footer class="rv" style="animation-delay:.58s">
+    <div class="row">
+      <span>Almanach du Val des Loups · pont couvert de Saint-Placide-de-Charlevoix · projet open source par <a href="https://www.michaelcarpentier.com/" target="_blank" rel="noopener">Michael Carpentier</a></span>
+    </div>
+    <div class="row" style="border:0;padding-top:8px">
+      <span>Sources : <a href="https://tempestwx.com/station/41129/">Tempest</a> · <a href="https://app.birdweather.com/stations/6670">BirdWeather</a> · NOAA SWPC · billet généré par Claude selon données d'observations réelles</span>
+      <span class="mv">maquette de référence v1 — données illustratives</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  // ---- Courbe de température : cette année vs moyenne 2021–2025 (illustratif) ----
+  var W=660,H=170,padL=8,padR=8,padT=14,padB=22, tmin=-2,tmax=22;
+  var year=[3,2,1,1,3,7,9,11,13,15,17,18,19,20,20,19,18,16,14,11,8,6,5,4];
+  var norm=[5,4,4,3,4,6,8,10,12,13,14,15,16,16,16,15,14,13,11,10,9,8,7,6];
+  function X(i){return padL + i/23*(W-padL-padR);}
+  function Y(t){return padT + (1-(t-tmin)/(tmax-tmin))*(H-padT-padB);}
+  function poly(a){return a.map(function(v,i){return X(i).toFixed(1)+','+Y(v).toFixed(1);}).join(' ');}
+  var g='<rect x="0" y="0" width="'+W+'" height="'+H+'" fill="transparent" pointer-events="all"/>';
+  [0,10,20].forEach(function(t){g+='<line x1="'+padL+'" y1="'+Y(t).toFixed(1)+'" x2="'+(W-padR)+'" y2="'+Y(t).toFixed(1)+'" stroke="rgba(43,55,54,.10)" stroke-width="1"/>';
+    g+='<text x="'+(W-padR)+'" y="'+(Y(t)-4).toFixed(1)+'" text-anchor="end" font-family="Spectral,serif" font-size="11" fill="#6E766F">'+t+'°</text>';});
+  g+='<polyline fill="none" stroke="#6E766F" stroke-width="1.4" stroke-dasharray="2 4" points="'+poly(norm)+'"/>';
+  g+='<polyline fill="none" stroke="#3F6764" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" points="'+poly(year)+'"/>';
+  ['00h','06h','12h','18h'].forEach(function(l,k){var i=k*6;g+='<text x="'+X(i).toFixed(1)+'" y="'+(H-6)+'" text-anchor="middle" font-family="Spectral,serif" font-size="11" fill="#6E766F">'+l+'</text>';});
+  // repère de survol (caché par défaut) + lecture de la température en °C
+  g+='<line id="tgl" x1="0" y1="'+padT+'" x2="0" y2="'+(H-padB)+'" stroke="#3F6764" stroke-width="1" opacity="0"/>';
+  g+='<circle id="tgd" r="3.6" fill="#3F6764" opacity="0"/>';
+  var tsvg=document.getElementById('temp'); tsvg.innerHTML=g;
+  var ttip=document.getElementById('temptip'), tgl=document.getElementById('tgl'), tgd=document.getElementById('tgd'), tfig=tsvg.parentNode;
+  tsvg.addEventListener('mousemove',function(e){
+    var r=tsvg.getBoundingClientRect(), frac=(e.clientX-r.left)/r.width;
+    if(frac<0)frac=0; if(frac>1)frac=1;
+    var i=Math.round(frac*23), t=year[i], gx=X(i), gy=Y(t), fr=tfig.getBoundingClientRect();
+    tgl.setAttribute('x1',gx); tgl.setAttribute('x2',gx); tgl.setAttribute('opacity','.4');
+    tgd.setAttribute('cx',gx); tgd.setAttribute('cy',gy); tgd.setAttribute('opacity','1');
+    ttip.textContent=(i<10?'0':'')+i+' h · '+t.toFixed(1).replace('.',',')+' °C';
+    ttip.style.left=((gx/W)*r.width + (r.left-fr.left))+'px';
+    ttip.style.top=((gy/H)*r.height + (r.top-fr.top))+'px';
+    ttip.classList.add('on');
+  });
+  tsvg.addEventListener('mouseleave',function(){ttip.classList.remove('on'); tgl.setAttribute('opacity','0'); tgd.setAttribute('opacity','0');});
+
+  // ---- Horloge d'activité 24 h (illustratif) ----
+  var D=[2,1,1,10,70,78,30,55,92,60,55,145,25,10,230,120,25,35,12,4,2,1,1,1];
+  var sr=4.93, ss=20.37; // lever 04h56 / coucher 20h22
+  var cx=150,cy=150,r0=52,rmax=120,rRing=132, max=Math.max.apply(null,D);
+  function pt(R,h){var t=h/24*2*Math.PI;return [cx+R*Math.sin(t), cy-R*Math.cos(t)];}
+  function h2(n){return (n<10?'0':'')+n;}
+  var s='';
+  s+='<circle cx="150" cy="150" r="'+rRing+'" fill="none" stroke="#D8D2C6" stroke-width="6"/>';
+  var p1=pt(rRing,sr),p2=pt(rRing,ss),large=(ss-sr)>12?1:0;
+  s+='<path d="M '+p1[0].toFixed(1)+' '+p1[1].toFixed(1)+' A '+rRing+' '+rRing+' 0 '+large+' 1 '+p2[0].toFixed(1)+' '+p2[1].toFixed(1)+'" fill="none" stroke="#9FB7B9" stroke-width="6"/>';
+  [sr,ss].forEach(function(h){var q=pt(rRing,h);s+='<circle cx="'+q[0].toFixed(1)+'" cy="'+q[1].toFixed(1)+'" r="3.4" fill="#3F6764"/>';});
+  for(var h=0;h<24;h++){var len=(D[h]/max)*(rmax-r0),a=pt(r0,h),b=pt(r0+len,h);
+    s+='<line class="bar" data-i="'+h+'" x1="'+a[0].toFixed(1)+'" y1="'+a[1].toFixed(1)+'" x2="'+b[0].toFixed(1)+'" y2="'+b[1].toFixed(1)+'" stroke="#2B3736" stroke-width="5" stroke-linecap="round"/>';}
+  // zones de survol transparentes (pleine longueur) — pour cibler chaque heure facilement
+  for(var h=0;h<24;h++){var c=pt(r0,h),d=pt(rmax,h);
+    s+='<line class="barhit" data-h="'+h+'" data-n="'+D[h]+'" x1="'+c[0].toFixed(1)+'" y1="'+c[1].toFixed(1)+'" x2="'+d[0].toFixed(1)+'" y2="'+d[1].toFixed(1)+'" stroke="transparent" stroke-width="13" stroke-linecap="round" pointer-events="all"/>';}
+  [[0,'00h'],[6,'06h'],[12,'12h'],[18,'18h']].forEach(function(o){var q=pt(rRing+18,o[0]);
+    s+='<text x="'+q[0].toFixed(1)+'" y="'+(q[1]+4).toFixed(1)+'" text-anchor="middle" font-family="Spectral,serif" font-size="11" fill="#6E766F">'+o[1]+'</text>';});
+  s+='<text x="150" y="145" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="23" fill="#2B3736">14 h</text>';
+  s+='<text x="150" y="163" text-anchor="middle" font-family="Spectral,serif" font-size="11" fill="#566260">pic du jour</text>';
+  var clk=document.getElementById('clock'); clk.innerHTML=s;
+
+  // infobulle au survol : « HH–HH h : N observation(s) »
+  var tip=document.getElementById('ctip'), wrapEl=clk.parentNode, bars=clk.querySelectorAll('.bar');
+  clk.querySelectorAll('.barhit').forEach(function(hit){
+    var h=+hit.getAttribute('data-h'), n=+hit.getAttribute('data-n');
+    function show(e){
+      var r=wrapEl.getBoundingClientRect();
+      tip.textContent=h2(h)+'–'+h2((h+1)%24)+' h : '+n+(n>1?' observations':' observation');
+      tip.style.left=(e.clientX-r.left)+'px';
+      tip.style.top=(e.clientY-r.top)+'px';
+      tip.classList.add('on');
+      if(bars[h]) bars[h].setAttribute('stroke','#3F6764');
+    }
+    function hide(){tip.classList.remove('on'); if(bars[h]) bars[h].setAttribute('stroke','#2B3736');}
+    hit.addEventListener('mouseenter',show);
+    hit.addEventListener('mousemove',show);
+    hit.addEventListener('mouseleave',hide);
+  });
+
+  // pic de luminosité révélé au survol du point
+  var ltip=document.getElementById('luxtip');
+  document.querySelectorAll('.lmark').forEach(function(m){
+    m.addEventListener('mouseenter',function(){
+      ltip.textContent=m.getAttribute('data-t')+' — '+m.getAttribute('data-lux');
+      ltip.style.left=m.style.left; ltip.classList.add('on');
+    });
+    m.addEventListener('mouseleave',function(){ltip.classList.remove('on');});
+  });
+
+  // bouton « Écouter » : révèle le lecteur audio de la détection (src câblé au build)
+  var lb=document.getElementById('listenBtn'), oa=document.getElementById('obsAudio');
+  if(lb&&oa){lb.addEventListener('click',function(){
+    var show=oa.hidden; oa.hidden=!show;
+    lb.setAttribute('aria-expanded', show?'true':'false');
+  });}
+})();
+</script>
+</body>
+</html>
