@@ -46,6 +46,20 @@ export interface BirdDetectionGroup {
   count: number;
   max_confidence: number;
   example_media_url: string | null;
+  photo_url: string | null;
+  photo_square_url: string | null;
+  attribution: string | null;
+  attribution_name: string | null;
+  license_code: string | null;
+}
+
+export interface SpeciesPhotoCredit {
+  taxon_scientific: string;
+  taxon_common: string | null;
+  attribution: string;
+  attribution_name: string | null;
+  license_code: string;
+  photo_url: string;
 }
 
 export interface SkyEventRow {
@@ -137,16 +151,59 @@ export async function topBirdsFor(date: string, limit = 8): Promise<BirdDetectio
         where source = 'birdweather' and kind = 'bird_audio'
           and taxon_scientific is not null
           and (observed_at at time zone 'America/Toronto')::date = ${date}::date
+      ),
+      grouped as (
+        select taxon_common,
+               taxon_scientific,
+               count(*)::int as count,
+               max(confidence)::float8 as max_confidence,
+               (array_agg(media_url) filter (where media_url is not null))[1] as example_media_url
+        from day_obs
+        group by taxon_common, taxon_scientific
       )
-      select taxon_common,
-             taxon_scientific,
-             count(*)::int as count,
-             max(confidence)::float8 as max_confidence,
-             (array_agg(media_url) filter (where media_url is not null))[1] as example_media_url
-      from day_obs
-      group by taxon_common, taxon_scientific
-      order by max(confidence) desc nulls last, count(*) desc
+      select g.taxon_common, g.taxon_scientific, g.count, g.max_confidence, g.example_media_url,
+             p.photo_url, p.photo_square_url, p.attribution, p.attribution_name, p.license_code
+      from grouped g
+      left join ref_species_photos p
+        on p.taxon_scientific = g.taxon_scientific and p.status = 'ok'
+      order by g.max_confidence desc nulls last, g.count desc
       limit ${limit}
+    `;
+    return [...rows];
+  }, []);
+}
+
+export async function speciesPhoto(sciName: string): Promise<SpeciesPhotoCredit | null> {
+  return safe(async () => {
+    const sql = getSql();
+    const rows = await sql<SpeciesPhotoCredit[]>`
+      select p.taxon_scientific,
+             (select max(taxon_common) from observations o
+              where o.taxon_scientific = p.taxon_scientific) as taxon_common,
+             p.attribution, p.attribution_name, p.license_code, p.photo_url
+      from ref_species_photos p
+      where p.taxon_scientific = ${sciName} and p.status = 'ok'
+    `;
+    return rows[0] ?? null;
+  }, null);
+}
+
+/** Tous les crédits photo nécessaires pour une édition donnée (oiseaux du jour). */
+export async function creditsForDate(date: string): Promise<SpeciesPhotoCredit[]> {
+  return safe<SpeciesPhotoCredit[]>(async () => {
+    const sql = getSql();
+    const rows = await sql<SpeciesPhotoCredit[]>`
+      select distinct
+        o.taxon_scientific,
+        max(o.taxon_common) as taxon_common,
+        p.attribution, p.attribution_name, p.license_code, p.photo_url
+      from observations o
+      join ref_species_photos p
+        on p.taxon_scientific = o.taxon_scientific and p.status = 'ok'
+      where o.source = 'birdweather' and o.kind = 'bird_audio'
+        and (o.observed_at at time zone 'America/Toronto')::date = ${date}::date
+      group by o.taxon_scientific, p.attribution, p.attribution_name, p.license_code, p.photo_url
+      order by max(o.taxon_common) nulls last
     `;
     return [...rows];
   }, []);

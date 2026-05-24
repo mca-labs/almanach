@@ -1,0 +1,116 @@
+---
+import Base from '@/layouts/Base.astro';
+import { creditsForDate, latestPublished } from '@/lib/queries';
+
+const entry = await latestPublished();
+const credits = entry ? await creditsForDate(entry.entry_date) : [];
+
+function licenseLabel(code: string): string {
+  switch (code.toLowerCase()) {
+    case 'cc0':
+      return 'CC0 (domaine public dédié)';
+    case 'cc-by':
+      return 'CC BY';
+    case 'cc-by-nc':
+      return 'CC BY-NC';
+    case 'pd':
+      return 'Domaine public';
+    default:
+      return code.toUpperCase();
+  }
+}
+
+function licenseUrl(code: string): string | null {
+  switch (code.toLowerCase()) {
+    case 'cc0':
+      return 'https://creativecommons.org/publicdomain/zero/1.0/';
+    case 'cc-by':
+      return 'https://creativecommons.org/licenses/by/4.0/';
+    case 'cc-by-nc':
+      return 'https://creativecommons.org/licenses/by-nc/4.0/';
+    case 'pd':
+      return null;
+    default:
+      return null;
+  }
+}
+---
+
+<Base title="Almanach du Val des Loups — crédits photo" active="a-propos">
+  <header class="mast">
+    <div class="kicker">
+      <span>Crédits photo</span>
+      {entry && <span>édition du {entry.entry_date}</span>}
+    </div>
+    <div class="titleline">
+      <h1 class="title"><em>Crédits</em> photo</h1>
+    </div>
+    <p class="condition">
+      Toutes les images de référence sont issues d'iNaturalist, depuis le
+      bucket de données ouvertes. Aucune photo n'est ré-hébergée : l'almanach
+      affiche le lien vers la source.
+    </p>
+  </header>
+
+  <section class="blk">
+    {credits.length === 0 ? (
+      <p>Aucune photo créditée pour l'instant.</p>
+    ) : (
+      <ul style="list-style:none;padding:0;margin:0;font-family:var(--serif);font-size:16px;line-height:1.55;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px">
+        {credits.map((c) => (
+          <li style="display:flex;gap:14px;align-items:flex-start">
+            <img
+              src={c.photo_url}
+              alt={`Photo : ${c.taxon_common ?? c.taxon_scientific}`}
+              loading="lazy"
+              style="width:64px;height:64px;object-fit:cover;border-radius:4px;border:1px solid var(--rule-soft);flex:none"
+            />
+            <div>
+              <div style="font-family:var(--display);font-size:17px;line-height:1.2">
+                {c.taxon_common ?? c.taxon_scientific}
+              </div>
+              {c.taxon_common && (
+                <div style="font-style:italic;color:var(--ink-3);font-size:14px">{c.taxon_scientific}</div>
+              )}
+              <div style="font-size:13px;color:var(--ink-2);margin-top:6px">
+                {c.attribution_name && <span>{c.attribution_name} · </span>}
+                {licenseUrl(c.license_code) ? (
+                  <a href={licenseUrl(c.license_code)!} target="_blank" rel="noopener">
+                    {licenseLabel(c.license_code)}
+                  </a>
+                ) : (
+                  <span>{licenseLabel(c.license_code)}</span>
+                )}
+                {' · '}
+                <a href="https://www.inaturalist.org" target="_blank" rel="noopener">iNaturalist</a>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  <section class="blk">
+    <div class="rubric mini"><h2>Conditions d'usage</h2><span class="line"></span></div>
+    <p>
+      Les licences <strong>CC BY</strong> et <strong>CC BY-NC</strong> exigent
+      le crédit du photographe ; il est porté ci-dessus.
+      <strong>CC BY-NC</strong> interdit en outre l'usage commercial. L'Almanach
+      du Val des Loups est un projet personnel non commercial — cela reste
+      vrai aussi longtemps que le site ne sera pas monétisé.
+    </p>
+    <p>
+      Le code public ne ré-héberge AUCUNE photo : il référence les URL du
+      bucket open data d'iNaturalist (<a href="https://inaturalist-open-data.s3.amazonaws.com">inaturalist-open-data.s3.amazonaws.com</a>) et stocke les
+      métadonnées de licence en local pour éviter d'épuiser l'API source.
+    </p>
+  </section>
+
+  <footer>
+    <div class="row">
+      <a href="/">← retour à l'almanach</a>
+      <a href="/a-propos">à propos →</a>
+    </div>
+  </footer>
+</Base>
