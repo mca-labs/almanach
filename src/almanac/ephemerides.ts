@@ -2,14 +2,9 @@
 // Aucune donnée inventée : tout est calculé depuis les coordonnées de
 // l'observateur (cf. règles §8 et §9.3 du spec).
 
-import {
-  Body,
-  Illumination,
-  MoonPhase,
-  SearchAltitude,
-  SearchRiseSet,
-  type AstroTime,
-} from 'astronomy-engine';
+import * as Astronomy from 'astronomy-engine';
+type AstroTime = Astronomy.AstroTime;
+const { Body, Illumination, MoonPhase, SearchAltitude, SearchRiseSet } = Astronomy;
 
 import { OBSERVER } from './observer.js';
 import type { SkyEventDraft } from './types.js';

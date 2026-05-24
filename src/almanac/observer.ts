@@ -1,4 +1,5 @@
-import { Observer } from 'astronomy-engine';
+import * as Astronomy from 'astronomy-engine';
+const { Observer } = Astronomy;
 
 function num(name: string, fallback: number): number {
   const raw = process.env[name];
