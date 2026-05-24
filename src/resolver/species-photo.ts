@@ -1,20 +1,36 @@
 // Résolveur d'image de référence par espèce.
 //
-// Patron : appel local-first (cache Postgres), fallback iNat (open data),
-// retour structuré { photo_url, attribution, license_code, … }. JAMAIS de
-// téléchargement du fichier ; on stocke uniquement URL + métadonnées de
-// licence — cohérent avec « identifier puis jeter » (§4 du spec).
+// Patron : cache read-through systématique sur Postgres. iNat n'est touché
+// QUE sur miss ou expiration. JAMAIS de téléchargement du fichier ; on
+// stocke uniquement URL + métadonnées de licence — cohérent avec
+// « identifier puis jeter » (§4 du spec).
 //
 // LICENCES ACCEPTÉES : cc0, cc-by, cc-by-nc, pd. Toute autre valeur (« c »,
 // « no-license », autre) → marqué `status='no_open_photo'` et rejeté.
 //
 // ⚠️ CC-BY-NC interdit l'usage commercial. Le projet est perso/open source,
 // donc OK ici — mais NE PAS monétiser sans renégocier les licences photo.
+//
+// POLITIQUE DE CACHE (trois garde-fous, non négociables) :
+//   A. TTL succès = 21 j. Sur une plateforme communautaire, une photo
+//      peut changer de licence, être retirée ou voir son default_photo
+//      remplacé. 21 j = milieu de la fourchette 2-4 sem, rattrape ces
+//      changements dans le mois sans bombarder iNat.
+//   B. TTL négatif = 7 j (pour 'not_found' et 'no_open_photo'). On NE
+//      rappelle PAS iNat chaque nuit pour une espèce qui n'aboutit
+//      jamais ; le front a son repli SVG. On laisse 1 semaine au cas
+//      où un nouveau cliché open soit déposé.
+//   C. 404 → invalidation. Si l'URL S3 cachée renvoie 404 (image
+//      supprimée), on invalide l'entrée et on re-résout. Une erreur
+//      réseau (timeout, DNS, etc.) N'invalide PAS : on continue à
+//      servir, pour éviter des invalidations parasites.
 
 import { sql } from '../db/client.js';
 import { searchTaxonByScientificName, type InatPhoto } from './inat-client.js';
 
-const TTL_DAYS = 30;
+const TTL_OK_DAYS = 21;
+const TTL_NEGATIVE_DAYS = 7;
+const HEAD_TIMEOUT_MS = 5000;
 const ACCEPTED_LICENSES = new Set(['cc0', 'cc-by', 'cc-by-nc', 'pd']);
 
 export interface SpeciesPhoto {
@@ -58,15 +74,42 @@ function rowToPhoto(row: CachedRow): SpeciesPhoto | null {
 }
 
 async function getCached(sciName: string): Promise<CachedRow | null> {
+  // TTL conditionnel au statut : 21 j pour les succès, 7 j pour les négatifs.
   const rows = await sql<CachedRow[]>`
     select taxon_scientific, taxon_inat_id, photo_url, photo_square_url,
            attribution, attribution_name, license_code, status,
            resolved_at::text
     from ref_species_photos
     where taxon_scientific = ${sciName}
-      and resolved_at > now() - (${TTL_DAYS} || ' days')::interval
+      and resolved_at > now() - (
+        case status
+          when 'ok' then ${TTL_OK_DAYS}
+          else ${TTL_NEGATIVE_DAYS}
+        end || ' days'
+      )::interval
   `;
   return rows[0] ?? null;
+}
+
+async function invalidate(sciName: string): Promise<void> {
+  await sql`delete from ref_species_photos where taxon_scientific = ${sciName}`;
+}
+
+/** HEAD vérifie qu'une URL S3 est toujours servie. 404 → image supprimée.
+ *  Erreur réseau ou timeout → ON NE TRANCHE PAS (renvoie true), pour
+ *  éviter d'invalider sur un blip transitoire. */
+async function photoStillLive(url: string): Promise<boolean> {
+  const ctl = new AbortController();
+  const timeout = setTimeout(() => ctl.abort(), HEAD_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, { method: 'HEAD', signal: ctl.signal });
+    if (res.status === 404) return false;
+    return true; // tout autre code (200, 403, 5xx, timeout via catch) → on ne touche pas
+  } catch {
+    return true;
+  } finally {
+    clearTimeout(timeout);
+  }
 }
 
 async function upsert(row: Omit<CachedRow, 'resolved_at'>): Promise<void> {
@@ -92,11 +135,22 @@ async function upsert(row: Omit<CachedRow, 'resolved_at'>): Promise<void> {
 }
 
 export async function resolveSpeciesPhoto(sciName: string): Promise<SpeciesPhoto | null> {
-  // 1. Cache frais ?
+  // 1. Cache (TTL conditionnel : 21 j pour 'ok', 7 j pour les négatifs).
   const cached = await getCached(sciName);
-  if (cached) return rowToPhoto(cached);
+  if (cached) {
+    if (cached.status !== 'ok' || !cached.photo_url) {
+      // Cache négatif valide → on ne rappelle PAS iNat. Repli SVG côté front.
+      return null;
+    }
+    // Cache positif : on vérifie que l'URL S3 est toujours servie.
+    const live = await photoStillLive(cached.photo_url);
+    if (live) return rowToPhoto(cached);
+    console.log(`species-photo: 404 sur ${sciName} → invalidation, re-résolution`);
+    await invalidate(sciName);
+    // tombe dans la branche iNat ci-dessous
+  }
 
-  // 2. Cherche dans iNat
+  // 2. Miss ou invalidation : appel iNat (UNE seule fois par sciName).
   let taxon;
   try {
     taxon = await searchTaxonByScientificName(sciName);
