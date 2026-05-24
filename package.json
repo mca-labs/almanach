@@ -1,0 +1,39 @@
+{
+  "name": "almanach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Almanach du Val des Loups — observatoire nature d'un seul lieu, édition quotidienne figée.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "ingest": "tsx src/cli.ts ingest",
+    "almanac": "tsx src/cli.ts almanac",
+    "synthesize": "tsx src/cli.ts synthesize",
+    "publish": "tsx src/cli.ts publish",
+    "daily": "tsx src/cli.ts daily",
+    "migrate": "tsx src/db/migrate.ts",
+    "seed:quotes": "tsx scripts/seed-quotes.ts",
+    "seed:breeding": "tsx scripts/seed-breeding.ts",
+    "site:dev": "astro dev --root site",
+    "site:build": "astro build --root site",
+    "site:preview": "astro preview --root site",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "astro": "^5.0.0",
+    "astronomy-engine": "^2.1.19",
+    "dotenv": "^16.4.5",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
