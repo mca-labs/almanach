@@ -30,6 +30,7 @@ _(rien en cours — la mise en ligne du 25 mai 2026 est complète)_
 - **« Rare au secteur »** dans Premières de la saison — exige une baseline régionale via API eBird. Hors API gratuite simple, reporté.
 - **Titres `null` fréquents** — avec les contraintes de format renforcées, Claude est devenu conservateur et omet souvent le titre. La page tombe sur le fallback "Almanach du Val-des-Loups". À assouplir au prompt si on veut un titre par jour.
 - **Protection contre écrasement** d'éditions existantes dans `daily.ts` — si `data/editions/YYYY-MM-DD.json` existe déjà, skip sauf `--force`. Aujourd'hui un `workflow_dispatch` sans `date` régénère l'édition d'hier et écrase le texte (Claude non-déterministe).
+- **Version anglaise** du site.
 - **Newsletter / RSS** — éventuel flux pour qui veut être notifié des nouvelles éditions.
 - **Pages saisonnières** — vue par saison ou par mois dans les archives quand le corpus grossira.
 
