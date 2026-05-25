@@ -5,132 +5,145 @@ Saint-Placide-de-Charlevoix, sur la rivière du Bras Nord-Ouest — qui agrège
 des capteurs autour de la propriété et publie chaque nuit une **édition figée**
 décrivant la veille.
 
-C'est un almanach avec une direction éditoriale axée sur la lisibilité, la clarté et la simplicité et non un tableau de bord : chaque jour, on choisit *une* chose à
-signaler, on la met en page avec retenue, et on laisse la densité vivre derrière un lien discret.
+En ligne : <https://valdesloups.com>
+
+C'est un almanach avec une direction éditoriale axée sur la lisibilité, la
+clarté et la simplicité, et non un tableau de bord : chaque jour, on choisit
+*une* chose à signaler, on la met en page avec retenue, et on laisse la
+densité vivre derrière un lien discret.
 
 Projet personnel, open source (MIT).
 
 ## Architecture
 
-- **Runtime** : Node + TypeScript.
-- **BD** : Postgres (Railway en prod).
-- **Site** : Astro, lecture de Postgres, régénération nocturne.
+Le repo GitHub **est** l'état persistant — pas de base de données. Chaque nuit,
+un workflow GitHub Actions exécute le script de génération, écrit le JSON du
+jour dans `data/`, commit et push. Netlify détecte le push et rebuild le site
+statique. Toute la chaîne est versionnée et inspectable dans `git log`.
+
+```
+GitHub Actions cron (5 5 * * * UTC, ≈ 01:05 EDT)
+        ↓ npm run daily (tsx src/cli.ts)
+        ↓ écrit data/{weather,birds,sky,editions}/YYYY-MM-DD.json
+        ↓ + data/inat-photos.json (cache iNat)
+        ↓ git commit + git push
+GitHub push main → Netlify rebuild auto (Astro static)
+        ↓ npm run site:build → publish site/dist
+Netlify CDN sert valdesloups.com (HTTPS Let's Encrypt)
+```
+
+- **Runtime du cron** : Node 24 + TypeScript (via `tsx`).
+- **Site** : Astro `output: 'static'`, lecture directe des JSON sous `data/`
+  au moment du build.
 - **Synthèse** : API Anthropic (Claude). La voix est dans
   [`prompts/editorial-voice.md`](prompts/editorial-voice.md), modifiable à chaud.
-- **Cron** : Railway natif, `1 5 * * *` UTC (= 00:01 EST / 01:01 EDT) — toujours
-  post-minuit local, l'édition décrit la veille.
+- **Hosting** : Netlify (site statique).
+- **DNS** : Namecheap (apex `valdesloups.com`, www en redirect vers apex).
+
+## Structure du code
 
 ```
 src/
-├── ingest/          # tempest, birdweather + stubs des sources futures
-├── almanac/         # éphémérides (astronomy-engine), aurores, ISS, météores
-├── synthesize/      # appel Claude + sélection du fragment dans ref_quotes
-└── orchestrator/    # le runner quotidien
+├── cli.ts                # entrypoint : node --import tsx src/cli.ts [--date YYYY-MM-DD]
+├── daily.ts              # orchestrateur 5 étapes
+├── almanac.ts            # astronomy-engine + NOAA + IMO + Open-Meteo
+├── synthesize.ts         # appel Claude, charge editorial-voice.md
+├── sources/
+│   ├── tempest.ts        # météo (agrégat journalier, horaire, norm historique)
+│   ├── birdweather.ts    # détections d'oiseaux (GraphQL)
+│   └── inat.ts           # photos d'espèces (cache TTL)
+└── util/{date,json}.ts
 
-site/                # Astro — une / archives / a-propos / donnees
-migrations/          # SQL versionné, sans ORM
-scripts/             # seeds (ref_quotes, ref_breeding_calendar)
-docs/                # spec.md (source de vérité), handoff.md, mockups/
-prompts/             # editorial-voice.md (asset runtime)
+scripts/
+└── backfill-tempest.ts   # one-shot remontée historique Tempest
+
+site/
+├── astro.config.mjs
+└── src/
+    ├── lib/data.ts                       # lit les JSON, queries typées au build
+    ├── layouts/Base.astro
+    ├── components/TopBar.astro
+    ├── pages/{index,a-propos,credits,donnees}.astro
+    ├── pages/archives/index.astro        # page unique listant tous les billets
+    └── styles/globals.css
+
+data/                     # le repo EST l'état
+├── weather/YYYY-MM-DD.json    # Tempest, backfill depuis 2021-09-01
+├── birds/YYYY-MM-DD.json      # BirdWeather
+├── sky/YYYY-MM-DD.json        # éphémérides (astro + atmo)
+├── editions/YYYY-MM-DD.json   # billet éditorial de Claude
+├── inat-photos.json           # cache iNaturalist
+├── quotes.json                # 13 citations statiques (Thoreau, Muir, etc.)
+└── breeding.json              # 246 espèces Atlas QC
+
+prompts/editorial-voice.md     # voix de Claude (asset runtime)
+.github/workflows/daily.yml    # cron quotidien
+netlify.toml                   # build statique
 ```
 
 ## Sources
 
-- **Tempest** station `41129` — météo, foudre, rayonnement solaire ; historique
-  continu depuis septembre 2021 (~4,7 ans, repère et non normale climatique).
+- **Tempest** station `41129` — météo, foudre, rayonnement solaire ;
+  historique continu depuis septembre 2021 (~4,7 ans, repère et non normale
+  climatique).
 - **BirdWeather** station `6670` — détections d'oiseaux + soundscapes FLAC
   publics ; API GraphQL accessible sans jeton.
-- **astronomy-engine** (local) — éphémérides, phase lunaire, planètes.
+- **iNaturalist** API v2 — photos d'espèces (cc-by / cc-by-nc / pd) avec nom
+  français, cache TTL.
+- **astronomy-engine** (lib npm, local) — éphémérides, phase lunaire,
+  planètes.
 - **NOAA SWPC** — aurores (Kp).
-- **Open-Meteo** — couverture nuageuse uniquement.
+- **IMO** — pluies d'étoiles (calendrier statique).
+- **Open-Meteo** — couverture nuageuse uniquement (pas de clé).
 
 ## Règles non négociables
 
 1. **Verbatim de la source ou rien.** Aucune mesure ou espèce inventée.
-2. **Citations** : uniquement depuis `ref_quotes`, jamais reconstituées de
-   mémoire.
+2. **Citations** : uniquement depuis `data/quotes.json`, jamais reconstituées
+   de mémoire.
 3. **Sous le seuil de confiance** : marquer « à confirmer », jamais affirmer.
 4. **Ciel** : calculé, jamais deviné.
 
-Voir [`docs/spec.md`](docs/spec.md) pour le détail.
-
-## Démarrage
+## Démarrage local
 
 ```bash
-cp .env.example .env       # renseigner WEATHERFLOW_TOKEN, ANTHROPIC_API_KEY, DATABASE_URL
+cp .env.example .env       # renseigner WEATHERFLOW_TOKEN, ANTHROPIC_API_KEY, etc.
 npm install
-npm run migrate            # crée le schéma
-npm run seed:quotes        # seed initial des citations
-npm run daily              # ingest + almanac + synthesize + publish
+npm run daily              # génère l'édition d'hier dans data/
+npm run site:dev           # lance le site Astro sur http://localhost:4321
 ```
 
-Pendant le dev, le site Astro :
+Pour générer une date précise (en local ou via le workflow) :
 
 ```bash
-npm run site:dev
+npm run daily -- --date 2026-05-20
 ```
 
-## Déploiement Railway
+> ⚠️ Sur Node ≥ 24 le script tourne tel quel. Sur Node 20 + `tsx`, l'interop
+> ESM↔CJS de `astronomy-engine` casse (`Observer is not a constructor`) — le
+> workflow GitHub utilise donc Node 24 explicitement.
 
-Le service de génération nocturne est configuré par
-[`railway.json`](railway.json) (config-as-code) : builder Nixpacks,
-`startCommand = "npm run migrate && npm run daily"`,
-`cronSchedule = "1 5 * * *"`, retry × 1 sur échec. Le site Astro
-(quand il sera ajouté) vivra dans un second service avec son propre
-`site/railway.json`.
+> ⚠️ Ne pas utiliser `node --env-file=.env` : tronque silencieusement les
+> valeurs longues (clé Anthropic). Utiliser `set -a && source .env && set +a`
+> ou laisser le workflow injecter via `env:`.
 
-### Cron et changement d'heure
+## Cron et changement d'heure
 
-Le cron Railway s'évalue en **UTC fixe**. `1 5 * * *` UTC correspond à :
+Le workflow GitHub Actions s'évalue en **UTC fixe**. `5 5 * * *` UTC
+correspond à :
 
-- **00 h 01 EST** (hiver, UTC−5) — heure cible
-- **01 h 01 EDT** (été, UTC−4) — un peu plus tard, toujours **après
-  minuit local**
+- **00 h 05 EST** (hiver, UTC−5)
+- **01 h 05 EDT** (été, UTC−4)
 
-Le code n'assume rien de l'offset : à chaque tick, `src/orchestrator/daily.ts`
-recalcule la date locale `America/Toronto` et choisit `entryDate = veille`
-et `skyDate = ce soir`. La même config marche donc toute l'année, et un
-décalage occasionnel de quelques minutes lors d'une transition DST ne
-change rien à la sémantique.
+— toujours post-minuit local. À chaque tick, `src/daily.ts` recalcule la
+date locale `America/Toronto` et choisit `entryDate = veille` et
+`skyDate = ce soir`. La même config marche toute l'année.
 
-### Mise en route Railway (one-time, manuel)
+## Déclenchement manuel
 
-`railway.json` ne couvre que les sections build + deploy d'un service.
-Le reste se fait au dashboard, une fois par projet :
-
-1. **Créer le projet** sur Railway et le lier au repo GitHub
-   `mca-labs/almanach` (branche `main`).
-2. **Ajouter Postgres** (« + New » → Database → PostgreSQL, ou `railway add`).
-3. **Brancher `DATABASE_URL`** sur le service de génération via une
-   *reference variable* (`${{Postgres.DATABASE_URL}}`).
-4. **Saisir les secrets et variables** dans Settings → Variables (jamais
-   dans `railway.json`) : `WEATHERFLOW_TOKEN`, `ANTHROPIC_API_KEY`,
-   `SITE_DEPLOY_HOOK_URL` (optionnel), plus les non-secrets si on veut
-   surcharger les valeurs de [`.env.example`](.env.example).
-5. **Vérifier le cron** dans Settings → Cron Schedule : confirmer que
-   `1 5 * * *` est bien actif.
-6. **Bootstrap** : Lancer une première génération manuelle depuis le
-   dashboard (« Deploy ») ou en CLI Railway (`railway run npm run daily`)
-   pour amorcer la BD. Le backfill historique Tempest se lance à part :
-   `railway run npm run backfill:tempest` (≈ 5-10 min, idempotent).
-
-### ⚠️ Bug connu — cron en config-as-code (déc. 2025)
-
-Un bug a été observé où le `cronSchedule` défini dans `railway.json`
-restait bloqué et ne déclenchait pas. **Si la génération nocturne ne
-tourne pas après une journée**, contournement : régler le schedule
-directement dans Settings → Cron Schedule du dashboard, et garder ça
-jusqu'à confirmation que le bug est corrigé.
-
-### Pourquoi la sortie propre du process est critique
-
-Le job tourne en mode cron : Railway lance `startCommand`, attend qu'il
-sorte, puis ferme tout. Si le process ne sort pas (handle ouvert, socket
-en keepalive, promesse non awaited), Railway considère le run encore en
-cours et **saute la run suivante silencieusement**. Tous les entrypoints
-(`src/cli.ts`, `src/db/migrate.ts`, `scripts/backfill-tempest.ts`)
-ferment explicitement le pool Postgres et appellent `process.exit(0)`.
-À conserver lors de tout futur ajout.
+Sur GitHub : Actions → *daily edition* → **Run workflow**. Champ `date`
+optionnel pour réécrire une date précise (attention, Claude est
+non-déterministe — relancer une date existante régénère le texte).
 
 ## Licence
 
