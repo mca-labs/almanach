@@ -231,7 +231,7 @@
     color:var(--ink-3);margin-top:12px}
 
   /* entrées d'archive */
-  .entry{padding:34px 0;border-bottom:1px solid var(--rule)}
+  .entry{padding:34px 0}
   .entry .when{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
   .entry .when .d{font-family:var(--display);font-size:20px;color:var(--ink)}
   .entry .when .dl{font-family:var(--sans);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent)}
