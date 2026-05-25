@@ -18,6 +18,7 @@ _(rien en cours — la mise en ligne du 25 mai 2026 est complète)_
 ## Bientôt
 
 - **Caractérisation du milieu** — ajouter une sous-section dans « Le lieu » de la page À propos : région écologique, sous-domaine bioclimatique, type de peuplement forestier, etc.
+- **Optimisation de la balise `<title>`** — utiliser « Almanach environnemental de Val-des-Loups, pont couvert de Saint-Placide-de-Charlevoix. »
 - **Passe Impeccable** — invoquer `/teach-impeccable` pour générer `.impeccable.md`, puis `/critique` et `/audit` sur le code traité comme contenu. Pass 2 du workflow documenté dans `session-handoff`.
 - **Direction du vent en texte** (« O », « NO », « SSO »…) — dériver de `wind_direction_deg` moyen dans `WeatherDaily`. Affichage dans la carte Vent de la section Météo.
 
