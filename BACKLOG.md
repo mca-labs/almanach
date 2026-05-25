@@ -3,6 +3,8 @@
 Source de vérité pour ce qui est en cours, à venir, et reporté.
 Format léger : trois sections, items courts, contexte minimal. Quand un item passe à « Fait », le retirer (le commit history et le `CHANGELOG` éventuel font l'archive).
 
+> **Règle de collaboration** : Michael édite ce fichier. Claude le lit en début de session pour proposer la suite, mais n'ajoute rien sans demander d'abord. Pour capturer une idée de passage, Claude la propose à voix haute ; Michael décide si elle entre.
+
 ---
 
 ## Maintenant
