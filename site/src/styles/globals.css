@@ -58,12 +58,11 @@
 
   /* section + almanac-style rubric (no roman numerals) */
   section.blk{padding:34px 0}
-  /* Ornement (feuille teal) entre sections successives, en remplacement des séparateurs */
+  /* Ornement (fleur ✻ teal, comme dans le topbar) entre sections successives */
   section.blk + section.blk::before,
   .entry + .entry::before{
-    content:'';display:block;width:16px;height:16px;margin:0 auto 28px;
-    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%233F6764' d='M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z'/><path fill='none' stroke='%23FBF7F0' stroke-width='1.4' stroke-linecap='round' d='M6.5 17.5C10 14 13.5 10.5 17 7'/></svg>") no-repeat center/contain
-  }
+    content:'\2747';display:block;text-align:center;color:var(--accent);
+    font-size:20px;line-height:1;margin:0 auto 28px}
   .rubric{display:flex;align-items:center;gap:11px;margin:0 0 18px}
   .rubric .orn{flex:none;color:var(--accent);display:block}
   .rubric h2{font-family:var(--display);font-style:italic;font-weight:400;font-size:21px;
