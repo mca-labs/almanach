@@ -94,8 +94,8 @@ const moonDetail = (moon?.detail ?? {}) as { illumination_fraction?: number; set
 const notablePlanets = (sky?.events ?? []).filter((e) => e.category === 'planet' && e.notable);
 
 const dateLine = date ? frenchDateLine(date) : null;
-const titleLong = entry?.title ?? 'Almanach du Val des Loups';
-const pageTitle = entry ? `${titleLong} — édition du ${date}` : 'Almanach du Val des Loups';
+const titleLong = entry?.title ?? 'Almanach du Val-des-Loups';
+const pageTitle = entry ? `${titleLong} — édition du ${date}` : 'Almanach du Val-des-Loups';
 const body = paragraphs(entry?.body_md ?? null);
 
 const birdName = birdPhoto?.name_fr ?? birdPhoto?.taxon_common ?? birdPhoto?.taxon_scientific ?? '—';
@@ -392,7 +392,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
 
       <footer class="rv" style="animation-delay:.58s">
         <div class="row">
-          <span>Almanach du Val des Loups · pont couvert de Saint-Placide-de-Charlevoix · projet open source par <a href="https://www.michaelcarpentier.com/" target="_blank" rel="noopener">Michael Carpentier</a></span>
+          <span>Almanach du Val-des-Loups · pont couvert de Saint-Placide-de-Charlevoix · projet open source par <a href="https://www.michaelcarpentier.com/" target="_blank" rel="noopener">Michael Carpentier</a></span>
         </div>
         <div class="row" style="border:0;padding-top:8px">
           <span>Sources : <a href="https://tempestwx.com/station/41129/">Tempest</a> · <a href="https://app.birdweather.com/stations/6670">BirdWeather</a> · NOAA SWPC · billet généré par Claude selon données d'observations réelles</span>
