@@ -149,6 +149,10 @@
   .sun{margin-top:16px;font-family:var(--sans);font-size:13px;color:var(--ink-2);
     display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 22px}
   .sun .seg{display:inline-flex;align-items:center;gap:7px}
+  .vizt{font-family:var(--sans);font-size:14px;color:var(--ink-2);
+    margin:0 0 18px;text-align:center}
+  .vizt b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+  .vizt .dot{margin:0 9px;color:var(--ink-3)}
   .sun .ico{color:var(--accent);flex:none}
   .sun b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
 
