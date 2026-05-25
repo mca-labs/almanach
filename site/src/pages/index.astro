@@ -199,9 +199,17 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           <h2>Activités des oiseaux</h2><span class="line"></span>
           <span class="src"><a href="https://app.birdweather.com/stations/6670">BirdWeather</a> · sur 24&nbsp;h</span>
         </div>
-        <p class="vizt">
-          <b>{birds?.unique_species ?? 0}</b> espèces<span class="dot">·</span><b>{(birds?.total_detections ?? 0).toLocaleString('fr-CA')}</b> détections
-        </p>
+        <div class="vizt">
+          <div class="item">
+            <div class="num">{birds?.unique_species ?? 0}</div>
+            <div class="lbl">espèces</div>
+          </div>
+          <div class="sep" aria-hidden="true"></div>
+          <div class="item">
+            <div class="num">{(birds?.total_detections ?? 0).toLocaleString('fr-CA')}</div>
+            <div class="lbl">détections</div>
+          </div>
+        </div>
         <div class="plate clockwrap">
           <div class="ctip" id="ctip"></div>
           <svg id="clock" viewBox="-20 -20 340 340" width="100%" style="max-width:330px" role="img" aria-label="Activité des oiseaux par heure en horloge 24h."></svg>
