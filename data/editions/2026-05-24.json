@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-05-24",
+  "generated_at": "2026-05-25T04:11:48.468Z",
+  "title": "La paruline tigrée et le grand écart de température",
+  "summary": "Journée de grand écart — un matin froid à peine au-dessus du gel, un après-midi qui a poussé jusqu'à 21 degrés, et les parulines partout dans les arbres.",
+  "body_md": "Le thermomètre marquait encore 1,3 degré au plus bas de la nuit, puis la journée a basculé d'un coup : à midi, le soleil frappait à plus de 120 000 lux sur le versant, et l'air avait grimpé de presque vingt degrés en quelques heures. Pas un millimètre de pluie, pas d'orage, un vent qui soufflait à peine — les conditions exactes qui gardent les migrateurs au sol et les font chanter. Trente-neuf espèces détectées depuis l'aube, dont le pic d'activité s'est produit avant cinq heures du matin, dans le noir et le froid.\n\nL'oiseau du jour est arrivé en fin d'après-midi : un roitelet à couronne rubis, Corthylio calendula, capté à 18 h 43 dans le sous-bois. C'est une présence discrète, difficile à suivre des yeux, mais la voix est précise — une mécanique à ressort qui monte et retombe sur elle-même. La paruline tigrée, Setophaga tigrina, a dominé le compteur avec 199 détections ; elle passait dans la canopée depuis le milieu de la nuit, indifférente au froid. Ces deux-là ne s'attarderont pas.",
+  "sky_narrative": "La lune gibbeuse croissante, éclairée aux deux tiers, se couchera vers 2 h 11 du matin (heure locale) — ce qui laisse une fenêtre courte en début de nuit avant qu'elle ne descende sous l'horizon. Avec une couverture nuageuse autour de 56 %, le ciel sera partiellement voilé : Vénus et Jupiter resteront repérables dans les trouées, mais la nuit ne se prête pas à l'observation en ciel profond.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "printemps",
+    "parulines",
+    "temperature",
+    "aube"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 1.3,
+      "temp_max_c": 21,
+      "temp_avg_c": 12.6,
+      "rain_mm": 0,
+      "wind_gust_max_ms": 7.3,
+      "solar_rad_avg_wm2": 237.3,
+      "lux_peak": 123592
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "observed_at": "2026-05-24T18:43:11-04:00",
+      "confidence": 0.9991158843040466,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260524-224308.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 67.6,
+      "moon_set": "2026-05-25T06:11:40.654Z",
+      "notable_planets": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 55.8
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux des espèces les plus robustes ou semi-apprivoisées, comme le bruant chanteur et l'oiseau bleu, arrivant généralement en mars, tandis que les oiseaux des bois plus rares et plus éclatants ferment la procession en juin."
+}
