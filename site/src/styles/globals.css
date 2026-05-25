@@ -60,6 +60,7 @@
   section.blk{padding:34px 0;border-bottom:1px solid var(--rule)}
   section.blk:last-of-type{border-bottom:0}
   section.blk:has(.rubric.mini){border-bottom:0}
+  section.blk.flush{border-bottom:0}
   .rubric{display:flex;align-items:center;gap:11px;margin:0 0 18px}
   .rubric .orn{flex:none;color:var(--accent);display:block}
   .rubric h2{font-family:var(--display);font-style:italic;font-weight:400;font-size:21px;
@@ -146,7 +147,7 @@
   .ticks{display:flex;justify-content:space-between;margin-top:13px;font-family:var(--sans);
     font-size:11px;letter-spacing:.03em;color:var(--ink-3)}
   .sun{margin-top:16px;font-family:var(--sans);font-size:13px;color:var(--ink-2);
-    display:flex;flex-wrap:wrap;gap:18px 22px}
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 22px}
   .sun .seg{display:inline-flex;align-items:center;gap:7px}
   .sun .ico{color:var(--accent);flex:none}
   .sun b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}

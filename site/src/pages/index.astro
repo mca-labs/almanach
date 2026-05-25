@@ -153,7 +153,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
 
       {/* OBSERVATION DU JOUR */}
       {birdPhoto && (
-        <section class="blk rv" style="animation-delay:.14s">
+        <section class="blk rv flush" style="animation-delay:.14s">
           <div class="rubric">
             <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
             <h2>Observation du jour</h2><span class="line"></span>
@@ -193,7 +193,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
       )}
 
       {/* ACTIVITÉS DES OISEAUX — horloge 24h */}
-      <section class="blk rv" style="animation-delay:.32s">
+      <section class="blk rv flush" style="animation-delay:.32s">
         <div class="rubric">
           <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
           <h2>Activités des oiseaux</h2><span class="line"></span>
@@ -315,12 +315,12 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               Lever <b>{fmtTimeIso(twDetail.sunrise)}</b>
             </span>
             <span class="seg">
-              <svg class="ico" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18"/><path d="M3 18a9 9 0 0 1 18 0"/><circle cx="12" cy="8" r="2.5"/></svg>
-              durée du jour <b>{dayDuration(twDetail.sunrise ?? null, twDetail.sunset ?? null)}</b>
+              <svg class="ico" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18"/><path d="M6 14a6 6 0 0 1 12 0"/><path d="M12 3v6"/><path d="M9 6l3 3 3-3"/></svg>
+              Coucher <b>{fmtTimeIso(twDetail.sunset)}</b>
             </span>
             <span class="seg">
-              <svg class="ico" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18"/><path d="M6 14a6 6 0 0 1 12 0"/><path d="M12 3v6"/><path d="M9 6l3 3 3-3"/></svg>
-              coucher <b>{fmtTimeIso(twDetail.sunset)}</b>
+              <svg class="ico" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18"/><path d="M3 18a9 9 0 0 1 18 0"/><circle cx="12" cy="8" r="2.5"/></svg>
+              Durée du jour <b>{dayDuration(twDetail.sunrise ?? null, twDetail.sunset ?? null)}</b>
             </span>
           </div>
         </div>
