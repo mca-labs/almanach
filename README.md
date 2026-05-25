@@ -1,4 +1,6 @@
-# Almanach du Val des Loups
+# Almanach du Val-des-Loups
+
+*[English version below](#english-version)*
 
 Un petit observatoire nature de notre maison près du pont couvert de
 Saint-Placide-de-Charlevoix, sur la rivière du Bras Nord-Ouest — qui agrège
@@ -128,3 +130,139 @@ Quand un item du backlog est déployé, il sort du backlog et entre dans le chan
 ## Licence
 
 MIT — voir [`LICENSE`](LICENSE).
+
+---
+
+<a id="english-version"></a>
+
+# Almanach du Val-des-Loups — English version
+
+A small nature observatory based at our home near the covered bridge of
+Saint-Placide-de-Charlevoix, on the Bras Nord-Ouest river — aggregating
+sensors around the property and publishing every night a **frozen daily
+edition** describing the day before.
+
+Live at: <https://valdesloups.com>
+
+This is an almanac with an editorial direction grounded in readability,
+clarity and restraint — not a dashboard. Each day, *one* thing is chosen
+to highlight, laid out with restraint, and density is left to live behind
+discreet links.
+
+Personal project, open source (MIT).
+
+## Architecture
+
+The GitHub repo **is** the persistent state — no database. Every night, a
+GitHub Actions workflow runs the generation script, writes the day's JSON
+to `data/`, commits and pushes. Netlify detects the push and rebuilds the
+static site. The whole chain is versioned and inspectable through `git log`.
+
+```
+GitHub Actions cron (5 5 * * * UTC, ≈ 01:05 EDT)
+        ↓ npm run daily (tsx src/cli.ts)
+        ↓ writes data/{weather,birds,sky,editions}/YYYY-MM-DD.json
+        ↓ + data/inat-photos.json (iNat cache)
+        ↓ git commit + git push
+GitHub push main → Netlify auto-rebuild (Astro static)
+        ↓ npm run site:build → publish site/dist
+Netlify CDN serves valdesloups.com (HTTPS Let's Encrypt)
+```
+
+- **Cron runtime**: Node 24 + TypeScript (via `tsx`).
+- **Site**: Astro `output: 'static'`, reads JSON files under `data/` directly
+  at build time.
+- **Synthesis**: Anthropic (Claude) API. The voice lives in
+  [`prompts/editorial-voice.md`](prompts/editorial-voice.md), hot-editable.
+- **Hosting**: Netlify (static site).
+- **DNS**: Namecheap (apex `valdesloups.com`, www redirects to apex).
+
+## Code structure
+
+```
+src/
+├── cli.ts                # entrypoint: node --import tsx src/cli.ts [--date YYYY-MM-DD]
+├── daily.ts              # 5-step orchestrator
+├── almanac.ts            # astronomy-engine + NOAA + IMO + Open-Meteo
+├── synthesize.ts         # Claude call, loads editorial-voice.md
+├── sources/
+│   ├── tempest.ts        # weather (daily aggregate, hourly, historical norm)
+│   ├── birdweather.ts    # bird detections (GraphQL)
+│   └── inat.ts           # species photos (TTL cache)
+└── util/{date,json}.ts
+
+scripts/
+└── backfill-tempest.ts   # one-shot Tempest historical backfill
+
+site/
+├── astro.config.mjs
+└── src/
+    ├── lib/data.ts                       # reads JSON, typed queries at build
+    ├── layouts/Base.astro
+    ├── components/TopBar.astro
+    ├── pages/{index,a-propos,credits,donnees}.astro
+    ├── pages/archives/index.astro        # single page listing all posts
+    └── styles/globals.css
+
+data/                     # the repo IS the state
+├── weather/YYYY-MM-DD.json    # Tempest, backfilled since 2021-09-01
+├── birds/YYYY-MM-DD.json      # BirdWeather
+├── sky/YYYY-MM-DD.json        # ephemerides (astro + atmo)
+├── editions/YYYY-MM-DD.json   # Claude's editorial post
+├── inat-photos.json           # iNaturalist cache
+├── quotes.json                # 13 static quotations (Thoreau, Muir, etc.)
+└── breeding.json              # 246 species QC Atlas
+
+prompts/editorial-voice.md     # Claude's voice (runtime asset)
+.github/workflows/daily.yml    # daily cron
+netlify.toml                   # static build
+```
+
+## Sources
+
+- **Tempest** station `41129` — weather, lightning, solar radiation;
+  continuous record since September 2021 (~4.7 years, used as a local
+  reference and not a climate normal).
+- **BirdWeather** station `6670` — bird detections + public FLAC
+  soundscapes; GraphQL API, no token required.
+- **iNaturalist** API v2 — species photos (cc-by / cc-by-nc / pd) with
+  French names, TTL cache.
+- **astronomy-engine** (npm lib, local) — ephemerides, lunar phase,
+  planets.
+- **NOAA SWPC** — auroras (Kp).
+- **IMO** — meteor showers (static calendar).
+- **Open-Meteo** — cloud cover only (no key).
+
+## Non-negotiable rules
+
+1. **Verbatim from the source, or nothing.** No measurement or species made up.
+2. **Quotations**: only from `data/quotes.json`, never reconstructed from
+   memory.
+3. **Below the confidence threshold**: mark as "à confirmer", never assert.
+4. **Sky**: computed, never guessed.
+
+## Cron and daylight saving
+
+The GitHub Actions workflow runs in **fixed UTC**. `5 5 * * *` UTC means:
+
+- **00:05 EST** (winter, UTC−5)
+- **01:05 EDT** (summer, UTC−4)
+
+— always past local midnight. On each tick, `src/daily.ts` recomputes the
+local date in `America/Toronto` and picks `entryDate = previous day` and
+`skyDate = tonight`. Same config works year-round.
+
+## Project tracking
+
+Two files at the root document the evolution:
+
+- [`BACKLOG.md`](BACKLOG.md) — what's in progress, coming up, deferred. Source
+  of truth for the roadmap.
+- [`CHANGELOG.md`](CHANGELOG.md) — what's been deployed, by date.
+
+When a backlog item is shipped, it leaves the backlog and enters the
+changelog at the current date.
+
+## License
+
+MIT — see [`LICENSE`](LICENSE).
