@@ -13,6 +13,11 @@ on:
 permissions:
   contents: write
 
+env:
+  # Force les actions JavaScript (checkout, setup-node) sur Node 24 du runner.
+  # Sans ça, warning de dépréciation Node 20 (cosmétique, mais on l'éteint).
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 concurrency:
   group: daily-edition
   cancel-in-progress: false
