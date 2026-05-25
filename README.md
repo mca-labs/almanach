@@ -104,29 +104,6 @@ netlify.toml                   # build statique
 3. **Sous le seuil de confiance** : marquer « à confirmer », jamais affirmer.
 4. **Ciel** : calculé, jamais deviné.
 
-## Démarrage local
-
-```bash
-cp .env.example .env       # renseigner WEATHERFLOW_TOKEN, ANTHROPIC_API_KEY, etc.
-npm install
-npm run daily              # génère l'édition d'hier dans data/
-npm run site:dev           # lance le site Astro sur http://localhost:4321
-```
-
-Pour générer une date précise (en local ou via le workflow) :
-
-```bash
-npm run daily -- --date 2026-05-20
-```
-
-> ⚠️ Sur Node ≥ 24 le script tourne tel quel. Sur Node 20 + `tsx`, l'interop
-> ESM↔CJS de `astronomy-engine` casse (`Observer is not a constructor`) — le
-> workflow GitHub utilise donc Node 24 explicitement.
-
-> ⚠️ Ne pas utiliser `node --env-file=.env` : tronque silencieusement les
-> valeurs longues (clé Anthropic). Utiliser `set -a && source .env && set +a`
-> ou laisser le workflow injecter via `env:`.
-
 ## Cron et changement d'heure
 
 Le workflow GitHub Actions s'évalue en **UTC fixe**. `5 5 * * *` UTC
@@ -138,6 +115,15 @@ correspond à :
 — toujours post-minuit local. À chaque tick, `src/daily.ts` recalcule la
 date locale `America/Toronto` et choisit `entryDate = veille` et
 `skyDate = ce soir`. La même config marche toute l'année.
+
+## Suivi du projet
+
+Deux fichiers à la racine documentent l'évolution :
+
+- [`BACKLOG.md`](BACKLOG.md) — ce qui est en cours, à venir, reporté. Source de vérité pour la roadmap.
+- [`CHANGELOG.md`](CHANGELOG.md) — ce qui a été mis en ligne, par date.
+
+Quand un item du backlog est déployé, il sort du backlog et entre dans le changelog à la date courante.
 
 ## Licence
 
