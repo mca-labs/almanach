@@ -139,12 +139,6 @@ correspond à :
 date locale `America/Toronto` et choisit `entryDate = veille` et
 `skyDate = ce soir`. La même config marche toute l'année.
 
-## Déclenchement manuel
-
-Sur GitHub : Actions → *daily edition* → **Run workflow**. Champ `date`
-optionnel pour réécrire une date précise (attention, Claude est
-non-déterministe — relancer une date existante régénère le texte).
-
 ## Licence
 
 MIT — voir [`LICENSE`](LICENSE).
