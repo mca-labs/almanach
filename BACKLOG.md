@@ -1,9 +1,11 @@
 # Backlog — Almanach du Val-des-Loups
 
 Source de vérité pour ce qui est en cours, à venir, et reporté.
-Format léger : trois sections, items courts, contexte minimal. Quand un item passe à « Fait », le retirer (le commit history et le `CHANGELOG` éventuel font l'archive).
+Format léger : trois sections, items courts, contexte minimal. Quand un item est mis en ligne, il sort d'ici et entre dans [`CHANGELOG.md`](CHANGELOG.md) à la date du jour.
 
 > **Règle de collaboration** : Michael édite ce fichier. Claude le lit en début de session pour proposer la suite, mais n'ajoute rien sans demander d'abord. Pour capturer une idée de passage, Claude la propose à voix haute ; Michael décide si elle entre.
+>
+> Quand un item est mis en ligne pendant une session, Claude peut le retirer d'ici et l'ajouter au `CHANGELOG.md` à la date courante (c'est de la maintenance, pas un ajout).
 
 ---
 
