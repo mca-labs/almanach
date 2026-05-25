@@ -1,71 +1,74 @@
-// One-shot : remonte l'historique Tempest depuis 2021-09 jusqu'à aujourd'hui.
-// Idempotent grâce à unique (source, source_id) — peut être relancé sans risque.
-// Usage : npm run -- tsx scripts/backfill-tempest.ts [--from YYYY-MM-DD]
+// Backfill Tempest : remonte l'historique daily depuis 2021-09-01 → hier,
+// un fichier data/weather/YYYY-MM-DD.json par jour. Idempotent : ignore
+// les jours déjà présents sur disque.
+//
+// Usage : node --env-file=.env --import tsx scripts/backfill-tempest.ts [--from YYYY-MM-DD]
 
-import { sql } from '../src/db/client.js';
-import { fetchObsRange, getOutdoorDeviceId } from '../src/ingest/tempest/client.js';
-import { parseObsArray } from '../src/ingest/tempest/columns.js';
-import { persist } from '../src/ingest/tempest/index.js';
-import type { RawObservation } from '../src/ingest/types.js';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+
+import { fetchDailyAggregate } from '../src/sources/tempest.js';
+import { localDate } from '../src/util/date.js';
+import { writeJson } from '../src/util/json.js';
 
 const DEFAULT_FROM = '2021-09-01';
-const CHUNK_DAYS = 7;
-const CHUNK_SECONDS = CHUNK_DAYS * 24 * 60 * 60;
+const WEATHER_DIR = join(process.cwd(), 'data', 'weather');
+const DELAY_MS = 800; // Tempest accumule du rate-limit ; 800 ms tient sur la durée.
 
-function parseFromArg(): Date {
-  const idx = process.argv.indexOf('--from');
-  const arg = idx >= 0 ? process.argv[idx + 1] : undefined;
-  return new Date(`${arg ?? DEFAULT_FROM}T00:00:00Z`);
+function nextDate(yyyyMmDd: string): string {
+  const d = new Date(`${yyyyMmDd}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 1);
+  return d.toISOString().slice(0, 10);
 }
 
 async function run(): Promise<void> {
-  const deviceId = await getOutdoorDeviceId();
-  const from = parseFromArg();
-  const now = Math.floor(Date.now() / 1000);
+  const fromIdx = process.argv.indexOf('--from');
+  const from = fromIdx >= 0 ? process.argv[fromIdx + 1] : DEFAULT_FROM;
+  const yesterday = localDate(new Date(), -1);
 
-  let start = Math.floor(from.getTime() / 1000);
-  let totalFetched = 0;
-  let totalInserted = 0;
-
-  console.log(`backfill: device=${deviceId} from=${from.toISOString()}`);
-
-  while (start < now) {
-    const end = Math.min(start + CHUNK_SECONDS, now);
-    const obs = await fetchObsRange(deviceId, start, end);
-    const rows: RawObservation[] = [];
-    for (const arr of obs) {
-      const m = parseObsArray(arr);
-      if (m.epoch === null) continue;
-      rows.push({
-        source: 'tempest',
-        source_id: `tempest-${m.epoch}`,
-        kind: 'weather',
-        observed_at: new Date(m.epoch * 1000).toISOString(),
-        measurements: m,
-        raw: arr,
-      });
-    }
-    const inserted = await persist(rows);
-    totalFetched += rows.length;
-    totalInserted += inserted;
-    const day = new Date(start * 1000).toISOString().slice(0, 10);
-    console.log(
-      `  ${day} → +${CHUNK_DAYS}d : fetched=${rows.length} inserted=${inserted}`,
-    );
-    start = end;
+  if (!from) {
+    throw new Error('Invalid --from arg');
   }
 
-  console.log(`backfill: total fetched=${totalFetched} inserted=${totalInserted}`);
+  let cursor = from;
+  let done = 0;
+  let skipped = 0;
+  let failed = 0;
+  const start = Date.now();
+
+  while (cursor <= yesterday) {
+    const path = join(WEATHER_DIR, `${cursor}.json`);
+    if (existsSync(path)) {
+      skipped++;
+    } else {
+      try {
+        const w = await fetchDailyAggregate(cursor);
+        await writeJson(path, w);
+        done++;
+        if (done % 50 === 0) {
+          const elapsed = ((Date.now() - start) / 1000).toFixed(0);
+          console.log(`  ${cursor} → ${done} done, ${skipped} skipped, ${failed} failed (${elapsed}s elapsed)`);
+        }
+      } catch (err) {
+        failed++;
+        console.warn(`  ${cursor} → FAILED:`, (err as Error).message);
+      }
+      // Petite pause anti-spam.
+      await new Promise<void>((r) => setTimeout(r, DELAY_MS));
+    }
+    cursor = nextDate(cursor);
+  }
+
+  const elapsed = ((Date.now() - start) / 1000).toFixed(0);
+  console.log(`✓ backfill done: ${done} fetched, ${skipped} skipped, ${failed} failed in ${elapsed}s`);
 }
 
 (async () => {
   try {
     await run();
-    await sql.end({ timeout: 5 });
     process.exit(0);
   } catch (err) {
     console.error(err);
-    await sql.end({ timeout: 5 }).catch(() => undefined);
     process.exit(1);
   }
 })();

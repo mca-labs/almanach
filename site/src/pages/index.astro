@@ -1,82 +1,115 @@
 ---
 import Base from '@/layouts/Base.astro';
 import {
+  birdOfTheDayWithPhoto,
+  birdsFor,
   latestPublished,
   publishedDates,
   quoteById,
-  skyEventsFor,
-  speciesPhoto,
-  topBirdsFor,
-  totalSpeciesAndDetectionsFor,
+  rareSpeciesForDate,
+  skyForEntry,
+  topBirdsWithPhotos,
   weatherFor,
-} from '@/lib/queries';
+  type SkyEvent,
+} from '@/lib/data';
 
 const entry = await latestPublished();
 const allDates = await publishedDates();
 const previousDate = entry ? allDates.find((d) => d < entry.entry_date) : null;
 
 const date = entry?.entry_date ?? null;
-const [weather, birds, sky, totals] = date
+const [weather, birds, sky, topBirds, birdPhoto, rareSpecies] = date
   ? await Promise.all([
       weatherFor(date),
-      topBirdsFor(date, 8),
-      skyEventsFor(date),
-      totalSpeciesAndDetectionsFor(date),
+      birdsFor(date),
+      skyForEntry(date),
+      topBirdsWithPhotos(date, 8),
+      birdOfTheDayWithPhoto(date),
+      rareSpeciesForDate(date),
     ])
-  : [null, [], [], { species: 0, detections: 0 }];
+  : [null, null, null, [], null, []];
 
-const quoteId = entry?.highlights?.fragment_quote_id ?? null;
+const quoteId = entry?.fragment_quote_id ?? null;
 const quote = quoteId ? await quoteById(quoteId) : null;
 
-const bird = entry?.highlights?.bird_of_the_day ?? null;
-const birdPhoto = bird?.taxon_scientific
-  ? await speciesPhoto(bird.taxon_scientific)
-  : null;
-
-// Mise en forme française des dates pour le bandeau (« Hier, samedi 23 mai »).
+// --- Helpers ---
+const TZ = 'America/Toronto';
 function frenchDateLine(iso: string): { hier: string; ed: string } {
   const d = new Date(`${iso}T12:00:00Z`);
-  const long = new Intl.DateTimeFormat('fr-CA', {
-    timeZone: 'America/Toronto',
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-  }).format(d);
+  const long = new Intl.DateTimeFormat('fr-CA', { timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long' }).format(d);
   const year = d.getUTCFullYear();
   const startOfYear = Date.UTC(year, 0, 1);
   const doy = Math.floor((d.getTime() - startOfYear) / 86400000) + 1;
   return { hier: long, ed: `an ${year} · ${doy}ᵉ jour` };
 }
-
-const dateLine = date ? frenchDateLine(date) : null;
-
-const titleLong = entry?.title ?? 'Almanach du Val des Loups';
-const pageTitle = entry
-  ? `${titleLong} — édition du ${date}`
-  : 'Almanach du Val des Loups';
-
+function frenchSkyDate(iso: string): string {
+  const d = new Date(`${iso}T12:00:00Z`);
+  return new Intl.DateTimeFormat('fr-CA', { timeZone: TZ, day: 'numeric', month: 'long', year: 'numeric' }).format(d);
+}
 function paragraphs(md: string | null): string[] {
   if (!md) return [];
   return md.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 }
+function renderItalics(text: string): { html: string }[] {
+  // Découpe sur les motifs *...* pour rendre les noms latins en italique.
+  const parts = text.split(/(\*[^*\n]+\*)/g);
+  return parts
+    .filter(Boolean)
+    .map((p) =>
+      p.startsWith('*') && p.endsWith('*')
+        ? { html: `<em>${p.slice(1, -1)}</em>` }
+        : { html: p },
+    );
+}
+function fmtTimeIso(iso: string | null | undefined): string {
+  if (!iso) return '—';
+  return new Intl.DateTimeFormat('fr-CA', { timeZone: TZ, hour: '2-digit', minute: '2-digit' }).format(new Date(iso));
+}
+function fmtMm(n: number | null | undefined): string { return n === null || n === undefined ? '—' : `${n.toFixed(1)}`; }
+function fmtKmh(ms: number | null | undefined): string { return ms === null || ms === undefined ? '—' : (ms * 3.6).toFixed(1); }
+function dayDuration(sunrise: string | null, sunset: string | null): string {
+  if (!sunrise || !sunset) return '—';
+  const ms = new Date(sunset).getTime() - new Date(sunrise).getTime();
+  const h = Math.floor(ms / 3600000);
+  const m = Math.floor((ms % 3600000) / 60000);
+  return `${h} h ${String(m).padStart(2, '0')}`;
+}
+/** Convertit un ISO en heure-fraction locale (ex. 04:56 → 4.93). */
+function hourFraction(iso: string | null | undefined): number | null {
+  if (!iso) return null;
+  const fmt = new Intl.DateTimeFormat('en-CA', { timeZone: TZ, hour: '2-digit', minute: '2-digit', hour12: false });
+  const parts = fmt.formatToParts(new Date(iso));
+  const h = Number(parts.find((p) => p.type === 'hour')?.value ?? 0);
+  const m = Number(parts.find((p) => p.type === 'minute')?.value ?? 0);
+  return h + m / 60;
+}
+
+function findEvent(category: SkyEvent['category']): SkyEvent | undefined {
+  return sky?.events.find((e) => e.category === category);
+}
+const twilight = findEvent('twilight');
+const twDetail = (twilight?.detail ?? {}) as { sunrise?: string | null; sunset?: string | null };
+const moon = findEvent('moon');
+const moonDetail = (moon?.detail ?? {}) as { illumination_fraction?: number; set?: string | null };
+const notablePlanets = (sky?.events ?? []).filter((e) => e.category === 'planet' && e.notable);
+
+const dateLine = date ? frenchDateLine(date) : null;
+const titleLong = entry?.title ?? 'Almanach du Val des Loups';
+const pageTitle = entry ? `${titleLong} — édition du ${date}` : 'Almanach du Val des Loups';
 const body = paragraphs(entry?.body_md ?? null);
 
-function fmtTemp(n: number | null | undefined, digits = 1): string {
-  return n === null || n === undefined ? '—' : `${n.toFixed(digits)} °C`;
-}
-function fmtMm(n: number | null | undefined): string {
-  return n === null || n === undefined ? '—' : `${n.toFixed(1)} mm`;
-}
-function fmtWind(ms: number | null | undefined): string {
-  if (ms === null || ms === undefined) return '—';
-  const kmh = ms * 3.6;
-  return `${kmh.toFixed(0)} km/h`;
-}
-function pct(v: number, max: number): number {
-  return Math.max(0, Math.min(100, (v / max) * 100));
-}
-const luxNow = weather?.solar_rad_avg ?? null; // proxy pour la jauge brightness
-const luxPct = luxNow !== null ? pct(luxNow, 1000) : 0; // 1000 W/m² ≈ plein soleil
+const birdName = birdPhoto?.name_fr ?? birdPhoto?.taxon_common ?? birdPhoto?.taxon_scientific ?? '—';
+
+// --- Données pour les SVG (réelles, agrégées server-side) ---
+const TEMP_HOURS: (number | null)[] = weather?.hourly_temps_c ?? new Array(24).fill(null);
+const TEMP_NORM: (number | null)[] = weather?.hourly_norm_c ?? [];
+const BIRD_HOURS: number[] = birds?.hourly_detections ?? new Array(24).fill(0);
+const SUNRISE_H: number = hourFraction(twDetail.sunrise) ?? 5;
+const SUNSET_H: number = hourFraction(twDetail.sunset) ?? 20;
+const LUX_PEAK_HOUR: number | null = weather?.lux_peak?.hour ?? null;
+const LUX_PEAK_VALUE: number | null = weather?.lux_peak?.value_lux ?? null;
+// Mappage lux → pourcentage de jauge : 0 → 0 %, ~55 000 lux (plein soleil voilé) → 100 %.
+const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100, LUX_PEAK_VALUE / 550)) : 0;
 ---
 
 <Base title={pageTitle} active="une">
@@ -86,13 +119,12 @@ const luxPct = luxNow !== null ? pct(luxNow, 1000) : 0; // 1000 W/m² ≈ plein 
         <span>Pont couvert de Saint-Placide-de-Charlevoix</span>
         <span><a href="https://maps.app.goo.gl/im6WzdgPWXcfj9Nx5" target="_blank" rel="noopener">47,4° N · 70,6° O · 377 m</a></span>
       </div>
-      <div class="titleline">
-        <h1 class="title"><em>Aucune</em> édition publiée</h1>
-      </div>
-      <p class="condition">L'almanach attend sa première édition — `npm run daily` une fois la BD prête.</p>
+      <div class="titleline"><h1 class="title"><em>Aucune</em> édition publiée</h1></div>
+      <p class="condition">L'almanach attend sa première édition.</p>
     </header>
   ) : (
     <>
+      {/* EN-TÊTE */}
       <header class="mast rv" style="animation-delay:.02s">
         <div class="kicker">
           <span>Pont couvert de Saint-Placide-de-Charlevoix</span>
@@ -105,22 +137,22 @@ const luxPct = luxNow !== null ? pct(luxNow, 1000) : 0; // 1000 W/m² ≈ plein 
         {entry.summary && <p class="condition">{entry.summary}</p>}
       </header>
 
+      {/* BILLET */}
       <section class="blk rv billet" style="animation-delay:.08s">
         <div class="rubric">
           <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
           <h2>Billet</h2><span class="line"></span>
         </div>
         {body.map((p, i) => (
-          <p class={i === 0 ? 'drop' : ''}>{p}</p>
-        ))}
-        {previousDate && (
-          <p class="more">
-            <a href={`/archives/${previousDate}`}>lire les éditions précédentes →</a>
+          <p class={i === 0 ? 'drop' : ''}>
+            {renderItalics(p).map((fr) => (<Fragment set:html={fr.html} />))}
           </p>
-        )}
+        ))}
+        {previousDate && <p class="more"><a href="/archives">lire les éditions précédentes →</a></p>}
       </section>
 
-      {bird && (
+      {/* OBSERVATION DU JOUR */}
+      {birdPhoto && (
         <section class="blk rv" style="animation-delay:.14s">
           <div class="rubric">
             <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
@@ -128,9 +160,9 @@ const luxPct = luxNow !== null ? pct(luxNow, 1000) : 0; // 1000 W/m² ≈ plein 
             <span class="src"><a href="https://app.birdweather.com/stations/6670">BirdWeather PUC</a></span>
           </div>
           <div class="obs">
-            {birdPhoto ? (
-              <div class="photo" style="padding:0;overflow:hidden" title={birdPhoto.attribution}>
-                <img src={birdPhoto.photo_url} alt={`Photo de référence : ${bird.taxon_common ?? bird.taxon_scientific}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+            {birdPhoto.photo_url ? (
+              <div class="photo" style="padding:0;overflow:hidden" title={birdPhoto.attribution ?? undefined}>
+                <img src={birdPhoto.photo_url} alt={`Photo de référence : ${birdName}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
               </div>
             ) : (
               <div class="photo">
@@ -139,24 +171,20 @@ const luxPct = luxNow !== null ? pct(luxNow, 1000) : 0; // 1000 W/m² ≈ plein 
               </div>
             )}
             <div>
-              <div class="sp">{bird.taxon_common ?? bird.taxon_scientific ?? '—'}</div>
-              {bird.taxon_scientific && bird.taxon_common && (
-                <div class="lat">{bird.taxon_scientific}</div>
-              )}
+              <div class="sp">{birdName}</div>
+              {birdPhoto.taxon_scientific && <div class="lat">{birdPhoto.taxon_scientific}</div>}
               <div class="meta">
-                {bird.observed_at && (
-                  <span>entendue à {new Intl.DateTimeFormat('fr-CA', { timeZone: 'America/Toronto', hour: '2-digit', minute: '2-digit' }).format(new Date(bird.observed_at))}</span>
-                )}
-                {bird.confidence !== null && bird.confidence !== undefined && (
-                  <span class="pill">confiance {Math.round(bird.confidence * 100)}&nbsp;%</span>
+                {birdPhoto.observed_at && <span>entendue à {fmtTimeIso(birdPhoto.observed_at)}</span>}
+                {birdPhoto.confidence !== null && birdPhoto.confidence !== undefined && (
+                  <span class="pill">confiance {Math.round(birdPhoto.confidence * 100)}&nbsp;%</span>
                 )}
               </div>
-              {bird.media_url && (
+              {birdPhoto.media_url && (
                 <>
-                  <button class="listen" type="button" aria-expanded="false" data-audio-src={bird.media_url}>
+                  <button class="listen" id="listenBtn" type="button" aria-expanded="false" data-audio-src={birdPhoto.media_url}>
                     <svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>Écouter
                   </button>
-                  <audio class="obsaudio" controls preload="none" hidden></audio>
+                  <audio class="obsaudio" id="obsAudio" controls preload="none" hidden></audio>
                 </>
               )}
             </div>
@@ -164,134 +192,342 @@ const luxPct = luxNow !== null ? pct(luxNow, 1000) : 0; // 1000 W/m² ≈ plein 
         </section>
       )}
 
-      {sky.length > 0 && (
-        <section class="blk rv" style="animation-delay:.20s">
-          <div class="rubric">
-            <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
-            <h2>Le ciel ce soir</h2><span class="line"></span>
-          </div>
-          <div class="sky">
-            {sky.filter((s) => s.notable || s.category === 'twilight' || s.category === 'moon').slice(0, 4).map((s) => (
-              <span class="it">{s.title}</span>
-            ))}
-          </div>
-          {sky.find((s) => s.propice_a) && (
-            <p class="propice">{sky.find((s) => s.propice_a)?.propice_a}</p>
-          )}
-        </section>
-      )}
-
-      <section class="blk rv" style="animation-delay:.26s">
-        <div class="rubric">
-          <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
-          <h2>La mesure du jour</h2><span class="line"></span>
-          <span class="src">Tempest 41129</span>
-        </div>
-        <div class="stats">
-          <div class="stat">
-            <div class="k">Température</div>
-            <div class="v">{fmtTemp(weather?.air_temp_avg ?? null)}</div>
-            <div class="sub">min {fmtTemp(weather?.air_temp_min ?? null, 0)} · max {fmtTemp(weather?.air_temp_max ?? null, 0)}</div>
-          </div>
-          <div class="stat">
-            <div class="k">Vent</div>
-            <div class="v">{fmtWind(weather?.wind_gust_max ?? null)}</div>
-            <div class="sub">rafale max</div>
-          </div>
-          <div class="stat">
-            <div class="k">Pluie</div>
-            <div class="v">{fmtMm(weather?.rain_day_final_mm ?? null)}</div>
-            <div class="sub">total du jour</div>
-          </div>
-          <div class="stat">
-            <div class="k">Foudre</div>
-            <div class="v">{weather?.lightning_count_total ?? 0}</div>
-            <div class="sub">éclair{(weather?.lightning_count_total ?? 0) === 1 ? '' : 's'} détecté{(weather?.lightning_count_total ?? 0) === 1 ? '' : 's'}</div>
-          </div>
-        </div>
-        <div class="gauge">
-          <div class="legendrow"><span><span class="sw" style="border-top-color:var(--teal)"></span>jauge de luminosité (proxy rayonnement solaire moyen)</span></div>
-          <div class="trackwrap">
-            <div class="track">
-              <div class="fill" style={`width:${luxPct}%`}></div>
-            </div>
-          </div>
-          <div class="ticks"><span>nuit</span><span>aube</span><span>milieu de jour</span><span>plein soleil</span></div>
-        </div>
-        {/* TODO(svg) : porter les composants visuels signature (courbe température année vs moyenne historique, horloge oiseaux 24 h) en SVG inline au build ; passe ultérieure. */}
-      </section>
-
+      {/* ACTIVITÉS DES OISEAUX — horloge 24h */}
       <section class="blk rv" style="animation-delay:.32s">
         <div class="rubric">
           <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
           <h2>Activités des oiseaux</h2><span class="line"></span>
           <span class="src"><a href="https://app.birdweather.com/stations/6670">BirdWeather</a> · sur 24&nbsp;h</span>
         </div>
-        {/* TODO(svg) : horloge 24 h, à porter depuis le mockup en SVG inline au build. */}
-        {birds.length > 0 && (
-          <details class="drawer" open>
-            <summary>Les oiseaux du jour — {totals.species} espèces, {totals.detections} détections <span class="chev">▾</span></summary>
-            <div class="drawerbody">
-              <div class="bgrid">
-                {birds.map((b) => (
+        <div class="plate clockwrap">
+          <div class="ctip" id="ctip"></div>
+          <svg id="clock" viewBox="-20 -20 340 340" width="100%" style="max-width:330px" role="img" aria-label="Activité des oiseaux par heure en horloge 24h."></svg>
+          <div class="clocklegend">
+            <span><span class="d" style="background:var(--ink)"></span>détections / heure</span>
+            <span><span class="d" style="background:var(--teal)"></span>jour</span>
+            <span><span class="d" style="background:#D8D2C6"></span>nuit</span>
+          </div>
+        </div>
+      </section>
+
+      {/* LES OISEAUX DU JOUR */}
+      <section class="blk rv" style="animation-delay:.38s">
+        <details class="drawer" open>
+          <summary>Les oiseaux les plus fréquents aujourd'hui — {birds?.unique_species ?? 0} espèces, {birds?.total_detections ?? 0} détections <span class="chev">▾</span></summary>
+          <div class="drawerbody">
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bird" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M16 7h.01M3.4 18c-.6-1.1-.9-2.4-.9-3.7C2.5 9.2 6 5.5 10.5 5.5c3.8 0 6.3 2.4 7 5.5l1.5 1.2c.3.2.5.5.5.9 0 .5-.4.9-.9.9H16l-2 6.5-3-3.5-2 2.5c-2.8 0-4.2-2-5.6-1.5Z"/></symbol></svg>
+            <div class="bgrid">
+              {topBirds.map((b) => {
+                const name = b.name_fr ?? b.taxon_common ?? b.taxon_scientific;
+                return (
                   <div class="bird">
-                    <div class="bphoto" title={b.attribution ?? undefined} style={b.photo_square_url ? 'padding:0;overflow:hidden' : ''}>
-                      {b.photo_square_url ? (
-                        <img src={b.photo_square_url} alt={`Photo : ${b.taxon_common ?? b.taxon_scientific}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+                    <div class="bphoto" title={b.attribution ?? undefined} style={b.photo_url ? 'padding:0;overflow:hidden' : ''}>
+                      {b.photo_url ? (
+                        <img src={b.photo_url} alt={`Photo : ${name}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
                       ) : (
-                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6E766F" stroke-width="1.3"><path d="M16 7h.01M3.4 18c-.6-1.1-.9-2.4-.9-3.7C2.5 9.2 6 5.5 10.5 5.5c3.8 0 6.3 2.4 7 5.5l1.5 1.2c.3.2.5.5.5.9 0 .5-.4.9-.9.9H16l-2 6.5-3-3.5-2 2.5c-2.8 0-4.2-2-5.6-1.5Z"/></svg>
+                        <svg><use href="#bird"/></svg>
                       )}
                     </div>
-                    <div class="bname">{b.taxon_common ?? b.taxon_scientific}<i>{b.taxon_scientific}</i></div>
+                    <div class="bname">
+                      {name}
+                      <i>{b.taxon_scientific}</i>
+                      <span style="display:block;font-style:normal;color:var(--ink-3);font-size:11.5px;margin-top:1px">{b.count} observation{b.count > 1 ? 's' : ''}</span>
+                    </div>
                   </div>
-                ))}
-              </div>
-              <p class="more" style="margin-top:14px"><a href="/credits">crédits photo →</a></p>
+                );
+              })}
             </div>
-          </details>
+            <div class="rare">
+              <b>Premières de la saison :</b>{' '}
+              {rareSpecies.length > 0 ? (
+                <>
+                  {rareSpecies.map((s, i) => (
+                    <>
+                      {i > 0 ? ' · ' : ''}
+                      <span class="rarebird" title={s.attribution ?? undefined}>
+                        {s.name_fr ?? s.taxon_common ?? s.taxon_scientific}
+                        <span class="bzoom">
+                          {s.photo_url ? (
+                            <img src={s.photo_url} alt={`Photo : ${s.name_fr ?? s.taxon_scientific}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px" />
+                          ) : (
+                            <svg><use href="#bird"/></svg>
+                          )}
+                        </span>
+                      </span>
+                    </>
+                  ))}
+                  .{' '}
+                </>
+              ) : (
+                <span>aucune nouvelle espèce.{' '}</span>
+              )}
+              &nbsp;<a href="https://app.birdweather.com/stations/6670">Voir toutes les espèces sur BirdWeather →</a>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      {/* MÉTÉO + LUMINOSITÉ */}
+      <section class="blk rv" style="animation-delay:.44s">
+        <div class="rubric">
+          <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+          <h2>Météo</h2><span class="line"></span>
+          <span class="src"><a href="https://tempestwx.com/station/41129/">Station météo Tempest</a></span>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="k">Vent</div><div class="v">{fmtKmh(weather?.wind_avg_avg_ms)}&nbsp;<small>km/h</small></div><div class="sub">rafale max {fmtKmh(weather?.wind_gust_max_ms)}&nbsp;km/h</div></div>
+          <div class="stat"><div class="k">Pluie 24&nbsp;h</div><div class="v">{fmtMm(weather?.rain_day_final_mm)}&nbsp;<small>mm</small></div><div class="sub">{(weather?.rain_day_final_mm ?? 0) === 0 ? 'sec' : ''}</div></div>
+          <div class="stat"><div class="k">Pression</div><div class="v">—</div><div class="sub">à venir</div></div>
+          <div class="stat"><div class="k">Foudre</div><div class="v">{weather?.lightning.count_total ?? 0}</div><div class="sub">éclair{(weather?.lightning.count_total ?? 0) === 1 ? '' : 's'} détecté{(weather?.lightning.count_total ?? 0) === 1 ? '' : 's'}</div></div>
+        </div>
+
+        <figure class="plate">
+          <div class="ttip" id="temptip"></div>
+          <div class="legendrow">
+            <span><span class="sw" style="border-top-color:var(--accent)"></span>cette année</span>
+            <span><span class="sw" style="border-top-color:var(--ink-3);border-top-style:dashed"></span>moyenne historique, même date</span>
+          </div>
+          <svg id="temp" viewBox="0 0 660 170" width="100%" role="img" aria-label="Température sur 24 heures."></svg>
+          <figcaption><span>température sur 24&nbsp;h</span><span>min {weather?.air_temp_min_c?.toFixed(0) ?? '—'}&nbsp;°C · max {weather?.air_temp_max_c?.toFixed(0) ?? '—'}&nbsp;°C</span></figcaption>
+        </figure>
+
+        <div class="gauge">
+          <div class="rubric mini">
+            <svg class="orn" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/></svg>
+            <h2>Luminosité</h2><span class="line"></span>
+          </div>
+          <div class="trackwrap">
+            <div class="luxtip" id="luxtip"></div>
+            <div class="track"><div class="fill" style={`width:${LUX_PEAK_PCT}%`}></div></div>
+            {LUX_PEAK_HOUR !== null && LUX_PEAK_VALUE !== null && (
+              <span
+                class="lmark peak"
+                data-t={`${String(LUX_PEAK_HOUR).padStart(2, '0')} h`}
+                data-lux={`≈ ${Math.round(LUX_PEAK_VALUE).toLocaleString('fr-CA')} lux (pic)`}
+                style={`left:${LUX_PEAK_PCT}%`}
+              ></span>
+            )}
+          </div>
+          <div class="ticks"><span>nuit</span><span>crépuscule</span><span>ciel couvert</span><span>soleil voilé</span><span>plein soleil</span></div>
+          <div class="sun">Lever <b>{fmtTimeIso(twDetail.sunrise)}</b> <span class="arr">→</span> durée du jour <b>{dayDuration(twDetail.sunrise ?? null, twDetail.sunset ?? null)}</b> <span class="arr">→</span> coucher <b>{fmtTimeIso(twDetail.sunset)}</b></div>
+        </div>
+      </section>
+
+      {/* ÉPHÉMÉRIDES */}
+      <section class="blk rv" style="animation-delay:.46s">
+        <div class="rubric">
+          <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
+          <h2>Éphémérides : ce soir, le {sky ? frenchSkyDate(sky.for_date) : '—'}</h2><span class="line"></span>
+          <span class="src">almanach · astronomy-engine</span>
+        </div>
+        <div class="sky">
+          {moon && (
+            <span class="it">
+              <svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="#3F6764"/></svg>
+              {moon.title}{moonDetail.illumination_fraction !== undefined ? `, ${Math.round(moonDetail.illumination_fraction * 100)} %` : ''}{moonDetail.set ? ` — couchée à ${fmtTimeIso(moonDetail.set)}` : ''}
+            </span>
+          )}
+          {notablePlanets.length > 0 && (
+            <span class="it">
+              <svg width="17" height="17" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="none" stroke="#3F6764" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="9" ry="3.4" fill="none" stroke="#3F6764" stroke-width="1.2" transform="rotate(-20 12 12)"/></svg>
+              {notablePlanets.map((p) => p.title).join(', ')}, basses à l'ouest dès la tombée du jour
+            </span>
+          )}
+          {twDetail.sunset && (
+            <span class="it">
+              <svg width="17" height="17" viewBox="0 0 24 24"><path d="M5 19l3-7 3 5 2-9 3 11" fill="none" stroke="#6E766F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Coucher du soleil {fmtTimeIso(twDetail.sunset)}
+            </span>
+          )}
+        </div>
+        {entry.sky_narrative && (
+          <p class="propice">
+            {renderItalics(entry.sky_narrative).map((fr) => (<Fragment set:html={fr.html} />))}
+          </p>
         )}
       </section>
 
+      {/* FRAGMENT */}
       {quote && (
-        <section class="blk rv" style="animation-delay:.38s">
-          <div class="rubric mini">
-            <svg class="orn" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/></svg>
+        <section class="blk rv" style="animation-delay:.52s">
+          <div class="rubric">
+            <svg class="orn" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20C4 11.7 10.7 5 19 5c.6 0 1 .4 1 1 0 8.3-6.7 15-15 15-.6 0-1-.4-1-1Z"/><path fill="none" stroke="var(--paper)" stroke-width="1.4" stroke-linecap="round" d="M6.5 17.5C10 14 13.5 10.5 17 7"/></svg>
             <h2>Fragment</h2><span class="line"></span>
+            <span class="src">ref_quotes</span>
           </div>
           <blockquote class="frag">
             « {quote.text} »
+            {entry.fragment_translation_fr && (
+              <span style="display:block;margin-top:8px;font-size:.92em;color:var(--ink-2)">
+                « {entry.fragment_translation_fr} »
+              </span>
+            )}
             <cite>{quote.author} — {quote.work}{quote.year ? `, ${quote.year}` : ''}</cite>
           </blockquote>
         </section>
       )}
 
-      <footer>
+      <footer class="rv" style="animation-delay:.58s">
         <div class="row">
-          <span class="mv">Sources : <a href="https://tempestwx.com">Tempest</a>, <a href="https://app.birdweather.com">BirdWeather</a>, <a href="https://github.com/cosinekitty/astronomy">astronomy-engine</a>, <a href="https://services.swpc.noaa.gov">NOAA SWPC</a></span>
-          <a href="/donnees">archives & données →</a>
+          <span>Almanach du Val des Loups · pont couvert de Saint-Placide-de-Charlevoix · projet open source par <a href="https://www.michaelcarpentier.com/" target="_blank" rel="noopener">Michael Carpentier</a></span>
+        </div>
+        <div class="row" style="border:0;padding-top:8px">
+          <span>Sources : <a href="https://tempestwx.com/station/41129/">Tempest</a> · <a href="https://app.birdweather.com/stations/6670">BirdWeather</a> · NOAA SWPC · billet généré par Claude selon données d'observations réelles</span>
+          <a href="/credits">crédits photo →</a>
         </div>
       </footer>
     </>
   )}
 
-  <script>
-    // Bouton « Écouter » : câblé à data-audio-src ; play/pause sans librairie.
-    const btns = document.querySelectorAll<HTMLButtonElement>('.listen[data-audio-src]');
-    for (const btn of btns) {
-      btn.addEventListener('click', () => {
-        const audio = btn.nextElementSibling as HTMLAudioElement | null;
-        if (!audio) return;
-        if (audio.hidden) {
-          audio.hidden = false;
-          audio.src = btn.dataset.audioSrc ?? '';
-          audio.play().catch(() => undefined);
-          btn.setAttribute('aria-expanded', 'true');
-        } else if (audio.paused) {
-          audio.play().catch(() => undefined);
-        } else {
-          audio.pause();
+  <script
+    is:inline
+    define:vars={{ TEMP_HOURS, TEMP_NORM, BIRD_HOURS, SUNRISE_H, SUNSET_H }}
+  >
+    /* Script reconduit du mockup une.html (TEMP_HOURS/TEMP_NORM/BIRD_HOURS/SUNRISE_H/SUNSET_H injectés). */
+    (function () {
+      // ---- Courbe de température : cette année vs moyenne historique (si dispo) ----
+      var year = TEMP_HOURS.map(function (v) { return v === null ? null : v; });
+      var norm = TEMP_NORM;
+      // bornes de l'axe — basées sur les vraies données + un peu de marge
+      var defined = year.filter(function (v) { return v !== null; }).concat(norm.filter(function (v) { return v !== null; }));
+      var tmin = defined.length ? Math.floor(Math.min.apply(null, defined) - 2) : -2;
+      var tmax = defined.length ? Math.ceil(Math.max.apply(null, defined) + 2) : 22;
+      var W = 660, H = 170, padL = 8, padR = 8, padT = 14, padB = 22;
+      function X(i) { return padL + (i / 23) * (W - padL - padR); }
+      function Y(t) { return padT + (1 - (t - tmin) / (tmax - tmin)) * (H - padT - padB); }
+      function poly(a) {
+        // tolère des null : on coupe la polyligne en segments
+        var segs = [], cur = [];
+        for (var i = 0; i < a.length; i++) {
+          if (a[i] === null) { if (cur.length) { segs.push(cur); cur = []; } }
+          else { cur.push(X(i).toFixed(1) + ',' + Y(a[i]).toFixed(1)); }
         }
+        if (cur.length) segs.push(cur);
+        return segs.map(function (s) { return s.join(' '); });
+      }
+      var g = '<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="transparent" pointer-events="all"/>';
+      // grille + labels d'axe
+      var ticks = [];
+      var step = Math.max(5, Math.round((tmax - tmin) / 4));
+      for (var t = Math.ceil(tmin / step) * step; t <= tmax; t += step) ticks.push(t);
+      ticks.forEach(function (t) {
+        g += '<line x1="' + padL + '" y1="' + Y(t).toFixed(1) + '" x2="' + (W - padR) + '" y2="' + Y(t).toFixed(1) + '" stroke="rgba(43,55,54,.10)" stroke-width="1"/>';
+        g += '<text x="' + (W - padR) + '" y="' + (Y(t) - 4).toFixed(1) + '" text-anchor="end" font-family="Spectral,serif" font-size="11" fill="#6E766F">' + t + '°</text>';
       });
-    }
+      // moyenne historique (dashed) — uniquement si on a des valeurs
+      if (norm.length) {
+        poly(norm).forEach(function (pts) {
+          g += '<polyline fill="none" stroke="#6E766F" stroke-width="1.4" stroke-dasharray="2 4" points="' + pts + '"/>';
+        });
+      }
+      // courbe de l'année
+      poly(year).forEach(function (pts) {
+        g += '<polyline fill="none" stroke="#3F6764" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" points="' + pts + '"/>';
+      });
+      ['00h', '06h', '12h', '18h'].forEach(function (l, k) {
+        var i = k * 6;
+        g += '<text x="' + X(i).toFixed(1) + '" y="' + (H - 6) + '" text-anchor="middle" font-family="Spectral,serif" font-size="11" fill="#6E766F">' + l + '</text>';
+      });
+      g += '<line id="tgl" x1="0" y1="' + padT + '" x2="0" y2="' + (H - padB) + '" stroke="#3F6764" stroke-width="1" opacity="0"/>';
+      g += '<circle id="tgd" r="3.6" fill="#3F6764" opacity="0"/>';
+      var tsvg = document.getElementById('temp');
+      if (tsvg) {
+        tsvg.innerHTML = g;
+        var ttip = document.getElementById('temptip'), tgl = document.getElementById('tgl'), tgd = document.getElementById('tgd'), tfig = tsvg.parentNode;
+        tsvg.addEventListener('mousemove', function (e) {
+          var r = tsvg.getBoundingClientRect(), frac = (e.clientX - r.left) / r.width;
+          if (frac < 0) frac = 0; if (frac > 1) frac = 1;
+          var i = Math.round(frac * 23), t = year[i];
+          if (t === null) { ttip.classList.remove('on'); tgl.setAttribute('opacity', '0'); tgd.setAttribute('opacity', '0'); return; }
+          var gx = X(i), gy = Y(t), fr = tfig.getBoundingClientRect();
+          tgl.setAttribute('x1', gx); tgl.setAttribute('x2', gx); tgl.setAttribute('opacity', '.4');
+          tgd.setAttribute('cx', gx); tgd.setAttribute('cy', gy); tgd.setAttribute('opacity', '1');
+          ttip.textContent = (i < 10 ? '0' : '') + i + ' h · ' + t.toFixed(1).replace('.', ',') + ' °C';
+          ttip.style.left = ((gx / W) * r.width + (r.left - fr.left)) + 'px';
+          ttip.style.top = ((gy / H) * r.height + (r.top - fr.top)) + 'px';
+          ttip.classList.add('on');
+        });
+        tsvg.addEventListener('mouseleave', function () { ttip.classList.remove('on'); tgl.setAttribute('opacity', '0'); tgd.setAttribute('opacity', '0'); });
+      }
+
+      // ---- Horloge d'activité 24 h ----
+      var D = BIRD_HOURS;
+      var sr = SUNRISE_H, ss = SUNSET_H;
+      var cx = 150, cy = 150, r0 = 52, rmax = 120, rRing = 132;
+      var max = Math.max.apply(null, D.concat([1]));
+      function pt(R, h) { var t = h / 24 * 2 * Math.PI; return [cx + R * Math.sin(t), cy - R * Math.cos(t)]; }
+      function h2(n) { return (n < 10 ? '0' : '') + n; }
+      var s = '';
+      s += '<circle cx="150" cy="150" r="' + rRing + '" fill="none" stroke="#D8D2C6" stroke-width="6"/>';
+      var p1 = pt(rRing, sr), p2 = pt(rRing, ss), large = (ss - sr) > 12 ? 1 : 0;
+      s += '<path d="M ' + p1[0].toFixed(1) + ' ' + p1[1].toFixed(1) + ' A ' + rRing + ' ' + rRing + ' 0 ' + large + ' 1 ' + p2[0].toFixed(1) + ' ' + p2[1].toFixed(1) + '" fill="none" stroke="#9FB7B9" stroke-width="6"/>';
+      [sr, ss].forEach(function (h) { var q = pt(rRing, h); s += '<circle cx="' + q[0].toFixed(1) + '" cy="' + q[1].toFixed(1) + '" r="3.4" fill="#3F6764"/>'; });
+      for (var h = 0; h < 24; h++) {
+        var len = (D[h] / max) * (rmax - r0), a = pt(r0, h), b = pt(r0 + len, h);
+        s += '<line class="bar" data-i="' + h + '" x1="' + a[0].toFixed(1) + '" y1="' + a[1].toFixed(1) + '" x2="' + b[0].toFixed(1) + '" y2="' + b[1].toFixed(1) + '" stroke="#2B3736" stroke-width="5" stroke-linecap="round"/>';
+      }
+      for (var h = 0; h < 24; h++) {
+        var c = pt(r0, h), d = pt(rmax, h);
+        s += '<line class="barhit" data-h="' + h + '" data-n="' + D[h] + '" x1="' + c[0].toFixed(1) + '" y1="' + c[1].toFixed(1) + '" x2="' + d[0].toFixed(1) + '" y2="' + d[1].toFixed(1) + '" stroke="transparent" stroke-width="13" stroke-linecap="round" pointer-events="all"/>';
+      }
+      [[0, '00h'], [6, '06h'], [12, '12h'], [18, '18h']].forEach(function (o) {
+        var q = pt(rRing + 18, o[0]);
+        s += '<text x="' + q[0].toFixed(1) + '" y="' + (q[1] + 4).toFixed(1) + '" text-anchor="middle" font-family="Spectral,serif" font-size="11" fill="#6E766F">' + o[1] + '</text>';
+      });
+      // « pic du jour » : heure où D est max
+      var peakIdx = 0; for (var k = 1; k < 24; k++) if (D[k] > D[peakIdx]) peakIdx = k;
+      s += '<text x="150" y="145" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="23" fill="#2B3736">' + h2(peakIdx) + ' h</text>';
+      s += '<text x="150" y="163" text-anchor="middle" font-family="Spectral,serif" font-size="11" fill="#566260">pic du jour</text>';
+      var clk = document.getElementById('clock');
+      if (clk) {
+        clk.innerHTML = s;
+        var tip = document.getElementById('ctip'), wrapEl = clk.parentNode, bars = clk.querySelectorAll('.bar');
+        clk.querySelectorAll('.barhit').forEach(function (hit) {
+          var h = +hit.getAttribute('data-h'), n = +hit.getAttribute('data-n');
+          function show(e) {
+            var r = wrapEl.getBoundingClientRect();
+            tip.textContent = h2(h) + '–' + h2((h + 1) % 24) + ' h : ' + n + (n > 1 ? ' observations' : ' observation');
+            tip.style.left = (e.clientX - r.left) + 'px';
+            tip.style.top = (e.clientY - r.top) + 'px';
+            tip.classList.add('on');
+            if (bars[h]) bars[h].setAttribute('stroke', '#3F6764');
+          }
+          function hide() { tip.classList.remove('on'); if (bars[h]) bars[h].setAttribute('stroke', '#2B3736'); }
+          hit.addEventListener('mouseenter', show);
+          hit.addEventListener('mousemove', show);
+          hit.addEventListener('mouseleave', hide);
+        });
+      }
+
+      // Pic de luminosité — info-bulle au survol
+      var ltip = document.getElementById('luxtip');
+      document.querySelectorAll('.lmark').forEach(function (m) {
+        m.addEventListener('mouseenter', function () {
+          ltip.textContent = m.getAttribute('data-t') + ' — ' + m.getAttribute('data-lux');
+          ltip.style.left = m.style.left;
+          ltip.classList.add('on');
+        });
+        m.addEventListener('mouseleave', function () { ltip.classList.remove('on'); });
+      });
+
+      // Bouton « Écouter »
+      var btns = document.querySelectorAll('.listen[data-audio-src]');
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var audio = btn.nextElementSibling;
+          if (!audio) return;
+          if (audio.hidden) {
+            audio.hidden = false;
+            audio.src = btn.dataset.audioSrc || '';
+            audio.play().catch(function () { });
+            btn.setAttribute('aria-expanded', 'true');
+          } else if (audio.paused) {
+            audio.play().catch(function () { });
+          } else {
+            audio.pause();
+          }
+        });
+      });
+    })();
   </script>
 </Base>

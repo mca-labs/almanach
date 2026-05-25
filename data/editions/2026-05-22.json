@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-05-22",
+  "generated_at": "2026-05-25T00:56:49.010Z",
+  "title": "Le gel et ses rescapés",
+  "summary": "Une matinée gelée cédant à un après-midi lumineux — la paruline tigrée domine la vague du jour.",
+  "body_md": "La nuit avait posé son gel sans prévenir. À trois degrés sous zéro au plus froid, l'herbe craquait encore à l'aube, et les capteurs ont mis jusqu'à sept heures du matin à lire un chiffre positif. Pourtant le ciel était ouvert, le vent presque absent, et le soleil a grimpé vite — quinze degrés et demi en milieu d'après-midi, un écart de dix-huit degrés en douze heures. C'est cette amplitude-là, brutale et propre, qui caractérise le Val en mai : l'hiver cède du terrain chaque jour, mais il rend rarement les armes sans conditions.\n\nAu milieu de tout ce va-et-vient thermique, les oiseaux ont tenu. La paruline tigrée (*Setophaga tigrina*) a dominé le comptage avec une régularité que rien ne semblait pouvoir entamer. Mais c'est le roitelet à couronne rubis (*Corthylio calendula*) qui retenait l'attention à l'aube — détecté peu après six heures, sa voix grêle et ascendante tranchait dans le silence encore froid. Il est minuscule. Il pèse moins qu'une feuille de bouleau sèche, et il était là, ponctuel, comme si le gel n'avait été qu'un détail administratif.",
+  "sky_narrative": "Le premier quartier se couchera avant minuit, laissant la nuit à elle-même dès les premières heures. Avec seulement 28 % de couverture nuageuse, le ciel devrait s'ouvrir largement : Vénus et Jupiter, tous deux remarquablement lumineux ce soir, seront visibles à l'œil nu, et les heures avant l'aube astronomique — qui ne tombera pas avant près de deux heures du matin — se prêteront à une observation en ciel profond ou à une marche sans frontale.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "gel",
+    "printemps",
+    "amplitude-thermique",
+    "aube"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -3.2,
+      "temp_max_c": 15.5,
+      "wind_gust_max_ms": 7.1,
+      "rain_mm": 0,
+      "solar_rad_avg_wm2": 246.5
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "observed_at": "2026-05-22T06:20:08-04:00",
+      "confidence": 0.9995569586753845,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260522-102002.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier quartier",
+      "moon_illumination_pct": 47,
+      "moon_set": "2026-05-23T05:38:38.850Z",
+      "notable_planets": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 28
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand chercher l'hirondelle, la dent-de-chien quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est bel et bien ouverte."
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2025-11-30",
+  "obs_count": 357,
+  "air_temp_min_c": -12.6,
+  "air_temp_max_c": -3.9,
+  "air_temp_avg_c": -6.279494382022491,
+  "hourly_temps_c": [
+    -11.608333333333341,
+    -12.410526315789474,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -4.957500000000003,
+    -4.591666666666665,
+    -4.2616666666666685,
+    -4.853333333333331,
+    -4.956140350877194,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "hourly_norm_c": [],
+  "norm_years_used": 0,
+  "wind_gust_max_ms": 1.6,
+  "wind_avg_avg_ms": 0.11348314606741583,
+  "rain_day_final_mm": 0,
+  "solar_rad_avg_wm2": 13.063400576368876,
+  "lux_peak": {
+    "hour": 11,
+    "value_lux": 7022
+  },
+  "lightning": {
+    "count_total": 0,
+    "avg_distance_km": 0
+  }
+}

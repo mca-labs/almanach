@@ -1,6 +1,6 @@
 ---
 import Base from '@/layouts/Base.astro';
-import { creditsForDate, latestPublished } from '@/lib/queries';
+import { creditsForDate, latestPublished } from '@/lib/data';
 
 const entry = await latestPublished();
 const credits = entry ? await creditsForDate(entry.entry_date) : [];

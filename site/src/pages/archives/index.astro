@@ -1,41 +1,102 @@
 ---
 import Base from '@/layouts/Base.astro';
-import { publishedDates } from '@/lib/queries';
+import { birdsFor, entryByDate, publishedDates, weatherFor } from '@/lib/data';
 
 const dates = await publishedDates();
+type ArchiveEntry = NonNullable<Awaited<ReturnType<typeof entryByDate>>>;
+const entries: { date: string; entry: ArchiveEntry; weather: Awaited<ReturnType<typeof weatherFor>>; birds: Awaited<ReturnType<typeof birdsFor>> }[] = [];
+for (const d of dates) {
+  const [entry, weather, birds] = await Promise.all([entryByDate(d), weatherFor(d), birdsFor(d)]);
+  if (entry) entries.push({ date: d, entry, weather, birds });
+}
+
+const TZ = 'America/Toronto';
 
 function frenchLong(iso: string): string {
   const d = new Date(`${iso}T12:00:00Z`);
   return new Intl.DateTimeFormat('fr-CA', {
-    timeZone: 'America/Toronto',
+    timeZone: TZ,
     weekday: 'long',
     day: 'numeric',
     month: 'long',
     year: 'numeric',
   }).format(d);
 }
+function dayOfYear(iso: string): number {
+  const d = new Date(`${iso}T12:00:00Z`);
+  const start = Date.UTC(d.getUTCFullYear(), 0, 1);
+  return Math.floor((d.getTime() - start) / 86400000) + 1;
+}
+function paragraphs(md: string | null): string[] {
+  if (!md) return [];
+  return md.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+}
+function renderItalics(text: string): { html: string }[] {
+  // Découpe le texte sur les motifs *...* pour rendre les noms latins en italique.
+  const parts = text.split(/(\*[^*\n]+\*)/g);
+  return parts
+    .filter(Boolean)
+    .map((p) =>
+      p.startsWith('*') && p.endsWith('*')
+        ? { html: `<em>${p.slice(1, -1)}</em>` }
+        : { html: p },
+    );
+}
+function fmtTemp(n: number | null | undefined): string {
+  return n === null || n === undefined ? '—' : `${n.toFixed(0)} °C`;
+}
+function fmtMm(n: number | null | undefined): string {
+  return n === null || n === undefined ? '—' : `${n.toFixed(1)} mm`;
+}
+function lumiLabel(wm2: number | null | undefined): string {
+  if (wm2 === null || wm2 === undefined) return '—';
+  if (wm2 < 50) return 'lumière couverte';
+  if (wm2 < 150) return 'lumière voilée';
+  if (wm2 < 300) return 'lumière moyenne';
+  return 'lumière vive';
+}
 ---
 
-<Base title="Almanach du Val des Loups — archives" active="archives">
-  <header class="mast">
-    <div class="kicker">
-      <span>Archives</span>
-      <span>{dates.length} édition{dates.length > 1 ? 's' : ''} publiée{dates.length > 1 ? 's' : ''}</span>
-    </div>
-    <div class="titleline">
-      <h1 class="title"><em>Éditions</em> précédentes</h1>
-    </div>
+<Base title="Almanach du Val des Loups — éditions précédentes" active="archives">
+  <header class="head rv" style="animation-delay:.02s">
+    <h1>Éditions précédentes</h1>
+    <div class="sub">intros &amp; billets · du plus récent au plus ancien</div>
   </header>
 
-  <section class="blk">
-    {dates.length === 0 ? (
-      <p class="condition">Aucune édition pour l'instant.</p>
-    ) : (
-      <ul style="list-style:none;padding:0;margin:0;font-family:var(--serif);font-size:18px;line-height:2">
-        {dates.map((d) => (
-          <li><a href={`/archives/${d}`}>{frenchLong(d)}</a></li>
-        ))}
-      </ul>
-    )}
-  </section>
+  {entries.length === 0 ? (
+    <article class="entry"><p class="intro">Aucune édition publiée pour l'instant.</p></article>
+  ) : (
+    entries.map(({ date, entry, weather, birds }, i) => (
+      <article class="entry rv" style={`animation-delay:${0.08 + i * 0.04}s`}>
+        <div class="when">
+          <span class="d">{frenchLong(date)}</span>
+          <span class="dl">{dayOfYear(date)}<sup>e</sup> jour</span>
+          <span class="line"></span>
+        </div>
+        {entry.summary && <p class="intro">{entry.summary}</p>}
+        <div class="body">
+          {paragraphs(entry.body_md ?? null).map((p) => (
+            <p>
+              {renderItalics(p).map((fr) => (
+                <Fragment set:html={fr.html} />
+              ))}
+            </p>
+          ))}
+        </div>
+        <div class="daystats">
+          Température max&nbsp;<b>{fmtTemp(weather?.air_temp_max_c)}</b>
+          {' · '}Température min&nbsp;<b>{fmtTemp(weather?.air_temp_min_c)}</b>
+          {' · '}Pluie&nbsp;<b>{fmtMm(weather?.rain_day_final_mm)}</b>
+          {(weather?.lightning.count_total ?? 0) > 0 && (
+            <>{' · '}Foudre&nbsp;<b>{weather!.lightning.count_total}</b></>
+          )}
+          {' · '}Espèces d'oiseaux observées&nbsp;<b>{birds?.unique_species ?? 0}</b>
+        </div>
+      </article>
+    ))
+  )}
+
+  <div class="foot rv" style={`animation-delay:${0.08 + entries.length * 0.04}s`}>
+    <a class="home" href="/">← retour à l'accueil</a>
+  </div>
 </Base>

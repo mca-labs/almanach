@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-23",
+  "total_detections": 3088,
+  "unique_species": 40,
+  "top_species": [
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 1124,
+      "max_confidence": 0.9961250424385071,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-214905.flac"
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 594,
+      "max_confidence": 0.9992402791976929,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-151834.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 209,
+      "max_confidence": 0.9583237171173096,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-091839.flac"
+    },
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 203,
+      "max_confidence": 0.9983118772506714,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-101621.flac"
+    },
+    {
+      "taxon_common": "Nashville Warbler",
+      "taxon_scientific": "Leiothlypis ruficapilla",
+      "count": 152,
+      "max_confidence": 0.995554506778717,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-170529.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 133,
+      "max_confidence": 0.978805661201477,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-125809.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 101,
+      "max_confidence": 0.9793236255645752,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-220131.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 90,
+      "max_confidence": 0.9668458700180054,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-224616.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 64,
+      "max_confidence": 0.9897956252098083,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-090350.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 46,
+      "max_confidence": 0.9607628583908081,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-090059.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Yellow-rumped Warbler",
+    "taxon_scientific": "Setophaga coronata",
+    "confidence": 0.9992402791976929,
+    "observed_at": "2026-05-23T11:18:34-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260523-151834.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    60,
+    392,
+    237,
+    203,
+    198,
+    181,
+    167,
+    232,
+    155,
+    90,
+    170,
+    261,
+    197,
+    344,
+    133,
+    55,
+    7,
+    4,
+    2,
+    0
+  ]
+}

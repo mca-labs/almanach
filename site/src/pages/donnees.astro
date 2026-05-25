@@ -1,6 +1,6 @@
 ---
 import Base from '@/layouts/Base.astro';
-import { latestPublished, publishedDates } from '@/lib/queries';
+import { latestPublished, publishedDates } from '@/lib/data';
 
 const entry = await latestPublished();
 const allDates = await publishedDates();

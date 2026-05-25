@@ -1,0 +1,201 @@
+{
+  "_about": "Corpus de citations pour ref_quotes. Chaque texte est verbatim depuis une source vérifiable (Project Gutenberg pour le domaine public, Wikiquote avec œuvre + année pour Leopold). source_note pointe vers la ligne dans le .txt PG pour audit.",
+  "citations": [
+    {
+      "id": "henry-david-thoreau-walden-1",
+      "text": "I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.",
+      "author": "Henry David Thoreau",
+      "work": "Walden",
+      "year": 1854,
+      "theme_tags": [
+        "foret",
+        "attention",
+        "vie-sauvage",
+        "simplicite"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
+      "source_note": "Project Gutenberg #205, ligne 2649 (chapitre « Where I Lived, and What I Lived For »)"
+    },
+    {
+      "id": "henry-david-thoreau-walden-2",
+      "text": "The mass of men lead lives of quiet desperation.",
+      "author": "Henry David Thoreau",
+      "work": "Walden",
+      "year": 1854,
+      "theme_tags": [
+        "attention",
+        "simplicite"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
+      "source_note": "Project Gutenberg #205, ligne 235 (chapitre « Economy »)"
+    },
+    {
+      "id": "henry-david-thoreau-walden-3",
+      "text": "Simplicity, simplicity, simplicity! I say, let your affairs be as two or three, and not a hundred or a thousand.",
+      "author": "Henry David Thoreau",
+      "work": "Walden",
+      "year": 1854,
+      "theme_tags": [
+        "simplicite"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
+      "source_note": "Project Gutenberg #205, ligne 2671"
+    },
+    {
+      "id": "henry-david-thoreau-walden-4",
+      "text": "Time is but the stream I go a-fishing in. I drink at it; but while I drink I see the sandy bottom and detect how shallow it is. Its thin current slides away, but eternity remains.",
+      "author": "Henry David Thoreau",
+      "work": "Walden",
+      "year": 1854,
+      "theme_tags": [
+        "temps",
+        "riviere",
+        "eau"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
+      "source_note": "Project Gutenberg #205, ligne 2864"
+    },
+    {
+      "id": "henry-david-thoreau-walking-5",
+      "text": "...in Wildness is the preservation of the World.",
+      "author": "Henry David Thoreau",
+      "work": "Walking",
+      "year": 1862,
+      "theme_tags": [
+        "vie-sauvage",
+        "foret",
+        "ciel"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/1022/pg1022.txt",
+      "source_note": "Project Gutenberg #1022, ligne 575 (essai « Walking », publié à titre posthume en 1862 dans The Atlantic Monthly)"
+    },
+    {
+      "id": "john-muir-my-6",
+      "text": "When we try to pick out anything by itself, we find it hitched to everything else in the universe.",
+      "author": "John Muir",
+      "work": "My First Summer in the Sierra",
+      "year": 1911,
+      "theme_tags": [
+        "attention",
+        "montagne",
+        "ciel"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/32540/pg32540.txt",
+      "source_note": "Project Gutenberg #32540, ligne 3376 (chapitre « Mono Trail »)"
+    },
+    {
+      "id": "john-muir-my-7",
+      "text": "How deep our sleep last night in the mountain's heart, beneath the trees and stars, hushed by solemn-sounding waterfalls and many small soothing voices in sweet accord whispering peace!",
+      "author": "John Muir",
+      "work": "My First Summer in the Sierra",
+      "year": 1911,
+      "theme_tags": [
+        "montagne",
+        "silence",
+        "eau",
+        "ciel"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/32540/pg32540.txt",
+      "source_note": "Project Gutenberg #32540, ligne 837 (chapitre « A Memorable Day »)"
+    },
+    {
+      "id": "john-muir-my-8",
+      "text": "And our first pure mountain day, warm, calm, cloudless,—how immeasurable it seems, how serenely wild!",
+      "author": "John Muir",
+      "work": "My First Summer in the Sierra",
+      "year": 1911,
+      "theme_tags": [
+        "montagne",
+        "vie-sauvage",
+        "lumiere",
+        "printemps"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/32540/pg32540.txt",
+      "source_note": "Project Gutenberg #32540, ligne 839"
+    },
+    {
+      "id": "john-burroughs-wake-robin-9",
+      "text": "The dandelion tells me when to look for the swallow, the dogtooth violet when to expect the wood-thrush, and when I have found the wake-robin in bloom I know the season is fairly inaugurated.",
+      "author": "John Burroughs",
+      "work": "Wake-Robin",
+      "year": 1871,
+      "theme_tags": [
+        "oiseaux",
+        "printemps",
+        "attention",
+        "foret"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/4203/pg4203.txt",
+      "source_note": "Project Gutenberg #4203, ligne 273 (chapitre « The Return of the Birds »)"
+    },
+    {
+      "id": "john-burroughs-wake-robin-10",
+      "text": "It is this period that marks the return of the birds,—one or two of the more hardy or half-domesticated species, like the song sparrow and the bluebird, usually arriving in March, while the rarer and more brilliant wood-birds bring up the procession in June.",
+      "author": "John Burroughs",
+      "work": "Wake-Robin",
+      "year": 1871,
+      "theme_tags": [
+        "oiseaux",
+        "printemps",
+        "migration"
+      ],
+      "public_domain": true,
+      "source_url": "https://www.gutenberg.org/cache/epub/4203/pg4203.txt",
+      "source_note": "Project Gutenberg #4203, ligne 269"
+    },
+    {
+      "id": "aldo-leopold-a-11",
+      "text": "A thing is right when it tends to preserve the integrity, stability, and beauty of the biotic community. It is wrong when it tends otherwise.",
+      "author": "Aldo Leopold",
+      "work": "A Sand County Almanac",
+      "year": 1949,
+      "theme_tags": [
+        "attention",
+        "vie-sauvage",
+        "foret"
+      ],
+      "public_domain": false,
+      "source_url": "https://en.wikiquote.org/wiki/Aldo_Leopold",
+      "source_note": "Citation canonique de l'essai « The Land Ethic » dans A Sand County Almanac (1949). Domaine public au Canada (vie+70 ans, Leopold † 1948) ; encore protégé aux États-Unis. Conservé sur la foi de l'usage personnel."
+    },
+    {
+      "id": "aldo-leopold-a-12",
+      "text": "We abuse land because we regard it as a commodity belonging to us. When we see land as a community to which we belong, we may begin to use it with love and respect.",
+      "author": "Aldo Leopold",
+      "work": "A Sand County Almanac",
+      "year": 1949,
+      "theme_tags": [
+        "foret",
+        "attention",
+        "vie-sauvage"
+      ],
+      "public_domain": false,
+      "source_url": "https://en.wikiquote.org/wiki/Aldo_Leopold",
+      "source_note": "Avant-propos de A Sand County Almanac (1949). Voir note de licence de la citation précédente."
+    },
+    {
+      "id": "aldo-leopold-a-13",
+      "text": "There are some who can live without wild things, and some who cannot.",
+      "author": "Aldo Leopold",
+      "work": "A Sand County Almanac",
+      "year": 1949,
+      "theme_tags": [
+        "vie-sauvage",
+        "attention",
+        "silence"
+      ],
+      "public_domain": false,
+      "source_url": "https://en.wikiquote.org/wiki/Aldo_Leopold",
+      "source_note": "Phrase d'ouverture de l'avant-propos de A Sand County Almanac (1949). Voir note de licence."
+    }
+  ]
+}

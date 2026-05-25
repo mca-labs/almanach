@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-05-23",
+  "generated_at": "2026-05-25T00:56:21.311Z",
+  "title": null,
+  "summary": "Une journée de mai aux deux visages — gel nocturne et chaleur d'après-midi — pendant que la migration bat son plein au Val.",
+  "body_md": "La nuit avait laissé le thermomètre tomber à -2 degrés, et l'herbe au bord du pont portait encore cette mémoire blanche au lever du jour. Puis le ciel s'est ouvert, le vent est resté à rien, et d'ici midi la vallée affichait 17 degrés — cet écart de vingt degrés en quelques heures, propre au mois de mai ici, qui fait d'une seule journée plusieurs saisons. Le soleil a cogné fort, 115 000 lux au zénith, pas un nuage pour tamiser.\n\nC'est dans cette lumière franche que les Bruants à couronne blanche ont occupé le Val comme jamais — 1 124 détections, plus de la moitié de toutes celles de la journée. Ils ont dominé les sous-bois et les lisières, bruyants et pressés, déjà en route vers le nord. La Paruline à croupion jaune tenait bon en deuxième place, sa voix courte et montante perçant à intervalles réguliers depuis les épinettes. Quarante espèces recensées, 3 088 détections au total : la migration de printemps n'en est pas à son dernier mot.",
+  "sky_narrative": "La nuit qui s'ouvre sera largement voilée — 87 % de couverture nuageuse — et les planètes notables du moment, Vénus, Jupiter et Mercure, resteront probablement noyées derrière les nuages. La Lune gibbeuse, déjà à 58 % illuminée, se couche tôt en soirée ; ce sera une nuit pour marcher à l'oreille plutôt qu'aux yeux, en écoutant si quelques migrateurs nocturnes passent encore au-dessus de la forêt.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "printemps",
+    "gel",
+    "chaleur",
+    "bruants",
+    "parulines"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.2,
+      "temp_max_c": 17.2,
+      "wind_gust_max_ms": 5.4,
+      "rain_mm": 0,
+      "solar_rad_avg_wm2": 324.68,
+      "lux_peak": 115671
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 594,
+      "confidence": 0.9992,
+      "observed_at": "2026-05-23T11:18:34-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 57.5,
+      "moon_set": "2026-05-24T05:56:05Z",
+      "cloud_cover_night_pct": 87,
+      "notable_planets": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux des espèces les plus robustes ou semi-familières, comme le bruant chanteur et le merlebleu, arrivant généralement en mars, tandis que les oiseaux des bois plus rares et plus brillants ferment la procession en juin."
+}

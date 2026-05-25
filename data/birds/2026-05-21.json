@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-21",
+  "total_detections": 1149,
+  "unique_species": 33,
+  "top_species": [
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 285,
+      "max_confidence": 0.9914140701293945,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-213858.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 232,
+      "max_confidence": 0.9137260317802429,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-184505.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 133,
+      "max_confidence": 0.9633411169052124,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-142834.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 83,
+      "max_confidence": 0.9762961864471436,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-111728.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 68,
+      "max_confidence": 0.9541037678718567,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-225129.flac"
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 64,
+      "max_confidence": 0.9765293598175049,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-182406.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 37,
+      "max_confidence": 0.9752528071403503,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-094307.flac"
+    },
+    {
+      "taxon_common": "Yellow-bellied Sapsucker",
+      "taxon_scientific": "Sphyrapicus varius",
+      "count": 37,
+      "max_confidence": 0.9659549593925476,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-222316.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 28,
+      "max_confidence": 0.9920361638069153,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-213701.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 25,
+      "max_confidence": 0.9637717008590698,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-101415.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Belted Kingfisher",
+    "taxon_scientific": "Megaceryle alcyon",
+    "confidence": 0.9996417760848999,
+    "observed_at": "2026-05-21T06:54:41-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-105438.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    11,
+    105,
+    63,
+    121,
+    97,
+    48,
+    42,
+    78,
+    20,
+    61,
+    94,
+    88,
+    90,
+    89,
+    101,
+    35,
+    5,
+    1,
+    0,
+    0
+  ]
+}

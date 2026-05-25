@@ -9,31 +9,17 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "ingest": "tsx src/cli.ts ingest",
-    "almanac": "tsx src/cli.ts almanac",
-    "synthesize": "tsx src/cli.ts synthesize",
-    "publish": "tsx src/cli.ts publish",
-    "daily": "tsx src/cli.ts daily",
-    "migrate": "tsx src/db/migrate.ts",
-    "backfill:tempest": "tsx scripts/backfill-tempest.ts",
-    "seed:quotes": "tsx scripts/seed-quotes.ts",
-    "seed:breeding": "tsx scripts/seed-breeding.ts",
+    "daily": "tsx src/cli.ts",
     "site:dev": "astro dev --root site",
     "site:build": "astro build --root site",
-    "site:preview": "astro preview --root site",
     "site:check": "astro check --root site",
-    "site:serve": "serve site/dist -l tcp://0.0.0.0:${PORT:-3000}",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write ."
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",
-    "@netlify/database": "^1.0.0",
     "astro": "^5.0.0",
-    "astronomy-engine": "^2.1.19",
-    "dotenv": "^16.4.5",
-    "postgres": "^3.4.5",
-    "serve": "^14.2.4"
+    "astronomy-engine": "^2.1.19"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",

@@ -1,0 +1,53 @@
+{
+  "entry_date": "2026-05-21",
+  "generated_at": "2026-05-25T00:57:16.760Z",
+  "title": null,
+  "summary": "Journée froide et sèche sur le Val, loin des normales de mai — la migration bat son plein malgré tout.",
+  "body_md": "Le thermomètre n'a pas dépassé 9,8 °C et il a frôlé le gel en fin de nuit : c'est mai, mais on n'y croirait pas. Vent presque nul, ciel dégagé, aucune pluie — un de ces jours purs et tranchants qui font souffrir les bourgeons mais conviennent aux oiseaux de passage. Le solaire a été généreux malgré la froidure, et l'activité sous le couvert a suivi : 33 espèces détectées, 1 149 contacts au total, avec un pic en matinée qui ne laisse aucun doute sur l'ampleur du mouvement en cours.\n\nC'est le martin-pêcheur qui retenait l'attention ce matin, peu après six heures et demie. Un seul cri — bref, cassant, inimitable — au-dessus de la rivière, avant que le silence ne reprenne. Megaceryle alcyon ne s'attarde pas ; il longe l'eau, repère, repart. Les bruants à couronne blanche dominaient la journée par le nombre, mais c'est lui, le solitaire à l'heure bleue, qui donne son caractère au Val ce jeudi.",
+  "sky_narrative": "La nuit qui s'ouvre est sans nuages — couverture nuageuse nulle — et le croissant de Lune sera couché avant l'aube, ayant disparu vers 1 h 17 (heure locale). C'est une nuit faite pour le ciel profond : Vénus et Jupiter sont présents et brillants, Mercure notable ; avec aucune nuisance lunaire après minuit, la voûte sera entière pour qui se risque dehors dans le froid.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "froid",
+    "printemps",
+    "ciel-clair",
+    "riviere"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -1.8,
+      "temp_max_c": 9.8,
+      "temp_avg_c": 4.8,
+      "wind_gust_max_ms": 6,
+      "wind_avg_ms": 0.98,
+      "rain_mm": 0,
+      "solar_rad_avg_wm2": 306.5,
+      "lux_peak": {
+        "hour": 14,
+        "value_lux": 128215
+      },
+      "lightning_count": 0
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Belted Kingfisher",
+      "taxon_scientific": "Megaceryle alcyon",
+      "confidence": 0.9996,
+      "observed_at": "2026-05-21T06:54:41-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260521-105438.flac"
+    },
+    "sky": {
+      "for_date": "2026-05-22",
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 36,
+      "moon_set_utc": "2026-05-22T05:17:29.832Z",
+      "cloud_cover_night_pct": 0,
+      "notable_planets": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces plus robustes ou à demi familières, comme le bruant chanteur et le merlebleu, arrivant généralement en mars, tandis que les oiseaux des bois plus rares et plus éclatants ferment la procession en juin."
+}
