@@ -2,7 +2,10 @@ name: daily edition
 
 on:
   schedule:
-    - cron: '5 5 * * *'
+    # 04:05 UTC = 00:05 EDT (été).
+    # ⚠️ Au passage à l'heure d'hiver (1er dim. de novembre), repasser à
+    # '5 5 * * *' pour que ça reste 00:05 EST (sinon ce sera 23:05 EST la veille).
+    - cron: '5 4 * * *'
   workflow_dispatch:
     inputs:
       date:
