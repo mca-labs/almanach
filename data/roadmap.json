@@ -56,10 +56,6 @@
       "details": "Exige une baseline régionale via API eBird."
     },
     {
-      "title": "Titres <code>null</code> fréquents",
-      "details": "Avec les contraintes de format renforcées, Claude est devenu conservateur et omet souvent le titre. À assouplir au prompt si on veut un titre par jour."
-    },
-    {
       "title": "Protection contre écrasement d'éditions existantes",
       "details": "Dans <code>daily.ts</code> : si <code>data/editions/YYYY-MM-DD.json</code> existe déjà, skip sauf <code>--force</code>."
     },
