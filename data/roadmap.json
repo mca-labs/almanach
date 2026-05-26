@@ -10,6 +10,18 @@
       "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
     },
     {
+      "title": "Vérifier la rotation des citations",
+      "details": "Affichage répétitif de la même citation depuis deux jours, peut-être un hasard. À valider dans la logique de sélection (<code>synthesize.ts</code> ou <code>data/quotes.json</code>)."
+    },
+    {
+      "title": "Clarifier les règles de l'« Observation du jour »",
+      "details": "Sur quels critères une espèce ressort-elle ? Envisager de remplacer par « le plus entendu aujourd'hui » (l'espèce avec le plus grand nombre de détections)."
+    },
+    {
+      "title": "Éphémérides — temporalité des verbes au futur",
+      "details": "Les verbes de la section Éphémérides astronomiques devraient toujours être au futur puisqu'il s'agit d'événements à venir (la nuit qui s'ouvre). À renforcer dans le prompt de la narration du ciel."
+    },
+    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
@@ -23,6 +35,14 @@
     }
   ],
   "later": [
+    {
+      "title": "Tests avec une caméra cellulaire en forêt",
+      "details": "Pour observer la faune terrestre (cerf de Virginie, orignal, lynx, renard…) et en faire éventuellement une source de données supplémentaire."
+    },
+    {
+      "title": "Réviser l'indicateur de luminosité",
+      "details": "Affichage actuel peu évocateur (jauge simple). Envisager un graphique à barres horaire qui montre la courbe de la journée."
+    },
     {
       "title": "« Dernier éclair il y a X j »",
       "details": "Tracker <code>lightning_strike_last_epoch</code> à travers les jours. Actuellement on affiche le count du jour seulement."
