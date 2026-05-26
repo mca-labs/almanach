@@ -1,5 +1,6 @@
 ---
 import Base from '@/layouts/Base.astro';
+import Footer from '@/components/Footer.astro';
 import { creditsForDate, latestPublished } from '@/lib/data';
 
 const entry = await latestPublished();
@@ -107,10 +108,5 @@ function licenseUrl(code: string): string | null {
     </p>
   </section>
 
-  <footer>
-    <div class="row">
-      <a href="/">← retour à l'almanach</a>
-      <a href="/a-propos">à propos →</a>
-    </div>
-  </footer>
+  <Footer />
 </Base>

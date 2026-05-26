@@ -1,5 +1,6 @@
 ---
 import Base from '@/layouts/Base.astro';
+import Footer from '@/components/Footer.astro';
 import {
   birdOfTheDayWithPhoto,
   birdsFor,
@@ -403,15 +404,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
         </section>
       )}
 
-      <footer class="rv" style="animation-delay:.58s">
-        <div class="row">
-          <span>Almanach du Val-des-Loups · pont couvert de Saint-Placide-de-Charlevoix · <a href="https://github.com/mca-labs/almanach" target="_blank" rel="noopener">projet open source</a> par <a href="https://www.michaelcarpentier.com/" target="_blank" rel="noopener">Michael Carpentier</a></span>
-        </div>
-        <div class="row" style="border:0;padding-top:8px">
-          <span>Sources : <a href="https://tempestwx.com/station/41129/" target="_blank" rel="noopener">Tempest</a> · <a href="https://app.birdweather.com/stations/6670" target="_blank" rel="noopener">BirdWeather</a> · NOAA SWPC · billet généré par Claude selon données d'observations réelles</span>
-          <span><a href="/credits">crédits photo →</a> · <a href="/feuille-de-route">feuille de route →</a></span>
-        </div>
-      </footer>
+      <Footer />
     </>
   )}
 

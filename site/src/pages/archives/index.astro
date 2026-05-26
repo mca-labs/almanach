@@ -1,5 +1,6 @@
 ---
 import Base from '@/layouts/Base.astro';
+import Footer from '@/components/Footer.astro';
 import { birdsFor, entryByDate, publishedDates, weatherFor } from '@/lib/data';
 
 const dates = await publishedDates();
@@ -96,7 +97,5 @@ function lumiLabel(wm2: number | null | undefined): string {
     ))
   )}
 
-  <div class="foot rv" style={`animation-delay:${0.08 + entries.length * 0.04}s`}>
-    <a class="home" href="/">← retour à l'accueil</a>
-  </div>
+  <Footer />
 </Base>
