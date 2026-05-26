@@ -2,10 +2,6 @@
   "now": [],
   "soon": [
     {
-      "title": "Caractérisation du milieu",
-      "details": "Ajouter une sous-section dans « Le lieu » de la page À propos : région écologique, sous-domaine bioclimatique, type de peuplement forestier, etc."
-    },
-    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
@@ -56,6 +52,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Caractérisation du milieu sur la page À propos",
+      "details": "Nouvelle section « Le milieu » avec région écologique, sous-domaine bioclimatique, espèces phares (noms latins), trois plateaux du terrain, faune et mémoire orale du lieu.",
+      "finished_at": "2026-05-25"
+    },
     {
       "title": "Optimisation des balises <code>&lt;title&gt;</code> et <code>&lt;meta description&gt;</code>",
       "details": "Titre statique par page (au lieu de dériver de la description du jour) et description commune pour toutes les pages. Ajout aussi des balises Open Graph et Twitter Card pour le partage social.",
