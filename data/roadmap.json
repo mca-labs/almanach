@@ -53,6 +53,11 @@
   ],
   "done": [
     {
+      "title": "Favicon (icône ✻ du topbar)",
+      "details": "SVG en couleur accent (teal), affichée dans l'onglet du navigateur.",
+      "finished_at": "2026-05-25"
+    },
+    {
       "title": "Analytique respectueuse de la vie privée",
       "details": "GoatCounter (SaaS gratuit, sans cookie, open source) intégré via un petit script dans le layout commun. Aucune donnée personnelle collectée, conforme RGPD.",
       "finished_at": "2026-05-25"
