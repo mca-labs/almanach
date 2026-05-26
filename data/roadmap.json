@@ -2,10 +2,6 @@
   "now": [],
   "soon": [
     {
-      "title": "Analytique respectueuse de la vie privée",
-      "details": "Adopter une solution open source, sans cookie, qui respecte la confidentialité des visiteurs (par ex. Plausible, Umami, GoatCounter)."
-    },
-    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
@@ -56,6 +52,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Analytique respectueuse de la vie privée",
+      "details": "GoatCounter (SaaS gratuit, sans cookie, open source) intégré via un petit script dans le layout commun. Aucune donnée personnelle collectée, conforme RGPD.",
+      "finished_at": "2026-05-25"
+    },
     {
       "title": "Section « Pourquoi Val-des-Loups? » sur la page À propos",
       "details": "Trois résonances derrière le nom : la vallée du Bras du Nord-Ouest, la présence avérée de loups dans les terres du Séminaire, et le surnom « les Loups » des habitants de Baie-Saint-Paul.",
