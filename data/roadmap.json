@@ -2,6 +2,10 @@
   "now": [],
   "soon": [
     {
+      "title": "Pression atmosphérique",
+      "details": "Tempest collecte <code>station_pressure_mb</code>. À agréger dans <code>WeatherDaily</code> puis afficher dans la carte Pression."
+    },
+    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
@@ -15,10 +19,6 @@
     }
   ],
   "later": [
-    {
-      "title": "Pression atmosphérique",
-      "details": "Tempest collecte <code>station_pressure_mb</code>. À agréger dans <code>WeatherDaily</code> puis afficher dans la carte Pression."
-    },
     {
       "title": "« Dernier éclair il y a X j »",
       "details": "Tracker <code>lightning_strike_last_epoch</code> à travers les jours. Actuellement on affiche le count du jour seulement."
