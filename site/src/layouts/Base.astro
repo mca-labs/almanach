@@ -4,9 +4,14 @@ import TopBar from '@/components/TopBar.astro';
 
 interface Props {
   title: string;
+  description?: string;
   active?: 'une' | 'archives' | 'a-propos';
 }
-const { title, active } = Astro.props;
+const {
+  title,
+  description = "Journal environnemental quotidien de la forêt près du pont couvert de Saint-Placide-de-Charlevoix, Baie-Saint-Paul.",
+  active,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -15,6 +20,11 @@ const { title, active } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

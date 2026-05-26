@@ -6,10 +6,6 @@
       "details": "Ajouter une sous-section dans « Le lieu » de la page À propos : région écologique, sous-domaine bioclimatique, type de peuplement forestier, etc."
     },
     {
-      "title": "Optimisation de la balise <code>&lt;title&gt;</code>",
-      "details": "Utiliser « Almanach environnemental de Val-des-Loups, pont couvert de Saint-Placide-de-Charlevoix. »"
-    },
-    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
@@ -60,6 +56,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Optimisation des balises <code>&lt;title&gt;</code> et <code>&lt;meta description&gt;</code>",
+      "details": "Titre statique par page (au lieu de dériver de la description du jour) et description commune pour toutes les pages. Ajout aussi des balises Open Graph et Twitter Card pour le partage social.",
+      "finished_at": "2026-05-25"
+    },
     {
       "title": "Mise en ligne initiale",
       "details": "Site déployé sous <a href=\"https://valdesloups.com\">valdesloups.com</a> avec HTTPS Let's Encrypt, hosting Netlify, cron quotidien automatisé via GitHub Actions, DNS chez Namecheap. Bascule de l'architecture initiale (Postgres / Railway) vers un repo Git comme état persistant.",

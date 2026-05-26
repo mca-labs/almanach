@@ -94,8 +94,7 @@ const moonDetail = (moon?.detail ?? {}) as { illumination_fraction?: number; set
 const notablePlanets = (sky?.events ?? []).filter((e) => e.category === 'planet' && e.notable);
 
 const dateLine = date ? frenchDateLine(date) : null;
-const titleLong = entry?.title ?? 'Almanach du Val-des-Loups';
-const pageTitle = entry ? `${titleLong} — édition du ${date}` : 'Almanach du Val-des-Loups';
+const pageTitle = 'Almanach du Val-des-Loups - Saint-Placide-de-Charlevoix';
 const body = paragraphs(entry?.body_md ?? null);
 
 const birdName = birdPhoto?.name_fr ?? birdPhoto?.taxon_common ?? birdPhoto?.taxon_scientific ?? '—';
