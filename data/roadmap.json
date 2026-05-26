@@ -6,6 +6,10 @@
       "details": "Tempest collecte <code>station_pressure_mb</code>. À agréger dans <code>WeatherDaily</code> puis afficher dans la carte Pression."
     },
     {
+      "title": "Diversifier la base de fragments",
+      "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
+    },
+    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
