@@ -53,6 +53,11 @@
   ],
   "done": [
     {
+      "title": "Noms latins en italique sur la page d'accueil",
+      "details": "Auto-détection des binômes latins via la liste blanche des <code>taxon_scientific</code> du jour (0 faux positif), appliquée au summary, au billet et à la narration du ciel. Robuste même quand l'IA oublie les marqueurs.",
+      "finished_at": "2026-05-25"
+    },
+    {
       "title": "Caractérisation du milieu sur la page À propos",
       "details": "Nouvelle section « Le milieu » avec région écologique, sous-domaine bioclimatique, espèces phares (noms latins), trois plateaux du terrain, faune et mémoire orale du lieu.",
       "finished_at": "2026-05-25"

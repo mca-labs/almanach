@@ -50,9 +50,19 @@ function paragraphs(md: string | null): string[] {
   if (!md) return [];
   return md.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 }
-function renderItalics(text: string): { html: string }[] {
-  // Découpe sur les motifs *...* pour rendre les noms latins en italique.
-  const parts = text.split(/(\*[^*\n]+\*)/g);
+function renderItalics(text: string, taxons: string[] = []): { html: string }[] {
+  // 1. Auto-wrap les binômes latins (liste blanche depuis les taxons réels du jour)
+  //    en *...* s'ils ne sont pas déjà entourés. Évite les faux positifs sur des
+  //    expressions françaises type "La paruline" ou "Jupiter resteront".
+  let processed = text;
+  for (const taxon of taxons) {
+    if (!taxon) continue;
+    const escaped = taxon.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(`(?<!\\*)\\b${escaped}\\b(?!\\*)`, 'g');
+    processed = processed.replace(re, `*${taxon}*`);
+  }
+  // 2. Découpe sur les motifs *...* pour rendre les noms latins en italique.
+  const parts = processed.split(/(\*[^*\n]+\*)/g);
   return parts
     .filter(Boolean)
     .map((p) =>
@@ -99,6 +109,13 @@ const body = paragraphs(entry?.body_md ?? null);
 
 const birdName = birdPhoto?.name_fr ?? birdPhoto?.taxon_common ?? birdPhoto?.taxon_scientific ?? '—';
 
+// Liste blanche des binômes latins du jour pour l'auto-italique (renderItalics).
+const dayTaxons: string[] = Array.from(new Set([
+  ...(birds?.top_species ?? []).map((s) => s.taxon_scientific).filter(Boolean),
+  birdPhoto?.taxon_scientific,
+  birds?.bird_of_the_day?.taxon_scientific,
+].filter((t): t is string => !!t)));
+
 // --- Données pour les SVG (réelles, agrégées server-side) ---
 const TEMP_HOURS: (number | null)[] = weather?.hourly_temps_c ?? new Array(24).fill(null);
 const TEMP_NORM: (number | null)[] = weather?.hourly_norm_c ?? [];
@@ -133,7 +150,11 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           <h1 class="title"><em>Hier,</em> {dateLine?.hier}</h1>
           <span class="ed">{dateLine?.ed}</span>
         </div>
-        {entry.summary && <p class="condition">{entry.summary}</p>}
+        {entry.summary && (
+          <p class="condition">
+            {renderItalics(entry.summary, dayTaxons).map((fr) => (<Fragment set:html={fr.html} />))}
+          </p>
+        )}
       </header>
 
       {/* BILLET */}
@@ -143,7 +164,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
         </div>
         {body.map((p, i) => (
           <p class={i === 0 ? 'drop' : ''}>
-            {renderItalics(p).map((fr) => (<Fragment set:html={fr.html} />))}
+            {renderItalics(p, dayTaxons).map((fr) => (<Fragment set:html={fr.html} />))}
           </p>
         ))}
         {previousDate && <p class="more"><a href="/archives">Éditions précédentes →</a></p>}
@@ -359,7 +380,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
         </div>
         {entry.sky_narrative && (
           <p class="propice">
-            {renderItalics(entry.sky_narrative).map((fr) => (<Fragment set:html={fr.html} />))}
+            {renderItalics(entry.sky_narrative, dayTaxons).map((fr) => (<Fragment set:html={fr.html} />))}
           </p>
         )}
       </section>
