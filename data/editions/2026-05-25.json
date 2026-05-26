@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-05-25",
+  "generated_at": "2026-05-26T07:58:27.693Z",
+  "title": null,
+  "summary": "Journée fraîche et pluvieuse sur le Val, avec une percée lumineuse en fin d'après-midi — la migration bat son plein sous les épinettes.",
+  "body_md": "La pluie est tombée tôt, douze millimètres, puis s'est retirée sans faire d'histoire. Le ciel s'est un peu ouvert en milieu d'après-midi, juste assez pour que la lumière touche les cimes — 78 000 lux au pic, vers dix-sept heures — avant que la température redescende vers neuf degrés. Vent quasi nul toute la journée : ce calme-là, les migrateurs le connaissent bien, et ils en ont profité.\n\nLes détections ont afflué en vagues dès seize heures, avec un sommet vers dix-sept heures : la paruline à croupion jaune menait le bal, mais c'est le roitelet à couronne rubis qui a retenu l'attention. Sa voix montait du sous-bois vers dix-huit heures quarante-huit, nette, insistante, presque impatiente — il ne passera pas la nuit ici, mais pour un instant, le Val était sur son chemin.",
+  "sky_narrative": "La lune gibbeuse, éclairée aux trois quarts, s'est couchée à 2 h 26 du matin, laissant quelques heures d'obscurité réelle avant l'aube astronomique. Avec seulement 13 % de couverture nuageuse, Vénus et Jupiter sont bien visibles en début de nuit ; après le coucher de la lune, le ciel se prête à une sortie en forêt sans frontale — l'obscurité sera brève, mais franche.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "pluie",
+    "printemps",
+    "roitelet",
+    "paruline"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 7.9,
+      "temp_max_c": 16.6,
+      "rain_mm": 12.634654,
+      "wind_gust_max_ms": 3.3,
+      "solar_lux_peak": 78385
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "observed_at": "2026-05-25T18:48:00-04:00",
+      "confidence": 0.999876856803894,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-224754.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 76.6,
+      "moon_set": "2026-05-26T06:26:46.260Z",
+      "cloud_cover_night_pct": 13.3,
+      "notable_planets": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux des espèces les plus robustes ou semi-domestiquées, comme le bruant chanteur et le merlebleu, arrivent généralement en mars, tandis que les oiseaux des bois plus rares et plus brillants ferment la procession en juin."
+}
