@@ -53,6 +53,11 @@
   ],
   "done": [
     {
+      "title": "Section « Pourquoi Val-des-Loups? » sur la page À propos",
+      "details": "Trois résonances derrière le nom : la vallée du Bras du Nord-Ouest, la présence avérée de loups dans les terres du Séminaire, et le surnom « les Loups » des habitants de Baie-Saint-Paul.",
+      "finished_at": "2026-05-25"
+    },
+    {
       "title": "Noms latins en italique sur la page d'accueil",
       "details": "Auto-détection des binômes latins via la liste blanche des <code>taxon_scientific</code> du jour (0 faux positif), appliquée au summary, au billet et à la narration du ciel. Robuste même quand l'IA oublie les marqueurs.",
       "finished_at": "2026-05-25"
