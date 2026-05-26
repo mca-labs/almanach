@@ -1,6 +1,7 @@
 // Orchestrateur quotidien. Lance ingest + almanach + photos + synthèse,
 // écrit des fichiers JSON dans data/. Aucune persistance externe.
 
+import { readdir } from 'node:fs/promises';
 import { computeSkyDaily } from './almanac.js';
 import { fetchDayDetections } from './sources/birdweather.js';
 import { resolvePhoto, type PhotoCache } from './sources/inat.js';
@@ -13,6 +14,33 @@ const DATA_DIR = 'data';
 
 interface QuotesFile {
   citations: Quote[];
+}
+
+/**
+ * IDs des citations utilisées dans les N derniers jours (strictement avant `beforeDate`).
+ * Sert à éviter que Claude rechoisisse la même citation jour après jour : on filtre
+ * la liste passée au prompt pour exclure les récentes.
+ */
+async function recentQuoteIds(beforeDate: string, days: number): Promise<Set<string>> {
+  const ids = new Set<string>();
+  try {
+    const files = await readdir(`${DATA_DIR}/editions`);
+    const recent = files
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => f.replace(/\.json$/, ''))
+      .filter((d) => d < beforeDate)
+      .sort()
+      .slice(-days);
+    for (const d of recent) {
+      const e = await readJson<{ fragment_quote_id?: string | null }>(
+        `${DATA_DIR}/editions/${d}.json`,
+      );
+      if (e?.fragment_quote_id) ids.add(e.fragment_quote_id);
+    }
+  } catch {
+    /* dossier inexistant la toute première fois : on retourne un set vide */
+  }
+  return ids;
 }
 
 export async function runDaily(opts: { date?: string } = {}): Promise<void> {
@@ -68,13 +96,21 @@ export async function runDaily(opts: { date?: string } = {}): Promise<void> {
 
   console.log('5/5 synthesize (Claude)…');
   const quotes = (await readJson<QuotesFile>(`${DATA_DIR}/quotes.json`)) ?? { citations: [] };
+  // Rotation : on exclut les citations utilisées dans les 7 derniers jours.
+  // Si la liste filtrée devient trop courte (< 3), on retombe sur la liste complète.
+  const recentIds = await recentQuoteIds(entryDate, 7);
+  const eligible = quotes.citations.filter((q) => !recentIds.has(q.id));
+  const finalQuotes = eligible.length >= 3 ? eligible : quotes.citations;
+  console.log(
+    `     ${recentIds.size} citation(s) utilisée(s) ≤ 7j, ${finalQuotes.length} éligible(s) sur ${quotes.citations.length}`,
+  );
   const billet = await synthesize({
     date: entryDate,
     sky_date: skyDate,
     weather,
     birds,
     sky,
-    quotes_available: quotes.citations,
+    quotes_available: finalQuotes,
   });
   await writeJson(`${DATA_DIR}/editions/${entryDate}.json`, {
     entry_date: entryDate,

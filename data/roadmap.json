@@ -10,10 +10,6 @@
       "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
     },
     {
-      "title": "Vérifier la rotation des citations",
-      "details": "Affichage répétitif de la même citation depuis deux jours, peut-être un hasard. À valider dans la logique de sélection (<code>synthesize.ts</code> ou <code>data/quotes.json</code>)."
-    },
-    {
       "title": "Clarifier les règles de l'« Observation du jour »",
       "details": "Sur quels critères une espèce ressort-elle ? Envisager de remplacer par « le plus entendu aujourd'hui » (l'espèce avec le plus grand nombre de détections)."
     },
@@ -76,6 +72,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Rotation des citations forcée",
+      "details": "Diagnostic : Claude réutilisait Burroughs #10 5 jours sur 6 sur 13 disponibles, parce que la citation thématique de la migration de printemps revenait toujours en tête. Fix : <code>daily.ts</code> filtre les citations utilisées dans les 7 derniers jours avant d'envoyer la liste à Claude — la rotation est garantie côté code, sans dépendre de la mémoire du modèle.",
+      "finished_at": "2026-05-25"
+    },
     {
       "title": "Favicon (icône ✻ du topbar)",
       "details": "SVG en couleur accent (teal), affichée dans l'onglet du navigateur.",
