@@ -162,6 +162,22 @@
   .vizt .sep{width:1px;height:34px;background:var(--rule-soft)}
   .fig{margin:0 0 22px}
   .fig img{display:block;width:100%;height:auto}
+
+  /* Feuille de route */
+  .roadlist{list-style:none;padding:0;margin:0}
+  .roadlist .item{padding:14px 0;border-bottom:1px solid var(--rule-soft)}
+  .roadlist .item:last-child{border-bottom:0}
+  .roadlist .t{font-family:var(--display);font-size:18px;color:var(--ink);line-height:1.35;
+    display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .roadlist .d{font-family:var(--sans);font-size:14px;color:var(--ink-2);
+    margin-top:5px;line-height:1.55}
+  .roadlist .d code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;
+    background:var(--surface);padding:1px 5px;border-radius:3px}
+  .roadlist .when{font-family:var(--sans);font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-3);font-variant-numeric:tabular-nums}
+  .roadlist.done .item .strike{text-decoration:line-through;text-decoration-color:var(--ink-3);
+    text-decoration-thickness:1px;color:var(--ink-3);transition:text-decoration .25s ease,color .25s ease}
+  .roadlist.done .item:hover .strike{text-decoration-color:transparent;color:var(--ink)}
   .sun .ico{color:var(--accent);flex:none}
   .sun b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
 

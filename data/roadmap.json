@@ -1,0 +1,69 @@
+{
+  "now": [],
+  "soon": [
+    {
+      "title": "Caractérisation du milieu",
+      "details": "Ajouter une sous-section dans « Le lieu » de la page À propos : région écologique, sous-domaine bioclimatique, type de peuplement forestier, etc."
+    },
+    {
+      "title": "Optimisation de la balise <code>&lt;title&gt;</code>",
+      "details": "Utiliser « Almanach environnemental de Val-des-Loups, pont couvert de Saint-Placide-de-Charlevoix. »"
+    },
+    {
+      "title": "Liens vers eBird sur les noms d'oiseaux",
+      "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
+    },
+    {
+      "title": "Passe Impeccable",
+      "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
+    },
+    {
+      "title": "Direction du vent en texte",
+      "details": "Dériver de <code>wind_direction_deg</code> moyen dans <code>WeatherDaily</code> (« O », « NO », « SSO »…). Affichage dans la carte Vent de la section Météo."
+    }
+  ],
+  "later": [
+    {
+      "title": "Pression atmosphérique",
+      "details": "Tempest collecte <code>station_pressure_mb</code>. À agréger dans <code>WeatherDaily</code> puis afficher dans la carte Pression."
+    },
+    {
+      "title": "« Dernier éclair il y a X j »",
+      "details": "Tracker <code>lightning_strike_last_epoch</code> à travers les jours. Actuellement on affiche le count du jour seulement."
+    },
+    {
+      "title": "« Rare au secteur » dans Premières de la saison",
+      "details": "Exige une baseline régionale via API eBird."
+    },
+    {
+      "title": "Titres <code>null</code> fréquents",
+      "details": "Avec les contraintes de format renforcées, Claude est devenu conservateur et omet souvent le titre. À assouplir au prompt si on veut un titre par jour."
+    },
+    {
+      "title": "Protection contre écrasement d'éditions existantes",
+      "details": "Dans <code>daily.ts</code> : si <code>data/editions/YYYY-MM-DD.json</code> existe déjà, skip sauf <code>--force</code>."
+    },
+    {
+      "title": "Version anglaise du site"
+    },
+    {
+      "title": "Carte interactive sur la page À propos",
+      "details": "Explorer <a href=\"https://leafletjs.com/\" target=\"_blank\" rel=\"noopener\">Leaflet.js</a> pour situer le lieu, avec personnalisation via CSS."
+    },
+    {
+      "title": "Newsletter / RSS",
+      "details": "Éventuel flux pour qui veut être notifié des nouvelles éditions."
+    },
+    {
+      "title": "Pages saisonnières",
+      "details": "Vue par saison ou par mois dans les archives quand le corpus grossira."
+    }
+  ],
+  "done": [
+    {
+      "title": "Mise en ligne initiale",
+      "details": "Site déployé sous <a href=\"https://valdesloups.com\">valdesloups.com</a> avec HTTPS Let's Encrypt, hosting Netlify, cron quotidien automatisé via GitHub Actions, DNS chez Namecheap. Bascule de l'architecture initiale (Postgres / Railway) vers un repo Git comme état persistant.",
+      "finished_at": "2026-05-25"
+    }
+  ]
+}

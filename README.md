@@ -120,12 +120,10 @@ date locale `America/Toronto` et choisit `entryDate = veille` et
 
 ## Suivi du projet
 
-Deux fichiers à la racine documentent l'évolution :
-
-- [`BACKLOG.md`](BACKLOG.md) — ce qui est en cours, à venir, reporté. Source de vérité pour la roadmap.
-- [`CHANGELOG.md`](CHANGELOG.md) — ce qui a été mis en ligne, par date.
-
-Quand un item du backlog est déployé, il sort du backlog et entre dans le changelog à la date courante.
+La feuille de route — en cours, à venir, reporté, terminé — est publiée
+directement sur le site : <https://valdesloups.com/feuille-de-route/>.
+Les données vivent dans [`data/roadmap.json`](data/roadmap.json) ; la page
+les lit au build.
 
 ## Licence
 
@@ -254,14 +252,10 @@ local date in `America/Toronto` and picks `entryDate = previous day` and
 
 ## Project tracking
 
-Two files at the root document the evolution:
-
-- [`BACKLOG.md`](BACKLOG.md) — what's in progress, coming up, deferred. Source
-  of truth for the roadmap.
-- [`CHANGELOG.md`](CHANGELOG.md) — what's been deployed, by date.
-
-When a backlog item is shipped, it leaves the backlog and enters the
-changelog at the current date.
+The roadmap — in progress, coming up, deferred, done — is published
+directly on the site at <https://valdesloups.com/feuille-de-route/>.
+Data lives in [`data/roadmap.json`](data/roadmap.json); the page reads
+it at build time.
 
 ## License
 

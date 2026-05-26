@@ -1,0 +1,91 @@
+---
+import Base from '@/layouts/Base.astro';
+import roadmap from '../../../data/roadmap.json';
+
+interface Item { title: string; details?: string; finished_at?: string }
+interface Roadmap { now: Item[]; soon: Item[]; later: Item[]; done: Item[] }
+const r = roadmap as Roadmap;
+
+function fmtFr(iso: string): string {
+  return new Intl.DateTimeFormat('fr-CA', {
+    day: 'numeric', month: 'long', year: 'numeric',
+  }).format(new Date(`${iso}T12:00:00Z`));
+}
+---
+
+<Base title="Almanach du Val-des-Loups — feuille de route" active="a-propos">
+  <header class="mast">
+    <div class="titleline">
+      <h1 class="title">Feuille de route</h1>
+    </div>
+    <p class="condition">
+      Ce qui est en cours, ce qui s'en vient, ce qui est reporté, et ce qui a été mis en ligne.
+    </p>
+  </header>
+
+  {r.now.length > 0 && (
+    <section class="blk">
+      <div class="rubric mini"><h2>Maintenant</h2><span class="line"></span></div>
+      <ul class="roadlist">
+        {r.now.map((item) => (
+          <li class="item">
+            <div class="t"><Fragment set:html={item.title} /></div>
+            {item.details && <div class="d"><Fragment set:html={item.details} /></div>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {r.soon.length > 0 && (
+    <section class="blk">
+      <div class="rubric mini"><h2>Bientôt</h2><span class="line"></span></div>
+      <ul class="roadlist">
+        {r.soon.map((item) => (
+          <li class="item">
+            <div class="t"><Fragment set:html={item.title} /></div>
+            {item.details && <div class="d"><Fragment set:html={item.details} /></div>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {r.later.length > 0 && (
+    <section class="blk">
+      <div class="rubric mini"><h2>Plus tard</h2><span class="line"></span></div>
+      <ul class="roadlist">
+        {r.later.map((item) => (
+          <li class="item">
+            <div class="t"><Fragment set:html={item.title} /></div>
+            {item.details && <div class="d"><Fragment set:html={item.details} /></div>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {r.done.length > 0 && (
+    <section class="blk">
+      <div class="rubric mini"><h2>Terminé</h2><span class="line"></span></div>
+      <ul class="roadlist done">
+        {r.done.map((item) => (
+          <li class="item">
+            <div class="t">
+              <span class="strike"><Fragment set:html={item.title} /></span>
+              {item.finished_at && <span class="when">{fmtFr(item.finished_at)}</span>}
+            </div>
+            {item.details && <div class="d"><Fragment set:html={item.details} /></div>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <footer>
+    <div class="row">
+      <a href="/">← retour à l'almanach</a>
+      <a href="/a-propos">à propos →</a>
+    </div>
+  </footer>
+</Base>
