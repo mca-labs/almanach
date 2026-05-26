@@ -298,5 +298,29 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-05-25T00:48:50.706Z"
+  },
+  "Colaptes auratus": {
+    "taxon_inat_id": 18236,
+    "name_fr": "pic flamboyant",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250021600/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250021600/square.jpg",
+    "attribution": "(c) maticus, some rights reserved (CC BY-NC), uploaded by maticus",
+    "attribution_name": "maticus",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-05-26T07:58:04.917Z"
+  },
+  "Leiothlypis peregrina": {
+    "taxon_inat_id": 979756,
+    "name_fr": "paruline obscure",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/197207/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/197207/square.jpg",
+    "attribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC)",
+    "attribution_name": "Mark Rosenstein",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-05-26T07:58:07.105Z"
   }
 }

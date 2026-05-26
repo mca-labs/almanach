@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-25",
+  "total_detections": 1131,
+  "unique_species": 34,
+  "top_species": [
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 262,
+      "max_confidence": 0.9861343502998352,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-223110.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 223,
+      "max_confidence": 0.9846483469009399,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260526-000530.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 146,
+      "max_confidence": 0.9611184000968933,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-214358.flac"
+    },
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 141,
+      "max_confidence": 0.9992908239364624,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-210511.flac"
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 117,
+      "max_confidence": 0.999876856803894,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-224754.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 61,
+      "max_confidence": 0.8814905881881714,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260526-013634.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 26,
+      "max_confidence": 0.9334930777549744,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-211654.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 18,
+      "max_confidence": 0.9674322605133057,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-200658.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 17,
+      "max_confidence": 0.9744823575019836,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-203602.flac"
+    },
+    {
+      "taxon_common": "Tennessee Warbler",
+      "taxon_scientific": "Leiothlypis peregrina",
+      "count": 9,
+      "max_confidence": 0.9171575307846069,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-211849.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Ruby-crowned Kinglet",
+    "taxon_scientific": "Corthylio calendula",
+    "confidence": 0.999876856803894,
+    "observed_at": "2026-05-25T18:48:00-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260525-224754.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    15,
+    38,
+    31,
+    11,
+    14,
+    25,
+    14,
+    4,
+    39,
+    56,
+    94,
+    78,
+    116,
+    218,
+    108,
+    176,
+    89,
+    4,
+    0,
+    1
+  ]
+}
