@@ -2,6 +2,10 @@
   "now": [],
   "soon": [
     {
+      "title": "Analytique respectueuse de la vie privée",
+      "details": "Adopter une solution open source, sans cookie, qui respecte la confidentialité des visiteurs (par ex. Plausible, Umami, GoatCounter)."
+    },
+    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
