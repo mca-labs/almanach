@@ -36,6 +36,10 @@
   ],
   "later": [
     {
+      "title": "Validation des points de l'audit de sécurité",
+      "details": "Faire passer un audit de sécurité (skill <code>/security-review</code>) sur la base de code, puis appliquer/valider les recommandations."
+    },
+    {
       "title": "Tests avec une caméra cellulaire en forêt",
       "details": "Pour observer la faune terrestre (cerf de Virginie, orignal, lynx, renard…) et en faire éventuellement une source de données supplémentaire."
     },
