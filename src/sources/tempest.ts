@@ -58,6 +58,8 @@ export interface WeatherDaily {
   solar_rad_avg_wm2: number | null;
   /** Pic de luminosité du jour : heure locale (0..23) et valeur en lux (illuminance Tempest). */
   lux_peak: { hour: number; value_lux: number } | null;
+  /** Moyenne horaire de luminosité (24 valeurs, heure locale 0..23). Sert à dessiner la sparkline. */
+  hourly_lux_avg?: (number | null)[];
   lightning: {
     count_total: number;
     avg_distance_km: number | null;
@@ -207,9 +209,13 @@ export async function fetchDailyAggregate(date: string): Promise<WeatherDaily> {
   const lightningCounts = nums(rows, 15);
   const lightningDistances = nums(rows, 14);
 
-  // Agrégat horaire : 24 buckets (heure locale 0..23) → moyenne température + pic illuminance
+  // Agrégat horaire : 24 buckets (heure locale 0..23)
+  // — moyenne température (existant)
+  // — pic + moyenne horaire d'illuminance (lux) pour la sparkline
   const hourlyTempSums: number[] = new Array<number>(24).fill(0);
   const hourlyTempCounts: number[] = new Array<number>(24).fill(0);
+  const hourlyLuxSums: number[] = new Array<number>(24).fill(0);
+  const hourlyLuxCounts: number[] = new Array<number>(24).fill(0);
   let luxPeakValue = -1;
   let luxPeakHour = 0;
   for (const r of rows) {
@@ -222,13 +228,21 @@ export async function fetchDailyAggregate(date: string): Promise<WeatherDaily> {
       hourlyTempCounts[h]! += 1;
     }
     const lux = r[9]; // illuminance_lux
-    if (typeof lux === 'number' && lux > luxPeakValue) {
-      luxPeakValue = lux;
-      luxPeakHour = h;
+    if (typeof lux === 'number') {
+      hourlyLuxSums[h]! += lux;
+      hourlyLuxCounts[h]! += 1;
+      if (lux > luxPeakValue) {
+        luxPeakValue = lux;
+        luxPeakHour = h;
+      }
     }
   }
   const hourly_temps_c: (number | null)[] = hourlyTempSums.map((sum, i) => {
     const n = hourlyTempCounts[i]!;
+    return n > 0 ? sum / n : null;
+  });
+  const hourly_lux_avg: (number | null)[] = hourlyLuxSums.map((sum, i) => {
+    const n = hourlyLuxCounts[i]!;
     return n > 0 ? sum / n : null;
   });
 
@@ -324,6 +338,7 @@ export async function fetchDailyAggregate(date: string): Promise<WeatherDaily> {
     rain_day_final_mm: max(nums(rows, 20)),
     solar_rad_avg_wm2: avg(solar),
     lux_peak: luxPeakValue > 0 ? { hour: luxPeakHour, value_lux: luxPeakValue } : null,
+    hourly_lux_avg,
     lightning: {
       count_total: lightningCounts.reduce((a, b) => a + b, 0),
       avg_distance_km: lightningDistances.length > 0 ? avg(lightningDistances) : null,

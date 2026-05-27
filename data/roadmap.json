@@ -8,10 +8,6 @@
     {
       "title": "Passe Impeccable",
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
-    },
-    {
-      "title": "Réviser l'indicateur de luminosité",
-      "details": "Affichage actuel peu évocateur (jauge simple). Envisager un graphique à barres horaire qui montre la courbe de la journée."
     }
   ],
   "later": [
@@ -52,6 +48,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Luminosité : sparkline + texte enrichi (remplace la jauge)",
+      "details": "Sparkline SVG 160×40 px à gauche (courbe 24 h, aire teal pâle, icône soleil au pic), texte enrichi à droite sur 2 lignes : <code>pic 95 000 lux à 14 h</code> + <code>6 h plein soleil · 3 h voilé · 2 h couvert</code>. Sur mobile (≤560 px) : sparkline pleine largeur en haut, texte en dessous. Stockage : nouveau champ <code>hourly_lux_avg[24]</code> dans <code>WeatherDaily</code> (moyenne horaire). Fallback gracieux (—) pour les éditions sans le nouveau champ.",
+      "finished_at": "2026-05-26"
+    },
     {
       "title": "« Dernier orage » remplace « Foudre » dans la carte Météo",
       "details": "Au lieu d'un compteur d'éclairs du jour (souvent à 0), la carte raconte le dernier orage connu : nombre d'éclairs + date relative + distance. Format : <code>24 éclairs / hier, à 35 km</code> ou <code>8 éclairs / il y a 17 jours, à 23 km</code>. Au-delà de 90 jours, simplifié en <code>+3 mois</code> sans distance. Calcul dans <code>daily.ts</code> par scan rétrograde de <code>data/weather/*.json</code> (cap 365 jours). Fallback gracieux pour les éditions sans le nouveau champ.",
