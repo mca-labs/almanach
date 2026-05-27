@@ -17,30 +17,53 @@ interface QuotesFile {
 }
 
 /**
+ * Liste les N dernières dates antérieures à `beforeDate` qui ont un fichier dans
+ * `data/{subdir}/`. Sert à charger l'historique récent (citations, oiseaux du jour, etc.).
+ */
+async function recentDates(subdir: string, beforeDate: string, days: number): Promise<string[]> {
+  try {
+    const files = await readdir(`${DATA_DIR}/${subdir}`);
+    return files
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => f.replace(/\.json$/, ''))
+      .filter((d) => d < beforeDate)
+      .sort()
+      .slice(-days);
+  } catch {
+    return [];
+  }
+}
+
+/**
  * IDs des citations utilisées dans les N derniers jours (strictement avant `beforeDate`).
  * Sert à éviter que Claude rechoisisse la même citation jour après jour : on filtre
  * la liste passée au prompt pour exclure les récentes.
  */
 async function recentQuoteIds(beforeDate: string, days: number): Promise<Set<string>> {
   const ids = new Set<string>();
-  try {
-    const files = await readdir(`${DATA_DIR}/editions`);
-    const recent = files
-      .filter((f) => f.endsWith('.json'))
-      .map((f) => f.replace(/\.json$/, ''))
-      .filter((d) => d < beforeDate)
-      .sort()
-      .slice(-days);
-    for (const d of recent) {
-      const e = await readJson<{ fragment_quote_id?: string | null }>(
-        `${DATA_DIR}/editions/${d}.json`,
-      );
-      if (e?.fragment_quote_id) ids.add(e.fragment_quote_id);
-    }
-  } catch {
-    /* dossier inexistant la toute première fois : on retourne un set vide */
+  for (const d of await recentDates('editions', beforeDate, days)) {
+    const e = await readJson<{ fragment_quote_id?: string | null }>(
+      `${DATA_DIR}/editions/${d}.json`,
+    );
+    if (e?.fragment_quote_id) ids.add(e.fragment_quote_id);
   }
   return ids;
+}
+
+/**
+ * Noms scientifiques des « oiseaux du jour » des N derniers jours.
+ * Permet de pondérer la sélection par fréquence × nouveauté (cf. fetchDayDetections).
+ */
+async function recentBirdOfDayScis(beforeDate: string, days: number): Promise<Set<string>> {
+  const scis = new Set<string>();
+  for (const d of await recentDates('birds', beforeDate, days)) {
+    const b = await readJson<{ bird_of_the_day?: { taxon_scientific?: string | null } | null }>(
+      `${DATA_DIR}/birds/${d}.json`,
+    );
+    const sci = b?.bird_of_the_day?.taxon_scientific;
+    if (sci) scis.add(sci);
+  }
+  return scis;
 }
 
 export async function runDaily(opts: { date?: string } = {}): Promise<void> {
@@ -67,7 +90,8 @@ export async function runDaily(opts: { date?: string } = {}): Promise<void> {
   );
 
   console.log('2/5 birds (BirdWeather)…');
-  const birds = await fetchDayDetections(entryDate);
+  const recentBirdScis = await recentBirdOfDayScis(entryDate, 7);
+  const birds = await fetchDayDetections(entryDate, { excludeScis: recentBirdScis });
   await writeJson(`${DATA_DIR}/birds/${entryDate}.json`, birds);
   console.log(`     detections=${birds.total_detections}, unique species=${birds.unique_species}`);
 

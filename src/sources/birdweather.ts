@@ -88,7 +88,10 @@ async function gql(variables: Record<string, unknown>): Promise<DetectionsPage> 
   return body.data;
 }
 
-export async function fetchDayDetections(date: string): Promise<BirdsDaily> {
+export async function fetchDayDetections(
+  date: string,
+  options: { excludeScis?: Set<string> } = {},
+): Promise<BirdsDaily> {
   const stationId = process.env.BIRDWEATHER_STATION_ID;
   if (!stationId) throw new Error('BIRDWEATHER_STATION_ID is not set.');
 
@@ -108,7 +111,7 @@ export async function fetchDayDetections(date: string): Promise<BirdsDaily> {
     if (after === null) break;
   }
 
-  return aggregate(date, all);
+  return aggregate(date, all, options.excludeScis ?? new Set());
 }
 
 function localHourFromIso(iso: string): number {
@@ -122,7 +125,7 @@ function localHourFromIso(iso: string): number {
   return Number.isFinite(h) ? h % 24 : 0;
 }
 
-function aggregate(date: string, nodes: DetectionNode[]): BirdsDaily {
+function aggregate(date: string, nodes: DetectionNode[], excludeScis: Set<string>): BirdsDaily {
   const grouped = new Map<string, SpeciesGroup>();
   const hourly: number[] = new Array<number>(24).fill(0);
   for (const n of nodes) {
@@ -149,12 +152,21 @@ function aggregate(date: string, nodes: DetectionNode[]): BirdsDaily {
   // Tri par fréquence (count desc) — c'est l'ordre qu'affiche le site.
   const top = [...grouped.values()].sort((a, b) => b.count - a.count).slice(0, 10);
 
-  // « Oiseau du jour » : la plus haute confiance du jour.
-  const best = nodes.reduce<DetectionNode | null>((acc, n) => {
-    if (!n.species.scientificName) return acc;
-    if (!acc) return n;
-    return (n.confidence ?? 0) > (acc.confidence ?? 0) ? n : acc;
-  }, null);
+  // « Oiseau du jour » : fréquence × nouveauté.
+  // = la première espèce du top par fréquence qui n'a PAS été oiseau du jour
+  //   récemment (excludeScis). Fallback sur la plus fréquente si tout est exclu.
+  // Pour les métadonnées (timestamp, audio), on garde la détection la plus
+  // confidente de cette espèce.
+  const eligibleTop = top.filter((s) => !excludeScis.has(s.taxon_scientific));
+  const winnerSci = (eligibleTop[0] ?? top[0])?.taxon_scientific ?? null;
+  const best = winnerSci
+    ? nodes
+        .filter((n) => n.species.scientificName === winnerSci)
+        .reduce<DetectionNode | null>((acc, n) => {
+          if (!acc) return n;
+          return (n.confidence ?? 0) > (acc.confidence ?? 0) ? n : acc;
+        }, null)
+    : null;
 
   const bird_of_the_day: BirdDetectionRow | null = best
     ? {

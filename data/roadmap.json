@@ -10,10 +10,6 @@
       "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
     },
     {
-      "title": "Clarifier les règles de l'« Observation du jour »",
-      "details": "Sur quels critères une espèce ressort-elle ? Envisager de remplacer par « le plus entendu aujourd'hui » (l'espèce avec le plus grand nombre de détections)."
-    },
-    {
       "title": "Éphémérides — temporalité des verbes au futur",
       "details": "Les verbes de la section Éphémérides astronomiques devraient toujours être au futur puisqu'il s'agit d'événements à venir (la nuit qui s'ouvre). À renforcer dans le prompt de la narration du ciel."
     },
@@ -72,6 +68,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Règle de l'« Observation du jour » pondérée fréquence × nouveauté",
+      "details": "Avant : la détection la plus confidente du jour — favorisait toujours les espèces au chant très net (Roitelet à couronne rubis 3 jours sur 6). Maintenant : la première espèce du <em>top par fréquence</em> qui n'a pas été observation du jour dans les 7 derniers jours (avec fallback). Variation garantie côté code, sans surcharger la page d'explications.",
+      "finished_at": "2026-05-25"
+    },
     {
       "title": "Rotation des citations forcée",
       "details": "Diagnostic : Claude réutilisait Burroughs #10 5 jours sur 6 sur 13 disponibles, parce que la citation thématique de la migration de printemps revenait toujours en tête. Fix : <code>daily.ts</code> filtre les citations utilisées dans les 7 derniers jours avant d'envoyer la liste à Claude — la rotation est garantie côté code, sans dépendre de la mémoire du modèle.",
