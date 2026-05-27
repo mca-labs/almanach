@@ -151,7 +151,7 @@
   .ticks{display:flex;justify-content:space-between;margin-top:13px;font-family:var(--sans);
     font-size:11px;letter-spacing:.03em;color:var(--ink-3)}
   .sun{margin-top:16px;font-family:var(--sans);font-size:13px;color:var(--ink-2);
-    display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 22px}
+    display:flex;flex-wrap:wrap;justify-content:center;gap:14px 26px}
   .sun .seg{display:inline-flex;align-items:center;gap:7px}
   .vizt{display:flex;align-items:center;justify-content:center;gap:38px;margin:8px 0 24px}
   .vizt .item{text-align:center}
