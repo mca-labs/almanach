@@ -18,6 +18,34 @@ interface QuotesFile {
 }
 
 /**
+ * Cherche le dernier jour avec orage en remontant depuis `entryDate` (exclus).
+ * Retourne null si rien dans les `maxDaysBack` derniers jours.
+ * Utilisé pour enrichir la carte « Dernier orage » côté site.
+ */
+async function findPreviousStormDay(
+  entryDate: string,
+  maxDaysBack = 365,
+): Promise<{ count: number; avg_distance_km: number | null; days_ago: number } | null> {
+  const base = new Date(`${entryDate}T12:00:00Z`);
+  for (let d = 1; d <= maxDaysBack; d++) {
+    const probe = new Date(base.getTime() - d * 86400000);
+    const dateStr = probe.toISOString().slice(0, 10);
+    const w = await readJson<{
+      lightning?: { count_total?: number; avg_distance_km?: number | null };
+    }>(`${DATA_DIR}/weather/${dateStr}.json`);
+    const count = w?.lightning?.count_total ?? 0;
+    if (count > 0) {
+      return {
+        count,
+        avg_distance_km: w?.lightning?.avg_distance_km ?? null,
+        days_ago: d,
+      };
+    }
+  }
+  return null;
+}
+
+/**
  * Liste les N dernières dates antérieures à `beforeDate` qui ont un fichier dans
  * `data/{subdir}/`. Sert à charger l'historique récent (citations, oiseaux du jour, etc.).
  */
@@ -99,6 +127,17 @@ export async function runDaily(
   const norm = await computeHistoricalNorm(entryDate, `${DATA_DIR}/weather`);
   weather.hourly_norm_c = norm.hourly_norm_c;
   weather.norm_years_used = norm.norm_years_used;
+  // Enrichissement « Dernier orage » : si orage aujourd'hui, c'est lui ;
+  // sinon, on remonte dans data/weather/ jusqu'à 365 jours.
+  if (weather.lightning.count_total > 0) {
+    weather.lightning.last_storm = {
+      count: weather.lightning.count_total,
+      avg_distance_km: weather.lightning.avg_distance_km,
+      days_ago: 0,
+    };
+  } else {
+    weather.lightning.last_storm = await findPreviousStormDay(entryDate, 365);
+  }
   await writeJson(`${DATA_DIR}/weather/${entryDate}.json`, weather);
   console.log(
     `     obs_count=${weather.obs_count}, temp avg=${weather.air_temp_avg_c?.toFixed(1) ?? 'n/a'}°C, norm: ${weather.norm_years_used} années`,

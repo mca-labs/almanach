@@ -10,10 +10,6 @@
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
     },
     {
-      "title": "« Dernier éclair il y a X j »",
-      "details": "Tracker <code>lightning_strike_last_epoch</code> à travers les jours. Actuellement on affiche le count du jour seulement."
-    },
-    {
       "title": "Réviser l'indicateur de luminosité",
       "details": "Affichage actuel peu évocateur (jauge simple). Envisager un graphique à barres horaire qui montre la courbe de la journée."
     }
@@ -56,6 +52,11 @@
     }
   ],
   "done": [
+    {
+      "title": "« Dernier orage » remplace « Foudre » dans la carte Météo",
+      "details": "Au lieu d'un compteur d'éclairs du jour (souvent à 0), la carte raconte le dernier orage connu : nombre d'éclairs + date relative + distance. Format : <code>24 éclairs / hier, à 35 km</code> ou <code>8 éclairs / il y a 17 jours, à 23 km</code>. Au-delà de 90 jours, simplifié en <code>+3 mois</code> sans distance. Calcul dans <code>daily.ts</code> par scan rétrograde de <code>data/weather/*.json</code> (cap 365 jours). Fallback gracieux pour les éditions sans le nouveau champ.",
+      "finished_at": "2026-05-26"
+    },
     {
       "title": "Protection contre écrasement d'éditions existantes",
       "details": "Si <code>data/editions/{date}.json</code> existe déjà, <code>daily.ts</code> skip avec un message clair. Flag <code>--force</code> en CLI et input booléen <code>force</code> dans le workflow_dispatch pour réécrire intentionnellement. Le cron automatique n'est jamais affecté (il tourne toujours sur une date neuve).",

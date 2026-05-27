@@ -90,6 +90,17 @@ function pressureArrow(dir: 'up' | 'down' | 'flat' | null | undefined): string {
 function pressureLabel(dir: 'up' | 'down' | 'flat' | null | undefined): string {
   return dir === 'up' ? 'en hausse' : dir === 'down' ? 'en baisse' : dir === 'flat' ? 'stable' : '';
 }
+function stormAgeLabel(daysAgo: number): string {
+  if (daysAgo === 0) return "aujourd’hui";
+  if (daysAgo === 1) return "hier";
+  if (daysAgo < 30) return `il y a ${daysAgo} jours`;
+  if (daysAgo < 90) return `il y a ${Math.round(daysAgo / 7)} semaines`;
+  return '+3 mois';
+}
+function stormDistanceLabel(daysAgo: number, km: number | null): string {
+  if (daysAgo >= 90 || km === null) return '';
+  return `, à ${Math.round(km)} km`;
+}
 function pressureDeltaFmt(t: number | null | undefined): string {
   if (t === null || t === undefined) return '';
   const sign = t > 0 ? '+' : '';
@@ -381,7 +392,30 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               </>
             )}
           </div>
-          <div class="stat"><div class="k">Foudre</div><div class="v">{weather?.lightning.count_total ?? 0}</div><div class="sub">éclair{(weather?.lightning.count_total ?? 0) === 1 ? '' : 's'} détecté{(weather?.lightning.count_total ?? 0) === 1 ? '' : 's'}</div></div>
+          <div class="stat">
+            <div class="k">Dernier orage</div>
+            {weather?.lightning.last_storm ? (
+              <>
+                <div class="v">
+                  {weather.lightning.last_storm.count}&nbsp;<small>éclair{weather.lightning.last_storm.count === 1 ? '' : 's'}</small>
+                </div>
+                <div class="sub">
+                  {stormAgeLabel(weather.lightning.last_storm.days_ago)}{stormDistanceLabel(weather.lightning.last_storm.days_ago, weather.lightning.last_storm.avg_distance_km)}
+                </div>
+              </>
+            ) : weather?.lightning.count_total ? (
+              // Fallback éditions sans last_storm (anciens fichiers data/weather/)
+              <>
+                <div class="v">{weather.lightning.count_total}&nbsp;<small>éclair{weather.lightning.count_total === 1 ? '' : 's'}</small></div>
+                <div class="sub">aujourd’hui</div>
+              </>
+            ) : (
+              <>
+                <div class="v">—</div>
+                <div class="sub">aucun récent</div>
+              </>
+            )}
+          </div>
         </div>
 
         <figure class="plate">

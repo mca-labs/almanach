@@ -61,6 +61,17 @@ export interface WeatherDaily {
   lightning: {
     count_total: number;
     avg_distance_km: number | null;
+    /**
+     * Dernier orage observé incluant le jour courant si présent. `null` si rien
+     * dans les 365 derniers jours d'historique. Calculé par l'orchestrateur
+     * (daily.ts), pas par le fetcher.
+     */
+    last_storm?: {
+      count: number;
+      avg_distance_km: number | null;
+      /** 0 = jour de l'édition (orage le jour même), 1 = veille, etc. */
+      days_ago: number;
+    } | null;
   };
   /**
    * Pression atmosphérique à la station (non corrigée à l'altitude du niveau de la mer).
