@@ -51,6 +51,12 @@ export interface WeatherDaily {
   solar_rad_avg_wm2: number | null;
   lux_peak: { hour: number; value_lux: number } | null;
   lightning: { count_total: number; avg_distance_km: number | null };
+  pressure?: {
+    mb_now: number | null;
+    trend_3h_mb: number | null;
+    category: 'basse' | 'normale' | 'haute' | null;
+    direction: 'up' | 'down' | 'flat' | null;
+  } | null;
 }
 
 export interface SpeciesGroup {

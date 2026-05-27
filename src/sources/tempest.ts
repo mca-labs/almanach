@@ -39,6 +39,19 @@ export interface WeatherDaily {
     count_total: number;
     avg_distance_km: number | null;
   };
+  /**
+   * Pression atmosphérique à la station (non corrigée à l'altitude du niveau de la mer).
+   * `now` = dernière mesure disponible du jour ; `trend_3h_mb` = delta hPa entre `now`
+   * et la mesure la plus proche de 3 h plus tôt. Catégorie qualitative ajustée pour
+   * la station à 377 m (≈ 45 hPa sous le niveau de la mer) : basse < 960, normale
+   * 960-975, haute > 975 (mb à la station).
+   */
+  pressure: {
+    mb_now: number | null;
+    trend_3h_mb: number | null;
+    category: 'basse' | 'normale' | 'haute' | null;
+    direction: 'up' | 'down' | 'flat' | null;
+  } | null;
 }
 
 function env(name: string): string {
@@ -161,6 +174,31 @@ export async function fetchDailyAggregate(date: string): Promise<WeatherDaily> {
     return n > 0 ? sum / n : null;
   });
 
+  // --- Pression : valeur la plus récente du jour + tendance sur 3 h ---
+  const pressureRows = rows
+    .filter((r) => typeof r[0] === 'number' && typeof r[6] === 'number')
+    .sort((a, b) => (a[0] as number) - (b[0] as number));
+  let pressure: WeatherDaily['pressure'] = null;
+  if (pressureRows.length > 0) {
+    const last = pressureRows[pressureRows.length - 1]!;
+    const lastEpoch = last[0] as number;
+    const lastMb = last[6] as number;
+    const target = lastEpoch - 3 * 3600;
+    // Tolérance ±30 min pour trouver la mesure de référence 3 h plus tôt
+    const ref = pressureRows
+      .filter((r) => Math.abs((r[0] as number) - target) <= 1800)
+      .sort(
+        (a, b) =>
+          Math.abs((a[0] as number) - target) - Math.abs((b[0] as number) - target),
+      )[0];
+    const trend = ref ? lastMb - (ref[6] as number) : null;
+    const cat: 'basse' | 'normale' | 'haute' =
+      lastMb < 960 ? 'basse' : lastMb > 975 ? 'haute' : 'normale';
+    const dir: 'up' | 'down' | 'flat' | null =
+      trend === null ? null : trend > 0.5 ? 'up' : trend < -0.5 ? 'down' : 'flat';
+    pressure = { mb_now: lastMb, trend_3h_mb: trend, category: cat, direction: dir };
+  }
+
   return {
     date,
     obs_count: rows.length,
@@ -179,6 +217,7 @@ export async function fetchDailyAggregate(date: string): Promise<WeatherDaily> {
       count_total: lightningCounts.reduce((a, b) => a + b, 0),
       avg_distance_km: lightningDistances.length > 0 ? avg(lightningDistances) : null,
     },
+    pressure,
   };
 }
 

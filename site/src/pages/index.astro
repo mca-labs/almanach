@@ -77,6 +77,17 @@ function fmtTimeIso(iso: string | null | undefined): string {
   return new Intl.DateTimeFormat('fr-CA', { timeZone: TZ, hour: '2-digit', minute: '2-digit' }).format(new Date(iso));
 }
 function fmtMm(n: number | null | undefined): string { return n === null || n === undefined ? '—' : `${n.toFixed(1)}`; }
+function pressureArrow(dir: 'up' | 'down' | 'flat' | null | undefined): string {
+  return dir === 'up' ? '↗' : dir === 'down' ? '↘' : dir === 'flat' ? '→' : '';
+}
+function pressureLabel(dir: 'up' | 'down' | 'flat' | null | undefined): string {
+  return dir === 'up' ? 'en hausse' : dir === 'down' ? 'en baisse' : dir === 'flat' ? 'stable' : '';
+}
+function pressureDeltaFmt(t: number | null | undefined): string {
+  if (t === null || t === undefined) return '';
+  const sign = t > 0 ? '+' : '';
+  return `${sign}${t.toFixed(1)} hPa / 3 h`;
+}
 function fmtKmh(ms: number | null | undefined): string { return ms === null || ms === undefined ? '—' : (ms * 3.6).toFixed(1); }
 function dayDuration(sunrise: string | null, sunset: string | null): string {
   if (!sunrise || !sunset) return '—';
@@ -305,7 +316,28 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
         <div class="stats">
           <div class="stat"><div class="k">Vent</div><div class="v">{fmtKmh(weather?.wind_avg_avg_ms)}&nbsp;<small>km/h</small></div><div class="sub">rafale max {fmtKmh(weather?.wind_gust_max_ms)}&nbsp;km/h</div></div>
           <div class="stat"><div class="k">Pluie 24&nbsp;h</div><div class="v">{fmtMm(weather?.rain_day_final_mm)}&nbsp;<small>mm</small></div><div class="sub">{(weather?.rain_day_final_mm ?? 0) === 0 ? 'sec' : ''}</div></div>
-          <div class="stat"><div class="k">Pression</div><div class="v">—</div><div class="sub">à venir</div></div>
+          <div class="stat">
+            <div class="k">Pression</div>
+            {weather?.pressure?.mb_now != null ? (
+              <>
+                <div class="v">
+                  {Math.round(weather.pressure.mb_now)}&nbsp;<small>hPa</small>
+                  {weather.pressure.category && ` (${weather.pressure.category})`}
+                </div>
+                <div class="sub">
+                  {weather.pressure.direction
+                    ? `${pressureArrow(weather.pressure.direction)} ${pressureLabel(weather.pressure.direction)}`
+                    : ''}
+                  {weather.pressure.trend_3h_mb != null && ` (${pressureDeltaFmt(weather.pressure.trend_3h_mb)})`}
+                </div>
+              </>
+            ) : (
+              <>
+                <div class="v">—</div>
+                <div class="sub">à venir</div>
+              </>
+            )}
+          </div>
           <div class="stat"><div class="k">Foudre</div><div class="v">{weather?.lightning.count_total ?? 0}</div><div class="sub">éclair{(weather?.lightning.count_total ?? 0) === 1 ? '' : 's'} détecté{(weather?.lightning.count_total ?? 0) === 1 ? '' : 's'}</div></div>
         </div>
 

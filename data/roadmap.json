@@ -2,10 +2,6 @@
   "now": [],
   "soon": [
     {
-      "title": "Pression atmosphérique",
-      "details": "Tempest collecte <code>station_pressure_mb</code>. À agréger dans <code>WeatherDaily</code> puis afficher dans la carte Pression."
-    },
-    {
       "title": "Diversifier la base de fragments",
       "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
     },
@@ -64,6 +60,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Pression atmosphérique sur la carte Météo",
+      "details": "Valeur en hPa (à la station, non corrigée) + catégorie inline (basse / normale / haute, seuils ajustés pour les 377 m d'altitude). Sub-line : tendance sur 3 h avec flèche directionnelle (↗ ↘ →), label « en hausse / en baisse / stable » et delta chiffré. Effet visible dès la prochaine édition automatique du cron.",
+      "finished_at": "2026-05-26"
+    },
     {
       "title": "Éphémérides — verbes toujours au futur",
       "details": "Le prompt de la narration du ciel exige maintenant explicitement le futur simple ou le présent à valeur de futur, jamais d'imparfait ni de passé composé pour les événements à venir. Auparavant Claude mixait parfois les temps (« la lune s'est couchée à 2 h 26 » alors que c'était encore à venir au moment de la lecture).",
