@@ -2,8 +2,8 @@
   "now": [],
   "soon": [
     {
-      "title": "Diversifier la base de fragments — vagues suivantes",
-      "details": "Vague 1 livrée (Renard + Marie-Victorin, 9 nouvelles citations, total 22). Vagues à venir, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables, animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40."
+      "title": "Diversifier la base de fragments — vague 2",
+      "details": "Suite de l'enrichissement, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40 (actuellement 22)."
     },
     {
       "title": "Passe Impeccable",
@@ -64,6 +64,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Diversifier la base de fragments — vague 1",
+      "details": "Ajout de 9 nouvelles citations vérifiées verbatim depuis Wikisource : Jules Renard, <em>Histoires naturelles</em> (Le ver luisant, Le cafard, Le serpent, La belette) et Frère Marie-Victorin, <em>Croquis laurentiens</em> (5 passages des chapitres 10 et 18). Ajout du champ <code>lang: 'fr' | 'en'</code> à toutes les citations, prompt Claude ajusté pour ne pas traduire si la source est déjà en français. Total : 22 citations (13 anglophones + 9 francophones).",
+      "finished_at": "2026-05-26"
+    },
     {
       "title": "Liens vers les fiches eBird sur les noms d'oiseaux",
       "details": "Dans « Observation du jour », « Visiteurs les plus fréquents » et « Premières de la saison », le nom commun est cliquable vers la fiche eBird de l'espèce (<code>https://ebird.org/species/{code}?lang=fr</code>). Mapping <code>taxon_scientifique → species_code</code> stocké dans <code>data/ebird-species-codes.json</code> (11 167 espèces, ~350 KB), généré par <code>scripts/build-ebird-codes.ts</code> depuis l'API publique eBird (sans clé). À re-générer ~1×/an (nouvelle taxonomy en octobre).",
