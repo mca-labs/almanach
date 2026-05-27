@@ -8,6 +8,10 @@
     {
       "title": "Passe Impeccable",
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
+    },
+    {
+      "title": "Audit de sécurité",
+      "details": "Faire passer un audit de sécurité (skill <code>/security-review</code>) sur la base de code, puis appliquer/valider les recommandations."
     }
   ],
   "later": [
