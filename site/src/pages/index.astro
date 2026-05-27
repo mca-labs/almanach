@@ -537,17 +537,22 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               <svg class="ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
               Durée du jour <b>{dayDuration(twDetail.sunrise ?? null, twDetail.sunset ?? null)}</b>
             </span>
-            {(() => {
-              const hours = luxHoursByState(weather?.hourly_lux_avg);
-              return (
-                <>
-                  {hours.plein > 0 && <span class="seg"><b>{hours.plein} h</b> plein soleil</span>}
-                  {hours.voilé > 0 && <span class="seg"><b>{hours.voilé} h</b> voilé</span>}
-                  {hours.couvert > 0 && <span class="seg"><b>{hours.couvert} h</b> couvert</span>}
-                </>
-              );
-            })()}
           </div>
+          {(() => {
+            const hours = luxHoursByState(weather?.hourly_lux_avg);
+            const segs = [
+              hours.plein > 0 ? { n: hours.plein, label: 'plein soleil' } : null,
+              hours.voilé > 0 ? { n: hours.voilé, label: 'voilé' } : null,
+              hours.couvert > 0 ? { n: hours.couvert, label: 'couvert' } : null,
+            ].filter(Boolean) as { n: number; label: string }[];
+            return segs.length > 0 ? (
+              <div class="lux-states">
+                {segs.map((s) => (
+                  <span class="seg"><b>{s.n} h</b> {s.label}</span>
+                ))}
+              </div>
+            ) : null;
+          })()}
         </div>
       </section>
 
