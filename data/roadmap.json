@@ -6,10 +6,6 @@
       "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
     },
     {
-      "title": "Liens vers eBird sur les noms d'oiseaux",
-      "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
-    },
-    {
       "title": "Passe Impeccable",
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
     },
@@ -19,6 +15,10 @@
     }
   ],
   "later": [
+    {
+      "title": "Clé API eBird pour la taxonomy en direct",
+      "details": "Alternative à la solution actuelle (mapping <code>data/ebird-species-codes.json</code> statique, refresh annuel manuel) : obtenir une clé API eBird gratuite, l'ajouter aux secrets GitHub, et récupérer la taxonomy à jour automatiquement. Permettrait aussi d'autres features eBird (« Rare au secteur », abondance régionale, etc.)."
+    },
     {
       "title": "Validation des points de l'audit de sécurité",
       "details": "Faire passer un audit de sécurité (skill <code>/security-review</code>) sur la base de code, puis appliquer/valider les recommandations."
@@ -60,6 +60,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Liens vers les fiches eBird sur les noms d'oiseaux",
+      "details": "Dans « Observation du jour », « Visiteurs les plus fréquents » et « Premières de la saison », le nom commun est cliquable vers la fiche eBird de l'espèce (<code>https://ebird.org/species/{code}?lang=fr</code>). Mapping <code>taxon_scientifique → species_code</code> stocké dans <code>data/ebird-species-codes.json</code> (11 167 espèces, ~350 KB), généré par <code>scripts/build-ebird-codes.ts</code> depuis l'API publique eBird (sans clé). À re-générer ~1×/an (nouvelle taxonomy en octobre).",
+      "finished_at": "2026-05-26"
+    },
     {
       "title": "Pression atmosphérique sur la carte Météo",
       "details": "Valeur en hPa (à la station, non corrigée) + catégorie inline (basse / normale / haute, seuils ajustés pour les 377 m d'altitude). Sub-line : tendance sur 3 h avec flèche directionnelle (↗ ↘ →), label « en hausse / en baisse / stable » et delta chiffré. Effet visible dès la prochaine édition automatique du cron.",

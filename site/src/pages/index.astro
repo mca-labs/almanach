@@ -1,6 +1,7 @@
 ---
 import Base from '@/layouts/Base.astro';
 import Footer from '@/components/Footer.astro';
+import ebirdCodes from '../../../data/ebird-species-codes.json';
 import {
   birdOfTheDayWithPhoto,
   birdsFor,
@@ -77,6 +78,12 @@ function fmtTimeIso(iso: string | null | undefined): string {
   return new Intl.DateTimeFormat('fr-CA', { timeZone: TZ, hour: '2-digit', minute: '2-digit' }).format(new Date(iso));
 }
 function fmtMm(n: number | null | undefined): string { return n === null || n === undefined ? '—' : `${n.toFixed(1)}`; }
+const EBIRD_CODES = ebirdCodes as Record<string, string>;
+function ebirdUrl(taxon_scientific: string | null | undefined): string | null {
+  if (!taxon_scientific) return null;
+  const code = EBIRD_CODES[taxon_scientific];
+  return code ? `https://ebird.org/species/${code}?lang=fr` : null;
+}
 function pressureArrow(dir: 'up' | 'down' | 'flat' | null | undefined): string {
   return dir === 'up' ? '↗' : dir === 'down' ? '↘' : dir === 'flat' ? '→' : '';
 }
@@ -201,7 +208,14 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               </div>
             )}
             <div>
-              <div class="sp">{birdName}</div>
+              {(() => {
+                const url = ebirdUrl(birdPhoto.taxon_scientific);
+                return (
+                  <div class="sp">
+                    {url ? <a href={url} target="_blank" rel="noopener">{birdName}</a> : birdName}
+                  </div>
+                );
+              })()}
               {birdPhoto.taxon_scientific && <div class="lat">{birdPhoto.taxon_scientific}</div>}
               <div class="meta">
                 {birdPhoto.observed_at && <span>entendue à {fmtTimeIso(birdPhoto.observed_at)}</span>}
@@ -259,6 +273,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             <div class="bgrid">
               {topBirds.map((b) => {
                 const name = b.name_fr ?? b.taxon_common ?? b.taxon_scientific;
+                const url = ebirdUrl(b.taxon_scientific);
                 return (
                   <div class="bird">
                     <div class="bphoto" title={b.attribution ?? undefined} style={b.photo_url ? 'padding:0;overflow:hidden' : ''}>
@@ -269,7 +284,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
                       )}
                     </div>
                     <div class="bname">
-                      {name}
+                      {url ? <a href={url} target="_blank" rel="noopener">{name}</a> : name}
                       <i>{b.taxon_scientific}</i>
                       <span style="display:block;font-style:normal;color:var(--ink-3);font-size:11.5px;margin-top:1px">{b.count} observation{b.count > 1 ? 's' : ''}</span>
                     </div>
@@ -281,11 +296,14 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               <b>Premières de la saison :</b>{' '}
               {rareSpecies.length > 0 ? (
                 <>
-                  {rareSpecies.map((s, i) => (
+                  {rareSpecies.map((s, i) => {
+                    const rname = s.name_fr ?? s.taxon_common ?? s.taxon_scientific;
+                    const rurl = ebirdUrl(s.taxon_scientific);
+                    return (
                     <>
                       {i > 0 ? ' · ' : ''}
                       <span class="rarebird" title={s.attribution ?? undefined}>
-                        {s.name_fr ?? s.taxon_common ?? s.taxon_scientific}
+                        {rurl ? <a href={rurl} target="_blank" rel="noopener">{rname}</a> : rname}
                         <span class="bzoom">
                           {s.photo_url ? (
                             <img src={s.photo_url} alt={`Photo : ${s.name_fr ?? s.taxon_scientific}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px" />
@@ -295,7 +313,8 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
                         </span>
                       </span>
                     </>
-                  ))}
+                    );
+                  })}
                   .{' '}
                 </>
               ) : (
