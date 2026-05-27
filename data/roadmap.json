@@ -10,10 +10,6 @@
       "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
     },
     {
-      "title": "Éphémérides — temporalité des verbes au futur",
-      "details": "Les verbes de la section Éphémérides astronomiques devraient toujours être au futur puisqu'il s'agit d'événements à venir (la nuit qui s'ouvre). À renforcer dans le prompt de la narration du ciel."
-    },
-    {
       "title": "Liens vers eBird sur les noms d'oiseaux",
       "details": "Dans « Visiteurs les plus fréquents » et « Observation du jour », ajouter un lien vers la page eBird de l'espèce."
     },
@@ -68,6 +64,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Éphémérides — verbes toujours au futur",
+      "details": "Le prompt de la narration du ciel exige maintenant explicitement le futur simple ou le présent à valeur de futur, jamais d'imparfait ni de passé composé pour les événements à venir. Auparavant Claude mixait parfois les temps (« la lune s'est couchée à 2 h 26 » alors que c'était encore à venir au moment de la lecture).",
+      "finished_at": "2026-05-25"
+    },
     {
       "title": "Règle de l'« Observation du jour » pondérée fréquence × nouveauté",
       "details": "Avant : la détection la plus confidente du jour — favorisait toujours les espèces au chant très net (Roitelet à couronne rubis 3 jours sur 6). Maintenant : la première espèce du <em>top par fréquence</em> qui n'a pas été observation du jour dans les 7 derniers jours (avec fallback). Variation garantie côté code, sans surcharger la page d'explications.",
