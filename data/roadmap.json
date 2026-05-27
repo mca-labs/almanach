@@ -8,10 +8,6 @@
     {
       "title": "Passe Impeccable",
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
-    },
-    {
-      "title": "Direction du vent en texte",
-      "details": "Dériver de <code>wind_direction_deg</code> moyen dans <code>WeatherDaily</code> (« O », « NO », « SSO »…). Affichage dans la carte Vent de la section Météo."
     }
   ],
   "later": [
@@ -64,6 +60,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Vent : direction, qualificatif et heure du pic sur la carte Météo",
+      "details": "Avant : moyenne des moyennes (artefact statistique) + rafale max sans heure ni direction. Maintenant : direction moyenne <em>vectorielle pondérée par la vitesse</em> en 8 points (« de l'O », « du NE »…), vitesse moyenne + qualificatif descriptif (calme plat / calme / légère brise / brise / soutenu / fort / grand vent), rafale max avec heure du pic. Cas vent < 1 km/h : « calme plat » sans direction. Anciens fichiers <code>data/weather/</code> sans le nouveau champ : fallback gracieux sur l'ancien format.",
+      "finished_at": "2026-05-26"
+    },
     {
       "title": "Diversifier la base de fragments — vague 1",
       "details": "Ajout de 9 nouvelles citations vérifiées verbatim depuis Wikisource : Jules Renard, <em>Histoires naturelles</em> (Le ver luisant, Le cafard, Le serpent, La belette) et Frère Marie-Victorin, <em>Croquis laurentiens</em> (5 passages des chapitres 10 et 18). Ajout du champ <code>lang: 'fr' | 'en'</code> à toutes les citations, prompt Claude ajusté pour ne pas traduire si la source est déjà en français. Total : 22 citations (13 anglophones + 9 francophones).",

@@ -47,6 +47,23 @@ export interface WeatherDaily {
   norm_years_used: number;
   wind_gust_max_ms: number | null;
   wind_avg_avg_ms: number | null;
+  wind?: {
+    avg_kmh: number | null;
+    gust_max_kmh: number | null;
+    gust_max_hour_local: number | null;
+    direction_deg: number | null;
+    direction_compass: 'N' | 'NE' | 'E' | 'SE' | 'S' | 'SO' | 'O' | 'NO' | null;
+    direction_label: string | null;
+    qualifier:
+      | 'calme plat'
+      | 'calme'
+      | 'légère brise'
+      | 'brise'
+      | 'soutenu'
+      | 'fort'
+      | 'grand vent'
+      | null;
+  } | null;
   rain_day_final_mm: number | null;
   solar_rad_avg_wm2: number | null;
   lux_peak: { hour: number; value_lux: number } | null;

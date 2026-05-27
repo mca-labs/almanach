@@ -333,7 +333,31 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           <span class="src"><a href="https://tempestwx.com/station/41129/" target="_blank" rel="noopener">Station météo Tempest</a></span>
         </div>
         <div class="stats">
-          <div class="stat"><div class="k">Vent</div><div class="v">{fmtKmh(weather?.wind_avg_avg_ms)}&nbsp;<small>km/h</small></div><div class="sub">rafale max {fmtKmh(weather?.wind_gust_max_ms)}&nbsp;km/h</div></div>
+          <div class="stat">
+            <div class="k">Vent</div>
+            {weather?.wind ? (
+              <>
+                <div class="v">
+                  {weather.wind.qualifier === 'calme plat'
+                    ? 'calme plat'
+                    : `${weather.wind.direction_label} à ${Math.round(weather.wind.avg_kmh ?? 0)} km/h, ${weather.wind.qualifier}`}
+                </div>
+                {weather.wind.gust_max_kmh != null && weather.wind.gust_max_kmh > 0 && (
+                  <div class="sub">
+                    rafale {Math.round(weather.wind.gust_max_kmh)}&nbsp;km/h
+                    {weather.wind.gust_max_hour_local !== null
+                      ? ` vers ${String(weather.wind.gust_max_hour_local).padStart(2, '0')} h`
+                      : ''}
+                  </div>
+                )}
+              </>
+            ) : (
+              <>
+                <div class="v">{fmtKmh(weather?.wind_avg_avg_ms)}&nbsp;<small>km/h</small></div>
+                <div class="sub">rafale max {fmtKmh(weather?.wind_gust_max_ms)}&nbsp;km/h</div>
+              </>
+            )}
+          </div>
           <div class="stat"><div class="k">Pluie 24&nbsp;h</div><div class="v">{fmtMm(weather?.rain_day_final_mm)}&nbsp;<small>mm</small></div><div class="sub">{(weather?.rain_day_final_mm ?? 0) === 0 ? 'sec' : ''}</div></div>
           <div class="stat">
             <div class="k">Pression</div>

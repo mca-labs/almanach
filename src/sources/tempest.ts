@@ -31,6 +31,29 @@ export interface WeatherDaily {
   norm_years_used: number;
   wind_gust_max_ms: number | null;
   wind_avg_avg_ms: number | null;
+  /**
+   * Vent enrichi : direction moyenne vectorielle pondérée par la vitesse,
+   * qualificatif descriptif, heure de la rafale max. Présent à partir du
+   * 2026-05-27. Les anciens fichiers data/weather/*.json n'ont que les deux
+   * champs ci-dessus ; la page applique un fallback gracieux.
+   */
+  wind?: {
+    avg_kmh: number | null;
+    gust_max_kmh: number | null;
+    gust_max_hour_local: number | null;
+    direction_deg: number | null;
+    direction_compass: 'N' | 'NE' | 'E' | 'SE' | 'S' | 'SO' | 'O' | 'NO' | null;
+    direction_label: string | null;
+    qualifier:
+      | 'calme plat'
+      | 'calme'
+      | 'légère brise'
+      | 'brise'
+      | 'soutenu'
+      | 'fort'
+      | 'grand vent'
+      | null;
+  } | null;
   rain_day_final_mm: number | null;
   solar_rad_avg_wm2: number | null;
   /** Pic de luminosité du jour : heure locale (0..23) et valeur en lux (illuminance Tempest). */
@@ -121,6 +144,30 @@ function nums(rows: ObsRow[], idx: number): number[] {
 }
 
 /** Renvoie l'heure locale (0..23) d'un epoch UTC selon America/Toronto. */
+type WindCompass = NonNullable<NonNullable<WeatherDaily['wind']>['direction_compass']>;
+type WindQualifier = NonNullable<NonNullable<WeatherDaily['wind']>['qualifier']>;
+
+function compass8(deg: number): WindCompass {
+  const idx = Math.round(deg / 45) % 8;
+  return (['N', 'NE', 'E', 'SE', 'S', 'SO', 'O', 'NO'] as const)[idx]!;
+}
+
+function compassLabel(c: WindCompass): string {
+  // "de l’" devant voyelle (O, E), "du" devant consonne (N, NE, NO, S, SE, SO).
+  // Apostrophe typographique pour cohérence avec le reste du site français.
+  return c === 'O' || c === 'E' ? `de l’${c}` : `du ${c}`;
+}
+
+function windQualifier(kmh: number): WindQualifier {
+  if (kmh < 1) return 'calme plat';
+  if (kmh < 6) return 'calme';
+  if (kmh < 12) return 'légère brise';
+  if (kmh < 20) return 'brise';
+  if (kmh < 29) return 'soutenu';
+  if (kmh < 39) return 'fort';
+  return 'grand vent';
+}
+
 function localHour(epochSec: number): number {
   const d = new Date(epochSec * 1000);
   const fmt = new Intl.DateTimeFormat('en-CA', {
@@ -174,6 +221,59 @@ export async function fetchDailyAggregate(date: string): Promise<WeatherDaily> {
     return n > 0 ? sum / n : null;
   });
 
+  // --- Vent enrichi : direction moyenne vectorielle pondérée + qualificatif + heure du pic ---
+  let wind: WeatherDaily['wind'] = null;
+  const windRows = rows.filter(
+    (r) =>
+      typeof r[0] === 'number' &&
+      typeof r[2] === 'number' &&
+      typeof r[3] === 'number' &&
+      typeof r[4] === 'number',
+  );
+  if (windRows.length > 0) {
+    const avgMs =
+      windRows.reduce((s, r) => s + (r[2] as number), 0) / windRows.length;
+    const avgKmh = avgMs * 3.6;
+    let gustMaxMs = -Infinity;
+    let gustMaxEpoch = 0;
+    for (const r of windRows) {
+      const g = r[3] as number;
+      if (g > gustMaxMs) {
+        gustMaxMs = g;
+        gustMaxEpoch = r[0] as number;
+      }
+    }
+    const gustMaxKmh = gustMaxMs > 0 ? gustMaxMs * 3.6 : null;
+    const gustMaxHourLocal = gustMaxKmh !== null ? localHour(gustMaxEpoch) : null;
+    // Moyenne vectorielle : chaque vecteur (vitesse, direction) somme en composantes E-O / N-S.
+    // Convention météo : wind_dir = direction d'où vient le vent, depuis le N, sens horaire.
+    let vxSum = 0;
+    let vySum = 0;
+    for (const r of windRows) {
+      const v = r[2] as number;
+      const dirRad = ((r[4] as number) * Math.PI) / 180;
+      vxSum += v * Math.sin(dirRad);
+      vySum += v * Math.cos(dirRad);
+    }
+    let directionDeg: number | null = null;
+    let directionCompass: WindCompass | null = null;
+    let directionLabel: string | null = null;
+    if (avgKmh >= 1) {
+      directionDeg = ((Math.atan2(vxSum, vySum) * 180) / Math.PI + 360) % 360;
+      directionCompass = compass8(directionDeg);
+      directionLabel = compassLabel(directionCompass);
+    }
+    wind = {
+      avg_kmh: avgKmh,
+      gust_max_kmh: gustMaxKmh,
+      gust_max_hour_local: gustMaxHourLocal,
+      direction_deg: directionDeg,
+      direction_compass: directionCompass,
+      direction_label: directionLabel,
+      qualifier: windQualifier(avgKmh),
+    };
+  }
+
   // --- Pression : valeur la plus récente du jour + tendance sur 3 h ---
   const pressureRows = rows
     .filter((r) => typeof r[0] === 'number' && typeof r[6] === 'number')
@@ -218,6 +318,7 @@ export async function fetchDailyAggregate(date: string): Promise<WeatherDaily> {
       avg_distance_km: lightningDistances.length > 0 ? avg(lightningDistances) : null,
     },
     pressure,
+    wind,
   };
 }
 
