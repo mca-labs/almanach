@@ -151,7 +151,11 @@ function stormDistanceLabel(daysAgo: number, km: number | null): string {
 function pressureDeltaFmt(t: number | null | undefined): string {
   if (t === null || t === undefined) return '';
   const sign = t > 0 ? '+' : '';
-  return `${sign}${t.toFixed(1)} hPa / 3 h`;
+  // Virgule décimale française + espace insécable devant l'unité
+  return `${sign}${t.toFixed(1).replace('.', ',')} hPa / 3 h`;
+}
+function capitalize(s: string): string {
+  return s.length > 0 ? s.charAt(0).toUpperCase() + s.slice(1) : s;
 }
 function fmtKmh(ms: number | null | undefined): string { return ms === null || ms === undefined ? '—' : (ms * 3.6).toFixed(1); }
 function dayDuration(sunrise: string | null, sunset: string | null): string {
@@ -395,16 +399,17 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             <div class="k">Vent</div>
             {weather?.wind ? (
               <>
-                <div class="v">
-                  {weather.wind.qualifier === 'calme plat'
-                    ? 'calme plat'
-                    : `${weather.wind.direction_label} à ${Math.round(weather.wind.avg_kmh ?? 0)} km/h, ${weather.wind.qualifier}`}
-                </div>
+                <div class="v">{capitalize(weather.wind.qualifier ?? '—')}</div>
+                {weather.wind.qualifier !== 'calme plat' && weather.wind.direction_label && (
+                  <div class="sub">
+                    {weather.wind.direction_label} à {Math.round(weather.wind.avg_kmh ?? 0)}&nbsp;km/h
+                  </div>
+                )}
                 {weather.wind.gust_max_kmh != null && weather.wind.gust_max_kmh > 0 && (
                   <div class="sub">
                     rafale {Math.round(weather.wind.gust_max_kmh)}&nbsp;km/h
                     {weather.wind.gust_max_hour_local !== null
-                      ? ` vers ${String(weather.wind.gust_max_hour_local).padStart(2, '0')} h`
+                      ? <> vers {String(weather.wind.gust_max_hour_local).padStart(2, '0')}&nbsp;h</>
                       : ''}
                   </div>
                 )}
@@ -425,12 +430,14 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
                   {Math.round(weather.pressure.mb_now)}&nbsp;<small>hPa</small>
                   {weather.pressure.category && ` (${weather.pressure.category})`}
                 </div>
-                <div class="sub">
-                  {weather.pressure.direction
-                    ? `${pressureArrow(weather.pressure.direction)} ${pressureLabel(weather.pressure.direction)}`
-                    : ''}
-                  {weather.pressure.trend_3h_mb != null && ` (${pressureDeltaFmt(weather.pressure.trend_3h_mb)})`}
-                </div>
+                {weather.pressure.direction && (
+                  <div class="sub">
+                    {pressureArrow(weather.pressure.direction)} {pressureLabel(weather.pressure.direction)}
+                  </div>
+                )}
+                {weather.pressure.trend_3h_mb != null && (
+                  <div class="sub">{pressureDeltaFmt(weather.pressure.trend_3h_mb)}</div>
+                )}
               </>
             ) : (
               <>
