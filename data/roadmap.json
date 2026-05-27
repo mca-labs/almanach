@@ -8,6 +8,18 @@
     {
       "title": "Passe Impeccable",
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
+    },
+    {
+      "title": "Protection contre écrasement d'éditions existantes",
+      "details": "Dans <code>daily.ts</code> : si <code>data/editions/YYYY-MM-DD.json</code> existe déjà, skip sauf <code>--force</code>."
+    },
+    {
+      "title": "« Dernier éclair il y a X j »",
+      "details": "Tracker <code>lightning_strike_last_epoch</code> à travers les jours. Actuellement on affiche le count du jour seulement."
+    },
+    {
+      "title": "Réviser l'indicateur de luminosité",
+      "details": "Affichage actuel peu évocateur (jauge simple). Envisager un graphique à barres horaire qui montre la courbe de la journée."
     }
   ],
   "later": [
@@ -28,20 +40,8 @@
       "details": "Pour observer la faune terrestre (cerf de Virginie, orignal, lynx, renard…) et en faire éventuellement une source de données supplémentaire."
     },
     {
-      "title": "Réviser l'indicateur de luminosité",
-      "details": "Affichage actuel peu évocateur (jauge simple). Envisager un graphique à barres horaire qui montre la courbe de la journée."
-    },
-    {
-      "title": "« Dernier éclair il y a X j »",
-      "details": "Tracker <code>lightning_strike_last_epoch</code> à travers les jours. Actuellement on affiche le count du jour seulement."
-    },
-    {
       "title": "« Rare au secteur » dans Premières de la saison",
       "details": "Exige une baseline régionale via API eBird."
-    },
-    {
-      "title": "Protection contre écrasement d'éditions existantes",
-      "details": "Dans <code>daily.ts</code> : si <code>data/editions/YYYY-MM-DD.json</code> existe déjà, skip sauf <code>--force</code>."
     },
     {
       "title": "Version anglaise du site"
