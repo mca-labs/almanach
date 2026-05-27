@@ -434,15 +434,14 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             <div class="k">Pression</div>
             {weather?.pressure?.mb_now != null ? (
               <>
-                <div class="v">
-                  {Math.round(weather.pressure.mb_now)}&nbsp;<small>hPa</small>
-                  {weather.pressure.category && ` (${weather.pressure.category})`}
+                <div class="v">{capitalize(weather.pressure.category ?? '—')}</div>
+                <div class="sub">
+                  {`${Math.round(weather.pressure.mb_now)} hPa${
+                    weather.pressure.direction
+                      ? `, ${pressureArrow(weather.pressure.direction)} ${pressureLabel(weather.pressure.direction)}`
+                      : ''
+                  }`}
                 </div>
-                {weather.pressure.direction && (
-                  <div class="sub">
-                    {pressureArrow(weather.pressure.direction)} {pressureLabel(weather.pressure.direction)}
-                  </div>
-                )}
                 {weather.pressure.trend_3h_mb != null && (
                   <div class="sub">{pressureDeltaFmt(weather.pressure.trend_3h_mb)}</div>
                 )}
