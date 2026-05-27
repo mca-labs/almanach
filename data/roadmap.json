@@ -28,7 +28,7 @@
       "details": "Alternative à la solution actuelle (mapping <code>data/ebird-species-codes.json</code> statique, refresh annuel manuel) : obtenir une clé API eBird gratuite, l'ajouter aux secrets GitHub, et récupérer la taxonomy à jour automatiquement. Permettrait aussi d'autres features eBird (« Rare au secteur », abondance régionale, etc.)."
     },
     {
-      "title": "Validation des points de l'audit de sécurité",
+      "title": "Audit de sécurité",
       "details": "Faire passer un audit de sécurité (skill <code>/security-review</code>) sur la base de code, puis appliquer/valider les recommandations."
     },
     {
