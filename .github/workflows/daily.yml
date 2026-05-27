@@ -12,6 +12,11 @@ on:
         description: "Date d'édition (YYYY-MM-DD). Vide = hier (local)."
         required: false
         default: ''
+      force:
+        description: "Réécrire l'édition même si elle existe déjà."
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -50,11 +55,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TZ: America/Toronto
         run: |
+          ARGS=""
           if [ -n "${{ inputs.date }}" ]; then
-            npm run daily -- --date "${{ inputs.date }}"
-          else
-            npm run daily
+            ARGS="$ARGS --date ${{ inputs.date }}"
           fi
+          if [ "${{ inputs.force }}" = "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+          npm run daily -- $ARGS
 
       - name: Commit & push data/
         run: |

@@ -1,6 +1,7 @@
 // Orchestrateur quotidien. Lance ingest + almanach + photos + synthèse,
 // écrit des fichiers JSON dans data/. Aucune persistance externe.
 
+import { existsSync } from 'node:fs';
 import { readdir } from 'node:fs/promises';
 import { computeSkyDaily } from './almanac.js';
 import { fetchDayDetections } from './sources/birdweather.js';
@@ -66,9 +67,23 @@ async function recentBirdOfDayScis(beforeDate: string, days: number): Promise<Se
   return scis;
 }
 
-export async function runDaily(opts: { date?: string } = {}): Promise<void> {
+export async function runDaily(
+  opts: { date?: string; force?: boolean } = {},
+): Promise<void> {
   const now = new Date();
   const entryDate = opts.date ?? localDate(now, -1);
+
+  // Protection contre l'écrasement d'une édition existante.
+  // Le cron normal ne tombe jamais sur une date déjà générée. Cette garde sert
+  // aux déclenchements manuels (workflow_dispatch ou CLI) pour éviter de
+  // réécrire un billet validé par accident (Claude est non-déterministe).
+  const editionPath = `${DATA_DIR}/editions/${entryDate}.json`;
+  if (existsSync(editionPath) && !opts.force) {
+    console.log(
+      `✓ Édition ${entryDate} existe déjà — skip. Utiliser --force (ou input 'force=true' dans le workflow) pour réécrire.`,
+    );
+    return;
+  }
   // « Ce soir » du point de vue du lecteur du matin : le soir qui suit le
   // jour décrit. Si --date est fourni, sky = entryDate + 1.
   const skyDate = opts.date
