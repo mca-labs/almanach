@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-05-26",
+  "generated_at": "2026-05-27T08:10:49.508Z",
+  "title": "Bruant à couronne blanche",
+  "summary": "Un mardi de mai vif et changeant — la pluie de l'après-midi a laissé la vallée propre, et les bruants ne sont pas encore partis.",
+  "body_md": "La journée a grimpé vite : six degrés au lever, vingt-quatre en début d'après-midi, puis la chute. Entre les deux, un orage bref est passé sur le Val — neuf éclairs en moins d'une heure, à moins de deux kilomètres du pont — avant que le baromètre se stabilise et que le vent du sud reprenne sa respiration calme. Treize millimètres de pluie en tout, pas de vent à parler, une lumière dure au pic de la journée. Ce n'est pas une météo facile, mais les migrateurs la connaissent mieux que nous.\n\nLe bruant à couronne blanche, Zonotrichia leucophrys, a dominé la journée avec une présence que les données ne rendent qu'à moitié. On l'entend beaucoup — son sifflement descendant, net, presque mélancolique — et on l'entend longtemps après que la lumière a baissé. Il s'arrête ici, mange, repart vers le nord dans une semaine ou deux. La paruline tigrée, Setophaga tigrina, était là aussi, moins visible, plus haute dans les épinettes. Quarante et une espèces au total pour ce seul mardi de mai : la migration bat encore son plein.",
+  "sky_narrative": "La nuit s'ouvrira avec une lune gibbeuse croissante à 84 % d'illumination, qui se couchera vers 2 h 42 du matin — elle occupera la première moitié de la nuit et gênera l'observation en ciel profond. Avec une couverture nuageuse prévue autour de 55 %, Mercure, Vénus et Jupiter seront peut-être visibles dans les trouées, mais le ciel ne sera pas propice à l'astronomie ; une marche sous les étoiles restera possible par moments, frontale en poche.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "orage",
+    "printemps",
+    "bruant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6.9,
+      "temp_max_c": 24,
+      "rain_mm": 13.681568,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "lightning_count": 9,
+      "pressure_category": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 473,
+      "confidence": 0.9904159307479858
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination": 0.844,
+      "moon_set": "2026-05-27T06:42:34.110Z",
+      "cloud_cover_pct": 55.4,
+      "notable_planets": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne faire face qu'aux faits essentiels de l'existence, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — et ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
