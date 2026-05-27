@@ -18,6 +18,24 @@ interface QuotesFile {
 }
 
 /**
+ * Total des précipitations sur la semaine (jour courant + 6 précédents).
+ * `currentDayMm` = pluie du jour courant (déjà calculée par fetchDailyAggregate).
+ */
+async function rainWeekTotal(entryDate: string, currentDayMm: number | null): Promise<number | null> {
+  let total = currentDayMm ?? 0;
+  const base = new Date(`${entryDate}T12:00:00Z`);
+  for (let d = 1; d <= 6; d++) {
+    const probe = new Date(base.getTime() - d * 86400000);
+    const ds = probe.toISOString().slice(0, 10);
+    const w = await readJson<{ rain_day_final_mm?: number | null }>(
+      `${DATA_DIR}/weather/${ds}.json`,
+    );
+    total += w?.rain_day_final_mm ?? 0;
+  }
+  return total;
+}
+
+/**
  * Cherche le dernier jour avec orage en remontant depuis `entryDate` (exclus).
  * Retourne null si rien dans les `maxDaysBack` derniers jours.
  * Utilisé pour enrichir la carte « Dernier orage » côté site.
@@ -127,6 +145,8 @@ export async function runDaily(
   const norm = await computeHistoricalNorm(entryDate, `${DATA_DIR}/weather`);
   weather.hourly_norm_c = norm.hourly_norm_c;
   weather.norm_years_used = norm.norm_years_used;
+  // Total pluie sur la semaine (jour courant + 6 jours précédents)
+  weather.rain_week_total_mm = await rainWeekTotal(entryDate, weather.rain_day_final_mm);
   // Enrichissement « Dernier orage » : si orage aujourd'hui, c'est lui ;
   // sinon, on remonte dans data/weather/ jusqu'à 365 jours.
   if (weather.lightning.count_total > 0) {

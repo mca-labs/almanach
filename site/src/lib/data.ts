@@ -65,6 +65,7 @@ export interface WeatherDaily {
       | null;
   } | null;
   rain_day_final_mm: number | null;
+  rain_week_total_mm?: number | null;
   solar_rad_avg_wm2: number | null;
   lux_peak: { hour: number; value_lux: number } | null;
   hourly_lux_avg?: (number | null)[];

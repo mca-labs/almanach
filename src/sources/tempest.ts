@@ -55,6 +55,8 @@ export interface WeatherDaily {
       | null;
   } | null;
   rain_day_final_mm: number | null;
+  /** Total des précipitations sur 7 jours (incluant le jour courant). Calculé par daily.ts. */
+  rain_week_total_mm?: number | null;
   solar_rad_avg_wm2: number | null;
   /** Pic de luminosité du jour : heure locale (0..23) et valeur en lux (illuminance Tempest). */
   lux_peak: { hour: number; value_lux: number } | null;

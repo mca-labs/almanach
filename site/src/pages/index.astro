@@ -421,7 +421,15 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               </>
             )}
           </div>
-          <div class="stat"><div class="k">Pluie 24&nbsp;h</div><div class="v">{fmtMm(weather?.rain_day_final_mm)}&nbsp;<small>mm</small></div><div class="sub">{(weather?.rain_day_final_mm ?? 0) === 0 ? 'sec' : ''}</div></div>
+          <div class="stat">
+            <div class="k">Pluie 24&nbsp;h</div>
+            <div class="v">{fmtMm(weather?.rain_day_final_mm)}&nbsp;<small>mm</small></div>
+            {weather?.rain_week_total_mm != null ? (
+              <div class="sub">{weather.rain_week_total_mm.toFixed(1).replace('.', ',')}&nbsp;mm depuis une semaine</div>
+            ) : (
+              (weather?.rain_day_final_mm ?? 0) === 0 && <div class="sub">sec</div>
+            )}
+          </div>
           <div class="stat">
             <div class="k">Pression</div>
             {weather?.pressure?.mb_now != null ? (
@@ -489,28 +497,27 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           {(() => {
             const bars = luxBars(weather?.hourly_lux_avg);
             return bars ? (
-              <svg class="luxbars" viewBox="0 0 660 100" preserveAspectRatio="none" role="img" aria-label="Luminosité moyenne par heure (24 h)">
-                {bars.rects.map((r) => (
-                  <rect x={r.x.toFixed(1)} y={r.y.toFixed(1)} width={r.w.toFixed(1)} height={r.h.toFixed(1)} fill="var(--accent)" fill-opacity={r.isPeak ? 0.7 : 0.32}>
-                    {r.lux > 0 && (
-                      <title>{`${String(r.hour).padStart(2, '0')} h : ${Math.round(r.lux).toLocaleString('fr-CA')} lux${r.isPeak ? ' — pic du jour' : ''}`}</title>
-                    )}
-                  </rect>
-                ))}
-                {bars.peak && (
-                  <g transform={`translate(${bars.peak.x.toFixed(1)} ${(bars.peak.y - 7).toFixed(1)})`} stroke="var(--accent)" stroke-width="0.9" stroke-linecap="round">
-                    <circle cx="0" cy="0" r="2.4" fill="var(--accent)" stroke="none"/>
-                    <line x1="-4.5" y1="0" x2="-3" y2="0"/>
-                    <line x1="3" y1="0" x2="4.5" y2="0"/>
-                    <line x1="0" y1="-4.5" x2="0" y2="-3"/>
-                    <line x1="0" y1="3" x2="0" y2="4.5"/>
-                    <line x1="-3.2" y1="-3.2" x2="-2.2" y2="-2.2"/>
-                    <line x1="2.2" y1="2.2" x2="3.2" y2="3.2"/>
-                    <line x1="-3.2" y1="3.2" x2="-2.2" y2="2.2"/>
-                    <line x1="2.2" y1="-2.2" x2="3.2" y2="-3.2"/>
-                  </g>
-                )}
-              </svg>
+              <div class="luxwrap">
+                <div class="lbtip" id="lbtip"></div>
+                <svg class="luxbars" viewBox="0 0 660 100" preserveAspectRatio="none" role="img" aria-label="Luminosité moyenne par heure (24 h)">
+                  {bars.rects.map((r) => (
+                    <rect x={r.x.toFixed(1)} y={r.y.toFixed(1)} width={r.w.toFixed(1)} height={r.h.toFixed(1)} fill="var(--accent)" fill-opacity={r.isPeak ? 0.7 : 0.32} data-tip={r.lux > 0 ? `${String(r.hour).padStart(2, '0')} h : ${Math.round(r.lux).toLocaleString('fr-CA')} lux${r.isPeak ? ' — pic du jour' : ''}` : ''}></rect>
+                  ))}
+                  {bars.peak && (
+                    <g transform={`translate(${bars.peak.x.toFixed(1)} ${(bars.peak.y - 7).toFixed(1)})`} stroke="var(--accent)" stroke-width="0.9" stroke-linecap="round">
+                      <circle cx="0" cy="0" r="2.4" fill="var(--accent)" stroke="none"/>
+                      <line x1="-4.5" y1="0" x2="-3" y2="0"/>
+                      <line x1="3" y1="0" x2="4.5" y2="0"/>
+                      <line x1="0" y1="-4.5" x2="0" y2="-3"/>
+                      <line x1="0" y1="3" x2="0" y2="4.5"/>
+                      <line x1="-3.2" y1="-3.2" x2="-2.2" y2="-2.2"/>
+                      <line x1="2.2" y1="2.2" x2="3.2" y2="3.2"/>
+                      <line x1="-3.2" y1="3.2" x2="-2.2" y2="2.2"/>
+                      <line x1="2.2" y1="-2.2" x2="3.2" y2="-3.2"/>
+                    </g>
+                  )}
+                </svg>
+              </div>
             ) : (
               <div class="luxbars-fallback">—</div>
             );
@@ -717,16 +724,26 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
         });
       }
 
-      // Pic de luminosité — info-bulle au survol
-      var ltip = document.getElementById('luxtip');
-      document.querySelectorAll('.lmark').forEach(function (m) {
-        m.addEventListener('mouseenter', function () {
-          ltip.textContent = m.getAttribute('data-t') + ' — ' + m.getAttribute('data-lux');
-          ltip.style.left = m.style.left;
-          ltip.classList.add('on');
+      // Bargraph Luminosité — tooltip custom au survol des barres
+      var lbtip = document.getElementById('lbtip');
+      if (lbtip) {
+        var lbWrap = lbtip.parentNode;
+        document.querySelectorAll('.luxbars rect[data-tip]').forEach(function (rect) {
+          var msg = rect.getAttribute('data-tip');
+          if (!msg) return;
+          function show(e) {
+            var r = lbWrap.getBoundingClientRect();
+            lbtip.textContent = msg;
+            lbtip.style.left = (e.clientX - r.left) + 'px';
+            lbtip.style.top = (e.clientY - r.top) + 'px';
+            lbtip.classList.add('on');
+          }
+          function hide() { lbtip.classList.remove('on'); }
+          rect.addEventListener('mouseenter', show);
+          rect.addEventListener('mousemove', show);
+          rect.addEventListener('mouseleave', hide);
         });
-        m.addEventListener('mouseleave', function () { ltip.classList.remove('on'); });
-      });
+      }
 
       // Bouton « Écouter »
       var btns = document.querySelectorAll('.listen[data-audio-src]');

@@ -51,6 +51,16 @@ async function main(): Promise<void> {
   const n = await computeHistoricalNorm(date, `${DATA_DIR}/weather`);
   w.hourly_norm_c = n.hourly_norm_c;
   w.norm_years_used = n.norm_years_used;
+  // Total pluie semaine
+  let weekTotal = w.rain_day_final_mm ?? 0;
+  const base = new Date(`${date}T12:00:00Z`);
+  for (let d = 1; d <= 6; d++) {
+    const probe = new Date(base.getTime() - d * 86400000);
+    const ds = probe.toISOString().slice(0, 10);
+    const past = await readJson<{ rain_day_final_mm?: number | null }>(`${DATA_DIR}/weather/${ds}.json`);
+    weekTotal += past?.rain_day_final_mm ?? 0;
+  }
+  w.rain_week_total_mm = weekTotal;
   if (w.lightning.count_total > 0) {
     w.lightning.last_storm = {
       count: w.lightning.count_total,
