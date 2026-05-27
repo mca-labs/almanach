@@ -111,6 +111,7 @@ export interface Quote {
   work: string;
   year: number;
   theme_tags: string[];
+  lang: 'fr' | 'en';
 }
 
 export interface SpeciesPhotoCredit {

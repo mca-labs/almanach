@@ -21,6 +21,9 @@ export interface Quote {
   work: string;
   year: number;
   theme_tags: string[];
+  /** Langue de la citation source : "fr" ou "en" (et autres à venir).
+   *  Si "fr", Claude ne génère pas de fragment_translation_fr. */
+  lang: 'fr' | 'en';
 }
 
 export interface SynthesisContext {
@@ -71,7 +74,7 @@ Règles de FORMAT strictes (impératives) :
 - "summary" = la ligne de condition, UNE seule phrase, au présent. C'est le seul endroit où elle apparaît.
 - "body_md" = LE BILLET, exactement deux paragraphes en prose pure, séparés par une ligne vide (\\n\\n).
 - "sky_narrative" = UNE ou DEUX phrases (40-90 mots) au FUTUR décrivant la nuit qui s'ouvre. C'est une nuit À VENIR du point de vue du lecteur (qui lit le matin) : tous les verbes principaux au futur simple ou au présent à valeur de futur. JAMAIS d'imparfait, JAMAIS de passé composé pour des événements postérieurs au moment de la lecture. Écrire « la lune se couchera à 2 h 26 », PAS « la lune s'est couchée à 2 h 26 ». Écrire « Vénus et Jupiter brilleront » ou « seront visibles », PAS « brillaient » ni « étaient visibles ». Ancré dans les données de "sky" fournies : phase de Lune et son heure de coucher, planètes notables, couverture nuageuse, durée d'obscurité réelle. Style identique au billet, mais centré sur le ciel. Indique concrètement à quoi la nuit se prête (ex. observation lunaire, ciel profond, marche sans frontale) ou à quoi elle ne se prête pas.
-- "fragment_translation_fr" = traduction française fidèle et littéraire du "text" de la citation choisie via fragment_quote_id. RENVOIE null si la citation est déjà en français. La traduction respecte le sens, le rythme et le registre de l'original ; pas de paraphrase, pas d'embellissement.
+- "fragment_translation_fr" = traduction française fidèle et littéraire du "text" de la citation choisie via fragment_quote_id. RENVOIE null si la citation source est déjà en français (le champ "lang" de la citation vaut "fr"). La traduction respecte le sens, le rythme et le registre de l'original ; pas de paraphrase, pas d'embellissement.
 
 Italiques dans la prose ("body_md" et "sky_narrative") :
 - Le SEUL balisage autorisé est l'italique des NOMS SCIENTIFIQUES LATINS (binôme genre + espèce, ex. *Setophaga coronata*), entourés d'astérisques simples.

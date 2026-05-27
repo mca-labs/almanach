@@ -2,8 +2,8 @@
   "now": [],
   "soon": [
     {
-      "title": "Diversifier la base de fragments",
-      "details": "Ajouter des auteurs et des citations à <code>data/quotes.json</code> pour varier les affichages dans la section Fragment."
+      "title": "Diversifier la base de fragments — vagues suivantes",
+      "details": "Vague 1 livrée (Renard + Marie-Victorin, 9 nouvelles citations, total 22). Vagues à venir, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables, animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40."
     },
     {
       "title": "Passe Impeccable",
@@ -15,6 +15,10 @@
     }
   ],
   "later": [
+    {
+      "title": "Fragments d'auteurs contemporains (hors DP)",
+      "details": "Citations de <strong>Pierre Morency</strong>, <strong>Sylvain Tesson</strong> et <strong>Louis Hamelin</strong> — auteurs vivants, fair-use possible mais validation nécessite l'accès aux livres. À entrer manuellement quand Michael a les ouvrages sous la main."
+    },
     {
       "title": "Clé API eBird pour la taxonomy en direct",
       "details": "Alternative à la solution actuelle (mapping <code>data/ebird-species-codes.json</code> statique, refresh annuel manuel) : obtenir une clé API eBird gratuite, l'ajouter aux secrets GitHub, et récupérer la taxonomy à jour automatiquement. Permettrait aussi d'autres features eBird (« Rare au secteur », abondance régionale, etc.)."

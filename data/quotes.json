@@ -15,7 +15,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
-      "source_note": "Project Gutenberg #205, ligne 2649 (chapitre « Where I Lived, and What I Lived For »)"
+      "source_note": "Project Gutenberg #205, ligne 2649 (chapitre « Where I Lived, and What I Lived For »)",
+      "lang": "en"
     },
     {
       "id": "henry-david-thoreau-walden-2",
@@ -29,7 +30,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
-      "source_note": "Project Gutenberg #205, ligne 235 (chapitre « Economy »)"
+      "source_note": "Project Gutenberg #205, ligne 235 (chapitre « Economy »)",
+      "lang": "en"
     },
     {
       "id": "henry-david-thoreau-walden-3",
@@ -42,7 +44,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
-      "source_note": "Project Gutenberg #205, ligne 2671"
+      "source_note": "Project Gutenberg #205, ligne 2671",
+      "lang": "en"
     },
     {
       "id": "henry-david-thoreau-walden-4",
@@ -57,7 +60,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
-      "source_note": "Project Gutenberg #205, ligne 2864"
+      "source_note": "Project Gutenberg #205, ligne 2864",
+      "lang": "en"
     },
     {
       "id": "henry-david-thoreau-walking-5",
@@ -72,7 +76,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/1022/pg1022.txt",
-      "source_note": "Project Gutenberg #1022, ligne 575 (essai « Walking », publié à titre posthume en 1862 dans The Atlantic Monthly)"
+      "source_note": "Project Gutenberg #1022, ligne 575 (essai « Walking », publié à titre posthume en 1862 dans The Atlantic Monthly)",
+      "lang": "en"
     },
     {
       "id": "john-muir-my-6",
@@ -87,7 +92,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/32540/pg32540.txt",
-      "source_note": "Project Gutenberg #32540, ligne 3376 (chapitre « Mono Trail »)"
+      "source_note": "Project Gutenberg #32540, ligne 3376 (chapitre « Mono Trail »)",
+      "lang": "en"
     },
     {
       "id": "john-muir-my-7",
@@ -103,7 +109,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/32540/pg32540.txt",
-      "source_note": "Project Gutenberg #32540, ligne 837 (chapitre « A Memorable Day »)"
+      "source_note": "Project Gutenberg #32540, ligne 837 (chapitre « A Memorable Day »)",
+      "lang": "en"
     },
     {
       "id": "john-muir-my-8",
@@ -119,7 +126,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/32540/pg32540.txt",
-      "source_note": "Project Gutenberg #32540, ligne 839"
+      "source_note": "Project Gutenberg #32540, ligne 839",
+      "lang": "en"
     },
     {
       "id": "john-burroughs-wake-robin-9",
@@ -135,7 +143,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/4203/pg4203.txt",
-      "source_note": "Project Gutenberg #4203, ligne 273 (chapitre « The Return of the Birds »)"
+      "source_note": "Project Gutenberg #4203, ligne 273 (chapitre « The Return of the Birds »)",
+      "lang": "en"
     },
     {
       "id": "john-burroughs-wake-robin-10",
@@ -150,7 +159,8 @@
       ],
       "public_domain": true,
       "source_url": "https://www.gutenberg.org/cache/epub/4203/pg4203.txt",
-      "source_note": "Project Gutenberg #4203, ligne 269"
+      "source_note": "Project Gutenberg #4203, ligne 269",
+      "lang": "en"
     },
     {
       "id": "aldo-leopold-a-11",
@@ -165,7 +175,8 @@
       ],
       "public_domain": false,
       "source_url": "https://en.wikiquote.org/wiki/Aldo_Leopold",
-      "source_note": "Citation canonique de l'essai « The Land Ethic » dans A Sand County Almanac (1949). Domaine public au Canada (vie+70 ans, Leopold † 1948) ; encore protégé aux États-Unis. Conservé sur la foi de l'usage personnel."
+      "source_note": "Citation canonique de l'essai « The Land Ethic » dans A Sand County Almanac (1949). Domaine public au Canada (vie+70 ans, Leopold † 1948) ; encore protégé aux États-Unis. Conservé sur la foi de l'usage personnel.",
+      "lang": "en"
     },
     {
       "id": "aldo-leopold-a-12",
@@ -180,7 +191,8 @@
       ],
       "public_domain": false,
       "source_url": "https://en.wikiquote.org/wiki/Aldo_Leopold",
-      "source_note": "Avant-propos de A Sand County Almanac (1949). Voir note de licence de la citation précédente."
+      "source_note": "Avant-propos de A Sand County Almanac (1949). Voir note de licence de la citation précédente.",
+      "lang": "en"
     },
     {
       "id": "aldo-leopold-a-13",
@@ -195,7 +207,155 @@
       ],
       "public_domain": false,
       "source_url": "https://en.wikiquote.org/wiki/Aldo_Leopold",
-      "source_note": "Phrase d'ouverture de l'avant-propos de A Sand County Almanac (1949). Voir note de licence."
+      "source_note": "Phrase d'ouverture de l'avant-propos de A Sand County Almanac (1949). Voir note de licence.",
+      "lang": "en"
+    },
+    {
+      "id": "jules-renard-histoires-naturelles-ver-luisant",
+      "text": "Cette goutte de lune dans l’herbe !",
+      "author": "Jules Renard",
+      "work": "Histoires naturelles",
+      "year": 1896,
+      "lang": "fr",
+      "theme_tags": [
+        "nuit",
+        "lune",
+        "insecte",
+        "minuscule"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Histoires_naturelles/ill._Rabier",
+      "source_note": "Vignette « Le ver luisant » (II). Édition illustrée par Benjamin Rabier, 1909."
+    },
+    {
+      "id": "jules-renard-histoires-naturelles-cafard",
+      "text": "Noir et collé comme un trou de serrure.",
+      "author": "Jules Renard",
+      "work": "Histoires naturelles",
+      "year": 1896,
+      "lang": "fr",
+      "theme_tags": [
+        "insecte",
+        "image",
+        "minuscule"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Histoires_naturelles/ill._Rabier",
+      "source_note": "Vignette « Le cafard ». Édition illustrée par Benjamin Rabier, 1909."
+    },
+    {
+      "id": "jules-renard-histoires-naturelles-serpent",
+      "text": "Trop long.",
+      "author": "Jules Renard",
+      "work": "Histoires naturelles",
+      "year": 1896,
+      "lang": "fr",
+      "theme_tags": [
+        "reptile",
+        "image",
+        "minimalisme"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Histoires_naturelles/ill._Rabier",
+      "source_note": "Vignette « Le serpent » (I). Édition illustrée par Benjamin Rabier, 1909."
+    },
+    {
+      "id": "jules-renard-histoires-naturelles-belette",
+      "text": "Pauvre, mais propre, distinguée, elle passe et repasse, par petits bonds, sur la route, et va, d’un fossé à l’autre, donner, de trou en trou, ses leçons au cachet.",
+      "author": "Jules Renard",
+      "work": "Histoires naturelles",
+      "year": 1896,
+      "lang": "fr",
+      "theme_tags": [
+        "mammifere",
+        "observation",
+        "humour"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Histoires_naturelles/ill._Rabier",
+      "source_note": "Vignette « La belette ». Édition illustrée par Benjamin Rabier, 1909."
+    },
+    {
+      "id": "marie-victorin-croquis-laurentiens-lac-printemps",
+      "text": "Le lac riait hier de toute la joie de ses eaux neuves, bleues d’un bleu d’acier.",
+      "author": "Frère Marie-Victorin",
+      "work": "Croquis laurentiens",
+      "year": 1920,
+      "lang": "fr",
+      "theme_tags": [
+        "printemps",
+        "eau",
+        "lac",
+        "joie"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Croquis_laurentiens/10",
+      "source_note": "Chapitre 10, « Le lac Seigneurial de Saint-Bruno »."
+    },
+    {
+      "id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+      "text": "La souple marqueterie des feuilles mortes épouse et trahit toutes les vallécules du sous-bois, met en valeur le pied moussu des arbres.",
+      "author": "Frère Marie-Victorin",
+      "work": "Croquis laurentiens",
+      "year": 1920,
+      "lang": "fr",
+      "theme_tags": [
+        "foret",
+        "sous-bois",
+        "feuilles-mortes",
+        "observation"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Croquis_laurentiens/10",
+      "source_note": "Chapitre 10, « Le lac Seigneurial de Saint-Bruno »."
+    },
+    {
+      "id": "marie-victorin-croquis-laurentiens-ecureuils",
+      "text": "Courez en paix, écureuils roux, sur les gazons et sur les branches ! Libres perdrix, gavez-vous du pollen emmiellé des aulnes !",
+      "author": "Frère Marie-Victorin",
+      "work": "Croquis laurentiens",
+      "year": 1920,
+      "lang": "fr",
+      "theme_tags": [
+        "printemps",
+        "animaux",
+        "vie-sauvage"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Croquis_laurentiens/10",
+      "source_note": "Chapitre 10, « Le lac Seigneurial de Saint-Bruno »."
+    },
+    {
+      "id": "marie-victorin-croquis-laurentiens-capes-raides",
+      "text": "Au nord, la ligne brutale des Câpes Raides dessine sur le ciel pâle un monstre noir accroupi dans la mer.",
+      "author": "Frère Marie-Victorin",
+      "work": "Croquis laurentiens",
+      "year": 1920,
+      "lang": "fr",
+      "theme_tags": [
+        "paysage",
+        "mer",
+        "horizon"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Croquis_laurentiens/18",
+      "source_note": "Chapitre 18, « La Croix de l’Islette »."
+    },
+    {
+      "id": "marie-victorin-croquis-laurentiens-corneilles",
+      "text": "Devant nous, au ras des crans couverts de varech gluant, s’incline le vol noir des corneilles en maraude.",
+      "author": "Frère Marie-Victorin",
+      "work": "Croquis laurentiens",
+      "year": 1920,
+      "lang": "fr",
+      "theme_tags": [
+        "oiseaux",
+        "mer",
+        "rivage"
+      ],
+      "public_domain": true,
+      "source_url": "https://fr.wikisource.org/wiki/Croquis_laurentiens/18",
+      "source_note": "Chapitre 18, « La Croix de l’Islette »."
     }
   ]
 }
