@@ -90,27 +90,37 @@ function pressureArrow(dir: 'up' | 'down' | 'flat' | null | undefined): string {
 function pressureLabel(dir: 'up' | 'down' | 'flat' | null | undefined): string {
   return dir === 'up' ? 'en hausse' : dir === 'down' ? 'en baisse' : dir === 'flat' ? 'stable' : '';
 }
-/** Sparkline lux : génère le `d` SVG (ligne + aire) + position du pic. Viewbox 160×40. */
-function luxSparkline(hourly: (number | null)[] | undefined):
-  { line: string; area: string; peak: { x: number; y: number; hour: number } | null } | null {
+/** Bargraph lux : 24 rects (un par heure) sur viewbox 660×100, position du pic pour l'icône soleil. */
+function luxBars(hourly: (number | null)[] | undefined):
+  | {
+      rects: { x: number; y: number; w: number; h: number; hour: number; lux: number; isPeak: boolean }[];
+      peak: { x: number; y: number; hour: number; lux: number } | null;
+    }
+  | null {
   if (!hourly || hourly.length !== 24) return null;
   const vals = hourly.map((v) => v ?? 0);
   const max = Math.max(...vals, 1);
-  // Padding vertical : 4 px en haut (pour l'icône soleil), 2 en bas
-  const yMin = 6;
-  const yMax = 38;
-  const points = vals.map((v, i) => {
-    const x = (i / 23) * 160;
-    const y = yMax - (v / max) * (yMax - yMin);
-    return { x, y, v, i };
-  });
-  const line = 'M ' + points.map((p) => `${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' L ');
-  const area = line + ` L 160 40 L 0 40 Z`;
-  // Pic : index du max
+  const VBW = 660;
+  const VBH = 100;
+  const TOP = 12; // espace pour l'icône soleil
+  const BOTTOM = 2;
+  const GAP = 2;
+  const slot = VBW / 24;
+  const w = Math.max(slot - GAP, 1);
+  // Index du pic
   let peakIdx = 0;
-  for (let i = 1; i < points.length; i++) if (points[i]!.v > points[peakIdx]!.v) peakIdx = i;
-  const peak = points[peakIdx]!.v > 0 ? { x: points[peakIdx]!.x, y: points[peakIdx]!.y, hour: peakIdx } : null;
-  return { line, area, peak };
+  for (let i = 1; i < vals.length; i++) if (vals[i]! > vals[peakIdx]!) peakIdx = i;
+  const rects = vals.map((v, i) => {
+    const h = (v / max) * (VBH - TOP - BOTTOM);
+    const x = i * slot + GAP / 2;
+    const y = VBH - BOTTOM - h;
+    return { x, y, w, h, hour: i, lux: v, isPeak: i === peakIdx && v > 0 };
+  });
+  const peakRect = rects[peakIdx]!;
+  const peak = peakRect.lux > 0
+    ? { x: peakRect.x + peakRect.w / 2, y: peakRect.y, hour: peakIdx, lux: peakRect.lux }
+    : null;
+  return { rects, peak };
 }
 
 /** Compte les heures par état de ciel (basé sur lux moyen horaire). Heures de nuit exclues. */
@@ -470,46 +480,32 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             <h2>Luminosité</h2><span class="line"></span>
           </div>
           {(() => {
-            const spark = luxSparkline(weather?.hourly_lux_avg);
-            const hours = luxHoursByState(weather?.hourly_lux_avg);
-            const breakdownParts: string[] = [];
-            if (hours.plein > 0) breakdownParts.push(`${hours.plein} h plein soleil`);
-            if (hours.voilé > 0) breakdownParts.push(`${hours.voilé} h voilé`);
-            if (hours.couvert > 0) breakdownParts.push(`${hours.couvert} h couvert`);
-            return (
-              <div class="luxwrap">
-                {spark ? (
-                  <svg class="luxspark" viewBox="0 0 160 40" width="160" height="40" aria-hidden="true">
-                    <path d={spark.area} fill="var(--accent)" fill-opacity="0.18"/>
-                    <path d={spark.line} fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-linejoin="round"/>
-                    {spark.peak && (
-                      <g transform={`translate(${spark.peak.x.toFixed(1)} ${spark.peak.y.toFixed(1)})`} stroke="var(--accent)" stroke-width="0.9" stroke-linecap="round">
-                        <circle cx="0" cy="0" r="2.2" fill="var(--accent)" stroke="none"/>
-                        <line x1="-4.5" y1="0" x2="-3" y2="0"/>
-                        <line x1="3" y1="0" x2="4.5" y2="0"/>
-                        <line x1="0" y1="-4.5" x2="0" y2="-3"/>
-                        <line x1="0" y1="3" x2="0" y2="4.5"/>
-                        <line x1="-3.2" y1="-3.2" x2="-2.2" y2="-2.2"/>
-                        <line x1="2.2" y1="2.2" x2="3.2" y2="3.2"/>
-                        <line x1="-3.2" y1="3.2" x2="-2.2" y2="2.2"/>
-                        <line x1="2.2" y1="-2.2" x2="3.2" y2="-3.2"/>
-                      </g>
+            const bars = luxBars(weather?.hourly_lux_avg);
+            return bars ? (
+              <svg class="luxbars" viewBox="0 0 660 100" preserveAspectRatio="none" role="img" aria-label="Luminosité moyenne par heure (24 h)">
+                {bars.rects.map((r) => (
+                  <rect x={r.x.toFixed(1)} y={r.y.toFixed(1)} width={r.w.toFixed(1)} height={r.h.toFixed(1)} fill="var(--accent)" fill-opacity={r.isPeak ? 0.7 : 0.32}>
+                    {r.lux > 0 && (
+                      <title>{`${String(r.hour).padStart(2, '0')} h : ${Math.round(r.lux).toLocaleString('fr-CA')} lux${r.isPeak ? ' — pic du jour' : ''}`}</title>
                     )}
-                  </svg>
-                ) : (
-                  <div class="luxspark luxspark-fallback">—</div>
+                  </rect>
+                ))}
+                {bars.peak && (
+                  <g transform={`translate(${bars.peak.x.toFixed(1)} ${(bars.peak.y - 7).toFixed(1)})`} stroke="var(--accent)" stroke-width="0.9" stroke-linecap="round">
+                    <circle cx="0" cy="0" r="2.4" fill="var(--accent)" stroke="none"/>
+                    <line x1="-4.5" y1="0" x2="-3" y2="0"/>
+                    <line x1="3" y1="0" x2="4.5" y2="0"/>
+                    <line x1="0" y1="-4.5" x2="0" y2="-3"/>
+                    <line x1="0" y1="3" x2="0" y2="4.5"/>
+                    <line x1="-3.2" y1="-3.2" x2="-2.2" y2="-2.2"/>
+                    <line x1="2.2" y1="2.2" x2="3.2" y2="3.2"/>
+                    <line x1="-3.2" y1="3.2" x2="-2.2" y2="2.2"/>
+                    <line x1="2.2" y1="-2.2" x2="3.2" y2="-3.2"/>
+                  </g>
                 )}
-                <div class="luxinfo">
-                  <div>
-                    {LUX_PEAK_VALUE !== null && LUX_PEAK_HOUR !== null
-                      ? <>pic <b>{Math.round(LUX_PEAK_VALUE).toLocaleString('fr-CA')}</b> lux à <b>{String(LUX_PEAK_HOUR).padStart(2, '0')} h</b></>
-                      : 'pas de pic mesuré'}
-                  </div>
-                  {breakdownParts.length > 0 && (
-                    <div class="breakdown">{breakdownParts.join(' · ')}</div>
-                  )}
-                </div>
-              </div>
+              </svg>
+            ) : (
+              <div class="luxbars-fallback">—</div>
             );
           })()}
           <div class="sun">
@@ -525,6 +521,16 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               <svg class="ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
               Durée du jour <b>{dayDuration(twDetail.sunrise ?? null, twDetail.sunset ?? null)}</b>
             </span>
+            {(() => {
+              const hours = luxHoursByState(weather?.hourly_lux_avg);
+              return (
+                <>
+                  {hours.plein > 0 && <span class="seg"><b>{hours.plein} h</b> plein soleil</span>}
+                  {hours.voilé > 0 && <span class="seg"><b>{hours.voilé} h</b> voilé</span>}
+                  {hours.couvert > 0 && <span class="seg"><b>{hours.couvert} h</b> couvert</span>}
+                </>
+              );
+            })()}
           </div>
         </div>
       </section>
