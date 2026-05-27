@@ -138,14 +138,17 @@ function luxHoursByState(hourly: (number | null)[] | undefined):
 }
 
 function stormAgeLabel(daysAgo: number): string {
-  if (daysAgo === 0) return "aujourd’hui";
-  if (daysAgo === 1) return "hier";
-  if (daysAgo < 30) return `il y a ${daysAgo} jours`;
-  if (daysAgo < 90) return `il y a ${Math.round(daysAgo / 7)} semaines`;
+  // Le site adopte la perspective du lecteur (qui lit le lendemain matin).
+  // days_ago = 0 = orage le jour de l'édition = hier pour le lecteur.
+  const d = daysAgo + 1;
+  if (d === 1) return "hier";
+  if (d === 2) return "avant-hier";
+  if (d < 30) return `il y a ${d} jours`;
+  if (d < 90) return `il y a ${Math.round(d / 7)} semaines`;
   return '+3 mois';
 }
 function stormDistanceLabel(daysAgo: number, km: number | null): string {
-  if (daysAgo >= 90 || km === null) return '';
+  if (daysAgo + 1 >= 90 || km === null) return '';
   return `, à ${Math.round(km)} km`;
 }
 function pressureDeltaFmt(t: number | null | undefined): string {
