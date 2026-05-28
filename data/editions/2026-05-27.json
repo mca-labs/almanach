@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-05-27",
+  "generated_at": "2026-05-28T08:08:56.144Z",
+  "title": "La paruline à gorge orangée sur le versant nord",
+  "summary": "Journée fraîche et presque sans vent, avec un bref passage pluvieux en matinée — quarante-six espèces ont tenu le Val en haleine.",
+  "body_md": "Le baromètre est resté bas toute la journée, à peine stable, et la pluie du matin n'a pas dépassé deux millimètres. Le vent du sud soufflait à peine — moins de deux kilomètres et demi à l'heure en moyenne — ce qui a laissé l'air immobile sous les épinettes, propice aux arrêts. Entre 5 h et 7 h, les détections se sont multipliées par cent en deux heures. Les migrateurs utilisent ce genre de calme comme une halte attendue.\n\nC'est Setophaga fusca qui a retenu l'attention ce matin, détectée peu après 7 h sur le versant nord. La paruline à gorge orangée ne s'attarde pas longtemps au Val — elle monte vers les forêts de conifères plus denses, plus loin — et son chant, bref et montant, s'est glissé dans le sous-bois avant que la lumière atteigne le fond du ravin. Quarante-six espèces comptées aujourd'hui. La saison est à son sommet, et ça se voit au bruit.",
+  "sky_narrative": "La couverture nuageuse sera totale cette nuit, ce qui fermera le ciel aux étoiles comme aux planètes — ni Vénus ni Jupiter ne seront visibles. La lune gibbeuse, illuminée à plus de 90 %, se couchera vers 3 h du matin ; elle ne percera pas non plus. Ce sera une nuit d'écoute plutôt que d'observation : les migrateurs se remettront en route dans l'obscurité opaque, au-dessus d'un Val silencieux.",
+  "theme_tags": [
+    "migration",
+    "parulines",
+    "vent-calme",
+    "printemps",
+    "sous-bois"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6.5,
+      "temp_max_c": 17.5,
+      "rain_mm": 1.76952,
+      "wind_avg_kmh": 2.34,
+      "wind_gust_max_kmh": 17.64,
+      "wind_direction": "S",
+      "pressure_mb": 967.4,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "observed_at": "2026-05-27T07:20:41-04:00",
+      "confidence": 0.9356520175933838,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-112038.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 90.7,
+      "moon_set": "2026-05-28T07:00:18.888Z",
+      "planets_notable": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 100
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}
