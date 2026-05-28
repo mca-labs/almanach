@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-08",
+  "total_detections": 603,
+  "unique_species": 22,
+  "top_species": [
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 114,
+      "max_confidence": 0.9167866706848145,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-123040.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 97,
+      "max_confidence": 0.9415625929832458,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-172558.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 86,
+      "max_confidence": 0.9729500412940979,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-093721.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 56,
+      "max_confidence": 0.9663955569267273,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-093213.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 54,
+      "max_confidence": 0.9874544143676758,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260509-001008.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 44,
+      "max_confidence": 0.9922720193862915,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-120239.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 39,
+      "max_confidence": 0.9703754782676697,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-100213.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 34,
+      "max_confidence": 0.9845342636108398,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-105439.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 23,
+      "max_confidence": 0.9928224682807922,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-093356.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 14,
+      "max_confidence": 0.9356850981712341,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-171044.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Northern Flicker",
+    "taxon_scientific": "Colaptes auratus",
+    "confidence": 0.9167866706848145,
+    "observed_at": "2026-05-08T08:30:43-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260508-123040.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    51,
+    101,
+    71,
+    45,
+    59,
+    1,
+    5,
+    6,
+    9,
+    58,
+    42,
+    20,
+    46,
+    8,
+    2,
+    13,
+    66,
+    0,
+    0,
+    0
+  ]
+}

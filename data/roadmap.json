@@ -6,10 +6,6 @@
       "details": "Suite de l'enrichissement, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40 (actuellement 22)."
     },
     {
-      "title": "Graphique d'observations/espèces sur 30 jours",
-      "details": "Nouveau graphique sur l'accueil illustrant le nombre d'observations et d'espèces par jour au cours du dernier mois, pour donner à voir les variations saisonnières. Apparence sans effet de carte (style « Luminosité »), pour rythmer la mise en page. Positionnement entre les sous-sections « Activités des oiseaux » (horloge 24 h) et « Visiteurs les plus fréquents ». Sous-titre <code>.rubric.mini</code> (même taille que celui de Luminosité), considéré comme une sous-section d'Activités des oiseaux."
-    },
-    {
       "title": "Passe Impeccable",
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
     },
@@ -52,6 +48,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Graphique d'observations &amp; espèces sur 30 jours",
+      "details": "Nouvelle sous-section d'« Activités des oiseaux », entre l'horloge 24 h et « Visiteurs les plus fréquents ». Piste retenue : barres (observations / jour) + ligne (espèces / jour) en double échelle, style sans carte comme Luminosité, tooltip au survol. Les 30 jours réels ont été comblés depuis BirdWeather (script <code>scripts/backfill-birds.ts</code>, idempotent) ; le cron quotidien fait avancer la fenêtre. Sur mobile, ~10 jours s'affichent à la fois avec défilement horizontal jusqu'à j-30 (départ sur le jour le plus récent). Bonus : l'historique enrichi affine aussi « Premières de la saison ».",
+      "finished_at": "2026-05-28"
+    },
     {
       "title": "Liens vers les fiches eBird sur les photos d'oiseaux",
       "details": "Les photos sont désormais cliquables et pointent vers la même fiche eBird que le nom de l'espèce, via le helper <code>ebirdUrl(taxon_scientific)</code> : photo de « Observation du jour » et vignettes de « Visiteurs les plus fréquents ». Lien posé uniquement quand un code eBird existe pour le binôme latin. <em>Demande de MCB.</em>",

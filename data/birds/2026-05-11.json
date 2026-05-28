@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-11",
+  "total_detections": 790,
+  "unique_species": 20,
+  "top_species": [
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 331,
+      "max_confidence": 0.9883926510810852,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-103646.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 121,
+      "max_confidence": 0.9537132382392883,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-093859.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 101,
+      "max_confidence": 0.9728357791900635,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-111608.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 70,
+      "max_confidence": 0.891231894493103,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-210246.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 41,
+      "max_confidence": 0.9962347149848938,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-114656.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 32,
+      "max_confidence": 0.9355887174606323,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-105626.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 31,
+      "max_confidence": 0.9432647228240967,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-174203.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 16,
+      "max_confidence": 0.8732088804244995,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-100837.flac"
+    },
+    {
+      "taxon_common": "Purple Finch",
+      "taxon_scientific": "Haemorhous purpureus",
+      "count": 10,
+      "max_confidence": 0.8595272898674011,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-130013.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 9,
+      "max_confidence": 0.8462793827056885,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-084512.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.9883926510810852,
+    "observed_at": "2026-05-11T06:36:49-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260511-103646.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    33,
+    99,
+    121,
+    156,
+    39,
+    27,
+    32,
+    14,
+    11,
+    32,
+    25,
+    42,
+    69,
+    42,
+    43,
+    3,
+    2,
+    0,
+    0,
+    0
+  ]
+}

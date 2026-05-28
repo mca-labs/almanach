@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-16",
+  "total_detections": 832,
+  "unique_species": 28,
+  "top_species": [
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 158,
+      "max_confidence": 0.9872115254402161,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-200918.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 146,
+      "max_confidence": 0.9545890688896179,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-083812.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 113,
+      "max_confidence": 0.9611852765083313,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-102831.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 106,
+      "max_confidence": 0.9670866131782532,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-084101.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 63,
+      "max_confidence": 0.997697651386261,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-114513.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 55,
+      "max_confidence": 0.9530308246612549,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-111331.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 46,
+      "max_confidence": 0.9328938126564026,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-110833.flac"
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 40,
+      "max_confidence": 0.980912983417511,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-165839.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 21,
+      "max_confidence": 0.9992800354957581,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-122005.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 16,
+      "max_confidence": 0.946824312210083,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-113806.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "White-crowned Sparrow",
+    "taxon_scientific": "Zonotrichia leucophrys",
+    "confidence": 0.9872115254402161,
+    "observed_at": "2026-05-16T16:09:19-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260516-200918.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    157,
+    50,
+    54,
+    182,
+    69,
+    42,
+    33,
+    31,
+    15,
+    15,
+    30,
+    59,
+    39,
+    24,
+    22,
+    6,
+    2,
+    1,
+    0,
+    1
+  ]
+}

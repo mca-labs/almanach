@@ -5,6 +5,7 @@ import ebirdCodes from '../../../data/ebird-species-codes.json';
 import {
   birdOfTheDayWithPhoto,
   birdsFor,
+  birdsSeries,
   latestPublished,
   publishedDates,
   quoteById,
@@ -33,6 +34,8 @@ const [weather, birds, sky, topBirds, birdPhoto, rareSpecies] = date
 
 const quoteId = entry?.fragment_quote_id ?? null;
 const quote = quoteId ? await quoteById(quoteId) : null;
+
+const birdSeries = date ? await birdsSeries(date, 30) : [];
 
 // --- Helpers ---
 const TZ = 'America/Toronto';
@@ -205,6 +208,13 @@ const dayTaxons: string[] = Array.from(new Set([
 const TEMP_HOURS: (number | null)[] = weather?.hourly_temps_c ?? new Array(24).fill(null);
 const TEMP_NORM: (number | null)[] = weather?.hourly_norm_c ?? [];
 const BIRD_HOURS: number[] = birds?.hourly_detections ?? new Array(24).fill(0);
+// Série 30 jours pour le graphique « Observations & espèces ».
+const fmtDayMonth = new Intl.DateTimeFormat('fr-CA', { timeZone: TZ, day: 'numeric', month: 'short' });
+const BIRD_SERIES = {
+  det: birdSeries.map((p) => p.total_detections),
+  spe: birdSeries.map((p) => p.unique_species),
+  labels: birdSeries.map((p) => fmtDayMonth.format(new Date(`${p.date}T12:00:00Z`))),
+};
 const SUNRISE_H: number = hourFraction(twDetail.sunrise) ?? 5;
 const SUNSET_H: number = hourFraction(twDetail.sunset) ?? 20;
 const LUX_PEAK_HOUR: number | null = weather?.lux_peak?.hour ?? null;
@@ -329,6 +339,25 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             <span><span class="d" style="background:#D8D2C6"></span>nuit</span>
           </div>
         </div>
+
+        {birdSeries.length > 1 && (
+          <div class="bseries">
+            <div class="rubric mini">
+              <h2>Observations &amp; espèces</h2><span class="line"></span>
+              <span class="src">sur {birdSeries.length}&nbsp;jours</span>
+            </div>
+            <div class="bswrap">
+              <div class="bstip" id="bstip"></div>
+              <div class="bsscroll" id="bsscroll">
+                <svg id="bsvg" viewBox="0 0 660 170" role="img" aria-label={`Observations et espèces par jour sur ${birdSeries.length} jours`}></svg>
+              </div>
+            </div>
+            <div class="bslegend">
+              <span><span class="sw"></span>observations / jour</span>
+              <span><span class="swl"></span>espèces / jour</span>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* LES OISEAUX DU JOUR */}
@@ -621,7 +650,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
 
   <script
     is:inline
-    define:vars={{ TEMP_HOURS, TEMP_NORM, BIRD_HOURS, SUNRISE_H, SUNSET_H }}
+    define:vars={{ TEMP_HOURS, TEMP_NORM, BIRD_HOURS, SUNRISE_H, SUNSET_H, BIRD_SERIES }}
   >
     /* Script reconduit du mockup une.html (TEMP_HOURS/TEMP_NORM/BIRD_HOURS/SUNRISE_H/SUNSET_H injectés). */
     (function () {
@@ -757,6 +786,109 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           rect.addEventListener('mouseenter', show);
           rect.addEventListener('mousemove', show);
           rect.addEventListener('mouseleave', hide);
+        });
+      }
+
+      // ---- Graphique 30 jours : observations (barres) + espèces (ligne), double échelle ----
+      // Mobile (≤560px) : ~10 jours visibles, défilement horizontal jusqu'à j-30.
+      var bsvg = document.getElementById('bsvg');
+      if (bsvg && BIRD_SERIES && BIRD_SERIES.det.length > 1) {
+        var BD = BIRD_SERIES.det, BS = BIRD_SERIES.spe, BL = BIRD_SERIES.labels, BN = BD.length;
+        var bH = 170, bpadL = 8, bpadR = 8, bpadT = 14, bpadB = 20;
+        var detMax = Math.ceil(Math.max.apply(null, BD.concat([1])) / 500) * 500;
+        var speMax = Math.ceil(Math.max.apply(null, BS.concat([1])) / 10) * 10;
+        var bsWrap = document.getElementById('bsscroll');
+        var bstipWrap = bsvg.closest('.bswrap');
+        var bstip = document.getElementById('bstip');
+        var DAYS_VISIBLE = 10;
+        var mq = window.matchMedia('(max-width:560px)');
+        var lastMobile = null;
+
+        function renderBseries() {
+          var mobile = mq.matches;
+          var cw = bsWrap.clientWidth || 660;
+          // Largeur du repère : desktop = 660 (s'ajuste à 100 %) ; mobile = 10 jours/écran, scroll au-delà.
+          var bW = (mobile && BN > DAYS_VISIBLE) ? Math.round((cw / DAYS_VISIBLE) * BN) : (mobile ? cw : 660);
+          var slot = (bW - bpadL - bpadR) / BN, bw = Math.max(2, slot * 0.6);
+          function bX(i) { return bpadL + slot * (i + 0.5); }
+          function bYd(v) { return bpadT + (1 - v / detMax) * (bH - bpadT - bpadB); }
+          function bYs(v) { return bpadT + (1 - v / speMax) * (bH - bpadT - bpadB); }
+          var bg = '<rect x="0" y="0" width="' + bW + '" height="' + bH + '" fill="transparent" pointer-events="all"/>';
+          for (var t = 0; t <= detMax; t += 1000) {
+            bg += '<line x1="' + bpadL + '" y1="' + bYd(t).toFixed(1) + '" x2="' + (bW - bpadR) + '" y2="' + bYd(t).toFixed(1) + '" stroke="rgba(43,55,54,.10)" stroke-width="1"/>';
+            bg += '<text x="' + bpadL + '" y="' + (bYd(t) - 3).toFixed(1) + '" font-family="Spectral,serif" font-size="10.5" fill="#6E766F">' + t.toLocaleString('fr-CA') + '</text>';
+          }
+          for (var ts = 0; ts <= speMax; ts += speMax / 2) {
+            bg += '<text x="' + (bW - bpadR) + '" y="' + (bYs(ts) - 3).toFixed(1) + '" text-anchor="end" font-family="Spectral,serif" font-size="10.5" fill="#2B3736">' + ts + ' esp.</text>';
+          }
+          for (var i = 0; i < BN; i++) {
+            var op = i === BN - 1 ? 0.7 : 0.42;
+            bg += '<rect x="' + (bX(i) - bw / 2).toFixed(1) + '" y="' + bYd(BD[i]).toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + (bYd(0) - bYd(BD[i])).toFixed(1) + '" fill="#3F6764" fill-opacity="' + op + '"/>';
+          }
+          // pointe de la ligne = dernier jour ; l'icône d'oiseau s'y pose.
+          var ex = bX(BN - 1), ey = bYs(BS[BN - 1]), bsz = 18, bsc = bsz / 24;
+          // tracé des espèces, tronqué juste avant l'icône pour une séparation nette
+          var bpts = [];
+          for (var j = 0; j < BN - 1; j++) bpts.push(bX(j).toFixed(1) + ',' + bYs(BS[j]).toFixed(1));
+          var pvx = bX(BN - 2), pvy = bYs(BS[BN - 2]);
+          var ddx = ex - pvx, ddy = ey - pvy, dlen = Math.sqrt(ddx * ddx + ddy * ddy), dgap = bsz / 2 + 3;
+          if (dlen > dgap + 1) bpts.push((ex - ddx / dlen * dgap).toFixed(1) + ',' + (ey - ddy / dlen * dgap).toFixed(1));
+          bg += '<polyline fill="none" stroke="#2B3736" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="' + bpts.join(' ') + '"/>';
+          // icône d'oiseau en vol au point du dernier jour (à la place qu'occupe
+          // la pointe de la ligne) — pose la marque sur le point plutôt qu'au-dessus,
+          // ce qui l'éloigne de l'étiquette d'axe du haut. Statique, sans animation.
+          bg += '<g transform="translate(' + (ex - bsz / 2).toFixed(1) + ' ' + (ey - bsz / 2).toFixed(1) + ') scale(' + bsc.toFixed(3) + ')">' +
+            '<path fill="#3F6764" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41"/>' +
+            '</g>';
+          // étiquettes de date : ~tous les 80 px, construites depuis la droite
+          // pour que le jour le plus récent soit toujours étiqueté sans collision.
+          var step = Math.max(1, Math.round(80 / slot));
+          var bidx = [];
+          for (var k = BN - 1; k >= 0; k -= step) bidx.unshift(k);
+          for (var li = 0; li < bidx.length; li++) {
+            var ix = bidx[li];
+            var anc = ix === BN - 1 ? 'end' : ix === bidx[0] ? 'start' : 'middle';
+            bg += '<text x="' + bX(ix).toFixed(1) + '" y="' + (bH - 5) + '" text-anchor="' + anc + '" font-family="Spectral,serif" font-size="10.5" fill="#6E766F">' + BL[ix] + '</text>';
+          }
+          bg += '<line id="bsgl" x1="0" y1="' + bpadT + '" x2="0" y2="' + (bH - bpadB) + '" stroke="#3F6764" stroke-width="1" opacity="0"/>';
+          bsvg.setAttribute('viewBox', '0 0 ' + bW + ' ' + bH);
+          if (mobile && BN > DAYS_VISIBLE) {
+            bsvg.style.width = bW + 'px';   // taille naturelle (1:1) → scroll horizontal
+            bsvg.style.height = bH + 'px';
+          } else {
+            bsvg.style.width = '';          // CSS width:100% reprend la main
+            bsvg.style.height = '';
+          }
+          bsvg.innerHTML = bg;
+          // au premier rendu mobile, partir du jour le plus récent (extrême droite)
+          if (mobile && BN > DAYS_VISIBLE && lastMobile !== true) bsWrap.scrollLeft = bsWrap.scrollWidth;
+          lastMobile = mobile;
+          return { bX: bX, bW: bW };
+        }
+
+        var geom = renderBseries();
+        bsvg.addEventListener('mousemove', function (e) {
+          var r = bsvg.getBoundingClientRect(), frac = (e.clientX - r.left) / r.width;
+          if (frac < 0) frac = 0; if (frac > 1) frac = 1;
+          var i = Math.round(frac * (BN - 1));
+          var bsgl = document.getElementById('bsgl');
+          var gx = geom.bX(i), wr = bstipWrap.getBoundingClientRect();
+          if (bsgl) { bsgl.setAttribute('x1', gx); bsgl.setAttribute('x2', gx); bsgl.setAttribute('opacity', '.35'); }
+          bstip.innerHTML = BL[i] + ' · ' + BD[i].toLocaleString('fr-CA') + ' obs · ' + BS[i] + ' esp.';
+          // position en pixels visibles, en tenant compte du défilement
+          bstip.style.left = ((gx / geom.bW) * r.width + (r.left - wr.left)) + 'px';
+          bstip.style.top = ((20 / bH) * r.height + (r.top - wr.top)) + 'px';
+          bstip.classList.add('on');
+        });
+        bsvg.addEventListener('mouseleave', function () {
+          bstip.classList.remove('on');
+          var bsgl = document.getElementById('bsgl');
+          if (bsgl) bsgl.setAttribute('opacity', '0');
+        });
+        var bsRaf;
+        window.addEventListener('resize', function () {
+          if (bsRaf) cancelAnimationFrame(bsRaf);
+          bsRaf = requestAnimationFrame(function () { geom = renderBseries(); });
         });
       }
 

@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-17",
+  "total_detections": 1312,
+  "unique_species": 30,
+  "top_species": [
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 346,
+      "max_confidence": 0.9943234920501709,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-203259.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 259,
+      "max_confidence": 0.9786720275878906,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-102403.flac"
+    },
+    {
+      "taxon_common": "Eastern Phoebe",
+      "taxon_scientific": "Sayornis phoebe",
+      "count": 129,
+      "max_confidence": 0.9998669624328613,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-115606.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 103,
+      "max_confidence": 0.9635746479034424,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-083617.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 78,
+      "max_confidence": 0.9500918388366699,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-180049.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 62,
+      "max_confidence": 0.9904372096061707,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-151423.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 62,
+      "max_confidence": 0.9828392863273621,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-150330.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 44,
+      "max_confidence": 0.9511184692382812,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-113753.flac"
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 39,
+      "max_confidence": 0.9969537258148193,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-110308.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 39,
+      "max_confidence": 0.9432007670402527,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-163556.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "White-crowned Sparrow",
+    "taxon_scientific": "Zonotrichia leucophrys",
+    "confidence": 0.9943234920501709,
+    "observed_at": "2026-05-17T16:33:05-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260517-203259.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    86,
+    96,
+    262,
+    177,
+    71,
+    89,
+    29,
+    45,
+    41,
+    29,
+    75,
+    93,
+    153,
+    23,
+    28,
+    11,
+    4,
+    0,
+    0,
+    0
+  ]
+}

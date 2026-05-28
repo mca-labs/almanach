@@ -207,6 +207,36 @@ export async function birdsFor(date: string): Promise<BirdsDaily | null> {
   return readJsonOrNull<BirdsDaily>(join(DATA_DIR, 'birds', `${date}.json`));
 }
 
+export interface BirdSeriesPoint {
+  date: string;
+  total_detections: number;
+  unique_species: number;
+}
+
+/**
+ * Série quotidienne (détections + espèces) des `days` derniers jours allant
+ * jusqu'à `endDate` inclus, pour le graphique « Observations & espèces ».
+ * Ne renvoie que les jours réellement présents sur disque (pas de trous comblés).
+ */
+export async function birdsSeries(endDate: string, days = 30): Promise<BirdSeriesPoint[]> {
+  const dates = (await listJsonInDir(join(DATA_DIR, 'birds')))
+    .filter((d) => d <= endDate)
+    .sort()
+    .slice(-days);
+  const out: BirdSeriesPoint[] = [];
+  for (const d of dates) {
+    const b = await readJsonOrNull<BirdsDaily>(join(DATA_DIR, 'birds', `${d}.json`));
+    if (b) {
+      out.push({
+        date: b.date,
+        total_detections: b.total_detections,
+        unique_species: b.unique_species,
+      });
+    }
+  }
+  return out;
+}
+
 export async function skyForEntry(date: string): Promise<SkyDaily | null> {
   // « Ce soir » du lecteur = jour qui suit entry_date.
   const next = new Date(`${date}T12:00:00Z`);

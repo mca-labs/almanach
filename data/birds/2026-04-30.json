@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-30",
+  "total_detections": 344,
+  "unique_species": 16,
+  "top_species": [
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 127,
+      "max_confidence": 0.9363797903060913,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-091526.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 118,
+      "max_confidence": 0.9979264736175537,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-181520.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 29,
+      "max_confidence": 0.9503291845321655,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-201843.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 14,
+      "max_confidence": 0.9877417087554932,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-205327.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 14,
+      "max_confidence": 0.8880883455276489,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-091826.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 12,
+      "max_confidence": 0.951603353023529,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-194436.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 10,
+      "max_confidence": 0.8863716721534729,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-131125.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 8,
+      "max_confidence": 0.9315564632415771,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-085820.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 5,
+      "max_confidence": 0.7824559211730957,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-095107.flac"
+    },
+    {
+      "taxon_common": "Yellow-bellied Sapsucker",
+      "taxon_scientific": "Sphyrapicus varius",
+      "count": 1,
+      "max_confidence": 0.7033671140670776,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-233118.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "White-throated Sparrow",
+    "taxon_scientific": "Zonotrichia albicollis",
+    "confidence": 0.9363797903060913,
+    "observed_at": "2026-04-30T05:15:29-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260430-091526.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    5,
+    74,
+    35,
+    15,
+    4,
+    10,
+    6,
+    0,
+    19,
+    6,
+    39,
+    56,
+    41,
+    10,
+    6,
+    18,
+    0,
+    0,
+    0,
+    0
+  ]
+}

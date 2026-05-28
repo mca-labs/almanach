@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-05",
+  "total_detections": 1199,
+  "unique_species": 19,
+  "top_species": [
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 629,
+      "max_confidence": 0.9857349991798401,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-112957.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 307,
+      "max_confidence": 0.9855799674987793,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-111230.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 61,
+      "max_confidence": 0.9762704968452454,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-085027.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 49,
+      "max_confidence": 0.9526337385177612,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-135011.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 36,
+      "max_confidence": 0.9835267663002014,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-135206.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 36,
+      "max_confidence": 0.9278036952018738,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-105452.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 33,
+      "max_confidence": 0.8314837217330933,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-135103.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 10,
+      "max_confidence": 0.8834560513496399,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-190508.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 7,
+      "max_confidence": 0.9965912103652954,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-174709.flac"
+    },
+    {
+      "taxon_common": "Swamp Sparrow",
+      "taxon_scientific": "Melospiza georgiana",
+      "count": 6,
+      "max_confidence": 0.6780384182929993,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-122550.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.9857349991798401,
+    "observed_at": "2026-05-05T07:30:00-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260505-112957.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    84,
+    227,
+    164,
+    143,
+    114,
+    115,
+    44,
+    59,
+    45,
+    48,
+    44,
+    44,
+    46,
+    10,
+    8,
+    3,
+    1,
+    0,
+    0,
+    0
+  ]
+}
