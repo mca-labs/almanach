@@ -334,5 +334,29 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-05-27T08:10:24.543Z"
+  },
+  "Setophaga fusca": {
+    "taxon_inat_id": 145237,
+    "name_fr": "paruline à gorge orangée",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/135287597/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/135287597/square.jpg",
+    "attribution": "(c) Matt Felperin, some rights reserved (CC BY), uploaded by Matt Felperin",
+    "attribution_name": "Matt Felperin",
+    "license_code": "cc-by",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-05-28T08:08:33.635Z"
+  },
+  "Setophaga virens": {
+    "taxon_inat_id": 145258,
+    "name_fr": "paruline à gorge noire",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/506673183/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/506673183/square.jpg",
+    "attribution": "(c) pinemartyn, some rights reserved (CC BY-NC), uploaded by pinemartyn",
+    "attribution_name": "pinemartyn",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-05-28T08:08:34.319Z"
   }
 }

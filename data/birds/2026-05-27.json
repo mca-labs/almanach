@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-27",
+  "total_detections": 2705,
+  "unique_species": 46,
+  "top_species": [
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 859,
+      "max_confidence": 0.999937891960144,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-144940.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 259,
+      "max_confidence": 0.9356520175933838,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-112038.flac"
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 206,
+      "max_confidence": 0.9995201826095581,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-100214.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 182,
+      "max_confidence": 0.9825764894485474,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-191046.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 180,
+      "max_confidence": 0.9915623068809509,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-223201.flac"
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 162,
+      "max_confidence": 0.990875244140625,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-095801.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 129,
+      "max_confidence": 0.973079264163971,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-114637.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 80,
+      "max_confidence": 0.8951497077941895,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-082015.flac"
+    },
+    {
+      "taxon_common": "Black-throated Green Warbler",
+      "taxon_scientific": "Setophaga virens",
+      "count": 75,
+      "max_confidence": 0.9737778306007385,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-180658.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 52,
+      "max_confidence": 0.9596204161643982,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-101041.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Blackburnian Warbler",
+    "taxon_scientific": "Setophaga fusca",
+    "confidence": 0.9356520175933838,
+    "observed_at": "2026-05-27T07:20:41-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260527-112038.flac"
+  },
+  "hourly_detections": [
+    1,
+    2,
+    2,
+    16,
+    131,
+    366,
+    284,
+    283,
+    228,
+    190,
+    198,
+    194,
+    195,
+    141,
+    210,
+    64,
+    78,
+    28,
+    48,
+    28,
+    9,
+    2,
+    5,
+    2
+  ]
+}
