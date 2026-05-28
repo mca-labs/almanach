@@ -54,7 +54,7 @@
   "done": [
     {
       "title": "Liens vers les fiches eBird sur les photos d'oiseaux",
-      "details": "Les photos sont désormais cliquables et pointent vers la même fiche eBird que le nom de l'espèce, via le helper <code>ebirdUrl(taxon_scientific)</code> : photo de « Observation du jour » et vignettes de « Visiteurs les plus fréquents ». Lien posé uniquement quand un code eBird existe pour le binôme latin.",
+      "details": "Les photos sont désormais cliquables et pointent vers la même fiche eBird que le nom de l'espèce, via le helper <code>ebirdUrl(taxon_scientific)</code> : photo de « Observation du jour » et vignettes de « Visiteurs les plus fréquents ». Lien posé uniquement quand un code eBird existe pour le binôme latin. <em>Demande de MCB.</em>",
       "finished_at": "2026-05-28"
     },
     {
