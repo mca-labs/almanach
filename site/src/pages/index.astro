@@ -192,6 +192,7 @@ const pageTitle = 'Almanach du Val-des-Loups - Saint-Placide-de-Charlevoix';
 const body = paragraphs(entry?.body_md ?? null);
 
 const birdName = birdPhoto?.name_fr ?? birdPhoto?.taxon_common ?? birdPhoto?.taxon_scientific ?? '—';
+const obsBirdUrl = ebirdUrl(birdPhoto?.taxon_scientific);
 
 // Liste blanche des binômes latins du jour pour l'auto-italique (renderItalics).
 const dayTaxons: string[] = Array.from(new Set([
@@ -264,7 +265,13 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           <div class="obs">
             {birdPhoto.photo_url ? (
               <div class="photo" style="padding:0;overflow:hidden" title={birdPhoto.attribution ?? undefined}>
-                <img src={birdPhoto.photo_url} alt={`Photo de référence : ${birdName}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+                {obsBirdUrl ? (
+                  <a href={obsBirdUrl} target="_blank" rel="noopener" style="display:block;width:100%;height:100%">
+                    <img src={birdPhoto.photo_url} alt={`Photo de référence : ${birdName}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+                  </a>
+                ) : (
+                  <img src={birdPhoto.photo_url} alt={`Photo de référence : ${birdName}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+                )}
               </div>
             ) : (
               <div class="photo">
@@ -273,14 +280,9 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               </div>
             )}
             <div>
-              {(() => {
-                const url = ebirdUrl(birdPhoto.taxon_scientific);
-                return (
-                  <div class="sp">
-                    {url ? <a href={url} target="_blank" rel="noopener">{birdName}</a> : birdName}
-                  </div>
-                );
-              })()}
+              <div class="sp">
+                {obsBirdUrl ? <a href={obsBirdUrl} target="_blank" rel="noopener">{birdName}</a> : birdName}
+              </div>
               {birdPhoto.taxon_scientific && <div class="lat">{birdPhoto.taxon_scientific}</div>}
               <div class="meta">
                 {birdPhoto.observed_at && <span>entendue à {fmtTimeIso(birdPhoto.observed_at)}</span>}
@@ -343,7 +345,13 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
                   <div class="bird">
                     <div class="bphoto" title={b.attribution ?? undefined} style={b.photo_url ? 'padding:0;overflow:hidden' : ''}>
                       {b.photo_url ? (
-                        <img src={b.photo_url} alt={`Photo : ${name}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+                        url ? (
+                          <a href={url} target="_blank" rel="noopener" style="display:block;width:100%;height:100%">
+                            <img src={b.photo_url} alt={`Photo : ${name}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+                          </a>
+                        ) : (
+                          <img src={b.photo_url} alt={`Photo : ${name}`} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+                        )
                       ) : (
                         <svg><use href="#bird"/></svg>
                       )}

@@ -6,10 +6,6 @@
       "details": "Suite de l'enrichissement, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40 (actuellement 22)."
     },
     {
-      "title": "Liens vers les fiches eBird sur les photos d'oiseaux",
-      "details": "Les noms d'oiseaux pointent déjà vers leurs fiches eBird (Observation du jour, Visiteurs les plus fréquents, Premières de la saison). Étendre les liens aux photos — clic sur l'image → même URL <code>ebirdUrl(taxon_scientific)</code> que le nom. Helper existant à réutiliser."
-    },
-    {
       "title": "Graphique d'observations/espèces sur 30 jours",
       "details": "Nouveau graphique sur l'accueil illustrant le nombre d'observations et d'espèces par jour au cours du dernier mois, pour donner à voir les variations saisonnières. Apparence sans effet de carte (style « Luminosité »), pour rythmer la mise en page. Positionnement entre les sous-sections « Activités des oiseaux » (horloge 24 h) et « Visiteurs les plus fréquents ». Sous-titre <code>.rubric.mini</code> (même taille que celui de Luminosité), considéré comme une sous-section d'Activités des oiseaux."
     },
@@ -56,6 +52,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Liens vers les fiches eBird sur les photos d'oiseaux",
+      "details": "Les photos sont désormais cliquables et pointent vers la même fiche eBird que le nom de l'espèce, via le helper <code>ebirdUrl(taxon_scientific)</code> : photo de « Observation du jour » et vignettes de « Visiteurs les plus fréquents ». Lien posé uniquement quand un code eBird existe pour le binôme latin.",
+      "finished_at": "2026-05-28"
+    },
     {
       "title": "« Dernier orage » : labels temporels alignés sur la perspective du lecteur",
       "details": "Le titre principal de l'accueil dit déjà « Hier, samedi 24 mai » pour l'édition du 24 — donc le site adopte la perspective du lecteur (qui lit le lendemain matin). <code>stormAgeLabel</code> décalé de +1 : <code>days_ago=0</code> (orage le jour de l'édition) devient « hier » au lieu de « aujourd'hui », <code>days_ago=1</code> devient « avant-hier », etc. Cohérence rétablie entre le titre de la page et les cartes Météo.",
