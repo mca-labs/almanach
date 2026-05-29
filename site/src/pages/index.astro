@@ -306,12 +306,20 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
                 )}
               </div>
               {birdPhoto.media_url && (
-                <>
-                  <button class="listen" id="listenBtn" type="button" aria-expanded="false" data-audio-src={birdPhoto.media_url}>
-                    <svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>Écouter
+                <div class="player">
+                  <button class="listen" id="listenBtn" type="button" aria-label="Écouter l'enregistrement" data-audio-src={birdPhoto.media_url}>
+                    <svg class="i-play" width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                    <svg class="i-pause" width="11" height="11" viewBox="0 0 24 24" aria-hidden="true" hidden><path fill="currentColor" d="M7 5h3.4v14H7zM13.6 5H17v14h-3.4z"/></svg>
+                    <span class="listen-lbl">Écouter</span>
                   </button>
-                  <audio class="obsaudio" id="obsAudio" controls preload="none" crossorigin="anonymous" hidden></audio>
-                </>
+                  <div class="pwrap" id="pwrap" hidden>
+                    <div class="pbar" id="pbar" role="slider" aria-label="Position de lecture" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                      <div class="pbar-fill" id="pbarFill"></div>
+                    </div>
+                    <span class="ptime" id="ptime">0:00&#8201;/&#8201;0:00</span>
+                  </div>
+                  <audio id="obsAudio" preload="none" crossorigin="anonymous"></audio>
+                </div>
               )}
             </div>
           </div>
@@ -936,28 +944,67 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           })
           .catch(function () { /* échec décodage → on garde le gain de repli */ });
       }
-      var btns = document.querySelectorAll('.listen[data-audio-src]');
-      btns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var audio = btn.nextElementSibling;
-          if (!audio) return;
-          var url = btn.dataset.audioSrc || '';
-          if (audio.hidden) {
-            audio.hidden = false;
-            audio.src = url;
-            bwEnsureGraph(audio);
-            if (bwActx && bwActx.state === 'suspended') bwActx.resume();
-            bwNormalize(url);
-            audio.play().catch(function () { });
-            btn.setAttribute('aria-expanded', 'true');
-          } else if (audio.paused) {
-            if (bwActx && bwActx.state === 'suspended') bwActx.resume();
-            audio.play().catch(function () { });
-          } else {
-            audio.pause();
+      // Lecteur custom : le bouton « Écouter » fait play/pause, barre de
+      // progression cliquable + temps en charte, contrôles natifs supprimés.
+      var pBtn = document.getElementById('listenBtn');
+      var pAudio = document.getElementById('obsAudio');
+      if (pBtn && pAudio) {
+        var pwrap = document.getElementById('pwrap');
+        var pbar = document.getElementById('pbar');
+        var pfill = document.getElementById('pbarFill');
+        var ptime = document.getElementById('ptime');
+        var iPlay = pBtn.querySelector('.i-play');
+        var iPause = pBtn.querySelector('.i-pause');
+        var pLbl = pBtn.querySelector('.listen-lbl');
+        var pLoaded = false;
+
+        function pFmt(s) {
+          if (!isFinite(s) || s < 0) s = 0;
+          var m = Math.floor(s / 60), ss = Math.floor(s % 60);
+          return m + ':' + (ss < 10 ? '0' : '') + ss;
+        }
+        function pSetPlaying(on) {
+          pBtn.classList.toggle('playing', on);
+          iPlay.hidden = on; iPause.hidden = !on;
+          pLbl.textContent = on ? 'Pause' : 'Écouter';
+        }
+        function pRefresh() {
+          var d = pAudio.duration || 0, t = pAudio.currentTime || 0;
+          var pct = d ? (t / d) * 100 : 0;
+          pfill.style.width = pct.toFixed(1) + '%';
+          pbar.style.setProperty('--pos', pct.toFixed(1) + '%');
+          pbar.setAttribute('aria-valuenow', Math.round(pct));
+          ptime.innerHTML = pFmt(t) + ' / ' + pFmt(d);
+        }
+        function pSeek(clientX) {
+          var r = pbar.getBoundingClientRect(), frac = (clientX - r.left) / r.width;
+          frac = Math.max(0, Math.min(1, frac));
+          if (pAudio.duration) pAudio.currentTime = frac * pAudio.duration;
+        }
+
+        pBtn.addEventListener('click', function () {
+          if (!pLoaded) {
+            pLoaded = true;
+            pAudio.src = pBtn.dataset.audioSrc || '';
+            pwrap.hidden = false;
+            bwEnsureGraph(pAudio);
+            bwNormalize(pBtn.dataset.audioSrc || '');
           }
+          if (bwActx && bwActx.state === 'suspended') bwActx.resume();
+          if (pAudio.paused) pAudio.play().catch(function () { }); else pAudio.pause();
         });
-      });
+        pAudio.addEventListener('play', function () { pSetPlaying(true); });
+        pAudio.addEventListener('pause', function () { pSetPlaying(false); });
+        pAudio.addEventListener('ended', function () { pSetPlaying(false); pAudio.currentTime = 0; pRefresh(); });
+        pAudio.addEventListener('loadedmetadata', pRefresh);
+        pAudio.addEventListener('timeupdate', pRefresh);
+        pbar.addEventListener('click', function (e) { pSeek(e.clientX); });
+        pbar.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowRight' && pAudio.duration) { pAudio.currentTime = Math.min(pAudio.duration, pAudio.currentTime + 2); e.preventDefault(); }
+          else if (e.key === 'ArrowLeft' && pAudio.duration) { pAudio.currentTime = Math.max(0, pAudio.currentTime - 2); e.preventDefault(); }
+          else if (e.key === ' ' || e.key === 'Enter') { pBtn.click(); e.preventDefault(); }
+        });
+      }
     })();
   </script>
 </Base>

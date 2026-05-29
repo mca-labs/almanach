@@ -97,12 +97,24 @@
   .pill{background:rgba(159,183,185,.34);color:var(--ink);font-family:var(--sans);font-size:12.5px;
     letter-spacing:.02em;padding:3px 11px;border-radius:20px}
   .obs .note{font-family:var(--sans);font-size:13px;color:var(--ink-3);margin-top:11px}
-  .listen{display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding:6px 13px;font-family:var(--sans);
+  /* lecteur audio custom (Observation du jour) — en charte, pas de chrome natif */
+  .player{display:flex;align-items:center;gap:14px;margin-top:14px;flex-wrap:wrap}
+  .listen{display:inline-flex;align-items:center;gap:6px;padding:6px 13px;font-family:var(--sans);
     font-size:12.5px;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:999px;
-    cursor:pointer;transition:background .12s,color .12s}
+    cursor:pointer;transition:background .12s,color .12s;flex:none}
   .listen svg{flex:none}
-  .listen:hover,.listen[aria-expanded="true"]{background:var(--accent);color:var(--paper)}
-  .obsaudio{display:block;width:100%;max-width:340px;margin-top:12px;height:34px}
+  .listen:hover,.listen.playing{background:var(--accent);color:var(--paper)}
+  .pwrap{display:flex;align-items:center;gap:10px;flex:1;min-width:170px}
+  .pbar{flex:1;max-width:280px;height:4px;background:var(--rule-soft);border-radius:999px;
+    cursor:pointer;position:relative}
+  .pbar-fill{height:100%;width:0;background:var(--accent);border-radius:999px;transition:width .08s linear}
+  .pbar::after{content:'';position:absolute;top:50%;left:var(--pos,0);width:9px;height:9px;border-radius:999px;
+    background:var(--accent);transform:translate(-50%,-50%);opacity:0;transition:opacity .12s}
+  .pbar:hover::after,.pbar:focus-visible::after{opacity:1}
+  .pbar:focus-visible{outline:none}
+  .pbar:focus-visible::before{content:'';position:absolute;inset:-5px;border:1.5px solid var(--accent);
+    border-radius:999px;opacity:.5}
+  .ptime{font-family:var(--sans);font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
 
   /* éphémérides */
   .sky{display:flex;flex-wrap:wrap;gap:14px 26px;font-size:16px;color:var(--ink-2)}
