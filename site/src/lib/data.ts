@@ -306,6 +306,14 @@ export async function quoteById(id: string): Promise<Quote | null> {
   return data?.citations.find((c) => c.id === id) ?? null;
 }
 
+/** Une citation au hasard (choisie au build). Sert à l'état « aucune édition ». */
+export async function randomQuote(): Promise<Quote | null> {
+  const data = await readJsonOrNull<{ citations: Quote[] }>(join(DATA_DIR, 'quotes.json'));
+  const list = data?.citations ?? [];
+  if (!list.length) return null;
+  return list[Math.floor(Math.random() * list.length)] ?? null;
+}
+
 /**
  * Espèces « inattendues » du jour. Pour l'instant, on identifie celles
  * jamais détectées dans les fichiers data/birds/*.json antérieurs ("première

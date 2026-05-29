@@ -9,6 +9,7 @@ import {
   latestPublished,
   publishedDates,
   quoteById,
+  randomQuote,
   rareSpeciesForDate,
   skyForEntry,
   topBirdsWithPhotos,
@@ -36,6 +37,9 @@ const quoteId = entry?.fragment_quote_id ?? null;
 const quote = quoteId ? await quoteById(quoteId) : null;
 
 const birdSeries = date ? await birdsSeries(date, 30) : [];
+
+// État « aucune édition » : une citation au hasard pour clore l'écran d'attente.
+const emptyQuote = entry === null ? await randomQuote() : null;
 
 // --- Helpers ---
 const TZ = 'America/Toronto';
@@ -230,13 +234,28 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
 
 <Base title={pageTitle} active="une">
   {entry === null ? (
-    <header class="mast">
+    <header class="mast empty">
       <div class="kicker">
         <span>Pont couvert de Saint-Placide-de-Charlevoix</span>
         <span><a href="https://maps.app.goo.gl/im6WzdgPWXcfj9Nx5" target="_blank" rel="noopener">47,4° N · 70,6° O · 377 m</a></span>
       </div>
-      <div class="titleline"><h1 class="title"><em>Aucune</em> édition publiée</h1></div>
-      <p class="condition">L'almanach attend sa première édition.</p>
+      <h1 class="empty-title">Aucune édition disponible présentement, travaux en cours</h1>
+      <p class="empty-body">
+        L’Almanach du Val-des-Loups est le journal naturaliste quotidien de la forêt près du
+        pont couvert de Saint-Placide-de-Charlevoix.
+      </p>
+      <p class="empty-body">
+        Chaque nuit, l’IA rédige une nouvelle édition pour raconter les événements de la veille à
+        partir de capteurs automatisés installés autour de la propriété. Les éphémérides
+        astronomiques, elles, regardent vers l’avant — elles parlent de la nuit à venir pour
+        permettre de planifier les observations.
+      </p>
+      {emptyQuote && (
+        <blockquote class="frag empty-quote">
+          « {emptyQuote.text} »
+          <cite>{emptyQuote.author} — {emptyQuote.work}{emptyQuote.year ? `, ${emptyQuote.year}` : ''}</cite>
+        </blockquote>
+      )}
     </header>
   ) : (
     <>

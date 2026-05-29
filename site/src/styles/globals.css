@@ -55,6 +55,13 @@
   .ed{font-size:13px;color:var(--accent);font-family:var(--sans);letter-spacing:.04em;white-space:nowrap}
   .condition{font-family:var(--display);font-style:italic;font-weight:300;
     font-size:clamp(20px,2.6vw,25px);line-height:1.32;color:var(--ink-2);margin:22px 0 0;max-width:30em}
+  /* état « aucune édition » */
+  header.mast.empty{padding-bottom:50px}
+  .empty-title{font-family:var(--display);font-weight:400;font-size:clamp(26px,4.2vw,34px);
+    line-height:1.12;letter-spacing:-.01em;color:var(--ink);margin:18px 0 0;max-width:18em}
+  .empty-body{font-family:var(--serif);font-size:17px;line-height:1.7;color:var(--ink-2);
+    margin:18px 0 0;max-width:34em}
+  .empty-quote{padding-top:40px}
 
   /* section + almanac-style rubric (no roman numerals) */
   section.blk{padding:34px 0}
