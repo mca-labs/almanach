@@ -4,6 +4,13 @@
     {
       "title": "Diversifier la base de fragments — vague 2",
       "details": "Suite de l'enrichissement, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40 (actuellement 22)."
+    },
+    {
+      "title": "Version anglaise du site"
+    },
+    {
+      "title": "Newsletter / RSS",
+      "details": "Éventuel flux pour qui veut être notifié des nouvelles éditions."
     }
   ],
   "later": [
@@ -24,15 +31,8 @@
       "details": "Exige une baseline régionale via API eBird."
     },
     {
-      "title": "Version anglaise du site"
-    },
-    {
       "title": "Carte interactive sur la page À propos",
       "details": "Explorer <a href=\"https://leafletjs.com/\" target=\"_blank\" rel=\"noopener\">Leaflet.js</a> pour situer le lieu, avec personnalisation via CSS."
-    },
-    {
-      "title": "Newsletter / RSS",
-      "details": "Éventuel flux pour qui veut être notifié des nouvelles éditions."
     },
     {
       "title": "Pages saisonnières",
