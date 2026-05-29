@@ -358,5 +358,29 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-05-28T08:08:34.319Z"
+  },
+  "Dryobates villosus": {
+    "taxon_inat_id": 1651487,
+    "name_fr": "pic chevelu",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31478565/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31478565/square.jpg",
+    "attribution": "(c) Denis Doucet, some rights reserved (CC BY-NC), uploaded by Denis Doucet",
+    "attribution_name": "Denis Doucet",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-05-29T08:05:07.969Z"
+  },
+  "Certhia americana": {
+    "taxon_inat_id": 7458,
+    "name_fr": "grimpereau brun",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/314564216/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/314564216/square.jpg",
+    "attribution": "(c) Tracy Drake, some rights reserved (CC BY-NC), uploaded by Tracy Drake",
+    "attribution_name": "Tracy Drake",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-05-29T08:05:10.175Z"
   }
 }

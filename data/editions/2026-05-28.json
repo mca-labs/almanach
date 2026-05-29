@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-05-28",
+  "generated_at": "2026-05-29T08:05:32.349Z",
+  "title": "La paruline tigrée tient le Val",
+  "summary": "Journée froide et couverte, bien en dessous des normales — la migration des parulines bat son plein malgré le froid.",
+  "body_md": "Le thermomètre n'a pas dépassé 8 degrés de la journée, soit près de douze degrés sous la normale de fin mai. La pluie est venue par intermittence, légère, sans conviction — à peine trois millimètres au total — et le vent du nord-est a soufflé si doucement qu'on l'entendait à peine dans les épinettes. Ce n'est pas le temps qu'on attend pour la dernière semaine de mai. Les oiseaux, eux, ne semblaient pas s'en formaliser.\n\nAvec plus de mille détections en une journée, Setophaga tigrina a littéralement envahi le Val. La paruline tigrée n'est pas une halteuse discrète : son chant haut et grêle, une série de notes fines presque sifflantes, revenait de toutes les strates du couvert, du sous-bois jusqu'à la cime des conifères. Elle ne restera pas — son nid l'attend quelque part dans la forêt boréale, plus au nord — mais ce jeudi elle était partout, comme si la forêt froide lui appartenait.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque entièrement couverte — la couverture nuageuse frôle les cent pour cent — et la lune gibbeuse, éclairée à près de 95 %, ne se lèvera qu'après 23 h 23 pour se coucher tôt en matinée ; Vénus, Jupiter et Mercure, pourtant notables ce soir, resteront invisibles derrière l'épaisse couche de nuages. Ce ne sera pas une nuit pour l'observation du ciel, mais peut-être pour écouter, fenêtre entrouverte, les derniers chants de parulines avant l'aube.",
+  "theme_tags": [
+    "migration",
+    "parulines",
+    "froid",
+    "printemps",
+    "oiseaux"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 8,
+      "temp_min_c": 4.2,
+      "rain_mm": 2.97,
+      "wind_direction": "NE",
+      "wind_qualifier": "calme",
+      "pressure_mb": 968.2,
+      "pressure_trend": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 1049,
+      "observed_at": "2026-05-28T11:00:29-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260528-150029.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 95,
+      "moon_rise_utc": "2026-05-29T23:23:50Z",
+      "moon_set_utc": "2026-05-29T07:21:29Z",
+      "cloud_cover_night_pct": 99.9,
+      "notable_planets": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du Monde."
+}
