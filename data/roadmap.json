@@ -4,10 +4,6 @@
     {
       "title": "Diversifier la base de fragments — vague 2",
       "details": "Suite de l'enrichissement, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40 (actuellement 22)."
-    },
-    {
-      "title": "Passe Impeccable",
-      "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
     }
   ],
   "later": [
@@ -44,6 +40,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Passe Impeccable",
+      "details": "Suite design « Impeccable » : <code>/teach-impeccable</code> (contexte design persistant dans <code>.impeccable.md</code> — voix « calme · contemplatif · lettré », référence Aldo Leopold), <code>/critique</code> (score Nielsen 34/40 → 38/40 après corrections), puis les correctifs : lecteur audio en charte (remplace le lecteur natif), accessibilité tactile/clavier des interactions au survol (Pointer Events + <code>:focus-within</code>), état « aucune édition » repensé, et passe <code>/polish</code> (respect de <code>prefers-reduced-motion</code>, zone de seek audio agrandie).",
+      "finished_at": "2026-05-28"
+    },
     {
       "title": "Audit de sécurité",
       "details": "Revue de sécurité de l'ensemble du code (site Astro, pipeline de données, scripts, workflow CI, secrets, dépendances). Surface réduite par construction (site statique, sans serveur/auth/BD/input utilisateur). Correctifs appliqués : échappement HTML du texte LLM rendu via <code>set:html</code> (XSS stocké de défense en profondeur) ; inputs du workflow passés par <code>env:</code> (plus d'interpolation shell — script injection) ; validation du format <code>--date</code> (traversée de chemin) ; montée d'Astro 5 → 6.4.2 (XSS <code>define:vars</code>). Points informatifs documentés et acceptés (token Tempest en URL imposé par l'API et côté serveur seulement ; vuln dev-only de <code>@astrojs/check</code> non livrée ; SHA-pin des actions = durcissement optionnel).",
