@@ -8,10 +8,6 @@
     {
       "title": "Passe Impeccable",
       "details": "Invoquer <code>/teach-impeccable</code> pour générer <code>.impeccable.md</code>, puis <code>/critique</code> et <code>/audit</code> sur le code traité comme contenu."
-    },
-    {
-      "title": "Audit de sécurité",
-      "details": "Faire passer un audit de sécurité (skill <code>/security-review</code>) sur la base de code, puis appliquer/valider les recommandations."
     }
   ],
   "later": [
@@ -48,6 +44,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Audit de sécurité",
+      "details": "Revue de sécurité de l'ensemble du code (site Astro, pipeline de données, scripts, workflow CI, secrets, dépendances). Surface réduite par construction (site statique, sans serveur/auth/BD/input utilisateur). Correctifs appliqués : échappement HTML du texte LLM rendu via <code>set:html</code> (XSS stocké de défense en profondeur) ; inputs du workflow passés par <code>env:</code> (plus d'interpolation shell — script injection) ; validation du format <code>--date</code> (traversée de chemin) ; montée d'Astro 5 → 6.4.2 (XSS <code>define:vars</code>). Points informatifs documentés et acceptés (token Tempest en URL imposé par l'API et côté serveur seulement ; vuln dev-only de <code>@astrojs/check</code> non livrée ; SHA-pin des actions = durcissement optionnel).",
+      "finished_at": "2026-05-28"
+    },
     {
       "title": "Son de l'« Observation du jour » trop faible",
       "details": "Les soundscapes BirdWeather du PUC sont captés très bas (pics −42 à −64 dB selon l'extrait) ; le lecteur natif jouait au niveau brut, bien plus faible que sur BirdWeather. Correctif : le bouton « Écouter » route l'audio via Web Audio (<code>GainNode</code>) et normalise le pic de chaque extrait à ~−3 dB, comme le fait BirdWeather. Dégradation gracieuse si Web Audio indisponible.",
