@@ -305,7 +305,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
                   <button class="listen" id="listenBtn" type="button" aria-expanded="false" data-audio-src={birdPhoto.media_url}>
                     <svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>Écouter
                   </button>
-                  <audio class="obsaudio" id="obsAudio" controls preload="none" hidden></audio>
+                  <audio class="obsaudio" id="obsAudio" controls preload="none" crossorigin="anonymous" hidden></audio>
                 </>
               )}
             </div>
@@ -892,18 +892,61 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
         });
       }
 
-      // Bouton « Écouter »
+      // Bouton « Écouter » — les soundscapes BirdWeather du PUC sont captés très
+      // bas (pics typiques −40 à −64 dB). On amplifie via Web Audio en normalisant
+      // le pic de chaque extrait (~−3 dB), comme le fait le lecteur de BirdWeather.
+      // <audio>.volume plafonne à 1.0 et ne permettrait pas ce gain.
+      var bwActx = null, bwGain = null, bwWired = false;
+      var bwGainCache = {};
+      function bwEnsureGraph(audio) {
+        if (bwWired) return;
+        var AC = window.AudioContext || window.webkitAudioContext;
+        if (!AC) return; // pas de Web Audio → lecture native (faible mais fonctionnelle)
+        try {
+          bwActx = new AC();
+          var src = bwActx.createMediaElementSource(audio);
+          bwGain = bwActx.createGain();
+          bwGain.gain.value = 8; // gain de repli avant calcul de normalisation
+          src.connect(bwGain);
+          bwGain.connect(bwActx.destination);
+          bwWired = true;
+        } catch (e) { bwActx = null; bwGain = null; }
+      }
+      function bwNormalize(url) {
+        if (!bwActx || !bwGain || !url) return;
+        if (bwGainCache[url]) { bwGain.gain.value = bwGainCache[url]; return; }
+        fetch(url).then(function (r) { return r.arrayBuffer(); })
+          .then(function (buf) { return bwActx.decodeAudioData(buf); })
+          .then(function (audioBuf) {
+            var peak = 0;
+            for (var ch = 0; ch < audioBuf.numberOfChannels; ch++) {
+              var data = audioBuf.getChannelData(ch);
+              for (var i = 0; i < data.length; i++) { var a = data[i] < 0 ? -data[i] : data[i]; if (a > peak) peak = a; }
+            }
+            if (peak > 0) {
+              var g = Math.min(Math.max(0.7 / peak, 1), 4000); // normalise le pic à ~−3 dB
+              bwGainCache[url] = g;
+              bwGain.gain.value = g;
+            }
+          })
+          .catch(function () { /* échec décodage → on garde le gain de repli */ });
+      }
       var btns = document.querySelectorAll('.listen[data-audio-src]');
       btns.forEach(function (btn) {
         btn.addEventListener('click', function () {
           var audio = btn.nextElementSibling;
           if (!audio) return;
+          var url = btn.dataset.audioSrc || '';
           if (audio.hidden) {
             audio.hidden = false;
-            audio.src = btn.dataset.audioSrc || '';
+            audio.src = url;
+            bwEnsureGraph(audio);
+            if (bwActx && bwActx.state === 'suspended') bwActx.resume();
+            bwNormalize(url);
             audio.play().catch(function () { });
             btn.setAttribute('aria-expanded', 'true');
           } else if (audio.paused) {
+            if (bwActx && bwActx.state === 'suspended') bwActx.resume();
             audio.play().catch(function () { });
           } else {
             audio.pause();

@@ -49,6 +49,11 @@
   ],
   "done": [
     {
+      "title": "Son de l'« Observation du jour » trop faible",
+      "details": "Les soundscapes BirdWeather du PUC sont captés très bas (pics −42 à −64 dB selon l'extrait) ; le lecteur natif jouait au niveau brut, bien plus faible que sur BirdWeather. Correctif : le bouton « Écouter » route l'audio via Web Audio (<code>GainNode</code>) et normalise le pic de chaque extrait à ~−3 dB, comme le fait BirdWeather. Dégradation gracieuse si Web Audio indisponible.",
+      "finished_at": "2026-05-28"
+    },
+    {
       "title": "Graphique d'observations &amp; espèces sur 30 jours",
       "details": "Nouvelle sous-section d'« Activités des oiseaux », entre l'horloge 24 h et « Visiteurs les plus fréquents ». Piste retenue : barres (observations / jour) + ligne (espèces / jour) en double échelle, style sans carte comme Luminosité, tooltip au survol. Les 30 jours réels ont été comblés depuis BirdWeather (script <code>scripts/backfill-birds.ts</code>, idempotent) ; le cron quotidien fait avancer la fenêtre. Sur mobile, ~10 jours s'affichent à la fois avec défilement horizontal jusqu'à j-30 (départ sur le jour le plus récent). Bonus : l'historique enrichi affine aussi « Premières de la saison ».",
       "finished_at": "2026-05-28"
