@@ -78,7 +78,7 @@
   .rubric.mini h2{font-size:16px}
 
   /* billet */
-  .billet p{font-size:19px;line-height:1.74;margin:0 0 16px}
+  .billet p{font-size:19px;line-height:1.70;margin:0 0 16px}
   .billet p:last-child{margin-bottom:0}
   .billet .drop::first-letter{font-family:var(--display);font-size:3.1em;line-height:.78;float:left;
     padding:6px 10px 0 0;color:var(--accent);font-weight:400}
@@ -292,7 +292,7 @@
   .entry .when .line{flex:1;height:1px;background:var(--rule-soft);min-width:30px}
   .entry .intro{font-family:var(--display);font-style:italic;font-weight:300;
     font-size:21px;line-height:1.4;color:var(--ink-2);margin:0 0 14px;max-width:32em}
-  .entry .body p{font-size:18px;line-height:1.72;margin:0 0 14px}
+  .entry .body p{font-size:18px;line-height:1.70;margin:0 0 14px}
   .entry .body p:last-child{margin:0}
   .entry .daystats{margin-top:16px;font-family:var(--sans);font-size:12.5px;color:var(--ink-3)}
   .entry .daystats b{font-weight:500;color:var(--ink-2);font-variant-numeric:tabular-nums}
