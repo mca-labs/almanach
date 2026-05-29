@@ -153,7 +153,7 @@
     {
       "title": "Mise en ligne initiale",
       "details": "Site déployé sous <a href=\"https://valdesloups.com\">valdesloups.com</a> avec HTTPS Let's Encrypt, hosting Netlify, cron quotidien automatisé via GitHub Actions, DNS chez Namecheap. Bascule de l'architecture initiale (Postgres / Railway) vers un repo Git comme état persistant.",
-      "finished_at": "2026-05-23"
+      "finished_at": "2026-05-25"
     }
   ]
 }
