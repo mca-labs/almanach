@@ -54,12 +54,16 @@ jobs:
           BIRDWEATHER_STATION_ID: ${{ secrets.BIRDWEATHER_STATION_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TZ: America/Toronto
+          # Inputs passés par env (jamais interpolés dans le shell) pour éviter
+          # toute injection de script. cli.ts valide ensuite le format de la date.
+          EDITION_DATE: ${{ inputs.date }}
+          EDITION_FORCE: ${{ inputs.force }}
         run: |
           ARGS=""
-          if [ -n "${{ inputs.date }}" ]; then
-            ARGS="$ARGS --date ${{ inputs.date }}"
+          if [ -n "$EDITION_DATE" ]; then
+            ARGS="$ARGS --date $EDITION_DATE"
           fi
-          if [ "${{ inputs.force }}" = "true" ]; then
+          if [ "$EDITION_FORCE" = "true" ]; then
             ARGS="$ARGS --force"
           fi
           npm run daily -- $ARGS

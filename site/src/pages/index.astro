@@ -55,6 +55,11 @@ function paragraphs(md: string | null): string[] {
   if (!md) return [];
   return md.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 }
+// Échappe le HTML : le texte vient du LLM (et de données tierces) ; on n'injecte
+// comme HTML réel que les <em> qu'on ajoute nous-mêmes, jamais le texte source.
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
 function renderItalics(text: string, taxons: string[] = []): { html: string }[] {
   // 1. Auto-wrap les binômes latins (liste blanche depuis les taxons réels du jour)
   //    en *...* s'ils ne sont pas déjà entourés. Évite les faux positifs sur des
@@ -72,8 +77,8 @@ function renderItalics(text: string, taxons: string[] = []): { html: string }[] 
     .filter(Boolean)
     .map((p) =>
       p.startsWith('*') && p.endsWith('*')
-        ? { html: `<em>${p.slice(1, -1)}</em>` }
-        : { html: p },
+        ? { html: `<em>${escapeHtml(p.slice(1, -1))}</em>` }
+        : { html: escapeHtml(p) },
     );
 }
 function fmtTimeIso(iso: string | null | undefined): string {

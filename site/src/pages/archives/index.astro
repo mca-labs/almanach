@@ -32,6 +32,11 @@ function paragraphs(md: string | null): string[] {
   if (!md) return [];
   return md.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 }
+// Échappe le HTML : le texte vient du LLM ; on n'injecte comme HTML réel que les
+// <em> qu'on ajoute nous-mêmes, jamais le texte source.
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
 function renderItalics(text: string): { html: string }[] {
   // Découpe le texte sur les motifs *...* pour rendre les noms latins en italique.
   const parts = text.split(/(\*[^*\n]+\*)/g);
@@ -39,8 +44,8 @@ function renderItalics(text: string): { html: string }[] {
     .filter(Boolean)
     .map((p) =>
       p.startsWith('*') && p.endsWith('*')
-        ? { html: `<em>${p.slice(1, -1)}</em>` }
-        : { html: p },
+        ? { html: `<em>${escapeHtml(p.slice(1, -1))}</em>` }
+        : { html: escapeHtml(p) },
     );
 }
 function fmtTemp(n: number | null | undefined): string {
