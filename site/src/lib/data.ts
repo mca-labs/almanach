@@ -2,12 +2,14 @@
 // Aucune BD : tout est statique, versionné dans le repo, lu par Astro.
 
 import { readdir, readFile } from 'node:fs/promises';
-import { dirname, join, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join, resolve } from 'node:path';
 
-// Le site est dans /site, les data dans /data (un cran plus haut).
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = resolve(__dirname, '..', '..', '..', 'data');
+// Les données vivent dans data/ à la racine du repo. On résout depuis le cwd du
+// build : `astro build/dev --root site` est toujours lancé depuis la racine
+// (npm run site:build), donc process.cwd() = racine du repo. Robuste au bundling
+// d'Astro 6, contrairement à import.meta.url qui se déplace au build et faisait
+// pointer le chemin relatif à côté (→ « Aucune édition publiée »).
+const DATA_DIR = resolve(process.cwd(), 'data');
 
 // --- Types miroirs des shapes produites par src/daily.ts ---
 
