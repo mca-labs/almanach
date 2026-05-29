@@ -41,6 +41,13 @@
 
   .rv{opacity:0;transform:translateY(10px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
   @keyframes rise{to{opacity:1;transform:none}}
+  /* « beau, pas énervant » : on respecte prefers-reduced-motion — révélation et
+     transitions neutralisées, le contenu s'affiche d'emblée (sinon .rv resterait
+     à opacity:0). */
+  @media (prefers-reduced-motion: reduce){
+    .rv{animation:none;opacity:1;transform:none}
+    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  }
 
   /* masthead */
   header.mast{padding:44px 0 30px}
@@ -112,15 +119,18 @@
   .listen svg{flex:none}
   .listen:hover,.listen.playing{background:var(--accent);color:var(--paper)}
   .pwrap{display:flex;align-items:center;gap:10px;flex:1;min-width:170px}
-  .pbar{flex:1;max-width:280px;height:4px;background:var(--rule-soft);border-radius:999px;
+  /* piste fine (4 px visuels) mais zone cliquable/tactile généreuse (22 px) via
+     padding + background-clip — facile à attraper sans alourdir le trait. */
+  .pbar{flex:1;max-width:280px;height:4px;box-sizing:content-box;padding:9px 0;
+    background:var(--rule-soft);background-clip:content-box;border-radius:999px;
     cursor:pointer;position:relative}
-  .pbar-fill{height:100%;width:0;background:var(--accent);border-radius:999px;transition:width .08s linear}
+  .pbar-fill{height:4px;width:0;background:var(--accent);border-radius:999px;transition:width .08s linear}
   .pbar::after{content:'';position:absolute;top:50%;left:var(--pos,0);width:9px;height:9px;border-radius:999px;
     background:var(--accent);transform:translate(-50%,-50%);opacity:0;transition:opacity .12s}
   .pbar:hover::after,.pbar:focus-visible::after{opacity:1}
   .pbar:focus-visible{outline:none}
-  .pbar:focus-visible::before{content:'';position:absolute;inset:-5px;border:1.5px solid var(--accent);
-    border-radius:999px;opacity:.5}
+  .pbar:focus-visible::before{content:'';position:absolute;left:-4px;right:-4px;top:50%;transform:translateY(-50%);
+    height:14px;border:1.5px solid var(--accent);border-radius:999px;opacity:.55}
   .ptime{font-family:var(--sans);font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
 
   /* éphémérides */
