@@ -417,7 +417,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
                     return (
                     <>
                       {i > 0 ? ' · ' : ''}
-                      <span class="rarebird" title={s.attribution ?? undefined}>
+                      <span class="rarebird" title={s.attribution ?? undefined} tabindex={rurl ? undefined : 0}>
                         {rurl ? <a href={rurl} target="_blank" rel="noopener">{rname}</a> : rname}
                         <span class="bzoom">
                           {s.photo_url ? (
@@ -716,7 +716,8 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
       if (tsvg) {
         tsvg.innerHTML = g;
         var ttip = document.getElementById('temptip'), tgl = document.getElementById('tgl'), tgd = document.getElementById('tgd'), tfig = tsvg.parentNode;
-        tsvg.addEventListener('mousemove', function (e) {
+        // Pointer Events : couvre souris + tactile (tap/glisse) + stylet d'un seul jeu.
+        function tShow(e) {
           var r = tsvg.getBoundingClientRect(), frac = (e.clientX - r.left) / r.width;
           if (frac < 0) frac = 0; if (frac > 1) frac = 1;
           var i = Math.round(frac * 23), t = year[i];
@@ -728,8 +729,12 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           ttip.style.left = ((gx / W) * r.width + (r.left - fr.left)) + 'px';
           ttip.style.top = ((gy / H) * r.height + (r.top - fr.top)) + 'px';
           ttip.classList.add('on');
-        });
-        tsvg.addEventListener('mouseleave', function () { ttip.classList.remove('on'); tgl.setAttribute('opacity', '0'); tgd.setAttribute('opacity', '0'); });
+        }
+        function tHide() { ttip.classList.remove('on'); tgl.setAttribute('opacity', '0'); tgd.setAttribute('opacity', '0'); }
+        tsvg.addEventListener('pointerenter', tShow);
+        tsvg.addEventListener('pointermove', tShow);
+        tsvg.addEventListener('pointerleave', tHide);
+        tsvg.addEventListener('pointercancel', tHide);
       }
 
       // ---- Horloge d'activité 24 h ----
@@ -775,9 +780,10 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             if (bars[h]) bars[h].setAttribute('stroke', '#3F6764');
           }
           function hide() { tip.classList.remove('on'); if (bars[h]) bars[h].setAttribute('stroke', '#2B3736'); }
-          hit.addEventListener('mouseenter', show);
-          hit.addEventListener('mousemove', show);
-          hit.addEventListener('mouseleave', hide);
+          hit.addEventListener('pointerenter', show);
+          hit.addEventListener('pointermove', show);
+          hit.addEventListener('pointerleave', hide);
+          hit.addEventListener('pointercancel', hide);
         });
       }
 
@@ -796,9 +802,10 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             lbtip.classList.add('on');
           }
           function hide() { lbtip.classList.remove('on'); }
-          rect.addEventListener('mouseenter', show);
-          rect.addEventListener('mousemove', show);
-          rect.addEventListener('mouseleave', hide);
+          rect.addEventListener('pointerenter', show);
+          rect.addEventListener('pointermove', show);
+          rect.addEventListener('pointerleave', hide);
+          rect.addEventListener('pointercancel', hide);
         });
       }
 

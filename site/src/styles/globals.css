@@ -258,14 +258,15 @@
   .bname i{display:block;font-style:italic;color:var(--ink-3);font-size:11.5px;margin-top:1px}
   /* agrandissement au survol : réservé aux espèces inattendues */
   .rarebird{position:relative;color:var(--ink);font-weight:500;cursor:help;border-bottom:1px dotted var(--rule-soft)}
-  .rarebird:hover{border-bottom-color:var(--accent)}
+  .rarebird:hover,.rarebird:focus-within{border-bottom-color:var(--accent)}
+  .rarebird:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
   .bzoom{position:absolute;left:50%;bottom:calc(100% + 12px);transform:translateX(-50%) scale(.96);
     width:240px;max-width:500px;max-height:500px;aspect-ratio:1;border-radius:10px;background:var(--surface);
     border:1px solid var(--rule-soft);box-shadow:0 16px 40px rgba(43,55,54,.22);display:flex;
     align-items:center;justify-content:center;color:var(--ink-3);opacity:0;pointer-events:none;
     transition:opacity .15s,transform .15s;z-index:30}
   .bzoom svg{width:70px;height:70px;opacity:.4}
-  .rarebird:hover .bzoom{opacity:1;transform:translateX(-50%) scale(1)}
+  .rarebird:hover .bzoom,.rarebird:focus-within .bzoom{opacity:1;transform:translateX(-50%) scale(1)}
   .rare{margin-top:18px;padding-top:14px;border-top:1px dashed var(--rule-soft);font-size:15px;color:var(--ink-2)}
   .rare b{font-weight:500;color:var(--ink)}
 
