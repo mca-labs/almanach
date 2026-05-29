@@ -3,4 +3,5 @@
   publish = "site/dist"
 
 [build.environment]
-  NODE_VERSION = "20"
+  # Node 24 : requis par Astro 6 (>=22.12) et aligné sur le cron GitHub Actions.
+  NODE_VERSION = "24"
