@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-29",
+  "total_detections": 3809,
+  "unique_species": 40,
+  "top_species": [
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 1784,
+      "max_confidence": 0.9997101426124573,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-104717.flac"
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 511,
+      "max_confidence": 0.9999666213989258,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-192402.flac"
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 366,
+      "max_confidence": 0.9275158047676086,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-204757.flac"
+    },
+    {
+      "taxon_common": "Tennessee Warbler",
+      "taxon_scientific": "Leiothlypis peregrina",
+      "count": 213,
+      "max_confidence": 0.9934064149856567,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-132219.flac"
+    },
+    {
+      "taxon_common": "Black-throated Green Warbler",
+      "taxon_scientific": "Setophaga virens",
+      "count": 165,
+      "max_confidence": 0.9838412404060364,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-100230.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 116,
+      "max_confidence": 0.9258812069892883,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-164520.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 88,
+      "max_confidence": 0.8937193751335144,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-073412.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 80,
+      "max_confidence": 0.9632581472396851,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-094137.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 57,
+      "max_confidence": 0.9414385557174683,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-225131.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 57,
+      "max_confidence": 0.9567838311195374,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-110853.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Tennessee Warbler",
+    "taxon_scientific": "Leiothlypis peregrina",
+    "confidence": 0.9934064149856567,
+    "observed_at": "2026-05-29T09:22:23-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-132219.flac"
+  },
+  "hourly_detections": [
+    2,
+    1,
+    0,
+    3,
+    95,
+    408,
+    520,
+    270,
+    157,
+    440,
+    248,
+    251,
+    402,
+    182,
+    263,
+    151,
+    116,
+    155,
+    112,
+    31,
+    2,
+    0,
+    0,
+    0
+  ]
+}

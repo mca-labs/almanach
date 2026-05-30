@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-05-29",
+  "generated_at": "2026-05-30T06:53:13.920Z",
+  "title": "La paruline de passage",
+  "summary": "Journée froide et calme sous un ciel partiellement voilé — le Val des Loups bruisse de voix de parulines en transit.",
+  "body_md": "Le thermomètre n'a pas dépassé 9 degrés, et le vent est resté si faible que la fumée du matin montait droit. Un millimètre et demi de pluie était tombé avant l'aube, juste assez pour humecter les mousses du versant nord sans détremper les sentiers. Le baromètre remontait depuis la mi-journée, lentement — signe que les conditions qui ont retenu tant de migrateurs au-dessus du Val allaient bientôt changer.\n\nQuarante espèces ont été entendues aujourd'hui, un chiffre qui dit l'ampleur du passage. Parmi elles, la paruline obscure a tenu le devant — non par sa voix spectaculaire, mais par sa constance : présente dès neuf heures du matin, répétant sa courte phrase descendante d'un bout à l'autre du couvert. Leiothlypis peregrina, la pèlerine, porte bien son nom latin. Elle ne fait que traverser, indifférente au froid, à nous, à tout ce qui n'est pas le nord qu'elle se choisit.",
+  "sky_narrative": "La lune, quasi pleine à 98 %, se sera couchée avant l'aube — elle disparaîtra vers 3 h 47 heure locale — laissant une fenêtre d'obscurité véritable en fin de nuit si la couverture nuageuse, estimée à 43 %, se dégage par endroits. Vénus et Jupiter seront visibles en soirée ; Mercure, notable ce soir, s'ajoutera pour ceux qui observent tôt.",
+  "theme_tags": [
+    "migration",
+    "parulines",
+    "froid",
+    "passage",
+    "printemps"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 8.7,
+      "temp_min_c": 3.9,
+      "rain_mm": 1.815645,
+      "wind": "calme, NE",
+      "pressure_trend": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Tennessee Warbler",
+      "taxon_scientific": "Leiothlypis peregrina",
+      "observed_at": "2026-05-29T09:22:23-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260529-132219.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 98.5,
+      "moon_set_utc": "2026-05-30T07:47:56Z",
+      "planets_notable": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 43
+    }
+  },
+  "fragment_quote_id": "john-muir-my-6",
+  "fragment_translation_fr": "Quand nous essayons d'isoler quoi que ce soit, nous le trouvons relié à tout le reste de l'univers."
+}
