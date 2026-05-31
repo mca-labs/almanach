@@ -1,0 +1,48 @@
+{
+  "entry_date": "2026-05-30",
+  "generated_at": "2026-05-31T07:50:53.870Z",
+  "title": "Le passage des parulines",
+  "summary": "Journée fraîche et lumineuse sur le Val, vent calme du sud — les parulines traversent en nombre.",
+  "body_md": "La nuit a laissé 1,4 degré au thermomètre, et la matinée a mis du temps à monter. L'air venait du sud, à peine perceptible — moins d'un mètre par seconde en moyenne — et cette accalmie, conjuguée à un ciel dégagé qui a poussé l'ensoleillement jusqu'à 111 000 lux en début d'après-midi, a fait du Val une halte idéale pour les migrateurs. Dès la quatrième heure, avant que la lumière soit vraiment installée, les capteurs enregistraient déjà 237 détections. La pression baissait doucement ; la semaine avait été généreuse en pluie, et la forêt gardait encore cette humidité dense qui concentre les insectes dans les épinettes.\n\nC'est Setophaga virens, la paruline à gorge noire, qui a retenu l'attention aujourd'hui. Son chant — trois notes montantes suivies d'une chute, le dernier intervalle presque interrogatif — revenait des couronnes d'épinettes avec une régularité têtue. Elle ne s'attarde jamais longtemps : quelques heures dans les hauteurs, puis le ciel l'appelle vers le nord. Autour d'elle, Setophaga tigrina dominait les comptages avec plus de 1 200 détections, et Corthylio calendula tissait ses trilles aigus entre les branches basses. Quarante et une espèces au total. Une journée de passage, dense et sans bruit.",
+  "sky_narrative": "La lune sera à sa pleine quasi-complète cette nuit — 99,8 % illuminée — et se lèvera vers 1 h 30 du matin, heure locale ; avant ce lever, la couverture nuageuse prévue autour de 55 % laissera des fenêtres suffisantes pour apercevoir Vénus et Jupiter dans le ciel du soir, mais le ciel profond sera difficile. Après le lever de la lune, la lumière blanche inondant la forêt se prêtera bien à une marche sans frontale sur le chemin du pont.",
+  "theme_tags": [
+    "migration",
+    "parulines",
+    "printemps",
+    "calme",
+    "lumiere"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 1.4,
+      "temp_max_c": 15.4,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "rain_mm": 0,
+      "pressure_mb": 970.7,
+      "pressure_trend": "down",
+      "solar_rad_avg_wm2": 419.5
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-throated Green Warbler",
+      "taxon_scientific": "Setophaga virens",
+      "confidence": 0.9798,
+      "observed_at": "2026-05-30T10:19:25-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260530-141922.flac"
+    },
+    "sky": {
+      "moon_phase": "Pleine lune",
+      "moon_illumination_pct": 99.8,
+      "moon_rise_utc": "2026-06-01T01:31:31.957Z",
+      "moon_set_utc": "2026-05-31T08:21:48.606Z",
+      "notable_planets": [
+        "Vénus",
+        "Jupiter",
+        "Mercure"
+      ],
+      "cloud_cover_night_pct": 55
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est vraiment commencée."
+}
