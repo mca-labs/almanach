@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-05-31",
+  "generated_at": "2026-06-01T09:34:18.997Z",
+  "title": "Parulines sous le gris",
+  "summary": "Journée fraîche et couverte sur le Val, avec une brève pluie en matinée — mais les parulines ont tenu le bois.",
+  "body_md": "Six millimètres de pluie sont tombés cette nuit, et la journée s'est ouverte froide — 4 degrés à l'aube, un vent calme du sud qui n'a pas suffi à réchauffer grand-chose avant l'après-midi. La lumière est restée diffuse jusqu'à 14 h, heure où le ciel s'est entrouvert un moment, portant l'éclairement à plus de cent mille lux. Le reste du temps, le sous-bois baignait dans cette clarté grise qui efface les ombres et fait ressortir les mousses.\n\nC'est dans ces conditions que la Paruline à croupion jaune a dominé le Val — 43 espèces détectées, et la journée en a compté 4 519 détections au total. Setophaga coronata tenait le haut des épinettes dès 7 h 58, sa note montante reconnaissable entre toutes. On a aussi noté la présence franche de la Paruline tigrée, de la Paruline de Blackburn et de la Paruline à gorge noire, cette constellation d'espèces qui indique toujours la même chose : la migration de printemps n'est pas encore terminée, et le Val reste sur leur chemin.",
+  "sky_narrative": "La lune, gibbeuse à près de 99 % d'illumination, se couchera tôt — vers 5 h du matin, heure locale — laissant la fin de nuit à un ciel partiellement dégagé, avec environ un tiers de couverture nuageuse. Vénus et Jupiter seront les repères les plus nets ; la marche sans frontale sera difficile, mais l'observation planétaire en soirée, elle, s'annonce possible dans les éclaircies.",
+  "theme_tags": [
+    "migration",
+    "parulines",
+    "pluie",
+    "fraicheur",
+    "sous-bois",
+    "printemps"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4.3,
+      "temp_max_c": 14.7,
+      "rain_mm": 6.012016,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_mb": 970.4,
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "common": "Paruline à croupion jaune",
+      "scientific": "Setophaga coronata",
+      "observed_at": "2026-05-31T07:58:27-04:00",
+      "total_species": 43,
+      "total_detections": 4519
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 99.2,
+      "moon_set_utc": "2026-06-01T09:05:02Z",
+      "cloud_cover_night_pct": 34.4,
+      "notable_planets": [
+        "Vénus",
+        "Jupiter",
+        "Mercure"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
