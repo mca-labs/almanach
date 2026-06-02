@@ -53,6 +53,11 @@
   ],
   "done": [
     {
+      "title": "Résilience de la synthèse : réessais sur surcharge de l'API",
+      "details": "Le run cron du 2 juin a échoué sur un <code>529 « Overloaded »</code> transitoire d'Anthropic à l'étape synthèse — un seul appel raté plantait tout le run, donc l'édition du 1er juin n'a pas été publiée. Correctif : l'appel à Claude est enveloppé dans un <code>withRetry</code> (réessais sur 429/529/5xx, backoff 30 s → 5 min, 5 tentatives), si bien qu'une surcharge passagère se résorbe d'elle-même au lieu de faire sauter l'édition. À noter : les runs planifiés GitHub Actions sont « best-effort » et démarrent souvent 3-5 h après l'heure prévue, donc le job croise des fenêtres variables — la tolérance aux pannes compte plus que l'horaire.",
+      "finished_at": "2026-06-02"
+    },
+    {
       "title": "Passe Impeccable",
       "details": "Suite design « Impeccable » : <code>/teach-impeccable</code> (contexte design persistant dans <code>.impeccable.md</code> — voix « calme · contemplatif · lettré », référence Aldo Leopold), <code>/critique</code> (score Nielsen 34/40 → 38/40 après corrections), puis les correctifs : lecteur audio en charte (remplace le lecteur natif), accessibilité tactile/clavier des interactions au survol (Pointer Events + <code>:focus-within</code>), état « aucune édition » repensé, et passe <code>/polish</code> (respect de <code>prefers-reduced-motion</code>, zone de seek audio agrandie).",
       "finished_at": "2026-05-28"
