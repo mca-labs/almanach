@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-01",
+  "total_detections": 4600,
+  "unique_species": 39,
+  "top_species": [
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 1996,
+      "max_confidence": 0.9993641972541809,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-124144.flac"
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 932,
+      "max_confidence": 0.999213695526123,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-131741.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 441,
+      "max_confidence": 0.998344898223877,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-085741.flac"
+    },
+    {
+      "taxon_common": "Black-throated Green Warbler",
+      "taxon_scientific": "Setophaga virens",
+      "count": 179,
+      "max_confidence": 0.9888179898262024,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-115352.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 169,
+      "max_confidence": 0.9942216277122498,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-181417.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 139,
+      "max_confidence": 0.9459869265556335,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-104228.flac"
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 129,
+      "max_confidence": 0.941530168056488,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-095811.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 123,
+      "max_confidence": 0.9314086437225342,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-162057.flac"
+    },
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 110,
+      "max_confidence": 0.9971742630004883,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-143943.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 95,
+      "max_confidence": 0.942820131778717,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-204255.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Winter Wren",
+    "taxon_scientific": "Troglodytes hiemalis",
+    "confidence": 0.998344898223877,
+    "observed_at": "2026-06-01T04:57:42-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260601-085741.flac"
+  },
+  "hourly_detections": [
+    2,
+    0,
+    0,
+    0,
+    525,
+    570,
+    482,
+    485,
+    336,
+    259,
+    297,
+    281,
+    227,
+    87,
+    244,
+    201,
+    192,
+    159,
+    141,
+    98,
+    13,
+    1,
+    0,
+    0
+  ]
+}
