@@ -101,6 +101,28 @@ function extractJson(text: string): SynthesisResult {
   return JSON.parse(trimmed.slice(start, end + 1)) as SynthesisResult;
 }
 
+/**
+ * Réessaie un appel API sur erreur transitoire (429 rate-limit, 529 overloaded,
+ * 5xx) avec un long backoff. Le run quotidien a des heures de marge : mieux vaut
+ * attendre qu'une surcharge passagère d'Anthropic se résorbe que de planter tout
+ * le run (et perdre l'édition du jour) sur un seul 529.
+ */
+async function withRetry<T>(fn: () => Promise<T>, attempts = 5): Promise<T> {
+  const delays = [30_000, 60_000, 120_000, 300_000]; // 30 s, 1, 2, 5 min
+  for (let i = 0; ; i++) {
+    try {
+      return await fn();
+    } catch (err) {
+      const status = (err as { status?: number } | null)?.status;
+      const retryable = status === 429 || status === 529 || (typeof status === 'number' && status >= 500);
+      if (!retryable || i >= attempts - 1) throw err;
+      const wait = delays[Math.min(i, delays.length - 1)]!;
+      console.warn(`synthesize: API ${status} — réessai ${i + 1}/${attempts - 1} dans ${wait / 1000} s…`);
+      await new Promise((r) => setTimeout(r, wait));
+    }
+  }
+}
+
 export async function synthesize(ctx: SynthesisContext): Promise<SynthesisResult> {
   if (!process.env.ANTHROPIC_API_KEY) {
     throw new Error('ANTHROPIC_API_KEY is not set.');
@@ -108,7 +130,7 @@ export async function synthesize(ctx: SynthesisContext): Promise<SynthesisResult
   const voice = await readFile(VOICE_PATH, 'utf8');
   const client = new Anthropic();
 
-  const response = await client.messages.create({
+  const response = await withRetry(() => client.messages.create({
     model: MODEL,
     max_tokens: MAX_TOKENS,
     system: [
@@ -139,7 +161,7 @@ export async function synthesize(ctx: SynthesisContext): Promise<SynthesisResult
         ],
       },
     ],
-  });
+  }));
 
   const block = response.content.find((b) => b.type === 'text');
   if (!block || block.type !== 'text') {
