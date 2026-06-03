@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-06-02",
+  "generated_at": "2026-06-03T09:01:57.103Z",
+  "title": null,
+  "summary": "Journée franche et chaude sur le Val, vent du sud presque nul — la forêt bourdonne de parulines en transit.",
+  "body_md": "Le baromètre est resté plat toute la journée, à 973 mb, pendant que les températures montaient sans se presser jusqu'à 22 degrés en début d'après-midi. Pas une goutte depuis hier, et les rafales les plus fortes n'ont pas dépassé la mi-journée — une brise, à peine. C'est le genre de condition qui retient les migrateurs : ciel ouvert, vent calme du sud, chaleur raisonnable. Quarante espèces au compteur aujourd'hui. La forêt n'a pas chômé.\n\nL'oiseau qui a le plus occupé les capteurs, c'est le roitelet à couronne rubis, Corthylio calendula, entendu dès l'aube et revenu par vagues jusqu'en milieu de matinée. Sa voix est hors de proportion avec sa taille — sèche, insistante, presque agacée. Il ne niche pas ici, ou rarement ; il est de passage, comme la plupart de ceux qui ont rempli la journée. La paruline tigrée, la paruline à flancs marron, la paruline à gorge noire et verte — toutes en route, toutes de voix. Le Val était un couloir ce mardi.",
+  "sky_narrative": "La lune gibbeuse, éclairée à 93 %, ne se lèvera qu'à 3 h 40 du matin et se sera couchée en fin de matinée : la nuit qui s'ouvre sera donc d'abord sans lune, ce qui favorisera l'observation du ciel profond pendant les premières heures. Vénus et Jupiter seront visibles, et environ 44 % de couverture nuageuse laissera des fenêtres — une lampe de poche restera utile, mais les yeux auront de quoi travailler.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "chaleur",
+    "vent-calme",
+    "printemps"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 22.2,
+      "temp_min_c": 5,
+      "rain_mm": 0,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_mb": 973.3,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "observed_at": "2026-06-02T06:27:09-04:00",
+      "confidence": 0.9998459815979004,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260602-102705.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 93,
+      "moon_rise": "2026-06-04T03:39:56.559Z",
+      "moon_set": "2026-06-03T11:00:02.619Z",
+      "notable_planets": [
+        "Vénus",
+        "Jupiter",
+        "Mercure"
+      ],
+      "cloud_cover_night_pct": 44
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux des espèces les plus robustes ou semi-domestiquées, comme le bruant chanteur et le merlebleu, arrivent généralement en mars, tandis que les oiseaux des bois plus rares et plus brillants ferment la procession en juin."
+}

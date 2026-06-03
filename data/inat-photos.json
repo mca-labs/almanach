@@ -382,5 +382,29 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-05-29T08:05:10.175Z"
+  },
+  "Setophaga pensylvanica": {
+    "taxon_inat_id": 145239,
+    "name_fr": "Paruline à flancs marron",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/131621127/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/131621127/square.jpg",
+    "attribution": "(c) Weston Barker, some rights reserved (CC BY-NC), uploaded by Weston Barker",
+    "attribution_name": "Weston Barker",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-03T09:01:30.194Z"
+  },
+  "Setophaga striata": {
+    "taxon_inat_id": 145240,
+    "name_fr": "paruline rayée",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/164386122/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/164386122/square.jpeg",
+    "attribution": "(c) Frank Beres, some rights reserved (CC BY-NC), uploaded by Frank Beres",
+    "attribution_name": "Frank Beres",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-03T09:01:31.975Z"
   }
 }
