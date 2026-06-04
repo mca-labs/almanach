@@ -7,7 +7,8 @@ import * as Astronomy from 'astronomy-engine';
 import { localMidnight } from './util/date.js';
 
 type AstroTime = Astronomy.AstroTime;
-const { Body, Illumination, MoonPhase, Observer, SearchAltitude, SearchRiseSet } = Astronomy;
+const { Body, Equator, Horizon, Illumination, MoonPhase, Observer, SearchAltitude, SearchRiseSet } =
+  Astronomy;
 
 // --- Observateur figé : pont couvert de Saint-Placide ---
 function num(name: string, fallback: number): number {
@@ -22,6 +23,17 @@ const OBSERVER = new Observer(
   num('OBS_LON', -70.61846),
   num('OBS_ELEV_M', 377),
 );
+
+/** Azimut (0=N, 90=E, 180=S, 270=O) et altitude (degrés) d'un corps à un instant
+ *  donné, vus de l'observateur. Sert à positionner la « carte du ciel ». */
+function altAz(body: Astronomy.Body, time: AstroTime): { az: number; alt: number } {
+  const eq = Equator(body, time, OBSERVER, true, true);
+  const hor = Horizon(time, OBSERVER, eq.ra, eq.dec, 'normal');
+  return { az: round1(hor.azimuth), alt: round1(hor.altitude) };
+}
+function round1(n: number): number {
+  return Math.round(n * 10) / 10;
+}
 
 // --- Types ---
 export type SkyCategory =
@@ -79,12 +91,18 @@ function computeEphemerides(start: Date): SkyEvent[] {
   const nauticalStart = SearchAltitude(Body.Sun, OBSERVER, +1, start, 1, -12);
   const civilStart = SearchAltitude(Body.Sun, OBSERVER, +1, start, 1, -6);
 
+  // Instant de référence pour la « carte du ciel » : fin du crépuscule civil
+  // (le ciel s'assombrit, les planètes apparaissent), repli sur le coucher.
+  const refTime = civilEnd ?? nauticalEnd ?? sunset;
+
   events.push({
     category: 'twilight',
     title: 'Lever et coucher du soleil',
     detail: {
       sunrise: iso(sunrise),
       sunset: iso(sunset),
+      sun_set_azimuth: sunset ? altAz(Body.Sun, sunset).az : null,
+      sky_map_ref: iso(refTime),
       twilight: {
         civil_start: iso(civilStart),
         nautical_start: iso(nauticalStart),
@@ -130,6 +148,7 @@ function computeEphemerides(start: Date): SkyEvent[] {
   ];
   for (const p of planets) {
     const illum = Illumination(p.body, start);
+    const pos = refTime ? altAz(p.body, refTime) : null;
     events.push({
       category: 'planet',
       title: p.name,
@@ -138,6 +157,8 @@ function computeEphemerides(start: Date): SkyEvent[] {
         phase_angle: illum.phase_angle,
         helio_dist: illum.helio_dist,
         geo_dist: illum.geo_dist,
+        az: pos?.az ?? null,
+        alt: pos?.alt ?? null,
       },
       notable: illum.mag < 0,
       propice_a: null,

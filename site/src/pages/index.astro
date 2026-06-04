@@ -194,10 +194,33 @@ function findEvent(category: SkyEvent['category']): SkyEvent | undefined {
   return sky?.events.find((e) => e.category === category);
 }
 const twilight = findEvent('twilight');
-const twDetail = (twilight?.detail ?? {}) as { sunrise?: string | null; sunset?: string | null };
+const twDetail = (twilight?.detail ?? {}) as {
+  sunrise?: string | null;
+  sunset?: string | null;
+  sun_set_azimuth?: number | null;
+};
 const moon = findEvent('moon');
-const moonDetail = (moon?.detail ?? {}) as { illumination_fraction?: number; set?: string | null };
+const moonDetail = (moon?.detail ?? {}) as {
+  illumination_fraction?: number;
+  phase_deg?: number;
+  set?: string | null;
+};
 const notablePlanets = (sky?.events ?? []).filter((e) => e.category === 'planet' && e.notable);
+
+// Carte du ciel : planètes notables au-dessus de l'horizon au crépuscule, + coucher du soleil.
+const SKY_MAP = {
+  sunSetAz: twDetail.sun_set_azimuth ?? null,
+  moonIllum: moonDetail.illumination_fraction ?? null,
+  moonWaning: typeof moonDetail.phase_deg === 'number' ? moonDetail.phase_deg > 180 : true,
+  planets: notablePlanets
+    .map((p) => {
+      const d = p.detail as { az?: number | null; alt?: number | null; magnitude?: number };
+      return { name: p.title, az: d.az ?? null, alt: d.alt ?? null, mag: d.magnitude ?? 0 };
+    })
+    .filter((p): p is { name: string; az: number; alt: number; mag: number } =>
+      typeof p.az === 'number' && typeof p.alt === 'number' && p.alt > 0.5,
+    ),
+};
 
 const dateLine = date ? frenchDateLine(date) : null;
 const pageTitle = 'Almanach du Val-des-Loups - Saint-Placide-de-Charlevoix';
@@ -631,10 +654,17 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           <h2>Éphémérides : ce soir, le {sky ? frenchSkyDate(sky.for_date) : '—'}</h2><span class="line"></span>
           <span class="src">almanach · astronomy-engine</span>
         </div>
+        {(SKY_MAP.sunSetAz !== null || SKY_MAP.planets.length > 0) && (
+          <div class="skyvig">
+            <div class="skyscroll" id="skyscroll">
+              <svg id="skyvig" viewBox="0 0 680 246" role="img" aria-label="Le ciel à l'ouest au crépuscule : coucher du soleil et planètes basses au-dessus de la forêt."></svg>
+            </div>
+          </div>
+        )}
         <div class="sky">
           {moon && (
             <span class="it">
-              <svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="#3F6764"/></svg>
+              <svg id="ephMoon" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"></svg>
               {moon.title}{moonDetail.illumination_fraction !== undefined ? `, ${Math.round(moonDetail.illumination_fraction * 100)} %` : ''}{moonDetail.set ? ` — couchée à ${fmtTimeIso(moonDetail.set)}` : ''}
             </span>
           )}
@@ -682,7 +712,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
 
   <script
     is:inline
-    define:vars={{ TEMP_HOURS, TEMP_NORM, BIRD_HOURS, SUNRISE_H, SUNSET_H, BIRD_SERIES }}
+    define:vars={{ TEMP_HOURS, TEMP_NORM, BIRD_HOURS, SUNRISE_H, SUNSET_H, BIRD_SERIES, SKY_MAP }}
   >
     /* Script reconduit du mockup une.html (TEMP_HOURS/TEMP_NORM/BIRD_HOURS/SUNRISE_H/SUNSET_H injectés). */
     (function () {
@@ -970,6 +1000,80 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           })
           .catch(function () { /* échec décodage → on garde le gain de repli */ });
       }
+      // ---- Carte du ciel : glyphe de phase de lune + vignette d'horizon ----
+      function skyMoonGlyph(cx, cy, R, k, waning) {
+        if (k === null || k === undefined) k = 1;
+        k = Math.max(0, Math.min(1, k));
+        var g = '<circle cx="' + cx + '" cy="' + cy + '" r="' + R + '" fill="#FBF7F0" stroke="#CDD5CF" stroke-width="1"/>';
+        var rx = R * Math.abs(2 * k - 1), gib = k > 0.5;
+        var limbSweep = waning ? 0 : 1;
+        var termSweep = waning ? (gib ? 1 : 0) : (gib ? 0 : 1);
+        g += '<path d="M ' + cx + ' ' + (cy - R) + ' A ' + R + ' ' + R + ' 0 0 ' + limbSweep + ' ' + cx + ' ' + (cy + R) +
+             ' A ' + rx.toFixed(2) + ' ' + R + ' 0 0 ' + termSweep + ' ' + cx + ' ' + (cy - R) + ' Z" fill="#ECDFC6"/>';
+        return g;
+      }
+      if (typeof SKY_MAP !== 'undefined' && SKY_MAP) {
+        var ephMoon = document.getElementById('ephMoon');
+        if (ephMoon) ephMoon.innerHTML = skyMoonGlyph(9, 9, 7.2, SKY_MAP.moonIllum, SKY_MAP.moonWaning);
+
+        var skyvig = document.getElementById('skyvig');
+        if (skyvig) {
+          var sW = 680, sH = 246, hz = 176, AZ0 = 250, AZ1 = 325, ALTMAX = 28, spadL = 40, spadR = 40;
+          function azX(a) { a = Math.max(AZ0, Math.min(AZ1, a)); return spadL + (a - AZ0) / (AZ1 - AZ0) * (sW - spadL - spadR); }
+          function altY(a) { a = Math.max(0, Math.min(ALTMAX, a)); return hz - a / ALTMAX * (hz - 26); }
+          var sv = '<defs>' +
+            '<linearGradient id="duskg" x1="0" y1="1" x2="0" y2="0">' +
+            '<stop offset="0" stop-color="#F2E2D2" stop-opacity="0.85"/>' +
+            '<stop offset="0.45" stop-color="#F2E2D2" stop-opacity="0.18"/>' +
+            '<stop offset="1" stop-color="#FBF7F0" stop-opacity="0"/></linearGradient>' +
+            '<radialGradient id="sunglow" cx="0.5" cy="0.5" r="0.5">' +
+            '<stop offset="0" stop-color="#E7C887" stop-opacity="0.5"/>' +
+            '<stop offset="1" stop-color="#E7C887" stop-opacity="0"/></radialGradient></defs>';
+          sv += '<rect x="0" y="0" width="' + sW + '" height="' + hz + '" fill="url(#duskg)"/>';
+          if (SKY_MAP.sunSetAz !== null && SKY_MAP.sunSetAz !== undefined) {
+            var sx = azX(SKY_MAP.sunSetAz);
+            sv += '<circle cx="' + sx.toFixed(1) + '" cy="' + hz + '" r="54" fill="url(#sunglow)"/>';
+            sv += '<path d="M ' + (sx - 11).toFixed(1) + ' ' + hz + ' A 11 11 0 0 1 ' + (sx + 11).toFixed(1) + ' ' + hz + ' Z" fill="#E7C887" opacity="0.8"/>';
+          }
+          sv += '<line x1="0" y1="' + hz + '" x2="' + sW + '" y2="' + hz + '" stroke="#6E766F" stroke-width="1"/>';
+          var seedH = [9,26,13,8,19,30,11,15,7,22,12,34,10,17,9,24,14,8,28,12,16,7,20,11,31,9,14,18,8,23,12,10,27,13,9,19,11];
+          var tx = 4, ti = 0;
+          while (tx < sW) { var th = seedH[ti % seedH.length], tw = Math.max(4, th * 0.40);
+            sv += '<path d="M ' + tx.toFixed(1) + ' ' + (hz - th) + ' L ' + (tx - tw).toFixed(1) + ' ' + hz + ' L ' + (tx + tw).toFixed(1) + ' ' + hz + ' Z" fill="#4B5A4E"/>';
+            tx += tw * 1.7 + ((ti * 7) % 9); ti++; }
+          SKY_MAP.planets.forEach(function (p) {
+            var x = azX(p.az), y = altY(p.alt), bright = p.mag < -2;
+            var r = Math.max(2.2, Math.min(4.6, 2.2 + (-p.mag) * 0.55));
+            var col = bright ? '#D8B25A' : '#566260';
+            sv += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + r.toFixed(1) + '" fill="' + col + '"/>';
+            if (bright) sv += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + (r + 3.5).toFixed(1) + '" fill="none" stroke="' + col + '" stroke-width="0.8" opacity="0.45"/>';
+            sv += '<text x="' + x.toFixed(1) + '" y="' + (y - r - 7).toFixed(1) + '" text-anchor="middle" font-family="Spectral,serif" font-size="12" font-style="italic" fill="#566260">' + p.name + '</text>';
+          });
+          sv += '<text x="' + azX(270).toFixed(1) + '" y="' + (hz + 18) + '" text-anchor="middle" font-family="Spectral,serif" font-size="10.5" letter-spacing="1.5" fill="#6E766F">OUEST</text>';
+          skyvig.innerHTML = sv;
+          // Mobile : agrandir (hauteur cible) + défilement horizontal centré, comme le graphique 30 j.
+          var skyscroll = document.getElementById('skyscroll');
+          function sizeSky() {
+            var mobile = window.matchMedia('(max-width:560px)').matches;
+            if (mobile) {
+              var hgt = 220;
+              skyvig.style.width = Math.round(hgt * sW / sH) + 'px';
+              skyvig.style.height = hgt + 'px';
+              if (skyscroll) skyscroll.scrollLeft = Math.max(0, (skyscroll.scrollWidth - skyscroll.clientWidth) / 2);
+            } else {
+              skyvig.style.width = '';
+              skyvig.style.height = '';
+            }
+          }
+          sizeSky();
+          var skyRaf;
+          window.addEventListener('resize', function () {
+            if (skyRaf) cancelAnimationFrame(skyRaf);
+            skyRaf = requestAnimationFrame(sizeSky);
+          });
+        }
+      }
+
       // Lecteur custom : le bouton « Écouter » fait play/pause, barre de
       // progression cliquable + temps en charte, contrôles natifs supprimés.
       var pBtn = document.getElementById('listenBtn');

@@ -11,10 +11,6 @@
     {
       "title": "Newsletter / RSS",
       "details": "Éventuel flux pour qui veut être notifié des nouvelles éditions."
-    },
-    {
-      "title": "Carte du ciel de la nuit",
-      "details": "Petit SVG sobre du ciel à venir, en prolongement des éphémérides : phase de lune dessinée, planètes basses à l'horizon, lever/coucher. Vignette contemplative qui illustre ce que le texte décrit déjà ; positions fournies par <code>astronomy-engine</code> (déjà en place)."
     }
   ],
   "later": [
@@ -52,6 +48,11 @@
     }
   ],
   "done": [
+    {
+      "title": "Carte du ciel de la nuit",
+      "details": "Vignette d'horizon dans la section Éphémérides : crépuscule à l'ouest dessiné sur papier (light mode), avec la silhouette de conifères du Val, la lueur du couchant et les planètes basses positionnées à leurs <strong>azimut/altitude réels</strong> au crépuscule civil (Mars/Saturne sous l'horizon sont exclues) ; calcul via <code>astronomy-engine</code> (offline). Glyphe de phase de lune dessiné sur sa ligne dédiée. Sur mobile : agrandie, centrée, défilement horizontal (même stratégie que le graphique 30 jours).",
+      "finished_at": "2026-06-03"
+    },
     {
       "title": "Résilience de la synthèse : réessais sur surcharge de l'API",
       "details": "Le run cron du 2 juin a échoué sur un <code>529 « Overloaded »</code> transitoire d'Anthropic à l'étape synthèse — un seul appel raté plantait tout le run, donc l'édition du 1er juin n'a pas été publiée. Correctif : l'appel à Claude est enveloppé dans un <code>withRetry</code> (réessais sur 429/529/5xx, backoff 30 s → 5 min, 5 tentatives), si bien qu'une surcharge passagère se résorbe d'elle-même au lieu de faire sauter l'édition. À noter : les runs planifiés GitHub Actions sont « best-effort » et démarrent souvent 3-5 h après l'heure prévue, donc le job croise des fenêtres variables — la tolérance aux pannes compte plus que l'horaire.",
