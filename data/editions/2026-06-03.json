@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-06-03",
+  "generated_at": "2026-06-04T08:25:46.497Z",
+  "title": "Un mercedi de juin presque sans vent",
+  "summary": "Journée chaude et calme sur le Val, le mercure a grimpé jusqu'à 27 °C sous un ciel généreux — et les voix ne se sont pas tues de l'aube au soir.",
+  "body_md": "Le vent est resté presque nul toute la journée, à peine quelques souffles du sud en matinée, et c'est sans doute ce calme qui a retenu tant de voix dans le Val. Le thermomètre a monté tôt, vite, pour atteindre les 27 degrés en fin d'après-midi — bien au-dessus de ce qu'on attend habituellement pour un 3 juin. La pression tenait, le ciel offrait tout ce qu'il avait. Un de ces jours où la forêt prend de l'espace.\n\nL'oiseau du jour est arrivé en milieu d'après-midi : un bruant à couronne blanche, Zonotrichia leucophrys, dont le chant — cinq notes descendantes, nettes comme un sifflet — a traversé l'air chaud depuis la lisière. Il ne niche pas ici ; c'est un passage, une halte entre la plaine et le boréal. Ce qui frappe, avec cette espèce, c'est la rigueur du dessin sur la tête, le noir et le blanc sans compromis, comme si la nature avait voulu qu'on ne le confonde avec rien d'autre. Il était là à 15 h 13. À 16 h, on n'entendait plus rien de lui.",
+  "sky_narrative": "La lune gibbeuse, éclairée à 87 %, se couchera vers 8 h du matin — elle sera donc présente une bonne partie de la nuit et gênera l'observation du ciel profond. Vénus et Jupiter brilleront côte à côte à l'ouest dès le crépuscule, bien visibles à l'œil nu malgré une couverture nuageuse partielle estimée à 45 %, et Mercure, bas sur l'horizon nord-ouest, pourra s'y ajouter pour qui cherche bien.",
+  "theme_tags": [
+    "migration",
+    "passereaux",
+    "chaleur",
+    "calme",
+    "juin",
+    "bruant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 27.8,
+      "temp_min_c": 7.2,
+      "rain_mm": 0,
+      "wind_qualifier": "calme",
+      "wind_direction": "du S",
+      "pressure_category": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "observed_at": "2026-06-03T15:13:03-04:00",
+      "confidence": 0.9955577254295349,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260603-191302.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 87,
+      "moon_set": "2026-06-04T12:07:19.500Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter",
+        "Mercure"
+      ],
+      "cloud_cover_night_pct": 45
+    }
+  },
+  "fragment_quote_id": "john-muir-my-8",
+  "fragment_translation_fr": "Et notre premier pur jour de montagne, chaud, calme, sans nuages — comme il paraît incommensurable, comme il est sereinement sauvage !"
+}
