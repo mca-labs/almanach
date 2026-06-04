@@ -79,10 +79,12 @@
     font-size:20px;line-height:1;margin:0 auto 28px}
   /* .flush : section qui s'enchaîne sans ornement (suite logique de la précédente) */
   section.blk + section.blk.flush::before{content:none}
-  .rubric{display:flex;align-items:center;gap:11px;margin:0 0 18px}
+  /* flex-wrap : si titre + source ne tiennent pas (ex. long titre d'Éphémérides
+     sur mobile), la source passe sous le titre au lieu de déborder à droite. */
+  .rubric{display:flex;align-items:center;gap:6px 11px;margin:0 0 18px;flex-wrap:wrap}
   .rubric .orn{flex:none;color:var(--accent);display:block}
   .rubric h2{font-family:var(--display);font-style:italic;font-weight:400;font-size:21px;
-    letter-spacing:0;text-transform:none;color:var(--ink);margin:0;white-space:nowrap}
+    letter-spacing:0;text-transform:none;color:var(--ink);margin:0}
   .rubric .line{flex:1;height:1px;background:var(--rule-soft)}
   .rubric .src{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.06em;
     text-transform:uppercase;color:var(--ink-3)}
