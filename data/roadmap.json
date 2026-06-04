@@ -11,6 +11,10 @@
     {
       "title": "Newsletter / RSS",
       "details": "Éventuel flux pour qui veut être notifié des nouvelles éditions."
+    },
+    {
+      "title": "Carte du ciel de la nuit",
+      "details": "Petit SVG sobre du ciel à venir, en prolongement des éphémérides : phase de lune dessinée, planètes basses à l'horizon, lever/coucher. Vignette contemplative qui illustre ce que le texte décrit déjà ; positions fournies par <code>astronomy-engine</code> (déjà en place)."
     }
   ],
   "later": [
@@ -45,10 +49,6 @@
     {
       "title": "Calendrier phénologique — premières arrivées de la saison",
       "details": "Registre des « premières » de l'année (première détection d'un migrateur, première nuit sans gel, premier 20 °C…), à la manière des relevés phénologiques d'Aldo Leopold dans <em>A Sand County Almanac</em>. Au fil des ans, donne à voir l'avance ou le recul des saisons. Variante tournée vers l'avant (« espèces attendues bientôt ») — demanderait une baseline régionale (lien avec l'item clé API eBird)."
-    },
-    {
-      "title": "Carte du ciel de la nuit",
-      "details": "Petit SVG sobre du ciel à venir, en prolongement des éphémérides : phase de lune dessinée, planètes basses à l'horizon, lever/coucher. Vignette contemplative qui illustre ce que le texte décrit déjà ; positions fournies par <code>astronomy-engine</code> (déjà en place)."
     }
   ],
   "done": [
