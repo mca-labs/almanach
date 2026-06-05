@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-06-04",
+  "generated_at": "2026-06-05T08:14:29.161Z",
+  "title": "Le mouchereau des aulnes et la chaleur du 4 juin",
+  "summary": "Journée chaude et calme sur le Val — 30 degrés sous un soleil plein, le vent à peine perceptible du sud.",
+  "body_md": "La chaleur s'est installée tôt ce matin, montant régulièrement de 11 degrés à l'aube jusqu'à frôler les 30 en début d'après-midi — dix degrés au-dessus des normales de saison. Pas un éclair depuis trois jours, le baromètre remonte doucement, et le vent du sud n'a guère soufflé plus fort qu'une respiration. Le sous-bois a tenu ce surplus de chaleur comme une cave retient la fraîcheur : à l'envers.\n\nC'est dans cet air épais que le mouchereau des aulnes (Empidonax alnorum) s'est le plus fait entendre, son cri bref et nasillard répété depuis les aulnaies au bord de l'eau. Les roitelets à couronne rubis (Corthylio calendula) et les bruants à couronne blanche (Zonotrichia leucophrys) ont tenu le haut du décompte — 38 espèces en une journée — mais c'est la voix rauque du mouchereau qui a marqué le ton, posée sur la chaleur comme une note unique sur une corde trop tendue.",
+  "sky_narrative": "La lune gibbeuse décroissante, éclairée à 80 %, se couchera en matinée et laissera la nuit sans son éclat dominant — mais 65 % de couverture nuageuse limiteront la portée vers les étoiles. Vénus et Jupiter, bien placés à l'ouest en début de soirée, seront les points de repère les plus nets si une éclaircie se présente ; Mercure, bas à l'horizon nord-ouest, restera difficile à saisir.",
+  "theme_tags": [
+    "chaleur",
+    "migration",
+    "passereaux",
+    "chant",
+    "aulnaie",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 30.5,
+      "temp_min_c": 10.6,
+      "wind_direction": "S",
+      "wind_avg_kmh": 3.4,
+      "rain_mm": 0,
+      "pressure_mb": 968,
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Alder Flycatcher",
+      "taxon_common_fr": "Mouchereau des aulnes",
+      "taxon_scientific": "Empidonax alnorum",
+      "confidence": 0.997,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-143014.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 80,
+      "moon_set_utc": "2026-06-05T13:17:08Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter",
+        "Mercure"
+      ],
+      "cloud_cover_night_pct": 65
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}

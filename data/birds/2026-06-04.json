@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-04",
+  "total_detections": 2618,
+  "unique_species": 38,
+  "top_species": [
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 404,
+      "max_confidence": 0.9997943043708801,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-101329.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 392,
+      "max_confidence": 0.9899877905845642,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-192713.flac"
+    },
+    {
+      "taxon_common": "Alder Flycatcher",
+      "taxon_scientific": "Empidonax alnorum",
+      "count": 358,
+      "max_confidence": 0.9969426989555359,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-143014.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 342,
+      "max_confidence": 0.9534599184989929,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-082336.flac"
+    },
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 219,
+      "max_confidence": 0.990084171295166,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-154203.flac"
+    },
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 162,
+      "max_confidence": 0.9905718564987183,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-221553.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 150,
+      "max_confidence": 0.9939814209938049,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-140742.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 117,
+      "max_confidence": 0.9822657108306885,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-235851.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 94,
+      "max_confidence": 0.9977412223815918,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-171308.flac"
+    },
+    {
+      "taxon_common": "Chestnut-sided Warbler",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "count": 93,
+      "max_confidence": 0.9031856656074524,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-123907.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Alder Flycatcher",
+    "taxon_scientific": "Empidonax alnorum",
+    "confidence": 0.9969426989555359,
+    "observed_at": "2026-06-04T10:30:17-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260604-143014.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    203,
+    139,
+    107,
+    143,
+    301,
+    223,
+    246,
+    185,
+    150,
+    135,
+    71,
+    155,
+    148,
+    126,
+    169,
+    83,
+    34,
+    0,
+    0,
+    0
+  ]
+}

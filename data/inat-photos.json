@@ -406,5 +406,41 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-06-03T09:01:31.975Z"
+  },
+  "Empidonax alnorum": {
+    "taxon_inat_id": 16620,
+    "name_fr": "moucherolle des aulnes",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/14906697/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/14906697/square.jpg",
+    "attribution": "(c) Mark Dennis, some rights reserved (CC BY-NC), uploaded by Mark Dennis",
+    "attribution_name": "Mark Dennis",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-05T08:14:05.387Z"
+  },
+  "Turdus migratorius": {
+    "taxon_inat_id": 12727,
+    "name_fr": "Merle d'Amérique",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/34859026/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/34859026/square.jpg",
+    "attribution": "(c) John D Reynolds, some rights reserved (CC BY-NC), uploaded by John D Reynolds",
+    "attribution_name": "John D Reynolds",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-05T08:14:06.282Z"
+  },
+  "Bombycilla cedrorum": {
+    "taxon_inat_id": 7428,
+    "name_fr": "Jaseur d'Amérique",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/450146514/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/450146514/square.jpeg",
+    "attribution": "(c) Manny Salas, some rights reserved (CC BY-NC), uploaded by Manny Salas",
+    "attribution_name": "Manny Salas",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-05T08:14:07.342Z"
   }
 }
