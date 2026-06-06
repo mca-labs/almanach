@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-06-05",
+  "generated_at": "2026-06-06T07:22:14.278Z",
+  "title": null,
+  "summary": "Une journée fraîche et claire, vent calme du nord-est — quarante-deux espèces ont tenu le val en voix.",
+  "body_md": "L'air n'a pas dépassé 18 degrés, et c'est lui qui a tout commandé. Venu du nord-est, presque immobile — les rafales n'ont effleuré 20 km/h qu'une seule heure, en début d'après-midi —, il a gardé le sous-bois ouvert, sonore, propice. Pas une goutte de pluie depuis quatre jours, le baromètre qui glisse doucement : ce calme de fond, l'observateur l'a appris à ses dépens, est souvent plus productif que la grande journée annoncée.\n\nLe bruant familier a dominé le compteur toute la journée, sa trille sèche revenue avant l'aube comme si elle n'était jamais partie. Mais c'est la paruline tigrée qui a retenu l'attention — Setophaga tigrina et la paruline de Blackburnian côte à côte dans l'épinette, deux espèces dont les territoires de nidification se chevauchent à peine, réunies ici le temps d'un passage. Le roitelet à couronne rubis chantait encore à mi-journée, têtu. Quarante-deux espèces en un jour : le val n'est pas encore à court de monde.",
+  "sky_narrative": "La lune gibbeuse, illuminée aux trois quarts, se couchera en fin de matinée et ne gênera pas les premières heures de la nuit — mais avec une couverture nuageuse attendue autour de 56 %, le ciel profond restera incertain. Vénus et Jupiter, serrés au-dessus de l'horizon ouest-nord-ouest, seront les premières cibles si une éclaircie s'ouvre ; Mercure, plus bas, ne sera visible qu'en toute début de nuit depuis un horizon dégagé.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "parulines",
+    "bruant",
+    "calme",
+    "printemps"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 10.8,
+      "temp_max_c": 18.1,
+      "rain_mm": 0,
+      "wind_avg_kmh": 4.8,
+      "wind_gust_max_kmh": 19.8,
+      "wind_direction": "NE",
+      "pressure_mb": 967.9,
+      "pressure_trend": "down"
+    },
+    "bird_of_the_day": {
+      "common": "Bruant familier",
+      "scientific": "Spizella passerina",
+      "detections": 264,
+      "confidence": 0.961
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 72,
+      "moon_set_utc": "2026-06-06T14:27:42Z",
+      "planets_notable": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 56
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne faire face qu'aux faits essentiels de la vie, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — et ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
