@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-06-06",
+  "generated_at": "2026-06-07T08:00:13.141Z",
+  "title": "La paruline à gorge orangée tient le haut du Val",
+  "summary": "Journée fraîche et peu venteuse, sous un ciel qui a laissé filtrer juste assez de lumière pour que les parulines chantent sans s'arrêter.",
+  "body_md": "La pluie n'a donné que 1,4 mm, un filet, à peine de quoi mouiller la mousse sous les épinettes. Le vent du SE est resté en dessous du murmure — 2,4 km/h en moyenne — et le baromètre, bas mais stable, a maintenu la forêt dans cet état de suspension légère qui précède sans jamais tout à fait déclencher l'orage. La lumière a pris son temps le matin, plafonnant vers 10 h avant de s'effacer progressivement dans l'après-midi. Une journée de mi-saison, ni franche ni fermée.\n\nC'est la Setophaga fusca qui a dominé, 342 détections réparties de l'aube jusqu'à la mi-journée, avec un pic entre 4 h et 9 h. La gorge orangée de cette paruline est ce qu'il y a de plus vif dans le Val en ce moment, une tache de braise au sommet des épinettes les plus hautes. Elle chante vite, en spirale montante, et finit toujours sur une note trop aiguë pour être confortable — on n'oublie pas ce son. Trente-neuf espèces ont été notées au total ; la forêt n'est pas encore silencieuse.",
+  "sky_narrative": "La nuit sera partiellement voilée — environ 60 % de couverture nuageuse — mais Vénus et Jupiter, serrés à l'ouest à moins de 15 degrés d'écart, seront suffisamment brillants pour percer les trouées entre les nuages dans la première heure après la tombée de la nuit civile ; la Lune gibbeuse, déjà couchée en début de soirée, ne gênera pas l'observation. Ce ne sera pas une nuit pour le ciel profond, mais une nuit pour rester sur le seuil et laisser les planètes faire leur travail.",
+  "theme_tags": [
+    "parulines",
+    "migration",
+    "chant",
+    "fraicheur",
+    "vent-calme",
+    "pression-basse"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 9.9,
+      "temp_max_c": 18,
+      "rain_mm": 1.41612,
+      "wind_avg_kmh": 2.4,
+      "wind_gust_max_kmh": 19.8,
+      "wind_direction": "SE",
+      "pressure_mb": 957.4,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "detections": 342,
+      "first_observed_at": "2026-06-06T04:15:18-04:00",
+      "confidence": 0.9933736324310303,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260606-081518.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 63,
+      "moon_set_utc": "2026-06-07T15:38:36Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "mercury_notable": true,
+      "cloud_cover_pct": 59
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans le Sauvage que réside la préservation du Monde."
+}
