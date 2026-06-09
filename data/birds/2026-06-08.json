@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-08",
+  "total_detections": 1578,
+  "unique_species": 36,
+  "top_species": [
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 573,
+      "max_confidence": 0.998640239238739,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-161841.flac"
+    },
+    {
+      "taxon_common": "Alder Flycatcher",
+      "taxon_scientific": "Empidonax alnorum",
+      "count": 187,
+      "max_confidence": 0.989840030670166,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-134038.flac"
+    },
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 125,
+      "max_confidence": 0.9862480759620667,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-183501.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 117,
+      "max_confidence": 0.990376889705658,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-104456.flac"
+    },
+    {
+      "taxon_common": "Bay-breasted Warbler",
+      "taxon_scientific": "Setophaga castanea",
+      "count": 67,
+      "max_confidence": 0.9740100502967834,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-154847.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 64,
+      "max_confidence": 0.9528595805168152,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-184644.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 51,
+      "max_confidence": 0.9154284000396729,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-110432.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 47,
+      "max_confidence": 0.9592827558517456,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-181212.flac"
+    },
+    {
+      "taxon_common": "Chestnut-sided Warbler",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "count": 45,
+      "max_confidence": 0.8128833174705505,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-134653.flac"
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 40,
+      "max_confidence": 0.9572901129722595,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-201550.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Bay-breasted Warbler",
+    "taxon_scientific": "Setophaga castanea",
+    "confidence": 0.9740100502967834,
+    "observed_at": "2026-06-08T11:48:48-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-154847.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    7,
+    115,
+    83,
+    118,
+    110,
+    126,
+    130,
+    170,
+    179,
+    78,
+    55,
+    95,
+    69,
+    38,
+    53,
+    54,
+    87,
+    11,
+    0,
+    0,
+    0
+  ]
+}

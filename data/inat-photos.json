@@ -454,5 +454,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-06-06T07:21:51.965Z"
+  },
+  "Setophaga castanea": {
+    "taxon_inat_id": 145236,
+    "name_fr": "paruline à poitrine baie",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/103956046/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/103956046/square.jpeg",
+    "attribution": "(c) Jorge Emmanuel Escobar, some rights reserved (CC BY-NC), uploaded by Jorge Emmanuel Escobar",
+    "attribution_name": "Jorge Emmanuel Escobar",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-09T07:57:39.957Z"
   }
 }

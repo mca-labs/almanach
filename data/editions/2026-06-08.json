@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-06-08",
+  "generated_at": "2026-06-09T07:58:02.155Z",
+  "title": null,
+  "summary": "Journée de plein été avant l'heure — ciel dégagé, chaleur sèche et vent presque nul sur le Val.",
+  "body_md": "Le thermomètre a grimpé sans se faire prier, de 5,5 degrés au petit matin jusqu'à près de 26 l'après-midi, poussé par un souffle du sud à peine perceptible. Pas une goutte depuis une semaine, le sol a bu ce qu'il restait d'humidité, et la lumière de midi pesait fort sur les épinettes — 131 000 lux au pic, selon le capteur. Une journée qui tient davantage de juillet que de juin, mais la forêt n'en a pas fait de cas.\n\nC'est la paruline à poitrine baie, Setophaga castanea, qui a retenu l'attention ce matin. Elle ne niche pas ici chaque année ; sa présence est liée aux épidémies de tordeuse dans l'épinette, et quand elle revient en nombre, c'est que quelque chose se passe dans le haut des arbres. On l'a entendue peu après midi, quelque part sur le versant nord, son chant court et descendant, presque effacé dans le concert des 36 espèces du jour.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — 14 % de couverture prévue — et la lune, un croissant éclairé à 42 %, se couchera en fin d'après-midi et ne gênera pas l'obscurité. Vénus et Jupiter brilleront côte à côte vers l'ouest en début de nuit, à moins de 20 degrés de hauteur ; Mercure sera visible un peu plus au nord, proche de l'horizon. Ce sera une nuit propice à l'observation du ciel profond, à condition de sortir avant que la fraîcheur ne s'installe trop.",
+  "theme_tags": [
+    "chaleur",
+    "parulines",
+    "migration",
+    "ciel-clair",
+    "epinette",
+    "vent-calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 5.5,
+      "temp_max_c": 25.8,
+      "rain_mm": 0,
+      "wind_qualifier": "calme",
+      "wind_direction": "du S",
+      "pressure_category": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Bay-breasted Warbler",
+      "taxon_scientific": "Setophaga castanea",
+      "confidence": 0.974,
+      "observed_at": "2026-06-08T11:48:48-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260608-154847.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 42,
+      "moon_set": "2026-06-09T18:04:27.561Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter",
+        "Mercure"
+      ],
+      "cloud_cover_night_pct": 14
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
