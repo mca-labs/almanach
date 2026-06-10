@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-06-09",
+  "generated_at": "2026-06-10T08:14:43.443Z",
+  "title": null,
+  "summary": "Journée de grande chaleur sur le Val — 32 degrés sous un vent calme du sud, et les parulines en pleine voix.",
+  "body_md": "La chaleur est montée sans se presser, portée par un vent du sud à peine perceptible — moins de 3 km/h en moyenne, rafale maximale à l'aube. Le ciel a tenu ouvert toute la journée, la lumière a frappé fort en début d'après-midi, puis le thermomètre a cédé un peu après 19 h, quand la rivière a repris le dessus. Pas une goutte de pluie ; la semaine entière n'a livré que 2 mm. Le baromètre reste plat, la pression basse — 966 millibars — sans bouger.\n\nC'est dans cette chaleur sèche que Setophaga fusca a dominé la journée : presque mille détections, une présence sonore qui a tenu de l'aube au crépuscule, ligne haute dans les épinettes. Setophaga tigrina n'était pas loin derrière, et c'est le vireo à tête bleue — Vireo solitarius — qu'on a retenu comme voix du jour, repéré peu après 6 h 30 ce matin, quelques mesures tenues depuis le couvert dense. Trente espèces au total, 2 443 détections : le Val était habité.",
+  "sky_narrative": "La lune, croissant entamé à 32 % d'illumination, se couchera vers 15 h 22 heure locale et laissera la nuit sans elle bien avant minuit ; Vénus et Jupiter seront visibles en soirée dans le quart nord-ouest du ciel, côte à côte à faible altitude, avant de disparaître à leur tour. Une couverture nuageuse aux alentours de 43 % viendra brouiller les chances, mais les éclaircies, si elles viennent, offriront un ciel assez sombre pour le profond.",
+  "theme_tags": [
+    "chaleur",
+    "migration",
+    "parulines",
+    "vent-calme",
+    "secheresse"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 32,
+      "temp_min_c": 13.4,
+      "wind_direction": "S",
+      "wind_avg_kmh": 2.97,
+      "rain_mm": 0,
+      "pressure_mb": 966.5,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "observed_at": "2026-06-09T06:26:57-04:00",
+      "confidence": 0.9777757525444031,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260609-102654.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 31.7,
+      "moon_set_utc": "2026-06-10T19:22:11.828Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 43.3
+    }
+  },
+  "fragment_quote_id": "john-muir-my-6",
+  "fragment_translation_fr": "Quand on essaie d'isoler quoi que ce soit, on le trouve enchaîné à tout le reste de l'univers."
+}
