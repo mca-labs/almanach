@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-06-10",
+  "generated_at": "2026-06-11T08:52:50.718Z",
+  "title": "La troglodyte et la chaleur de juin",
+  "summary": "Journée chaude et calme sur le Val — le mercure a frôlé les 31 degrés sous un ciel sans nuage.",
+  "body_md": "Pas un souffle de vent significatif de toute la journée, à peine un filet du sud en fin d'après-midi. C'est dans ce calme presque inhabituel pour un début juin que la chaleur s'est installée très tôt, dépassant les 24 degrés dès neuf heures du matin et plafonnant peu après treize heures. Le baromètre n'a pas bougé. La forêt tenait le coup en silence, la litière sèche sous les épinettes, l'air lumineux jusqu'au fond du sous-bois.\n\nLa surprise venait d'en bas. Troglodytes hiemalis — la troglodyte des forêts — a tenu le haut de la liste des voix détectées ce matin, repérée dès cinq heures seize alors que le reste du Val dormait encore. Ce petit oiseau brun et trapu, que l'on attend plutôt dans les fourrés humides et les souches renversées, a chanté sans relâche dans la fraîcheur du matin, avant que la chaleur ne rabatte tout le monde vers le silence de l'après-midi.",
+  "sky_narrative": "Le croissant de lune se couchera peu avant seize heures quarante-quatre, heure locale, laissant la nuit à découvert — mais la couverture nuageuse prévue aux alentours de 46 % brouillera la moitié du ciel. Vénus et Jupiter brilleront bas à l'ouest en début de nuit, suffisamment pour être repérés à l'œil nu si une éclaircie se présente ; le reste du ciel profond devra attendre une nuit plus franche.",
+  "theme_tags": [
+    "chaleur",
+    "oiseaux",
+    "calme",
+    "foret",
+    "juin",
+    "chant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 30.8,
+      "temp_min_c": 13.7,
+      "rain_mm": 0,
+      "wind_qualifier": "calme",
+      "pressure_category": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "observed_at": "2026-06-10T05:16:42-04:00",
+      "confidence": 0.9962982535362244,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260610-091638.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 21.7,
+      "moon_set_utc": "2026-06-11T20:44:42.015Z",
+      "notable_planets": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 46.1
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux des espèces les plus résistantes ou les plus familières, comme le bruant chanteur et le merlebleu, arrivent généralement en mars, tandis que les oiseaux des bois, plus rares et plus brillants, ferment la procession en juin."
+}
