@@ -1,0 +1,49 @@
+{
+  "entry_date": "2026-06-12",
+  "generated_at": "2026-06-13T07:54:23.687Z",
+  "title": null,
+  "summary": "Journée fraîche et calme, à peine traversée d'une averse légère — le val s'est maintenu sous les normales, la forêt en éveil.",
+  "body_md": "La température n'a guère dépassé 19 degrés, restée sous les normales toute la journée. Un vent du sud presque nul, une rafale isolée à l'heure de midi, 2,4 mm de pluie à peine — l'été de juin ne s'est pas décidé. Cinq éclairs ont quand même frappé, brefs, à moins de 400 mètres. La lumière est arrivée d'un coup en début d'après-midi, pic à 141 000 lux vers 13 h, puis tout s'est rabattu, l'air reprenant sa teinte grise de fin de journée.\n\nC'est le roitelet à couronne dorée, Regulus satrapa, qui a retenu l'attention ce matin. Petit oiseau des épinettes, il n'est pas rare ici, mais le croiser en juin relève de la chance — les siens nichent haut, loin des capteurs. Sa voix, fine et montante jusqu'au bord du silence, a surgi vers 7 h 16. Elle n'a pas duré. Le Blackburnian et la paruline tigrée ont dominé le reste de la journée, 31 espèces au total, mais c'est cette voix-là, tenue sur un fil, qui reste.",
+  "sky_narrative": "La nuit du 13 juin s'ouvrira sur un ciel aux deux tiers couvert — 64 % de nuages en moyenne — ce qui limitera l'observation en profondeur. Vénus brillera bas à l'ouest-nord-ouest, altitude 17°, et Jupiter sera visible dans son voisinage ; un dernier croissant de lune, illuminé à 6 %, se couchera peu avant 19 h 38 heure locale et ne gênera pas l'obscurité. La nuit sera propice à une courte veille planétaire en début de soirée, avant que les nuages ne referment le ciel.",
+  "theme_tags": [
+    "oiseaux",
+    "parulines",
+    "roitelet",
+    "fraîcheur",
+    "juin",
+    "forêt",
+    "son"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 18.8,
+      "temp_min_c": 11.8,
+      "rain_mm": 2.37,
+      "wind_avg_kmh": 2.8,
+      "wind_gust_max_kmh": 17.28,
+      "pressure_mb": 961,
+      "pressure_trend": "stable",
+      "lightning_count": 5,
+      "note": "Journée sous les normales saisonnières, vent calme du sud, pluie légère, cinq éclairs proches."
+    },
+    "bird_of_the_day": {
+      "common_name": "Roitelet à couronne dorée",
+      "scientific_name": "Regulus satrapa",
+      "observed_at": "2026-06-12T07:16:44-04:00",
+      "confidence": 0.975,
+      "total_species_day": 31,
+      "total_detections_day": 1786
+    },
+    "sky": {
+      "date": "2026-06-13",
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 6,
+      "moon_set_utc": "2026-06-13T23:37:47Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 64
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
