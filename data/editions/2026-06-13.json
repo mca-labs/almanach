@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-06-13",
+  "generated_at": "2026-06-14T08:20:10.822Z",
+  "title": null,
+  "summary": "Journée fraîche avec une pluie légère en matinée et un vent calme du sud — les parulines tiennent le val à bout de chant.",
+  "body_md": "Six millimètres de pluie ont traversé la nuit et le matin, suffisamment pour mouiller les fougères sans alourdir l'air. La température n'a guère dépassé 17 degrés; le vent, calme du sud, n'a fait que frôler les cimes. C'est dans ces conditions tièdes et humides que les chants ont été les plus denses : avant sept heures, les capteurs enregistraient déjà près de cinq cents détections, les parulines se relayant comme si chacune avait son heure assignée.\n\nC'est le moucherolle des aulnes qui retient l'attention ce jour-là — Empidonax alnorum, l'oiseau des berges encombréees et des saulnaies mouillées. Son cri sec, presque nasillard, « fitz-bew », a été capté dès quatre heures du matin, avant même que la lumière soit franche. Il ne chante pas pour être remarqué; il délimite, obstinément, le bout de monde humide qui lui appartient pour la saison.",
+  "sky_narrative": "La nuit du 14 sera largement couverte — plus de quatre-vingts pour cent de nébulosité — et le croissant de lune, réduit à moins de deux pour cent d'illumination, ne changera rien à l'obscurité. Vénus et Jupiter seront présents à l'ouest en début de soirée, mais les nuages rendront leur observation incertaine; ce sera une nuit à écouter plutôt qu'à regarder.",
+  "theme_tags": [
+    "oiseaux",
+    "migration",
+    "pluie",
+    "sous-bois",
+    "parulines",
+    "moucherolle"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 10,
+      "temp_max_c": 17.5,
+      "rain_mm": 6.012976,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_category": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Alder Flycatcher",
+      "taxon_scientific": "Empidonax alnorum",
+      "count": 122,
+      "first_detected": "2026-06-13T04:10:39-04:00",
+      "confidence": 0.9595757126808167
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 1.6,
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 82.7
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il en est qui peuvent vivre sans choses sauvages, et d'autres qui ne le peuvent pas."
+}
