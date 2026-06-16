@@ -33,7 +33,7 @@
     "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:01:04.756Z"
+    "resolved_at": "2026-06-16T09:33:03.313Z"
   },
   "Leiothlypis ruficapilla": {
     "taxon_inat_id": 979753,
@@ -297,7 +297,7 @@
     "license_code": "pd",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:48:50.706Z"
+    "resolved_at": "2026-06-16T09:33:04.199Z"
   },
   "Colaptes auratus": {
     "taxon_inat_id": 18236,
