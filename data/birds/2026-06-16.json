@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-16",
+  "total_detections": 675,
+  "unique_species": 24,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 180,
+      "max_confidence": 0.980461597442627,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-080920.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 106,
+      "max_confidence": 0.987111508846283,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-082210.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 90,
+      "max_confidence": 0.9891123175621033,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-122316.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 67,
+      "max_confidence": 0.991144597530365,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-105658.flac"
+    },
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 65,
+      "max_confidence": 0.9850239753723145,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-095612.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 34,
+      "max_confidence": 0.795473575592041,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-144325.flac"
+    },
+    {
+      "taxon_common": "Magnolia Warbler",
+      "taxon_scientific": "Setophaga magnolia",
+      "count": 20,
+      "max_confidence": 0.9139732122421265,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-133419.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 17,
+      "max_confidence": 0.959338903427124,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-191948.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 17,
+      "max_confidence": 0.9672553539276123,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-112006.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 15,
+      "max_confidence": 0.865152895450592,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-142852.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Cape May Warbler",
+    "taxon_scientific": "Setophaga tigrina",
+    "confidence": 0.9850239753723145,
+    "observed_at": "2026-06-16T05:56:12-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-095612.flac"
+  },
+  "hourly_detections": [
+    0,
+    2,
+    0,
+    7,
+    262,
+    30,
+    128,
+    75,
+    18,
+    38,
+    35,
+    17,
+    4,
+    8,
+    32,
+    10,
+    1,
+    0,
+    1,
+    5,
+    0,
+    2,
+    0,
+    0
+  ]
+}

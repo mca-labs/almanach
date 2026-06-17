@@ -189,7 +189,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:38:59.595Z"
+    "resolved_at": "2026-06-17T09:07:50.878Z"
   },
   "Mniotilta varia": {
     "taxon_inat_id": 10286,
@@ -333,7 +333,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-27T08:10:24.543Z"
+    "resolved_at": "2026-06-17T09:07:50.079Z"
   },
   "Setophaga fusca": {
     "taxon_inat_id": 145237,
@@ -466,5 +466,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-06-09T07:57:39.957Z"
+  },
+  "Setophaga magnolia": {
+    "taxon_inat_id": 145235,
+    "name_fr": "paruline à tête cendrée",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/323550530/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/323550530/square.jpg",
+    "attribution": "(c) Andrew C, some rights reserved (CC BY)",
+    "attribution_name": "Andrew C",
+    "license_code": "cc-by",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-17T09:07:51.981Z"
   }
 }

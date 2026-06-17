@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-06-16",
+  "generated_at": "2026-06-17T09:08:15.641Z",
+  "title": null,
+  "summary": "Journée fraîche au lever puis chaude en après-midi, balayée d'un vent calme du sud — les parulines ont tenu la forêt en éveil.",
+  "body_md": "La nuit avait laissé 7,8 degrés au fond du val, et l'aube s'est levée lentement, le ciel assez dégagé pour que la lumière touche les épinettes avant même que le vent ne se décide. C'est dans cette fenêtre étroite, entre 4 h et 5 h, que le pic de détections a eu lieu — 262 en une heure, comme si la forêt entière reprenait souffle d'un coup. La pression restait plate, le vent calme du sud, rien pour brouiller les voix. La température a ensuite grimpé jusqu'à près de 22 degrés en début d'après-midi, avant de redescendre brusquement vers 14 h.\n\nParmi les 24 espèces relevées aujourd'hui, c'est Setophaga tigrina qui retient l'attention. La paruline tigrée ne fait pas partie des espèces de fond du Val — elle est de passage, en route vers les pessières du nord où elle niche dans la cime des épinettes. Son chant tenu, presque sibilant, s'est fait entendre dès 5 h 56 ce matin. À cette heure, la lumière était encore basse sur le versant nord, et l'air gardait la fraîcheur de la nuit.",
+  "sky_narrative": "Le croissant de lune, illuminé à 6 %, se couchera vers 23 h 17 heure locale, laissant une bonne partie de la nuit sans clarté lunaire. Avec une couverture nuageuse estimée au tiers, Vénus et Jupiter seront visibles à l'ouest en début de soirée — une nuit convenable pour sortir sans frontale le long du pont, si les nuages restent clairsemés.",
+  "theme_tags": [
+    "oiseaux",
+    "parulines",
+    "migration",
+    "aube",
+    "temperature"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 7.8,
+      "temp_max_c": 21.8,
+      "rain_mm": 3.4,
+      "wind_avg_kmh": 2.5,
+      "wind_direction": "S",
+      "pressure_mb": 962.5,
+      "pressure_trend": "flat",
+      "lightning_count": 3
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "observed_at": "2026-06-16T05:56:12-04:00",
+      "confidence": 0.985,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260616-095612.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 6.4,
+      "moon_set_local": "23:17",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 33
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand chercher l'hirondelle, la dent-de-chien quand attendre la grive des bois, et lorsque j'ai trouvé le trille en fleur, je sais que la saison est vraiment ouverte."
+}
