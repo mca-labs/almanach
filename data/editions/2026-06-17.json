@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-06-17",
+  "generated_at": "2026-06-18T08:53:12.566Z",
+  "title": "Le troglodyte tient la forêt",
+  "summary": "Journée franche et chaude sous un vent du sud presque absent — la forêt sonnait à plein.",
+  "body_md": "Le ciel a tenu toute la journée, sec et ouvert, laissant le thermomètre monter jusqu'à 25 degrés en début d'après-midi avant que le vent du sud, calme comme rarement, ne commence à reculer vers le soir. Trois éclairs lointains ont été captés en fin de journée — à une dizaine de kilomètres, sans pluie, sans bruit perceptible ici. La pression reste à plat. Rien ne bouge vraiment, et c'est dans ce calme que la forêt a pu s'exprimer.\n\nLe troglodyte des forêts a dominé la journée sans partage, sa voix en spirale montant du sous-bois dès l'aurore et revenant par intermittences jusqu'au milieu de la matinée. Mais c'est la paruline triste qui a retenu l'attention ce matin — Geothlypis philadelphia, discret habitant des fourrés humides — entendue juste après l'aube, depuis la lisière où la lumière ne pénètre qu'à regret. Elle chante depuis le bas, toujours depuis le bas, comme si le sol lui suffisait.",
+  "sky_narrative": "Le croissant de lune se couchera vers 23 h 41, heure locale, laissant la nuit presque entière avant l'aube. Avec près de la moitié du ciel couverte, l'observation sera inégale, mais Vénus et Jupiter, bien placés à l'ouest en début de soirée, devraient percer les éclaircies sans difficulté.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "sous-bois",
+    "vent-calme",
+    "ete",
+    "paruline"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 25.1,
+      "temp_min_c": 9,
+      "wind_qualifier": "calme",
+      "wind_direction": "du S",
+      "rain_mm": 0,
+      "pressure_category": "normale",
+      "pressure_trend": "flat",
+      "lightning_count": 3,
+      "lightning_avg_distance_km": 10.6
+    },
+    "bird_of_the_day": {
+      "common": "Paruline triste",
+      "scientific": "Geothlypis philadelphia",
+      "observed_at": "2026-06-17T06:51:24-04:00",
+      "total_detections": 696,
+      "unique_species": 22
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 13.3,
+      "moon_set_utc": "2026-06-19T03:41:19Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 44
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
