@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-06-18",
+  "generated_at": "2026-06-19T09:10:22.651Z",
+  "title": null,
+  "summary": "Journée froide et pluvieuse au Val — 33 millimètres sont tombés sous un ciel presque sans lumière.",
+  "body_md": "La pluie a commencé avant l'aube et n'a guère lâché. Le baromètre descendait, le vent soufflait de l'est à peine assez fort pour faire trembler les aiguilles, et la lumière ne s'est jamais vraiment établie — le pic d'ensoleillement, vers neuf heures, n'a pas suffi à percer la couche basse. La température a plafonné à quinze degrés, six ou sept sous la normale de juin. Une journée à rester sous le couvert, à écouter l'eau travailler dans la forêt.\n\nPourtant les oiseaux ont chanté. Avant le lever du jour, les détections s'accumulaient déjà — troglodytes, bruants, parulines — et c'est une Setophaga pensylvanica qui a retenu l'attention le matin, sa phrase répétée depuis les fougères du versant. Elle est caractéristique des lisières humides comme celle-ci, et la pluie ne l'avait pas silencée. Vers dix heures, tout s'est tu d'un coup, comme si le Val avait tiré un rideau. Le reste de la journée n'a plus appartenu qu'à l'eau.",
+  "sky_narrative": "La couverture nuageuse sera totale cette nuit — aucune éclaircie n'est attendue. Le croissant de lune, à peine éclairé au quart, et Vénus et Jupiter, pourtant bien placés à l'ouest en début de nuit, resteront invisibles derrière les nuages ; ce sera une nuit noire et fermée, propice à écouter la pluie plutôt qu'à lever les yeux.",
+  "theme_tags": [
+    "pluie",
+    "froid",
+    "sous-bois",
+    "paruline",
+    "aube"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 15.1,
+      "temp_min_c": 7.7,
+      "rain_mm": 32.957773,
+      "wind_direction": "de l'E",
+      "wind_qualifier": "calme",
+      "pressure_category": "basse",
+      "pressure_trend": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Chestnut-sided Warbler",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "confidence": 0.8284042477607727,
+      "observed_at": "2026-06-18T05:13:23-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260618-091323.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 22,
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 100
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}

@@ -110,14 +110,14 @@
   "Corvus brachyrhynchos": {
     "taxon_inat_id": 8021,
     "name_fr": "corneille d'Amérique",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/24115/medium.jpg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/24115/square.jpg",
-    "attribution": "(c) Joe McKenna, some rights reserved (CC BY-NC)",
-    "attribution_name": "Joe McKenna",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4661023/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4661023/square.jpg",
+    "attribution": "(c) Jacob McGinnis, some rights reserved (CC BY-NC)",
+    "attribution_name": "Jacob McGinnis",
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:01:13.556Z"
+    "resolved_at": "2026-06-19T09:10:02.134Z"
   },
   "Vireo solitarius": {
     "taxon_inat_id": 17402,
