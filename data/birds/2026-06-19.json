@@ -1,0 +1,82 @@
+{
+  "date": "2026-06-19",
+  "total_detections": 209,
+  "unique_species": 6,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 159,
+      "max_confidence": 0.973553478717804,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-082219.flac"
+    },
+    {
+      "taxon_common": "Mourning Warbler",
+      "taxon_scientific": "Geothlypis philadelphia",
+      "count": 33,
+      "max_confidence": 0.9886319041252136,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-134201.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 8,
+      "max_confidence": 0.7674981355667114,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-083348.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 5,
+      "max_confidence": 0.9201926589012146,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-112047.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 3,
+      "max_confidence": 0.9024394750595093,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-084238.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 1,
+      "max_confidence": 0.9324433207511902,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-121606.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.7674981355667114,
+    "observed_at": "2026-06-19T04:33:52-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-083348.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    167,
+    0,
+    3,
+    2,
+    4,
+    21,
+    9,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-06-19",
+  "generated_at": "2026-06-20T07:56:01.236Z",
+  "title": "Le bruant qui reste",
+  "summary": "Journée fraîche et grise, bien en-dessous des normales — la pluie de la semaine s'attarde dans les sols.",
+  "body_md": "Le thermomètre n'a pas dépassé 14,6 degrés, soit près de cinq degrés sous les normales de mi-juin. La pluie ne tombait plus, mais les 57 millimètres de la semaine pesaient encore sur la mousse et sur l'air. Vent de l'est, presque inexistant. La lumière est restée diffuse toute la journée, avec un pic timide à 54 000 lux en milieu d'après-midi — suffisant pour lire dehors, pas suffisant pour oublier que c'est juin.\n\nLa presque totalité des détections du matin appartenait à un seul oiseau : le bruant familier, Spizella passerina, dont le trille sec a rempli le Val dès avant l'aube. Parmi lui, discret, un junco ardoisé, Junco hyemalis, repéré peu après quatre heures trente. Le junco niche parfois sur les versants froids du Val, mais à cette saison sa présence conserve quelque chose d'inhabituel — comme un voisin qu'on croyait reparti et qu'on retrouve à la même table, sans explication.",
+  "sky_narrative": "La nuit du 20 juin s'ouvrira sous un ciel presque entièrement couvert — 95 % de nuages selon les prévisions — ce qui laissera peu de place à Vénus et à Jupiter, pourtant bien placés à l'ouest en début de soirée. Le croissant de lune se couchera tôt, vers minuit heure locale, mais les nuages refermeront le ciel bien avant : une nuit à rester à l'intérieur, à écouter si la pluie revient.",
+  "theme_tags": [
+    "oiseaux",
+    "froid",
+    "juin",
+    "bruant",
+    "junco",
+    "nuageux",
+    "pluie"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 14.6,
+      "temp_min_c": 9.8,
+      "rain_mm": 8.414241,
+      "wind_direction": "E",
+      "wind_qualifier": "calme",
+      "pressure_category": "basse",
+      "anomalie": "température ~5 °C sous la normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "observed_at": "2026-06-19T04:33:52-04:00",
+      "confidence": 0.767,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260619-083348.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 32,
+      "moon_set_utc": "2026-06-20T04:00:40Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_pct": 95
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces parmi les plus robustes ou les plus proches de l'homme, comme le bruant chanteur et le merle-bleu, arrivant généralement en mars, tandis que les espèces plus rares et plus brillantes de la forêt ferment la marche en juin."
+}
