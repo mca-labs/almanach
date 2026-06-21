@@ -93,7 +93,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:01:11.361Z"
+    "resolved_at": "2026-06-21T08:39:37.328Z"
   },
   "Setophaga caerulescens": {
     "taxon_inat_id": 199916,
@@ -309,7 +309,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-26T07:58:04.917Z"
+    "resolved_at": "2026-06-21T08:39:36.270Z"
   },
   "Leiothlypis peregrina": {
     "taxon_inat_id": 979756,
@@ -490,5 +490,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-06-20T07:55:38.332Z"
+  },
+  "Melospiza georgiana": {
+    "taxon_inat_id": 9096,
+    "name_fr": "bruant des marais",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/174194997/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/174194997/square.jpg",
+    "attribution": "(c) Ad Konings, some rights reserved (CC BY-NC), uploaded by Ad Konings",
+    "attribution_name": "Ad Konings",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-21T08:39:34.321Z"
   }
 }

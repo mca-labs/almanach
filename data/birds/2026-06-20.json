@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-20",
+  "total_detections": 115,
+  "unique_species": 11,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 68,
+      "max_confidence": 0.929863691329956,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-083158.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 13,
+      "max_confidence": 0.9324764013290405,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-082827.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 12,
+      "max_confidence": 0.9126573801040649,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-130031.flac"
+    },
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 8,
+      "max_confidence": 0.9333067536354065,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-110315.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 8,
+      "max_confidence": 0.8105831742286682,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-085225.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 1,
+      "max_confidence": 0.6609702110290527,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-220438.flac"
+    },
+    {
+      "taxon_common": "Swamp Sparrow",
+      "taxon_scientific": "Melospiza georgiana",
+      "count": 1,
+      "max_confidence": 0.5015113949775696,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-212508.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 1,
+      "max_confidence": 0.5758594274520874,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-201217.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 1,
+      "max_confidence": 0.6760468482971191,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-084846.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 1,
+      "max_confidence": 0.6328414082527161,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-083710.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Black-and-white Warbler",
+    "taxon_scientific": "Mniotilta varia",
+    "confidence": 0.9126573801040649,
+    "observed_at": "2026-06-20T09:00:34-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-130031.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    95,
+    0,
+    3,
+    6,
+    2,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+  ]
+}

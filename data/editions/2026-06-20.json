@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-06-20",
+  "generated_at": "2026-06-21T08:40:02.557Z",
+  "title": "La paruline-zébrée au milieu du jour",
+  "summary": "Journée fraîche avec quelques éclairs en soirée — la forêt reste animée malgré la pression encore basse.",
+  "body_md": "La matinée a commencé sous les 10 degrés, avec un vent presque nul venu du SE et un ciel qui laissait filtrer assez de lumière pour que le sous-bois soit bien éclairé en début d'après-midi. Trois éclairs ont frappé en fin de journée, à portée de voix du Val — le baromètre, à 959 millibars, remontait doucement depuis quelques heures, mais la pression restait basse, sensible dans l'air comme une pression sur les tempes.\n\nC'est la Mniotilta varia qui a retenu l'attention ce matin, peu après neuf heures : la paruline noir et blanc, avec sa façon bien à elle de longer l'écorce des troncs comme si l'arbre était horizontal. Elle ne cherche pas les hauteurs, elle cherche les crevasses. Parmi les 115 détections du jour, le bruant familier dominait largement — 68 fois recensé — mais c'est ce zèbre silencieux des vieilles épinettes qui reste, posé dans la mémoire du Val.",
+  "sky_narrative": "La nuit du solstice s'ouvrira avec un demi-croissant déjà haut — la Lune se couchera vers 4 h 17, laissant un bref intervalle de ciel profond avant l'aube astronomique aux alentours de 5 h 41. Vénus et Jupiter brilleront bas à l'ouest en début de soirée, mais une couverture nuageuse d'environ 60 % risque de les dérober à intervalles réguliers — une nuit passable pour qui sait être patient, peu favorable à l'observation soutenue.",
+  "theme_tags": [
+    "orage",
+    "pression-basse",
+    "paruline",
+    "solstice",
+    "aube"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 9.3,
+      "temp_max_c": 21.3,
+      "rain_mm": 1.68,
+      "wind_direction": "SE",
+      "wind_qualifier": "calme",
+      "pressure_mb": 959.7,
+      "pressure_trend": "up",
+      "lightning_count": 3
+    },
+    "bird_of_the_day": {
+      "common_name": "Paruline noir et blanc",
+      "scientific_name": "Mniotilta varia",
+      "confidence": 0.913,
+      "observed_at": "2026-06-20T09:00:34-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260620-130031.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 42,
+      "moon_set": "2026-06-21T04:17:18Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 60
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-belette",
+  "fragment_translation_fr": null
+}
