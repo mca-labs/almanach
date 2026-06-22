@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-06-21",
+  "generated_at": "2026-06-22T09:53:11.295Z",
+  "title": "Solstice d'été au Val",
+  "summary": "Journée du solstice ponctuée d'un orage bref — le val repose sous une pression qui remonte, vent calme du sud.",
+  "body_md": "C'est le jour le plus long, et il a tenu sa promesse d'intensité : un orage rapide en milieu d'après-midi, onze éclairs comptés à moins d'un kilomètre, puis le ciel s'est repris. Le baromètre est reparti à la hausse. La pluie laissée derrière — 7,5 millimètres — sentait la terre sèche buvant vite, et le vent du sud n'a jamais soufflé assez fort pour faire bouger les fougères au bord du sentier.\n\nLe bruant familier a ouvert la journée avant que la lumière soit franche — 101 détections, ce gazouillis trillé qui ne ressemble à rien d'autre. Mais c'est la paruline parula du nord, Setophaga americana, qui a retenu l'attention : sa phrase montante terminée par une chute brusque, entendue vers dix heures, au moment où les nuages se décidaient. Quinze détections en tout, discrètes — ce n'est pas une espèce qui insiste. La forêt a chanté longtemps ce matin ; à cette heure-ci, elle se tait.",
+  "sky_narrative": "La lune de premier quartier, à 53 % illuminée, se sera couchée vers minuit trente, laissant le ciel s'assombrir franchement pour la deuxième moitié de la nuit. Avec seulement 14 % de couverture nuageuse attendue, Vénus et Jupiter brilleront bas à l'ouest en début de soirée — il vaudra la peine de lever les yeux vers vingt et une heures, avant qu'ils ne plongent sous la ligne des épinettes.",
+  "theme_tags": [
+    "solstice",
+    "orage",
+    "paruline",
+    "bruant",
+    "chant",
+    "ete"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 9.3,
+      "temp_max_c": 21.6,
+      "rain_mm": 7.6,
+      "lightning_count": 11,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 15,
+      "observed_at": "2026-06-21T10:11:30-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260621-141127.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier quartier",
+      "moon_illumination_pct": 52.7,
+      "moon_set_utc": "2026-06-22T04:32:50Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 13.6
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}
