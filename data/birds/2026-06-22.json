@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-22",
+  "total_detections": 626,
+  "unique_species": 20,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 308,
+      "max_confidence": 0.9684611558914185,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-081348.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 140,
+      "max_confidence": 0.9844872355461121,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-221004.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 45,
+      "max_confidence": 0.9585992097854614,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-083120.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 36,
+      "max_confidence": 0.9403507709503174,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-134120.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 25,
+      "max_confidence": 0.9775747656822205,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-090308.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 15,
+      "max_confidence": 0.9158197641372681,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-135416.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 13,
+      "max_confidence": 0.8944283127784729,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-080449.flac"
+    },
+    {
+      "taxon_common": "Bay-breasted Warbler",
+      "taxon_scientific": "Setophaga castanea",
+      "count": 10,
+      "max_confidence": 0.8677151203155518,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-164746.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 10,
+      "max_confidence": 0.9133167862892151,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-112227.flac"
+    },
+    {
+      "taxon_common": "Cape May Warbler",
+      "taxon_scientific": "Setophaga tigrina",
+      "count": 5,
+      "max_confidence": 0.9126079082489014,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-123752.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Chipping Sparrow",
+    "taxon_scientific": "Spizella passerina",
+    "confidence": 0.9684611558914185,
+    "observed_at": "2026-06-22T04:13:48-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-081348.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    348,
+    23,
+    39,
+    42,
+    47,
+    47,
+    9,
+    1,
+    13,
+    5,
+    0,
+    1,
+    7,
+    6,
+    31,
+    2,
+    5,
+    0,
+    0,
+    0
+  ]
+}

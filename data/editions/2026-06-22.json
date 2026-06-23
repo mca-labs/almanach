@@ -1,0 +1,49 @@
+{
+  "entry_date": "2026-06-22",
+  "generated_at": "2026-06-23T07:56:11.913Z",
+  "title": null,
+  "summary": "Une journée fraîche le matin, chaude en après-midi, avec une courte pluie et un éclair proche — le Val retrouve son calme en soirée.",
+  "body_md": "La nuit avait laissé un froid sec sur la vallée, 9 degrés à l'aube, et c'est dans ce calme qu'a commencé le concert. Dès quatre heures du matin, les bruants familiers ont pris le relais des ténèbres — plus de trois cents détections avant que la lumière ne soit vraiment levée. La journée a ensuite grimpé doucement jusqu'à 22 degrés, portée par un vent du SE à peine perceptible, avant qu'un grain rapide ne passe en début de soirée : 5 millimètres, un seul éclair relevé à moins d'un kilomètre, et c'était fini.\n\nL'oiseau de la journée, c'est le bruant familier, Spizella passerina, qui a dominé le Val sans partage. Sa trille mécanique et sèche, répétée à l'identique pendant des minutes entières, est l'un des sons les plus constants de l'été ici — si constant qu'on finit par ne plus l'entendre, comme le bruit de la rivière. Ce matin, il s'est rappelé à l'attention. À ses côtés, la paruline noir et blanc et la paruline de Blackburnian ont tenu bon, vingt espèces au total sur la journée. Puis le silence de l'après-midi, les heures creuses entre midi et seize heures, comme si la forêt retenait son souffle sous la chaleur.",
+  "sky_narrative": "La nuit du 22 au 23 juin sera à moitié voilée — environ la moitié du ciel couverte de nuages — ce qui limitera les observations en ciel profond. La lune gibbeuse croissante, éclairée à 63 %, se couchera tôt dans la nuit, vers 0 h 48 heure locale, laissant la fenêtre libre pour qui voudra tenter l'obscurité ; Vénus et Jupiter resteront visibles en soirée vers l'ouest, assez bas sur l'horizon, avant de disparaître avec les premières heures.",
+  "theme_tags": [
+    "chant",
+    "oiseaux",
+    "pluie",
+    "eclair",
+    "fraicheur",
+    "ete",
+    "aube"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 9.3,
+      "temp_max_c": 22.3,
+      "rain_mm": 5.5,
+      "wind_dir": "SE",
+      "wind_qualifier": "calme",
+      "gust_max_kmh": 24.48,
+      "pressure_mb": 970.7,
+      "pressure_trend": "stable",
+      "lightning_count": 1,
+      "lightning_avg_dist_km": 0.55
+    },
+    "bird_of_the_day": {
+      "common": "Bruant familier",
+      "scientific": "Spizella passerina",
+      "count": 308,
+      "confidence": 0.968,
+      "first_detected": "2026-06-22T04:13:48-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260622-081348.flac"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 63,
+      "moon_set_utc": "2026-06-23T04:48:34Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 51
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-4",
+  "fragment_translation_fr": "Le temps n'est que le ruisseau où je vais à la pêche. J'y bois ; mais pendant que je bois, je vois le fond sableux et mesure combien il est peu profond. Son mince courant s'écoule, mais l'éternité demeure."
+}
