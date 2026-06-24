@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-06-23",
+  "generated_at": "2026-06-24T07:51:33.816Z",
+  "title": null,
+  "summary": "Une journée fraîche avec une trouée de chaleur en milieu d'après-midi — la pluie du matin a tout trempé avant de laisser place au vent du sud.",
+  "body_md": "Quinze millimètres sont tombés dans la nuit et le matin, bien en dessous des normales de chaleur pour la saison — l'écart entre ce que le calendrier promet et ce que le Val a livré s'est creusé toute la journée. Le vent du sud est resté presque inexistant, à peine un souffle, sauf en milieu d'après-midi où une rafale à 32 km/h a secoué le haut des épinettes. La pression tenait bon, plate, sans intention.\n\nLe vireo à tête bleue, Vireo solitarius, s'est signalé dès le matin — une phrase musicale répétée, posée, celle d'un oiseau qui ne cherche pas à convaincre mais simplement à occuper son territoire dans les feuillus du versant. Il chantait encore vers midi, pendant que les parulines à flancs marron, Setophaga pensylvanica, s'agitaient plus bas dans le sous-bois. Le bruant familier dominait le compteur à lui seul, 289 détections, mais c'est la voix du vireo qui a tenu la journée ensemble — mesurée, claire, sans excès.",
+  "sky_narrative": "La nuit qui s'ouvre sera dégagée à près de 90 %, avec une lune gibbeuse à 72 % d'illumination qui se couchera vers 1 h du matin, heure locale — assez longtemps pour gêner le ciel profond en début de soirée. Vénus brillera à l'ouest dès la tombée du crépuscule civil, Jupiter non loin à sa gauche ; ensemble, ils vaudront le coup d'œil depuis le pont, avant que la forêt ne les avale sous l'horizon.",
+  "theme_tags": [
+    "pluie",
+    "oiseaux-chanteurs",
+    "vireo",
+    "parulines",
+    "vent-du-sud",
+    "fraicheur"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 21.7,
+      "temp_min_c": 10.2,
+      "rain_mm": 15.44,
+      "wind_gust_kmh": 32.76,
+      "wind_direction": "S",
+      "pressure_mb": 966.7,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 29,
+      "confidence": 0.9557383060455322,
+      "observed_at": "2026-06-23T08:28:00-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260623-122800.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 71.9,
+      "moon_set_utc": "2026-06-24T05:05:46.446Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 12.3
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je souhaitais vivre délibérément, n'affronter que les faits essentiels de la vie, et voir si je ne pouvais apprendre ce qu'elle avait à m'enseigner — et non découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
