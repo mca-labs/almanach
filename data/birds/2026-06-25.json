@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-25",
+  "total_detections": 288,
+  "unique_species": 15,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 94,
+      "max_confidence": 0.9706070423126221,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-081454.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 76,
+      "max_confidence": 0.98708575963974,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-083612.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 50,
+      "max_confidence": 0.9382232427597046,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-202754.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 17,
+      "max_confidence": 0.9723195433616638,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-001728.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 16,
+      "max_confidence": 0.9535470604896545,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-113452.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 15,
+      "max_confidence": 0.8540328741073608,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-120456.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 6,
+      "max_confidence": 0.8571102023124695,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-134742.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 4,
+      "max_confidence": 0.9100927710533142,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-162520.flac"
+    },
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 3,
+      "max_confidence": 0.7289324402809143,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-095721.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 2,
+      "max_confidence": 0.6581750512123108,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-122952.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Winter Wren",
+    "taxon_scientific": "Troglodytes hiemalis",
+    "confidence": 0.98708575963974,
+    "observed_at": "2026-06-25T04:36:16-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260625-083612.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    8,
+    164,
+    5,
+    0,
+    8,
+    18,
+    1,
+    4,
+    10,
+    3,
+    2,
+    0,
+    1,
+    45,
+    0,
+    3,
+    9,
+    7,
+    0,
+    0,
+    0
+  ]
+}
