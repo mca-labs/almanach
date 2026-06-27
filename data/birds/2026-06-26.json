@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-26",
+  "total_detections": 252,
+  "unique_species": 17,
+  "top_species": [
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 98,
+      "max_confidence": 0.8987345099449158,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-140603.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 48,
+      "max_confidence": 0.9876140356063843,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-135022.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 41,
+      "max_confidence": 0.9228093028068542,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-082910.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 17,
+      "max_confidence": 0.8010128140449524,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-081041.flac"
+    },
+    {
+      "taxon_common": "Chestnut-sided Warbler",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "count": 13,
+      "max_confidence": 0.7036051154136658,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-142207.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 7,
+      "max_confidence": 0.9190353155136108,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-120526.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 7,
+      "max_confidence": 0.8065693974494934,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-132129.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 7,
+      "max_confidence": 0.8737801313400269,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-125915.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 3,
+      "max_confidence": 0.6960856914520264,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-095812.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 2,
+      "max_confidence": 0.6874260902404785,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-100038.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Cedar Waxwing",
+    "taxon_scientific": "Bombycilla cedrorum",
+    "confidence": 0.9876140356063843,
+    "observed_at": "2026-06-26T09:50:22-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-135022.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    82,
+    41,
+    3,
+    7,
+    14,
+    61,
+    28,
+    4,
+    0,
+    5,
+    2,
+    0,
+    0,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-06-26",
+  "generated_at": "2026-06-27T07:24:08.557Z",
+  "title": "Le vireo et le jaseur",
+  "summary": "Journée fraîche et calme sous un ciel voilé — la forêt reste en voix malgré le froid qui s'attarde.",
+  "body_md": "La nuit dernière a laissé de l'orage dans l'air — huit éclairs à moins d'un kilomètre hier, et ce matin la pression continuait de glisser vers le bas, lentement, comme une marée qu'on ne voit pas mais qu'on sent sous les pieds. Le thermomètre a tenu sous 10 degrés jusqu'à l'aube, cinq ou six degrés sous la normale pour un 26 juin. Un vent du nord-est à peine perceptible, presque immobile. La lumière est restée feutrée toute la matinée, le pic de luminosité atteint à peine en début d'après-midi.\n\nC'est dans ce froid tranquille que le jaseur des cèdres s'est imposé. Bombycilla cedrorum n'est pas discret — son sifflement ténu, haut et continu, traverse la canopée sans s'accrocher à rien, comme un fil tendu entre les épinettes. Quarante-huit détections au cours de la journée, et cette certitude qui s'installe : les bandes de jaseurs travaillent les bordures, là où les sorbiers commencent à noircir. Le vireo à tête bleue, Vireo solitarius, a dominé les compteurs depuis l'aube — 98 détections, première lumière jusqu'au milieu de l'après-midi — mais c'est le jaseur qui a donné sa couleur au jour.",
+  "sky_narrative": "La nuit sera couverte aux trois quarts, et la lune gibbeuse — éclairée à plus de 90 % — ne se lèvera qu'en fin de nuit, vers 19 h 25 HAE, après que Vénus et Jupiter auront déjà glissé vers l'horizon nord-ouest. Le ciel ne se prêtera pas à l'observation du ciel profond ; mieux vaut s'en tenir à une marche courte sous les nuages, attentif aux bruits de sous-bois.",
+  "theme_tags": [
+    "oiseaux",
+    "froid",
+    "ete",
+    "calme",
+    "sous-bois"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 9.7,
+      "temp_max_c": 15.1,
+      "rain_mm": 0.76,
+      "wind_direction": "NE",
+      "wind_qualifier": "calme",
+      "pressure_mb": 972.3,
+      "pressure_trend": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 48,
+      "confidence": 0.9876,
+      "observed_at": "2026-06-26T09:50:22-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260626-135022.flac"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 92.8,
+      "moon_rise_utc": "2026-06-27T23:25:21Z",
+      "moon_set_utc": "2026-06-27T06:21:57Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 74.7
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
