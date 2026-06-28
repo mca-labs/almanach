@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-06-27",
+  "generated_at": "2026-06-28T07:56:08.492Z",
+  "title": null,
+  "summary": "Journée douce et calme sur le Val, avec une chaleur de milieu d'après-midi qui a cédé tôt en soirée.",
+  "body_md": "Le vent est resté du sud toute la journée, à peine perceptible — 4 ou 5 km/h en moyenne, une rafale à 35 km/h vers 19 h qui n'a duré que le temps d'un passage. La température a grimpé doucement jusqu'à 22 degrés en début d'après-midi, puis elle est redescendue tout aussi proprement, sans brusquerie. Pas de pluie à parler — moins d'un demi-millimètre, une trace. Le baromètre est stable. C'est le genre de journée de fin juin qui ne demande rien, et à qui on ne doit rien non plus.\n\nC'est tôt qu'on a entendu le grimpereau brun, *Certhia americana*, à peine après cinq heures — sa voix fine et descendante sur l'écorce des épinettes, presque confondue avec le silence. Il ne chante pas tant qu'il annonce sa présence, méthodique, spiral après spiral le long des troncs. Plus de deux cents détections ce matin entre quatre et cinq heures : le Val tout entier sonore dans le noir, puis le calme relatif du reste de la journée, avec les jaseurs des cèdres et les gros-becs errants qui ont pris le relais. En fin d'après-midi, le grimpereau était déjà retourné à son silence.",
+  "sky_narrative": "La lune, gibbeuse à près de 97 % d'illumination, se couchera vers 3 h du matin — elle dominera la première partie de la nuit, effaçant les étoiles faibles. Vénus et Jupiter seront visibles en soirée vers l'ouest-nord-ouest, proches de l'horizon ; avec une couverture nuageuse d'environ 44 %, les éclaircies seront là mais brèves — une nuit pour qui sait attendre.",
+  "theme_tags": [
+    "oiseaux",
+    "silence",
+    "vent",
+    "foret",
+    "sous-bois"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 11.8,
+      "temp_max_c": 22,
+      "rain_mm": 0.34,
+      "wind_avg_kmh": 4.9,
+      "wind_gust_max_kmh": 35.28,
+      "pressure_mb": 971.5,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "common": "Brown Creeper",
+      "scientific": "Certhia americana",
+      "detections": 12,
+      "observed_at": "2026-06-27T05:15:39-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 96.8,
+      "moon_set": "2026-06-28T07:02:15.818Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 43.6
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces parmi les plus robustes ou les semi-domestiquées, comme le bruant chanteur et le merle bleu, arrivant généralement en mars, tandis que les oiseaux des bois, plus rares et plus éclatants, ferment la procession en juin."
+}

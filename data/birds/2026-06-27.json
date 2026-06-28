@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-27",
+  "total_detections": 267,
+  "unique_species": 17,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 184,
+      "max_confidence": 0.9811912178993225,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-084006.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 15,
+      "max_confidence": 0.9923895001411438,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-221839.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 12,
+      "max_confidence": 0.8970528841018677,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-123640.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 12,
+      "max_confidence": 0.941425621509552,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-091539.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 10,
+      "max_confidence": 0.8338196873664856,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-133118.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 7,
+      "max_confidence": 0.7683476209640503,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-182029.flac"
+    },
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 7,
+      "max_confidence": 0.927387535572052,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-195433.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 4,
+      "max_confidence": 0.8362077474594116,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-120249.flac"
+    },
+    {
+      "taxon_common": "Common Nighthawk",
+      "taxon_scientific": "Chordeiles minor",
+      "count": 3,
+      "max_confidence": 0.8253452777862549,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-123840.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 3,
+      "max_confidence": 0.6205316781997681,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-085003.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Brown Creeper",
+    "taxon_scientific": "Certhia americana",
+    "confidence": 0.941425621509552,
+    "observed_at": "2026-06-27T05:15:39-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260627-091539.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    169,
+    17,
+    3,
+    5,
+    5,
+    13,
+    4,
+    0,
+    0,
+    14,
+    12,
+    12,
+    1,
+    1,
+    4,
+    2,
+    3,
+    0,
+    0,
+    2
+  ]
+}
