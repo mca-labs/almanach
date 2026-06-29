@@ -49,6 +49,11 @@
   ],
   "done": [
     {
+      "title": "Résilience de la synthèse (suite) : tolérance aux sorties LLM mal formées",
+      "details": "Le run cron du 29 juin a échoué sur un <code>SyntaxError: Bad control character in string literal</code> : Claude avait inclus un retour à la ligne brut dans une string JSON au lieu de la séquence <code>\\n</code>. Le <code>withRetry</code> précédent ne couvrait que les erreurs HTTP (429/529/5xx). Correctifs ajoutés à <code>synthesize.ts</code> : (1) un <code>sanitizeJsonControlChars</code> ré-échappe les caractères de contrôle bruts dans les string literals avant <code>JSON.parse</code> (mini état in-string, attrape la grande majorité des cas en local) ; (2) <code>withRetry</code> couvre désormais aussi les <code>SyntaxError</code> avec un backoff court (5 → 30 s) — un nouvel appel produit une autre génération probabiliste. Filet à deux niveaux : sanitisation locale gratuite, retry pour le résidu.",
+      "finished_at": "2026-06-29"
+    },
+    {
       "title": "Carte du ciel de la nuit",
       "details": "Vignette d'horizon dans la section Éphémérides : crépuscule à l'ouest dessiné sur papier (light mode), avec la silhouette de conifères du Val, la lueur du couchant et les planètes basses positionnées à leurs <strong>azimut/altitude réels</strong> au crépuscule civil (Mars/Saturne sous l'horizon sont exclues) ; calcul via <code>astronomy-engine</code> (offline). Glyphe de phase de lune dessiné sur sa ligne dédiée. Sur mobile : agrandie, centrée, défilement horizontal (même stratégie que le graphique 30 jours).",
       "finished_at": "2026-06-03"
