@@ -357,7 +357,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-28T08:08:34.319Z"
+    "resolved_at": "2026-06-29T15:50:31.821Z"
   },
   "Dryobates villosus": {
     "taxon_inat_id": 1651487,
@@ -514,5 +514,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-06-28T07:55:45.005Z"
+  },
+  "Catharus ustulatus": {
+    "taxon_inat_id": 12878,
+    "name_fr": "Grive à dos olive",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/194570525/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/194570525/square.jpg",
+    "attribution": "(c) Jing-Yi Lu, some rights reserved (CC BY-NC), uploaded by Jing-Yi Lu",
+    "attribution_name": "Jing-Yi Lu",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-06-29T15:50:30.979Z"
   }
 }

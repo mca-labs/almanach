@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-06-28",
+  "generated_at": "2026-06-29T15:50:54.373Z",
+  "title": "L'orage qui s'est tenu à distance",
+  "summary": "Journée chaude et calme après une nuit orageuse — 52 éclairs ont traversé le Val, mais le soleil a repris le dessus.",
+  "body_md": "La matinée a été la plus active : entre quatre et cinq heures, 177 détections d'un coup, comme si la forêt entière chantait dans le noir avant que l'orage arrive. Le vent du sud est resté sage — 2,8 km/h en moyenne, une rafale à peine à 19 km/h vers huit heures — et la chaleur a monté sans forcer, jusqu'à 25,3 °C en début d'après-midi. Cinquante-deux éclairs ont été enregistrés dans la journée, à moins de quatre kilomètres en moyenne. Ils sont passés sans laisser de pluie.\n\nC'est la grive de Swainson qui retient l'attention ce soir. Catharus ustulatus a été entendue treize fois au cours de la journée, dont une détection juste avant minuit — cette spirale montante, précise comme une vis, qui monte puis disparaît dans le feuillage. Elle niche ici, dans l'épinette dense du versant nord, et ses chants nocturnes font partie du Val depuis juin. On ne s'y habitue pas tout à fait.",
+  "sky_narrative": "La lune, à 99 % de sa pleine face, se couchera vers 3 h 52 heure locale et aura dominé le ciel une bonne partie de la nuit. Avec 42 % de couverture nuageuse, quelques fenêtres dégagées permettront peut-être d'apercevoir Vénus à l'ouest en début de soirée et Jupiter non loin d'elle, bas sur l'horizon — mais la lumière lunaire écrasera tout ciel profond ; cette nuit se prête davantage à marcher dehors qu'à observer les étoiles.",
+  "theme_tags": [
+    "orage",
+    "grive",
+    "chaleur",
+    "chant-nocturne",
+    "forêt",
+    "été"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 25.3,
+      "temp_min_c": 9.8,
+      "rain_mm": 0,
+      "wind_avg_kmh": 2.79,
+      "wind_gust_max_kmh": 19.44,
+      "pressure_mb": 972,
+      "pressure_trend": "flat",
+      "lightning_count": 52,
+      "lightning_avg_dist_km": 3.46
+    },
+    "bird_of_the_day": {
+      "common": "Grive de Swainson",
+      "scientific": "Catharus ustulatus",
+      "count": 13,
+      "confidence": 0.867,
+      "observed_at": "2026-06-28T20:47:40-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 99.2,
+      "moon_set_utc": "2026-06-29T07:52:40Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 42
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du Monde."
+}

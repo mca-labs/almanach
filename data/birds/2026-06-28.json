@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-28",
+  "total_detections": 298,
+  "unique_species": 14,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 232,
+      "max_confidence": 0.9886733889579773,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-081932.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 16,
+      "max_confidence": 0.945440411567688,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-123641.flac"
+    },
+    {
+      "taxon_common": "Swainson's Thrush",
+      "taxon_scientific": "Catharus ustulatus",
+      "count": 13,
+      "max_confidence": 0.8668593168258667,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260629-004737.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 7,
+      "max_confidence": 0.860292911529541,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-100717.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 6,
+      "max_confidence": 0.9394217729568481,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-083025.flac"
+    },
+    {
+      "taxon_common": "Black-throated Green Warbler",
+      "taxon_scientific": "Setophaga virens",
+      "count": 4,
+      "max_confidence": 0.8655831813812256,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-152803.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 4,
+      "max_confidence": 0.8487160801887512,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-132051.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 3,
+      "max_confidence": 0.7046186923980713,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-225554.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 3,
+      "max_confidence": 0.5935914516448975,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-083829.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 3,
+      "max_confidence": 0.9959794282913208,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260628-141644.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Swainson's Thrush",
+    "taxon_scientific": "Catharus ustulatus",
+    "confidence": 0.8668593168258667,
+    "observed_at": "2026-06-28T20:47:40-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260629-004737.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    177,
+    3,
+    11,
+    4,
+    6,
+    3,
+    6,
+    5,
+    5,
+    1,
+    0,
+    1,
+    3,
+    0,
+    50,
+    1,
+    18,
+    3,
+    0,
+    1
+  ]
+}
