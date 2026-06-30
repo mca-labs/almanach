@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-06-29",
+  "generated_at": "2026-06-30T07:59:17.880Z",
+  "title": null,
+  "summary": "Journée chaude et calme au Val — le mercure a grimpé jusqu'à 28 °C sous un ciel presque sans vent.",
+  "body_md": "La nuit dernière a laissé l'air frais — 8 °C à l'aube — mais dès huit heures le thermomètre montait vite, poussé par un soleil sans entraves et un vent du sud à peine perceptible. Pas une goutte de pluie, une pression stable : c'est la journée d'été que l'on attendait depuis la semaine pluvieuse. Le pic de lumière, vers midi, a frôlé les 104 000 lux ; les ombres courtes sous les épinettes ne cachaient plus grand-chose.\n\nC'est la paruline à flancs marron qui a dominé la journée, devant le bruant familier qui tenait déjà le premier rang depuis des semaines. Elle chantait dès six heures et demie, et encore à mi-journée dans les feuillus du versant — cette voix un peu insistante, montante, qui finit en boucle serrée. Trente et une espèces détectées au total, 712 contacts : le Val était sonore, ce lundi, du pont jusqu'au haut du versant nord.",
+  "sky_narrative": "La pleine lune — à 99,9 % illuminée — se lèvera vers 21 h 42 (heure locale) et dominera la nuit ; elle ne se couchera qu'au petit matin, peu après 4 h 52. Avec près de la moitié du ciel voilée, l'observation du ciel profond sera compromise, mais Vénus brillera bien à l'ouest en début de nuit, et Jupiter sera visible non loin d'elle ; la lumière lunaire suffira largement pour une marche sans frontale sur le sentier du pont.",
+  "theme_tags": [
+    "chaleur",
+    "ete",
+    "chant",
+    "paruline",
+    "pleine-lune"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8.2,
+      "temp_max_c": 28.2,
+      "rain_mm": 0,
+      "wind_qualifier": "calme",
+      "pressure_category": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Paruline à flancs marron",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "count": 97,
+      "first_observed_at": "2026-06-29T06:26:01-04:00"
+    },
+    "sky": {
+      "moon_phase": "Pleine lune",
+      "moon_illumination_pct": 99.9,
+      "moon_set_local": "04:52",
+      "moon_rise_local": "21:42",
+      "notable_planets": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_pct": 46
+    }
+  },
+  "fragment_quote_id": "john-muir-my-8",
+  "fragment_translation_fr": "Et notre premier jour pur de montagne, chaud, calme, sans nuages — combien il semble incommensurable, combien sereinement sauvage !"
+}
