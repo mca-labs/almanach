@@ -1,0 +1,48 @@
+{
+  "entry_date": "2026-06-30",
+  "generated_at": "2026-07-01T08:19:17.463Z",
+  "title": null,
+  "summary": "Journée chaude et calme sur le Val — 28 degrés en après-midi, vent du sud à peine perceptible, pas une goutte de pluie.",
+  "body_md": "La chaleur est arrivée progressivement, comme si elle prenait ses aises : 13 degrés à l'aube, puis une montée lente jusqu'à 28 en milieu d'après-midi, sous un soleil qui n'a pas ménagé ses efforts. Le vent du sud soufflait à peine — une haleine plutôt qu'un souffle — et le baromètre glissait doucement vers le bas, sans urgence. Deux jours après l'orage, l'air gardait encore une qualité particulière, lavée et dense à la fois.\n\nLes bruants familiers ont dominé la journée de bout en bout, 286 détections réparties de l'aube jusqu'au soir — c'est leur forêt autant que la nôtre, en juin. Le troglodyte des forêts leur tenait compagnie, roulant sa phrase mécanique et précise depuis le sous-bois humide, fidèle à ses racines sombres. Vers midi, un pic flamboyant s'est manifesté depuis le versant nord. Vingt-deux espèces au total, le Val bien garni pour un dernier jour de juin.",
+  "sky_narrative": "La lune, gibbeuse à 99 %, se couchera en fin de matinée demain et ne se lèvera qu'après 2 h du matin — une fenêtre d'obscurité relative s'ouvrira donc en début de nuit, mais la couverture nuageuse prévue à 53 % risque de la refermer à moitié. Vénus et Jupiter seront visibles en soirée vers l'ouest, si les nuages le permettent ; ce sera une nuit à regarder par intermittence, entre deux éclaircies.",
+  "theme_tags": [
+    "chaleur",
+    "oiseaux",
+    "bruant",
+    "troglodyte",
+    "pic",
+    "calme",
+    "fin-de-juin"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 28.1,
+      "temp_min_c": 13.1,
+      "rain_mm": 0,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_mb": 965.6,
+      "pressure_trend": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 286,
+      "confidence": 0.9795997142791748,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260630-081117.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 98.7,
+      "moon_set": "2026-07-01T09:58:44.574Z",
+      "moon_rise": "2026-07-02T02:10:14.589Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 53.3
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y en a qui peuvent vivre sans les choses sauvages, et d'autres qui ne le peuvent pas."
+}
