@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-01",
+  "total_detections": 632,
+  "unique_species": 21,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 269,
+      "max_confidence": 0.8812047839164734,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-204502.flac"
+    },
+    {
+      "taxon_common": "Chestnut-sided Warbler",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "count": 144,
+      "max_confidence": 0.9345061779022217,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-093214.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 64,
+      "max_confidence": 0.9856885671615601,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-083616.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 58,
+      "max_confidence": 0.9563851356506348,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-095300.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 15,
+      "max_confidence": 0.968505322933197,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-132954.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 12,
+      "max_confidence": 0.8069608211517334,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-094517.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 12,
+      "max_confidence": 0.8250404000282288,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-135828.flac"
+    },
+    {
+      "taxon_common": "Common Nighthawk",
+      "taxon_scientific": "Chordeiles minor",
+      "count": 12,
+      "max_confidence": 0.8771932721138,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-085544.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 11,
+      "max_confidence": 0.8659312129020691,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-085933.flac"
+    },
+    {
+      "taxon_common": "Yellow-bellied Sapsucker",
+      "taxon_scientific": "Sphyrapicus varius",
+      "count": 8,
+      "max_confidence": 0.9277319312095642,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-103444.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Blackburnian Warbler",
+    "taxon_scientific": "Setophaga fusca",
+    "confidence": 0.9856885671615601,
+    "observed_at": "2026-07-01T04:36:17-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-083616.flac"
+  },
+  "hourly_detections": [
+    0,
+    2,
+    3,
+    1,
+    178,
+    137,
+    98,
+    39,
+    50,
+    31,
+    10,
+    2,
+    0,
+    35,
+    7,
+    0,
+    18,
+    0,
+    1,
+    7,
+    10,
+    2,
+    0,
+    1
+  ]
+}

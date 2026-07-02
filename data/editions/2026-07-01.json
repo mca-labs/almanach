@@ -1,0 +1,50 @@
+{
+  "entry_date": "2026-07-01",
+  "generated_at": "2026-07-02T07:39:05.228Z",
+  "title": "Premier juillet",
+  "summary": "Journée de canicule sèche sur le Val — 33 degrés à l'ombre, vent du SE à peine perceptible, et un seul éclair lointain en fin d'après-midi.",
+  "body_md": "Le thermomètre a grimpé sans hésiter dès le milieu de la matinée, pour atteindre 33 degrés peu après quatorze heures. Pas un nuage, pas de vent qui tienne — les rafales les plus fortes n'ont pas dépassé 16 kilomètres-heure, et encore, tôt le matin seulement. Le Val tenait debout dans cette chaleur comme une forge à ciel ouvert, l'air immobile pesant sur la canopée, la lumière à son pic d'intensité. Pas de pluie depuis des jours. Un seul éclair a été capté en fin de journée, à moins d'un kilomètre — un avertissement discret, sans suite.\n\nC'est dans cette fournaise que Setophaga fusca s'est signalée avant l'aube, sa voix montant des épinettes comme une fine aiguille de son. La paruline de Blackburnian chante haut, très haut dans les conifères, là où peu d'observateurs la voient vraiment — c'est presque toujours le cri d'abord, ce sifflement aigu qui force l'oreille vers les cimes. Soixante-quatre détections sur la journée, ce qui en dit long sur sa présence active dans la forêt malgré la chaleur. Autour d'elle, le bruant familier tenait le plancher avec ses 269 passages enregistrés, métronome de juillet qui ne se soucie pas du thermomètre.",
+  "sky_narrative": "La lune gibbeuse, éclairée à près de 96 %, se sera couchée en matinée et ne se lèvera qu'après deux heures du matin — la nuit s'ouvrira donc sur quelques heures de ciel relativement sombre, si les nuages, présents à environ 44 %, laissent des trouées. Vénus brillera à l'ouest en début de soirée, bien campée à 14 degrés d'altitude ; Jupiter lui fera compagnie près de l'horizon, à peine au-dessus des arbres. Une nuit à demi voilée, tiède après une journée de canicule : ni vraiment propice à l'observation du ciel profond, ni tout à fait fermée.",
+  "theme_tags": [
+    "canicule",
+    "chaleur",
+    "paruline",
+    "chant",
+    "oiseau-du-jour",
+    "ciel-estival",
+    "vent-calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 33.7,
+      "temp_min_c": 15.4,
+      "rain_mm": 0,
+      "wind_label": "calme",
+      "wind_direction": "du SE",
+      "gust_max_kmh": 16.2,
+      "pressure_mb": 962,
+      "pressure_trend": "stable",
+      "lightning_count": 1,
+      "lightning_distance_km": 0.96
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Paruline de Blackburnian",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 64,
+      "confidence": 0.9857,
+      "observed_at": "2026-07-01T04:36:17-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260701-083616.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 95.7,
+      "moon_set_utc": "2026-07-02T11:08:20Z",
+      "moon_rise_utc": "2026-07-03T02:32:38Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 44
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, n'affronter que les faits essentiels de la vie, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — et non pas, au moment de mourir, découvrir que je n'avais pas vécu."
+}
