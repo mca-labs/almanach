@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-07-02",
+  "generated_at": "2026-07-03T07:31:50.666Z",
+  "title": null,
+  "summary": "Une journée lourde et sèche sur le Val — la chaleur a tenu bon jusqu'au soir, sans un souffle venu troubler l'air.",
+  "body_md": "Le thermomètre a atteint 31,8 °C en milieu d'après-midi, et le vent — du sud, à peine — n'a jamais dépassé un calme de fond. Pas une goutte de pluie pour la deuxième fois depuis lundi. Le ciel s'est ouvert tôt, la lumière a tenu dure et blanche jusqu'au milieu du jour, avant de mollir vers cinq heures dans une teinte plus cuivrée. Par ces chaleurs immobiles, la forêt a ses propres réponses : elle se tait, ou presque, quand le soleil est au plus haut.\n\nL'activité sonore avait beau s'être concentrée à l'aube — 83 détections dans la seule quatrième heure —, c'est le junco ardoisé, Junco hyemalis, qui a retenu l'oreille aujourd'hui. Oiseau des sous-bois frais, il était là avant même que la lumière ne soit vraiment lumière, sa voix posée comme un point fixe dans le silence de 3 h 57. En pleine canicule de juillet, le trouver aussi fidèle à son horaire a quelque chose de têtu, presque de rassurant. La pie-grièche du froid qui ne part pas.",
+  "sky_narrative": "La lune gibbeuse, éclairée à 91 %, se couchera avant l'aube vers 8 h 18 heure locale, ce qui laissera peu de place au ciel profond avant qu'elle ne domine la nuit ; Vénus sera visible en soirée à l'ouest, à 14° de hauteur, et Jupiter l'accompagnera brièvement près de l'horizon. Avec une couverture nuageuse attendue autour de 44 %, la nuit se prêtera davantage à une sortie fraîche sur le pont qu'à une séance d'observation soutenue.",
+  "theme_tags": [
+    "chaleur",
+    "secheresse",
+    "oiseaux",
+    "aube",
+    "ete",
+    "junco"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 31.8,
+      "temp_min_c": 20.6,
+      "rain_mm": 0,
+      "wind_qualifier": "calme",
+      "wind_direction": "du S"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 55,
+      "observed_at": "2026-07-02T03:57:40-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 91,
+      "moon_set_utc": "2026-07-03T12:18:49Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 44
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand chercher l'hirondelle, la violette dentée quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est vraiment commencée."
+}

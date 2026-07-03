@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-02",
+  "total_detections": 439,
+  "unique_species": 28,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 211,
+      "max_confidence": 0.9599202871322632,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-224556.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 55,
+      "max_confidence": 0.8396839499473572,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-075737.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 28,
+      "max_confidence": 0.9452749490737915,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-104654.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 23,
+      "max_confidence": 0.9464927315711975,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-114323.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 17,
+      "max_confidence": 0.9911758899688721,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-203721.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 15,
+      "max_confidence": 0.8261638879776001,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-163839.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 14,
+      "max_confidence": 0.9187624454498291,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-083917.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 13,
+      "max_confidence": 0.9904442429542542,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-132907.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 11,
+      "max_confidence": 0.8378709554672241,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260703-001945.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 11,
+      "max_confidence": 0.7486650347709656,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-120350.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.8396839499473572,
+    "observed_at": "2026-07-02T03:57:40-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260702-075737.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    6,
+    83,
+    56,
+    52,
+    57,
+    23,
+    13,
+    15,
+    0,
+    29,
+    2,
+    9,
+    1,
+    21,
+    6,
+    26,
+    19,
+    16,
+    5,
+    0,
+    0
+  ]
+}
