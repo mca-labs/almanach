@@ -1,0 +1,48 @@
+{
+  "entry_date": "2026-07-03",
+  "generated_at": "2026-07-04T06:55:13.293Z",
+  "title": "La chaleur, le paruline à poitrine baie, et un ciel presque nu",
+  "summary": "Journée de pleine chaleur estivale sur le Val — l'air du sud a poussé le thermomètre jusqu'à 31 degrés, et la forêt a tenu le chant malgré tout.",
+  "body_md": "Le vent soufflait du sud, calme, presque inexistant — 3,6 km/h en moyenne — et c'est lui qui a porté la chaleur jusqu'ici. Trente et un degrés en après-midi : c'est l'été plein, sans nuance. Une légère pluie en matinée, moins de deux millimètres, a mouillé la mousse sans vraiment rafraîchir quoi que ce soit. Le baromètre est resté stable, la pression normale, et la lumière a été vive par intermittence — 97 000 lux au pic de 13 h, avec des passages nuageux qui brouillaient l'éclat sans l'éteindre.\n\nParmi les 23 espèces entendues aujourd'hui, c'est la paruline à poitrine baie — Setophaga castanea — qui a retenu l'attention. Détectée pour la première fois peu après quatre heures du matin, sa voix a traversé le bruit de fond des bruants familiers et des grimpereaux bruns. Elle niche dans l'épinette dense, là où la chaleur du jour tarde à pénétrer. En plein juillet, sa présence ici est une chose discrète, presque secrète — pas un passage, une installation.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — couverture inférieure à 5 % — et la lune, gibbeuse décroissante à 84 % d'illumination, se sera couchée vers 9 h 30 ce matin ; elle ne se lèvera qu'après 3 h, laissant plusieurs heures d'obscurité franche. Vénus sera visible à l'ouest en début de soirée, à 14 degrés de hauteur, et Jupiter brillera non loin, à peine au-dessus de l'horizon — deux points fixes dans un ciel qui se prêtera bien à l'observation à l'œil nu.",
+  "theme_tags": [
+    "chaleur",
+    "oiseaux",
+    "paruline",
+    "vent-du-sud",
+    "ciel-clair",
+    "ete"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 31.1,
+      "temp_min_c": 17.8,
+      "wind_direction": "S",
+      "wind_avg_kmh": 3.7,
+      "rain_mm": 1.9,
+      "pressure_category": "normale",
+      "pressure_trend": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Paruline à poitrine baie",
+      "taxon_scientific": "Setophaga castanea",
+      "first_detected": "2026-07-03T04:35:50-04:00",
+      "confidence": 0.88,
+      "total_detections": 30,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260703-083546.flac"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 84,
+      "moon_rise": "2026-07-05T03:07:39Z",
+      "moon_set": "2026-07-04T13:29:13Z",
+      "notable_planets": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 4.4
+    }
+  },
+  "fragment_quote_id": "john-muir-my-7",
+  "fragment_translation_fr": "Comme notre sommeil était profond cette nuit dans le cœur de la montagne, sous les arbres et les étoiles, bercés par le grondement solennel des chutes et par tant de petites voix apaisantes, accordées dans un doux murmure de paix !"
+}
