@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-04",
+  "total_detections": 705,
+  "unique_species": 28,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 261,
+      "max_confidence": 0.9633529782295227,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-082418.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 238,
+      "max_confidence": 0.9991046786308289,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-132224.flac"
+    },
+    {
+      "taxon_common": "Chestnut-sided Warbler",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "count": 36,
+      "max_confidence": 0.8156988620758057,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-143208.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 33,
+      "max_confidence": 0.9595947861671448,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-110629.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 21,
+      "max_confidence": 0.9005319476127625,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-115550.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 16,
+      "max_confidence": 0.8328402042388916,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-212144.flac"
+    },
+    {
+      "taxon_common": "Bay-breasted Warbler",
+      "taxon_scientific": "Setophaga castanea",
+      "count": 14,
+      "max_confidence": 0.9559043049812317,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-221012.flac"
+    },
+    {
+      "taxon_common": "Magnolia Warbler",
+      "taxon_scientific": "Setophaga magnolia",
+      "count": 12,
+      "max_confidence": 0.9234439134597778,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-105030.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 10,
+      "max_confidence": 0.9727559089660645,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-083606.flac"
+    },
+    {
+      "taxon_common": "Common Nighthawk",
+      "taxon_scientific": "Chordeiles minor",
+      "count": 8,
+      "max_confidence": 0.8677364587783813,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-084527.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Black-and-white Warbler",
+    "taxon_scientific": "Mniotilta varia",
+    "confidence": 0.9595947861671448,
+    "observed_at": "2026-07-04T07:06:29-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-110629.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    3,
+    228,
+    44,
+    83,
+    53,
+    16,
+    94,
+    45,
+    30,
+    18,
+    10,
+    0,
+    6,
+    6,
+    7,
+    9,
+    0,
+    26,
+    27,
+    0,
+    0
+  ]
+}

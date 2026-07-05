@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-07-04",
+  "generated_at": "2026-07-05T07:34:53.581Z",
+  "title": null,
+  "summary": "Journée chaude et calme sur le Val, le vent du SE à peine perceptible et pas une goutte depuis une semaine.",
+  "body_md": "La chaleur s'est installée doucement, sans forcer : 24 degrés en milieu d'après-midi, un vent du SE si léger qu'on le devinait à peine sur la nuque. Pas de pluie depuis sept jours — le sol garde cette sécheresse de surface qui fait sonner la litière sous le pied. Le baromètre remontait en fin de journée, lentement, comme quelqu'un qui reprend son souffle.\n\nC'est dans ce calme que la paruline noir et blanc a tenu le premier rôle. Sa voix — une strie fine et répétée, presque mécanique — montait le long des troncs dès le matin, fidèle à sa manière de faire : elle grimpe l'écorce comme une sittelle, scrutant les rainures, et chante en travaillant. Vingt-huit espèces se partageaient la forêt aujourd'hui ; elle, on l'entendait sans la chercher.",
+  "sky_narrative": "La lune gibbeuse, illuminée aux trois quarts, se sera couchée en après-midi et ne gênera pas la première partie de nuit — Vénus brillera bas à l'ouest dès la tombée, Jupiter non loin, et avec seulement 18 % de couverture nuageuse, la voûte s'annonce dégagée pour qui voudra sortir sans frontale dans l'obscurité qui s'étire jusqu'à l'aube astronomique.",
+  "theme_tags": [
+    "chaleur",
+    "secheresse",
+    "oiseaux",
+    "paruline",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 24.7,
+      "temp_min_c": 11.3,
+      "rain_mm": 0,
+      "wind_direction": "SE",
+      "wind_qualifier": "calme",
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "observed_at": "2026-07-04T07:06:29-04:00",
+      "confidence": 0.9595947861671448,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260704-110629.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 76.6,
+      "moon_set": "2026-07-05T14:39:44.433Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 18.2
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-11",
+  "fragment_translation_fr": "Une chose est juste lorsqu'elle tend à préserver l'intégrité, la stabilité et la beauté de la communauté biotique. Elle est mauvaise lorsqu'elle tend à faire autrement."
+}
