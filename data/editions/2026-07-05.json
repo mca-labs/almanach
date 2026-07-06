@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-07-05",
+  "generated_at": "2026-07-06T08:39:04.202Z",
+  "title": "Le roitelet et le vent d'est",
+  "summary": "Journée fraîche et lumineuse sous un vent d'est calme — la forêt tenait bon sous les 22 degrés.",
+  "body_md": "L'air venait de l'est ce matin, presque immobile, à peine 4 km/h en moyenne, et il portait cette fraîcheur particulière aux matins de juillet qui ont oublié d'être chauds. Le thermomètre est monté lentement — 8 degrés à l'aube, 22 en milieu d'après-midi — mais la lumière, elle, a été généreuse dès la fin de la matinée. Pas un éclair depuis quatre jours ; le baromètre remontait doucement. Le Val tenait sa journée d'été ordinaire, celle qui ne demande rien.\n\nC'est Regulus satrapa qui a retenu l'attention — le roitelet à couronne dorée, détecté 116 fois à travers la journée, encore là en juillet quand on l'attendrait plus volontiers dans l'épinette de novembre. Sa voix fine, presque sibilante, montait du sous-bois aux heures les plus douces. On en oublie sa petitesse : à peine plus lourd qu'une pièce de monnaie, il traverse pourtant l'hiver boréal sans fléchir. Ce soir, il se taisait dans les branches basses, quelque part entre le sentier et la rivière.",
+  "sky_narrative": "La lune gibbeuse, illuminée à 67 %, se sera couchée en début de soirée — elle disparaîtra à l'ouest vers 11 h 51, heure locale — et la nuit profondera ensuite avec seulement 15 % de couverture nuageuse ; Vénus brillera bas à l'ouest au crépuscule, et Jupiter sera visible dans le même quadrant, assez bas sur l'horizon pour une observation courte mais nette.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "ete",
+    "calme",
+    "lumiere"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8.5,
+      "temp_max_c": 22.5,
+      "wind_direction": "E",
+      "wind_avg_kmh": 4.3,
+      "rain_mm": 0,
+      "pressure_mb": 975.8,
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "common_name_fr": "Roitelet à couronne dorée",
+      "taxon_scientific": "Regulus satrapa",
+      "detections": 116,
+      "confidence": 0.9595264196395874,
+      "observed_at": "2026-07-05T12:10:56-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260705-161053.flac"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 67.3,
+      "moon_set_utc": "2026-07-06T15:51:22Z",
+      "cloud_cover_night_pct": 15.1,
+      "notable_planets": [
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
