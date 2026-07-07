@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-06",
+  "total_detections": 569,
+  "unique_species": 26,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 188,
+      "max_confidence": 0.9813344478607178,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-083007.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 134,
+      "max_confidence": 0.9756909012794495,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-130513.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 42,
+      "max_confidence": 0.8958415389060974,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-100138.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 41,
+      "max_confidence": 0.9784371256828308,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-083127.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 29,
+      "max_confidence": 0.9514725208282471,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-082323.flac"
+    },
+    {
+      "taxon_common": "Chestnut-sided Warbler",
+      "taxon_scientific": "Setophaga pensylvanica",
+      "count": 26,
+      "max_confidence": 0.8267200589179993,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-142427.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 17,
+      "max_confidence": 0.9072000980377197,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-205817.flac"
+    },
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 15,
+      "max_confidence": 0.9564153552055359,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-112235.flac"
+    },
+    {
+      "taxon_common": "Nashville Warbler",
+      "taxon_scientific": "Leiothlypis ruficapilla",
+      "count": 14,
+      "max_confidence": 0.7552725076675415,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-152435.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 13,
+      "max_confidence": 0.7456681132316589,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-173111.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Blue-headed Vireo",
+    "taxon_scientific": "Vireo solitarius",
+    "confidence": 0.9756909012794495,
+    "observed_at": "2026-07-06T09:05:17-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-130513.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    156,
+    15,
+    27,
+    26,
+    34,
+    45,
+    63,
+    36,
+    17,
+    82,
+    2,
+    7,
+    5,
+    31,
+    3,
+    0,
+    20,
+    0,
+    0,
+    0
+  ]
+}

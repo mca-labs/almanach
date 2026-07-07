@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-07-06",
+  "generated_at": "2026-07-07T07:49:54.674Z",
+  "title": "Le vireo et l'air du soir",
+  "summary": "Journée chaude et calme sur le Val — les vireos ont tenu la forêt du matin jusqu'au cœur de l'après-midi.",
+  "body_md": "Le mercure a grimpé sans hâte depuis l'aube froide — 9 degrés au lever, 26 en milieu de journée — porté par un vent du sud à peine perceptible et un soleil qui n'a pas faibli. Pas une goutte depuis cinq jours, la pression haute et plate, l'air sec comme du papier. C'est sous ces conditions que les chants portent le plus loin : la voûte du sous-bois agissait comme une caisse de résonance, et 26 espèces ont été notées au cours de la journée.\n\nC'est le viréo à tête bleue, Vireo solitarius, qui a dominé — 134 détections, une présence soutenue de l'aube jusqu'à la rafale de 13 h. Son chant par phrases courtes et interrogatives, toujours ce même balancement entre deux ou trois notes, revenait d'entre les épinettes comme une question sans urgence. Il niche ici, dans le mélange de feuillus et de conifères du versant ; en juillet, il ne fait pas que passer — il est chez lui.",
+  "sky_narrative": "La lune gibbeuse, illuminée à 57 %, se couchera en début de soirée et laissera le ciel à lui-même pour la deuxième moitié de la nuit ; avec seulement 19 % de couverture nuageuse prévue, les conditions seront bonnes pour observer le ciel profond. Vénus sera visible à l'ouest en début de nuit, et Jupiter rasera l'horizon dans la même direction avant de disparaître ; une marche sans frontale devrait rester possible jusqu'aux premières heures.",
+  "theme_tags": [
+    "oiseaux",
+    "chaleur",
+    "calme",
+    "foret",
+    "ciel",
+    "vie-sauvage"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 9.2,
+      "temp_max_c": 26.2,
+      "rain_mm": 0,
+      "wind_qualifier": "calme",
+      "wind_direction": "du S",
+      "pressure_category": "haute",
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 134,
+      "confidence": 0.9756909012794495,
+      "observed_at": "2026-07-06T09:05:17-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260706-130513.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 57,
+      "moon_set": "2026-07-07T17:05:30.565Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 19.3
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-4",
+  "fragment_translation_fr": "Le temps n'est que le ruisseau où je vais à la pêche. J'y bois ; mais en buvant je vois le fond de sable et je devine combien il est peu profond. Son mince courant s'écoule, mais l'éternité demeure."
+}

@@ -74,14 +74,14 @@
   "Troglodytes hiemalis": {
     "taxon_inat_id": 144883,
     "name_fr": "troglodyte des forêts",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/465933568/medium.jpg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/465933568/square.jpg",
-    "attribution": "(c) andrewdressel, some rights reserved (CC BY-NC)",
-    "attribution_name": "andrewdressel",
-    "license_code": "cc-by-nc",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169226102/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169226102/square.jpeg",
+    "attribution": "no rights reserved, uploaded by Andy Wilson",
+    "attribution_name": "Andy Wilson",
+    "license_code": "cc0",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-15T10:30:43.833Z"
+    "resolved_at": "2026-07-07T07:49:31.070Z"
   },
   "Coccothraustes vespertinus": {
     "taxon_inat_id": 1650411,
@@ -129,7 +129,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-15T10:30:49.352Z"
+    "resolved_at": "2026-07-07T07:49:28.895Z"
   },
   "Spizelloides arborea": {
     "taxon_inat_id": 474210,
@@ -201,7 +201,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-15T10:30:46.043Z"
+    "resolved_at": "2026-07-07T07:49:29.968Z"
   },
   "Melospiza melodia": {
     "taxon_inat_id": 9100,
