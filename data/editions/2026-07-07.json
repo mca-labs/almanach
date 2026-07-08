@@ -1,0 +1,48 @@
+{
+  "entry_date": "2026-07-07",
+  "generated_at": "2026-07-08T06:36:01.864Z",
+  "title": "La chaleur tient, les voix aussi",
+  "summary": "Journée chaude et calme sous un soleil de plein été — les bruants et les parulines ont rempli la forêt de voix dès l'aube.",
+  "body_md": "Le mercure a grimpé tôt, poussé par un vent du sud presque imperceptible — 0,9 mètre par seconde en moyenne, à peine une respiration contre la joue. Passé midi, la cime des épinettes ne bougeait plus. Le ciel s'est tenu ouvert toute la journée, livrant à la station une radiation solaire soutenue et un pic de luminosité autour de midi qui avoisinait les 114 000 lux. Pas une goutte depuis plus d'une semaine, et le baromètre restait plat à 970,8 mb en fin de journée.\n\nLa grande activité s'est produite avant que la chaleur ne s'installe : 229 détections à la quatrième heure du matin, puis une longue décrue au fil des heures. Le bruant familier dominait le registre du Val, chant sec et trillé qu'on prend parfois pour un insecte. Mais c'est la paruline à collier — Setophaga americana — qui retient l'attention aujourd'hui : repérée en milieu d'après-midi, sa spirale ascendante, zézayante, montait depuis le bas du versant comme une question posée au vide.",
+  "sky_narrative": "La lune, au dernier quartier, se couchera à 14 h 23 heure locale avant même que la nuit ne commence, laissant le ciel en état de ciel profond pour la seconde moitié de la nuit ; avec une couverture nuageuse prévue autour de 43 %, les éclaircies permettront d'apercevoir Vénus, bien placée à l'ouest en début de soirée, et Jupiter qui rasera l'horizon dans la même direction avant de disparaître.",
+  "theme_tags": [
+    "chaleur",
+    "oiseaux",
+    "paruline",
+    "calme",
+    "ete",
+    "chant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 10.6,
+      "temp_max_c": 29,
+      "rain_mm": 0,
+      "wind_avg_kmh": 3.3,
+      "wind_gust_max_kmh": 18.36,
+      "wind_direction": "S",
+      "pressure_mb": 970.8,
+      "pressure_trend": "flat",
+      "solar_rad_avg_wm2": 310.96
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "observed_at": "2026-07-07T12:56:04-04:00",
+      "confidence": 0.9124542474746704,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260707-165603.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier quartier",
+      "moon_illumination_pct": 46,
+      "moon_set": "2026-07-08T18:23:27.798Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 43
+    }
+  },
+  "fragment_quote_id": "john-muir-my-8",
+  "fragment_translation_fr": "Et notre premier jour pur de montagne, chaud, calme, sans nuages — comme il semble incommensurable, comme il est sereinement sauvage !"
+}
