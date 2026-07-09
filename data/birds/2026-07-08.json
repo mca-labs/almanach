@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-08",
+  "total_detections": 811,
+  "unique_species": 27,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 270,
+      "max_confidence": 0.9642865061759949,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-082236.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 79,
+      "max_confidence": 0.9711818099021912,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-175923.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 71,
+      "max_confidence": 0.9705590605735779,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-100459.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 61,
+      "max_confidence": 0.9188221096992493,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-132950.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 56,
+      "max_confidence": 0.9688572287559509,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-212119.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 55,
+      "max_confidence": 0.9739075899124146,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-141019.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 34,
+      "max_confidence": 0.9794888496398926,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-223319.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 31,
+      "max_confidence": 0.9381715059280396,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-094424.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 27,
+      "max_confidence": 0.8834870457649231,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-141424.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 23,
+      "max_confidence": 0.784231424331665,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-220903.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Chipping Sparrow",
+    "taxon_scientific": "Spizella passerina",
+    "confidence": 0.9642865061759949,
+    "observed_at": "2026-07-08T04:22:36-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-082236.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    144,
+    80,
+    109,
+    42,
+    62,
+    67,
+    38,
+    60,
+    45,
+    20,
+    0,
+    13,
+    12,
+    24,
+    57,
+    8,
+    12,
+    18,
+    0,
+    0
+  ]
+}

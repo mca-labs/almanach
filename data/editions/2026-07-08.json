@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-07-08",
+  "generated_at": "2026-07-09T07:53:39.417Z",
+  "title": "Le bruant et la chaleur",
+  "summary": "Journée chaude et calme sur le Val — le bruant familier a tenu la vedette du matin au soir.",
+  "body_md": "La chaleur s'est installée dès la mi-matinée, poussée par un vent du sud qui ne soufflait presque pas — les rafales n'ont pas dépassé seize kilomètres à l'heure, et encore, seulement avant l'aube. À midi, le soleil tapait fort sur le versant découvert, 30 degrés au plus chaud de la journée. Pas une goutte de pluie depuis une semaine, et le baromètre stable comme une pierre dans la rivière.\n\nC'est le bruant familier qui a dominé la journée, loin devant tous les autres. Sa trille sèche et mécanique s'est répétée 270 fois dans les données — un chiffre qui dit quelque chose sur la ténacité de la bête, et sur le fait que juillet, ici, lui appartient autant qu'à quiconque. La paruline noir et blanc, le viréo à tête bleue et la paruline à gorge orangée se partageaient le reste du sous-bois, chacun dans son étage, indifférents à la chaleur.",
+  "sky_narrative": "La nuit qui vient sera fermée : la couverture nuageuse frôle le cent pour cent, et ni Vénus ni Jupiter — pourtant notables à cette heure — ne perceront ce plafond. La lune, en dernier croissant, se couchera avant que l'obscurité soit complète ; une nuit à rester à l'intérieur, l'oreille tendue vers ce qu'on n'y verra pas.",
+  "theme_tags": [
+    "oiseaux",
+    "chaleur",
+    "ete",
+    "silence",
+    "bruant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 30.3,
+      "temp_min_c": 16.6,
+      "rain_mm": 0,
+      "wind_avg_kmh": 3,
+      "wind_gust_max_kmh": 16.2,
+      "pressure_mb": 963.6,
+      "pressure_trend": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Bruant familier",
+      "taxon_scientific": "Spizella passerina",
+      "count": 270,
+      "observed_at": "2026-07-08T04:22:36-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260708-082236.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 35,
+      "moon_set": "2026-07-09T19:45:38Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 99
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces parmi les plus robustes ou les plus familières, comme le bruant chanteur et le merlebleu, arrivant généralement en mars, tandis que les oiseaux des bois plus rares et plus éclatants ferment la marche en juin."
+}
