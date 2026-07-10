@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-09",
+  "total_detections": 367,
+  "unique_species": 24,
+  "top_species": [
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 119,
+      "max_confidence": 0.971810519695282,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-125446.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 78,
+      "max_confidence": 0.9907009601593018,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-085722.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 33,
+      "max_confidence": 0.8981645107269287,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-202241.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 28,
+      "max_confidence": 0.9105638861656189,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-102613.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 26,
+      "max_confidence": 0.8170918226242065,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-083955.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 15,
+      "max_confidence": 0.7947570085525513,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-122527.flac"
+    },
+    {
+      "taxon_common": "Magnolia Warbler",
+      "taxon_scientific": "Setophaga magnolia",
+      "count": 14,
+      "max_confidence": 0.9584851264953613,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-115030.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 10,
+      "max_confidence": 0.7659711241722107,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-090134.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 8,
+      "max_confidence": 0.9393641948699951,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-155346.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 7,
+      "max_confidence": 0.7608067989349365,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260710-011228.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Winter Wren",
+    "taxon_scientific": "Troglodytes hiemalis",
+    "confidence": 0.9907009601593018,
+    "observed_at": "2026-07-09T04:57:22-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260709-085722.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    153,
+    40,
+    29,
+    23,
+    50,
+    11,
+    6,
+    7,
+    6,
+    0,
+    5,
+    4,
+    13,
+    2,
+    4,
+    7,
+    3,
+    4,
+    0,
+    0
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entry_date": "2026-07-09",
+  "generated_at": "2026-07-10T07:45:44.236Z",
+  "title": "Le troglodyte avant l'aube",
+  "summary": "Journée chaude et calme sur le Val, le vent à peine sensible depuis le sud — et le troglodyte des forêts en pleine voix dès l'heure bleue.",
+  "body_md": "L'air est remonté doucement depuis la nuit, poussé par un souffle presque inexistant venu du sud. Pas un éclair depuis huit jours, la pression stable, une chaleur raisonnable qui a plafonné à 25 degrés en milieu d'après-midi avant de céder sans brusquerie au soir. C'est ce genre de journée que le Val retient sans faire d'histoires — lumière généreuse, rafales à moins de 17 kilomètres-heure au pire, et 24 espèces enregistrées aux capteurs.\n\nMais c'est le troglodyte des forêts qui a tenu le haut du mois ce matin. Bien avant que la lumière vaille quoi que ce soit — à peine cinq heures du matin — sa voix cascadait depuis le sous-bois, longue, serrée, improbablement puissante pour si petit corps. Setophaga coronata il n'est pas ; il n'a besoin d'aucun lustre migrateur. Il est du Val, il niche quelque part dans les racines ou la pierre couverte de mousse, et il chante comme si la forêt entière lui appartenait. Ce matin, peut-être qu'elle lui appartenait.",
+  "sky_narrative": "La lune, à peine un quart de son disque éclairé, se couchera vers 17 h 10 (heure locale) — la nuit qui s'ouvre sera donc largement sombre. Avec une couverture nuageuse voisine de 40 %, des fenêtres s'ouvriront sur un ciel de juillet : Vénus, brillante à l'ouest, et Jupiter tout près de l'horizon seront les repères les plus nets pour qui lève les yeux avant le coucher.",
+  "theme_tags": [
+    "oiseaux",
+    "chaleur",
+    "calme",
+    "sous-bois",
+    "nuit-claire"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 16.8,
+      "temp_max_c": 25.3,
+      "rain_mm": 0.13,
+      "wind_avg_kmh": 3.6,
+      "wind_gust_max_kmh": 16.92,
+      "wind_direction": "S",
+      "pressure_mb": 962.4,
+      "pressure_trend": "stable",
+      "solar_rad_avg_wm2": 226.5
+    },
+    "bird_of_the_day": {
+      "common_name_fr": "Troglodyte des forêts",
+      "common_name_en": "Winter Wren",
+      "scientific_name": "Troglodytes hiemalis",
+      "detections": 78,
+      "confidence": 0.99,
+      "first_observed_local": "04:57"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 25,
+      "moon_set_utc": "2026-07-10T21:10:05Z",
+      "planets_notable": [
+        "Vénus (alt +13°, mag −4.1)",
+        "Jupiter (alt +0.6°, mag −1.8)"
+      ],
+      "cloud_cover_night_pct": 40
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il en est qui peuvent vivre sans les choses sauvages, et d'autres qui ne le peuvent pas."
+}
