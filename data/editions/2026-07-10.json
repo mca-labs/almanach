@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-07-10",
+  "generated_at": "2026-07-11T06:22:50.565Z",
+  "title": "Jaseurs et vent du sud",
+  "summary": "Journée chaude et calme sous un soleil de juillet — les jaseurs des cèdres ont tenu compagnie au Val jusqu'au soir.",
+  "body_md": "Le vent est resté au sud toute la journée, à peine perceptible, et la chaleur a monté sans hâte jusqu'à presque 25 degrés en début d'après-midi. Pas une goutte depuis des jours — la semaine entière n'a livré qu'un peu plus d'un dixième de millimètre — et la forêt le sait : le sol craque sec sous les pas, les feuilles sont immobiles. L'ensoleillement a été généreux ; le pic de luminosité est tombé en milieu d'après-midi, long et plat, comme si la lumière hésitait à descendre.\n\nC'est vers seize heures que les jaseurs des cèdres ont fait entendre leur sifflement grêle et continu, ce bruissement de soie qui ne ressemble à rien d'autre dans la canopée. Bombycilla cedrorum passe une bonne partie de l'été ici sans qu'on le remarque vraiment — trop haut, trop silencieux entre deux appels — et puis il surgit en groupe au bord du Val, et l'on comprend qu'il était là depuis le début. Vingt-cinq espèces ont été notées aujourd'hui ; le troglodyte des forêts a aussi tenu bon, sa voix en cascade débordant du sous-bois bien avant que la chaleur s'installe.",
+  "sky_narrative": "La nuit sera presque sans lune : le croissant déclinant se couchera vers 18 h 30 heure locale, laissant le ciel entièrement libre jusqu'à l'aube. Avec seulement 15 % de couverture nuageuse prévue, les conditions seront bonnes pour observer le ciel profond ; Vénus sera visible en début de soirée vers l'ouest-nord-ouest, à une quinzaine de degrés au-dessus de l'horizon, avant de descendre à son tour.",
+  "theme_tags": [
+    "chaleur",
+    "secheresse",
+    "oiseaux",
+    "jaseur",
+    "troglodyte",
+    "ete",
+    "ciel-clair"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 24.7,
+      "temp_min_c": 10.3,
+      "rain_mm": 0,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_category": "normale",
+      "pressure_direction": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 31,
+      "observed_at": "2026-07-10T16:22:25-04:00"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 15,
+      "moon_set_utc": "2026-07-11T22:31:04Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 15.6
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois, et lorsque j'ai trouvé le trille en fleur, je sais que la saison est bien commencée."
+}
