@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-11",
+  "total_detections": 483,
+  "unique_species": 23,
+  "top_species": [
+    {
+      "taxon_common": "Swainson's Thrush",
+      "taxon_scientific": "Catharus ustulatus",
+      "count": 93,
+      "max_confidence": 0.9382452964782715,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-185149.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 58,
+      "max_confidence": 0.9161196351051331,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-223406.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 54,
+      "max_confidence": 0.9703430533409119,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-091713.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 51,
+      "max_confidence": 0.8975802063941956,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-140658.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 45,
+      "max_confidence": 0.9180362820625305,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-220511.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 35,
+      "max_confidence": 0.9372225999832153,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-174407.flac"
+    },
+    {
+      "taxon_common": "Blackburnian Warbler",
+      "taxon_scientific": "Setophaga fusca",
+      "count": 23,
+      "max_confidence": 0.9819247722625732,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-103120.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 23,
+      "max_confidence": 0.8401855230331421,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-113622.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 22,
+      "max_confidence": 0.9255845546722412,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-150539.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 19,
+      "max_confidence": 0.9402192831039429,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-111302.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Swainson's Thrush",
+    "taxon_scientific": "Catharus ustulatus",
+    "confidence": 0.9382452964782715,
+    "observed_at": "2026-07-11T14:51:52-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-185149.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    20,
+    65,
+    46,
+    39,
+    13,
+    13,
+    57,
+    31,
+    35,
+    6,
+    58,
+    7,
+    18,
+    19,
+    35,
+    14,
+    7,
+    0,
+    0,
+    0
+  ]
+}

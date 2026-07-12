@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-07-11",
+  "generated_at": "2026-07-12T06:42:45.582Z",
+  "title": "La grive et le vent du sud",
+  "summary": "Journée chaude et calme sous un vent du sud — les grives dominent le Val.",
+  "body_md": "Le vent est resté au sud toute la journée, léger, presque absent par moments, avec des rafales qui n'ont jamais dépassé vingt-trois kilomètres à l'heure. Le soleil a tenu bon jusqu'au milieu de l'après-midi, poussant le thermomètre à 24 degrés avant que la fraîcheur ne revienne en soirée. Pas une goutte de pluie — la semaine en a reçu si peu qu'on ne compte plus. Le baromètre remonte doucement, signe que l'air se stabilise.\n\nC'est la grive à joues grises qui a mené la journée, avec 93 détections réparties de l'aube au soir. Catharus ustulatus n'a pas le chant le plus discret de la forêt — cette spirale montante, serrée sur elle-même, qu'on entend surtout à la brunante — mais c'est elle qui revenait, encore et encore, comme si le Val lui appartenait pour quelques semaines encore avant que la route ne reprenne vers le nord. La grive solitaire a tenu compagnie, plus en retrait, et le troglodyte des forêts a couvert le reste avec l'entêtement qu'on lui connaît.",
+  "sky_narrative": "La nuit du 12 juillet s'ouvrira avec un croissant de lune déclinant — moins de 8 % de sa surface éclairée — qui se couchera avant minuit, laissant quelques heures d'obscurité réelle avant l'aube astronomique. Vénus sera bien placée à l'ouest en début de soirée, brillante et sans équivoque ; Jupiter sera visible lui aussi, bien que bas sur l'horizon. La couverture nuageuse partielle — autour de 44 % — ne fermera pas complètement le ciel, mais il faudra de la patience pour les poses longues.",
+  "theme_tags": [
+    "grives",
+    "chaleur",
+    "vent-sud",
+    "chant",
+    "stabilite"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 24,
+      "temp_min_c": 9.2,
+      "rain_mm": 0,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_category": "normale",
+      "pressure_direction": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Swainson's Thrush",
+      "taxon_scientific": "Catharus ustulatus",
+      "count": 93,
+      "confidence": 0.9382452964782715,
+      "observed_at": "2026-07-11T14:51:52-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260711-185149.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 7.6,
+      "moon_set_utc": "2026-07-12T23:40:37.725Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 44
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre avec intention, ne me confronter qu'aux faits essentiels de la vie, et voir si je ne pouvais apprendre ce qu'elle avait à m'enseigner — pour ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
