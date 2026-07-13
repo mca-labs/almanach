@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-07-12",
+  "generated_at": "2026-07-13T07:31:18.942Z",
+  "title": "Le junco de juillet",
+  "summary": "Journée chaude et calme sur le Val — le soleil a tenu tout le jour, sans une goutte.",
+  "body_md": "L'air a fraîchi jusqu'à 8,7 degrés avant l'aube, puis la chaleur est montée sans hâte, portée par un vent du sud à peine perceptible. Pas de pluie depuis plus d'une semaine, pression en légère baisse — rien d'alarmant, mais le baromètre note ce qu'il voit. Le pic de lumière est arrivé peu avant midi, et les détections d'oiseaux ont suivi la même logique : intenses à l'aube, clairsemées au cœur de la journée, avant un regain en soirée.\n\nC'est un junco ardoisé, Junco hyemalis, qui a retenu l'attention ce matin — une espèce qu'on associe davantage à l'automne ou aux mangeoires enneigées qu'au plein juillet. Il était là quand même, discret parmi les parulines et les troglodytes, comme s'il n'avait pas reçu le calendrier. Le troglodyte des forêts, Troglodytes hiemalis, a lui aussi beaucoup parlé, sa voix en cascade tombant du couvert dense. En juillet, le Val ne se tait pas — il change de registre.",
+  "sky_narrative": "La nuit s'ouvrira sous un ciel partiellement dégagé, avec environ un tiers de couverture nuageuse. Le croissant de lune, illuminé à moins de 3 %, se couchera avant l'aube et ne gênera pas l'obscurité — Vénus brillera à l'ouest en début de nuit, assez basse sur l'horizon, point fixe dans le crépuscule qui s'attarde.",
+  "theme_tags": [
+    "chaleur",
+    "secheresse",
+    "oiseaux-forestiers",
+    "junco",
+    "parulines",
+    "vent-calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8.7,
+      "temp_max_c": 27.1,
+      "rain_mm": 0,
+      "wind_qualifier": "calme",
+      "wind_direction": "du S",
+      "pressure_category": "normale",
+      "pressure_direction": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 15,
+      "observed_at": "2026-07-12T10:38:57-04:00"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 2.5,
+      "moon_set": "2026-07-14T00:34:05.692Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 32.7
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du Monde."
+}
