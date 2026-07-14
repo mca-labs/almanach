@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-07-13",
+  "generated_at": "2026-07-14T06:20:33.693Z",
+  "title": "Le roitelet et le vent du sud",
+  "summary": "Journée chaude et calme sous un ciel changeant — le Val a compté trente et une espèces ce lundi.",
+  "body_md": "Le vent du sud n'a presque pas soufflé de la journée — trois ou quatre kilomètres à l'heure, à peine de quoi faire frissonner les fougères. C'est ce calme-là, joint à une chaleur qui a atteint 26 degrés en début d'après-midi, qui a maintenu les oiseaux actifs dès l'aube : cent quarante-deux détections dans la seule heure qui a suivi quatre heures du matin, avant que la lumière ne s'installe vraiment. Une petite pluie est passée dans la journée, deux millimètres tout au plus, sans bruit et sans éclairs — le dernier orage remonte à douze jours.\n\nC'est le roitelet à couronne dorée, Regulus satrapa, qui a retenu l'attention en fin d'après-midi. L'espèce est là tout l'été, fidèle à l'épinette, mais on l'entend plus souvent qu'on ne la voit : une voix mince et répétée, posée très haut dans les branches. Quarante détections aujourd'hui. Il n'a pas besoin d'être rare pour compter.",
+  "sky_narrative": "La nouvelle lune — illuminée à moins d'un pour cent — se couchera avant l'aube et ne gênera pas l'observation. Avec une couverture nuageuse prévue autour de 28 %, le ciel sera partiellement dégagé : Vénus sera visible à l'ouest en début de nuit, et les heures les plus sombres se prêteront au ciel profond si les nuages s'écartent.",
+  "theme_tags": [
+    "oiseaux",
+    "ete",
+    "calme",
+    "roitelet",
+    "foret",
+    "nuit-claire"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 26.2,
+      "temp_min_c": 14.6,
+      "rain_mm": 2.437828,
+      "wind_direction": "S",
+      "wind_avg_kmh": 3.95,
+      "wind_qualifier": "calme",
+      "pressure_mb": 968.3,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "common_name": "Roitelet à couronne dorée",
+      "scientific_name": "Regulus satrapa",
+      "detections": 40,
+      "confidence": 0.923,
+      "observed_at": "2026-07-13T16:48:51-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260713-204851.flac"
+    },
+    "sky": {
+      "moon_phase": "Nouvelle lune",
+      "moon_illumination_pct": 0.18,
+      "moon_set": "2026-07-15T01:12:52.446Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_pct": 28.2,
+      "propice_a": "étoiles et ciel profond"
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}

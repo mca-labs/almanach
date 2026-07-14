@@ -1,0 +1,116 @@
+{
+  "for_date": "2026-07-14",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-07-14T09:00:20.205Z",
+        "sunset": "2026-07-15T00:35:53.625Z",
+        "sun_set_azimuth": 303.9,
+        "sky_map_ref": "2026-07-15T01:14:36.567Z",
+        "twilight": {
+          "civil_start": "2026-07-14T08:21:28.439Z",
+          "nautical_start": "2026-07-14T07:29:38.693Z",
+          "astronomical_start": "2026-07-14T06:18:39.919Z",
+          "astronomical_end": "2026-07-15T03:16:06.760Z",
+          "nautical_end": "2026-07-15T02:06:07.762Z",
+          "civil_end": "2026-07-15T01:14:36.567Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Nouvelle lune",
+      "detail": {
+        "phase_deg": 356.63557456807854,
+        "illumination_fraction": 0.0017782570785953022,
+        "magnitude": -4.513521532643023,
+        "rise": "2026-07-14T08:48:09.911Z",
+        "set": "2026-07-15T01:12:52.446Z"
+      },
+      "notable": true,
+      "propice_a": "étoiles et ciel profond",
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": 5.361629714335164,
+        "phase_angle": 168.0136889835512,
+        "helio_dist": 0.44430956674328276,
+        "geo_dist": 0.5776827507615896,
+        "az": 312.2,
+        "alt": -11.2
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.17668155057173,
+        "phase_angle": 73.92579958925566,
+        "helio_dist": 0.723890582640945,
+        "geo_dist": 0.9416688002451824,
+        "az": 271.9,
+        "alt": 12.6
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.307121054232037,
+        "phase_angle": 27.1856194130945,
+        "helio_dist": 1.4575089867482807,
+        "geo_dist": 2.0645194915861604,
+        "az": 351.1,
+        "alt": -19.6
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.7880199373424093,
+        "phase_angle": 2.156534409530014,
+        "helio_dist": 5.280791774741895,
+        "geo_dist": 6.273941065602595,
+        "az": 301.8,
+        "alt": -0.6
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.602790780994285,
+        "phase_angle": 6.121185936043294,
+        "helio_dist": 9.458794820219726,
+        "geo_dist": 9.2784282465512,
+        "az": 52.9,
+        "alt": -24.3
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    }
+  ],
+  "cloud_cover_night_pct": 28.22222222222222
+}
