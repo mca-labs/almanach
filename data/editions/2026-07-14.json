@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-07-14",
+  "generated_at": "2026-07-15T06:24:12.372Z",
+  "title": "Le troglodyte tient la forêt",
+  "summary": "Journée douce et calme sur le Val, avec une pluie fine en matinée et le troglodyte des forêts en maître du sous-bois.",
+  "body_md": "La pluie est venue tôt, discrète — cinq millimètres à peine, assez pour mouiller les pierres du sentier et faire taire un moment les insectes. Ensuite le ciel s'est ouvert par degrés, la température a grimpé jusqu'à vingt-six degrés en fin d'après-midi, et le vent du sud n'a presque pas soufflé. Une journée de juillet ordinaire, posée dans son lit comme la rivière en étiage.\n\nC'est le troglodyte des forêts qui a dominé le jour — deux cent onze détections, un chiffre qui dit quelque chose sur l'insistance de cette voix-là. Grinçante, rapide, trop grande pour le corps qui la porte : Troglodytes hiemalis tient le sous-bois humide comme un territoire sans frontières. Plus tard, à la tombée, une grive solitaire a pris le relais. Son chant montait du versant nord, par phrases séparées, chacune suspendue un instant avant que le silence la referme.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — couverture inférieure à deux pour cent — et le jeune croissant de lune se couchera peu après minuit, laissant le ciel entièrement libre jusqu'à l'aube. Vénus sera visible en début de soirée à l'ouest, brillante et basse sur l'horizon ; Jupiter l'accompagnera brièvement avant de disparaître à son tour : une nuit faite pour le ciel profond, sans frontale.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "sous-bois",
+    "pluie",
+    "ete",
+    "silence"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 14,
+      "temp_max_c": 26.6,
+      "rain_mm": 5.3,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_category": "basse",
+      "pressure_trend": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Hermit Thrush",
+      "taxon_common_fr": "Grive solitaire",
+      "taxon_scientific": "Catharus guttatus",
+      "detections": 58,
+      "observed_at": "2026-07-14T20:00:57-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260715-000056.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 0.9,
+      "moon_set": "2026-07-16T01:41:14.472Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 1.3
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}

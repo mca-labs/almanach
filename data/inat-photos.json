@@ -165,7 +165,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:38:37.311Z"
+    "resolved_at": "2026-07-15T06:23:45.961Z"
   },
   "Megaceryle alcyon": {
     "taxon_inat_id": 2548,
@@ -309,7 +309,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-21T08:39:36.270Z"
+    "resolved_at": "2026-07-15T06:23:44.904Z"
   },
   "Leiothlypis peregrina": {
     "taxon_inat_id": 979756,
@@ -538,5 +538,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-07-03T07:31:26.972Z"
+  },
+  "Vireo olivaceus": {
+    "taxon_inat_id": 891704,
+    "name_fr": "Viréo aux yeux rouges",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/272009912/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/272009912/square.jpg",
+    "attribution": "U.S. Fish and Wildlife Service Northeast Region, no known copyright restrictions (public domain)",
+    "attribution_name": "U.S. Fish and Wildlife Service Northeast Region",
+    "license_code": "pd",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-07-15T06:23:48.186Z"
   }
 }

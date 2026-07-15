@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-14",
+  "total_detections": 454,
+  "unique_species": 19,
+  "top_species": [
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 211,
+      "max_confidence": 0.9965804219245911,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-091520.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 58,
+      "max_confidence": 0.9407839179039001,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260715-000056.flac"
+    },
+    {
+      "taxon_common": "Magnolia Warbler",
+      "taxon_scientific": "Setophaga magnolia",
+      "count": 47,
+      "max_confidence": 0.9547669291496277,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-115822.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 39,
+      "max_confidence": 0.9407756924629211,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-123840.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 35,
+      "max_confidence": 0.9893043041229248,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-180432.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 22,
+      "max_confidence": 0.9079781770706177,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-143003.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 12,
+      "max_confidence": 0.9026742577552795,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-121619.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 5,
+      "max_confidence": 0.6661779880523682,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260715-003150.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 5,
+      "max_confidence": 0.7831938862800598,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-133703.flac"
+    },
+    {
+      "taxon_common": "Red-eyed Vireo",
+      "taxon_scientific": "Vireo olivaceus",
+      "count": 5,
+      "max_confidence": 0.6898335814476013,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260714-131027.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Hermit Thrush",
+    "taxon_scientific": "Catharus guttatus",
+    "confidence": 0.9407839179039001,
+    "observed_at": "2026-07-14T20:00:57-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260715-000056.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    140,
+    80,
+    1,
+    41,
+    74,
+    21,
+    14,
+    1,
+    1,
+    10,
+    22,
+    0,
+    1,
+    13,
+    1,
+    11,
+    21,
+    2,
+    0,
+    0
+  ]
+}
