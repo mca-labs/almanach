@@ -1,0 +1,51 @@
+{
+  "entry_date": "2026-07-15",
+  "generated_at": "2026-07-16T06:27:13.787Z",
+  "title": "Le troglodyte tient la forêt",
+  "summary": "Journée douce sous un vent du sud presque absent — le Val a repris son souffle après l'orage d'hier.",
+  "body_md": "La pression est restée basse toute la journée, plate comme une eau dormante, et le vent du sud n'a guère dépassé un souffle. Rien qui dérange. La température a grimpé sans brusquerie jusqu'à 24 degrés en début d'après-midi, le pic de lumière à 14 heures, puis elle a glissé vite vers le soir — 16 degrés à 20 heures, comme si la forêt fermait une porte. La pluie d'hier, moins d'un millimètre, avait à peine mouillé la terre.\n\nC'est le troglodyte des forêts qui a tenu le registre aujourd'hui — 227 détections, une présence têtue, répétée, depuis les premières lueurs jusqu'au creux de l'après-midi. Sa voix est petite et tenace, faite pour les anfractuosités de l'épinette, pour l'ombre dense du sous-bois. En soirée, c'est la paruline à collier qui a pris le relais, sa note montante traversant le Val à 19 h 13. Vingt-huit espèces entendues en une journée de mi-juillet : la saison est pleine, le Val sonore.",
+  "sky_narrative": "Le croissant de lune — à peine 4 % éclairé — se couchera avant 22 h, heure locale, laissant la nuit à elle-même. Avec seulement 18 % de couverture nuageuse prévue, le ciel sera largement ouvert : Vénus brillera à l'ouest en début de soirée, et l'obscurité qui suivra se prêtera bien à l'observation à l'œil nu.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "vent",
+    "pression",
+    "juillet",
+    "lumiere"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 24.4,
+      "temp_min_c": 13.8,
+      "wind_direction": "S",
+      "wind_avg_kmh": 4.9,
+      "wind_gust_max_kmh": 19.8,
+      "rain_mm": 0.795487,
+      "pressure_mb": 959.1,
+      "pressure_trend": "flat",
+      "solar_rad_avg_wm2": 238.89,
+      "lux_peak_hour": 14,
+      "lux_peak_value": 136398
+    },
+    "bird_of_the_day": {
+      "common_name_fr": "Paruline à collier",
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "observed_at": "2026-07-15T19:13:51-04:00",
+      "confidence": 0.9503470659255981,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260715-231347.flac",
+      "total_species": 28,
+      "total_detections": 497
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 4.47,
+      "moon_set_utc": "2026-07-17T02:03:06.552Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 18.4
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-belette",
+  "fragment_translation_fr": null
+}
