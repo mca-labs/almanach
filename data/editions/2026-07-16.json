@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-07-16",
+  "generated_at": "2026-07-17T06:24:45.839Z",
+  "title": null,
+  "summary": "Journée fraîche et calme sur le Val — un vent du sud à peine perceptible, le thermomètre bien en dessous de la normale.",
+  "body_md": "La température n'a pas dépassé 19 degrés, loin des moyennes de mi-juillet. Le vent soufflait du sud, à peine 4 kilomètres-heure en moyenne, et le baromètre remontait doucement depuis le matin — rien d'annoncé, rien de dramatique. Une trace de pluie dans la nuit, imperceptible, suffisante pour humidifier la mousse sous les épinettes sans laisser de flaque. La lumière du début d'après-midi est montée à son plus haut vers 13 h, puis a décliné dans un ciel qui restait propre, lavé.\n\nDeux espèces ont dominé le sous-bois toute la journée. Le troglodyte des forêts, Troglodytes hiemalis, a tenu sa voix serrée et mécanique presque sans relâche — 126 détections, une présence qui n'a pas besoin de l'été pour s'imposer. Mais c'est la sittelle à poitrine rousse, Sitta canadensis, qui a retenu l'attention en fin d'après-midi : ce nasillard insistant qui descend les troncs la tête en bas, à contre-sens de tout le monde. Elle a rappelé depuis plusieurs arbres près du versant nord, comme si la fraîcheur inhabituellement précoce lui avait rendu quelque chose qui lui appartient.",
+  "sky_narrative": "La lune, premier croissant à 10 % d'illumination, se couchera peu après 22 h 20, heure locale, laissant la nuit à elle-même jusqu'à l'aube. Avec une couverture nuageuse autour de 59 %, le ciel sera partiellement voilé — Vénus sera visible en soirée vers l'ouest avant de disparaître sous l'horizon, mais le ciel profond restera capricieux, ouvert par intermittence.",
+  "theme_tags": [
+    "fraicheur",
+    "oiseaux",
+    "foret",
+    "calme",
+    "sous-normale"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 18.8,
+      "temp_min_c": 10.9,
+      "wind_direction": "S",
+      "wind_avg_kmh": 4.3785,
+      "rain_mm": 0.264764,
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 118,
+      "observed_at": "2026-07-16T16:28:34-04:00"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 10.5,
+      "moon_set_utc": "2026-07-18T02:21:15.250Z",
+      "venus_notable": true,
+      "cloud_cover_pct": 58.6
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-4",
+  "fragment_translation_fr": "Le temps n'est que le ruisseau où je vais à la pêche. J'y bois ; mais en buvant je vois le fond de sable et je mesure combien il est peu profond. Son mince courant s'écoule, mais l'éternité demeure."
+}

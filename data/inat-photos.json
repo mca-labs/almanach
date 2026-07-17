@@ -261,7 +261,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-25T07:52:00.574Z"
+    "resolved_at": "2026-07-17T06:24:19.469Z"
   },
   "Setophaga americana": {
     "taxon_inat_id": 145233,
@@ -489,7 +489,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-20T07:55:38.332Z"
+    "resolved_at": "2026-07-17T06:24:22.461Z"
   },
   "Melospiza georgiana": {
     "taxon_inat_id": 9096,
@@ -550,5 +550,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-07-15T06:23:48.186Z"
+  },
+  "Passerculus sandwichensis": {
+    "taxon_inat_id": 9981,
+    "name_fr": "bruant des prés",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/45166152/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/45166152/square.jpeg",
+    "attribution": "(c) Mike Leveille, some rights reserved (CC BY-NC), uploaded by Mike Leveille",
+    "attribution_name": "Mike Leveille",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-07-17T06:24:21.395Z"
   }
 }

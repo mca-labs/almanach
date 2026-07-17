@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-16",
+  "total_detections": 345,
+  "unique_species": 22,
+  "top_species": [
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 126,
+      "max_confidence": 0.9903929829597473,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-124316.flac"
+    },
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 118,
+      "max_confidence": 0.9913727045059204,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-202831.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 28,
+      "max_confidence": 0.8345719575881958,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-225014.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 23,
+      "max_confidence": 0.8116428256034851,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-101812.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 11,
+      "max_confidence": 0.9246461391448975,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-231526.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 5,
+      "max_confidence": 0.8874940276145935,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-231434.flac"
+    },
+    {
+      "taxon_common": "Swainson's Thrush",
+      "taxon_scientific": "Catharus ustulatus",
+      "count": 5,
+      "max_confidence": 0.7734658122062683,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-095510.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 4,
+      "max_confidence": 0.9302991628646851,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260717-004247.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 4,
+      "max_confidence": 0.8017983436584473,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-101919.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 3,
+      "max_confidence": 0.5743211507797241,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-150023.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Red-breasted Nuthatch",
+    "taxon_scientific": "Sitta canadensis",
+    "confidence": 0.9913727045059204,
+    "observed_at": "2026-07-16T16:28:34-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260716-202831.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    81,
+    23,
+    14,
+    14,
+    32,
+    4,
+    29,
+    41,
+    0,
+    31,
+    0,
+    6,
+    18,
+    2,
+    30,
+    12,
+    8,
+    0,
+    0,
+    0
+  ]
+}
