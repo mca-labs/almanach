@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-07-17",
+  "generated_at": "2026-07-18T06:13:13.566Z",
+  "title": null,
+  "summary": "Journée chaude et calme sur le Val, avec un vent du sud à peine perceptible et un ciel qui a gardé toute sa lumière.",
+  "body_md": "La température a grimpé lentement ce matin, le mercure restant sous les 14 °C jusqu'à huit heures, puis montant sans hâte vers les 23 °C en milieu d'après-midi. Pas un éclair depuis trois jours, pas une goutte non plus — la semaine a été sèche, et la forêt commence à le sentir sous la semelle. Le vent du sud soufflait à peine, juste assez pour remuer les fougères au bas du versant.\n\nC'est le pic flamboyant qui a marqué la journée. Peu avant neuf heures du matin, sa voix — un long ricanement descendant, net et répété — a traversé le silence du sous-bois avec une assurance tranquille. Parmi les 18 espèces entendues aujourd'hui, c'est lui, Colaptes auratus, qui sonnait le plus fort, comme un outil que l'on pose sur un établi. Le reste de la journée a appartenu à la sittelle à poitrine rousse : 239 détections, présence presque continue, cette voix nasale et rapide qui finit par se confondre avec le bruit même de la forêt.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque entièrement couverte — 96 % de nébulosité —, et le croissant de lune, à peine 18 % éclairé, se couchera de toute façon avant l'aube. Vénus sera visible en soirée vers l'ouest avant de disparaître sous les nuages ; le ciel profond restera hors de portée, et une lampe de front sera utile pour qui sort sur le sentier.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "calme",
+    "ete",
+    "secheresse"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 23.5,
+      "temp_min_c": 10.4,
+      "rain_mm": 0,
+      "wind_direction": "S",
+      "wind_avg_kmh": 4.4,
+      "pressure_mb": 967.1,
+      "pressure_trend": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "observed_at": "2026-07-17T08:50:53-04:00",
+      "confidence": 0.9019330739974976,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260717-125053.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 18.3,
+      "moon_set": "2026-07-19T02:37:35.234Z",
+      "cloud_cover_night_pct": 96.4,
+      "venus_notable": true,
+      "jupiter_notable": true
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}
