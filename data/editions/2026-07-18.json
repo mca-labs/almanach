@@ -1,0 +1,48 @@
+{
+  "entry_date": "2026-07-18",
+  "generated_at": "2026-07-19T06:39:25.359Z",
+  "title": "Le troglodyte avant l'aube",
+  "summary": "Journée fraîche sous un ciel changeant — 28 espèces entendues, et un troglodyte mignon qui a ouvert le bal avant cinq heures.",
+  "body_md": "La pluie est venue tôt, légère, à peine 3 millimètres — juste assez pour mouiller les aiguilles et poser une odeur de résine sur le versant nord. Le vent est resté calme toute la journée, du sud, presque nul ; la pression baissait en sourdine, et le pic de lumière, autour de dix heures, n'a pas tenu longtemps avant que les nuages referment leur main au-dessus de la vallée. À quinze degrés en moyenne, l'air gardait cette fraîcheur de milieu de juillet qui rappelle que la forêt ici ne s'abandonne jamais tout à fait à l'été.\n\nLe Troglodyte des forêts, Troglodytes hiemalis, a chanté peu après quatre heures quarante-neuf du matin — avant même que la lumière soit vraiment là. Sa voix est toujours un peu disproportionnée : une cascade précipitée, trop grande pour le corps minuscule qui la produit, qui rebondit entre les épinettes et finit par se perdre quelque part sous le pont. La sittelle à poitrine rousse a suivi, fidèle, et les pics de détection ont grimpé vers neuf heures, quand vingt-huit espèces se partageaient encore le Val. Puis le calme — la forêt a repris ses distances.",
+  "sky_narrative": "La nuit s'ouvrira à moitié couverte, avec environ 56 % de nuages ; les éclaircies, si elles viennent, laisseront apercevoir Vénus à l'ouest, encore haute et nette à la tombée du jour. La lune, premier croissant à 27 % d'illumination, se couchera vers deux heures cinquante du matin — une nuit qui se prêtera davantage au silence qu'à l'observation du ciel profond.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "pluie",
+    "fraicheur",
+    "aube",
+    "silence"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 11.8,
+      "temp_max_c": 22.9,
+      "rain_mm": 3.43,
+      "wind_avg_kmh": 2.4,
+      "wind_gust_max_kmh": 20.16,
+      "wind_direction": "S",
+      "pressure_mb": 950.4,
+      "pressure_trend": "down",
+      "solar_rad_avg_wm2": 100.2
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Troglodyte des forêts",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "confidence": 0.938,
+      "observed_at": "2026-07-18T04:49:17-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260718-084914.flac",
+      "total_detections": 29,
+      "unique_species_today": 28
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 27,
+      "moon_set": "2026-07-20T02:53:33Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 56
+    }
+  },
+  "fragment_quote_id": "john-muir-my-7",
+  "fragment_translation_fr": "Comme il fut profond, notre sommeil de la nuit dernière au cœur de la montagne, sous les arbres et les étoiles, bercés par le solennel murmure des cascades et les mille petites voix apaisantes qui chuchotaient la paix à l'unisson !"
+}

@@ -110,14 +110,14 @@
   "Corvus brachyrhynchos": {
     "taxon_inat_id": 8021,
     "name_fr": "corneille d'Amérique",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4661023/medium.jpg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4661023/square.jpg",
-    "attribution": "(c) Jacob McGinnis, some rights reserved (CC BY-NC)",
-    "attribution_name": "Jacob McGinnis",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/24115/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/24115/square.jpg",
+    "attribution": "(c) Joe McKenna, some rights reserved (CC BY-NC)",
+    "attribution_name": "Joe McKenna",
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-19T09:10:02.134Z"
+    "resolved_at": "2026-07-19T06:38:59.385Z"
   },
   "Vireo solitarius": {
     "taxon_inat_id": 17402,
@@ -429,7 +429,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-27T07:23:45.441Z"
+    "resolved_at": "2026-07-19T06:38:58.526Z"
   },
   "Bombycilla cedrorum": {
     "taxon_inat_id": 7428,
@@ -441,7 +441,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-27T07:23:43.504Z"
+    "resolved_at": "2026-07-19T06:39:00.489Z"
   },
   "Geothlypis philadelphia": {
     "taxon_inat_id": 145224,
