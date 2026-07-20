@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-07-19",
+  "generated_at": "2026-07-20T07:20:56.678Z",
+  "title": "Les jaseurs et l'orage lointain",
+  "summary": "Journée fraîche et animée au Val — un orage a rôdé en bordure, les jaseurs ont tenu le haut du bois.",
+  "body_md": "La température n'a pas dépassé 19 degrés, et c'est peut-être pour cela que la journée a semblé si nette, si découpée. Un vent calme du sud a porté l'air humide des derniers jours vers le fond de la vallée, la pluie s'est réglée à quatre millimètres, brève, puis le soleil a repris sa place sans insister. L'orage, lui, a tourné autour du Val toute la journée — 193 éclairs recensés, à une douzaine de kilomètres en moyenne — sans jamais franchir le versant. On entendait sourdre quelque chose au loin, puis plus rien.\n\nCe sont les jaseurs qui ont donné le ton. Les Bombycilla cedrorum ont occupé le bois en bandes compactes, leurs petits cris sifflants revenant par vagues tout l'après-midi, surtout vers 17 h et en soirée. Ils se déplacent ainsi en été, de sorbier en cerisier, avec une précision tranquille qui n'a rien à envier aux migrateurs. Le pic flamboyant — Colaptes auratus — a lui aussi beaucoup vocalisé, trente détections étalées sur la journée, comme s'il prenait soin de ne laisser aucun silence s'installer.",
+  "sky_narrative": "La lune, au premier quartier et éclairée à 37 %, se couchera peu après 23 h heure locale, laissant la deuxième moitié de la nuit à un ciel dégagé aux trois quarts. Vénus sera visible à l'ouest en début de nuit, brillante et basse sur l'horizon ; Jupiter, lui aussi à l'ouest, rasera la ligne des épinettes avant de disparaître. Une fois la lune couchée, la noirceur sera suffisante pour observer le ciel profond depuis le pont.",
+  "theme_tags": [
+    "oiseaux",
+    "orage",
+    "été",
+    "jaseur",
+    "pic",
+    "ciel-nocturne"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 19.1,
+      "temp_min_c": 12.7,
+      "rain_mm": 4.188587,
+      "wind_direction": "S",
+      "wind_avg_kmh": 3.8,
+      "wind_gust_max_kmh": 18,
+      "pressure_mb": 961.3,
+      "pressure_trend": "flat",
+      "lightning_count": 193,
+      "lightning_avg_distance_km": 13.3
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 29,
+      "confidence": 0.976,
+      "observed_at": "2026-07-19T14:37:19-04:00"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 37,
+      "moon_set": "2026-07-21T03:10:26.769Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 27
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand chercher l'hirondelle, la dent-de-chien quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est bien commencée."
+}

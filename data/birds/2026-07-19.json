@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-19",
+  "total_detections": 111,
+  "unique_species": 17,
+  "top_species": [
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 30,
+      "max_confidence": 0.9325106143951416,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-234240.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 29,
+      "max_confidence": 0.975821316242218,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-183719.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 10,
+      "max_confidence": 0.8329966068267822,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-111935.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 8,
+      "max_confidence": 0.9368182420730591,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-093749.flac"
+    },
+    {
+      "taxon_common": "Swainson's Thrush",
+      "taxon_scientific": "Catharus ustulatus",
+      "count": 5,
+      "max_confidence": 0.6378875374794006,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-010253.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 5,
+      "max_confidence": 0.6697164177894592,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-220936.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 4,
+      "max_confidence": 0.7851167321205139,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-010527.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 3,
+      "max_confidence": 0.7833651900291443,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-225453.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 3,
+      "max_confidence": 0.9667965173721313,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-092542.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 3,
+      "max_confidence": 0.6467556953430176,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-161224.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Cedar Waxwing",
+    "taxon_scientific": "Bombycilla cedrorum",
+    "confidence": 0.975821316242218,
+    "observed_at": "2026-07-19T14:37:19-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260719-183719.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    10,
+    1,
+    11,
+    2,
+    3,
+    0,
+    0,
+    5,
+    4,
+    11,
+    1,
+    0,
+    16,
+    5,
+    29,
+    3,
+    8,
+    0,
+    0
+  ]
+}
