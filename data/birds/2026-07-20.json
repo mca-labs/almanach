@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-20",
+  "total_detections": 851,
+  "unique_species": 22,
+  "top_species": [
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 382,
+      "max_confidence": 0.9970333576202393,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-084821.flac"
+    },
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 172,
+      "max_confidence": 0.9922674298286438,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-163814.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 98,
+      "max_confidence": 0.9508196115493774,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-114655.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 75,
+      "max_confidence": 0.9902163743972778,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-092346.flac"
+    },
+    {
+      "taxon_common": "Northern Parula",
+      "taxon_scientific": "Setophaga americana",
+      "count": 48,
+      "max_confidence": 0.9600009322166443,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-102403.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 24,
+      "max_confidence": 0.8930835723876953,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-121053.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 7,
+      "max_confidence": 0.7224208116531372,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-220401.flac"
+    },
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 7,
+      "max_confidence": 0.8227958679199219,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-124147.flac"
+    },
+    {
+      "taxon_common": "Magnolia Warbler",
+      "taxon_scientific": "Setophaga magnolia",
+      "count": 6,
+      "max_confidence": 0.9319220781326294,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-100848.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 5,
+      "max_confidence": 0.7555894255638123,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-005034.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "American Robin",
+    "taxon_scientific": "Turdus migratorius",
+    "confidence": 0.9508196115493774,
+    "observed_at": "2026-07-20T07:46:58-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-114655.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    210,
+    224,
+    59,
+    146,
+    101,
+    11,
+    34,
+    9,
+    26,
+    5,
+    9,
+    4,
+    0,
+    8,
+    3,
+    0,
+    2,
+    0,
+    0,
+    0
+  ]
+}

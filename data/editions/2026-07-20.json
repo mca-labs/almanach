@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-07-20",
+  "generated_at": "2026-07-21T06:37:27.218Z",
+  "title": "Le troglodyte tient sa cour",
+  "summary": "Journée franche et chaude sur le Val, avec un vent calme du sud et un ciel qui a laissé le soleil travailler sans relâche.",
+  "body_md": "L'air est arrivé du sud ce matin, doux et presque immobile — à peine un souffle à midi, une rafale en début d'après-midi, puis plus rien. La température a grimpé posément jusqu'à 24 degrés avant de redescendre vers le soir avec la même discrétion. Pas une goutte depuis une semaine et plus, mais le sol garde encore quelque chose de la pluie d'il y a quelques jours, et l'odeur de la forêt en témoignait dès l'aurore.\n\nC'est le troglodyte des forêts, Troglodytes hiemalis, qui a dominé la journée — 382 détections, un chiffre qui dit quelque chose du territoire qu'il occupe en ce mois de juillet, en pleine saison de nidification. Sa voix cassée et mécanique sortait de partout à la fois : sous le pont, dans les aulnes du ruisseau, dans la pente d'épinettes. Le merle d'Amérique, Turdus migratorius, se faisait entendre aussi, plus haut dans les strates, avec cette régularité tranquille qui est sa marque en été. La sittelle à poitrine rousse, Sitta canadensis, complétait le trio du sous-bois. Vingt-deux espèces en tout — une forêt qui travaille.",
+  "sky_narrative": "La lune, au premier quartier et éclairée à près de la moitié, se couchera vers 23 h 30 heure locale, laissant quelques heures d'obscurité plus franche avant l'aube — mais les nuages couvriront environ 70 % du ciel, ce qui limitera les observations. Vénus sera visible en soirée, basse à l'ouest, avant que les nuages ne referment la nuit.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "ete",
+    "calme",
+    "nidification"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 24.2,
+      "temp_min_c": 9.7,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "rain_mm": 0,
+      "pressure_category": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "nom_fr": "Merle d'Amérique",
+      "observed_at": "2026-07-20T07:46:58-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260720-114655.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier quartier",
+      "moon_illumination_pct": 47,
+      "cloud_cover_night_pct": 69,
+      "notable_planets": [
+        "Vénus"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, n'affronter que les faits essentiels de la vie, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — pour ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
