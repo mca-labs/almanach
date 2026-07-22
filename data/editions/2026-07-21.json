@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-07-21",
+  "generated_at": "2026-07-22T06:38:50.316Z",
+  "title": null,
+  "summary": "Journée chaude et calme au Val, le vent du sud à peine perceptible et le baromètre qui glisse doucement vers le bas.",
+  "body_md": "La chaleur est montée sans se presser — 16 degrés à l'aube, 25 passés avant l'heure du midi, puis un glissement tranquille vers le soir. Le vent du sud n'a guère dépassé le murmure, et les rafales du matin sont restées sages. La pression baisse par petits paliers, indifférente, comme si elle avait tout son temps. La pluie n'est pas venue — à peine une trace au fond du pluviomètre, 0,16 millimètre, ce qui ne compte pas vraiment.\n\nLes corneilles ont tenu leur conseil en matinée, présentes et sonores comme à leur habitude, mais c'est le troglodyte des forêts qui a dominé la journée de loin — 215 détections, une voix brève et bondissante qui rebondissait sous les épinettes dès l'aube. Les jaseurs des cèdres ont suivi, par grappes intermittentes, leur sifflement filé traçant une ligne fine au-dessus du pont. Le pic flamboyant a donné signe de vie en matinée. Vingt et une espèces au total, posées ou de passage — le Val en plein été.",
+  "sky_narrative": "La lune gibbeuse, éclairée à 57 %, se lèvera en soirée et se couchera vers 23 h 52, heure locale ; avec une couverture nuageuse attendue autour de 62 %, le ciel promet d'être voilé plutôt que franc. Vénus sera visible à l'ouest en début de nuit, lumineuse et basse sur l'horizon, avant de disparaître dans les nuages.",
+  "theme_tags": [
+    "oiseaux",
+    "chaleur",
+    "vent-calme",
+    "pression",
+    "foret",
+    "ete"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 15.6,
+      "temp_max_c": 26.1,
+      "rain_mm": 0.156082,
+      "wind_avg_kmh": 3.38,
+      "wind_gust_max_kmh": 20.16,
+      "pressure_mb": 959.9,
+      "pressure_trend": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 27,
+      "confidence": 0.9618558287620544,
+      "observed_at": "2026-07-21T06:28:42-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-102838.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 57,
+      "moon_set_utc": "2026-07-23T03:52:44.676Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_pct": 62
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}

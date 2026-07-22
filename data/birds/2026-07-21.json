@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-21",
+  "total_detections": 329,
+  "unique_species": 21,
+  "top_species": [
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 215,
+      "max_confidence": 0.9937766790390015,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-093002.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 35,
+      "max_confidence": 0.9588661789894104,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-214320.flac"
+    },
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 27,
+      "max_confidence": 0.9618558287620544,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-102838.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 10,
+      "max_confidence": 0.8891711831092834,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-103322.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 9,
+      "max_confidence": 0.8114275932312012,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-101020.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 8,
+      "max_confidence": 0.6739946007728577,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-093028.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 5,
+      "max_confidence": 0.7473672032356262,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-142620.flac"
+    },
+    {
+      "taxon_common": "Yellow-bellied Flycatcher",
+      "taxon_scientific": "Empidonax flaviventris",
+      "count": 3,
+      "max_confidence": 0.8279507160186768,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-091814.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 2,
+      "max_confidence": 0.6361901164054871,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-221712.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 2,
+      "max_confidence": 0.6373792290687561,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-192944.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "American Crow",
+    "taxon_scientific": "Corvus brachyrhynchos",
+    "confidence": 0.9618558287620544,
+    "observed_at": "2026-07-21T06:28:42-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260721-102838.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    26,
+    181,
+    46,
+    5,
+    9,
+    13,
+    4,
+    14,
+    1,
+    1,
+    5,
+    3,
+    3,
+    11,
+    5,
+    1,
+    1,
+    0,
+    0,
+    0
+  ]
+}

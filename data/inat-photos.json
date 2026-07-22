@@ -93,7 +93,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-21T08:39:37.328Z"
+    "resolved_at": "2026-07-22T06:38:28.434Z"
   },
   "Setophaga caerulescens": {
     "taxon_inat_id": 199916,
@@ -562,5 +562,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-07-17T06:24:21.395Z"
+  },
+  "Empidonax flaviventris": {
+    "taxon_inat_id": 16603,
+    "name_fr": "moucherolle à ventre jaune",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/341470336/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/341470336/square.jpeg",
+    "attribution": "no rights reserved",
+    "attribution_name": "russnamitz",
+    "license_code": "cc0",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-07-22T06:38:27.557Z"
   }
 }
