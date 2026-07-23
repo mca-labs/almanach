@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-07-22",
+  "generated_at": "2026-07-23T06:37:19.744Z",
+  "title": null,
+  "summary": "Journée fraîche et pluie modeste sur la vallée — le vent du sud s'est tu avant même le midi.",
+  "body_md": "La pluie est arrivée discrètement, douze millimètres sans orage, sans éclairs — le ciel s'est simplement chargé et s'est déchargé, comme il sait le faire en juillet quand la pression remonte lentement. La température n'a pas beaucoup bougé : fraîche le matin, à peine plus douce en début d'après-midi, puis retombée avant le soir. Le vent du sud soufflait à peine, et une seule rafale notable — en milieu de matinée — a traversé la clairière sans rien renverser.\n\nLes oiseaux ont été actifs tôt, avant l'aube presque, puis encore en masse à dix-huit heures passées quand la pluie s'est alléguée. Au fil du jour, la sittelle à poitrine rousse et le troglodyte des forêts ont tenu le haut du palmarès, fidèles à leur réputation de voix portantes même sous ciel bas. Mais c'est le colibri à gorge rubis qui reste l'image du soir : détecté peu avant vingt et une heures, ce bourdonnement tendu dans l'air humide, si bref qu'on se demande toujours si on l'a vraiment entendu.",
+  "sky_narrative": "La lune, gibbeuse et éclairée aux deux tiers, se lèvera en soirée et dominera la nuit — trop brillante pour le ciel profond, mais suffisante pour se promener sans frontale sur le sentier du pont. Vénus sera visible en début de nuit à l'ouest, à onze degrés au-dessus de l'horizon ; avec seulement un quart du ciel couvert, la nuit se prêtera bien à une sortie courte.",
+  "theme_tags": [
+    "pluie",
+    "oiseaux",
+    "foret",
+    "colibri",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 13.8,
+      "temp_max_c": 23.2,
+      "rain_mm": 12.248614,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "gust_max_kmh": 38.16,
+      "pressure_mb": 960.8,
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "observed_at": "2026-07-22T20:43:07-04:00",
+      "confidence": 0.982012152671814,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-004301.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 66,
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 27
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}

@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-22",
+  "total_detections": 358,
+  "unique_species": 17,
+  "top_species": [
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 96,
+      "max_confidence": 0.9893094301223755,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-133139.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 94,
+      "max_confidence": 0.9647523760795593,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-093533.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 66,
+      "max_confidence": 0.9900892972946167,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-222040.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 30,
+      "max_confidence": 0.982012152671814,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-004301.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 20,
+      "max_confidence": 0.8927384614944458,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-123154.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 18,
+      "max_confidence": 0.8599416613578796,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-211040.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 11,
+      "max_confidence": 0.8845658898353577,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-093830.flac"
+    },
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 5,
+      "max_confidence": 0.67427659034729,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-145853.flac"
+    },
+    {
+      "taxon_common": "Solitary Sandpiper",
+      "taxon_scientific": "Tringa solitaria",
+      "count": 5,
+      "max_confidence": 0.8740107417106628,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-104040.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 3,
+      "max_confidence": 0.9316494464874268,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260722-204010.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Ruby-throated Hummingbird",
+    "taxon_scientific": "Archilochus colubris",
+    "confidence": 0.982012152671814,
+    "observed_at": "2026-07-22T20:43:07-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-004301.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    99,
+    8,
+    40,
+    22,
+    60,
+    13,
+    3,
+    6,
+    0,
+    1,
+    4,
+    9,
+    6,
+    57,
+    19,
+    10,
+    0,
+    0,
+    0
+  ]
+}

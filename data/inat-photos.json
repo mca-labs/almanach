@@ -574,5 +574,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-07-22T06:38:27.557Z"
+  },
+  "Tringa solitaria": {
+    "taxon_inat_id": 3875,
+    "name_fr": "Chevalier solitaire",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/25135180/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/25135180/square.jpg",
+    "attribution": "(c) Robin Gwen Agarwal, some rights reserved (CC BY-NC), uploaded by Robin Gwen Agarwal",
+    "attribution_name": "Robin Gwen Agarwal",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-07-23T06:36:58.593Z"
   }
 }
