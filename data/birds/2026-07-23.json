@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-23",
+  "total_detections": 110,
+  "unique_species": 16,
+  "top_species": [
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 34,
+      "max_confidence": 0.863313615322113,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-144017.flac"
+    },
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 20,
+      "max_confidence": 0.7266331911087036,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-185221.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 12,
+      "max_confidence": 0.9709630608558655,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-134054.flac"
+    },
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 10,
+      "max_confidence": 0.9838322401046753,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-120203.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 8,
+      "max_confidence": 0.9501464366912842,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260724-000059.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 5,
+      "max_confidence": 0.7322113513946533,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-133101.flac"
+    },
+    {
+      "taxon_common": "Eastern Bluebird",
+      "taxon_scientific": "Sialia sialis",
+      "count": 5,
+      "max_confidence": 0.8173722624778748,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-093832.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 3,
+      "max_confidence": 0.6213985085487366,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-193353.flac"
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 3,
+      "max_confidence": 0.825140118598938,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-130538.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 2,
+      "max_confidence": 0.5618900060653687,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-120900.flac"
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Blue Jay",
+    "taxon_scientific": "Cyanocitta cristata",
+    "confidence": 0.863313615322113,
+    "observed_at": "2026-07-23T10:40:20-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260723-144017.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    9,
+    2,
+    5,
+    13,
+    8,
+    35,
+    2,
+    0,
+    3,
+    20,
+    2,
+    0,
+    0,
+    0,
+    4,
+    7,
+    0,
+    0,
+    0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-07-23",
+  "generated_at": "2026-07-24T06:35:29.956Z",
+  "title": "Le geai et le froid de juillet",
+  "summary": "Une journée fraîche et calme sur le Val, la pression qui remonte doucement après l'orage d'il y a quatre jours.",
+  "body_md": "Le thermomètre n'a pas dépassé 18 °C, et l'air du matin avait ce mordant propre aux nuits de juillet qui s'oublient presque aussitôt que le soleil monte. Presque : à midi, les températures sont restées en dessous des normales de plus de dix degrés, et ce froid discret a gardé le sous-bois tranquille, le vent réduit à un souffle du sud. La pression remontait par petits paliers depuis l'orage de l'autre semaine — 193 éclairs à treize kilomètres, il y a quatre jours, et aujourd'hui, pas un seul.\n\nC'est le geai bleu qui a dominé la journée, avec 34 détections entre dix heures et l'après-midi. Il n'a pas la retenue des autres — sa voix porte loin, change de registre sans prévenir, parfois couvre les sittelles à poitrine rousse qui travaillaient les écorces au même moment. Les jaseurs d'Amérique sont passés aussi, leur sifflement ténu reconnaissable entre tous, et le colibri à gorge rubis s'est signalé à plusieurs reprises. Seize espèces en une journée froide : le Val ne se laisse pas réduire par le calendrier.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — 9 % de couverture seulement — et la lune gibbeuse, éclairée aux trois quarts, se couchera vers minuit vingt, laissant quelques heures d'obscurité franche avant l'aube. Vénus sera visible en début de soirée à l'ouest, et Jupiter s'attardera brièvement au-dessus de l'horizon nord-ouest ; une bonne nuit pour sortir sans frontale après le coucher de la lune, et regarder le ciel se dégager.",
+  "theme_tags": [
+    "oiseaux",
+    "froid",
+    "calme",
+    "geai",
+    "pression",
+    "juillet"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 18.8,
+      "temp_min_c": 9.7,
+      "wind_qualifier": "calme",
+      "wind_direction": "du S",
+      "rain_mm": 0.85,
+      "pressure_mb": 973.3,
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 34,
+      "observed_at": "2026-07-23T10:40:20-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 75,
+      "moon_set": "2026-07-24T04:21:48.646Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 9
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-11",
+  "fragment_translation_fr": "Une chose est juste lorsqu'elle tend à préserver l'intégrité, la stabilité et la beauté de la communauté biotique. Elle est mauvaise lorsqu'elle tend à faire autrement."
+}

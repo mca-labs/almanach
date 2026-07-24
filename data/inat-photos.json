@@ -146,14 +146,14 @@
   "Cyanocitta cristata": {
     "taxon_inat_id": 8229,
     "name_fr": "Geai bleu",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/288034385/medium.jpeg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/288034385/square.jpeg",
-    "attribution": "(c) Josiah Reed, some rights reserved (CC BY-NC), uploaded by Josiah Reed",
-    "attribution_name": "Josiah Reed",
-    "license_code": "cc-by-nc",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/530721418/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/530721418/square.jpg",
+    "attribution": "(c) Judy Gallagher, some rights reserved (CC BY)",
+    "attribution_name": "Judy Gallagher",
+    "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:38:36.173Z"
+    "resolved_at": "2026-07-24T06:35:01.358Z"
   },
   "Poecile atricapillus": {
     "taxon_inat_id": 144815,
@@ -369,7 +369,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-29T08:05:07.969Z"
+    "resolved_at": "2026-07-24T06:35:06.668Z"
   },
   "Certhia americana": {
     "taxon_inat_id": 7458,
@@ -586,5 +586,29 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-07-23T06:36:58.593Z"
+  },
+  "Sialia sialis": {
+    "taxon_inat_id": 12942,
+    "name_fr": "merlebleu de l'est",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/477069179/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/477069179/square.jpg",
+    "attribution": "(c) Dan Vickers, some rights reserved (CC BY), uploaded by Dan Vickers",
+    "attribution_name": "Dan Vickers",
+    "license_code": "cc-by",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-07-24T06:35:02.253Z"
+  },
+  "Corvus corax": {
+    "taxon_inat_id": 8010,
+    "name_fr": "Grand Corbeau",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/651411222/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/651411222/square.jpg",
+    "attribution": "(c) Tim Healy, some rights reserved (CC BY-NC), uploaded by Tim Healy",
+    "attribution_name": "Tim Healy",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-07-24T06:35:04.476Z"
   }
 }
