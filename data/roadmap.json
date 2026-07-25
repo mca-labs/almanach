@@ -49,6 +49,11 @@
   ],
   "done": [
     {
+      "title": "Transmettre toutes les espèces à la synthèse (champ <code>other_species</code>)",
+      "details": "<code>aggregate()</code> ne conservait que les 10 espèces les plus fréquentes alors que le payload continuait d'annoncer <code>unique_species</code> (20 le 24 juillet) : la synthèse voyait dix noms manquants et comblait le trou en inventant. C'est ce qui a produit « la grive des bois » et « le pic-bois » dans l'édition du 24 juillet — deux grives étaient bien présentes ce jour-là (solitaire ×6, à dos olive ×1), mais parmi les espèces jetées. Nouveau champ <code>other_species</code> (nom + compte) portant toute la queue ; <code>top_species</code> reste à 10 pour ne rien changer au rendu du site ni à la résolution des photos iNat. Vérifié sur un fetch réel : 10 + 10 = 20, plus aucune espèce manquante.",
+      "finished_at": "2026-07-25"
+    },
+    {
       "title": "Champ <code>rain_days_since</code> — jours depuis la dernière pluie",
       "details": "Le billet ne recevait que la journée courante : faute d'un champ de durée, la synthèse inventait l'ancienneté d'un temps sec à partir du seul <code>rain_day_final_mm=0</code>. Huit éditions annonçaient une sécheresse pluri-jours au lendemain d'une pluie. Preuve du mécanisme : les 20 affirmations sur les éclairs étaient toutes exactes, parce que <code>lightning.last_storm.days_ago</code> existe. Nouveau module <code>src/util/weather-history.ts</code> partagé par <code>daily.ts</code> et <code>scripts/refresh-weather.ts</code> ; seuil de pluie mesurable à 0,2 mm ; retourne <code>null</code> sur un trou d'historique plutôt que de compter les jours manquants comme secs.",
       "finished_at": "2026-07-25"

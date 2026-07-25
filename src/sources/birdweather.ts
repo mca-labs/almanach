@@ -44,6 +44,13 @@ export interface BirdsDaily {
   total_detections: number;
   unique_species: number;
   top_species: SpeciesGroup[];
+  /**
+   * Le reste de la journée : toutes les espèces au-delà du top 10, nom et compte
+   * seulement. Le site n'en fait rien — ce champ existe pour que la synthèse voie
+   * la journée entière. Sans lui, le payload annonçait `unique_species: 20` en ne
+   * nommant que 10 espèces, et le billet comblait l'écart en inventant.
+   */
+  other_species: Array<Pick<SpeciesGroup, 'taxon_common' | 'taxon_scientific' | 'count'>>;
   bird_of_the_day: BirdDetectionRow | null;
   /** 24 valeurs (0..23 h locale) — nombre de détections par heure. */
   hourly_detections: number[];
@@ -150,7 +157,15 @@ function aggregate(date: string, nodes: DetectionNode[], excludeScis: Set<string
     }
   }
   // Tri par fréquence (count desc) — c'est l'ordre qu'affiche le site.
-  const top = [...grouped.values()].sort((a, b) => b.count - a.count).slice(0, 10);
+  const sorted = [...grouped.values()].sort((a, b) => b.count - a.count);
+  // Le site affiche les 10 premières ; la queue n'était jusqu'ici conservée nulle
+  // part, alors que `unique_species` continuait de l'annoncer.
+  const top = sorted.slice(0, 10);
+  const other = sorted.slice(10).map((s) => ({
+    taxon_common: s.taxon_common,
+    taxon_scientific: s.taxon_scientific,
+    count: s.count,
+  }));
 
   // « Oiseau du jour » : fréquence × nouveauté.
   // = la première espèce du top par fréquence qui n'a PAS été oiseau du jour
@@ -183,6 +198,7 @@ function aggregate(date: string, nodes: DetectionNode[], excludeScis: Set<string
     total_detections: nodes.length,
     unique_species: grouped.size,
     top_species: top,
+    other_species: other,
     bird_of_the_day,
     hourly_detections: hourly,
   };

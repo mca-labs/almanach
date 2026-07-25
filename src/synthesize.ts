@@ -106,10 +106,11 @@ Règles de CONTENU non négociables (cf. prompts/editorial-voice.md) :
   En revanche, les MŒURS CONNUES d'une espèce présente ce jour-là s'extrapolent
   librement (régime, technique de recherche, nidification, déplacement) : c'est du
   savoir sur l'espèce, pas une affirmation sur ce lieu-ci.
-- AUCUNE ESPÈCE HORS LISTE. Ne nomme que les espèces figurant dans "birds", avec leur
-  nom exact. "unique_species" peut dépasser le nombre d'espèces nommées dans
-  "top_species" : les espèces non listées te sont INCONNUES. Ne comble jamais cet
-  écart, ne devine pas les manquantes, ne substitue pas une espèce voisine.
+- AUCUNE ESPÈCE HORS LISTE. "top_species" (les 10 plus fréquentes) et "other_species"
+  (tout le reste de la journée) énumèrent ENSEMBLE la totalité des espèces entendues :
+  leur somme vaut "unique_species". Il n'y a donc aucune espèce manquante à deviner.
+  Ne nomme que celles-là, avec leur nom exact, et ne substitue jamais une espèce
+  voisine plus sonore — une grive solitaire n'est pas une grive des bois.
 - Si aucune citation de la liste ne convient au thème, retourne fragment_quote_id = null.
 `.trim();
 
