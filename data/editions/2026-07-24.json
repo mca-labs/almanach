@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-07-24",
+  "generated_at": "2026-07-25T06:25:54.709Z",
+  "title": "Le sittelle et le vent du sud",
+  "summary": "Journée chaude et calme, vent du sud à peine sensible — le sous-bois a sonné tout le matin.",
+  "body_md": "L'air est monté vite après l'aube, passant de moins de dix degrés à plus de vingt avant midi, poussé par un souffle du sud qui tenait à peine debout. Pas une goutte depuis une semaine complète, la pression remonte doucement : c'est le genre de journée où la forêt exhale plutôt qu'elle ne se tait, et les oiseaux en ont profité. L'activité sonore a culminé entre cinq et sept heures du matin, puis s'est dissipée comme la rosée.\n\nC'est la sittelle à poitrine rousse qui a dominé les écoutes, revenant sans relâche sur les mêmes épinettes, sa voix nasale et pressée caractéristique. Elle descend les troncs la tête en bas, méthode qui lui appartient en propre, et cherche là où les autres ne pensent pas à chercher. La grive des bois a chanté à neuf heures, puis plus rien — le pic-bois a pris le relais à coups sourds dans le bouleau mort près du pont.",
+  "sky_narrative": "La lune gibbeuse, éclairée à plus de 80 %, se couchera en début de nuit et laissera le ciel à lui-même jusqu'à l'aube ; avec moins de 20 % de couverture nuageuse, la nuit sera dégagée et Vénus brillera à l'ouest en début de soirée, bien visible à l'œil nu avant de plonger sous l'horizon.",
+  "theme_tags": [
+    "oiseaux",
+    "foret",
+    "chaleur",
+    "vie-sauvage",
+    "attention"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8.8,
+      "temp_max_c": 25.9,
+      "rain_mm": 0,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_category": "haute",
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 193,
+      "observed_at": "2026-07-24T08:13:02-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 82.8,
+      "moon_set_utc": "2026-07-25T04:59:03Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 19.6
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du Monde."
+}
