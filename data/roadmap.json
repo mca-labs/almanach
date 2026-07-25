@@ -49,6 +49,21 @@
   ],
   "done": [
     {
+      "title": "Champ <code>rain_days_since</code> — jours depuis la dernière pluie",
+      "details": "Le billet ne recevait que la journée courante : faute d'un champ de durée, la synthèse inventait l'ancienneté d'un temps sec à partir du seul <code>rain_day_final_mm=0</code>. Huit éditions annonçaient une sécheresse pluri-jours au lendemain d'une pluie. Preuve du mécanisme : les 20 affirmations sur les éclairs étaient toutes exactes, parce que <code>lightning.last_storm.days_ago</code> existe. Nouveau module <code>src/util/weather-history.ts</code> partagé par <code>daily.ts</code> et <code>scripts/refresh-weather.ts</code> ; seuil de pluie mesurable à 0,2 mm ; retourne <code>null</code> sur un trou d'historique plutôt que de compter les jours manquants comme secs.",
+      "finished_at": "2026-07-25"
+    },
+    {
+      "title": "Bloc <code>derived</code> en tête du payload de synthèse",
+      "details": "Les grandeurs qui portent le sens narratif (cumul de pluie sur 7 jours, jours depuis la dernière pluie, écart aux normales) étaient noyées en fin d'un dump JSON de ~150 lignes rempli de tableaux horaires à 24 éléments. Elles sont désormais calculées et nommées en clair en tête de payload, avec consigne de les citer telles quelles. Un champ enfoui se devine ; un champ nommé se cite.",
+      "finished_at": "2026-07-25"
+    },
+    {
+      "title": "Règles anti-invention dans le prompt éditorial",
+      "details": "Trois interdits ajoutés à <code>prompts/editorial-voice.md</code> et au contrat de schéma de <code>synthesize.ts</code> : (1) <strong>aucune durée sans champ</strong> — toute affirmation dépassant la journée décrite doit venir de <code>derived</code>, et une durée vraie pour un phénomène n'est pas transposable à un autre ; (2) <strong>aucun décor inventé</strong> — pas d'élément de terrain précis et défini absent des données (« le bouleau mort près du pont »), rester indéfini si un support est nécessaire, tout en autorisant l'extrapolation sur les mœurs connues d'une espèce attestée ; (3) <strong>aucune espèce hors liste</strong> — ne pas combler l'écart entre <code>unique_species</code> et les espèces effectivement nommées.",
+      "finished_at": "2026-07-25"
+    },
+    {
       "title": "Résilience de la synthèse (suite) : tolérance aux sorties LLM mal formées",
       "details": "Le run cron du 29 juin a échoué sur un <code>SyntaxError: Bad control character in string literal</code> : Claude avait inclus un retour à la ligne brut dans une string JSON au lieu de la séquence <code>\\n</code>. Le <code>withRetry</code> précédent ne couvrait que les erreurs HTTP (429/529/5xx). Correctifs ajoutés à <code>synthesize.ts</code> : (1) un <code>sanitizeJsonControlChars</code> ré-échappe les caractères de contrôle bruts dans les string literals avant <code>JSON.parse</code> (mini état in-string, attrape la grande majorité des cas en local) ; (2) <code>withRetry</code> couvre désormais aussi les <code>SyntaxError</code> avec un backoff court (5 → 30 s) — un nouvel appel produit une autre génération probabiliste. Filet à deux niveaux : sanitisation locale gratuite, retry pour le résidu.",
       "finished_at": "2026-06-29"

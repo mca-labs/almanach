@@ -13,6 +13,7 @@ import {
   type WeatherDaily,
 } from '../src/sources/tempest.js';
 import { readJson, writeJson } from '../src/util/json.js';
+import { daysSinceRain } from '../src/util/weather-history.js';
 
 const DATA_DIR = 'data';
 
@@ -61,6 +62,7 @@ async function main(): Promise<void> {
     weekTotal += past?.rain_day_final_mm ?? 0;
   }
   w.rain_week_total_mm = weekTotal;
+  w.rain_days_since = await daysSinceRain(date, w.rain_day_final_mm);
   if (w.lightning.count_total > 0) {
     w.lightning.last_storm = {
       count: w.lightning.count_total,

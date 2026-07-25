@@ -57,6 +57,13 @@ export interface WeatherDaily {
   rain_day_final_mm: number | null;
   /** Total des précipitations sur 7 jours (incluant le jour courant). Calculé par daily.ts. */
   rain_week_total_mm?: number | null;
+  /**
+   * Jours écoulés depuis la dernière pluie mesurable (> 0,2 mm), jour courant
+   * inclus : 0 = il a plu aujourd'hui, 1 = hier. `null` si inconnaissable
+   * (aucune pluie sur l'historique disponible, ou trou dans les fichiers).
+   * Calculé par daily.ts — pendant de `lightning.last_storm.days_ago`.
+   */
+  rain_days_since?: number | null;
   solar_rad_avg_wm2: number | null;
   /** Pic de luminosité du jour : heure locale (0..23) et valeur en lux (illuminance Tempest). */
   lux_peak: { hour: number; value_lux: number } | null;

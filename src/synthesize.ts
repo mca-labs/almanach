@@ -88,8 +88,69 @@ Italiques dans la prose ("body_md" et "sky_narrative") :
 
 Règles de CONTENU non négociables (cf. prompts/editorial-voice.md) :
 - N'invente AUCUNE donnée. Si une mesure ou une espèce manque, ne la mentionne pas.
+- AUCUNE DURÉE SANS CHAMP. Toute affirmation portant sur une période plus longue que
+  la journée décrite doit venir d'un champ de "derived", cité tel quel :
+  • durée d'un temps sec → "jours_depuis_derniere_pluie" UNIQUEMENT ;
+  • durée depuis un orage → "jours_depuis_dernier_orage" UNIQUEMENT ;
+  • cumul de pluie sur la semaine → "pluie_7j_total_mm" UNIQUEMENT.
+  Si le champ vaut null, la durée est inconnue : n'écris RIEN à son sujet.
+  "pluie_jour_mm" ne concerne QUE la journée décrite — un 0 ne dit rien de la veille
+  et n'autorise jamais « depuis des jours », « depuis une semaine », « la semaine a
+  été sèche » ni aucune formule équivalente. Ne transpose pas non plus la durée d'un
+  champ à un autre phénomène (un ciel sans éclairs depuis trois jours ne dit rien
+  de la pluie). Dans le doute, décris la journée seule.
+- AUCUN DÉCOR INVENTÉ. N'affirme jamais l'existence d'un élément de terrain précis
+  (un arbre nommé, une souche, un sentier, une mangeoire, un ruisseau) qui n'apparaît
+  pas dans les données. Si la phrase a besoin d'un support, reste indéfini et générique :
+  « un arbre mort », jamais « le bouleau mort près du pont ».
+  En revanche, les MŒURS CONNUES d'une espèce présente ce jour-là s'extrapolent
+  librement (régime, technique de recherche, nidification, déplacement) : c'est du
+  savoir sur l'espèce, pas une affirmation sur ce lieu-ci.
+- AUCUNE ESPÈCE HORS LISTE. Ne nomme que les espèces figurant dans "birds", avec leur
+  nom exact. "unique_species" peut dépasser le nombre d'espèces nommées dans
+  "top_species" : les espèces non listées te sont INCONNUES. Ne comble jamais cet
+  écart, ne devine pas les manquantes, ne substitue pas une espèce voisine.
 - Si aucune citation de la liste ne convient au thème, retourne fragment_quote_id = null.
 `.trim();
+
+/** Moyenne des valeurs non nulles d'un tableau horaire, ou null si tout est vide. */
+function mean(xs: (number | null)[] | undefined): number | null {
+  const v = (xs ?? []).filter((x): x is number => typeof x === 'number');
+  return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+}
+
+function round(x: number | null, digits = 1): number | null {
+  return x === null ? null : Number(x.toFixed(digits));
+}
+
+/**
+ * Faits dérivés, remontés en TÊTE du payload et nommés en clair.
+ *
+ * Raison d'être : les grandeurs qui portent le sens narratif (durée d'un temps
+ * sec, cumul de pluie, écart aux normales) étaient noyées en fin d'un dump de
+ * ~150 lignes rempli de tableaux horaires à 24 éléments. Quand la donnée est
+ * enfouie ou absente, la synthèse comble le vide en inventant une durée — c'est
+ * l'origine du « pas une goutte depuis une semaine complète » du 24 juillet 2026,
+ * écrit au lendemain d'une pluie. Un champ explicite et nommé se cite ; un champ
+ * enfoui se devine.
+ */
+export function buildDerived(ctx: SynthesisContext) {
+  const w = ctx.weather;
+  const tempAvg = w?.air_temp_avg_c ?? mean(w?.hourly_temps_c);
+  const normAvg = mean(w?.hourly_norm_c);
+  return {
+    pluie_jour_mm: round(w?.rain_day_final_mm ?? null),
+    pluie_7j_total_mm: round(w?.rain_week_total_mm ?? null),
+    jours_depuis_derniere_pluie: w?.rain_days_since ?? null,
+    jours_depuis_dernier_orage: w?.lightning?.last_storm?.days_ago ?? null,
+    temp_min_c: round(w?.air_temp_min_c ?? null),
+    temp_max_c: round(w?.air_temp_max_c ?? null),
+    ecart_normale_c:
+      tempAvg !== null && normAvg !== null ? round(tempAvg - normAvg) : null,
+    pression_tendance: w?.pressure?.direction ?? null,
+    espèces_du_jour: ctx.birds.unique_species ?? null,
+  };
+}
 
 /**
  * Échappe les caractères de contrôle (\n, \t, etc.) qui se trouvent brut dans
@@ -199,6 +260,9 @@ export async function synthesize(ctx: SynthesisContext): Promise<SynthesisResult
                 `Voici les données vérifiées pour la date ${ctx.date} (verbatim, ne pas réinterpréter) :\n\n` +
                 JSON.stringify(
                   {
+                    // Faits dérivés déjà calculés. Les citer tels quels ; ne jamais
+                    // les recalculer, les arrondir vers le haut, ni les extrapoler.
+                    derived: buildDerived(ctx),
                     date: ctx.date,
                     sky_date: ctx.sky_date,
                     weather: ctx.weather,

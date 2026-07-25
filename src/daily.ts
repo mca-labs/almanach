@@ -10,6 +10,7 @@ import { computeHistoricalNorm, fetchDailyAggregate } from './sources/tempest.js
 import { synthesize, type Quote } from './synthesize.js';
 import { localDate } from './util/date.js';
 import { readJson, writeJson } from './util/json.js';
+import { daysSinceRain } from './util/weather-history.js';
 
 const DATA_DIR = 'data';
 
@@ -147,6 +148,9 @@ export async function runDaily(
   weather.norm_years_used = norm.norm_years_used;
   // Total pluie sur la semaine (jour courant + 6 jours précédents)
   weather.rain_week_total_mm = await rainWeekTotal(entryDate, weather.rain_day_final_mm);
+  // Jours depuis la dernière pluie mesurable — pendant de last_storm.days_ago.
+  // Sans ce champ, la synthèse doit deviner la durée d'un temps sec et se trompe.
+  weather.rain_days_since = await daysSinceRain(entryDate, weather.rain_day_final_mm);
   // Enrichissement « Dernier orage » : si orage aujourd'hui, c'est lui ;
   // sinon, on remonte dans data/weather/ jusqu'à 365 jours.
   if (weather.lightning.count_total > 0) {
