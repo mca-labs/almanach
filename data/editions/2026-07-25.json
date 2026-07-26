@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-07-25",
+  "generated_at": "2026-07-26T06:44:23.513Z",
+  "title": null,
+  "summary": "Une journée chaude et calme sur le Val — le viréo à tête bleue tenait le haut de la forêt depuis le matin.",
+  "body_md": "Le soleil a frappé tôt et sans détour, poussant le thermomètre à 27,7 °C en après-midi sous un vent du sud à peine perceptible. L'air était sec — deux jours déjà sans pluie — et la lumière de 13 h atteignait une intensité que la forêt absorbait plus qu'elle ne réfléchissait. Aucun éclair, aucune turbulence : la pression restait plate, indifférente, comme si la journée avait décidé de tenir jusqu'au bout sans se compromettre.\n\nLes viréos à tête bleue dominaient la chorale du matin — 79 détections, un chiffre qui dit moins l'abondance que la constance, car l'espèce chante longuement, phrase après phrase, sans jamais sembler à court. Vireo solitarius est un chanteur de canopée : il progresse lentement dans le feuillage dense, inspectant chaque rameau à la recherche d'insectes, et sa voix porte loin même quand lui reste invisible. Les sitelles à poitrine rousse et les pics mineurs complétaient la journée dans les strates inférieures, pendant qu'une grive solitaire se faisait entendre après minuit, fidèle à sa réputation de chanteuse d'heures indues.",
+  "sky_narrative": "La nuit du 26 juillet s'ouvrira avec une lune gibbeuse croissante illuminée à près de 89 %, déjà haute avant minuit — une présence qui écrasera les objets faibles. Vénus sera visible en soirée vers l'ouest, brillante et sans ambiguïté. Avec près de la moitié du ciel couverte, ce sera une nuit de lumière diffuse plutôt que d'observation en profondeur : idéale pour une marche, moins pour le ciel profond.",
+  "theme_tags": [
+    "oiseaux",
+    "chaleur",
+    "calme",
+    "vireo",
+    "foret",
+    "lumiere"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 12.5,
+      "rain_mm": 0,
+      "wind_label": "calme",
+      "wind_dir": "du S",
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 79,
+      "confidence": 0.9879670739173889,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260725-114200.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 89,
+      "moon_set_utc": "2026-07-26T05:46:12.010Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_pct": 44
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il en est qui peuvent vivre sans les choses sauvages, et d'autres qui ne le peuvent pas."
+}
