@@ -45,6 +45,14 @@
     {
       "title": "Calendrier phénologique — premières arrivées de la saison",
       "details": "Registre des « premières » de l'année (première détection d'un migrateur, première nuit sans gel, premier 20 °C…), à la manière des relevés phénologiques d'Aldo Leopold dans <em>A Sand County Almanac</em>. Au fil des ans, donne à voir l'avance ou le recul des saisons. Variante tournée vers l'avant (« espèces attendues bientôt ») — demanderait une baseline régionale (lien avec l'item clé API eBird)."
+    },
+    {
+      "title": "Validateur déterministe des billets avant publication",
+      "details": "Filet de sécurité qui ferme la boucle : rien ne confronte aujourd'hui le texte produit aux données qui l'ont nourri. Un module relirait <code>body_md</code> et <code>summary</code> pour confronter aux sources les affirmations vérifiables — durées de temps sec (contre <code>rain_days_since</code>), durées depuis un orage (contre <code>last_storm.days_ago</code>), noms d'espèces (contre <code>top_species</code> + <code>other_species</code>), chiffres cités. En cas de contradiction, lever une <code>FactCheckError</code> : la machinerie de reprise existe déjà, <code>withRetry</code> relance la génération sur <code>SyntaxError</code> dans <code>synthesize.ts</code> — il suffit d'ajouter la famille d'erreurs. C'est ce qui attrape la <em>classe</em> d'erreur plutôt qu'un cas isolé : les 8 fausses sécheresses du 25 juillet ont tenu des semaines en ligne faute de cette vérification. Attention aux faux positifs : « plus d'une semaine » pour 9 jours secs est exact, un contrôle trop littéral le signalerait à tort."
+    },
+    {
+      "title": "<code>npm run lint:editions</code> — vérification de l'archive en CI",
+      "details": "Rejouer le validateur (item précédent, dont il dépend) sur l'ensemble des éditions à chaque build, pour qu'une régression de ce type se voie au lieu d'attendre qu'un lecteur attentif la trouve. Complète la vérification unitaire faite à la génération par un filet sur le corpus entier."
     }
   ],
   "done": [
