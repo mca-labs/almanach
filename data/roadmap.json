@@ -11,6 +11,10 @@
     {
       "title": "Newsletter / RSS",
       "details": "Éventuel flux pour qui veut être notifié des nouvelles éditions."
+    },
+    {
+      "title": "Inventaire du lieu (<code>data/lieu.json</code>) — tarir le décor inventé",
+      "details": "Remède de fond au dernier foyer d'invention. La voix réclame de la prose située et concrète (« le lieu d'abord ») alors que les sources ne fournissent que des scalaires — degrés, millimètres, lux, comptes de détections. Chaque matin, la synthèse comble cet écart en fabriquant du terrain : « le bouleau mort près du pont » dans l'édition du 24 juillet, et un décor à trier dans <strong>44 éditions sur 65</strong> (épinettes, versant nord, sentier, cèdres, ruisseau, souche, mangeoire). Le correctif est le même que pour <code>rain_days_since</code> : <strong>donner le fait au lieu d'espérer l'inférence</strong>. Un <code>data/lieu.json</code> rédigé par Michael — essences réellement présentes, éléments du paysage, orientation du terrain, ce qui entoure le pont couvert — transmis dans le payload, avec interdiction de nommer quoi que ce soit hors de cette liste. L'invention devient du rappel. <strong>Le fichier doit venir de Michael</strong> : le faire rédiger par le modèle reproduirait exactement l'erreur. Une fois l'inventaire en main, trier et corriger les 44 éditions concernées."
     }
   ],
   "later": [
