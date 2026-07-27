@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-07-26",
+  "generated_at": "2026-07-27T07:42:14.256Z",
+  "title": null,
+  "summary": "Journée chaude et calme, sans vent ni nuage — la sittelle à poitrine rousse a dominé la forêt de bout en bout.",
+  "body_md": "Le soleil a pris possession du Val dès le milieu de la matinée, poussant le thermomètre jusqu'à près de 28 degrés en après-midi. Le vent du sud soufflait à peine — quelques rafales en fin de journée, rien de plus — et la pression tenait bon, plate comme une ardoise. Trois jours sans pluie ont laissé la litière sèche sous le couvert, et la lumière de midi a atteint plus de 115 000 lux, le genre d'éclairage qui fait pâlir les ombres.\n\nLa sittelle à poitrine rousse (Sitta canadensis) a mené le bal : près de 250 détections, devant le merle d'Amérique (Turdus migratorius) et le viréo à tête bleue (Vireo solitarius). Le jaseur des cèdres (Bombycilla cedrorum) s'est fait entendre en soirée, le colibri à gorge rubis (Archilochus colubris) jusqu'après vingt heures. Plus discrète, la bruant chanteur (Melospiza melodia) a quand même posé sa phrase en plein cœur de la matinée — courte, répétée, comme pour s'assurer que quelqu'un écoutait.",
+  "sky_narrative": "La lune gibbeuse, illuminée à 94 %, se couchera avant l'aube — vers 2 h 43 heure locale — et laissera peu de place au ciel profond tant qu'elle sera là. Avec une couverture nuageuse autour de 44 %, la nuit sera partiellement voilée ; Vénus sera visible bas à l'ouest en début de nuit, point fixe au-dessus de l'horizon, tandis que Jupiter brillera non loin avant de disparaître lui aussi.",
+  "theme_tags": [
+    "chaleur",
+    "calme",
+    "sittelle",
+    "bruant-chanteur",
+    "foret"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 27.9,
+      "temp_min_c": 12.5,
+      "ecart_normale_c": 1.2,
+      "pluie_jour_mm": 0,
+      "vent": "calme, du S",
+      "pression": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 11,
+      "observed_at": "2026-07-26T10:42:18-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "illumination_pct": 94,
+      "moon_set_local": "02:43",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 44
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux des espèces les plus robustes ou semi-domestiquées, comme le bruant chanteur et l'hirondelle bleue, arrivant généralement en mars, tandis que les oiseaux des bois, plus rares et plus brillants, ferment la procession en juin."
+}

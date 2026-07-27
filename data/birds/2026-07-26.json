@@ -1,0 +1,157 @@
+{
+  "date": "2026-07-26",
+  "total_detections": 449,
+  "unique_species": 19,
+  "top_species": [
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 246,
+      "max_confidence": 0.9922021627426147,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-105822.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 45,
+      "max_confidence": 0.9604851007461548,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-115054.flac"
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 43,
+      "max_confidence": 0.986370325088501,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-110128.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 34,
+      "max_confidence": 0.9518296718597412,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-184402.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 24,
+      "max_confidence": 0.9842922687530518,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-202831.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 11,
+      "max_confidence": 0.9122609496116638,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-144212.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 10,
+      "max_confidence": 0.8817663192749023,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-144212.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 8,
+      "max_confidence": 0.7972039580345154,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-204517.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 8,
+      "max_confidence": 0.927024245262146,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-155515.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 5,
+      "max_confidence": 0.8304844498634338,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-130903.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 3
+    },
+    {
+      "taxon_common": "Belted Kingfisher",
+      "taxon_scientific": "Megaceryle alcyon",
+      "count": 2
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 2
+    },
+    {
+      "taxon_common": "Eastern Bluebird",
+      "taxon_scientific": "Sialia sialis",
+      "count": 2
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 2
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Blackpoll Warbler",
+      "taxon_scientific": "Setophaga striata",
+      "count": 1
+    },
+    {
+      "taxon_common": "Wilson's Warbler",
+      "taxon_scientific": "Cardellina pusilla",
+      "count": 1
+    },
+    {
+      "taxon_common": "Eastern Kingbird",
+      "taxon_scientific": "Tyrannus tyrannus",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Song Sparrow",
+    "taxon_scientific": "Melospiza melodia",
+    "confidence": 0.9122609496116638,
+    "observed_at": "2026-07-26T10:42:18-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260726-144212.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    33,
+    47,
+    249,
+    4,
+    24,
+    23,
+    10,
+    6,
+    3,
+    8,
+    7,
+    5,
+    25,
+    3,
+    2,
+    0,
+    0,
+    0,
+    0
+  ]
+}
