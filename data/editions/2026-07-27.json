@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-07-27",
+  "generated_at": "2026-07-28T06:35:54.904Z",
+  "title": null,
+  "summary": "Journée de pluie et d'orage sur le Val — 31 millimètres tombés, l'air lavé, la forêt alourdie.",
+  "body_md": "La pluie a commencé tôt et n'a pas lâché avant la mi-journée. Trente et un millimètres au total, avec quinze éclairs captés à moins de trois kilomètres — un orage serré, bref, qui a tout rincé. La température n'a jamais franchi 23 degrés, soit trois degrés et demi sous la normale pour fin juillet. Vent presque nul du sud, pression stable : la journée s'est refermée sur elle-même, lourde et close, le genre de jour qui appartient entièrement à la forêt.\n\nC'est le troglodyte mignon qui a tenu la parole. Seize espèces ont été entendues malgré la pluie, et lui, Troglodytes hiemalis, a figuré parmi les plus actifs — dix-huit détections. Il n'en a cure des averses : ce petit brun cherche ses insectes dans les crevasses d'écorce, sous les amas de bois mort, là où l'humidité concentre la vie. Sa voix cascade et se reprend, trop ample pour son corps. À côté, la sittelle à poitrine rousse et le viréo à tête bleue tenaient leur rang, et quelques gros-becs errants ont traversé le sous-bois dans un éclat de jaune soufre. La grive solitaire, elle, s'est tue tôt. Ce soir, l'air sent la terre retournée.",
+  "sky_narrative": "La lune, gibbeuse à presque pleine, se sera couchée en fin de nuit — son lever n'interviendra qu'aux alentours de minuit quatorze —, mais avec près de la moitié du ciel couverte, l'observation restera compromise. Vénus sera la seule planète notable à chercher, basse à l'ouest en début de nuit ; le reste du ciel appartiendra aux nuages.",
+  "theme_tags": [
+    "pluie",
+    "orage",
+    "foret",
+    "sous-bois",
+    "oiseaux",
+    "fraicheur"
+  ],
+  "highlights": {
+    "weather": {
+      "pluie_mm": 31.3,
+      "temp_max_c": 23.6,
+      "temp_min_c": 13.9,
+      "ecart_normale_c": -3.5,
+      "vent": "calme, du S",
+      "pression": "stable",
+      "eclairs": 15,
+      "distance_eclairs_km": 2.6
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 18,
+      "confidence": 0.806
+    },
+    "sky": {
+      "lune_phase": "Gibbeuse croissante",
+      "lune_illumination_pct": 98,
+      "lune_lever_utc": "2026-07-29T00:14:03Z",
+      "lune_coucher_utc": "2026-07-28T07:48:13Z",
+      "venus_notable": true,
+      "couverture_nuageuse_pct": 45
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
