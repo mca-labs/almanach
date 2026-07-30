@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-07-29",
+  "generated_at": "2026-07-30T06:36:13.330Z",
+  "title": null,
+  "summary": "Journée fraîche et calme au Val — la pression remonte doucement après la pluie de la nuit, et l'air reste posé sur la forêt.",
+  "body_md": "Trois millimètres sont tombés quelque part dans la nuit, et le matin a gardé cette humidité légère qui colle aux feuilles sans peser. Le vent est resté presque nul toute la journée — à peine un frémissement du sud en début d'après-midi — et les températures n'ont pas dépassé 18 degrés, bien en dessous de ce qu'on attendrait un 29 juillet. Le baromètre, lui, se reprend lentement.\n\nC'est dans ce calme que le merle d'Amérique a tenu le Val. Sa voix s'est élevée dès le milieu de la journée, phrase après phrase, avec cette assurance tranquille qu'il garde même en plein été. Troglodyte des forêts, jaseurs des cèdres, colibri à gorge rubis — 45 détections pour lui seul, un chiffre qui dit quelque chose sur l'abondance des fleurs après une semaine bien arrosée. Dix-sept espèces au total, dont une paruline à poitrine baie et une paruline de Blackburnian que juillet finissant disperse vers le sud. Le Val les reçoit sans faire d'histoire.",
+  "sky_narrative": "La nuit prochaine sera presque entièrement voilée — 96 % de couverture nuageuse — et Vénus, seule planète notable au-dessus de l'horizon en début de soirée, ne sera guère visible à travers les nuages. La lune, gibbeuse à près de pleine, se lèvera très tard et ne changera rien à l'affaire : ce sera une nuit sombre et fermée, bonne pour dormir, peu propice à l'observation du ciel.",
+  "theme_tags": [
+    "fraicheur",
+    "pluie",
+    "merle",
+    "colibri",
+    "migration",
+    "ete-tardif",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 18.2,
+      "temp_min_c": 15.4,
+      "ecart_normale_c": -2.4,
+      "pluie_jour_mm": 3,
+      "pression_tendance": "up",
+      "vent": "calme"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 23,
+      "observed_at": "2026-07-29T14:52:20-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 99.7,
+      "moon_set": "2026-07-30T10:08:48Z",
+      "venus_notable": true,
+      "cloud_cover_night_pct": 96
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-4",
+  "fragment_translation_fr": "Le temps n'est que le ruisseau où je vais à la pêche. J'y bois ; mais en buvant, je vois le fond de sable et mesure combien il est peu profond. Son mince courant s'écoule, mais l'éternité demeure."
+}
