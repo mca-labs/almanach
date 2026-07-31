@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-07-30",
+  "generated_at": "2026-07-31T06:51:35.043Z",
+  "title": "Juillet finissant, vent du sud",
+  "summary": "Journée douce et calme sur le Val — la pression ne bouge pas, le vent vient du sud, et la forêt reprend son souffle après la pluie d'hier.",
+  "body_md": "La nuit a laissé 15 degrés au bas du thermomètre, et le jour n'a pas poussé bien loin au-dessus de 22 — un juillet raisonnable, sans excès. Le vent soufflait du sud à peine 4 kilomètres-heure, presque rien, juste assez pour faire tourner les feuilles par moments. Le pic chevelu a travaillé tôt dans le sous-bois, cherchant les larves sous l'écorce des arbres morts, et les mésanges à tête noire se sont montrées en fin d'après-midi, discrètes comme à leur habitude. Quatorze espèces au total — une journée moyenne, bien remplie.\n\nMais l'oiseau du jour, c'était le colibri à gorge rubis. Sa voix — ce bourdonnement sec, presque insecte — est apparue dès le matin, et le capteur l'a relevée quatorze fois au fil des heures. À cette saison, il travaille les fleurs méthodiquement, couvrant un territoire précis qu'il défend avec une énergie disproportionnée à sa taille. Les jaseurs des cèdres sont passés en bande en fin de journée, leurs trilles filés descendant de quelque part dans la canopée — on les entend avant de les voir, et souvent on ne les voit pas du tout.",
+  "sky_narrative": "La lune, gibbeuse à 98 %, se couchera à 7 h 20 ce matin et ne se lèvera pas avant 1 h 14 la nuit prochaine, laissant quelques heures de véritable obscurité entre minuit et l'aube astronomique, vers 3 h. Avec seulement 29 % de couverture nuageuse prévue, Vénus sera visible bas dans l'ouest en début de nuit, et la fenêtre du milieu de la nuit pourra se prêter à un peu d'observation du ciel profond — ou simplement à une marche sans frontale sous les étoiles.",
+  "theme_tags": [
+    "oiseaux",
+    "été",
+    "calme",
+    "colibri",
+    "forêt"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 15.4,
+      "temp_max_c": 22.6,
+      "ecart_normale_c": 1.8,
+      "pression_tendance": "flat",
+      "vent_direction": "du S",
+      "vent_qualificatif": "calme",
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 1
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 14,
+      "confidence": 0.9910833835601807,
+      "observed_at": "2026-07-30T06:08:02-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 97.6,
+      "moon_set": "2026-07-31T11:20:00.393Z",
+      "moon_rise": "2026-08-01T01:14:51.043Z",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 29.3
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-belette",
+  "fragment_translation_fr": null
+}
