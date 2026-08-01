@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-07-31",
+  "generated_at": "2026-08-01T06:37:42.266Z",
+  "title": "Le roitelet et le colibri",
+  "summary": "Une journée claire et calme s'achève sur le Val — deux jours sans pluie, le vent presque nul, et treize espèces au tableau.",
+  "body_md": "Le 31 juillet s'est passé dans la retenue : pas un éclair depuis trois jours, le baromètre plat, le vent du sud à peine perceptible — une rafale à 21 km/h en milieu de matinée, puis rien. La température a grimpé jusqu'à 22 degrés en après-midi avant de redescendre franchement après le coucher du soleil, et à minuit le thermomètre touchait déjà les 12. Rien d'exceptionnel. Une journée de fin juillet qui ressemble à ce qu'elle doit être.\n\nLe colibri à gorge rubis a dominé la journée — trente-sept détections, un pic en fin d'après-midi, comme si la lumière rasante de 17 h tirait quelque chose de lui. Mais l'oiseau du jour est plus discret : le roitelet à couronne dorée, quinze passages enregistrés, entendu pour la première fois à 8 h 34. C'est un oiseau des épinettes, insectivore acharné qui fouille l'écorce et les aiguilles avec une énergie disproportionnée à sa taille. En plein été il tient son territoire en silence relatif ; le réentendre ce matin, c'est une note un peu plus froide dans la saison.",
+  "sky_narrative": "La lune gibbeuse décroissante — illuminée à 94 % — se couchera vers 8 h 31 heure locale, bien après l'aube, ce qui signifie qu'elle baignera une bonne partie de la nuit d'une lumière assez forte pour effacer les étoiles faibles. Vénus sera visible en début de nuit à l'ouest, seul point vraiment brillant dans un ciel couvert à moitié : avec 45 % de couverture nuageuse, l'observation du ciel profond sera compromise, mais la lune et Vénus traverseront les éclaircies sans mal.",
+  "theme_tags": [
+    "oiseaux",
+    "calme",
+    "ete",
+    "roitelet",
+    "colibri"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 22.2,
+      "temp_min_c": 12.1,
+      "ecart_normale_c": 1.4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 2,
+      "vent": "calme, du S, rafale max 21 km/h",
+      "pression": "stable (flat)"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 15,
+      "first_observed": "2026-07-31T08:34:11-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260731-123407.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 94,
+      "moon_set_local": "08:31",
+      "venus_notable": true,
+      "jupiter_notable": true,
+      "cloud_cover_night_pct": 45
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne faire face qu'aux faits essentiels de la vie, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — et ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
