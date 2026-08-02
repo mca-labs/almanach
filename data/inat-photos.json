@@ -610,5 +610,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-07-24T06:35:04.476Z"
+  },
+  "Branta canadensis": {
+    "taxon_inat_id": 7089,
+    "name_fr": "Bernache du Canada",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/239718896/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/239718896/square.jpeg",
+    "attribution": "(c) Daniel LaFrance, some rights reserved (CC BY-NC), uploaded by Daniel LaFrance",
+    "attribution_name": "Daniel LaFrance",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-08-02T06:40:38.303Z"
   }
 }

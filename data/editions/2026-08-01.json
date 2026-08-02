@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-08-01",
+  "generated_at": "2026-08-02T06:40:59.569Z",
+  "title": null,
+  "summary": "Journée d'orage bref et de chaleur passagère — la pluie est venue, puis le ciel s'est rouvert, et le Val a repris son souffle.",
+  "body_md": "La matinée avait commencé fraîche, à peine dix degrés, avant que le thermomètre ne grimpe jusqu'à vingt-quatre en milieu de journée. Un orage a traversé le Val — un seul éclair, très proche — et onze millimètres sont tombés, assez pour mouiller la litière et faire monter une odeur de terre remuée. Le vent du sud soufflait à peine ; la pression est restée à plat. Treize espèces ont été entendues, 121 détections au total.\n\nLes corneilles d'Amérique ont dominé la journée après le passage de la pluie, leurs voix rauques portant d'un versant à l'autre. Le roitelet à couronne dorée s'est fait entendre en fin d'après-midi, discret mais insistant — un filet de son qui tient dans très peu d'espace. Et le colibri à gorge rubis n'a pas ralenti : cinquante-six détections, l'espèce la plus active du jour, vraisemblablement occupé à récupérer les fleurs alalourdies par la pluie. Un bec-croisé des sapins du soir, un grosbec errant noté une fois — la liste reste courte, mais chaque présence y compte.",
+  "sky_narrative": "La couverture nuageuse sera totale cette nuit : Vénus, pourtant brillante à l'ouest en début de soirée, et Jupiter, notable lui aussi, resteront voilés derrière un plafond fermé. La lune gibbeuse décroissante se lèvera tard, après une heure du matin — mais le ciel bouché ne laissera rien passer ; ce sera une nuit noire et sourde, propice au sommeil, peu à l'observation.",
+  "theme_tags": [
+    "orage",
+    "pluie",
+    "colibri",
+    "corneille",
+    "roitelet",
+    "été"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 10.2,
+      "temp_max_c": 24.3,
+      "rain_mm": 11.2,
+      "pression_tendance": "flat",
+      "vent": "calme, du S",
+      "orage": "1 éclair, 0,6 km"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 19,
+      "observed_at": "2026-08-01T10:41:12-04:00"
+    },
+    "sky": {
+      "for_date": "2026-08-02",
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 87.7,
+      "moon_rise": "2026-08-03T01:46:03Z",
+      "planets_notable": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "cloud_cover_night_pct": 100
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
