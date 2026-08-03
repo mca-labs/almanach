@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-08-02",
+  "generated_at": "2026-08-03T07:37:40.536Z",
+  "title": "Orage de midi, colibri du soir",
+  "summary": "Journée lourde et chaude sur le Val — un orage bref à passé, la pression continue de glisser.",
+  "body_md": "La chaleur a tenu toute la matinée, l'air à peine remué par un souffle du sud. Vers midi, les détections d'oiseaux ont bondi — 28 signaux en une heure — puis l'orage est arrivé : treize coups de foudre recensés, tous à moins de deux kilomètres. Les rafales ont atteint 48 km/h peu avant minuit. Il est tombé 5,6 mm en tout, et la pression, déjà basse à 966 hPa, continue de descendre doucement.\n\nC'est le colibri à gorge rubis, Archilochus colubris, qui a dominé la journée avec 53 détections — une présence massive pour une espèce qui vit au seuil du visible, suspendue un dixième de seconde devant une fleur avant de disparaître. Les corneilles d'Amérique ont rappelé à voix haute que la forêt leur appartient autant qu'à n'importe qui. Plus discret, entendu une seule fois en soirée : le solitaire de forêt, Catharus guttatus, dont la phrase spiralée montait dans l'air mouillé comme une question sans réponse.",
+  "sky_narrative": "La couverture nuageuse sera quasi totale cette nuit — 99 % selon les prévisions — et la lune gibbeuse décroissante, éclairée à 80 %, se sera déjà couchée avant 23 h, heure locale. Vénus sera la seule planète notable à pointer au-dessus de l'horizon en début de soirée, mais le plafond nuageux la dérobera probablement au regard ; cette nuit ne se prêtera ni à l'astronomie ni à la marche sans frontale.",
+  "theme_tags": [
+    "orage",
+    "chaleur",
+    "colibri",
+    "corvides",
+    "pression-basse",
+    "ete"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 27.7,
+      "temp_min_c": 16.8,
+      "rain_mm": 5.6,
+      "wind_gust_kmh": 48.24,
+      "pressure_mb": 966.4,
+      "pressure_trend": "down",
+      "lightning_count": 13,
+      "lightning_avg_dist_km": 1.5
+    },
+    "bird_of_the_day": {
+      "common": "Mésange à tête noire",
+      "scientific": "Poecile atricapillus",
+      "detections": 5,
+      "observed_at": "2026-08-02T16:46:26-04:00"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 80,
+      "cloud_cover_pct": 99,
+      "venus_visible": true,
+      "notable_planets": [
+        "Vénus"
+      ]
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}

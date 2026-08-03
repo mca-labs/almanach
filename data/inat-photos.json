@@ -622,5 +622,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-08-02T06:40:38.303Z"
+  },
+  "Falco columbarius": {
+    "taxon_inat_id": 4672,
+    "name_fr": "Faucon émerillon",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/349349598/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/349349598/square.jpeg",
+    "attribution": "(c) Aleksandr Berdnikov, some rights reserved (CC BY-NC), uploaded by Aleksandr Berdnikov",
+    "attribution_name": "Aleksandr Berdnikov",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-08-03T07:37:17.812Z"
   }
 }
