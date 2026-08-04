@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-08-03",
+  "generated_at": "2026-08-04T06:36:19.219Z",
+  "title": "Après la pluie, le pic",
+  "summary": "Une journée fraîche et mouillée sur le Val, la pression qui remonte doucement après 19 millimètres de pluie.",
+  "body_md": "La pluie est tombée tôt, abondante et sans fracas — 19,6 millimètres en une journée fraîche, à peine 19 degrés au pic. La lumière n'a jamais vraiment percé : un peu plus de 40 000 lux à onze heures, puis le ciel s'est refermé. Le baromètre remonte depuis l'après-midi, une rafale à 84 kilomètres-heure en a marqué la transition vers quatorze heures. La forêt boit.\n\nSix espèces seulement, et le jour appartenait au colibri à gorge rubis — vingt-cinq détections, une constance qui dit quelque chose de la saison. Mais c'est le pic flamboyant qui retient l'attention : une seule présence, vers dix heures du matin, son cri incisif posé sur le silence mouillé comme un point final. Le pic cherchait probablement des fourmis dans le sol détrempé — c'est sa façon, au sol plus qu'à l'écorce — et il est reparti sans s'attarder.",
+  "sky_narrative": "La lune gibbeuse, éclairée à 71 %, se couchera avant minuit et demi, laissant la nuit libre quelques heures. Avec seulement 27 % de couverture nuageuse prévue, Vénus sera visible à l'ouest en début de soirée, lumineuse et basse sur l'horizon — une nuit qui se prêtera à une sortie à découvert une fois la lune descendue.",
+  "theme_tags": [
+    "pluie",
+    "oiseaux",
+    "pic",
+    "colibri",
+    "pression",
+    "fraicheur",
+    "été"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 19.8,
+      "temp_min_c": 14.5,
+      "rain_mm": 19.6,
+      "wind_gust_kmh": 83.88,
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 1,
+      "observed_at": "2026-08-03T09:49:50-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 71,
+      "moon_set": "2026-08-04T16:11:03.460Z",
+      "cloud_cover_pct": 27,
+      "venus_notable": true,
+      "jupiter_notable": true
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du Monde."
+}
