@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-08-04",
+  "generated_at": "2026-08-05T06:37:17.139Z",
+  "title": "Le jour du colibri",
+  "summary": "Journée chaude et calme sur le Val, la pression qui remonte doucement après deux jours d'orages.",
+  "body_md": "L'air est arrivé du sud ce matin, tiède et presque immobile — à peine 5 km/h en moyenne, avec une rafale fugace en fin de soirée. Le baromètre remontait lentement, comme il le fait toujours après que le ciel s'est vidé de sa violence. Hier encore la pluie ; aujourd'hui, le calme revenu et 26 degrés en milieu d'après-midi, soit près de cinq degrés au-dessus de la normale. La lumière de midi a frappé fort, 108 000 lux au pic, le genre d'intensité qui donne aux feuilles un éclat presque métallique.\n\nLe colibri à gorge rubis a dominé la journée sans partage : 45 détections, du petit matin jusqu'au crépuscule, ce vol en aiguille qui traverse l'air comme une idée pressée. Le roitelet à couronne dorée et le jaseur des cèdres ont signé leur présence, discrets. Mais c'est le gros-bec errant, entendu une seule fois en début de soirée, qui mérite qu'on s'arrête — son cri traçant en plein août un trait entre deux saisons, comme si la forêt se rappelait soudain que l'été finit.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse décroissante se sera couchée avant même que la nuit soit profonde — son coucher est prévu à 13 h 30 heure locale, laissant le ciel entièrement libre dès la tombée. Sans nuages annoncés cette nuit, Vénus brillera bas à l'ouest en début de soirée, seule planète notable visible ; la fenêtre d'obscurité vraie, entre la fin du crépuscule astronomique et l'aube, offrira plusieurs heures de ciel profond, propice à marcher sans frontale ou simplement à lever les yeux.",
+  "theme_tags": [
+    "oiseaux",
+    "chaleur",
+    "calme",
+    "été",
+    "migration"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 26.3,
+      "temp_min_c": 15.3,
+      "ecart_normale_c": 4.6,
+      "pluie_jour_mm": 0,
+      "vent_label": "calme, du S",
+      "pression_tendance": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 1,
+      "observed_at": "2026-08-04T14:00:26-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 60,
+      "cloud_cover_night_pct": 0,
+      "planets_notable": [
+        "Vénus"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
