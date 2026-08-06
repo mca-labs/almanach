@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-08-05",
+  "generated_at": "2026-08-06T06:40:29.938Z",
+  "title": "Le pic et le colibri, sous la chaleur du Val",
+  "summary": "Journée chaude et calme sur le Val — 30 °C dans l'après-midi, vent du sud à peine perceptible, ciel d'été sans défaut.",
+  "body_md": "La pression n'a presque pas bougé de la journée, et le vent du sud n'a su se décider qu'à souffler par instants, en rafales tièdes qui ne duraient pas. Trente degrés à l'ombre en milieu d'après-midi — sept degrés de plus que la normale pour ce début d'août — et une lumière qui tapait à la verticale depuis midi jusqu'à la mi-journée. Il n'a pas plu. Deux jours sans pluie, après les 36 millimètres de la semaine : le sol commence à souffler.\n\nLe colibri à gorge rubis a dominé la journée comme il domine l'espace qu'il occupe — brusquement, avec insistance, trente-sept détections au fil des heures. Mais c'est le jaseur des cèdres qui mérite qu'on s'y arrête : une voix sifflée très fine, presque inaudible si l'on n'y prête pas l'oreille, relevée vers huit heures du matin dans le couvert. Bombycilla cedrorum se déplace en groupes erratiques cet été, cherchant les fruits mûrs d'arbre en arbre — une grive solitaire a chanté en soirée, le pic mineur a cogné à intervalles réguliers, et le roitelet à couronne dorée a fait entendre son cri aigu bien après que la chaleur eut cédé.",
+  "sky_narrative": "La lune — dernier quartier, à moitié éclairée — se couchera tôt, vers 14 h 51 heure locale, laissant la seconde moitié de la nuit aux étoiles. Avec seulement 11 % de couverture nuageuse prévue, le ciel sera presque entièrement dégagé : Vénus brillera bas à l'ouest en début de soirée, seul point lumineux bien ancré au-dessus de l'horizon, avant de disparaître à son tour — une nuit propice à l'observation à l'œil nu, sans frontale nécessaire.",
+  "theme_tags": [
+    "chaleur",
+    "colibri",
+    "jaseur",
+    "été",
+    "calme",
+    "oiseaux"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 30.1,
+      "temp_min_c": 16.3,
+      "ecart_normale_c": 7.6,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 2,
+      "pression_tendance": "flat",
+      "vent": "calme, du S, rafale max 27 km/h"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 6,
+      "observed_at": "2026-08-05T08:20:08-04:00"
+    },
+    "sky": {
+      "moon_phase": "Dernier quartier",
+      "moon_illumination_pct": 49,
+      "moon_set_utc": "2026-08-06T18:51:51Z",
+      "venus_notable": true,
+      "cloud_cover_night_pct": 11
+    }
+  },
+  "fragment_quote_id": "john-muir-my-8",
+  "fragment_translation_fr": "Et notre premier jour de montagne pur, chaud, calme, sans nuage — comme il semble immesurable, comme il est sereinement sauvage !"
+}
