@@ -1,0 +1,104 @@
+{
+  "date": "2026-08-06",
+  "total_detections": 97,
+  "unique_species": 9,
+  "top_species": [
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 28,
+      "max_confidence": 0.9682514071464539,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-105102.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 25,
+      "max_confidence": 0.9929472208023071,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-190534.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 16,
+      "max_confidence": 0.8138525485992432,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-091245.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 11,
+      "max_confidence": 0.897793173789978,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-114909.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 8,
+      "max_confidence": 0.8033921122550964,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-175401.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 3,
+      "max_confidence": 0.9438942074775696,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-154308.flac"
+    },
+    {
+      "taxon_common": "Green-winged Teal",
+      "taxon_scientific": "Anas crecca",
+      "count": 3,
+      "max_confidence": 0.9333661794662476,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-120622.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 2,
+      "max_confidence": 0.8836329579353333,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-141901.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 1,
+      "max_confidence": 0.6572717428207397,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-114301.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Red-breasted Nuthatch",
+    "taxon_scientific": "Sitta canadensis",
+    "confidence": 0.9682514071464539,
+    "observed_at": "2026-08-06T06:51:05-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260806-105102.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    15,
+    7,
+    30,
+    8,
+    4,
+    8,
+    6,
+    0,
+    2,
+    1,
+    8,
+    4,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

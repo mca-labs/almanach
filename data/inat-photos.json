@@ -165,7 +165,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-07-15T06:23:45.961Z"
+    "resolved_at": "2026-08-07T05:46:54.535Z"
   },
   "Megaceryle alcyon": {
     "taxon_inat_id": 2548,
@@ -297,7 +297,7 @@
     "license_code": "pd",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-16T09:33:04.199Z"
+    "resolved_at": "2026-08-07T05:46:51.523Z"
   },
   "Colaptes auratus": {
     "taxon_inat_id": 18236,
@@ -634,5 +634,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-08-03T07:37:17.812Z"
+  },
+  "Anas crecca": {
+    "taxon_inat_id": 6937,
+    "name_fr": "Sarcelle d'hiver",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/211049430/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/211049430/square.jpeg",
+    "attribution": "(c) Ольга Курякова, some rights reserved (CC BY-NC), uploaded by Ольга Курякова",
+    "attribution_name": "Ольга Курякова",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-08-07T05:46:53.470Z"
   }
 }
