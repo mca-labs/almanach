@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-08-07",
+  "generated_at": "2026-08-08T05:06:07.537Z",
+  "title": "Un vendredi de plein août",
+  "summary": "Chaleur sèche et vent calme sur le Val — l'été tient bon, quatre jours sans pluie.",
+  "body_md": "La journée a monté vite, comme souvent quand le vent du sud souffle à peine. À neuf heures, on était déjà à vingt-sept degrés, cinq degrés au-dessus de la normale, et l'air portait cette qualité particulière du beau temps qui dure : sec, immobile, légèrement opaque vers l'horizon. La pression est restée à plat. Rien ne pressait.\n\nC'est dans cet air-là que le colibri à gorge rubis, Archilochus colubris, s'est montré le plus actif — trente-cinq détections au fil de l'après-midi, pic autour de quatorze heures. En août, les individus commencent à préparer le voyage : ils boivent beaucoup, visitent méthodiquement chaque fleur disponible, accumulent les réserves pour une traversée qui peut dépasser cinq cents kilomètres d'un trait au-dessus du golfe. Pas d'urgence visible ce jour-là, mais une attention au territoire que le roi-lets à couronne dorée, quatre-vingt-quatre détections, partageait à sa façon — glanant en sous-bois, infatigable.",
+  "sky_narrative": "La couverture nuageuse sera totale cette nuit, et les Perséides — dont le pic est dans quatre jours, avec un taux attendu d'une centaine d'étoiles filantes par heure — resteront invisibles. Vénus sera la seule planète notable basse sur l'horizon ouest en début de soirée, mais le ciel bouché effacera tout ; une nuit à passer dedans, les oreilles ouvertes plutôt que les yeux levés.",
+  "theme_tags": [
+    "chaleur",
+    "migration",
+    "colibri",
+    "oiseaux",
+    "ete",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 28.7,
+      "temp_min_c": 17.6,
+      "ecart_normale_c": 5.5,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 4,
+      "vent": "calme, du S, rafale max 18 km/h à 19 h",
+      "pression": "stable (971,4 mb, tendance plate)"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 35,
+      "confidence": 0.9915491342544556,
+      "observed_at": "2026-08-07T13:18:31-04:00"
+    },
+    "sky": {
+      "for_date": "2026-08-08",
+      "moon_phase": "Dernier croissant (27 % illuminé)",
+      "moon_set_utc": "2026-08-08T21:24:51Z",
+      "cloud_cover_night_pct": 100,
+      "venus_notable": true,
+      "meteor_shower": "Perséides — pic dans 4 jours (ZHR ~100)"
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est vraiment commencée."
+}

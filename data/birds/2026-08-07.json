@@ -1,0 +1,157 @@
+{
+  "date": "2026-08-07",
+  "total_detections": 233,
+  "unique_species": 19,
+  "top_species": [
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 84,
+      "max_confidence": 0.9362515807151794,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-182918.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 35,
+      "max_confidence": 0.9915491342544556,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-171830.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 25,
+      "max_confidence": 0.7801652550697327,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-130457.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 23,
+      "max_confidence": 0.9612428545951843,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-125144.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 14,
+      "max_confidence": 0.8633150458335876,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-162010.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 13,
+      "max_confidence": 0.9120555520057678,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-153726.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 11,
+      "max_confidence": 0.991985559463501,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-111237.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 10,
+      "max_confidence": 0.9618070721626282,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-184943.flac"
+    },
+    {
+      "taxon_common": "Blackpoll Warbler",
+      "taxon_scientific": "Setophaga striata",
+      "count": 6,
+      "max_confidence": 0.8663287162780762,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-140445.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 2,
+      "max_confidence": 0.9434877634048462,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-132458.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 2
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 1
+    },
+    {
+      "taxon_common": "Nashville Warbler",
+      "taxon_scientific": "Leiothlypis ruficapilla",
+      "count": 1
+    },
+    {
+      "taxon_common": "Bay-breasted Warbler",
+      "taxon_scientific": "Setophaga castanea",
+      "count": 1
+    },
+    {
+      "taxon_common": "Least Flycatcher",
+      "taxon_scientific": "Empidonax minimus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Blue-headed Vireo",
+      "taxon_scientific": "Vireo solitarius",
+      "count": 1
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Green-winged Teal",
+      "taxon_scientific": "Anas crecca",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Ruby-throated Hummingbird",
+    "taxon_scientific": "Archilochus colubris",
+    "confidence": 0.9915491342544556,
+    "observed_at": "2026-08-07T13:18:31-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260807-171830.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    14,
+    14,
+    43,
+    14,
+    8,
+    24,
+    30,
+    48,
+    6,
+    7,
+    10,
+    8,
+    3,
+    0,
+    0,
+    0,
+    0
+  ]
+}

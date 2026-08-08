@@ -189,7 +189,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-07-09T07:53:17.580Z"
+    "resolved_at": "2026-08-08T05:05:40.826Z"
   },
   "Mniotilta varia": {
     "taxon_inat_id": 10286,
@@ -405,7 +405,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-03T09:01:31.975Z"
+    "resolved_at": "2026-08-08T05:05:43.068Z"
   },
   "Empidonax alnorum": {
     "taxon_inat_id": 16620,
@@ -489,7 +489,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-07-17T06:24:22.461Z"
+    "resolved_at": "2026-08-08T05:05:39.986Z"
   },
   "Melospiza georgiana": {
     "taxon_inat_id": 9096,
