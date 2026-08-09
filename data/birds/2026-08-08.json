@@ -1,0 +1,127 @@
+{
+  "date": "2026-08-08",
+  "total_detections": 100,
+  "unique_species": 13,
+  "top_species": [
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 33,
+      "max_confidence": 0.9794283509254456,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-180638.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 25,
+      "max_confidence": 0.9706625938415527,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-103602.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 9,
+      "max_confidence": 0.9709081053733826,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-104954.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 7,
+      "max_confidence": 0.9644042253494263,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-135207.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 6,
+      "max_confidence": 0.9233664870262146,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-221807.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 5,
+      "max_confidence": 0.7844616770744324,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-210856.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 5,
+      "max_confidence": 0.744205117225647,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-113927.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 5,
+      "max_confidence": 0.8127636909484863,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-182014.flac"
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 1,
+      "max_confidence": 0.6210203766822815,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-224250.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 1,
+      "max_confidence": 0.5520699620246887,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-210844.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 1
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Green-winged Teal",
+      "taxon_scientific": "Anas crecca",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Golden-crowned Kinglet",
+    "taxon_scientific": "Regulus satrapa",
+    "confidence": 0.9706625938415527,
+    "observed_at": "2026-08-08T06:36:03-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260808-103602.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    8,
+    14,
+    6,
+    6,
+    7,
+    1,
+    6,
+    4,
+    5,
+    16,
+    8,
+    7,
+    10,
+    1,
+    0,
+    0,
+    0,
+    0
+  ]
+}

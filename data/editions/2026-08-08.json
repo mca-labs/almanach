@@ -1,0 +1,48 @@
+{
+  "entry_date": "2026-08-08",
+  "generated_at": "2026-08-09T05:13:34.544Z",
+  "title": "Le colibri et le roitelet",
+  "summary": "Journée chaude et calme sur le Val — la forêt retient son souffle entre deux saisons.",
+  "body_md": "La chaleur est montée tôt, portée par un vent du sud à peine perceptible et un ciel que rien n'est venu fermer. Trente degrés à l'après-midi, soit plus de six degrés au-dessus de la normale pour ce moment de l'été — une journée qui appartient encore à juillet par les chiffres, mais que la lumière de 15 h commence déjà à démentir. Sans pluie depuis cinq jours, l'air avait cette sécheresse nette, presque minérale, qui rend les sons plus portants.\n\nC'est dans cette acoustique que le roitelet à couronne dorée s'est signalé, fin et insistant, bien avant que le soleil atteigne la cime des épinettes. Regulus satrapa passe l'été ici, mais en août sa voix se fait plus discrète, et l'entendre avec cette régularité — vingt-cinq détections dans la journée — tient presque de la surprise. Le colibri à gorge rubis, lui, a dominé le comptage : trente-trois passages, dont plusieurs en fin d'après-midi alors que la chaleur commençait à lâcher. À cette saison, les jeunes Archilochus colubris font les mêmes rondes inlassables que les adultes, constituant des réserves pour la longue route vers le sud. La buse à épaulettes a tourné au-dessus du versant à l'heure la plus chaude — sept signalements entre midi et 14 h — cherchant la thermique que ce genre de journée fabrique sans effort.",
+  "sky_narrative": "La couverture nuageuse sera dense ce soir — près des trois quarts du ciel —, ce qui limitera la vue sur les Perséides, dont le pic approche dans trois jours. La lune, un mince croissant à 17 % d'illumination, se couchera en milieu de nuit et ne gênera pas les éventuelles fenêtres entre les nuages ; Vénus sera visible bas à l'ouest en début de soirée.",
+  "theme_tags": [
+    "chaleur",
+    "oiseaux",
+    "migration",
+    "colibri",
+    "roitelet",
+    "perseides",
+    "été"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 30.3,
+      "temp_min_c": 16,
+      "ecart_normale_c": 6.3,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 5,
+      "vent": "calme, du S, rafale max 13,7 km/h",
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 25,
+      "confidence": 0.97,
+      "observed_at": "2026-08-08T06:36:03-04:00"
+    },
+    "sky": {
+      "lune_phase": "Dernier croissant (17 %)",
+      "lune_coucher_utc": "2026-08-09T22:23:39Z",
+      "planetes_notables": [
+        "Vénus (alt +8,7°)",
+        "Mercure (sous horizon)",
+        "Jupiter (sous horizon)"
+      ],
+      "meteor_shower": "Perséides — pic dans 3 jours (ZHR 100)",
+      "couverture_nuageuse_pct": 73
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre avec intention, ne faire face qu'aux faits essentiels de l'existence, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — et non pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
