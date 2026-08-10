@@ -1,0 +1,122 @@
+{
+  "date": "2026-08-09",
+  "total_detections": 80,
+  "unique_species": 12,
+  "top_species": [
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 39,
+      "max_confidence": 0.9919214248657227,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-203920.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 22,
+      "max_confidence": 0.8490524291992188,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-124252.flac"
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 5,
+      "max_confidence": 0.808713436126709,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-204945.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 4,
+      "max_confidence": 0.8752484917640686,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-155827.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 2,
+      "max_confidence": 0.5683362483978271,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-173848.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 2,
+      "max_confidence": 0.839165985584259,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-111122.flac"
+    },
+    {
+      "taxon_common": "American Goldfinch",
+      "taxon_scientific": "Spinus tristis",
+      "count": 1,
+      "max_confidence": 0.5184305310249329,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-173648.flac"
+    },
+    {
+      "taxon_common": "Broad-winged Hawk",
+      "taxon_scientific": "Buteo platypterus",
+      "count": 1,
+      "max_confidence": 0.5387097597122192,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-162751.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 1,
+      "max_confidence": 0.5158977508544922,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-131553.flac"
+    },
+    {
+      "taxon_common": "Bay-breasted Warbler",
+      "taxon_scientific": "Setophaga castanea",
+      "count": 1,
+      "max_confidence": 0.7561386227607727,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-124510.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Canada Goose",
+    "taxon_scientific": "Branta canadensis",
+    "confidence": 0.808713436126709,
+    "observed_at": "2026-08-09T16:49:45-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260809-204945.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    5,
+    23,
+    2,
+    3,
+    10,
+    3,
+    4,
+    3,
+    3,
+    8,
+    8,
+    6,
+    1,
+    0,
+    0,
+    0,
+    0
+  ]
+}

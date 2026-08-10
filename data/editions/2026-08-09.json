@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-08-09",
+  "generated_at": "2026-08-10T05:40:25.259Z",
+  "title": null,
+  "summary": "L'orage du matin a cédé la place à une après-midi chaude et calme, la pression qui remonte doucement vers le beau temps.",
+  "body_md": "Six virgule huit millimètres sont tombés ce matin — assez pour laver la poussière des feuilles et laisser l'air avec cette transparence particulière que les orages donnent parfois. Le vent du sud a soufflé à peine, en rafales molles ne dépassant pas dix-huit kilomètres à l'heure, et la chaleur est revenue en milieu de journée, portant le thermomètre à vingt-cinq virgule six degrés. La pression monte. La vallée reprend son souffle.\n\nL'oiseau du jour est apparu en fin d'après-midi, vers seize heures quarante-neuf, reconnaissable entre tous : la bernache du Canada, Branta canadensis, dont la voix basse et portée a traversé le couvert comme un signal de départ. Août, pour cette espèce, c'est déjà la saison des regroupements, les familles qui se cherchent avant les longs vols vers le sud. Le colibri à gorge rubis, Archilochus colubris, a dominé la journée en nombre — trente-neuf détections, un chiffre qui dit à lui seul combien cette espèce butine activement avant l'automne. Plus discret, le roitelet à couronne dorée, Regulus satrapa, a fait entendre sa fine voix sibilante depuis les épinettes, indifférent à l'orage passé.",
+  "sky_narrative": "La nuit s'ouvrira avec un ciel aux deux tiers couvert, ce qui limitera les observations, mais le croissant de lune — à peine neuf pour cent illuminé — se couchera avant minuit et ne gênera pas les éventuelles trouées. Vénus sera visible en début de soirée à l'ouest-sud-ouest, basse sur l'horizon ; les Perséides approchent de leur pic dans deux jours, et chaque filante aperçue dans une éclaircie vaudra la patience.",
+  "theme_tags": [
+    "orage",
+    "migration",
+    "colibri",
+    "bernache",
+    "perseides",
+    "pression-montante"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 25.6,
+      "temp_min_c": 14.9,
+      "rain_mm": 6.8,
+      "wind_dir": "S",
+      "wind_avg_kmh": 2.9,
+      "wind_gust_max_kmh": 18,
+      "pressure_mb": 967.2,
+      "pressure_trend": "up",
+      "lightning_count": 41,
+      "ecart_normale_c": 3.5
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "observed_at": "2026-08-09T16:49:45-04:00",
+      "confidence": 0.808713436126709
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 9.25,
+      "moon_set": "2026-08-10T23:07:39.822Z",
+      "venus_notable": true,
+      "meteor_shower": "Perséides — pic dans 2 j",
+      "cloud_cover_night_pct": 64.4
+    }
+  },
+  "fragment_quote_id": "john-muir-my-6",
+  "fragment_translation_fr": "Quand nous essayons d'isoler quoi que ce soit, nous le trouvons rattaché à tout le reste de l'univers."
+}
