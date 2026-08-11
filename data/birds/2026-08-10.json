@@ -1,0 +1,157 @@
+{
+  "date": "2026-08-10",
+  "total_detections": 404,
+  "unique_species": 19,
+  "top_species": [
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 120,
+      "max_confidence": 0.9511194229125977,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-114346.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 103,
+      "max_confidence": 0.9477587342262268,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-175017.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 79,
+      "max_confidence": 0.9939226508140564,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-111407.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 34,
+      "max_confidence": 0.9122173190116882,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-122842.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 17,
+      "max_confidence": 0.7663599252700806,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-184406.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 8,
+      "max_confidence": 0.8432739973068237,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-175200.flac"
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 7,
+      "max_confidence": 0.9209102392196655,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-220915.flac"
+    },
+    {
+      "taxon_common": "Blackpoll Warbler",
+      "taxon_scientific": "Setophaga striata",
+      "count": 7,
+      "max_confidence": 0.9671489596366882,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-130100.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 6,
+      "max_confidence": 0.8806976079940796,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-164839.flac"
+    },
+    {
+      "taxon_common": "Solitary Sandpiper",
+      "taxon_scientific": "Tringa solitaria",
+      "count": 4,
+      "max_confidence": 0.9003633856773376,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-103945.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 3
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 3
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 3
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 3
+    },
+    {
+      "taxon_common": "Black-throated Green Warbler",
+      "taxon_scientific": "Setophaga virens",
+      "count": 2
+    },
+    {
+      "taxon_common": "Bay-breasted Warbler",
+      "taxon_scientific": "Setophaga castanea",
+      "count": 2
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Black-capped Chickadee",
+    "taxon_scientific": "Poecile atricapillus",
+    "confidence": 0.9511194229125977,
+    "observed_at": "2026-08-10T07:43:49-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260810-114346.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    10,
+    31,
+    34,
+    64,
+    13,
+    50,
+    28,
+    25,
+    35,
+    70,
+    21,
+    7,
+    12,
+    1,
+    0,
+    0,
+    0,
+    0
+  ]
+}
