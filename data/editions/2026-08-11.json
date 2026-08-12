@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-08-11",
+  "generated_at": "2026-08-12T05:43:35.046Z",
+  "title": null,
+  "summary": "Un orage a traversé le Val ce matin, laissant derrière lui 6,7 mm de pluie et un air lavé qui sent la résine.",
+  "body_md": "L'orage est passé vite, en rafales courtes depuis le sud, avec 59 éclairs comptés à moins de deux kilomètres. La pression continue de baisser doucement — 961,9 millibars, tendance en descente — et la journée a oscillé entre 11,8 et 24,1 degrés, à peine sous la normale. Après la pluie, le ciel s'est dégagé par à-coups, laissant entrer de longues plages de lumière que le pic mineur, Dryobates pubescens, occupait à sa manière méthodique : tambourinage sur un bois mort, silence, puis reprise.\n\nC'est le bruant familier, Spizella passerina, qui a le plus résonné ce matin dans le sous-bois — une trille sèche, mécanique, répétée sans relâche depuis l'aube. Il sera parmi les premiers à quitter le Val quand août pliera. Soixante-six détections de colibri à gorge rubis, Archilochus colubris, rappellent que la saison de nectar tire à sa fin, et que ces oiseaux-là surveillent déjà leur gras pour la route. Au total, seize espèces ont été entendues aujourd'hui. C'est peu, et c'est juste.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit s'ouvrira sous un croissant de lune si mince — moins d'un demi pour cent illuminé — qu'il se couchera à minuit quatre sans avoir éclairé grand-chose ; le ciel profitera ensuite d'une obscurité presque totale, avec une couverture nuageuse estimée à 37 %. C'est la nuit du pic des Perséides, avec un taux théorique de cent filantes à l'heure : Vénus sera visible en début de soirée à l'ouest, et les premières étoiles filantes pourront être guettées dès la fin du crépuscule astronomique.",
+  "theme_tags": [
+    "orage",
+    "pluie",
+    "oiseaux",
+    "migration",
+    "bruant",
+    "colibri",
+    "perseides"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 11.8,
+      "temp_max_c": 24.1,
+      "rain_mm": 6.7,
+      "lightning_count": 59,
+      "pressure_mb": 961.9,
+      "pressure_trend": "down",
+      "wind_direction": "S",
+      "wind_qualifier": "calme"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Bruant familier",
+      "taxon_scientific": "Spizella passerina",
+      "count": 52,
+      "observed_at": "2026-08-11T09:58:01-04:00"
+    },
+    "sky": {
+      "event": "Pic des Perséides",
+      "zhr": 100,
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 0.47,
+      "moon_set": "2026-08-13T00:04Z",
+      "venus_notable": true,
+      "cloud_cover_pct": 37
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du Monde."
+}
