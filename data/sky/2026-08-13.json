@@ -1,0 +1,128 @@
+{
+  "for_date": "2026-08-13",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-08-13T09:36:22.452Z",
+        "sunset": "2026-08-13T23:57:22.168Z",
+        "sun_set_azimuth": 292.5,
+        "sky_map_ref": "2026-08-14T00:31:23.843Z",
+        "twilight": {
+          "civil_start": "2026-08-13T09:02:11.089Z",
+          "nautical_start": "2026-08-13T08:19:35.241Z",
+          "astronomical_start": "2026-08-13T07:31:02.004Z",
+          "astronomical_end": "2026-08-14T02:01:45.848Z",
+          "nautical_end": "2026-08-14T01:13:42.869Z",
+          "civil_end": "2026-08-14T00:31:23.843Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Premier croissant",
+      "detail": {
+        "phase_deg": 5.800189263182602,
+        "illumination_fraction": 0.0025803558797638515,
+        "magnitude": -4.578769227239989,
+        "rise": "2026-08-13T10:34:19.436Z",
+        "set": "2026-08-14T00:24:13.583Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -1.0614386503400413,
+        "phase_angle": 55.88913797695468,
+        "helio_dist": 0.3079814379589319,
+        "geo_dist": 1.153324488579676,
+        "az": 312.5,
+        "alt": -8.9
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.4389073319462256,
+        "phase_angle": 90.21242200172159,
+        "helio_dist": 0.7273141472258021,
+        "geo_dist": 0.702738875630707,
+        "az": 255.1,
+        "alt": 8.1
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.2922252766353788,
+        "phase_angle": 30.883097578313954,
+        "helio_dist": 1.4953759506874433,
+        "geo_dist": 1.9447722603372484,
+        "az": 348.2,
+        "alt": -17.5
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.7812945015390138,
+        "phase_angle": 2.0586783820362813,
+        "helio_dist": 5.290934179110053,
+        "geo_dist": 6.282754103742821,
+        "az": 310.1,
+        "alt": -8.5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.4471136386376955,
+        "phase_angle": 4.98146758514416,
+        "helio_dist": 9.449588079376369,
+        "geo_dist": 8.819479627212155,
+        "az": 69.2,
+        "alt": -13.3
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "meteor_shower",
+      "title": "Perséides — pic dans -1 j",
+      "detail": {
+        "peak_date": "2026-08-12",
+        "days_to_peak": -1,
+        "zhr": 100
+      },
+      "notable": true,
+      "propice_a": "guetter les filantes après le crépuscule astronomique",
+      "source": "imo"
+    }
+  ],
+  "cloud_cover_night_pct": 30.22222222222222
+}

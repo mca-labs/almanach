@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-08-12",
+  "generated_at": "2026-08-13T05:45:50.845Z",
+  "title": null,
+  "summary": "Journée fraîche et orageuse au Val — la pression qui descend, la pluie venue, et vingt et une espèces malgré tout.",
+  "body_md": "L'orage a traversé le Val cette nuit ou aux premières heures du matin, laissant derrière lui 7,8 mm et un air qui sentait le sous-bois mouillé. La température n'a pas dépassé 22 °C en milieu de journée, soit près de deux degrés et demi sous la normale — un avant-goût d'arrière-saison qui ne trompe pas. Les rafales sont restées faibles, au plus 14 km/h depuis le sud, et la pression continue de descendre. Août fait semblant de reculer.\n\nLe bruant familier a tenu bon toute la journée, sa trille mécanique traversant l'air lourd à intervalles réguliers, indifférent à l'humidité. Le roitelet à couronne dorée s'est aussi beaucoup fait entendre — son cri fin, presque imperceptible, est l'une de ces voix qu'on finit par isoler seulement après l'avoir ignorée cent fois. Et puis, en fin de matinée, un junco ardoisé : oiseau de l'hiver, oiseau des hauteurs, qui commence à descendre des sommets dès qu'août tourne. Sa présence, ce jour-là, avait quelque chose de ponctuel — une signature discrète posée sur la journée.",
+  "sky_narrative": "La nuit s'ouvrira avec un croissant de lune à peine visible — moins de 1 % de surface éclairée — qui se couchera vers 2 h 25, heure locale, laissant le ciel à lui-même jusqu'à l'aube. La couverture nuageuse restera partielle, autour de 30 %, et Vénus brillera bas sur l'horizon sud-ouest en début de nuit ; surtout, les Perséides atteindront leur pic cette nuit même, et les éclaircies suffiront à guetter quelques filantes après la fin du crépuscule astronomique.",
+  "theme_tags": [
+    "orage",
+    "fraicheur",
+    "passereaux",
+    "perseides",
+    "migration"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 22,
+      "temp_min_c": 9.5,
+      "ecart_normale_c": -2.4,
+      "pluie_jour_mm": 7.8,
+      "pression_tendance": "down",
+      "vent": "calme, S",
+      "eclairs": 35
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "observed_at": "2026-08-12T13:32:09-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260812-173208.flac"
+    },
+    "sky": {
+      "event": "Perséides — pic",
+      "zhr": 100,
+      "cloud_cover_pct": 30,
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 0.26,
+      "moon_set_utc": "2026-08-14T00:24:13Z",
+      "planetes_notables": [
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
