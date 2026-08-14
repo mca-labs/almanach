@@ -1,0 +1,49 @@
+{
+  "entry_date": "2026-08-13",
+  "generated_at": "2026-08-14T05:43:15.622Z",
+  "title": "Après l'orage, le pic",
+  "summary": "Journée fraîche et calme après un orage proche — la pression remonte, les oiseaux reprennent leur affaire.",
+  "body_md": "Quarante-cinq éclairs dans la nuit ou en matinée, à moins de sept kilomètres en moyenne, et puis rien : le calme est revenu avec une brutalité douce, vent du sud presque nul, pression qui remonte par petits paliers. Le thermomètre a grimpé jusqu'à 22 degrés en milieu de journée avant de redescendre vite, comme si la fraîcheur n'avait jamais vraiment lâché. Presque trois millimètres de pluie au compteur, et un air qui sentait encore la terre mouillée bien après que le ciel se fut refermé.\n\nC'est dans cette accalmie que le pic mineur a donné le ton. Dryobates pubescens cherchait sa nourriture méthodiquement, martelant l'écorce d'un arbre mort avec cette précision tranquille qui lui est propre — pas pressé, pas distrait. Autour de lui, les mésanges à tête noire tenaient leurs postes, les bruants des champs grésillaient en lisière, et le roitelet à couronne dorée, Regulus satrapa, s'était glissé dans le sous-bois comme un signe avant-coureur : on le voit peu en plein été, et sa présence ici, en août, dit quelque chose sur la saison qui tourne.",
+  "sky_narrative": "Le croissant de lune — moins de trois pour cent illuminé — se couchera tôt, vers 20 h 41, heure locale, laissant la nuit à elle-même pour l'essentiel. La couverture nuageuse sera partielle, autour de 55 %, ce qui donnera par intermittence des fenêtres claires ; Vénus sera visible en soirée vers le sud-ouest, lumineuse et basse, avant de disparaître à son tour sous l'horizon.",
+  "theme_tags": [
+    "orage",
+    "pic-mineur",
+    "migration-automnale",
+    "fraicheur",
+    "pression-remontante",
+    "roitelet"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 22,
+      "temp_min_c": 10.8,
+      "ecart_normale_c": -2.7,
+      "pluie_jour_mm": 2.9,
+      "pression_mb": 966.7,
+      "pression_tendance": "up",
+      "vent_label": "calme",
+      "vent_direction": "du S",
+      "eclairs": 45,
+      "distance_moyenne_km": 6.4
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "nom_fr": "Pic mineur",
+      "count": 21,
+      "confidence": 0.994,
+      "observed_at": "2026-08-13T07:37:36-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-113735.flac"
+    },
+    "sky": {
+      "for_date": "2026-08-14",
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 2.7,
+      "moon_set_local": "20:41",
+      "venus_notable": true,
+      "cloud_cover_pct": 56
+    }
+  },
+  "fragment_quote_id": "john-muir-my-7",
+  "fragment_translation_fr": "Comme profond fut notre sommeil cette nuit, au cœur de la montagne, sous les arbres et les étoiles, bercés par le bruit solennel des chutes d'eau et tant de petites voix apaisantes murmuraient la paix à l'unisson !"
+}

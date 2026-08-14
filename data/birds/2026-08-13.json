@@ -1,0 +1,152 @@
+{
+  "date": "2026-08-13",
+  "total_detections": 318,
+  "unique_species": 18,
+  "top_species": [
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 103,
+      "max_confidence": 0.988471269607544,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-183837.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 79,
+      "max_confidence": 0.9175276160240173,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-220007.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 38,
+      "max_confidence": 0.8739140033721924,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-172023.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 28,
+      "max_confidence": 0.9023931622505188,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-233140.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 21,
+      "max_confidence": 0.9940396547317505,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-113735.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 15,
+      "max_confidence": 0.8825086951255798,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-170956.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 8,
+      "max_confidence": 0.884747326374054,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-192404.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 7,
+      "max_confidence": 0.8370789289474487,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-124224.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 3,
+      "max_confidence": 0.6887954473495483,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-224631.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 3,
+      "max_confidence": 0.8639524579048157,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-180716.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 3
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 3
+    },
+    {
+      "taxon_common": "Blackpoll Warbler",
+      "taxon_scientific": "Setophaga striata",
+      "count": 2
+    },
+    {
+      "taxon_common": "Least Flycatcher",
+      "taxon_scientific": "Empidonax minimus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 1
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Black-throated Green Warbler",
+      "taxon_scientific": "Setophaga virens",
+      "count": 1
+    },
+    {
+      "taxon_common": "Pine Siskin",
+      "taxon_scientific": "Spinus pinus",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Downy Woodpecker",
+    "taxon_scientific": "Dryobates pubescens",
+    "confidence": 0.9940396547317505,
+    "observed_at": "2026-08-13T07:37:36-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260813-113735.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    11,
+    5,
+    27,
+    15,
+    15,
+    16,
+    17,
+    40,
+    14,
+    27,
+    21,
+    37,
+    42,
+    30,
+    0,
+    0,
+    0,
+    0
+  ]
+}
