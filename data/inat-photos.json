@@ -646,5 +646,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-08-07T05:46:53.470Z"
+  },
+  "Accipiter striatus": {
+    "taxon_inat_id": 5097,
+    "name_fr": "Épervier brun",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/112860673/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/112860673/square.jpeg",
+    "attribution": "(c) Troy B, some rights reserved (CC BY), uploaded by Troy B",
+    "attribution_name": "Troy B",
+    "license_code": "cc-by",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-08-15T04:39:50.950Z"
   }
 }

@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-08-14",
+  "generated_at": "2026-08-15T04:40:14.814Z",
+  "title": null,
+  "summary": "Journée fraîche et calme sur le Val, le lendemain d'orage — le ciel s'est ouvert, le vent s'est tu, et les oiseaux ont occupé le terrain.",
+  "body_md": "La nuit avait laissé 10 degrés sur le thermomètre, et la matinée a gardé cette fraîcheur plus longtemps que d'habitude — le mercure n'a franchi les 20 degrés qu'en milieu d'après-midi, un écart d'un degré sous la normale qui n'était pas désagréable. Le vent du sud soufflait à peine, moins de 4 km/h en moyenne, et la pression tenait stable à 973 mb. Dix-sept espèces au total, 302 détections : la journée a été active sans être frénétique.\n\nLes jaseurs des cèdres ont retenu l'attention ce matin-là — leurs cris sifflants, fins comme un fil tendu, traversaient par petites salves l'air encore humide. Bombycilla cedrorum voyage en bandes lâches en août, cherchant les fruits mûrs de buisson en buisson, et rien dans leur passage ne ressemble à de l'urgence : c'est une errance méthodique, presque indifférente. Plus discrets mais plus nombreux, le colibri à gorge rubis et la mésange à tête noire se partageaient le reste des détections ; vers 17 h, une pointe inattendue — 62 détections en une heure — a rappelé que la fin d'après-midi a ses propres raisons.",
+  "sky_narrative": "La lune, premier croissant à 7,6 % d'illumination, se couchera peu avant 3 h du matin — elle ne gênera guère. La couverture nuageuse prévue autour de 44 % laissera de belles fenêtres : Vénus sera visible en soirée vers le sud-ouest, à faible hauteur, et les heures qui suivront son coucher offriront un ciel suffisamment sombre pour s'orienter à l'œil nu, sans frontale.",
+  "theme_tags": [
+    "oiseaux",
+    "migration",
+    "fraicheur",
+    "calme",
+    "automne-precoce"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 10.1,
+      "temp_max_c": 21.9,
+      "ecart_normale_c": -0.8,
+      "vent": "calme, du S, 3.9 km/h moy.",
+      "pression_mb": 973.3,
+      "pression_tendance": "stable",
+      "pluie_mm": 0,
+      "jours_depuis_derniere_pluie": 1
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 14,
+      "confidence": 0.973,
+      "observed_at": "2026-08-14T08:44:42-04:00"
+    },
+    "sky": {
+      "for_date": "2026-08-15",
+      "lune_phase": "Premier croissant",
+      "lune_illumination_pct": 7.6,
+      "lune_coucher": "2026-08-16T00:57:48Z",
+      "venus_visible": true,
+      "venus_magnitude": -4.46,
+      "cloud_cover_pct": 44
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
