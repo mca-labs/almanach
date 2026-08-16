@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-08-15",
+  "generated_at": "2026-08-16T04:44:12.178Z",
+  "title": null,
+  "summary": "Journée claire et fraîche, vent calme du sud — le colibri à gorge rubis domine les détections pour la centième fois ce mois-ci.",
+  "body_md": "La nuit avait laissé 6 degrés au thermomètre et le vent ne s'est presque pas levé de la journée — guère plus de trois kilomètres-heure en moyenne, venu du sud, sans conviction. Le ciel a ouvert tôt, la lumière a grimpé jusqu'à 84 000 lux en fin de matinée, puis l'après-midi a tenu bon sous un soleil honnête. La pression reste plate depuis quelques heures, les 976 millibars ne bougent pas. Pas de pluie — deux jours que le sol attend, et l'air sec de ce matin en portait le souvenir.\n\nCent quatre détections du colibri à gorge rubis, Archilochus colubris : un chiffre qui dit quelque chose sur la densité de l'espèce en ce moment, avant que la migration vers le sud ne l'emporte. La mésange à tête noire, Poecile atricapillus, et le pic mineur, Dryobates pubescens, ont tenu leur rang habituel. Plus discrets, le roitelet à couronne dorée, Regulus satrapa, et le troglodyte des forêts, Troglodytes hiemalis, se sont fait entendre dans la végétation dense — deux espèces qui préfèrent le sous-bois au plein ciel. En fin de soirée, le pic de détections à seize heures puis à dix-neuf heures : les oiseaux avaient leur propre agenda, indifférents à la régularité du thermomètre.",
+  "sky_narrative": "La couverture nuageuse sera importante cette nuit — environ 72 % — et le croissant de lune, à 14 % d'illumination seulement, se couchera vers 21 h 14 heure locale ; il ne gênera pas, mais le ciel voilé limitera l'observation en profondeur. Vénus sera visible en soirée vers le sud-ouest, à faible hauteur sur l'horizon, avant de disparaître rapidement ; Mercure et Jupiter se trouveront sous l'horizon. Une nuit à passer dehors à l'oreille plutôt qu'à l'œil.",
+  "theme_tags": [
+    "colibri",
+    "migration",
+    "fraicheur",
+    "vent-calme",
+    "clarte"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6.2,
+      "temp_max_c": 20.9,
+      "ecart_normale_c": -2.5,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 2,
+      "vent_qualifier": "calme",
+      "vent_direction": "du S",
+      "pression_mb": 976.2,
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 104,
+      "confidence": 0.9876656532287598,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260815-183846.flac"
+    },
+    "sky": {
+      "lune_phase": "Premier croissant",
+      "lune_illumination_pct": 14.3,
+      "lune_coucher_local": "21:14",
+      "planetes_notables": [
+        "Vénus"
+      ],
+      "couverture_nuageuse_nuit_pct": 72.3
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-2",
+  "fragment_translation_fr": "La masse des hommes mènent des vies de désespoir tranquille."
+}
