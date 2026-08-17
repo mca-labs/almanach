@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-08-16",
+  "generated_at": "2026-08-17T04:52:40.746Z",
+  "title": null,
+  "summary": "Journée fraîche et calme sous un ciel ouvert, la pression qui glisse vers le bas annonçant une prochaine transition.",
+  "body_md": "L'air est descendu à 8 degrés avant l'aube — presque quatre degrés sous les normales — et la matinée a mis du temps à se réchauffer. Le vent soufflait du sud, à peine, et la lumière de midi n'a guère dépassé 72 000 lux : un ciel dégagé, mais la saison qui penche. La pression a glissé de deux millibars en trois heures. Rien d'urgent dans ce chiffre, mais la forêt a ses façons de lire le baromètre avant nous.\n\nC'est le troglodyte des forêts qui a dominé la journée — non par le nombre, mais par la voix. Un chant court, dense, qui se retourne sur lui-même : pour un oiseau si petit, il occupe beaucoup d'espace sonore. Il fouille les souches et les enchevêtrements de bois mort, cherchant larves et araignées dans les recoins que les autres ignorent. Pendant ce temps, le colibri à gorge rubis tenait l'air à lui seul avec 108 détections — une présence électrique, insistante, qui rappelle que l'été n'est pas tout à fait fini.",
+  "sky_narrative": "La nuit sera presque entièrement fermée — la couverture nuageuse avoisine 97 % — et l'observation sera compromise. Le croissant de lune, illuminé à 22 %, se couchera vers 2 h 30 du matin sans avoir percé la voûte ; Vénus, pourtant brillante au sud-ouest en début de soirée, restera elle aussi noyée dans les nuages.",
+  "theme_tags": [
+    "fraicheur",
+    "pression-baisse",
+    "troglodyte",
+    "colibri",
+    "automne-annonce"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8.4,
+      "temp_max_c": 21,
+      "ecart_normale_c": -3.9,
+      "pression_tendance": "down",
+      "pression_mb": 965.9,
+      "vent": "calme, du S",
+      "pluie_mm": 0
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 13,
+      "confidence": 0.912
+    },
+    "sky": {
+      "phase_lune": "Premier croissant",
+      "illumination_pct": 22,
+      "couverture_nuageuse_pct": 97,
+      "planetes_notables": [
+        "Vénus",
+        "Jupiter"
+      ],
+      "lune_coucher_local": "02:33"
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre avec intention, ne faire face qu'aux faits essentiels de l'existence, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — pour ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
