@@ -1,0 +1,142 @@
+{
+  "date": "2026-08-17",
+  "total_detections": 273,
+  "unique_species": 16,
+  "top_species": [
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 138,
+      "max_confidence": 0.9911472201347351,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-133813.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 59,
+      "max_confidence": 0.9655705094337463,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-222830.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 24,
+      "max_confidence": 0.7875818014144897,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-111015.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 17,
+      "max_confidence": 0.8873714208602905,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-105428.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 10,
+      "max_confidence": 0.896064281463623,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-160115.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 9,
+      "max_confidence": 0.9046690464019775,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-223525.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 3,
+      "max_confidence": 0.8565229177474976,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-153116.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 2,
+      "max_confidence": 0.7105311751365662,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-231431.flac"
+    },
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 2,
+      "max_confidence": 0.8868125081062317,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-203950.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 2,
+      "max_confidence": 0.6099242568016052,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-181618.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 2
+    },
+    {
+      "taxon_common": "Magnolia Warbler",
+      "taxon_scientific": "Setophaga magnolia",
+      "count": 1
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "American Goldfinch",
+      "taxon_scientific": "Spinus tristis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Golden-crowned Kinglet",
+    "taxon_scientific": "Regulus satrapa",
+    "confidence": 0.896064281463623,
+    "observed_at": "2026-08-17T12:01:21-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260817-160115.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    25,
+    31,
+    5,
+    27,
+    17,
+    7,
+    13,
+    33,
+    10,
+    5,
+    14,
+    9,
+    60,
+    15,
+    0,
+    0,
+    0,
+    0
+  ]
+}

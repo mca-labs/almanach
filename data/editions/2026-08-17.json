@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-08-17",
+  "generated_at": "2026-08-18T04:44:31.978Z",
+  "title": null,
+  "summary": "Une légère pluie matinale a cédé la place à un après-midi clair et calme — la pression remonte, l'air retrouve sa netteté.",
+  "body_md": "Quelques millimètres sont tombés en début de journée, juste assez pour humecter la litière et rafraîchir l'air. Puis le ciel s'est dégagé progressivement, et l'après-midi a atteint 24 degrés — dans la moyenne pour la date, sans excès. Le vent est resté au calme presque toute la journée, à peine une brise du sud en fin de matinée. La pression montait doucement : signe que le beau temps tient bon.\n\nSeize espèces enregistrées, et l'oiseau du jour n'est pas le plus bruyant. Le roitelet à couronne dorée — Regulus satrapa — s'est fait entendre dix fois au fil des heures, ce filament de voix à peine audible qui traverse le sous-bois comme une aiguille dans de la soie. À cette époque, certains individus amorcent déjà leur retour vers le sud, longeant les épinettes à la recherche de petits arthropodes dans les fissures d'écorce. Qu'il soit en transit ou simplement discret, il a marqué la journée. Le colibri à gorge rubis dominait les comptages — 138 détections —, toujours actif, profitant des dernières semaines avant la grande traversée.",
+  "sky_narrative": "La Lune, à un peu moins du tiers de son disque éclairé, se couchera vers 21 h 54 (heure locale) et laissera la nuit à elle-même jusqu'à l'aube ; mais avec près de 62 % du ciel couvert, les conditions seront médiocres pour l'observation. Vénus sera visible brièvement en début de soirée, basse à l'ouest-sud-ouest, avant de disparaître sous l'horizon.",
+  "theme_tags": [
+    "pluie-legere",
+    "redoux",
+    "roitelet",
+    "colibri",
+    "pression-montante",
+    "migration"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 24,
+      "temp_min_c": 10.9,
+      "rain_mm": 5.9,
+      "wind_qualifier": "calme",
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 10,
+      "confidence": 0.896
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 31,
+      "moon_set_local": "21:54",
+      "venus_notable": true,
+      "cloud_cover_pct": 62
+    }
+  },
+  "fragment_quote_id": "john-muir-my-6",
+  "fragment_translation_fr": "Quand on essaie d'isoler quelque chose par lui-même, on le trouve relié à tout le reste de l'univers."
+}
