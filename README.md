@@ -37,8 +37,16 @@ Netlify CDN sert valdesloups.com (HTTPS Let's Encrypt)
 - **Runtime du cron** : Node 24 + TypeScript (via `tsx`).
 - **Site** : Astro `output: 'static'`, lecture directe des JSON sous `data/`
   au moment du build.
-- **Synthèse** : API Anthropic (Claude). La voix est dans
-  [`prompts/editorial-voice.md`](prompts/editorial-voice.md), modifiable à chaud.
+- **Synthèse** : API Anthropic (Claude). Deux fichiers de prompt, chargés à
+  chaque génération et modifiables à chaud : les contraintes de véracité dans
+  [`prompts/editorial-rules.md`](prompts/editorial-rules.md) (invariantes,
+  indépendantes du lieu) et le ton dans
+  [`prompts/editorial-voice.md`](prompts/editorial-voice.md) (propre à l'instance).
+- **Configuration d'instance** : [`almanach.config.json`](almanach.config.json) —
+  position, altitude, fuseau, identifiants de stations, identité du lieu. Les
+  jetons restent en variables d'environnement ; une variable d'environnement, si
+  définie, l'emporte sur la config. La position est saisie à la main, jamais
+  dérivée des appareils.
 - **Hosting** : Netlify (site statique).
 - **DNS** : Namecheap (apex `valdesloups.com`, www en redirect vers apex).
 
@@ -49,7 +57,8 @@ src/
 ├── cli.ts                # entrypoint : node --import tsx src/cli.ts [--date YYYY-MM-DD]
 ├── daily.ts              # orchestrateur 5 étapes
 ├── almanac.ts            # astronomy-engine + NOAA + IMO + Open-Meteo
-├── synthesize.ts         # appel Claude, charge editorial-voice.md
+├── synthesize.ts         # appel Claude, charge editorial-rules.md + editorial-voice.md
+├── config.ts             # lecture de almanach.config.json (env prioritaire)
 ├── sources/
 │   ├── tempest.ts        # météo (agrégat journalier, horaire, norm historique)
 │   ├── birdweather.ts    # détections d'oiseaux (GraphQL)
@@ -78,7 +87,9 @@ data/                     # le repo EST l'état
 ├── quotes.json                # 13 citations statiques (Thoreau, Muir, etc.)
 └── breeding.json              # 246 espèces Atlas QC
 
-prompts/editorial-voice.md     # voix de Claude (asset runtime)
+almanach.config.json           # config d'instance (lieu, stations, prompts)
+prompts/editorial-rules.md     # contraintes de véracité (invariant)
+prompts/editorial-voice.md     # voix de Claude (asset runtime, propre à l'instance)
 .github/workflows/daily.yml    # cron quotidien
 netlify.toml                   # build statique
 ```
@@ -170,8 +181,15 @@ Netlify CDN serves valdesloups.com (HTTPS Let's Encrypt)
 - **Cron runtime**: Node 24 + TypeScript (via `tsx`).
 - **Site**: Astro `output: 'static'`, reads JSON files under `data/` directly
   at build time.
-- **Synthesis**: Anthropic (Claude) API. The voice lives in
-  [`prompts/editorial-voice.md`](prompts/editorial-voice.md), hot-editable.
+- **Synthesis**: Anthropic (Claude) API. Two prompt files, loaded on every run
+  and hot-editable: the truthfulness constraints in
+  [`prompts/editorial-rules.md`](prompts/editorial-rules.md) (invariant,
+  place-independent) and the tone in
+  [`prompts/editorial-voice.md`](prompts/editorial-voice.md) (instance-specific).
+- **Instance configuration**: [`almanach.config.json`](almanach.config.json) —
+  position, elevation, timezone, station IDs, place identity. Secrets stay in
+  environment variables; an environment variable, when set, always wins over the
+  config. The position is entered by hand, never derived from the devices.
 - **Hosting**: Netlify (static site).
 - **DNS**: Namecheap (apex `valdesloups.com`, www redirects to apex).
 
@@ -182,7 +200,8 @@ src/
 ├── cli.ts                # entrypoint: node --import tsx src/cli.ts [--date YYYY-MM-DD]
 ├── daily.ts              # 5-step orchestrator
 ├── almanac.ts            # astronomy-engine + NOAA + IMO + Open-Meteo
-├── synthesize.ts         # Claude call, loads editorial-voice.md
+├── synthesize.ts         # Claude call, loads editorial-rules.md + editorial-voice.md
+├── config.ts             # reads almanach.config.json (env takes precedence)
 ├── sources/
 │   ├── tempest.ts        # weather (daily aggregate, hourly, historical norm)
 │   ├── birdweather.ts    # bird detections (GraphQL)
@@ -211,7 +230,9 @@ data/                     # the repo IS the state
 ├── quotes.json                # 13 static quotations (Thoreau, Muir, etc.)
 └── breeding.json              # 246 species QC Atlas
 
-prompts/editorial-voice.md     # Claude's voice (runtime asset)
+almanach.config.json           # instance config (place, stations, prompts)
+prompts/editorial-rules.md     # truthfulness constraints (invariant)
+prompts/editorial-voice.md     # Claude's voice (runtime asset, instance-specific)
 .github/workflows/daily.yml    # daily cron
 netlify.toml                   # static build
 ```

@@ -1,13 +1,14 @@
 ---
 // Footer commun à toutes les pages.
+import { config, tempestUrl, birdweatherUrl } from '../lib/config';
 ---
 
 <footer class="rv" style="animation-delay:.58s">
   <div class="row">
-    <span>Almanach du Val-des-Loups · pont couvert de Saint-Placide-de-Charlevoix · <a href="https://github.com/mca-labs/almanach" target="_blank" rel="noopener">projet open source</a> par <a href="https://www.michaelcarpentier.com/" target="_blank" rel="noopener">Michael Carpentier</a></span>
+    <span>{config.instance.name} · {config.instance.place} · <a href={config.instance.repo_url} target="_blank" rel="noopener">projet open source</a> par <a href={config.instance.author_url} target="_blank" rel="noopener">{config.instance.author}</a></span>
   </div>
   <div class="row" style="border:0;padding-top:8px">
-    <span>Sources : <a href="https://tempestwx.com/station/41129/" target="_blank" rel="noopener">Tempest</a> · <a href="https://app.birdweather.com/stations/6670" target="_blank" rel="noopener">BirdWeather</a> · NOAA SWPC · billet généré par Claude selon données d'observations réelles</span>
+    <span>Sources : <a href={tempestUrl} target="_blank" rel="noopener">Tempest</a> · <a href={birdweatherUrl} target="_blank" rel="noopener">BirdWeather</a> · NOAA SWPC · billet généré par Claude selon données d'observations réelles</span>
   </div>
   <div class="row" style="border:0;padding-top:8px">
     <span>Confidentialité : nous utilisons <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a> pour comprendre comment ce site est utilisé. Aucun cookie n'est déposé, aucune donnée personnelle n'est recueillie.</span>

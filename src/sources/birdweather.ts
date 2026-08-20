@@ -3,8 +3,10 @@
 // `Soundscape.mode` — déclaré non-nullable mais résolveur renvoie null,
 // casse toute la réponse.
 
+import { config, envOr } from '../config.js';
+import { LOCAL_TZ } from '../util/date.js';
+
 const ENDPOINT = 'https://app.birdweather.com/graphql';
-const LOCAL_TZ = 'America/Toronto';
 const PAGE_SIZE = 200;
 const SAFETY_PAGE_CAP = 50;
 
@@ -99,8 +101,7 @@ export async function fetchDayDetections(
   date: string,
   options: { excludeScis?: Set<string> } = {},
 ): Promise<BirdsDaily> {
-  const stationId = process.env.BIRDWEATHER_STATION_ID;
-  if (!stationId) throw new Error('BIRDWEATHER_STATION_ID is not set.');
+  const stationId = envOr('BIRDWEATHER_STATION_ID', config.sources.birdweather_station_id);
 
   const all: DetectionNode[] = [];
   let after: string | null = null;

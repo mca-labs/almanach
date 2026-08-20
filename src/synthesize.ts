@@ -1,18 +1,24 @@
-// Synthèse du billet via Claude. Lit prompts/editorial-voice.md à chaque
-// appel pour qu'un ajustement de voix ne nécessite pas de redéploiement.
+// Synthèse du billet via Claude. Lit les deux fichiers de prompt à chaque appel
+// pour qu'un ajustement ne nécessite pas de redéploiement :
+//   - editorial-rules.md : contraintes de véracité, invariantes d'une instance
+//     à l'autre (ce que le billet a le droit d'affirmer) ;
+//   - editorial-voice.md : ton et style, propres à cette instance.
+// Les chemins viennent de almanach.config.json.
 
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import Anthropic from '@anthropic-ai/sdk';
 
+import { config } from './config.js';
 import type { WeatherDaily } from './sources/tempest.js';
 import type { BirdsDaily, BirdDetectionRow } from './sources/birdweather.js';
 import type { SkyDaily } from './almanac.js';
 
 const MODEL = 'claude-sonnet-4-6';
 const MAX_TOKENS = 2048;
-const VOICE_PATH = join(process.cwd(), 'prompts', 'editorial-voice.md');
+const RULES_PATH = join(process.cwd(), config.prompts.rules);
+const VOICE_PATH = join(process.cwd(), config.prompts.voice);
 
 export interface Quote {
   id: string;
@@ -86,7 +92,7 @@ Italiques dans la prose ("body_md" et "sky_narrative") :
   • d'attribution de citation à un auteur (la citation est posée séparément via "fragment_quote_id").
 - Les noms latins d'espèces doivent rester en texte simple, sans italique markdown.
 
-Règles de CONTENU non négociables (cf. prompts/editorial-voice.md) :
+Règles de CONTENU non négociables (cf. prompts/editorial-rules.md) :
 - N'invente AUCUNE donnée. Si une mesure ou une espèce manque, ne la mentionne pas.
 - AUCUNE DURÉE SANS CHAMP. Toute affirmation portant sur une période plus longue que
   la journée décrite doit venir d'un champ de "derived", cité tel quel :
@@ -237,7 +243,10 @@ export async function synthesize(ctx: SynthesisContext): Promise<SynthesisResult
   if (!process.env.ANTHROPIC_API_KEY) {
     throw new Error('ANTHROPIC_API_KEY is not set.');
   }
-  const voice = await readFile(VOICE_PATH, 'utf8');
+  const [rules, voice] = await Promise.all([
+    readFile(RULES_PATH, 'utf8'),
+    readFile(VOICE_PATH, 'utf8'),
+  ]);
   const client = new Anthropic();
 
   // L'appel API + l'extraction JSON partagent le même wrapper : un SyntaxError
@@ -247,7 +256,11 @@ export async function synthesize(ctx: SynthesisContext): Promise<SynthesisResult
     const response = await client.messages.create({
       model: MODEL,
       max_tokens: MAX_TOKENS,
+      // Les règles de validité passent AVANT la voix : ce qu'on a le droit
+      // d'affirmer prime sur la façon de le dire. Le point de cache est posé
+      // sur le dernier des deux, donc couvre les deux fichiers.
       system: [
+        { type: 'text', text: rules },
         { type: 'text', text: voice, cache_control: { type: 'ephemeral' } },
         { type: 'text', text: RESPONSE_FORMAT },
       ],

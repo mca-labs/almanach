@@ -2,6 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import Footer from '@/components/Footer.astro';
 import ebirdCodes from '../../../data/ebird-species-codes.json';
+import { config, tempestUrl, birdweatherUrl } from '@/lib/config';
 import {
   birdOfTheDayWithPhoto,
   birdsFor,
@@ -42,7 +43,7 @@ const birdSeries = date ? await birdsSeries(date, 30) : [];
 const emptyQuote = entry === null ? await randomQuote() : null;
 
 // --- Helpers ---
-const TZ = 'America/Toronto';
+const TZ = config.location.timezone;
 function frenchDateLine(iso: string): { hier: string; ed: string } {
   const d = new Date(`${iso}T12:00:00Z`);
   const long = new Intl.DateTimeFormat('fr-CA', { timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long' }).format(d);
@@ -317,7 +318,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
         <section class="blk rv" style="animation-delay:.14s">
           <div class="rubric">
             <h2>Observation du jour</h2><span class="line"></span>
-            <span class="src"><a href="https://app.birdweather.com/stations/6670" target="_blank" rel="noopener">BirdWeather PUC</a></span>
+            <span class="src"><a href={birdweatherUrl} target="_blank" rel="noopener">BirdWeather PUC</a></span>
           </div>
           <div class="obs">
             {birdPhoto.photo_url ? (
@@ -372,7 +373,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
       <section class="blk rv" style="animation-delay:.32s">
         <div class="rubric">
           <h2>Activités des oiseaux</h2><span class="line"></span>
-          <span class="src"><a href="https://app.birdweather.com/stations/6670" target="_blank" rel="noopener">BirdWeather</a> · sur 24&nbsp;h</span>
+          <span class="src"><a href={birdweatherUrl} target="_blank" rel="noopener">BirdWeather</a> · sur 24&nbsp;h</span>
         </div>
         <div class="vizt">
           <div class="item">
@@ -477,7 +478,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
               ) : (
                 <span>aucune nouvelle espèce.{' '}</span>
               )}
-              &nbsp;<a href="https://app.birdweather.com/stations/6670" target="_blank" rel="noopener">Voir toutes les espèces sur BirdWeather →</a>
+              &nbsp;<a href={birdweatherUrl} target="_blank" rel="noopener">Voir toutes les espèces sur BirdWeather →</a>
             </div>
           </div>
         </details>
@@ -487,7 +488,7 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
       <section class="blk rv" style="animation-delay:.44s">
         <div class="rubric">
           <h2>Météo</h2><span class="line"></span>
-          <span class="src"><a href="https://tempestwx.com/station/41129/" target="_blank" rel="noopener">Station météo Tempest</a></span>
+          <span class="src"><a href={tempestUrl} target="_blank" rel="noopener">Station météo Tempest</a></span>
         </div>
         <div class="stats">
           <div class="stat">

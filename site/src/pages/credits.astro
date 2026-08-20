@@ -2,6 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import Footer from '@/components/Footer.astro';
 import { creditsForDate, latestPublished } from '@/lib/data';
+import { config } from '@/lib/config';
 
 const entry = await latestPublished();
 const credits = entry ? await creditsForDate(entry.entry_date) : [];
@@ -37,7 +38,7 @@ function licenseUrl(code: string): string | null {
 }
 ---
 
-<Base title="Almanach du Val-des-Loups - Crédits photo" active="a-propos">
+<Base title={`${config.instance.name} - Crédits photo`} active="a-propos">
   <header class="mast">
     <div class="kicker">
       <span>Crédits photo</span>

@@ -1,0 +1,31 @@
+{
+  "_about": "Configuration d'instance : tout ce qui change d'un lieu à l'autre et qui n'est PAS un secret. Les jetons (WEATHERFLOW_TOKEN, ANTHROPIC_API_KEY) restent en variables d'environnement. Précédence : une variable d'environnement, si définie, l'emporte toujours sur la valeur ci-dessous.",
+
+  "instance": {
+    "name": "Almanach du Val-des-Loups",
+    "place": "pont couvert de Saint-Placide-de-Charlevoix",
+    "author": "Michael Carpentier",
+    "author_url": "https://www.michaelcarpentier.com/",
+    "repo_url": "https://github.com/mca-labs/almanach"
+  },
+
+  "_location": "Position de l'observateur. Saisie à la main, jamais dérivée des appareils : un changement de station ou de réglage de confidentialité chez le fournisseur ne doit pas déplacer le ciel calculé. Surcharge : OBS_LAT, OBS_LON, OBS_ELEV_M, TZ.",
+  "location": {
+    "latitude": 47.40744,
+    "longitude": -70.61846,
+    "elevation_m": 377,
+    "timezone": "America/Toronto"
+  },
+
+  "_sources": "Identifiants publics des stations. Surcharge : WEATHERFLOW_STATION_ID, BIRDWEATHER_STATION_ID.",
+  "sources": {
+    "tempest_station_id": "41129",
+    "birdweather_station_id": "6670"
+  },
+
+  "_prompts": "Chemins relatifs à la racine du dépôt. `rules` = contraintes de véracité, invariantes d'une instance à l'autre. `voice` = ton et style, propre à chaque instance.",
+  "prompts": {
+    "rules": "prompts/editorial-rules.md",
+    "voice": "prompts/editorial-voice.md"
+  }
+}

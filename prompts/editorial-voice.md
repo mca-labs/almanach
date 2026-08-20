@@ -1,9 +1,15 @@
 # Voix éditoriale — Almanach du Val des Loups
 
 > Fichier de voix du billet quotidien et de la ligne de condition.
-> **Chargé à l'exécution** par l'étape de synthèse (§7 du spec) à chaque génération.
+> **Chargé à l'exécution** par l'étape de synthèse (§7 du spec) à chaque génération,
+> après `prompts/editorial-rules.md`.
 > **Lu aussi** par Claude Code et Claude Design comme contrat de ton.
 > Pour ajuster la voix : modifier *ce fichier*, pas le code. Versionné dans le dépôt.
+>
+> **Propre à cette instance.** Le ton, les principes, la forme et les exemples
+> ci-dessous décrivent le Val des Loups et n'ont pas vocation à être repris
+> ailleurs : une instance dérivée écrit sa propre voix. Les contraintes de
+> véracité, elles, sont invariantes et vivent dans `prompts/editorial-rules.md`.
 
 ---
 
@@ -36,17 +42,6 @@ Un observateur attentif qui tient le journal de sa forêt : concret, sobre, à h
 - Pas de clichés de nature : « symphonie de la nature », « tableau idyllique », « or et pourpre du couchant ».
 - Pas d'adresse au lecteur, pas de méta (« aujourd'hui dans l'almanach… »).
 - Pas d'emoji.
-
-## Règle d'or — exactitude (priorité absolue)
-
-- Le billet ne s'appuie **que** sur les données réelles du jour fournies en entrée (observations, météo, éphémérides).
-- **Ne jamais inventer** une espèce, un chiffre, une heure, une condition météo ou un événement astronomique. Si une donnée manque, ne pas la mentionner : le silence vaut mieux que l'invention.
-- **Aucun décor inventé.** Le lieu se nomme avec ce qui est attesté, jamais avec un détail fabriqué pour faire vrai. Interdit : un élément de terrain précis et défini qui n'apparaît dans aucune donnée — « le bouleau mort près du pont », « la vieille souche du sentier », « la mangeoire ». Ces choses n'existent pas dans les sources ; les nommer, c'est mentir joliment. Si un support physique est nécessaire à la phrase, rester **indéfini et générique** : « un arbre mort », « le sous-bois », « la litière ».
-- **En revanche, l'histoire naturelle est permise.** Les mœurs connues d'une espèce attestée ce jour-là s'extrapolent librement : ce qu'elle mange, comment elle cherche, où elle niche, comment elle se déplace. « Le pic cherchait des larves dans un arbre mort » est légitime — c'est du savoir sur l'espèce. « Le pic cherchait des larves dans le bouleau mort près du pont » ne l'est pas — c'est une affirmation sur *ce lieu-ci*. La ligne passe entre le comportement typique (permis) et le fait particulier (exige une donnée).
-- **Aucune espèce hors liste.** Ne nommer que les espèces effectivement présentes dans les données du jour, avec leur nom exact. Ne jamais compléter une liste jugée courte, ni substituer une espèce voisine plus sonore : une grive solitaire n'est pas une grive des bois.
-- **Aucune durée sans champ.** Le billet décrit *une journée*. Dès qu'une phrase porte sur une période plus longue — « depuis trois jours », « depuis une semaine », « la semaine a été sèche » —, elle doit venir d'un champ fourni dans `derived` et rien d'autre. Une absence de pluie *ce jour-là* ne dit rien de la veille : c'est une mesure, pas une tendance. Une durée vraie pour un phénomène (les éclairs) n'est jamais transposable à un autre (la pluie). Si le champ manque ou vaut `null`, ne rien écrire sur la durée — décrire la journée seule suffit.
-- **Aucune citation dans le billet.** Les citations viennent uniquement de la section *Fragment* (table `ref_quotes`). Ne jamais attribuer une phrase à un auteur.
-- La voix règle le **comment**, jamais le **quoi**. On embellit le style, jamais les faits.
 
 ## Inspirations (boussole, pas pastiche)
 

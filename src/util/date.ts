@@ -1,5 +1,8 @@
-// Toutes les dates de stockage utilisent le fuseau de l'observateur.
-export const LOCAL_TZ = 'America/Toronto';
+// Toutes les dates de stockage utilisent le fuseau de l'observateur, déclaré
+// dans almanach.config.json. Source unique : les autres modules importent d'ici.
+import { config } from '../config.js';
+
+export const LOCAL_TZ = config.location.timezone;
 
 /** YYYY-MM-DD dans le fuseau local, avec offset de jours optionnel. */
 export function localDate(d: Date = new Date(), offsetDays = 0): string {

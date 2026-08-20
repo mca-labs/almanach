@@ -2,6 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import Footer from '@/components/Footer.astro';
 import { birdsFor, entryByDate, publishedDates, weatherFor } from '@/lib/data';
+import { config } from '@/lib/config';
 
 const dates = await publishedDates();
 type ArchiveEntry = NonNullable<Awaited<ReturnType<typeof entryByDate>>>;
@@ -11,7 +12,7 @@ for (const d of dates) {
   if (entry) entries.push({ date: d, entry, weather, birds });
 }
 
-const TZ = 'America/Toronto';
+const TZ = config.location.timezone;
 
 function frenchLong(iso: string): string {
   const d = new Date(`${iso}T12:00:00Z`);
@@ -63,7 +64,7 @@ function lumiLabel(wm2: number | null | undefined): string {
 }
 ---
 
-<Base title="Almanach du Val-des-Loups - Archives" active="archives">
+<Base title={`${config.instance.name} - Archives`} active="archives">
   <header class="head rv" style="animation-delay:.02s">
     <h1>Éditions précédentes</h1>
     <div class="sub">intros &amp; billets · du plus récent au plus ancien</div>

@@ -2,6 +2,10 @@
   "now": [],
   "soon": [
     {
+      "title": "Extraire le reste de ce qui est propre au lieu",
+      "details": "Suite de la mise en configuration, même principe : rien de local ne doit rester en dur. (1) <strong>Thème surchargeable</strong> — les 9 variables CSS de <code>globals.css</code> pilotent déjà les 338 lignes suivantes ; les isoler dans un fichier de thème importé après, avec un emplacement de logo, pour qu'une identité visuelle se change sans toucher à un composant. (2) <strong>Seuils de pression dérivés de l'altitude</strong> — <code>tempest.ts</code> classe « basse / normale / haute » sur 960 et 975 mb, calibrés pour 377 m ; à calculer depuis <code>location.elevation_m</code> (pression normale ≈ 1013,25 × (1 − 2,25577e−5·h)^5,25588, soit 968,9 mb ici). Attention : la bande dérivée donne 961,4 / 976,4, un écart de ~1,4 mb avec les seuils actuels — quelques jours limites changeront de catégorie, à trancher avant d'appliquer. (3) <strong><code>_scope</code> sur <code>data/breeding.json</code></strong> — les semaines de ponte et d'élevage valent pour une région bioclimatique, pas pour un point ; déclarer la région de calibration et la source, comme le fait déjà <code>quotes.json</code> avec son <code>_about</code>. (4) <strong><code>USER_AGENT</code> configurable</strong> — <code>inat.ts</code> annonce <code>almanach-val-des-loups</code> et l'URL du dépôt en dur. (5) <strong><code>npm run doctor</code></strong> — vérifie que <code>almanach.config.json</code> est complet et bien formé (position, altitude, fuseau, identifiants de station, chemins de prompts) et refuse de builder sinon. Il valide la forme, jamais la véracité : une position erronée reste la responsabilité de qui l'a saisie."
+    },
+    {
       "title": "Diversifier la base de fragments — vague 2",
       "details": "Suite de l'enrichissement, tous en domaine public, sources vérifiables via Wikisource / Project Gutenberg : <strong>Fabre</strong> (Souvenirs entomologiques), <strong>Reclus</strong> (L'Homme et la Terre), <strong>Jean de La Fontaine</strong> (Fables animalières), <strong>Mary Hunter Austin</strong> (The Land of Little Rain), <strong>W.H. Hudson</strong>, <strong>Audubon</strong>, <strong>Whitman</strong> (Specimen Days), <strong>Kipling</strong> (The Jungle Book). Cible totale ~40 (actuellement 22)."
     },
@@ -60,6 +64,16 @@
     }
   ],
   "done": [
+    {
+      "title": "Configuration d'instance (<code>almanach.config.json</code>)",
+      "details": "Tout ce qui décrit le lieu et qui n'est pas un secret est sorti du code : position, altitude, fuseau, identifiants de stations, nom de l'instance, mention du lieu, attribution, chemins des fichiers de prompt. Les jetons restent en variables d'environnement, et une variable d'environnement continue de primer sur la config — les secrets GitHub Actions fonctionnent sans changement. La position est saisie à la main, jamais dérivée des appareils : un changement de station ou de réglage de confidentialité chez le fournisseur ne doit pas déplacer le ciel calculé. Le fuseau, qui traînait en dur dans quatre fichiers (<code>util/date.ts</code>, <code>birdweather.ts</code>, <code>tempest.ts</code>, deux pages du site) et dans l'URL Open-Meteo, a maintenant une source unique. Vérifié : le ciel du 18 août recalculé est identique au committé (crépuscules et Lune au champ près), et le HTML rendu est inchangé.",
+      "finished_at": "2026-08-19"
+    },
+    {
+      "title": "Scission du prompt éditorial : règles de validité / voix",
+      "details": "<code>prompts/editorial-voice.md</code> mélangeait deux choses de nature différente : ce que le billet a le droit d'affirmer, et la façon de le dire. Les contraintes de véracité (règle d'or d'exactitude, aucun décor inventé, aucune espèce hors liste, aucune durée sans champ, aucune citation dans le billet) sont désormais dans <code>prompts/editorial-rules.md</code>, fichier invariant qui ne décrit aucun style et ne dépend d'aucun lieu. Le ton, les principes, la forme, les interdits stylistiques, les inspirations et les exemples validés restent dans le fichier de voix, propre à l'instance. La synthèse charge les deux, règles d'abord, avec le point de cache posé sur le second pour couvrir les deux. Aucune ligne perdue à la scission (vérifié ligne à ligne contre la version committée).",
+      "finished_at": "2026-08-19"
+    },
     {
       "title": "Transmettre toutes les espèces à la synthèse (champ <code>other_species</code>)",
       "details": "<code>aggregate()</code> ne conservait que les 10 espèces les plus fréquentes alors que le payload continuait d'annoncer <code>unique_species</code> (20 le 24 juillet) : la synthèse voyait dix noms manquants et comblait le trou en inventant. C'est ce qui a produit « la grive des bois » et « le pic-bois » dans l'édition du 24 juillet — deux grives étaient bien présentes ce jour-là (solitaire ×6, à dos olive ×1), mais parmi les espèces jetées. Nouveau champ <code>other_species</code> (nom + compte) portant toute la queue ; <code>top_species</code> reste à 10 pour ne rien changer au rendu du site ni à la résolution des photos iNat. Vérifié sur un fetch réel : 10 + 10 = 20, plus aucune espèce manquante.",

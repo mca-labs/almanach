@@ -4,24 +4,20 @@
 
 import * as Astronomy from 'astronomy-engine';
 
+import { config, envOrNumber } from './config.js';
 import { localMidnight } from './util/date.js';
 
 type AstroTime = Astronomy.AstroTime;
 const { Body, Equator, Horizon, Illumination, MoonPhase, Observer, SearchAltitude, SearchRiseSet } =
   Astronomy;
 
-// --- Observateur figé : pont couvert de Saint-Placide ---
-function num(name: string, fallback: number): number {
-  const raw = process.env[name];
-  if (raw === undefined || raw === '') return fallback;
-  const n = Number(raw);
-  if (Number.isNaN(n)) throw new Error(`${name} is not a number: ${raw}`);
-  return n;
-}
+// --- Observateur : position déclarée dans almanach.config.json ---
+// Saisie à la main, jamais dérivée des appareils (cf. le commentaire de config).
+// Les variables d'environnement restent prioritaires pour les cas ponctuels.
 const OBSERVER = new Observer(
-  num('OBS_LAT', 47.40744),
-  num('OBS_LON', -70.61846),
-  num('OBS_ELEV_M', 377),
+  envOrNumber('OBS_LAT', config.location.latitude),
+  envOrNumber('OBS_LON', config.location.longitude),
+  envOrNumber('OBS_ELEV_M', config.location.elevation_m),
 );
 
 /** Azimut (0=N, 90=E, 180=S, 270=O) et altitude (degrés) d'un corps à un instant
@@ -249,7 +245,8 @@ async function nightCloudCover(forDate: string): Promise<number | null> {
   const base = process.env.OPENMETEO_BASE ?? 'https://api.open-meteo.com/v1';
   const url =
     `${base}/forecast?latitude=${OBSERVER.latitude}&longitude=${OBSERVER.longitude}` +
-    `&hourly=cloud_cover&start_date=${forDate}&end_date=${forDate}&timezone=America/Toronto`;
+    `&hourly=cloud_cover&start_date=${forDate}&end_date=${forDate}` +
+    `&timezone=${encodeURIComponent(config.location.timezone)}`;
   try {
     const res = await fetch(url);
     if (!res.ok) return null;

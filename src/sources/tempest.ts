@@ -1,7 +1,8 @@
 // Tempest : fetch + agrège la météo d'un jour local en un seul résumé.
 // Pas de persistance ligne-par-ligne (on n'a plus de BD). Le caller écrit le JSON.
 
-import { localMidnight } from '../util/date.js';
+import { config, envOr } from '../config.js';
+import { localMidnight, LOCAL_TZ } from '../util/date.js';
 
 const BASE = 'https://swd.weatherflow.com/swd/rest';
 
@@ -110,7 +111,7 @@ let cachedDeviceId: number | null = null;
 async function getOutdoorDeviceId(): Promise<number> {
   if (cachedDeviceId !== null) return cachedDeviceId;
   const token = env('WEATHERFLOW_TOKEN');
-  const stationId = env('WEATHERFLOW_STATION_ID');
+  const stationId = envOr('WEATHERFLOW_STATION_ID', config.sources.tempest_station_id);
   const res = await fetch(`${BASE}/stations/${stationId}?token=${token}`);
   if (!res.ok) throw new Error(`Tempest HTTP ${res.status}`);
   const data = (await res.json()) as {
@@ -165,7 +166,7 @@ function nums(rows: ObsRow[], idx: number): number[] {
   return out;
 }
 
-/** Renvoie l'heure locale (0..23) d'un epoch UTC selon America/Toronto. */
+/** Renvoie l'heure locale (0..23) d'un epoch UTC selon le fuseau de l'observateur. */
 type WindCompass = NonNullable<NonNullable<WeatherDaily['wind']>['direction_compass']>;
 type WindQualifier = NonNullable<NonNullable<WeatherDaily['wind']>['qualifier']>;
 
@@ -193,7 +194,7 @@ function windQualifier(kmh: number): WindQualifier {
 function localHour(epochSec: number): number {
   const d = new Date(epochSec * 1000);
   const fmt = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'America/Toronto',
+    timeZone: LOCAL_TZ,
     hour: '2-digit',
     hour12: false,
   });

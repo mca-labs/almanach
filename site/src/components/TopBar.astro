@@ -1,4 +1,6 @@
 ---
+import { config } from '../lib/config';
+
 interface Props {
   active?: 'une' | 'archives' | 'a-propos';
 }
@@ -7,7 +9,7 @@ const { active } = Astro.props;
 
 <div class="topbar">
   <div class="wrap">
-    <a class="mark" href="/" aria-label="Accueil"><span class="leaf">&#10047;</span>&nbsp; Almanach du Val-des-Loups</a>
+    <a class="mark" href="/" aria-label="Accueil"><span class="leaf">&#10047;</span>&nbsp; {config.instance.name}</a>
     <button
       class="menu-toggle"
       type="button"
