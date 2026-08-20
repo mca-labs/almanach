@@ -27,8 +27,17 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 concurrency:
-  group: daily-edition
-  cancel-in-progress: false
+  # ⚠️ Groupe renommé le 19 août 2026. Le run planifié du 19 (id 32216878061) est
+  # resté « queued » 19 h sans jamais recevoir de runner, et l'API a refusé de
+  # l'annuler (cancel ET force-cancel en HTTP 500). Comme il occupait toujours
+  # l'ancien groupe `daily-edition`, toutes les nuits suivantes se seraient mises
+  # en file derrière lui : l'almanach serait resté figé au 17 août indéfiniment.
+  # Changer de nom de groupe libère les runs à venir sans dépendre de GitHub.
+  group: daily-edition-v2
+  # Une édition dure ~50 s et les runs sont espacés de 24 h : deux exécutions
+  # simultanées n'arrivent jamais en régime normal. `true` ne coûte donc rien et
+  # garantit qu'un run bloqué sera supplanté par le suivant au lieu de tout geler.
+  cancel-in-progress: true
 
 jobs:
   edition:

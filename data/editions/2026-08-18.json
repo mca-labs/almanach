@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-08-18",
+  "generated_at": "2026-08-20T00:03:24.079Z",
+  "title": "Le pic et le colibri",
+  "summary": "Journée fraîche et lumineuse au Val — le vent du sud à peine perceptible, la forêt sonore jusqu'au soir.",
+  "body_md": "Le soleil a durci tôt, vers dix heures, quand le thermomètre a passé les vingt degrés et que le vent du sud s'est tu presque complètement. L'air portait encore la fraîcheur de la nuit — 10 degrés au lever — et ce contraste a rendu la matinée singulièrement nette, sans brume, sans voile. La pression est restée stable toute la journée. Rien ne pressait.\n\nCe sont les colibris à gorge rubis qui ont dominé le registre acoustique, 206 détections réparties du matin jusqu'en après-midi — un chiffre qui dit moins la rareté que la constance, la fréquence d'un battement d'aile invisible. Mais c'est la sittelle à poitrine rousse que l'on retient ce soir : entendue en milieu de matinée, sa voix nasale et répétée descendait quelque part dans le sous-bois, méthodique, comme une vérification. Sitta canadensis descend les troncs la tête en bas, sonde l'écorce, tourne — une façon de voir le monde à l'envers et d'en tirer quelque chose.",
+  "sky_narrative": "La nuit du 18 au 19 sera presque sans nuages — couverture inférieure à 2 % — et la lune, à 41 % de sa surface éclairée, se couchera vers 22 h 21 heure locale, laissant ensuite un ciel vraiment sombre jusqu'à l'aube. Vénus sera visible en début de soirée, basse à l'ouest-sud-ouest ; après le coucher de la lune, le ciel profond s'ouvrira franchement — une nuit à sortir sans frontale.",
+  "theme_tags": [
+    "oiseaux",
+    "colibri",
+    "sittelle",
+    "lumiere",
+    "calme",
+    "foret"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 10.2,
+      "temp_max_c": 23.4,
+      "ecart_normale_c": 1.2,
+      "pression_tendance": "flat",
+      "vent": "calme, du S, rafale max 16,9 km/h à 16 h",
+      "pluie_jour_mm": 0,
+      "pluie_7j_total_mm": 16.7,
+      "jours_depuis_derniere_pluie": 1
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Red-breasted Nuthatch",
+      "taxon_scientific": "Sitta canadensis",
+      "count": 25,
+      "observed_at": "2026-08-18T10:00:56-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260818-140052.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 41,
+      "moon_set_utc": "2026-08-20T02:21:33Z",
+      "venus_notable": true,
+      "cloud_cover_night_pct": 1.6
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans choses sauvages, et ceux qui ne le peuvent pas."
+}
