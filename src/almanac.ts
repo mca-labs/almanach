@@ -173,10 +173,32 @@ async function computeAurora(forDate: string): Promise<SkyEvent | null> {
   try {
     const res = await fetch(`${base}/products/noaa-planetary-k-index-forecast.json`);
     if (!res.ok) return null;
-    const data = (await res.json()) as string[][];
-    const sameDay = data.slice(1).filter((r) => r[0]?.startsWith(forDate));
-    if (sameDay.length === 0) return null;
-    const maxKp = Math.max(...sameDay.map((r) => Number(r[1])));
+    // Le produit SWPC renvoie un tableau d'OBJETS { time_tag, kp, observed }.
+    // L'ancien code le lisait comme un tableau de tableaux (r[0], r[1]) avec une
+    // ligne d'en-tête : chaque ligne rendait `undefined`, le filtre ne gardait
+    // rien, et la fonction retournait null sans bruit. Résultat : pas un seul
+    // événement « aurora » écrit depuis la mise en service.
+    const data = (await res.json()) as Array<{ time_tag?: string; kp?: number }>;
+    // `time_tag` est en UTC. La nuit de `forDate` (soir local → aube du lendemain)
+    // couvre en UTC forDate 22 h → forDate+1 12 h : c'est cette fenêtre qui
+    // intéresse un guetteur, pas la journée UTC de forDate.
+    const from = Date.parse(`${forDate}T22:00:00Z`);
+    const to = from + 14 * 3600_000;
+    const sameDay = data.filter((r) => {
+      if (!r.time_tag || typeof r.kp !== 'number') return false;
+      const t = Date.parse(`${r.time_tag}Z`.replace(/Z+$/, 'Z'));
+      return Number.isFinite(t) && t >= from && t <= to;
+    });
+    if (sameDay.length === 0) {
+      // Bruyant à dessein : un format qui change de nouveau doit se voir dans les
+      // logs du cron plutôt que de désactiver la fonctionnalité en silence.
+      console.warn(
+        `aurora: aucune prévision Kp pour la nuit du ${forDate} ` +
+          `(${data.length} lignes reçues) — format changé ou hors fenêtre de prévision ?`,
+      );
+      return null;
+    }
+    const maxKp = Math.max(...sameDay.map((r) => r.kp as number));
     const notable = maxKp >= KP_THRESHOLD;
     return {
       category: 'aurora',
@@ -184,7 +206,7 @@ async function computeAurora(forDate: string): Promise<SkyEvent | null> {
       detail: {
         kp_max: maxKp,
         threshold: KP_THRESHOLD,
-        hours_utc: sameDay.map((r) => ({ time: r[0], kp: Number(r[1]) })),
+        hours_utc: sameDay.map((r) => ({ time: r.time_tag, kp: r.kp })),
       },
       notable,
       propice_a: notable ? 'guetter les aurores au nord après le crépuscule astronomique' : null,
