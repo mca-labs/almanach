@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-08-19",
+  "generated_at": "2026-08-20T04:46:27.820Z",
+  "title": null,
+  "summary": "Une journée fraîche et légère, à peine mouillée ce matin — le baromètre remonte et l'air sent l'automne qui approche.",
+  "body_md": "La pluie est passée tôt, laissant à peine 2,5 mm au fond du pluviomètre et quelque chose de propre dans l'air. Le vent venait du sud, presque imperceptible — moins d'un kilomètre-heure en moyenne toute la journée —, et la pression remontait doucement depuis le milieu de la matinée. Le mercure a culminé à 19,7 °C en début d'après-midi, mais l'impression était plus fraîche que le chiffre : un avant-goût de ce qui s'en vient, à moins d'un degré sous la normale pour la saison.\n\nLa journée appartenait au colibri à gorge rubis. Cent dix-huit détections réparties sur plusieurs séquences — une bouffée dès l'aurore, une autre à mi-journée, une reprise marquée vers dix-huit heures — rappellent que la fin d'août est sa période charnière : les individus s'alimentent avec insistance avant d'entreprendre une migration parmi les plus longues de nos passereaux. Les mésanges à tête noire tenaient leur rang habituel, les bruants chanteurs lançaient leurs phrases brèves entre les averses, et une seule détection de faucon pèlerin a suffi à rappeler que l'espace aérien au-dessus du Val n'est jamais tout à fait libre.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera couverte à près de 90 %, laissant peu d'espoir pour le ciel profond : la Lune au premier quartier, éclairée à moitié, se couchera vers 2 h 56, mais les nuages prendront le dessus bien avant. Vénus sera la seule planète notable à gratter l'horizon, à peine à 7° d'altitude en soirée ; une légère activité géomagnétique est attendue en début de nuit — Kp 4 prévu autour de minuit —, mais sous cette couverture nuageuse, aucune aurore ne sera perceptible au Val.",
+  "theme_tags": [
+    "migration",
+    "colibri",
+    "fraicheur",
+    "automne-proche",
+    "barometre"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 19.7,
+      "temp_min_c": 10.6,
+      "rain_mm": 2.5,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "observed_at": "2026-08-19T09:12:22-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260819-131216.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier quartier",
+      "moon_illumination_pct": 51,
+      "moon_set": "2026-08-21T02:55:42.536Z",
+      "cloud_cover_pct": 89,
+      "notable_planets": [
+        "Vénus"
+      ],
+      "aurora_kp_max": 4
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces parmi les plus robustes ou les plus familières, comme le bruant chanteur et le merlebleu, arrivant généralement en mars, tandis que les oiseaux des bois plus rares et plus brillants ferment le cortège en juin."
+}
