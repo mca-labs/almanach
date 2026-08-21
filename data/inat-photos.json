@@ -585,7 +585,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-07-23T06:36:58.593Z"
+    "resolved_at": "2026-08-21T04:48:29.444Z"
   },
   "Sialia sialis": {
     "taxon_inat_id": 12942,
@@ -658,5 +658,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-08-15T04:39:50.950Z"
+  },
+  "Dryocopus pileatus": {
+    "taxon_inat_id": 17855,
+    "name_fr": "grand pic",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4264024/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4264024/square.jpg",
+    "attribution": "(c) liveinparadise, some rights reserved (CC BY-NC)",
+    "attribution_name": "liveinparadise",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-08-21T04:48:31.661Z"
   }
 }

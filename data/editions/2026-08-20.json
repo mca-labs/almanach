@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-08-20",
+  "generated_at": "2026-08-21T04:48:57.123Z",
+  "title": null,
+  "summary": "Journée sèche et fraîche sous un ciel dégagé — le baromètre remonte, et le Val respire après la semaine.",
+  "body_md": "La pression montait depuis le matin, portée par un vent du sud à peine perceptible. Le thermomètre a fléchi dès le coucher du soleil, glissant vers les 8 °C à la nuit — un écart qui rappelle que l'été s'est retourné, que l'arrière-saison tient désormais le haut du versant. Pas une goutte, pas un éclair : la journée d'hier avait lavé l'air, et celui-ci s'est maintenu propre, lumineux, presque tranchant.\n\nL'oiseau du jour, c'était le bruant chanteur — Melospiza melodia — que l'on entendait partout dans les sous-bois et les lisières, sa voix multiple et têtue, insistante comme une question posée à voix haute. Plus discret, le troglodyte des forêts a tenu son rang, ses phrases complexes jaillissant des fourrés denses. Mais la surprise venait d'en haut, ou presque : un bécasseau solitaire a traversé la journée en coup de vent, signal parmi d'autres que la migration a repris son mouvement lent vers le sud. Le colibri à gorge rubis, lui, se montrait encore en nombre — 220 détections — comme s'il voulait remplir ses réserves avant le départ.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — à peine 13 % de couverture — et la lune gibbeuse croissante, éclairée à 60 %, se lèvera en soirée et se couchera aux premières heures du matin, laissant le ciel profond à lui-même un moment. Vénus brillera bas sur l'horizon sud-ouest, seule planète notable bien placée ce soir.",
+  "theme_tags": [
+    "migration",
+    "automne-precoce",
+    "passereaux",
+    "colibri",
+    "ciel-clair"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8.1,
+      "temp_max_c": 22.4,
+      "pluie_mm": 0,
+      "vent_avg_kmh": 3.2,
+      "vent_dir": "S",
+      "pression_tendance": "up",
+      "ecart_normale_c": -0.2
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 124,
+      "observed_at": "2026-08-20T11:09:48-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-150947.flac"
+    },
+    "sky": {
+      "for_date": "2026-08-21",
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 60,
+      "moon_set": "2026-08-22T03:39:09.876Z",
+      "cloud_cover_pct": 13,
+      "venus_notable": true,
+      "aurora_kp_max": 4
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit m'indique quand chercher l'hirondelle, la dent-de-chien quand attendre la grive des bois ; et lorsque j'ai trouvé le trille en fleur, je sais que la saison est bel et bien commencée."
+}

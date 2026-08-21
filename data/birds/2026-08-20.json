@@ -1,0 +1,132 @@
+{
+  "date": "2026-08-20",
+  "total_detections": 446,
+  "unique_species": 14,
+  "top_species": [
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 220,
+      "max_confidence": 0.9987813830375671,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-205101.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 124,
+      "max_confidence": 0.914463996887207,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-150947.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 49,
+      "max_confidence": 0.9758450388908386,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-111716.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 16,
+      "max_confidence": 0.8118376731872559,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-222235.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 10,
+      "max_confidence": 0.8796526789665222,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-105511.flac"
+    },
+    {
+      "taxon_common": "Solitary Sandpiper",
+      "taxon_scientific": "Tringa solitaria",
+      "count": 9,
+      "max_confidence": 0.9949964284896851,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-115003.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 7,
+      "max_confidence": 0.8399814963340759,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-143951.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 4,
+      "max_confidence": 0.8527467846870422,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-221129.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 2,
+      "max_confidence": 0.8939344882965088,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-104545.flac"
+    },
+    {
+      "taxon_common": "Pileated Woodpecker",
+      "taxon_scientific": "Dryocopus pileatus",
+      "count": 1,
+      "max_confidence": 0.5478262305259705,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-222519.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Common Nighthawk",
+      "taxon_scientific": "Chordeiles minor",
+      "count": 1
+    },
+    {
+      "taxon_common": "Belted Kingfisher",
+      "taxon_scientific": "Megaceryle alcyon",
+      "count": 1
+    },
+    {
+      "taxon_common": "Pine Siskin",
+      "taxon_scientific": "Spinus pinus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Song Sparrow",
+    "taxon_scientific": "Melospiza melodia",
+    "confidence": 0.914463996887207,
+    "observed_at": "2026-08-20T11:09:48-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260820-150947.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    17,
+    65,
+    17,
+    37,
+    73,
+    79,
+    35,
+    6,
+    20,
+    8,
+    22,
+    22,
+    29,
+    14,
+    0,
+    0,
+    0,
+    0
+  ]
+}
