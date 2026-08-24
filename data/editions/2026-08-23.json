@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-08-23",
+  "generated_at": "2026-08-24T04:55:23.492Z",
+  "title": null,
+  "summary": "Journée fraîche et grise sous une légère pluie — l'été recule d'un cran, le baromètre avec lui.",
+  "body_md": "La pression a glissé toute la journée, lentement, sans à-coups : 0,7 millibar en trois heures, rien de brutal, mais assez pour que l'air sente la saison qui hésite. Le thermomètre n'a pas dépassé 15 °C — près de quatre degrés sous la normale — et la lumière, déjà courte, s'est tenue basse et diffuse du matin au soir. Une fine pluie a traversé le Val sans s'attarder, moins d'un millimètre, juste de quoi mouiller les feuilles et rappeler que l'été ne tient plus qu'à un fil.\n\nCent six détections, sept espèces : une journée de fond de saison, sans éclat. Le bruant chanteur a dominé le compteur comme à son habitude, sa voix sortant du sous-bois par rafales courtes tout au long de la matinée. Mais c'est le colibri à gorge rubis qui retient l'attention — seize passages enregistrés, le premier peu après l'aube. Archilochus colubris s'active en cette fin d'août : il doit doubler sa masse avant de traverser le golfe du Mexique d'une seule traite, et chaque fleur compte. Le roitelet à couronne dorée est apparu en soirée, signe que les migrateurs du Nord commencent à descendre. L'été compte ses derniers jours.",
+  "sky_narrative": "La lune gibbeuse — près de 85 % éclairée — se couchera vers 1 h 36 (heure locale), mais une couverture nuageuse de 80 % voilera la nuit pour l'essentiel. Vénus sera visible en début de soirée, basse au sud-ouest, avant de disparaître à son tour sous les nuages ; les conditions laisseront peu de place au ciel profond.",
+  "theme_tags": [
+    "migration",
+    "automne-precoce",
+    "colibri",
+    "fraicheur",
+    "pression-basse"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 15.2,
+      "temp_min_c": 9.5,
+      "ecart_normale_c": -3.7,
+      "pluie_mm": 0.8,
+      "pression_tendance": "down",
+      "vent": "calme"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 16,
+      "confidence": 0.9638276100158691,
+      "observed_at": "2026-08-23T06:08:35-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 85,
+      "cloud_cover_night_pct": 80,
+      "venus_notable": true
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
