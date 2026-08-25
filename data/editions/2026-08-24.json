@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-08-24",
+  "generated_at": "2026-08-25T04:48:29.949Z",
+  "title": null,
+  "summary": "Journée fraîche et lumineuse après un bref orage matinal — la pression remonte, et l'été recule d'un demi-pas.",
+  "body_md": "Cinq éclairs ont suffi ce matin, portés par un vent calme du sud, pour rincer l'air et laisser la vallée dans cette netteté particulière qui suit les petites pluies. Moins d'un millimètre de pluie, mais assez pour que la litière sente le champignon et que la lumière, au sommet de sa course vers midi, frappe différemment — plus dorée, plus oblique qu'en juillet. La pression remontera doucement ; le thermomètre n'a atteint que 23,5 °C, soit presque un degré sous la normale. L'arrière-saison s'annonce sans se nommer.\n\nParmi les 138 détections du jour, le jaseur des cèdres s'est imposé dès la fin d'après-midi. Bombycilla cedrorum est un errant de la cime, assemblé en bandes lâches que rien ne semble presser : il ne niche plus, ne migre pas encore vraiment, il rôde. Sa voix sèche — un sifflet ténu, presque électrique — a traversé le sous-bois peu après seize heures, avec la régularité d'une horloge mal réglée. Le bruant chanteur dominait la matinée avec plus de cinquante détections, et le roitelet à couronne dorée, improbablement abondant pour la saison, signait déjà son retour — avant même que l'été officiel consente à partir.",
+  "sky_narrative": "La lune gibbeuse à 91 % se lèvera en fin de soirée et dominera la nuit, mais la couverture nuageuse n'excédera pas 14 % : Vénus sera visible bas dans le sud-ouest peu après la tombée de la nuit, seule planète notable à pointer au-dessus de l'horizon ce soir. Dans trois jours, une éclipse partielle de Lune — obscurcissement à 97 % — sera visible d'ici au cœur de la nuit du 27 au 28 août, la Lune culminant à 32° : cette nuit-ci n'en est que l'antichambre lumineuse.",
+  "theme_tags": [
+    "migration",
+    "automne-precoce",
+    "orage",
+    "pression",
+    "jaseur",
+    "roitelet",
+    "fin-d-ete"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 23.5,
+      "temp_min_c": 10,
+      "ecart_normale_c": -0.9,
+      "pluie_jour_mm": 0.7,
+      "pression_tendance": "up",
+      "vent": "calme, du S",
+      "eclairs": 5
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 13,
+      "observed_at": "2026-08-24T17:17:14-04:00"
+    },
+    "sky": {
+      "lune": "gibbeuse croissante, 91 %",
+      "planete_notable": "Vénus",
+      "couverture_nuageuse_pct": 14,
+      "eclipse_dans": "3 jours (partielle, visible ici)"
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}

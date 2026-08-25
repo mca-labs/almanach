@@ -1,0 +1,166 @@
+{
+  "for_date": "2026-08-25",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-08-25T09:52:16.891Z",
+        "sunset": "2026-08-25T23:35:51.235Z",
+        "sun_set_azimuth": 286.5,
+        "sky_map_ref": "2026-08-26T00:08:22.456Z",
+        "twilight": {
+          "civil_start": "2026-08-25T09:19:37.230Z",
+          "nautical_start": "2026-08-25T08:39:48.794Z",
+          "astronomical_start": "2026-08-25T07:56:15.746Z",
+          "astronomical_end": "2026-08-26T01:31:08.324Z",
+          "nautical_end": "2026-08-26T00:47:57.288Z",
+          "civil_end": "2026-08-26T00:08:22.456Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse croissante",
+      "detail": {
+        "phase_deg": 145.4560958369464,
+        "illumination_fraction": 0.9117688222424019,
+        "magnitude": -11.698945522712627,
+        "rise": "2026-08-25T22:42:13.281Z",
+        "set": "2026-08-25T06:43:21.849Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -1.876310337514227,
+        "phase_angle": 9.313374929777584,
+        "helio_dist": 0.339874907318601,
+        "geo_dist": 1.3447309699207164,
+        "az": 294.8,
+        "alt": -4.2
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.56303758781689,
+        "phase_angle": 97.97618967366468,
+        "helio_dist": 0.7280246008003359,
+        "geo_dist": 0.6074771019626412,
+        "az": 248.7,
+        "alt": 6.2
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.270888855696322,
+        "phase_angle": 32.278909601986676,
+        "helio_dist": 1.5110392976005496,
+        "geo_dist": 1.8862945121013135,
+        "az": 345.9,
+        "alt": -17.3
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.7879196054712247,
+        "phase_angle": 3.6987935331553996,
+        "helio_dist": 5.294941386874427,
+        "geo_dist": 6.235282409313462,
+        "az": 312.5,
+        "alt": -10.9
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.38070637593312107,
+        "phase_angle": 4.113844919355849,
+        "helio_dist": 9.445911473571256,
+        "geo_dist": 8.67151005601644,
+        "az": 74.4,
+        "alt": -9.3
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "eclipse",
+      "title": "Éclipse de Lune dans 3 j (partial)",
+      "detail": {
+        "body": "moon",
+        "kind": "partial",
+        "peak_utc": "2026-08-28T04:12:49.076Z",
+        "local_date": "2026-08-28",
+        "days_ahead": 3,
+        "obscuration": 0.9660555933345528,
+        "moon_altitude_deg_at_peak": 32.1,
+        "visible_ici": true
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Kp prévu 1.67",
+      "detail": {
+        "kp_max": 1.67,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-08-26T00:00:00",
+            "kp": 1.67
+          },
+          {
+            "time": "2026-08-26T03:00:00",
+            "kp": 1.67
+          },
+          {
+            "time": "2026-08-26T06:00:00",
+            "kp": 1.67
+          },
+          {
+            "time": "2026-08-26T09:00:00",
+            "kp": 1.33
+          },
+          {
+            "time": "2026-08-26T12:00:00",
+            "kp": 0.67
+          }
+        ]
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 13.777777777777779
+}
