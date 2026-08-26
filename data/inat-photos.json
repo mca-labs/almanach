@@ -670,5 +670,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-08-21T04:48:31.661Z"
+  },
+  "Tyrannus tyrannus": {
+    "taxon_inat_id": 16782,
+    "name_fr": "tyran tritri",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169584365/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169584365/square.jpeg",
+    "attribution": "(c) David M. Gascoigne, some rights reserved (CC BY-NC), uploaded by David M. Gascoigne",
+    "attribution_name": "David M. Gascoigne",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-08-26T04:49:14.812Z"
   }
 }

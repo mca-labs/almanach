@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-08-25",
+  "generated_at": "2026-08-26T04:49:40.390Z",
+  "title": null,
+  "summary": "Journée fraîche et pluvieuse au Val — 21 mm tombés sur un sol déjà saturé, avec dix espèces entendues dans le silence d'après-pluie.",
+  "body_md": "La pluie a fait son travail toute la journée, posée sans violence sur la vallée — 21 mm, un vent du sud à peine perceptible, des rafales qui n'ont jamais dépassé 18 km/h. La température a plafonné à 19,5 °C en fin de matinée, puis elle a glissé doucement vers les 12 °C en soirée. L'orage de la veille avait déjà mouillé la litière ; aujourd'hui, l'eau descendait lentement, sans bruit, et le baromètre restait plat à 969 mb — aucune promesse d'embellie, aucune menace non plus.\n\nDix espèces seulement, 163 détections — et pourtant la journée avait sa figure propre. Le bruant chanteur a dominé les comptages comme d'habitude, voix insistante entre les averses. Mais c'est le roitelet à couronne dorée qui retenait l'attention : 17 détections, ce filet de son suraigu qui traverse les épinettes comme une aiguille. Et puis, en fin d'après-midi, le troglodyte des forêts — petite chose brune dont la voix déborde le corps — a signé la journée. Il cherchait, grappillait sous les branches basses, indifférent à l'humidité. C'est sa spécialité.",
+  "sky_narrative": "La nuit s'ouvrira avec une lune gibbeuse croissante à 96 % d'illumination — elle se couchera vers 3 h 54, heure locale, laissant une brève fenêtre d'obscurité avant l'aube. La couverture nuageuse prévue à 32 % permettra à Vénus de se montrer en soirée dans le secteur sud-ouest, à 6° au-dessus de l'horizon. Dans deux nuits, une éclipse partielle de Lune sera visible d'ici au moment du maximum, la Lune atteignant 32° de hauteur — un rendez-vous à marquer pour les prochaines heures.",
+  "theme_tags": [
+    "pluie",
+    "oiseaux-chanteurs",
+    "fraicheur",
+    "eclipse-lune",
+    "automne-precoce"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 19.5,
+      "temp_min_c": 8.8,
+      "ecart_normale_c": -1.9,
+      "pluie_jour_mm": 21,
+      "pression_mb": 969.2,
+      "pression_tendance": "stable",
+      "vent": "calme, du S",
+      "rafale_max_kmh": 17.64
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 17,
+      "confidence": 0.8
+    },
+    "sky": {
+      "lune": "Gibbeuse croissante, 96 % illuminée",
+      "coucher_lune_locale": "3 h 54",
+      "venus_visible": true,
+      "eclipse_dans": "2 jours (partielle, visible au Val)",
+      "couverture_nuageuse_pct": 32
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre avec intention, n'affronter que les faits essentiels de la vie, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — et non découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
