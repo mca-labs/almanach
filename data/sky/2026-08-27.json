@@ -1,0 +1,166 @@
+{
+  "for_date": "2026-08-27",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-08-27T09:54:55.968Z",
+        "sunset": "2026-08-27T23:32:03.396Z",
+        "sun_set_azimuth": 285.5,
+        "sky_map_ref": "2026-08-28T00:04:21.924Z",
+        "twilight": {
+          "civil_start": "2026-08-27T09:22:29.237Z",
+          "nautical_start": "2026-08-27T08:43:04.319Z",
+          "astronomical_start": "2026-08-27T08:00:11.621Z",
+          "astronomical_end": "2026-08-28T01:26:05.583Z",
+          "nautical_end": "2026-08-28T00:43:33.724Z",
+          "civil_end": "2026-08-28T00:04:21.924Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse croissante",
+      "detail": {
+        "phase_deg": 168.1613731763584,
+        "illumination_fraction": 0.9893815265667848,
+        "magnitude": -12.330909882366612,
+        "rise": "2026-08-27T23:21:27.759Z",
+        "set": "2026-08-27T09:06:29.174Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -1.958544575837141,
+        "phase_angle": 5.29600663953789,
+        "helio_dist": 0.35070678025605695,
+        "geo_dist": 1.3590844141575085,
+        "az": 291.8,
+        "alt": -3.6
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.583861864923085,
+        "phase_angle": 99.38630969253524,
+        "helio_dist": 0.7280940103533842,
+        "geo_dist": 0.5918001051941548,
+        "az": 247.8,
+        "alt": 5.9
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.266300396459389,
+        "phase_angle": 32.50494237738652,
+        "helio_dist": 1.5136541999278461,
+        "geo_dist": 1.8759341669977936,
+        "az": 345.4,
+        "alt": -17.3
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.790032428487267,
+        "phase_angle": 3.965629217619694,
+        "helio_dist": 5.295606361675435,
+        "geo_dist": 6.224610627229211,
+        "az": 312.9,
+        "alt": -11.2
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.3697290659280519,
+        "phase_angle": 3.9489638478023688,
+        "helio_dist": 9.44529906679575,
+        "geo_dist": 8.649715635470654,
+        "az": 75.2,
+        "alt": -8.6
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "eclipse",
+      "title": "Éclipse de Lune dans 1 j (partial)",
+      "detail": {
+        "body": "moon",
+        "kind": "partial",
+        "peak_utc": "2026-08-28T04:12:49.076Z",
+        "local_date": "2026-08-28",
+        "days_ahead": 1,
+        "obscuration": 0.9660555933354023,
+        "moon_altitude_deg_at_peak": 32.1,
+        "visible_ici": true
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Aurores possibles (Kp 5.67)",
+      "detail": {
+        "kp_max": 5.67,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-08-28T00:00:00",
+            "kp": 5.67
+          },
+          {
+            "time": "2026-08-28T03:00:00",
+            "kp": 4.67
+          },
+          {
+            "time": "2026-08-28T06:00:00",
+            "kp": 4
+          },
+          {
+            "time": "2026-08-28T09:00:00",
+            "kp": 4
+          },
+          {
+            "time": "2026-08-28T12:00:00",
+            "kp": 3.67
+          }
+        ]
+      },
+      "notable": true,
+      "propice_a": "guetter les aurores au nord après le crépuscule astronomique",
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 40.22222222222222
+}

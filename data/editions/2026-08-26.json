@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-08-26",
+  "generated_at": "2026-08-27T15:07:55.354Z",
+  "title": "Le roitelet avant la lune",
+  "summary": "Journée claire et calme, fraîche à l'aube, avec les voix d'automne déjà dans le sous-bois.",
+  "body_md": "La nuit avait laissé 9,7 degrés dans le creux de la vallée — assez pour que l'aube porte ce léger mordant qui n'appartient plus tout à fait à l'été. Le vent est resté au sud toute la journée, presque absent, et la pression n'a pas bougé. C'est dans ce calme-là, à peine éclairé, qu'un roitelet à couronne dorée a lancé sa voix mince depuis le couvert : une série de sifflements aigus, presque frêles, qui n'ont rien de provisoire malgré leur légèreté. Il était tôt. La lumière n'avait pas encore décidé.\n\nQuarante détections du Regulus satrapa au fil de la journée — c'est lui qui a donné le ton. Le bruant chanteur a suivi, régulier, et le troglodyte des forêts a tenu son coin du sous-bois avec cette véhémence qui surprend toujours pour un si petit corps. Les deux pics ont travaillé en silence relatif, à leur manière méthodique. En fin d'après-midi, un martin-pêcheur a traversé, bruyant et pressé. Le grimpereau brun, lui, n'a laissé qu'une seule trace — discret jusqu'au bout.",
+  "sky_narrative": "La lune, gibbeuse à près de 99 % d'illumination, se couchera à 5 h 06 heure locale et ne se lèvera qu'en toute fin de soirée, autour de 19 h 21 — ce qui laissera une fenêtre d'obscurité relative en début de nuit pour qui guette le nord. Cette nuit-là vaut d'être surveillée : un indice Kp de 5,67 est prévu vers minuit, et avec une couverture nuageuse d'environ 40 %, des aurores boréales pourraient se montrer entre les éclaircies. Vénus brillera bas dans le sud-ouest dès le crépuscule. Et demain matin, avant l'aube, la lune elle-même sera au cœur d'une éclipse partielle visible d'ici — à son maximum vers 0 h 12 heure locale le 28, la face ombrée atteindra presque 97 % de la surface lunaire.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "roitelet",
+    "aurore",
+    "eclipse",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 9.7,
+      "temp_max_c": 25,
+      "rain_mm": 0,
+      "wind_label": "calme",
+      "wind_dir": "du S",
+      "pression": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 40,
+      "confidence": 0.9289
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "illumination_pct": 98.9,
+      "events": [
+        "Éclipse partielle de Lune visible (28 août, ~0h12 locale)",
+        "Aurores possibles (Kp 5.67)"
+      ],
+      "cloud_cover_pct": 40
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}
