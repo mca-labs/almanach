@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-08-27",
+  "generated_at": "2026-08-28T16:32:15.528Z",
+  "title": null,
+  "summary": "Un après-midi d'orage sur le Val, chaud et bref, avec un gros-bec des pins pour annoncer la fin de l'été.",
+  "body_md": "La journée a commencé fraîche — 10 degrés à l'aube, l'air presque automnal sous un ciel encore fermé. Puis la chaleur est montée vite, atteignant près de 25 degrés en milieu d'après-midi, avant que l'orage n'éclate : 44 éclairs en quelques heures, à moins de trois kilomètres en moyenne. Seize millimètres de pluie ont lessivé le feuillage, le vent restait calme, du sud, et la pression n'a presque pas bougé après le passage.\n\nLe fait du jour s'est produit tôt : un gros-bec errant, Coccothraustes vespertinus, entendu à six heures du matin avec une netteté presque parfaite. Ce grand pinson des forêts boréales descend parfois en août vers les vallées, avant même que les arbres ne montrent leur couleur. Son cri tranchant, sec comme un bris de branche, n'est pas celui d'un oiseau discret — il annonce quelque chose. Le bruant chanteur et le roitelet à couronne dorée ont aussi fait entendre leur voix ; une paruline rayée, Setophaga striata, a été captée une seule fois en fin de matinée, fugace, comme un avant-goût de la migration qui vient.",
+  "sky_narrative": "Cette nuit sera dominée par deux événements qui se superposent rarement : une pleine lune quasi parfaite — à 96 % d'obscurcissement au maximum — subira une éclipse partielle dont le pic se produira vers minuit, heure locale, avec la lune à plus de 32 degrés de hauteur dans le ciel du Val, tout à fait visible d'ici. La couverture nuageuse partielle, autour de 40 %, ne garantit pas une fenêtre dégagée, mais elle n'exclut pas non plus les éclaircies. À cela s'ajoute une activité géomagnétique notable : avec un indice Kp prévu à 5,67 en début de nuit, des aurores boréales seront possibles vers le nord dès la fin du crépuscule astronomique — une conjonction rare avec l'éclipse, que la lumière lunaire elle-même n'annulera pas complètement.",
+  "theme_tags": [
+    "orage",
+    "migration",
+    "gros-bec",
+    "éclipse",
+    "aurore",
+    "pleine-lune",
+    "été-finissant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 24.7,
+      "temp_min_c": 10.4,
+      "rain_mm": 16.9,
+      "lightning_count": 44,
+      "wind_direction": "S",
+      "wind_qualifier": "calme",
+      "pression_tendance": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 6,
+      "observed_at": "2026-08-27T06:09:49-04:00"
+    },
+    "sky": {
+      "for_date": "2026-08-28",
+      "moon_phase": "Pleine lune",
+      "eclipse": "Éclipse partielle de Lune (obscurcissement 96,6 %), visible au Val, pic vers minuit heure locale",
+      "aurora": "Aurores possibles, Kp 5.67 prévu en début de nuit",
+      "cloud_cover_pct": 39.4
+    }
+  },
+  "fragment_quote_id": "john-muir-my-6",
+  "fragment_translation_fr": "Quand on essaie d'isoler quoi que ce soit, on le trouve enchaîné à tout le reste de l'univers."
+}
