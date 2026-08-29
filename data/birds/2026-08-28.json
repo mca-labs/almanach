@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-28",
+  "total_detections": 22,
+  "unique_species": 6,
+  "top_species": [
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 7,
+      "max_confidence": 0.8426164388656616,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260828-221753.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 7,
+      "max_confidence": 0.916746973991394,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260828-120210.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 4,
+      "max_confidence": 0.8783039450645447,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260828-105704.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 2,
+      "max_confidence": 0.6588380336761475,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260828-163821.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 1,
+      "max_confidence": 0.6817651987075806,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260828-172803.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 1,
+      "max_confidence": 0.9020665287971497,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260828-135543.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Black-capped Chickadee",
+    "taxon_scientific": "Poecile atricapillus",
+    "confidence": 0.8426164388656616,
+    "observed_at": "2026-08-28T18:17:59-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260828-221753.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    7,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

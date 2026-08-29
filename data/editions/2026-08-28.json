@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-08-28",
+  "generated_at": "2026-08-29T10:59:44.763Z",
+  "title": null,
+  "summary": "Pluie matinale et douceur revenue : la forêt souffle après l'orage de la veille, le baromètre remonte.",
+  "body_md": "Dix-huit millimètres sont tombés dans la journée, un peu de ce qu'il fallait pour laver l'air chargé de la veille. Le matin a été lourd, nuageux, puis les nuages se sont effilochés vers le milieu de l'après-midi et la température a grimpé jusqu'à vingt-deux degrés — un chiffre généreux pour la fin août. Le vent soufflait du sud, presque rien, une haleine tiède à peine perceptible. Le baromètre, lui, remontait doucement depuis le milieu du jour : signe que le système s'éloigne.\n\nSix espèces seulement, mais elles ont eu de la présence. Les mésanges à tête noire et les roitelets à couronne dorée menaient le bal à égalité, sept détections chacun — les roitelets particulièrement actifs en milieu de matinée, fouillant les branches basses avec cette nervosité qui leur est propre. Un colibri à gorge rubis a été capté à trois reprises avant midi ; à cette date, chaque passage peut être le dernier avant le grand repli vers le sud. Plus discrets : deux jaseurs d'Amérique en fin d'après-midi, un bruant des prés solitaire, et un seul gros-bec errant — dont la voix forte et franche tranche chaque fois dans le sous-bois comme une note trop grande pour la scène.",
+  "sky_narrative": "La Lune, gibbeuse à près de cent pour cent, se couchera en matinée et ne se lèvera qu'à la fin de la nuit — une fenêtre sombre s'ouvrira donc en première partie de nuit, d'autant plus précieuse que la couverture nuageuse ne dépassera que douze pour cent. Vénus sera visible bas sur l'horizon sud-ouest dès la tombée de la nuit, seule planète notable à portée de regard ce soir.",
+  "theme_tags": [
+    "pluie",
+    "migration",
+    "fin-ete",
+    "passereau",
+    "barometre"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 22.5,
+      "temp_min_c": 7.2,
+      "rain_mm": 18.2,
+      "wind_dir": "S",
+      "wind_qualifier": "calme",
+      "pressure_trend": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 7,
+      "confidence": 0.84
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 98.9,
+      "cloud_cover_pct": 12.7,
+      "planets_notable": [
+        "Vénus"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la violette dentée quand attendre la grive des bois, et lorsque j'ai trouvé l'arum en fleur, je sais que la saison est bel et bien ouverte."
+}
