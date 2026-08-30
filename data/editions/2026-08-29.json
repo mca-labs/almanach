@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-08-29",
+  "generated_at": "2026-08-30T09:53:56.026Z",
+  "title": "Le roitelet et la pression qui descend",
+  "summary": "Journée fraîche et calme, le baromètre glisse vers le bas sous un vent du sud à peine perceptible.",
+  "body_md": "La matinée a démarré froid — près de sept degrés à l'aube, un air limpide qui sentait déjà l'arrière-saison. Le vent du sud soufflait à peine, moins de trois kilomètres-heure en moyenne, et la lumière du milieu du jour a poussé le thermomètre jusqu'à vingt degrés avant que la descente du baromètre ne rappelle que quelque chose s'en vient. Quelques gouttes ont suffi à rappeler que la semaine a été généreuse en pluie — près de cinquante-huit millimètres en sept jours. Le Val tient encore le beau, mais pour combien de temps.\n\nSept espèces seulement ce jour-là, et pas de grandes voix. C'est le roitelet à couronne dorée qui menait le bal, avec sept détections dispersées sur la journée — cette habitude qu'il a de fureter dans le moindre enchevêtrement de rameaux, méthodique, presque invisible. Les jaseurs d'Amérique se faisaient entendre par à-coups, leur cri sifflant et fin qu'on reconnaît avant de les voir. Le bruant à gorge blanche a signalé sa présence en milieu de matinée, une note tenue, un peu mélancolique, qui arrive toujours à point nommé en fin d'août pour rappeler que la saison bascule.",
+  "sky_narrative": "La lune gibbeuse décroissante, éclairée à près de 96 %, se couchera en milieu d'après-midi et ne se lèvera qu'après minuit, laissant quelques heures d'obscurité relative en début de nuit — mais avec 37 % de couverture nuageuse prévue, le ciel ne sera pas entièrement dégagé. Vénus sera visible bas sur l'horizon sud-ouest en début de soirée, à peine cinq degrés au-dessus de la ligne des arbres ; une fois la Lune levée, sa clarté écrasera tout le reste.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "pression",
+    "passereaux",
+    "fin-d-été"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6.9,
+      "temp_max_c": 20,
+      "ecart_normale_c": -1.9,
+      "pluie_jour_mm": 0.2,
+      "pluie_7j_total_mm": 57.9,
+      "pression_tendance": "down",
+      "vent_qualifier": "calme",
+      "vent_direction": "du S"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "observed_at": "2026-08-29T07:42:15-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-114209.flac"
+    },
+    "sky": {
+      "lune_phase": "Lune gibbeuse décroissante",
+      "lune_illumination": 0.957,
+      "lune_coucher": "2026-08-30T12:44:25.871Z",
+      "lune_lever": "2026-08-31T00:09:53.566Z",
+      "venus_notable": true,
+      "cloud_cover_night_pct": 37
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces plus résistantes ou à demi apprivoisées, comme le bruant chanteur et le merlebleu, arrivent généralement en mars, tandis que les oiseaux des bois plus rares et plus éclatants ferment la procession en juin."
+}

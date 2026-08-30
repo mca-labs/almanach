@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-29",
+  "total_detections": 23,
+  "unique_species": 7,
+  "top_species": [
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 7,
+      "max_confidence": 0.8455235958099365,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-175532.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 5,
+      "max_confidence": 0.9004930853843689,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-202208.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 3,
+      "max_confidence": 0.5586783289909363,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-114209.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 3,
+      "max_confidence": 0.7156819105148315,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-115914.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 3,
+      "max_confidence": 0.9818245768547058,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-133921.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 1,
+      "max_confidence": 0.6654621958732605,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-125207.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 1,
+      "max_confidence": 0.539577841758728,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-075913.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "White-throated Sparrow",
+    "taxon_scientific": "Zonotrichia albicollis",
+    "confidence": 0.5586783289909363,
+    "observed_at": "2026-08-29T07:42:15-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260829-114209.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    2,
+    3,
+    1,
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    3,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

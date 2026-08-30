@@ -297,7 +297,7 @@
     "license_code": "pd",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-07T05:46:51.523Z"
+    "resolved_at": "2026-08-30T09:53:28.019Z"
   },
   "Colaptes auratus": {
     "taxon_inat_id": 18236,
@@ -561,7 +561,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-09T05:13:01.149Z"
+    "resolved_at": "2026-08-30T09:53:29.795Z"
   },
   "Empidonax flaviventris": {
     "taxon_inat_id": 16603,
