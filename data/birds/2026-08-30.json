@@ -1,0 +1,104 @@
+{
+  "date": "2026-08-30",
+  "total_detections": 41,
+  "unique_species": 9,
+  "top_species": [
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 24,
+      "max_confidence": 0.9497633576393127,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-212640.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 5,
+      "max_confidence": 0.8919821977615356,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-202001.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 4,
+      "max_confidence": 0.6284731030464172,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-133016.flac"
+    },
+    {
+      "taxon_common": "Ruby-throated Hummingbird",
+      "taxon_scientific": "Archilochus colubris",
+      "count": 2,
+      "max_confidence": 0.8837432265281677,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-141531.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 2,
+      "max_confidence": 0.5887064337730408,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-130337.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 1,
+      "max_confidence": 0.8837061524391174,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-222659.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 1,
+      "max_confidence": 0.7315174341201782,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-130650.flac"
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 1,
+      "max_confidence": 0.5986139178276062,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-093546.flac"
+    },
+    {
+      "taxon_common": "Swainson's Thrush",
+      "taxon_scientific": "Catharus ustulatus",
+      "count": 1,
+      "max_confidence": 0.7506864666938782,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-092201.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.6284731030464172,
+    "observed_at": "2026-08-30T09:30:22-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260830-133016.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    4,
+    3,
+    6,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    16,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

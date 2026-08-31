@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-08-30",
+  "generated_at": "2026-08-31T10:46:25.322Z",
+  "title": null,
+  "summary": "Journée fraîche et calme au Val — la pression remonte doucement, et quelque chose dans l'air sent déjà septembre.",
+  "body_md": "La nuit a été froide pour la saison, huit degrés à l'aube, et le mercure n'a repris de la hauteur qu'en milieu de matinée. Un vent presque nul, venu du sud, n'a rien brassé. Une légère pluie s'est posée quelque part dans la journée — un millimètre et demi à peine, imperceptible — pendant que la pression remontait, lente et régulière, comme un souffle retenu qui se relâche. La semaine a livré près de soixante millimètres en tout : le sol en garde la mémoire, même si ce dimanche avait l'air de vouloir tourner la page.\n\nC'est le roitelet à couronne dorée qui a tenu le haut du registre aujourd'hui, avec ses deux douzaines de détections réparties entre l'aurore et la tombée du soir. Il fouille les épinettes à la manière d'un acrobate méticuleux, tirant parti du moindre pli d'écorce. Mais l'oiseau du jour, choisi pour ce qu'il annonce plutôt que pour son nombre, c'est le junco aux yeux noirs : deux ou trois passages discrets dans la matinée, sa note sèche comme un caillou frappé sur un autre. Le junco revient des hauteurs à l'approche de l'automne — le voir ici, en août finissant, c'est lire un calendrier que personne n'a imprimé.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, gibbeuse à plus de quatre-vingt-dix pour cent, se couchera en après-midi et laissera le ciel sans elle pour une bonne partie de la nuit — une fenêtre sombre s'ouvrira vers l'est, là où Vénus brillera bas sur l'horizon sud-ouest en début de soirée. Avec près de quarante-quatre pour cent de couverture nuageuse prévue, les éclaircies seront possibles mais disputées ; on pourra chercher Vénus entre deux passages de nuages, sans trop y compter.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "fraicheur",
+    "pluie",
+    "roitelet",
+    "junco"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8,
+      "temp_max_c": 20.2,
+      "ecart_normale_c": -3.5,
+      "pluie_jour_mm": 1.6,
+      "pluie_7j_total_mm": 58.7,
+      "pression_tendance": "up",
+      "vent": "calme, du S"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 4,
+      "observed_at": "2026-08-30T09:30:22-04:00"
+    },
+    "sky": {
+      "for_date": "2026-08-31",
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 90,
+      "moon_set": "2026-08-31T14:00Z",
+      "venus_notable": true,
+      "cloud_cover_night_pct": 44
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}

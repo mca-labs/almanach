@@ -189,7 +189,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-08T05:05:40.826Z"
+    "resolved_at": "2026-08-31T10:45:57.930Z"
   },
   "Mniotilta varia": {
     "taxon_inat_id": 10286,
@@ -441,7 +441,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-10T05:39:57.981Z"
+    "resolved_at": "2026-08-31T10:45:57.148Z"
   },
   "Geothlypis philadelphia": {
     "taxon_inat_id": 145224,
@@ -525,7 +525,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-29T15:50:30.979Z"
+    "resolved_at": "2026-08-31T10:46:01.224Z"
   },
   "Catharus guttatus": {
     "taxon_inat_id": 12890,
@@ -621,7 +621,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-02T06:40:38.303Z"
+    "resolved_at": "2026-08-31T10:46:00.211Z"
   },
   "Falco columbarius": {
     "taxon_inat_id": 4672,
