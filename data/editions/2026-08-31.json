@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-08-31",
+  "generated_at": "2026-09-01T09:21:05.163Z",
+  "title": null,
+  "summary": "Journée fraîche et claire sur le Val, avec un 5,8 °C à l'aube qui rappelle que septembre est à la porte.",
+  "body_md": "La nuit avait laissé tomber la température comme on pose un outil — sans bruit, sans manières. À l'aube, 5,8 °C : de quoi couvrir les épaules et regarder la buée sur l'herbe. La pression tenait bon, le vent soufflait à peine du sud, et la journée a grimpé doucement jusqu'à 21 °C en milieu d'après-midi, lumineuse et sèche. Un août qui finit sur ses deux pieds, légèrement en retrait de la normale, comme s'il prenait déjà ses distances.\n\nC'est le pic maculé qui a le plus occupé la journée, son tambourinage ponctué et sec revenant par séries tout au long de la matinée. Le gros-bec errant tenait lui aussi le haut du comptage — treize détections, des cris forts et brefs qui trahissent un oiseau en mouvement, pas en résidence. Le roitelet à couronne dorée s'est fait entendre l'après-midi, discret et aigu, signe que des oiseaux du nord commencent à descendre. En soirée, un engoulevent d'Amérique a traversé le ciel. C'est sa façon à lui d'annoncer la saison : il part bientôt, et il ne prévient pas.",
+  "sky_narrative": "La Lune, gibbeuse à 83 %, se couchera en milieu d'après-midi local et ne se lèvera pas avant l'aube du 2 septembre — la nuit sera donc sombre une bonne partie du temps, sous une couverture nuageuse partielle d'environ 43 %. Vénus brillera en début de soirée vers le sud-ouest, à faible hauteur sur l'horizon, seule planète notable accessible avant que les nuages ne referment les fenêtres.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "fraicheur",
+    "aube",
+    "fin-aout"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 5.8,
+      "temp_max_c": 21.8,
+      "ecart_normale_c": -1.6,
+      "pluie_jour_mm": 0,
+      "vent": "calme, du S",
+      "pression": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Yellow-bellied Sapsucker",
+      "taxon_scientific": "Sphyrapicus varius",
+      "count": 9,
+      "observed_at": "2026-08-31T10:54:30-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260831-145424.flac"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 83,
+      "moon_set_local": "15:18",
+      "cloud_cover_night_pct": 43,
+      "venus_notable": true
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans le Sauvage que réside la préservation du Monde."
+}
