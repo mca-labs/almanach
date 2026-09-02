@@ -2,14 +2,14 @@
   "Setophaga coronata": {
     "taxon_inat_id": 145245,
     "name_fr": "Paruline à croupion jaune",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/442752262/medium.jpg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/442752262/square.jpg",
-    "attribution": "(c) Dan Vickers, some rights reserved (CC BY), uploaded by Dan Vickers",
-    "attribution_name": "Dan Vickers",
-    "license_code": "cc-by",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/271149831/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/271149831/square.jpeg",
+    "attribution": "(c) Michael Pidwirny, some rights reserved (CC BY-NC), uploaded by Michael Pidwirny",
+    "attribution_name": "Michael Pidwirny",
+    "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:01:01.484Z"
+    "resolved_at": "2026-09-02T08:42:30.474Z"
   },
   "Setophaga tigrina": {
     "taxon_inat_id": 145231,
@@ -33,7 +33,7 @@
     "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-06-16T09:33:03.313Z"
+    "resolved_at": "2026-09-02T08:42:28.678Z"
   },
   "Leiothlypis ruficapilla": {
     "taxon_inat_id": 979753,
@@ -225,7 +225,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-10T05:39:58.503Z"
+    "resolved_at": "2026-09-02T08:42:31.541Z"
   },
   "Dryobates pubescens": {
     "taxon_inat_id": 792988,

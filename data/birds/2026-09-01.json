@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-01",
+  "total_detections": 28,
+  "unique_species": 9,
+  "top_species": [
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 7,
+      "max_confidence": 0.9269072413444519,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-131715.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 6,
+      "max_confidence": 0.8000525832176208,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-122713.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 5,
+      "max_confidence": 0.9128412008285522,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-135511.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 4,
+      "max_confidence": 0.6549908518791199,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-174528.flac"
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 2,
+      "max_confidence": 0.7646666765213013,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-173021.flac"
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 1,
+      "max_confidence": 0.5932226777076721,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-204800.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 1,
+      "max_confidence": 0.7125588059425354,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-174528.flac"
+    },
+    {
+      "taxon_common": "American Goldfinch",
+      "taxon_scientific": "Spinus tristis",
+      "count": 1,
+      "max_confidence": 0.9147404432296753,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-130604.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 1,
+      "max_confidence": 0.6432861089706421,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-112152.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Cedar Waxwing",
+    "taxon_scientific": "Bombycilla cedrorum",
+    "confidence": 0.9269072413444519,
+    "observed_at": "2026-09-01T09:17:18-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260901-131715.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    6,
+    3,
+    4,
+    6,
+    0,
+    0,
+    0,
+    7,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

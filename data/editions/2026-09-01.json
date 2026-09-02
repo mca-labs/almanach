@@ -1,0 +1,39 @@
+{
+  "entry_date": "2026-09-01",
+  "generated_at": "2026-09-02T08:43:00.380Z",
+  "title": null,
+  "summary": "Premier septembre sec et calme, l'air frais du matin annonçant une saison qui tourne — les jaseurs et les bruants se font entendre avant l'heure de midi.",
+  "body_md": "Le thermomètre est tombé à six degrés avant l'aube, plus bas qu'on ne l'attendait. Deux degrés sous la normale pour un début septembre : rien d'alarmant, juste un rappel que la saison a commencé à rouler. Le vent soufflait du sud, presque rien — moins de deux kilomètres à l'heure en moyenne — et la pression tenait bon, stable depuis des heures. Dans ce calme, la lumière montait proprement, sans voile, jusqu'à près de 99 000 lux à midi. Une belle journée sans histoire, sèche, la pluie ayant cessé il y a deux jours.\n\nLes jaseurs d'Amérique ont dominé la journée. Leurs cris sifflants revenaient en rafales — sept détections entre treize et quatorze heures, quand le soleil tenait encore bien. Ces oiseaux se déplacent en bandes, cherchant les fruits mûrs dans les arbres et buissons ; en septembre, ils ne font que traverser, suivant leur propre calendrier. Le bruant à couronne blanche s'est aussi fait entendre à plusieurs reprises, signal clair que la migration automnale est en marche. Un corbeau, une mésange à tête noire, une paruline à croupion jaune en fin d'après-midi : neuf espèces en tout, comptées sobrement, le Val qui écoute ce que le passage apporte.",
+  "sky_narrative": "La lune gibbeuse décroissante, éclairée à près de 74 %, se couchera peu après 12 h 40 heure locale et ne se lèvera pas avant le petit matin — la fenêtre d'obscurité réelle sera donc courte mais présente en début de nuit. Vénus sera visible bas à l'ouest-sud-ouest au coucher du soleil, à moins de cinq degrés au-dessus de l'horizon, avant de disparaître rapidement ; une nuageuse couverture partielle, autour de 45 %, voilera une partie du ciel sans le fermer entièrement.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "calme",
+    "oiseaux-frugivores",
+    "bruants"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6,
+      "temp_max_c": 20.6,
+      "ecart_normale_c": -1.9,
+      "pluie_jour_mm": 0,
+      "vent": "calme, du S",
+      "pression": "haute, stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 7,
+      "confidence": 0.927
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 74,
+      "venus_notable": true,
+      "cloud_cover_night_pct": 45
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-ecureuils",
+  "fragment_translation_fr": null
+}
