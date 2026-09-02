@@ -1069,7 +1069,33 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
 
         var skyvig = document.getElementById('skyvig');
         if (skyvig) {
-          var sW = 680, sH = 246, hz = 176, AZ0 = 250, AZ1 = 325, ALTMAX = 28, spadL = 40, spadR = 40;
+          var sW = 680, sH = 246, hz = 176, ALTMAX = 28, spadL = 40, spadR = 40;
+          // Fenêtre d'azimut DYNAMIQUE, calée sur ce qui est réellement dessiné.
+          // Elle était figée à 250°-325°, et azX() écrêtait tout ce qui dépassait :
+          // une planète à 245° était peinte exactement là où s'en trouverait une à
+          // 250°, soit une position fausse. Comme l'azimut des planètes dérive de
+          // jour en jour, l'écart ne faisait que grandir. On préfère bouger le
+          // cadre plutôt que déplacer les astres.
+          // PORTÉE FIXE QUI GLISSE : la fenêtre fait toujours 90° de large et se
+          // contente de coulisser pour centrer les astres. Elle ne zoome pas.
+          // C'est ce qui rend les soirées comparables : à échelle constante, la
+          // dérive de Vénus d'une semaine à l'autre se voit vraiment, au lieu
+          // d'être absorbée par un cadre qui se resserre autour d'elle.
+          // On n'élargit qu'en dernier recours, quand le contenu déborde.
+          var AZ_SPAN = 90, AZ_MARGIN = 10, AZ0 = 240, AZ1 = 330;
+          (function () {
+            var azs = [];
+            if (SKY_MAP.sunSetAz !== null && SKY_MAP.sunSetAz !== undefined) azs.push(SKY_MAP.sunSetAz);
+            SKY_MAP.planets.forEach(function (p) { azs.push(p.az); });
+            if (!azs.length) return;
+            var lo = Math.min.apply(null, azs), hi = Math.max.apply(null, azs);
+            // Dispersion aberrante (passage par le nord, données douteuses) :
+            // on garde la fenêtre par défaut plutôt que d'étirer l'horizon.
+            if (hi - lo > 180) return;
+            var span = Math.max(AZ_SPAN, hi - lo + 2 * AZ_MARGIN);
+            var c = (lo + hi) / 2;
+            AZ0 = c - span / 2; AZ1 = c + span / 2;
+          })();
           function azX(a) { a = Math.max(AZ0, Math.min(AZ1, a)); return spadL + (a - AZ0) / (AZ1 - AZ0) * (sW - spadL - spadR); }
           function altY(a) { a = Math.max(0, Math.min(ALTMAX, a)); return hz - a / ALTMAX * (hz - 26); }
           var sv = '<defs>' +
@@ -1105,7 +1131,15 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
             if (bright) sv += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + (r + 3.5).toFixed(1) + '" fill="none" stroke="' + col + '" stroke-width="0.8" opacity="0.45"/>';
             sv += '<text x="' + x.toFixed(1) + '" y="' + (y - r - 7).toFixed(1) + '" text-anchor="middle" font-family="Spectral,serif" font-size="12" font-style="italic" fill="#566260">' + p.name + '</text>';
           });
-          sv += '<text x="' + azX(270).toFixed(1) + '" y="' + (hz + 18) + '" text-anchor="middle" font-family="Spectral,serif" font-size="10.5" letter-spacing="1.5" fill="#6E766F">OUEST</text>';
+          // Repères cardinaux : on n'écrit que ceux qui tombent DANS la fenêtre.
+          // « OUEST » était posé en dur à azX(270) ; avec une fenêtre mobile, il
+          // se serait retrouvé écrêté au bord et aurait désigné le mauvais point.
+          // L'écart minimal de 70° garantit qu'il en reste toujours au moins un.
+          [[180, 'SUD'], [225, 'SUD-OUEST'], [270, 'OUEST'], [315, 'NORD-OUEST'], [360, 'NORD']]
+            .forEach(function (c) {
+              if (c[0] < AZ0 || c[0] > AZ1) return;
+              sv += '<text x="' + azX(c[0]).toFixed(1) + '" y="' + (hz + 18) + '" text-anchor="middle" font-family="Spectral,serif" font-size="10.5" letter-spacing="1.5" fill="#6E766F">' + c[1] + '</text>';
+            });
           skyvig.innerHTML = sv;
           // Mobile : agrandir (hauteur cible) + défilement horizontal cadré sur
           // le contenu. Centrer la GÉOMÉTRIE ne marche pas : la vignette étale
