@@ -1092,8 +1092,13 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           while (tx < sW) { var th = seedH[ti % seedH.length], tw = Math.max(4, th * 0.40);
             sv += '<path d="M ' + tx.toFixed(1) + ' ' + (hz - th) + ' L ' + (tx - tw).toFixed(1) + ' ' + hz + ' L ' + (tx + tw).toFixed(1) + ' ' + hz + ' Z" fill="#4B5A4E"/>';
             tx += tw * 1.7 + ((ti * 7) % 9); ti++; }
+          // Abscisses des éléments qui portent l'intérêt de la vignette : elles
+          // servent à cadrer le défilement mobile (cf. sizeSky plus bas).
+          var focusX = [];
+          if (SKY_MAP.sunSetAz !== null && SKY_MAP.sunSetAz !== undefined) focusX.push(azX(SKY_MAP.sunSetAz));
           SKY_MAP.planets.forEach(function (p) {
             var x = azX(p.az), y = altY(p.alt), bright = p.mag < -2;
+            focusX.push(x);
             var r = Math.max(2.2, Math.min(4.6, 2.2 + (-p.mag) * 0.55));
             var col = bright ? '#D8B25A' : '#566260';
             sv += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + r.toFixed(1) + '" fill="' + col + '"/>';
@@ -1102,15 +1107,34 @@ const LUX_PEAK_PCT: number = LUX_PEAK_VALUE !== null ? Math.max(0, Math.min(100,
           });
           sv += '<text x="' + azX(270).toFixed(1) + '" y="' + (hz + 18) + '" text-anchor="middle" font-family="Spectral,serif" font-size="10.5" letter-spacing="1.5" fill="#6E766F">OUEST</text>';
           skyvig.innerHTML = sv;
-          // Mobile : agrandir (hauteur cible) + défilement horizontal centré, comme le graphique 30 j.
+          // Mobile : agrandir (hauteur cible) + défilement horizontal cadré sur
+          // le contenu. Centrer la GÉOMÉTRIE ne marche pas : la vignette étale
+          // les azimuts 250°-325°, et les planètes se tiennent où elles sont.
+          // L'azimut de Vénus dérivant de jour en jour, elle finit par sortir de
+          // la fenêtre visible — la vignette paraît alors vide sur mobile alors
+          // que le SVG est correctement dessiné. On cadre donc sur le milieu des
+          // éléments qui comptent (coucher du soleil + planètes).
           var skyscroll = document.getElementById('skyscroll');
           function sizeSky() {
             var mobile = window.matchMedia('(max-width:560px)').matches;
             if (mobile) {
               var hgt = 220;
-              skyvig.style.width = Math.round(hgt * sW / sH) + 'px';
+              var rendered = Math.round(hgt * sW / sH);
+              skyvig.style.width = rendered + 'px';
               skyvig.style.height = hgt + 'px';
-              if (skyscroll) skyscroll.scrollLeft = Math.max(0, (skyscroll.scrollWidth - skyscroll.clientWidth) / 2);
+              if (skyscroll) {
+                var maxScroll = Math.max(0, skyscroll.scrollWidth - skyscroll.clientWidth);
+                var target;
+                if (focusX.length) {
+                  var lo = Math.min.apply(null, focusX), hi = Math.max.apply(null, focusX);
+                  // Coordonnées SVG → pixels rendus.
+                  var mid = (lo + hi) / 2 * (rendered / sW);
+                  target = mid - skyscroll.clientWidth / 2;
+                } else {
+                  target = maxScroll / 2;
+                }
+                skyscroll.scrollLeft = Math.max(0, Math.min(maxScroll, target));
+              }
             } else {
               skyvig.style.width = '';
               skyvig.style.height = '';
