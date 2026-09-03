@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-09-02",
+  "generated_at": "2026-09-03T08:52:21.564Z",
+  "title": null,
+  "summary": "Journée fraîche et lumineuse au Val, pression en baisse — les bruants et les roitelets ont occupé le sous-bois dès l'aube.",
+  "body_md": "Le mercure a touché cinq degrés cette nuit, puis la matinée s'est ouverte claire et presque sans vent — deux kilomètres-heure à peine, du sud. La lumière de midi a culminé vers 116 000 lux, mais la pression descend doucement depuis quelques heures, 970,9 mb ce soir, et l'air garde quelque chose de tendu, comme une page qu'on n'a pas encore tournée. Une trace de pluie en matinée — moins d'un demi-millimètre — sans qu'on ait vraiment senti l'averse.\n\nLes voix du jour se sont concentrées en deux vagues, à l'aube et en milieu d'avant-midi. Le bruant chanteur dominait net, avec quarante-deux détections — un oiseau de lisière, qui fait de la répétition une forme de patience. Autour de lui, le roitelet à couronne dorée tissait son filet de notes dans le couvert, signe que les nuits fraîches commencent à bouger les choses. Le troglodyte des forêts, le bruant à couronne blanche, le pic chevelu, le jaseur des cèdres — sept espèces en tout, pas plus. Le grosbeak errant a passé en vol, trois fois entendu, et c'est lui qui a fermé la liste.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse décroissante — 63 % éclairée — se sera couchée à 18 h avant la tombée de la nuit, laissant théoriquement le ciel libre ; mais avec 97 % de couverture nuageuse prévue, cette nuit sera presque entièrement bouchée. Vénus sera à peine quatre degrés au-dessus de l'horizon au sud-ouest à la fermeture du crépuscule civil, et ni elle ni Jupiter ne perceront sans doute cette chape.",
+  "theme_tags": [
+    "migration",
+    "passereaux",
+    "automne-precoce",
+    "pression-baisse",
+    "bruant",
+    "roitelet"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 5,
+      "temp_max_c": 21.6,
+      "pluie_mm": 0.4,
+      "vent": "calme, du S",
+      "pression_mb": 970.9,
+      "tendance": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 42,
+      "confidence": 0.884
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 63,
+      "cloud_cover_pct": 97,
+      "venus_notable": true,
+      "jupiter_notable": true
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, n'affronter que les faits essentiels de la vie, et voir si je ne pouvais apprendre ce qu'elle avait à m'enseigner — pour ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}

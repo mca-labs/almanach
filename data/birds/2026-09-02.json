@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-02",
+  "total_detections": 79,
+  "unique_species": 7,
+  "top_species": [
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 42,
+      "max_confidence": 0.8843260407447815,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-125942.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 13,
+      "max_confidence": 0.8912104964256287,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-102141.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 10,
+      "max_confidence": 0.7749058604240417,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-125903.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 5,
+      "max_confidence": 0.7996160387992859,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-120610.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 4,
+      "max_confidence": 0.9113508462905884,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-174321.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 3,
+      "max_confidence": 0.998556911945343,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-114235.flac"
+    },
+    {
+      "taxon_common": "Cedar Waxwing",
+      "taxon_scientific": "Bombycilla cedrorum",
+      "count": 2,
+      "max_confidence": 0.6695626974105835,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-100602.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Song Sparrow",
+    "taxon_scientific": "Melospiza melodia",
+    "confidence": 0.8843260407447815,
+    "observed_at": "2026-09-02T08:59:45-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260902-125942.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15,
+    10,
+    29,
+    6,
+    0,
+    0,
+    14,
+    3,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
