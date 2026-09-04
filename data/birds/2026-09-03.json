@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-03",
+  "total_detections": 46,
+  "unique_species": 7,
+  "top_species": [
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 17,
+      "max_confidence": 0.8064756989479065,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-125728.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 12,
+      "max_confidence": 0.853783369064331,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-135049.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 6,
+      "max_confidence": 0.834566593170166,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-211245.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 4,
+      "max_confidence": 0.8699305653572083,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-165959.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 3,
+      "max_confidence": 0.6268230080604553,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-114650.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 2,
+      "max_confidence": 0.5963941812515259,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-141535.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 2,
+      "max_confidence": 0.7847455143928528,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-135010.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Winter Wren",
+    "taxon_scientific": "Troglodytes hiemalis",
+    "confidence": 0.853783369064331,
+    "observed_at": "2026-09-03T09:50:53-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260903-135049.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    20,
+    12,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    6,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ]
+}

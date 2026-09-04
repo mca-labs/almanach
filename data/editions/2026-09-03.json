@@ -1,0 +1,39 @@
+{
+  "entry_date": "2026-09-03",
+  "generated_at": "2026-09-04T08:52:02.618Z",
+  "title": "Pluie froide, roitelet têtu",
+  "summary": "Une journée grise et pluvieuse s'est posée sur le Val, fraîche comme un avant-goût d'automne.",
+  "body_md": "La pluie est venue tôt et n'a pas cherché à se faire remarquer — 11,5 mm tombés au long d'une journée sans vent, sous un plafond bas qui a gardé la lumière à portée de main sans jamais la laisser monter. Le thermomètre n'a pas dépassé 15,8 °C, un peu en dessous des normales pour ce début septembre. Vers treize heures, une brève percée a porté la luminosité au-dessus de 41 000 lux, puis le ciel a repris sa grisaille tranquille. La pression tenait bon, plate, sans annonce particulière.\n\nC'est dans ce temps mouillé et doux que le roitelet de l'hiver a le plus insisté. Douze détections dans la journée — une constance qui lui ressemble. Troglodytes hiemalis est une petite chose énergique qui fouille les failles d'écorce et les enchevêtrements d'épinettes même quand l'humidité s'accroche partout ; la pluie ne semble ni le décourager ni le faire taire. Le bruant chanteur dominait le comptage avec dix-sept détections, mais c'est la voix cassante du roitelet, émise au plus profond du sous-bois, qui donnait le ton de cette journée serrée et grise. Un junco ardoisé et un bruant à couronne blanche complétaient la liste, deux espèces qui, à cette date, portent déjà en elles un peu de la route vers le sud.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, au dernier quartier, se couchera dès 15 h 14 heure locale et n'éclairera pas la nuit ; mais avec près de 63 % de couverture nuageuse prévue, le ciel profond restera largement voilé. Vénus brillera à peine 4,5° au-dessus de l'horizon sud-ouest au coucher du soleil avant de disparaître à son tour, seule planète notable suffisamment haute pour tenter de percer les nuages en début de soirée.",
+  "theme_tags": [
+    "pluie",
+    "automne",
+    "migration",
+    "roitelet",
+    "bruant",
+    "froid"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 15.8,
+      "temp_min_c": 12.5,
+      "rain_mm": 11.5,
+      "wind": "calme",
+      "pression": "normale"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 12,
+      "confidence": 0.854
+    },
+    "sky": {
+      "moon_phase": "Dernier quartier",
+      "moon_set_local": "15:14",
+      "cloud_cover_pct": 63,
+      "venus_alt_deg": 4.5
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans choses sauvages, et ceux qui ne le peuvent pas."
+}
