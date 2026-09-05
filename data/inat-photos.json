@@ -333,7 +333,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-07-31T06:51:12.116Z"
+    "resolved_at": "2026-09-05T08:16:59.500Z"
   },
   "Setophaga fusca": {
     "taxon_inat_id": 145237,
@@ -381,7 +381,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-01T06:37:16.524Z"
+    "resolved_at": "2026-09-05T08:16:57.338Z"
   },
   "Setophaga pensylvanica": {
     "taxon_inat_id": 145239,
@@ -682,5 +682,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-08-26T04:49:14.812Z"
+  },
+  "Calidris minutilla": {
+    "taxon_inat_id": 3864,
+    "name_fr": "Bécasseau minuscule",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/230314/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/230314/square.jpg",
+    "attribution": "(c) Greg Lasley, some rights reserved (CC BY-NC), uploaded by Greg Lasley",
+    "attribution_name": "Greg Lasley",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-09-05T08:16:58.400Z"
   }
 }

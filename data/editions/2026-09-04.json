@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-09-04",
+  "generated_at": "2026-09-05T08:17:21.119Z",
+  "title": null,
+  "summary": "Journée fraîche et calme au Val, avec une fine pluie le matin et le roitelet à couronné dorée en vedette.",
+  "body_md": "L'air portait encore l'humidité de la nuit quand les premières détections ont commencé peu après l'aube — une fine pluie, à peine huit dixièmes de millimètre, avait mouillé le sol sans vraiment s'installer. Le vent du sud soufflait à peine, moins de deux kilomètres à l'heure en moyenne, et la pression tenait stable depuis des heures. La température a grimpé jusqu'à vingt degrés en début d'après-midi, puis s'est laissée glisser — légèrement sous les normales pour un début septembre, sans que cela soit remarquable. Ces conditions douces et calmes ont suffi à retenir les voix dans le sous-bois.\n\nLe roitelet à couronne dorée dominait la journée — quarante-cinq détections, presque la moitié du total, avec ce zézaiement fin et montant qu'on confondrait avec un insecte si on ne savait pas. Le troglodyte des forêts a répondu depuis les enchevêtrements bas, sa voix disproportionnée avec sa taille. Le grimpereau brun longeait les troncs méthodiquement, à la recherche de ce qui se cache dans les fissures d'écorce. Les gros-becs errants sont passés en groupe serré, leur cri brusque tranchant sur les voix plus fines. Douze espèces en tout pour la journée — un inventaire sobre, et juste.",
+  "sky_narrative": "La nuit s'ouvrira sous des nuages épais — près de 78 % de couverture prévue — qui laisseront peu de place aux étoiles. La lune, à demi éclairée, se couchera à 16 h 16, heure locale, et ne sera déjà plus là quand l'obscurité s'installera vraiment ; Vénus brillera brièvement en soirée à l'ouest, basse sur l'horizon, avant de suivre.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "automne",
+    "pluie",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 20,
+      "temp_min_c": 13.1,
+      "ecart_normale_c": -1.1,
+      "pluie_jour_mm": 0.8,
+      "vent": "calme, du S",
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 45,
+      "observed_at": "2026-09-04T09:43:15-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-134314.flac"
+    },
+    "sky": {
+      "lune": "Dernier croissant, 41 % éclairée",
+      "couverture_nuageuse_nuit_pct": 78,
+      "planetes_notables": [
+        "Vénus"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-belette",
+  "fragment_translation_fr": null
+}

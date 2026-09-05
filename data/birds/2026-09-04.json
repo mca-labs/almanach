@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-04",
+  "total_detections": 101,
+  "unique_species": 12,
+  "top_species": [
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 45,
+      "max_confidence": 0.8810543417930603,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-134314.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 22,
+      "max_confidence": 0.735745370388031,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-163105.flac"
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 12,
+      "max_confidence": 0.9725642800331116,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-113337.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 6,
+      "max_confidence": 0.8871775269508362,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-132755.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 5,
+      "max_confidence": 0.9505563974380493,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-115209.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 4,
+      "max_confidence": 0.954858660697937,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-110918.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 2,
+      "max_confidence": 0.5577285885810852,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-105650.flac"
+    },
+    {
+      "taxon_common": "Least Sandpiper",
+      "taxon_scientific": "Calidris minutilla",
+      "count": 1,
+      "max_confidence": 0.6813254952430725,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260905-002314.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 1,
+      "max_confidence": 0.5396062731742859,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-175249.flac"
+    },
+    {
+      "taxon_common": "Black-and-white Warbler",
+      "taxon_scientific": "Mniotilta varia",
+      "count": 1,
+      "max_confidence": 0.5125539898872375,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-132210.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Golden-crowned Kinglet",
+    "taxon_scientific": "Regulus satrapa",
+    "confidence": 0.8810543417930603,
+    "observed_at": "2026-09-04T09:43:15-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260904-134314.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    3,
+    23,
+    9,
+    42,
+    0,
+    1,
+    20,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ]
+}
