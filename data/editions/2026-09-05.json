@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-09-05",
+  "generated_at": "2026-09-06T08:36:19.991Z",
+  "title": null,
+  "summary": "Journée fraîche et calme sur le Val, avec une pluie légère dans l'air et la forêt qui reprend son souffle d'automne.",
+  "body_md": "Le thermomètre n'a pas dépassé 17 degrés, presque deux degrés sous la normale, et le vent du sud soufflait à peine — une brise de rien du tout qui ne dérangeait pas les feuilles. Quelques dixièmes de millimètre de pluie sont tombés en matinée, discrets, juste assez pour humecter les mousses sans vraiment mouiller le sol. La pression restait plate, sans intention marquée. Une de ces journées grises et retenues qui annoncent, sans la nommer, la bascule de septembre.\n\nC'est le roitelet à couronne dorée qui a dominé la journée : soixante-sept détections, presque toutes concentrées tôt le matin, dans ce créneau de deux heures où la forêt s'éveille avant que la lumière soit franche. Regulus satrapa cherche les insectes au creux des épinettes avec une énergie de colibri — ce petit corps nerveux ne tient pas en place, même par temps frais. Les mésanges à tête noire se sont fait entendre dans l'après-midi, plus posément, et un jaseur des cèdres est passé en soirée, accompagné de deux gros-becs errants dont le sifflement court et tranchant tranche toujours avec le reste.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le croissant de lune, illuminé à près de 30 %, se couchera vers 17 h locale avant que la nuit soit pleinement installée, laissant le ciel sans compétition lumineuse pendant les heures les plus sombres. Avec environ 37 % de couverture nuageuse prévue, Vénus sera la première à surgir au sud-ouest en début de soirée, brillante à magnitude −4,7 et posée à peine 4 degrés au-dessus de l'horizon — il faudra dégager la ligne de crête pour l'attraper.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "oiseaux",
+    "froid",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 8.8,
+      "temp_max_c": 17.2,
+      "ecart_normale_c": -1.9,
+      "pluie_jour_mm": 0.8,
+      "vent": "calme, du S",
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "observed_at": "2026-09-05T14:07:48-04:00"
+    },
+    "sky": {
+      "for_date": "2026-09-06",
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 29,
+      "moon_set_utc": "2026-09-06T21:04:22Z",
+      "venus_magnitude": -4.68,
+      "cloud_cover_pct": 37
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la violette dentée quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est véritablement commencée."
+}
