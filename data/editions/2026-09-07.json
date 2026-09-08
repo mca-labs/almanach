@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-09-07",
+  "generated_at": "2026-09-08T08:48:33.935Z",
+  "title": null,
+  "summary": "Journée franche et sèche sur le Val, entre aube froide et après-midi chaud — le passage d'automne est bien enclenché.",
+  "body_md": "Le thermomètre est descendu à 5,8 °C avant l'aube, et l'herbe en gardait encore la mémoire à sept heures. Puis le soleil a fait son travail : 24 degrés en début d'après-midi, vent presque nul du sud, baromètre qui monte doucement depuis deux jours sans pluie. C'est ce genre de journée — froide la nuit, chaude le jour, air immobile — qui favorise le passage. Huit espèces seulement, mais les chiffres de détection ont bondi à deux reprises, en milieu de matinée puis en milieu d'après-midi, comme si la forêt s'animait par vagues.\n\nLes roitelets à couronne dorée dominaient les comptages — vingt-cinq détections pour Regulus satrapa, l'espèce la plus remuante de ce début de septembre, qui fouille l'épinette avec une énergie presque frénétique avant de reprendre la route vers le sud. Mais c'est le bruant à gorge blanche, Zonotrichia albicollis, qui retenait l'oreille ce matin : son sifflement lent et légèrement mélancolique porte loin dans l'air froid, comme une signature de la saison qui bascule. Un épervier de Buteo platypterus a traversé le ciel en après-midi — une seule détection, une seule passe. Le gros-bec errant, Coccothraustes vespertinus, criaillait en groupe. Le grand corbeau, Corvus corax, a lancé un seul appel grave, et s'est tu.",
+  "sky_narrative": "La nuit s'ouvrira sur un ciel à moitié couvert — environ la moitié du ciel voilée — et un très mince croissant de lune qui se couchera tôt, laissant l'obscurité s'installer. Ce soir, une activité aurorale est attendue, avec un indice Kp pouvant atteindre 5 en fin de nuit : si les nuages se dispersent vers le nord, un regard vers l'horizon septentrional après la fin du crépuscule astronomique pourrait révéler quelques lueurs — mais la couverture nuageuse à 50 % et la montée du Kp concentrée aux petites heures rendent l'affaire incertaine. Vénus brillera brièvement en début de soirée, basse à l'ouest-sud-ouest.",
+  "theme_tags": [
+    "migration",
+    "passereaux",
+    "automne",
+    "aurore",
+    "ciel-clair"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 5.8,
+      "temp_max_c": 24.1,
+      "rain_mm": 0,
+      "jours_sans_pluie": 2,
+      "pression_tendance": "up",
+      "vent": "calme, du S"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 7,
+      "observed_at": "2026-09-07T09:06:58-04:00"
+    },
+    "sky": {
+      "for_date": "2026-09-08",
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 11,
+      "aurora_kp_max": 5,
+      "cloud_cover_night_pct": 50,
+      "venus_notable": true
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
