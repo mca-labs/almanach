@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-09-08",
+  "generated_at": "2026-09-09T08:55:01.302Z",
+  "title": null,
+  "summary": "Journée claire et fraîche au Val, trois jours sans pluie — les gros-becs errants ont débarqué en matinée.",
+  "body_md": "L'air ce matin tenait à peine à quatre degrés et demi. Vent calme, venant du sud, presque inexistant — le genre de silence qui s'installe après quelques jours secs et qui durcit les sons : le moindre cri portait loin dans le sous-bois. La pression restait stable, le ciel ouvert du début à la fin, et le pic de lumière à midi a frôlé les quatre-vingt-trois mille lux — une journée de septembre qui ne s'excuse pas de son froid.\n\nC'est vers six heures du matin que les gros-becs des pins ont signalé leur présence. Leur cri trapu, presque métallique, est l'un des sons les plus caractéristiques de l'automne boréal : quand les Coccothraustes vespertinus bougent, ils bougent en bande, et leur passage au Val ce matin en dit plus sur la saison que n'importe quel thermomètre. Les mésanges à tête noire dominaient le comptage — quatre-vingt-dix détections — et les roitelets à couronne dorée avaient repris leur place en milieu de journée, filant d'une branche à l'autre avec leur insistance habituelle. Douze espèces en tout : peu, mais solide.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera surtout nuageuse — près de quatre-vingts pour cent de couverture — et le mince croissant de lune, éclairé à cinq pour cent seulement, se couchera avant minuit, laissant le fond du ciel à lui-même. Vénus brillera brièvement au sud-ouest en début de soirée, à peine trois degrés au-dessus de l'horizon, avant de disparaître à son tour ; Mercure sera tout juste sous la ligne d'horizon et restera invisible.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "froid",
+    "ciel-clair",
+    "passereaux"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4.8,
+      "temp_max_c": 17.3,
+      "rain_mm": 0,
+      "jours_depuis_derniere_pluie": 3,
+      "vent": "calme, du S",
+      "pression": "stable (979,6 mb)"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 13,
+      "observed_at": "2026-09-08T06:02:15-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260908-100215.flac"
+    },
+    "sky": {
+      "for_date": "2026-09-09",
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 5,
+      "cloud_cover_pct": 79,
+      "planetes_notables": [
+        "Vénus (alt 3,5°)",
+        "Mercure (sous horizon)"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
