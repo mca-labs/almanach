@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-09-09",
+  "generated_at": "2026-09-10T08:54:24.391Z",
+  "title": null,
+  "summary": "Journée froide et calme sous un ciel dégagé — la forêt pèse ses mots avant la pluie qui s'annonce.",
+  "body_md": "Quatre jours sans pluie, et le sol garde encore cette sécheresse légère qui durcit la litière sous les pas. Le mercure a frôlé les 3,5 °C avant l'aube — un froid de mi-octobre arrivé trop tôt, trois degrés sous la normale — puis la journée s'est relevée en douceur, sans vent ou presque, jusqu'à un peu plus de 15 °C en après-midi. La pression baisse depuis ce matin : quelque chose se prépare, mais pour l'heure, le Val restait silencieux et lumineux, comme retenu.\n\nC'est le pic chevelu qui a marqué la journée. Quand il frappe l'écorce morte pour en déloger les larves, le bruit porte loin dans un sous-bois aussi calme — une percussion sèche, méthodique, sans urgence. Autour de lui, les mésanges à tête noire formaient l'essentiel du trafic sonore, fidèles à leur rôle de fond permanent, pendant que les roitelets à couronne dorée — discrets en été, soudain nombreux — signalaient à leur façon que la migration d'automne est bien commencée. Un bruant à couronne blanche, deux chardonnets jaunes, une paruline rayée de passage : la liste du jour portait quatorze espèces, toutes accordées à cette lumière basse de septembre.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, réduite à un mince croissant de moins de 2 % d'illumination, se couchera avant 23 h, heure locale, laissant la nuit presque entièrement noire. Vénus brillera brièvement en début de soirée dans le sud-ouest, à peine 3 degrés au-dessus de l'horizon, avant de disparaître à son tour ; le ciel sera couvert aux deux cinquièmes environ, ce qui laissera des fenêtres pour qui cherche le noir entre les nuages.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "froid",
+    "calme",
+    "pics",
+    "roitelets"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 3.5,
+      "temp_max_c": 15.8,
+      "ecart_normale_c": -3.4,
+      "pression_tendance": "down",
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 4,
+      "vent": "calme"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 7,
+      "confidence": 0.813
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 1.2,
+      "venus_notable": true,
+      "cloud_cover_night_pct": 40
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Nature sauvage que réside la préservation du monde."
+}
