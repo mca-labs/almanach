@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-09-10",
+  "generated_at": "2026-09-11T08:51:16.953Z",
+  "title": "Bruine matinale, roitelets en transit",
+  "summary": "Une pluie légère a traversé la vallée en matinée, laissant le ciel se rasséréner — huit espèces au compteur, les roitelets en tête.",
+  "body_md": "La bruine a posé à peine 2 millimètres sur la vallée avant de céder, et l'après-midi s'est ouvert sur un air lavé, presque froid — dix degrés au creux de la nuit, dix-neuf le midi. Le baromètre remontait doucement du sud, vent calme, et la lumière revenait par plaques entre les nuages. Une journée de transition, comme septembre en tisse souvent, où la saison hésite encore avant de basculer.\n\nLes roitelets à couronne dorée ont dominé la matinée : onze détections, voix fine et pressée, le genre de présence qui signale un mouvement. Ces petits passent rarement l'hiver ici — ils descendent vers le sud au fil des jours froids, et leur abondance soudaine dit quelque chose de la saison qui bascule. Les mésanges à tête noire tenaient le terrain en parallèle, fidèles. Un grimpereau brun a signé brièvement le fond d'un arbre mort, une mésangère de Caroline aussi — et un bruant à couronne blanche, l'oiseau du jour, enregistré en fin de matinée : un migrateur de passage, lui aussi, qui ne s'attarde pas.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nouvelle lune de ce soir — illuminée à moins d'un centième — laissera le ciel d'une noirceur rare, et la couverture nuageuse ne dépassera pas 8 % : les conditions pour le ciel profond seront parmi les meilleures de l'année. Vénus brillera brièvement au sud-ouest en début de soirée, basse sur l'horizon, avant de disparaître ; l'obscurité astronomique s'étendra de 20 h 27 à 4 h 49, heure locale.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "passereau",
+    "pluie",
+    "nouvelle-lune"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 10.6,
+      "temp_max_c": 19.1,
+      "pluie_mm": 2.3,
+      "vent": "calme, du S",
+      "pression_tendance": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 7,
+      "observed_at": "2026-09-10T07:29:02-04:00"
+    },
+    "sky": {
+      "for_date": "2026-09-11",
+      "moon_phase": "Nouvelle lune",
+      "moon_illumination_pct": 0.02,
+      "cloud_cover_night_pct": 8,
+      "planets_notable": [
+        "Vénus",
+        "Mercure",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
