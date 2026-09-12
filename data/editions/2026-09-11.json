@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-09-11",
+  "generated_at": "2026-09-12T08:34:42.028Z",
+  "title": null,
+  "summary": "Journée froide et calme sur la forêt — les bruants et les roitelets occupaient les branches pendant que la pression remontait doucement vers le nord.",
+  "body_md": "Le thermomètre n'a pas dépassé 6,9 °C avant l'aube, et la journée a grimpé à 16,9 sans effort, portée par un vent presque nul venu du nord. La pression montait — lentement, comme quelqu'un qui reprend son souffle — et le ciel a livré assez de lumière pour que le sous-bois soit lumineux à l'heure de midi. La pluie d'avant-hier a laissé l'air propre. Rien ne pressait.\n\nC'est le bruant chanteur qui a tenu le registre du jour, de loin le plus présent avec ses phrases répétées, têtues, ajustées à chaque éclaircie. Les mésanges à tête noire n'étaient jamais loin ; les roitelets à couronne dorée circulaient dans les épinettes, agités et menus, comme si la saison leur avait glissé quelque chose à l'oreille. La buse à queue rousse des vents larges — sept détections, créneau du soir — a signé son passage sans s'attarder. On ne discute pas avec la migration.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le croissant de lune se couchera peu après le soleil ce soir — à peine 1,3 % d'illumination, il ne pèsera rien sur le ciel nocturne. Avec environ 44 % de couverture nuageuse prévue, la nuit sera partagée entre des trouées franches et des voiles passagers ; Vénus sera visible bas sur l'horizon sud-ouest au crépuscule, avant de se coucher à son tour, et le ciel d'automne s'ouvrira ensuite à qui saura attendre.",
+  "theme_tags": [
+    "migration",
+    "bruant",
+    "roitelet",
+    "automne",
+    "calme",
+    "froid",
+    "pression-montante"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6.9,
+      "temp_max_c": 16.9,
+      "ecart_normale_c": -2.8,
+      "pluie_jour_mm": 0,
+      "vent_direction": "du N",
+      "vent_qualificatif": "calme",
+      "pression_tendance": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 90,
+      "confidence": 0.9576441049575806
+    },
+    "sky": {
+      "for_date": "2026-09-12",
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 1.3,
+      "cloud_cover_night_pct": 44.4,
+      "planetes_notables": [
+        "Vénus",
+        "Mercure",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}
