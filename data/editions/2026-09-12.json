@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-09-12",
+  "generated_at": "2026-09-13T09:25:46.263Z",
+  "title": null,
+  "summary": "Journée claire et fraîche sous un vent du sud presque nul — le creux de 4,9 °C au petit matin annonce que l'automne a pris ses habitudes.",
+  "body_md": "La nuit a été froide, moins de cinq degrés avant l'aube, et le soleil a mis du temps à redresser la barre : à neuf heures, on n'avait pas encore atteint douze degrés. Puis la chaleur est revenue d'un coup, comme il arrive en septembre quand le ciel est dégagé et le vent à plat — un souffle du sud, presque rien, 2,4 km/h en moyenne. Le baromètre descend doucement depuis quelques heures. Deux jours sans pluie, et cette légèreté dans l'air qui tient autant à la saison qu'à l'absence de nuages.\n\nLes bruants à gorge blanche dominaient ce matin — cinquante-neuf détections, loin devant tout le monde. Ils chantent encore, mais autrement qu'en juin : plus bref, moins affirmé, comme si la phrase était posée là par habitude plutôt que par urgence. Le roitelet à couronne dorée, lui, s'est fait entendre vingt-six fois dans la journée ; ce petit oiseau de moins de six grammes parcourt des centaines de kilomètres chaque automne, glanant des insectes et des araignées dans le feuillage serré des épinettes pour tenir le rythme. C'est lui, l'oiseau du jour.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, un premier croissant à moins de 5 % d'illumination, se couchera peu après minuit et heure locale — elle ne gênera guère. Mais 82 % de couverture nuageuse est attendue cette nuit : Vénus, brillante à magnitude −4,7, sera tout juste perceptible à l'ouest en début de soirée si une trouée se présente, et le ciel profond restera largement voilé jusqu'à l'aube.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "froid",
+    "passereaux",
+    "roitelet",
+    "bruant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4.9,
+      "temp_max_c": 21.2,
+      "ecart_normale_c": -0.8,
+      "pluie_jour_mm": 0,
+      "vent_label": "calme, du S",
+      "pression_tendance": "en baisse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 26,
+      "confidence": 0.92
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 4.9,
+      "venus_magnitude": -4.74,
+      "cloud_cover_night_pct": 82
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne faire face qu'aux faits essentiels de l'existence, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — pour ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
