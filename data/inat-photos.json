@@ -706,5 +706,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-09-13T09:25:22.594Z"
+  },
+  "Cardellina pusilla": {
+    "taxon_inat_id": 145276,
+    "name_fr": "Paruline à calotte noire",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/45021246/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/45021246/square.jpeg",
+    "attribution": "(c) Warren Cronan, some rights reserved (CC BY-NC), uploaded by Warren Cronan",
+    "attribution_name": "Warren Cronan",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-09-15T09:21:09.014Z"
   }
 }

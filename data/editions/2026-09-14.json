@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-09-14",
+  "generated_at": "2026-09-15T09:21:33.216Z",
+  "title": null,
+  "summary": "Journée froide et grise, à peine mouillée — la pression remonte et la migration progresse en silence.",
+  "body_md": "Un millimètre de pluie, pas davantage, et déjà l'air avait retrouvé cette sécheresse froide qui annonce l'automne vrai. Le mercure n'a jamais dépassé 13,8 °C — deux degrés sous la normale — et le vent est resté si faible, du sud, qu'on n'en aurait pas senti le souffle sur la joue. La pression montait lentement depuis le matin, patient réglage qui remet de l'ordre dans le ciel après le passage de la nuit humide.\n\nC'est à la mi-journée que les détections ont afflué — trente et une en une heure, dont la voix du troglodyte mignon, oiseau du jour. Il est petit comme rien, brun serré, et sa chanson — longue, gazouilleuse, démesurément vive pour un corps pareil — est une des plus surprenantes de la forêt de conifères où il fouille la litière et les anfractuosités d'écorce. Moins attendus, trois gros-becs errants sont passés avec leur vol ondulant et leur cri dur de métal ; les roitelets à couronne dorée, eux, étaient déjà là en nombre, tête brûlante et voix très fine, cherchant les insectes dans les rameaux comme si le froid n'existait pas.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le croissant de lune — à peine 17 % illuminé — se couchera vers 20 h 21, heure locale, laissant ensuite le ciel à lui-même jusqu'à l'aube. Avec une couverture nuageuse de l'ordre de 44 %, les trouées seront possibles ; Vénus brillera bas à l'ouest-sud-ouest peu après le coucher du soleil, et l'aurore, dont l'indice Kp maximal est prévu à 3,67 — sous le seuil de visibilité à cette latitude — ne devrait pas dessiner de voile vert dans les éclaircies.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "automne",
+    "froid",
+    "passereaux"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4.2,
+      "temp_max_c": 13.8,
+      "ecart_normale_c": -2.1,
+      "pluie_jour_mm": 1.1,
+      "pression_tendance": "up",
+      "vent": "calme, du S"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 4,
+      "confidence": 0.718
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 17,
+      "cloud_cover_night_pct": 44,
+      "venus_notable": true,
+      "aurora_kp_max": 3.67
+    }
+  },
+  "fragment_quote_id": "john-muir-my-6",
+  "fragment_translation_fr": "Quand nous essayons d'isoler quoi que ce soit, nous le trouvons relié à tout le reste dans l'univers."
+}
