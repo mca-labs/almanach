@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-09-15",
+  "generated_at": "2026-09-16T09:14:36.735Z",
+  "title": null,
+  "summary": "Une journée froide et calme sous un ciel changeant — le geai bleu a mené la forêt à grand bruit.",
+  "body_md": "Le thermomètre est tombé à un degré avant l'aube, frolant le gel, et la matinée n'a regagné les deux chiffres qu'au prix de longues heures. Le vent est resté quasi absent toute la journée, à peine un souffle du sud, et la pression baissait lentement — signe que le beau temps est compté. Une pluie fine, moins d'un millimètre, a effleuré le Val quelque part dans la journée sans vraiment s'imposer. Trois degrés sous les normales : c'est septembre qui rappelle qu'il prépare octobre.\n\nCe sont les geais bleus qui ont dominé la matinée, bruyants et péremptoires comme à leur habitude en cette saison, accumulant glands et graines dans des caches qu'ils retrouveront — ou non — d'ici quelques mois. Les bruants chanteurs ont tenu bon eux aussi, nombreux dans le sous-bois, et les bruants à gorge blanche annonçaient peut-être le début d'un mouvement venu du nord. Plus discret, le grimpereau brun s'est affairé en spirales le long des troncs, sondant les écorces de son bec recourbé. Un roitelet à couronne dorée, une sittelle, un pic chevelu, un junco ardoisé, un grand corbeau de passage — la liste est courte, mais chaque présence compte.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le croissant de lune, illuminé au quart, se couchera peu avant trois heures du matin, laissant la nuit s'approfondir vers l'aube. La couverture nuageuse sera faible — environ 20 % —, et Vénus brillera bas dans le sud-ouest en début de soirée avant de disparaître sous l'horizon ; Jupiter, lui, sera sous l'horizon toute la nuit. L'activité géomagnétique frôlera le seuil des aurores visibles sans l'atteindre franchement, avec un indice Kp prévu autour de 4,67 en fin de nuit — insuffisant pour garantir un spectacle, mais à surveiller si le ciel reste dégagé au nord.",
+  "theme_tags": [
+    "migration",
+    "froid",
+    "oiseaux",
+    "automne",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 1,
+      "temp_max_c": 14.1,
+      "ecart_normale_c": -3.3,
+      "pluie_jour_mm": 0.6,
+      "vent": "calme, du S",
+      "pression_tendance": "en baisse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 68,
+      "observed_at": "2026-09-15T08:17:15-04:00"
+    },
+    "sky": {
+      "for_date": "2026-09-16",
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 25,
+      "moon_set": "2026-09-17T00:53:09.817Z",
+      "cloud_cover_night_pct": 19.8,
+      "aurora_kp_max": 4.67
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
