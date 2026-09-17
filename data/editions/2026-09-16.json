@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-09-16",
+  "generated_at": "2026-09-17T09:22:54.693Z",
+  "title": null,
+  "summary": "Journée claire et fraîche sur le Val, avec un vent du sud à peine perceptible — les bruants s'activent dans l'avant-midi comme si la saison pressait.",
+  "body_md": "La pression montait doucement depuis le matin, et le ciel a tenu sa promesse de clarté. La nuit avait laissé 7,8 degrés au sol — une temperature franche, pas encore mordante — et l'après-midi a grimpé jusqu'à 20,5 degrés sous un soleil qui culminait au-dessus des arbres vers dix heures. Le vent du sud soufflait à peine, qualifié de calme par tous les instruments, et les branches n'ont presque pas bougé de la journée. La pluie de la veille avait rafraîchi les litières sans les tremper, et l'air gardait cette légèreté particulière des journées de haute pression en septembre.\n\nL'activité a été dense dans la première moitié de la matinée — les détections se sont concentrées entre six et dix heures, puis ont reflué. C'est le bruant à gorge blanche qui a dominé la journée de la voix : un chant sifflé, un peu plaintif, qu'on associe volontiers aux fins d'automne même s'il appartient autant au passage qu'à la nostalgie. Le roitelet à couronne dorée n'était pas loin, fin et insistant dans les épinettes, tandis que le troglodyte des forêts lançait son roulement bref depuis le sous-bois. Plus discrets, le bruant chanteur menait le bal en nombre, et trois gros-becs errants ont traversé l'après-midi de leur cri tranchant — une présence qu'on ne prédit jamais, qu'on accueille quand elle vient.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — la couverture restera autour de dix pour cent — et le croissant de lune, éclairé à 34 %, se couchera vers 21 h 32 heure locale, laissant ensuite le ciel à la noirceur franche jusqu'à l'aube. Vénus sera visible brièvement en soirée à l'ouest-sud-ouest juste après le coucher du soleil, mais son altitude de moins de deux degrés la placera au ras de l'horizon ; Mercure sera dans la même situation, pratiquement inaccessible à l'œil. L'activité géomagnétique prévue atteindra un Kp de 3,67 en début de nuit, sous le seuil habituel de visibilité des aurores boréales à cette latitude — rien à attendre de ce côté-là.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "automne",
+    "pression-haute",
+    "bruant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 7.8,
+      "temp_max_c": 20.5,
+      "ecart_normale_c": 2,
+      "pluie_jour_mm": 0,
+      "pression_tendance": "up",
+      "vent_dir": "S",
+      "vent_qualifier": "calme"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "confidence": 0.8367187976837158,
+      "observed_at": "2026-09-16T08:09:15-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260916-120912.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 34,
+      "cloud_cover_night_pct": 10.6,
+      "planets_notable": [
+        "Vénus",
+        "Mercure"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces parmi les plus robustes ou les plus familières, comme le bruant chanteur et le merlebleu, arrivent généralement en mars, tandis que les oiseaux des bois, plus rares et plus brillants, ferment la procession en juin."
+}
