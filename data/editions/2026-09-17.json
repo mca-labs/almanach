@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-09-17",
+  "generated_at": "2026-09-18T08:57:28.317Z",
+  "title": "Le gros-bec du matin frais",
+  "summary": "Journée froide et calme, cinq degrés sous la normale — les bruants affluent, et les gros-becs annoncent l'automne.",
+  "body_md": "La nuit a laissé quatre degrés au thermomètre, et la matinée s'est réchauffée lentement, comme à regret. Le vent du nord-ouest n'était qu'une haleine, presque rien — assez pourtant pour rappeler que la saison bascule. Dix-sept degrés en milieu d'après-midi, puis la descente. Deux jours sans pluie, une pression qui glisse doucement vers le bas : le Val retient son souffle avant le prochain changement.\n\nLes bruants à gorge blanche dominent le comptage — quatre-vingt-neuf détections, un chiffre qui dit l'ampleur du passage. Mais c'est le gros-bec errant qui s'est imposé ce matin-là, sa voix criarde et franche tranchant sur le fond discret des mésanges à tête noire. Il arrive en bandes, graine après graine, et sa présence ici signe davantage qu'un simple arrêt : l'été, sans cérémonie, est parti.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le croissant de lune, éclairé à près de la moitié, se couchera peu après deux heures du matin, laissant quelques heures d'obscurité vraie avant l'aube. Avec seulement un tiers du ciel couvert, Vénus brillera brièvement en début de soirée vers le sud-ouest, basse sur l'horizon, avant de disparaître dans la lumière du crépuscule ; Mercure sera là aussi, à peu de chose près, mais tout aussi fugace.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "froid",
+    "bruants",
+    "gros-bec",
+    "passage"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4,
+      "temp_max_c": 17,
+      "ecart_normale_c": -5.2,
+      "pression_tendance": "down",
+      "vent": "calme, NO",
+      "pluie_mm": 0
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 53,
+      "confidence": 0.9981811046600342
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 44,
+      "moon_set": "2026-09-19T02:22:29.765Z",
+      "cloud_cover_pct": 34,
+      "planets_notable": [
+        "Vénus",
+        "Mercure",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Nature sauvage que réside la préservation du Monde."
+}

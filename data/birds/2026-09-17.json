@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-17",
+  "total_detections": 333,
+  "unique_species": 16,
+  "top_species": [
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 89,
+      "max_confidence": 0.9537537693977356,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-141037.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 53,
+      "max_confidence": 0.9981811046600342,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-140006.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 35,
+      "max_confidence": 0.9740313291549683,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-123235.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 31,
+      "max_confidence": 0.9898024201393127,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-154839.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 24,
+      "max_confidence": 0.8689259886741638,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-152711.flac"
+    },
+    {
+      "taxon_common": "Swamp Sparrow",
+      "taxon_scientific": "Melospiza georgiana",
+      "count": 21,
+      "max_confidence": 0.935431182384491,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-143409.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 17,
+      "max_confidence": 0.8280394673347473,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-121550.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 14,
+      "max_confidence": 0.863936722278595,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-133517.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 14,
+      "max_confidence": 0.8683505654335022,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-132455.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 10,
+      "max_confidence": 0.78263920545578,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-125056.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 9
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 9
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 4
+    },
+    {
+      "taxon_common": "Green-winged Teal",
+      "taxon_scientific": "Anas crecca",
+      "count": 1
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 1
+    },
+    {
+      "taxon_common": "Greater Yellowlegs",
+      "taxon_scientific": "Tringa melanoleuca",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Evening Grosbeak",
+    "taxon_scientific": "Coccothraustes vespertinus",
+    "confidence": 0.9981811046600342,
+    "observed_at": "2026-09-17T10:00:12-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260917-140006.flac"
+  },
+  "hourly_detections": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    33,
+    98,
+    50,
+    77,
+    52,
+    6,
+    0,
+    0,
+    1,
+    7,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
