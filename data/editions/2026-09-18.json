@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-09-18",
+  "generated_at": "2026-09-19T08:44:37.323Z",
+  "title": null,
+  "summary": "Journée froide et calme, cinq degrés sous les normales — le val s'est mis à l'heure de l'automne.",
+  "body_md": "L'air n'a pas dépassé quinze degrés, et au lever du jour il en faisait sept. Le vent est resté presque nul toute la journée, du sud, à peine perceptible ; la pression remontait doucement, la lumière était nette, sans voile. Trois jours sans pluie ont suffi pour que la litière reprenne de la consistance sous les pieds. Ce genre de journée — froide, claire, immobile — est exactement ce que cherchent les migrateurs : elle leur convient mieux qu'à nous, et le val le sait depuis longtemps.\n\nLes détections ont été concentrées en matinée, entre cinq et onze heures, puis le silence est revenu. Le pic maculé a dominé la journée, frappant méthodiquement l'écorce à la recherche de larves et de sève. Autour de lui, les roitelets à couronne dorée s'agitaient dans les branches basses — espèce minuscule, présence insistante, venue du nord et qui ne fait que transiter. Le bruant à gorge blanche, lui, chantait encore par intermittence, ce sifflement en tierce descendante qu'on associe aux fins de saison. Dix espèces en tout, pas davantage : une liste courte, mais chaque nom sur cette liste avait sa raison d'être ici ce matin-là.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune de premier quartier, éclairée à moitié, se couchera peu après trois heures du matin ; elle laissera quelques heures de noirceur franche avant l'aube, sous une couverture nuageuse partielle d'environ 27 %. Vénus sera visible brièvement en soirée, basse sur l'horizon sud-ouest. Dans trois jours tombe l'équinoxe d'automne : la nuit qui s'ouvre est l'une des dernières où le jour l'emporte encore, à peine.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "froid",
+    "silence",
+    "oiseaux",
+    "pic"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6.9,
+      "temp_max_c": 14.9,
+      "ecart_normale_c": -5.4,
+      "pression_tendance": "up",
+      "vent": "calme, du S",
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 3
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Yellow-bellied Sapsucker",
+      "taxon_scientific": "Sphyrapicus varius",
+      "count": 26,
+      "confidence": 0.9647
+    },
+    "sky": {
+      "moon_phase": "Premier quartier",
+      "moon_illumination_pct": 53,
+      "moon_set": "2026-09-20T03:21:19.592Z",
+      "cloud_cover_night_pct": 27,
+      "equinox_days_ahead": 3
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
