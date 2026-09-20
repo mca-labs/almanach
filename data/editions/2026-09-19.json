@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-09-19",
+  "generated_at": "2026-09-20T09:13:56.615Z",
+  "title": null,
+  "summary": "Journée froide et sèche sous un ciel dégagé — les geais et les bruants dominent un boisé en train de basculer vers l'automne.",
+  "body_md": "Le thermomètre a frôlé le zéro avant l'aube, 1,1 °C au plus bas, et l'air est resté tranquille toute la journée — vent du sud à peine perceptible, rafale maximale de 17,6 km/h passée en matinée. Quatre jours sans pluie, ciel ouvert, radiation solaire soutenue jusqu'à midi : les conditions idéales pour que les migrateurs s'attardent ou que les résidents se montrent. Trois degrés et demi sous la normale saisonnière — le froid prend ses aises, et la forêt commence à lui appartenir.\n\nLe geai bleu a tenu le haut du pavé avec 78 détections, ce vacarme familier qui couvre tout le reste quand les chênes sont généreux. Mais c'est le bruant chanteur qui a retenu l'attention ce matin, sa voix relevée dès 7 h 58 dans la lumière encore basse. Lui qui niche en lisière, qui cherche ses graines au sol parmi les feuilles froissées, n'a pas l'air pressé de partir. Le roitelet à couronne dorée est passé, cinq détections discrètes en fin d'après-midi, petit feu qui traverse le sous-bois sans s'arrêter. Quatorze espèces en tout — une journée ordinaire, et c'est suffisant.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit s'ouvrira sous 82 % de couverture nuageuse — le ciel sera presque entièrement bouché. La lune gibbeuse croissante, illuminée à 62 %, se lèvera en soirée mais restera largement masquée ; Vénus et Mercure, tous deux à moins de deux degrés d'altitude à l'horizon sud-ouest au coucher du soleil, se coucheront avant que l'obscurité soit vraiment installée. Dans deux jours, l'équinoxe d'automne arrivera — les nuits égaleront enfin les jours avant de les dépasser.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "froid",
+    "passereaux",
+    "geai-bleu",
+    "bruant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 1.1,
+      "temp_max_c": 14.4,
+      "ecart_normale_c": -3.4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 4,
+      "vent": "calme, du S",
+      "rafale_max_kmh": 17.64,
+      "pression_mb": 976.3,
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "observed_at": "2026-09-19T07:58:45-04:00",
+      "count": 63,
+      "confidence": 0.9556476473808289,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260919-115842.flac"
+    },
+    "sky": {
+      "for_date": "2026-09-20",
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 62,
+      "cloud_cover_night_pct": 82,
+      "equinox_in_days": 2
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il en est qui peuvent vivre sans les choses sauvages, et d'autres qui ne le peuvent pas."
+}
