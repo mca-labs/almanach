@@ -177,7 +177,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-27T15:07:29.652Z"
+    "resolved_at": "2026-09-21T09:50:41.850Z"
   },
   "Junco hyemalis": {
     "taxon_inat_id": 10094,
@@ -297,7 +297,7 @@
     "license_code": "pd",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-30T09:53:28.019Z"
+    "resolved_at": "2026-09-21T09:50:38.720Z"
   },
   "Colaptes auratus": {
     "taxon_inat_id": 18236,
@@ -561,7 +561,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-30T09:53:29.795Z"
+    "resolved_at": "2026-09-21T09:50:40.781Z"
   },
   "Empidonax flaviventris": {
     "taxon_inat_id": 16603,
