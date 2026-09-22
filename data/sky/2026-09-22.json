@@ -1,0 +1,161 @@
+{
+  "for_date": "2026-09-22",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-09-22T10:29:28.540Z",
+        "sunset": "2026-09-22T22:39:55.575Z",
+        "sun_set_azimuth": 270.9,
+        "sky_map_ref": "2026-09-22T23:10:37.439Z",
+        "twilight": {
+          "civil_start": "2026-09-22T09:58:41.635Z",
+          "nautical_start": "2026-09-22T09:22:35.633Z",
+          "astronomical_start": "2026-09-22T08:45:22.239Z",
+          "astronomical_end": "2026-09-23T00:23:38.910Z",
+          "nautical_end": "2026-09-22T23:46:35.859Z",
+          "civil_end": "2026-09-22T23:10:37.439Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse croissante",
+      "detail": {
+        "phase_deg": 126.25572266915859,
+        "illumination_fraction": 0.7963502844276367,
+        "magnitude": -11.201558537650293,
+        "rise": "2026-09-22T21:06:55.701Z",
+        "set": "2026-09-22T05:36:51.074Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -0.21344040928844976,
+        "phase_angle": 45.1133578873887,
+        "helio_dist": 0.4629269904411222,
+        "geo_dist": 1.2754130844188696,
+        "az": 258,
+        "alt": 0.3
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.775207638892693,
+        "phase_angle": 122.87331032440245,
+        "helio_dist": 0.7276452930011651,
+        "geo_dist": 0.40139415112834564,
+        "az": 240,
+        "alt": 0.7
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.1741505886423513,
+        "phase_angle": 35.21288810391188,
+        "helio_dist": 1.5472325577819461,
+        "geo_dist": 1.724222389711571,
+        "az": 340.1,
+        "alt": -18.1
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.8439197731871344,
+        "phase_angle": 7.164693412083399,
+        "helio_dist": 5.304172815649768,
+        "geo_dist": 6.017743695239542,
+        "az": 318,
+        "alt": -15.9
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.23819320319863202,
+        "phase_angle": 1.4060864107456315,
+        "helio_dist": 9.437347692786833,
+        "geo_dist": 8.45776593393178,
+        "az": 85.9,
+        "alt": 0
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "season",
+      "title": "Équinoxe d’automne",
+      "detail": {
+        "instant_utc": "2026-09-23T00:05:38.617Z",
+        "local_date": "2026-09-22",
+        "days_ahead": 0
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Kp prévu 2.33",
+      "detail": {
+        "kp_max": 2.33,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-09-23T00:00:00",
+            "kp": 1.67
+          },
+          {
+            "time": "2026-09-23T03:00:00",
+            "kp": 2
+          },
+          {
+            "time": "2026-09-23T06:00:00",
+            "kp": 2
+          },
+          {
+            "time": "2026-09-23T09:00:00",
+            "kp": 2
+          },
+          {
+            "time": "2026-09-23T12:00:00",
+            "kp": 2.33
+          }
+        ]
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 16.444444444444443
+}
