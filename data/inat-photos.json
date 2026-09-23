@@ -33,7 +33,7 @@
     "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-09-02T08:42:28.678Z"
+    "resolved_at": "2026-09-23T09:14:38.980Z"
   },
   "Leiothlypis ruficapilla": {
     "taxon_inat_id": 979753,
@@ -153,7 +153,7 @@
     "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-09-01T09:20:38.188Z"
+    "resolved_at": "2026-09-23T09:14:36.058Z"
   },
   "Poecile atricapillus": {
     "taxon_inat_id": 144815,
@@ -302,14 +302,14 @@
   "Colaptes auratus": {
     "taxon_inat_id": 18236,
     "name_fr": "pic flamboyant",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250021600/medium.jpg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250021600/square.jpg",
-    "attribution": "(c) maticus, some rights reserved (CC BY-NC), uploaded by maticus",
-    "attribution_name": "maticus",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/453141810/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/453141810/square.jpg",
+    "attribution": "(c) Jared Manninen, some rights reserved (CC BY-NC), uploaded by Jared Manninen",
+    "attribution_name": "Jared Manninen",
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-07-15T06:23:44.904Z"
+    "resolved_at": "2026-09-23T09:14:37.941Z"
   },
   "Leiothlypis peregrina": {
     "taxon_inat_id": 979756,

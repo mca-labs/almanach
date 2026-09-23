@@ -1,0 +1,149 @@
+{
+  "for_date": "2026-09-23",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-09-23T10:30:49.010Z",
+        "sunset": "2026-09-23T22:37:53.043Z",
+        "sun_set_azimuth": 270.3,
+        "sky_map_ref": "2026-09-23T23:08:33.778Z",
+        "twilight": {
+          "civil_start": "2026-09-23T10:00:03.358Z",
+          "nautical_start": "2026-09-23T09:24:01.314Z",
+          "astronomical_start": "2026-09-23T08:46:55.419Z",
+          "astronomical_end": "2026-09-24T00:21:24.236Z",
+          "nautical_end": "2026-09-23T23:44:28.411Z",
+          "civil_end": "2026-09-23T23:08:33.778Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse croissante",
+      "detail": {
+        "phase_deg": 137.58065870337145,
+        "illumination_fraction": 0.8696457084537037,
+        "magnitude": -11.53694752498102,
+        "rise": "2026-09-23T21:26:11.352Z",
+        "set": "2026-09-23T06:48:18.589Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -0.19279678901819775,
+        "phase_angle": 46.40863769009443,
+        "helio_dist": 0.4642377592891431,
+        "geo_dist": 1.265626581544769,
+        "az": 256.9,
+        "alt": 0.3
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.775097491988092,
+        "phase_angle": 124.05441058588642,
+        "helio_dist": 0.7275795673396042,
+        "geo_dist": 0.39488455661369815,
+        "az": 240,
+        "alt": 0.5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.1692497573237555,
+        "phase_angle": 35.30570625800797,
+        "helio_dist": 1.5484952790968545,
+        "geo_dist": 1.7177573115869822,
+        "az": 339.9,
+        "alt": -18.1
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.8469695795688263,
+        "phase_angle": 7.274578257951943,
+        "helio_dist": 5.304499313984456,
+        "geo_dist": 6.007407719080243,
+        "az": 318.2,
+        "alt": -16
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.23383711859971967,
+        "phase_angle": 1.2989859621845086,
+        "helio_dist": 9.437042252699172,
+        "geo_dist": 8.454151055080416,
+        "az": 86.3,
+        "alt": 0.3
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Aurores possibles (Kp 5.33)",
+      "detail": {
+        "kp_max": 5.33,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-09-24T00:00:00",
+            "kp": 4.33
+          },
+          {
+            "time": "2026-09-24T03:00:00",
+            "kp": 5.33
+          },
+          {
+            "time": "2026-09-24T06:00:00",
+            "kp": 4.67
+          },
+          {
+            "time": "2026-09-24T09:00:00",
+            "kp": 3.33
+          },
+          {
+            "time": "2026-09-24T12:00:00",
+            "kp": 2.33
+          }
+        ]
+      },
+      "notable": true,
+      "propice_a": "guetter les aurores au nord après le crépuscule astronomique",
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 10.333333333333334
+}

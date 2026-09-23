@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-09-22",
+  "generated_at": "2026-09-23T09:15:03.850Z",
+  "title": "Équinoxe d'automne — gel en fond de vallée, pic mineur en vedette",
+  "summary": "Nuit de gel et journée vive sous un ciel d'équinoxe — le Val entre de plain-pied dans l'automne.",
+  "body_md": "Ce matin, le thermomètre avait plongé sous zéro. La terre a gardé ce froid plusieurs heures, puis l'air s'est réchauffé lentement jusqu'à 15 °C en milieu d'après-midi — un écart de seize degrés entre le fond de nuit et le pic du jour. Le vent était presque absent, du nord, à peine perceptible. Le baromètre remonte. C'est la journée de l'équinoxe : à partir d'aujourd'hui, la nuit l'emporte sur le jour, et ce premier gel du calendrier n'a rien d'un hasard.\n\nLe pic mineur a dominé la journée — plus de deux cents détections, avec une présence marquée dès l'aube et une reprise en fin d'après-midi. C'est l'espèce la plus active du Val à cette saison : petit, méthodique, il parcourt les troncs et les branches mortes à la recherche de larves et d'insectes engourdis par le froid, martelant l'écorce avec une précision que sa taille ne laisse pas deviner. Le geai bleu était là lui aussi, bruyant et nerveux, ainsi que la mésange à tête noire. Six gros-becs errants ont traversé — leur cri traînant, métallique, signe que la saison pousse déjà les oiseaux vers le sud.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — couverture inférieure à 11 % — et la Lune, gibbeuse à 87 %, se couchera peu avant l'aube, laissant un court créneau d'obscurité vraie. Mais le fait marquant de cette nuit sera géomagnétique : une activité aurorale est attendue, avec un indice Kp pouvant atteindre 5,3 vers 3 h du matin, heure locale. Sous un ciel aussi dégagé, il vaudra la peine de guetter le nord après minuit — les conditions réunissent un ciel clair, un horizon peu lumineux et une activité suffisante pour que le voile vert soit perceptible à l'œil nu depuis le Val.",
+  "theme_tags": [
+    "equinoxe",
+    "gel",
+    "migration",
+    "pics",
+    "aurore",
+    "automne"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -1,
+      "temp_max_c": 15,
+      "ecart_normale_c": -6.5,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 7,
+      "vent": "calme, du N",
+      "pression_tendance": "en hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Pic mineur",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 211,
+      "confidence": 0.99
+    },
+    "sky": {
+      "lune": "Gibbeuse croissante, 87 % illuminée",
+      "couverture_nuageuse_pct": 10,
+      "aurore": "Kp max 5,3 attendu vers 3 h UTC+0 (23 h local)",
+      "planetes_notables": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
