@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-09-23",
+  "generated_at": "2026-09-24T09:14:04.088Z",
+  "title": "L'équinoxe et ses geais",
+  "summary": "Journée claire et froide, à peine trois degrés au lever du jour — les geais bleus ont tenu le Val toute la matinée.",
+  "body_md": "Le thermomètre a frôlé zéro avant l'aube, et l'air s'est levé sec, immobile, sans une rafale pour briser le froid. La pression est restée plate toute la journée, le ciel dégagé. Depuis huit jours, pas une goutte — la litière absorbe la lumière sans réfléchir, et les pas s'entendent moins. C'est ce genre de matin qui appelle les voix fortes, celles qui portent loin dans l'air stable.\n\nLes geais bleus ont répondu à cet appel avec une constance peu ordinaire : cent cinquante-six détections en une matinée, pic à sept heures, avant même que la chaleur ne commence à monter. Cyanocitta cristata est un oiseau de transition, qui sait lire les signes de la saison mieux que la plupart — il stocke, surveille, crie. Le pic flamboyant n'était pas loin, soixante détections, et l'épervier brun a traversé le Val en silence, comme il fait chaque automne à cette date, indifférent au vacarme en dessous.",
+  "sky_narrative": "La nuit qui s'ouvre sera limpide — couverture nuageuse nulle — mais la lune gibbeuse, illuminée à plus de 90 %, se lèvera en soirée et dominera le ciel jusqu'à l'aube, effaçant les étoiles faibles. Mercure et Vénus seront à peine perceptibles à l'horizon ouest au crépuscule, trop bas pour s'attarder ; Jupiter, sous l'horizon, ne sera pas de la partie cette nuit.",
+  "sky_date": "2026-09-24",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "geai-bleu",
+    "froid",
+    "secheresse",
+    "équinoxe"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 0.3,
+      "temp_max_c": 17.2,
+      "ecart_normale_c": -3.8,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 8,
+      "vent": "calme plat",
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 156,
+      "observed_at": "2026-09-23T07:13:57-04:00"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 93,
+      "cloud_cover_night_pct": 0,
+      "planets_notable": [
+        "Mercure",
+        "Vénus"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
