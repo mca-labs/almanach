@@ -141,7 +141,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-05-25T00:38:35.072Z"
+    "resolved_at": "2026-09-25T09:32:27.706Z"
   },
   "Cyanocitta cristata": {
     "taxon_inat_id": 8229,
@@ -718,5 +718,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-09-15T09:21:09.014Z"
+  },
+  "Anthus rubescens": {
+    "taxon_inat_id": 13732,
+    "name_fr": "Pipit farlousane",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/610531/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/610531/square.jpg",
+    "attribution": "(c) Greg Lasley, some rights reserved (CC BY-NC), uploaded by Greg Lasley",
+    "attribution_name": "Greg Lasley",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-09-25T09:32:29.769Z"
   }
 }

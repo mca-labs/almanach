@@ -1,0 +1,39 @@
+{
+  "entry_date": "2026-09-24",
+  "generated_at": "2026-09-25T09:32:54.183Z",
+  "title": "Le pic qui part en éclaireur",
+  "summary": "Journée sèche et calme, ponctuée d'une fraîcheur matinale à 2,7 °C — les geais et les pics ont tenu le val du lever au coucher.",
+  "body_md": "Neuf jours sans pluie, et le sol a fini par prendre ce grain dur, léger, qui crisse un peu sous le pied. L'aube était froide — 2,7 °C à la station — mais le vent du sud est resté muet toute la journée, guère plus qu'un frisson, et la lumière a réglé le thermostat sans aide : 22 °C à la mi-après-midi, sous un ciel net. La pression glissait doucement vers le bas, comme une respiration retenue. Rien n'annonçait rien, sauf que le baromètre avait cette manière de descendre qui met les oiseaux en mouvement avant qu'on comprenne pourquoi.\n\nLe pic flamboyant a dominé la journée par le nombre et par le bruit. Colaptes auratus n'est pas un pic discret : son cri traînant, mi-ricanement mi-appel, a traversé la matinée de part en part. En septembre, ces oiseaux quittent les cavités qu'ils forent dans les arbres morts pour descendre dans les champs et les lisières, où ils fouillent la terre à la recherche de fourmis — un changement de régime d'automne, presque une deuxième nature. Les geais bleus, eux, cavalcadaient en bandes de branche en branche, pressés, comme s'ils inventoriaient les provisions avant que la saison ne bascule. Les bruants à gorge blanche et les juncos fermaient le cortège, sans hâte.",
+  "sky_narrative": "La nuit s'ouvrira sur un ciel sans nuage — couverture nuageuse nulle — mais la lune gibbeuse croissante, illuminée à 97 %, se lèvera vers 18 h avant l'obscurité complète et inonderera le val de sa clarté blanche ; la fenêtre d'obscurité vraie, entre le crépuscule astronomique et le lever de la lune, sera quasi inexistante. Mercure et Vénus seront à peine au-dessus de l'horizon sud-ouest au coucher du soleil, trop bas pour tenir longtemps.",
+  "theme_tags": [
+    "migration",
+    "secheresse",
+    "automne",
+    "pics",
+    "bruants",
+    "geai"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 2.7,
+      "temp_max_c": 22,
+      "pluie_mm": 0,
+      "jours_sans_pluie": 9,
+      "vent": "calme, du S",
+      "pression_tendance": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 65,
+      "observed_at": "2026-09-24T10:35:58-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 97,
+      "cloud_cover_night_pct": 0
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces parmi les plus robustes ou les plus familières, comme le bruant chanteur et le merlebleu, arrivent généralement en mars, tandis que les espèces plus rares et plus brillantes des bois ferment la procession en juin."
+}

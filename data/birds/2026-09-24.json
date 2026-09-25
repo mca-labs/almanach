@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-24",
+  "total_detections": 318,
+  "unique_species": 15,
+  "top_species": [
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 85,
+      "max_confidence": 0.9847961664199829,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-112707.flac"
+    },
+    {
+      "taxon_common": "Northern Flicker",
+      "taxon_scientific": "Colaptes auratus",
+      "count": 65,
+      "max_confidence": 0.9883965849876404,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-143558.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 54,
+      "max_confidence": 0.9888448119163513,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-140720.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 36,
+      "max_confidence": 0.9364529848098755,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-115805.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 27,
+      "max_confidence": 0.9459819793701172,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-221257.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 11,
+      "max_confidence": 0.7867319583892822,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-114922.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 9,
+      "max_confidence": 0.8772076964378357,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-123123.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 7,
+      "max_confidence": 0.7482682466506958,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-113514.flac"
+    },
+    {
+      "taxon_common": "American Pipit",
+      "taxon_scientific": "Anthus rubescens",
+      "count": 7,
+      "max_confidence": 0.9210489392280579,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-113136.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 5,
+      "max_confidence": 0.8562151789665222,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-151311.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Hermit Thrush",
+      "taxon_scientific": "Catharus guttatus",
+      "count": 4
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 4
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 2
+    },
+    {
+      "taxon_common": "American Crow",
+      "taxon_scientific": "Corvus brachyrhynchos",
+      "count": 1
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Northern Flicker",
+    "taxon_scientific": "Colaptes auratus",
+    "confidence": 0.9883965849876404,
+    "observed_at": "2026-09-24T10:35:58-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260924-143558.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    9,
+    74,
+    24,
+    54,
+    59,
+    26,
+    19,
+    19,
+    4,
+    12,
+    9,
+    1,
+    4,
+    4,
+    0,
+    0,
+    0,
+    0
+  ]
+}
