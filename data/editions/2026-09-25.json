@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-09-25",
+  "generated_at": "2026-09-26T09:17:47.139Z",
+  "title": "Les juncos sont revenus",
+  "summary": "Journée claire et sèche, amplitude thermique marquée — les juncos annoncent l'automne au Val des Loups.",
+  "body_md": "Dix degrés au lever du soleil, vingt et un à l'heure de pointe : c'est l'amplitude propre aux jours d'équinoxe, quand la nuit rappelle ce qu'elle sera bientôt et que l'après-midi s'attarde encore dans l'été. Le vent soufflait à peine du sud, la pression ne bougeait pas, et la lumière de midi avait cette qualité coupante, presque sèche, qu'on ne trouve qu'en septembre. Dix espèces en tout — un compteur modeste, mais serré.\n\nLe junco ardoisé dominait la journée. Il n'est pas un migrateur de passage comme les autres : quand les juncos arrivent en nombre, c'est qu'ils viennent passer l'hiver. Dix-huit détections dès la matinée, la voix métallique et brève qui ponctue les pauses entre les rafales de geai bleu. Les bruants à gorge blanche et les bruants hudsoniens complétaient ce trio de bonne saison froide, pendant que le pic mineur travaillait en silence quelque part dans le sous-bois. Dix jours sans pluie — le sol doit sonner creux sous les feuilles.",
+  "sky_narrative": "La lune sera pleine à quelques degrés près — illumination de 99,6 % — et se lèvera peu avant la fin du crépuscule civil ; elle inonderait le Val si le ciel était dégagé, mais près de 62 % de couverture nuageuse atténuera sa clarté. Saturne sera à peine au-dessus de l'horizon à l'est en début de nuit, tandis que Mercure et Vénus se coucheront presque aussitôt la noirceur installée.",
+  "theme_tags": [
+    "migration",
+    "automne",
+    "bruants",
+    "secheresse",
+    "amplitude-thermique"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4.8,
+      "temp_max_c": 21.9,
+      "ecart_normale_c": 2.1,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 10,
+      "vent": "calme, du S",
+      "pression": "978,9 mb, stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 18,
+      "observed_at": "2026-09-25T07:46:25-04:00"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse croissante (99,6 %)",
+      "cloud_cover_night_pct": 62,
+      "planets_notable": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-2",
+  "fragment_translation_fr": "La plupart des hommes mènent des vies de désespoir tranquille."
+}
