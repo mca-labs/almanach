@@ -1,0 +1,50 @@
+{
+  "entry_date": "2026-09-27",
+  "generated_at": "2026-09-28T10:48:12.043Z",
+  "title": null,
+  "summary": "Journée sèche et lumineuse au Val, fraîche à l'aube, douce en après-midi — les geais bleus mènent le bal de la migration automnale.",
+  "body_md": "La nuit a déposé près de quatre degrés sur les herbes, et le matin s'est ouvert sur ce froid propre, sec, qui ne fait pas mal mais qui rappelle où l'on en est. Depuis douze jours, pas une goutte — l'air reste sans poids, la pression quasi immobile, le vent à peine sensible du sud. Vers midi, le soleil avait porté le thermomètre à presque dix-neuf degrés : une journée de transition, tenue entre deux saisons, qui s'est dépliée sans éclat ni défaillance.\n\nLe geai bleu a dominé la journée d'un bout à l'autre — cent vingt-neuf détections, un chiffre qui dit quelque chose sur l'ampleur du mouvement en cours. Cette espèce migre souvent en petits groupes bruyants, sautant d'un couvert à l'autre, et sa voix rauque et insistante a ponctué chaque heure de lumière. Autour de lui : des bruants à couronne blanche, des roitelets à couronne dorée dont la note aigrelette filait dans les branches, un grimpereau brun collé à son écorce. Et puis, vers dix-sept heures, un bruant chanteur qui a lancé quelques phrases en fin de journée — oiseau de l'été qui tarde un peu, ou déjà de passage lui aussi.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse, illuminée à 97 %, se lèvera peu après la tombée de la nuit et baignera le Val d'une clarté presque pleine ; elle se couchera en début d'après-midi le lendemain, laissant à peine quelques heures d'obscurité réelle en fin de nuit. Avec près de la moitié du ciel voilé, Mercure et Saturne, très bas sur l'horizon, resteront difficiles à saisir — seule une éclaircie franche dans la seconde moitié de la nuit pourrait laisser apercevoir quelques étoiles entre les nuages.",
+  "theme_tags": [
+    "migration",
+    "geai-bleu",
+    "bruants",
+    "automne",
+    "secheresse",
+    "froid-matinal"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 3.9,
+      "temp_max_c": 18.8,
+      "ecart_normale_c": 0.4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 12,
+      "pression_mb": 977.1,
+      "pression_tendance": "stable",
+      "vent_direction": "S",
+      "vent_qualificatif": "calme",
+      "vent_rafale_max_kmh": 17.64
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "observed_at": "2026-09-27T17:24:57-04:00",
+      "confidence": 0.894,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260927-212457.flac"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 97,
+      "moon_set_local": "09:02",
+      "cloud_cover_night_pct": 47,
+      "planets_notable": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans choses sauvages, et ceux qui ne le peuvent pas."
+}
