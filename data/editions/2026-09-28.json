@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-09-28",
+  "generated_at": "2026-09-29T10:36:05.183Z",
+  "title": null,
+  "summary": "Journée froide et grise sous la pluie, le baromètre qui s'affaisse doucement — le Val prenait son automne au sérieux.",
+  "body_md": "La pluie est tombée par intermittences tout au long de la journée, assez pour tremper la litière sans inonder les sentiers — près de 7 mm au total. Le thermomètre n'a pas dépassé 12 degrés, deux degrés sous la normale, et le vent était si calme qu'on l'aurait cru absent. La lumière a peiné à s'installer : un pic modeste vers neuf heures, puis rien que le gris uniforme du couvert. Le baromètre descendait, lentement, sans brusquerie, comme quelqu'un qui a pris sa décision.\n\nC'est pourtant une journée animée côté oiseaux. Les geais bleus dominaient — bruyants, décidés, leurs allées et venues entre les arbres ressemblaient moins à de la migration qu'à un inventaire. Mais c'est le bruant à gorge blanche qui a signé la journée : sa voix sifflée, longue et un peu triste, portait dans l'air humide mieux que tout le reste. Les bruants de Lincoln et à couronne blanche s'y ajoutaient en petits nombres, discrets ; un roitelet à couronne dorée a traversé sans s'attarder, et tout au fond, presque inaudible, un troglodyte des forêts a lancé ses deux notes avant de disparaître dans les broussailles.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit sera en grande partie voilée — près de trois quarts du ciel couverts — et la Lune gibbeuse, illuminée à plus de 92 %, ne se lèvera qu'après minuit : la première partie de la nuit sera donc la plus sombre, mais les nuages en limiteront largement le bénéfice. Mercure et Vénus seront en théorie proches de l'horizon au crépuscule, mais trop bas pour être saisis avant de plonger sous la ligne des arbres.",
+  "theme_tags": [
+    "migration",
+    "pluie",
+    "automne",
+    "bruant",
+    "geai",
+    "froid"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4.4,
+      "temp_max_c": 12.3,
+      "ecart_normale_c": -2.1,
+      "pluie_jour_mm": 6.9,
+      "pression_mb": 973.1,
+      "tendance": "down",
+      "vent": "calme plat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 87,
+      "observed_at": "2026-09-28T08:37:26-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20260928-123725.flac"
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 92,
+      "moon_rise_utc": "2026-09-29T23:23:18.742Z",
+      "cloud_cover_night_pct": 74,
+      "planets_notable": [
+        "Mercure",
+        "Vénus",
+        "Jupiter"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne faire face qu'aux faits essentiels de la vie, et voir si je ne pouvais apprendre ce qu'elle avait à m'enseigner — pour ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}
