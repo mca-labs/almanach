@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-09-29",
+  "generated_at": "2026-09-30T10:25:22.888Z",
+  "title": "Le geai et le troglodyte",
+  "summary": "Journée froide et calme sous un ciel dégagé, les geais en parade et le troglodyte discret au sous-bois.",
+  "body_md": "La nuit avait laissé 5,7 degrés au thermomètre, et la matinée a mis du temps à se réchauffer. Le vent du sud soufflait à peine — rafale maximale de onze kilomètres à dix-sept heures, presque rien — et la pression tenait bon à 972 mbar sans bouger. Le soleil avait de l'éclat, mais la chaleur restait comptée : 14,3 degrés au mieux, en après-midi, presque un degré sous la normale. Une journée de fin septembre comme on les reconnaît ici : sèche, nette, un peu sévère.\n\nLes geais dominaient — 267 détections sur 417, une présence qui débordait toutes les autres. Leurs cris tranchants traversaient le bois en rafales, signal de quelque chose qui se prépare : les geais ont ce sens du calendrier. Parmi les bruants à gorge blanche, les bruants hudsoniens déjà là, les troglodytes des forêts glissant entre les souches, un bruant des plaines s'est mêlé à la matinée, un grand pic maculé aussi. Le pic-bois maculé fore méthodiquement l'écorce à la recherche de larves et de sève. Et puis, pointu et pressé, le martin-pêcheur d'Amérique a lancé son cri en passant — une fois, une seule, et il avait disparu.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse décroissante, éclairée à 85 %, se couchera vers 11 h 47 du soir, heure locale, laissant quelques heures d'obscurité avant l'aube — juste assez pour que la moitié du ciel dégagé (couverture nuageuse prévue à 49 %) offre une fenêtre sur les étoiles. Saturne sera visible en début de soirée, basse sur l'horizon est ; Mercure effleurera l'horizon ouest sitôt la nuit tombée, trop ras pour durer.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "geai",
+    "troglodyte",
+    "automne",
+    "froid"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 5.7,
+      "temp_max_c": 14.3,
+      "ecart_normale_c": -0.8,
+      "pluie_jour_mm": 0,
+      "vent": "calme, rafale max 11,5 km/h du S",
+      "pression_mb": 972.2,
+      "tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 8,
+      "observed_at": "2026-09-29T10:31:12-04:00"
+    },
+    "sky": {
+      "for_date": "2026-09-30",
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 85,
+      "moon_set_local": "23:47",
+      "cloud_cover_night_pct": 49,
+      "planetes_notables": [
+        "Saturne (est, basse)",
+        "Mercure (ouest, horizon)"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand chercher l'hirondelle, la dent-de-chien quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est bien commencée."
+}
