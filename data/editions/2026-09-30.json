@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-09-30",
+  "generated_at": "2026-10-01T10:52:48.090Z",
+  "title": "Les bruants de passage",
+  "summary": "Matinée froide et claire sur le Val, avec quatre degrés à l'aube et un cortège de bruants qui annonce le basculement vers octobre.",
+  "body_md": "La nuit a laissé quatre degrés sur le thermomètre et une lumière que l'on n'attendait plus aussi directe à cette date. Le vent était quasi inexistant — moins d'un kilomètre-heure en moyenne — et le baromètre descendait doucement, sans précipiter les choses. Deux jours sans pluie. L'air avait cette clarté un peu tendue de l'arrière-automne, qui rend le moindre appel sonore plus net qu'en été.\n\nC'est le junco ardoisé qui a dominé le décompte, avec ses petits tic répétés depuis le sous-bois. Mais ce sont les bruants à couronne blanche qui ont retenu l'attention : leur calotte noire et blanche, nette comme un dessin gravé, les distingue sans équivoque. Ils viennent du nord, ils repartent vers le sud ; le Val n'est qu'une halte. Les bruants à gorge blanche étaient là eux aussi, et les bruants à couronne dorée, et le bruant des prés, et le bruant familier — cinq espèces de bruants en une journée, ce qui dit quelque chose sur l'heure qu'il est dans la saison. Le grand pic a aussi signalé sa présence, deux fois. En tout, dix-huit espèces entendues.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse décroissante se couchera tôt en soirée, laissant la majeure partie de la nuit sans son éclat — une bonne nouvelle pour les étoiles, si la couverture nuageuse partielle, autour de 45 %, se montre favorable. Saturne sera bas à l'est en début de nuit. Mercure et Vénus, trop proches de l'horizon occidental au moment du crépuscule, ne seront guère accessibles.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "automne",
+    "froid",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 4,
+      "temp_max_c": 15.4,
+      "rain_mm": 0,
+      "wind_qualifier": "calme plat",
+      "pression_tendance": "down",
+      "ecart_normale_c": 0.5
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 10,
+      "confidence": 0.957
+    },
+    "sky": {
+      "moon_phase": "Lune gibbeuse décroissante",
+      "illumination_pct": 76,
+      "cloud_cover_night_pct": 45,
+      "planets_notable": [
+        "Saturne",
+        "Mercure",
+        "Vénus"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-3",
+  "fragment_translation_fr": "Simplicité, simplicité, simplicité ! Je dis : que vos affaires se réduisent à deux ou trois, et non à cent ou mille."
+}
