@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-01",
+  "total_detections": 220,
+  "unique_species": 10,
+  "top_species": [
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 55,
+      "max_confidence": 0.9941113591194153,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-131634.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 48,
+      "max_confidence": 0.9870245456695557,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-111449.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 43,
+      "max_confidence": 0.9904548525810242,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-141046.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 28,
+      "max_confidence": 0.8252586126327515,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-145440.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 16,
+      "max_confidence": 0.8657150864601135,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-133621.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 13,
+      "max_confidence": 0.8632784485816956,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-132611.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 9,
+      "max_confidence": 0.7404809594154358,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-121010.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 4,
+      "max_confidence": 0.640609860420227,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-175409.flac"
+    },
+    {
+      "taxon_common": "Chipping Sparrow",
+      "taxon_scientific": "Spizella passerina",
+      "count": 2,
+      "max_confidence": 0.6094236373901367,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-192227.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 2,
+      "max_confidence": 0.6314607858657837,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-140011.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Downy Woodpecker",
+    "taxon_scientific": "Dryobates pubescens",
+    "confidence": 0.9941113591194153,
+    "observed_at": "2026-10-01T09:16:34-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261001-131634.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    14,
+    13,
+    45,
+    75,
+    38,
+    9,
+    2,
+    6,
+    4,
+    3,
+    3,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

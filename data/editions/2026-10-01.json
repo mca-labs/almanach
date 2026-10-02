@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-10-01",
+  "generated_at": "2026-10-02T10:26:36.354Z",
+  "title": null,
+  "summary": "Premier octobre sec et doux, dix degrés au-dessus de la normale — les bruants défilent dans un calme d'été qui sent pourtant l'automne.",
+  "body_md": "Trois jours sans pluie et une chaleur qui dépasse de dix degrés la normale ont donné à cette journée une texture d'arrière-saison insolite : lumière franche, vent du sud-ouest à peine perceptible, pression stable. Le sous-bois avait l'air d'hésiter — la chaleur de l'après-midi trop douce pour être d'octobre, les voix du matin trop nombreuses pour être celles d'un jour ordinaire. Quatre-vingt-sept cents observations enregistrées, dix espèces, cent quarante-cinq détections concentrées entre huit et dix heures : la migration voyageait.\n\nLes bruants dominaient le tableau. Le bruant hudsonien arrivait en tête, constant tout au long de la matinée, suivi de près par le bruant à gorge blanche et le bruant à couronne blanche. Le geai bleu criait par intermittence depuis les cimes. Mais c'est le pic mineur qui ressortait en oiseau du jour — présent dès la première heure, persistant : il tapotait, sondait, déplaçait de l'écorce avec cette économie de gestes qui lui est propre, indifférent au va-et-vient des migrateurs. La marqueterie des feuilles mortes retenait tout ce monde un moment, puis le laissait repartir.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse décroissante se couchera en fin d'après-midi — elle sera déjà absente au moment où le ciel s'assombrira vraiment — laissant la nuit aux étoiles pendant les heures où la couverture nuageuse, prévue autour de la moitié du ciel, voudra bien s'écarter. Saturne sera l'astre le plus accessible, à peine au-dessus de l'horizon est en début de nuit ; Mercure et Vénus seront déjà sous l'horizon à la tombée du jour.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "chaleur-anormale",
+    "pic-mineur",
+    "automne",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 21.4,
+      "temp_min_c": 13.4,
+      "ecart_normale_c": 10.3,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 3,
+      "vent": "calme, SO, rafale max 26,6 km/h",
+      "pression": "stable (960,7 mb)"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 55,
+      "confidence": 0.994
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante (66 %)",
+      "moon_set": "18:11 UTC",
+      "cloud_cover_night_pct": 47,
+      "planetes_notables": [
+        "Saturne (alt 3°, az 90°)",
+        "Mercure (alt 0,7°, coucher)",
+        "Vénus (sous l'horizon)"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
