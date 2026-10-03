@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-10-02",
+  "generated_at": "2026-10-03T09:48:28.880Z",
+  "title": "Le passage des bruants",
+  "summary": "Journée claire et fraîche sous un vent calme du sud — les bruants sont partout, la migration bat son plein.",
+  "body_md": "Quatre jours sans pluie, une pression qui remonte, des rafales à peine perceptibles : tout était réuni ce matin pour que le Val se transforme en halte migratoire. Dès l'aube, les détections s'accumulaient — cent cinq en une seule heure vers neuf heures, puis cinquante, puis soixante-quatorze — comme si la nuit avait déposé là une foule que le jour faisait parler. La lumière est montée lentement, posée, jusqu'à un pic à quatorze heures avant de décroître sans brusquerie.\n\nLe bruant à gorge blanche dominait tout. Cent trente-quatre détections pour lui seul : une voix grêle et sifflée que l'oreille apprend vite à reconnaître, répétée d'un couvert à l'autre, indifférente aux geais bleus qui menaient leur propre tapage. Car les geais étaient là aussi, en nombre — cent dix passages — avec ce cri qui fend l'air sec comme un reproche. Et dans les interstices : les roitelets à couronne dorée, minuscules et insistants ; les bruants hudsoniens tout juste descendus du nord. Quatorze espèces au total, pour une journée qui ne s'annonçait pas extraordinaire, et qui l'était quand même.",
+  "sky_narrative": "La nuit prochaine s'annonce presque sans nuages — moins de dix pour cent de couverture — et la lune gibbeuse décroissante, illuminée à moitié, se couchera vers dix-neuf heures locales, laissant plusieurs heures d'obscurité franche. Saturne sera visible bas à l'est en début de soirée ; Mercure rasera l'horizon vers l'ouest-sud-ouest, trop bas pour s'imposer. Une activité aurorale modérée est attendue cette nuit, avec un indice Kp prévu autour de 4,7 vers trois heures du matin — en deçà du seuil habituel pour les latitudes méridionales, mais une nuit aussi dégagée vaut la peine d'un coup d'œil vers le nord.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "geai",
+    "automne",
+    "vent-calme",
+    "passage"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 7.2,
+      "temp_max_c": 16.5,
+      "ecart_normale_c": 5.6,
+      "pluie_mm": 0,
+      "vent": "calme, du S",
+      "pression_tendance": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 110,
+      "observed_at": "2026-10-02T07:28:03-04:00"
+    },
+    "sky": {
+      "phase": "Lune gibbeuse décroissante",
+      "illumination_pct": 55,
+      "coucher_lune_utc": "2026-10-03T19:02:58Z",
+      "cloud_cover_pct": 8,
+      "planetes_notables": [
+        "Saturne (est, basse)",
+        "Mercure (WSW, horizon)"
+      ],
+      "aurora_kp_max": 4.67
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux espèces parmi les plus robustes ou les plus familières, comme le bruant chanteur et le merlebleu, arrivent généralement en mars, tandis que les oiseaux des bois, plus rares et plus colorés, ferment la marche en juin."
+}
