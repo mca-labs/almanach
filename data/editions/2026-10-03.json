@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-10-03",
+  "generated_at": "2026-10-04T10:31:43.975Z",
+  "title": null,
+  "summary": "Journée froide et claire sous un vent du NE presque absent — les bruants de passage ont pris possession du Val.",
+  "body_md": "Le thermomètre a touché le zéro cette nuit, puis le ciel s'est ouvert sur un après-midi qui a fini par atteindre 13 degrés. La pression remonte, le vent du nord-est n'a presque pas soufflé — un calme de fond propice aux mouvements de migrateurs. Cinq jours sans pluie ont laissé le sol sonner creux sous la litière, et la lumière d'octobre, oblique dès le début de l'après-midi, a dessiné des ombres longues sur le couvert.\n\nLa journée appartenait aux bruants. Le bruant hudsonien, venu du nord, dominait tous les comptages — 85 détections, loin devant les autres. Autour de lui se pressaient le bruant à gorge blanche, le bruant à couronne blanche, le bruant des prés : quatre espèces du même genre en un seul jour, chacune en transit vers ses quartiers d'hiver. Le geai bleu criaillait fort à mi-journée, le grand corbeau passait en ronflant au-dessus du Val en fin d'après-midi. Et au milieu de tout ce monde mobile, la mésange à tête noire tenait bon — présente à toute heure, fidèle au territoire comme si la migration des autres ne la regardait pas.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, à demi-éclairée, se couchera à 15 h 41 heure locale, laissant la seconde moitié de la nuit sans clarté lunaire. Avec une couverture nuageuse d'environ 42 %, des trouées sont probables : Saturne sera visible à faible hauteur à l'est en début de soirée, tandis que Mercure rasera l'horizon ouest peu après le coucher du soleil — une fenêtre brève et serrée.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "froid",
+    "calme",
+    "automne"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 0.5,
+      "temp_max_c": 13.2,
+      "ecart_normale_c": -2.9,
+      "pluie_jour_mm": 0,
+      "vent": "calme, NE, rafale max 20 km/h",
+      "pression": "982.9 mb, hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 45,
+      "confidence": 0.929
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 43,
+      "moon_set_local": "15:41",
+      "cloud_cover_night_pct": 42,
+      "planets_notable": [
+        "Mercure",
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-ecureuils",
+  "fragment_translation_fr": null
+}
