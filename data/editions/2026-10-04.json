@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-10-04",
+  "generated_at": "2026-10-05T11:22:24.443Z",
+  "title": null,
+  "summary": "Journée froide et calme sous un ciel d'octobre — les bruants de l'arrière-saison ont pris la relève.",
+  "body_md": "Le thermomètre est descendu sous zéro cette nuit, et le matin a mis du temps à se réchauffer : moins d'un degré à l'aube, à peine treize à l'heure la plus chaude. C'est trois degrés et demi sous la normale, le genre de journée qui rappelle que l'automne n'attend pas. Le vent soufflait du sud, presque nul, et la pression baissait lentement — rien qui ne presse encore, mais un signal. Six jours sans pluie digne de ce nom, une trace à peine ce matin.\n\nLes oiseaux, eux, avaient compris avant le reste. Dès la première heure de lumière, le sous-bois bruissait de bruants : le bruant chanteur dominait, le bruant à gorge blanche suivait de près, et parmi eux s'était glissé le bruant hudsonien — première détection de la saison. Spizelloides arborea vient du nord, il pousse devant lui l'hiver comme une vague. Il ne fait que passer, peut-être, mais sa présence change quelque chose dans l'air du Val. Le geai bleu criaillait, la mésange à tête noire répondait, et le pic mineur cognait quelque part dans les branches. Quatorze espèces en tout — une journée ordinaire qui ne l'était pas tout à fait.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, en dernier croissant illuminé à près du tiers, se couchera en début de soirée — vers 16 h 09, heure locale — laissant la nuit livrée à elle-même. Mais près de six dixièmes du ciel seront couverts de nuages, et Saturne, seule planète encore à quelques degrés au-dessus de l'horizon à la tombée du jour, disparaîtra tôt elle aussi dans les couches basses ; la nuit sera surtout grise, et les étoiles n'y seront qu'intermittentes.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "froid",
+    "automne",
+    "oiseaux"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -0.5,
+      "temp_max_c": 12.8,
+      "ecart_normale_c": -3.7,
+      "pression_tendance": "down",
+      "pluie_jour_mm": 0.2,
+      "jours_depuis_derniere_pluie": 6,
+      "vent": "calme, du S"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 14,
+      "confidence": 0.8455727100372314,
+      "observed_at": "2026-10-04T06:55:08-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261004-105504.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination": 0.32,
+      "moon_set_local": "16:09",
+      "cloud_cover_night_pct": 59,
+      "planetes_notables": [
+        "Saturne (faiblement en début de nuit)"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
