@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-05",
+  "total_detections": 297,
+  "unique_species": 13,
+  "top_species": [
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 134,
+      "max_confidence": 0.9890215992927551,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-151753.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 56,
+      "max_confidence": 0.8966729044914246,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-165559.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 43,
+      "max_confidence": 0.8353513479232788,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-140722.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 37,
+      "max_confidence": 0.8759300112724304,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-132713.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 16,
+      "max_confidence": 0.9161573648452759,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-161432.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 3,
+      "max_confidence": 0.6364332437515259,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-114801.flac"
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 2,
+      "max_confidence": 0.5775287747383118,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-164009.flac"
+    },
+    {
+      "taxon_common": "Savannah Sparrow",
+      "taxon_scientific": "Passerculus sandwichensis",
+      "count": 1,
+      "max_confidence": 0.5143988132476807,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-212107.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 1,
+      "max_confidence": 0.7325137257575989,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-163141.flac"
+    },
+    {
+      "taxon_common": "Yellow-rumped Warbler",
+      "taxon_scientific": "Setophaga coronata",
+      "count": 1,
+      "max_confidence": 0.7218032479286194,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-155349.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 1
+    },
+    {
+      "taxon_common": "Ruby-crowned Kinglet",
+      "taxon_scientific": "Corthylio calendula",
+      "count": 1
+    },
+    {
+      "taxon_common": "Winter Wren",
+      "taxon_scientific": "Troglodytes hiemalis",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Golden-crowned Kinglet",
+    "taxon_scientific": "Regulus satrapa",
+    "confidence": 0.8353513479232788,
+    "observed_at": "2026-10-05T10:07:22-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261005-140722.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    11,
+    4,
+    74,
+    69,
+    21,
+    38,
+    16,
+    1,
+    8,
+    21,
+    24,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
