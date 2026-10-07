@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-10-06",
+  "generated_at": "2026-10-07T10:59:53.080Z",
+  "title": "Le junco et l'air piqûre",
+  "summary": "Journée froide et calme sous un ciel dégagé — les bruants d'hiver ont pris possession du Val.",
+  "body_md": "Le froid a posé sa marque dès l'aube : un degré et quelques dixièmes au plus bas, huit à peine au plus haut, et un écart de huit degrés sous les normales qui rappelle que l'automne a décidé d'avancer sans ménagement. Le vent soufflait du sud-est, presque rien — quelques rafales vers onze heures, puis le calme. La pression montait doucement, le ciel restait ouvert, et la lumière du matin a piqué sur la végétation comme elle le fait en octobre, sans chaleur, sans indulgence.\n\nC'est dans ces conditions que les juncos ont donné le ton. Cent quarante-neuf détections pour la journée, plus que tout autre — les bruants à capuchon ardoise arrivent du nord à cette époque pour passer l'hiver plus au sud, et le Val est une halte sur leur route. Les bruants à gorge blanche et les mésanges à tête noire leur tenaient compagnie en nombre, et les roitelets à couronne dorée filaient dans le sous-bois, discrets mais constants. Le grand pic, lui, s'est signalé quelques fois dans la matinée, cherchant sous l'écorce ce que le froid oblige les insectes à cacher. Dix-huit espèces au total. Une bonne journée froide d'octobre.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, fine faucille à treize pour cent d'illumination, se couchera avant vingt et une heures ce soir, laissant la nuit sans elle pendant les heures les plus sombres — ce qui serait une invitation au ciel profond si les nuages n'en décidaient autrement : une couverture de près de soixante-dix pour cent est attendue, et Saturne, seule planète encore au-dessus de l'horizon en début de soirée, sera difficile à saisir entre les trouées.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "froid",
+    "octobre",
+    "passereau"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 1.1,
+      "temp_max_c": 7.9,
+      "ecart_normale_c": -8,
+      "pluie_jour_mm": 0,
+      "vent": "calme, du SE",
+      "pression_tendance": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 149,
+      "confidence": 0.976
+    },
+    "sky": {
+      "lune": "Dernier croissant (14 %)",
+      "couverture_nuageuse_pct": 69,
+      "planetes_visibles": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du Monde."
+}
