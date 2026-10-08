@@ -74,14 +74,14 @@
   "Troglodytes hiemalis": {
     "taxon_inat_id": 144883,
     "name_fr": "troglodyte des forêts",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169226102/medium.jpeg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169226102/square.jpeg",
-    "attribution": "no rights reserved, uploaded by Andy Wilson",
-    "attribution_name": "Andy Wilson",
-    "license_code": "cc0",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/447993965/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/447993965/square.jpeg",
+    "attribution": "(c) Tom Murray, some rights reserved (CC BY-NC), uploaded by Tom Murray",
+    "attribution_name": "Tom Murray",
+    "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-09-10T08:54:01.337Z"
+    "resolved_at": "2026-10-08T11:16:37.824Z"
   },
   "Coccothraustes vespertinus": {
     "taxon_inat_id": 1650411,
@@ -429,7 +429,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-25T04:48:05.930Z"
+    "resolved_at": "2026-10-08T11:16:38.965Z"
   },
   "Bombycilla cedrorum": {
     "taxon_inat_id": 7428,
@@ -621,7 +621,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-08-31T10:46:00.211Z"
+    "resolved_at": "2026-10-08T11:16:36.804Z"
   },
   "Falco columbarius": {
     "taxon_inat_id": 4672,

@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-10-07",
+  "generated_at": "2026-10-08T11:17:03.241Z",
+  "title": "Le passage des bruants",
+  "summary": "Journée froide et calme sous un ciel voilé, la pression en baisse — les bruants à gorge blanche tiennent la forêt.",
+  "body_md": "L'air n'a pas dépassé 9 °C de la matinée au soir, soit quatre degrés sous la normale, et le vent est resté si calme qu'on aurait pu entendre une feuille tomber entre deux rafales. Le baromètre glissait lentement vers le bas depuis le milieu du jour — rien de brutal, mais assez pour que la forêt semble peser sur elle-même, comme avant une décision. Depuis deux jours, pas une goutte de pluie ; la litière est sèche sous le couvert.\n\nOn a recensé dix-huit espèces en tout, mais la journée appartenait surtout aux bruants à gorge blanche. Plus de deux cents détections pour eux seuls : ils cherchaient dans les broussailles, grattaient le sol feuille après feuille, leur sifflement doux et traînant posé partout comme une nappe sonore. Les bruants hudsoniens étaient là aussi, signe que la migration descend déjà de plus loin au nord. Les geais bleus lançaient leurs cris par-dessus tout cela, et les bernaches passaient en grand bruit d'ailes et de voix — une journée de transit, au fond, où chacun semblait avoir une direction sauf l'observateur.",
+  "sky_narrative": "La nuit s'ouvrira avec deux tiers du ciel couverts et un mince croissant de lune — à peine 7 % illuminé — qui se couchera avant 17 h, heure locale, laissant l'obscurité presque entière. Dans cette fenêtre, une activité géomagnétique notable est attendue : un indice Kp maximal de 5,67 est prévu vers la fin de la nuit, ce qui pourrait produire des aurores boréales visibles à cette latitude ; la couverture nuageuse partielle ménagera peut-être quelques trouées pour les guetter vers le nord.",
+  "sky_date": "2026-10-08",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "automne",
+    "froid",
+    "aurore"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 7.7,
+      "temp_max_c": 9.3,
+      "ecart_normale_c": -4.4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 2,
+      "pression_tendance": "down",
+      "pression_mb": 959.8,
+      "vent_qualificatif": "calme"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 236,
+      "confidence": 0.9806
+    },
+    "sky": {
+      "for_date": "2026-10-08",
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 7,
+      "cloud_cover_night_pct": 67,
+      "aurora": {
+        "kp_max": 5.67,
+        "notable": true
+      }
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois, et lorsque j'ai trouvé le trille en fleur, je sais que la saison est bel et bien commencée."
+}
