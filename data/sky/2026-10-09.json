@@ -1,0 +1,149 @@
+{
+  "for_date": "2026-10-09",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-10-09T10:52:44.964Z",
+        "sunset": "2026-10-09T22:05:50.406Z",
+        "sun_set_azimuth": 261.2,
+        "sky_map_ref": "2026-10-09T22:36:38.002Z",
+        "twilight": {
+          "civil_start": "2026-10-09T10:21:53.940Z",
+          "nautical_start": "2026-10-09T09:46:22.959Z",
+          "astronomical_start": "2026-10-09T09:10:35.588Z",
+          "astronomical_end": "2026-10-09T23:47:44.986Z",
+          "nautical_end": "2026-10-09T23:12:04.129Z",
+          "civil_end": "2026-10-09T22:36:38.002Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Dernier croissant",
+      "detail": {
+        "phase_deg": 341.79313017774473,
+        "illumination_fraction": 0.02559941225148432,
+        "magnitude": -5.811435034169186,
+        "rise": "2026-10-09T09:42:19.375Z",
+        "set": "2026-10-09T21:23:53.285Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -0.08792709847691249,
+        "phase_angle": 70.27290106850897,
+        "helio_dist": 0.44752756381041864,
+        "geo_dist": 1.0569352751326955,
+        "az": 242.6,
+        "alt": 0.8
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.554483486970551,
+        "phase_angle": 147.3000483683081,
+        "helio_dist": 0.726122717706824,
+        "geo_dist": 0.3077581388814851,
+        "az": 244.5,
+        "alt": -5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.0747854445719023,
+        "phase_angle": 36.63732340718473,
+        "helio_dist": 1.5682245073999805,
+        "geo_dist": 1.6080865425471649,
+        "az": 337.5,
+        "alt": -19.4
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.9053529521487107,
+        "phase_angle": 8.85333969471624,
+        "helio_dist": 5.309692083547075,
+        "geo_dist": 5.821122429101207,
+        "az": 322.3,
+        "alt": -19
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.21962879439284855,
+        "phase_angle": 0.5976776618941926,
+        "helio_dist": 9.432159273028619,
+        "geo_dist": 8.437465953642644,
+        "az": 93.2,
+        "alt": 5.6
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Kp prévu 4",
+      "detail": {
+        "kp_max": 4,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-10-10T00:00:00",
+            "kp": 4
+          },
+          {
+            "time": "2026-10-10T03:00:00",
+            "kp": 3.67
+          },
+          {
+            "time": "2026-10-10T06:00:00",
+            "kp": 3
+          },
+          {
+            "time": "2026-10-10T09:00:00",
+            "kp": 3
+          },
+          {
+            "time": "2026-10-10T12:00:00",
+            "kp": 1.67
+          }
+        ]
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 38.44444444444444
+}
