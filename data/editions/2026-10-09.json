@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-10-09",
+  "generated_at": "2026-10-10T10:32:43.125Z",
+  "title": null,
+  "summary": "Journée froide et calme sous un ciel d'octobre — la pression remonte et les passereaux migrateurs tiennent le val en nombre.",
+  "body_md": "Le mercure n'a pas dépassé 9 degrés, et le vent est resté si faible qu'on aurait pu l'oublier — à peine du nord-est, presque rien. Une pluie légère a effleuré la matinée, moins de la moitié d'un millimètre, puis le baromètre a commencé sa remontée lente. La lumière de midi, rasante et froide, n'a rien de l'été : à cette heure-ci d'un 9 octobre, le soleil est déjà bas, l'ombre longue, et la forêt reçoit cette clarté oblique sans s'en plaindre.\n\nLes chardonnets dominent la liste du jour — plus de 660 détections pour Spinus tristis seul, ce qui dit quelque chose sur le mouvement en cours. L'espèce voyage en bandes compactes à l'automne, se nourrissant de graines de chardon et d'aulne sur les lisières ; un vent calme du nord-est leur convient. Autour d'eux, les bruants à gorge blanche se sont fait entendre tout l'après-midi, et les roitelets à couronne dorée — Regulus satrapa — ont traversé discrètement le sous-bois, trop petits pour tenir longtemps au froid qui s'installe. Un grimpereau brun, seul, a fermé la liste.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune est un mince croissant à moins de 1 % d'illumination — elle se couchera peu après 17 h 41 (heure locale) et laissera la nuit dans une obscurité presque complète jusqu'à l'aube. Avec environ la moitié du ciel couverte, Saturne, bas à l'est, sera la seule planète à portée du regard entre les éclaircies ; Mercure et Vénus sont déjà sous l'horizon au coucher du soleil.",
+  "theme_tags": [
+    "migration",
+    "passereaux",
+    "froid",
+    "calme",
+    "octobre",
+    "barometre-montant"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 2.1,
+      "temp_max_c": 8.8,
+      "ecart_normale_c": 0.6,
+      "pluie_mm": 0.4,
+      "vent": "calme, NE, rafale max 17.6 km/h",
+      "pression_tendance": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Goldfinch",
+      "taxon_scientific": "Spinus tristis",
+      "count": 668,
+      "confidence": 0.9978
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 0.36,
+      "cloud_cover_pct": 47,
+      "planetes_notables": [
+        "Saturne (alt 5.9°, az 93.7°)"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
