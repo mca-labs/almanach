@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-10-11",
+  "generated_at": "2026-10-12T11:51:15.867Z",
+  "title": "Le passage des bruants",
+  "summary": "Journée fraîche avec un bref passage de pluie le matin — la migration d'automne bat son plein au Val.",
+  "body_md": "La nuit avait frôlé zéro, et l'aube s'était levée sur un sous-bois encore humide des quelques millimètres tombés en matinée. Le ciel s'est dégagé ensuite, laissant monter la température jusqu'à près de dix-neuf degrés en milieu d'après-midi — un écart généreux pour un 11 octobre. Le vent soufflait du sud, à peine perceptible, et la pression continuait de descendre doucement : le genre de journée qui donne l'impression de tenir entre deux systèmes.\n\nLes bruants ont dominé la journée comme rarement. Le bruant à gorge blanche représentait à lui seul la moitié des détections — sa phrase sifflée, montante et légèrement plaintive, revenait sans cesse du couvert — tandis que le junco ardoisé et le roitelet à couronne dorée complétaient un trio de passage qui a animé le Val du lever au coucher. On a aussi entendu un grand plongeon, une seule fois, dont la voix portait loin dans l'air clair. Le geai bleu, lui, s'est manifesté en matinée avec l'énergie qu'il réserve à ses grandes journées : bruyant, mobile, vaguement comminatoire — comme à son habitude quand le ciel est propre et le sol froid.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, un premier croissant à peine éclairé, se couchera peu après le soleil et laissera la nuit dans une obscurité profonde — mais 87 % de couverture nuageuse réduiront sévèrement toute fenêtre sur les étoiles. Des aurores boréales sont possibles cette nuit, avec un indice Kp pouvant atteindre 5 vers la fin de la nuit ; sous ce plafond nuageux presque complet, les chances de les apercevoir depuis le Val resteront minces.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "automne",
+    "passage",
+    "geai-bleu",
+    "aurore"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -0.2,
+      "temp_max_c": 18.7,
+      "ecart_normale_c": 2.6,
+      "pluie_jour_mm": 0.7,
+      "vent": "calme, du S",
+      "pression_tendance": "baisse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "observed_at": "2026-10-11T08:37:38-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261011-123738.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 2.6,
+      "cloud_cover_night_pct": 87,
+      "aurora": "Kp max 5 — possible en fin de nuit"
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
