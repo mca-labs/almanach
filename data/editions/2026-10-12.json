@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-10-12",
+  "generated_at": "2026-10-13T11:39:59.938Z",
+  "title": null,
+  "summary": "Journée douce et calme pour mi-octobre, à cinq degrés au-dessus des normales — la migration des bruants bat son plein.",
+  "body_md": "L'air a tenu toute la journée dans ce registre étrange, presque insistant : quatorze degrés à peine, mais sans le mordant qu'on attend en ce milieu d'octobre. Le vent soufflait du sud, imperceptible, et la pression glissait lentement vers le bas — un glissement qui annonce du changement sans rien précipiter. Pas de lumière solaire enregistrée, un ciel fermé, et pourtant rien de lourd ni d'oppressant. Les bruants avaient choisi leur journée.\n\nSix cent deux détections du bruant à gorge blanche, Zonotrichia albicollis, contre cent quatre du junco ardoisé : rarement la liste d'un seul jour avait penché aussi franchement d'un côté. Le bruant à gorge blanche est un migrateur de fin de saison, capable de voyager de nuit en bandes serrées et de se poser en nombre dès que les conditions s'y prêtent. Ce calme du vent, cette chaleur atypique — la journée était faite pour lui. On a aussi entendu, plus discret, le grimpereau brun longer l'écorce d'un arbre mort en spirale ascendante, et les deux roitelets — à couronne dorée et à couronne rubis — qui prospectent le couvert en tirant leur fil ténu. C'est le portrait d'une forêt en transit.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le croissant de lune — à peine sept pour cent illuminé — se couchera avant vingt-trois heures, laissant ensuite une obscurité complète, mais une couverture nuageuse d'environ quatre-vingt pour cent brouillera l'essentiel du ciel. Saturne sera la seule planète un peu haute au-dessus de l'horizon en début de soirée ; Mercure, au couchant, rasera à moins d'un degré d'altitude et restera invisible dans la brume de basse couche.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "automne",
+    "douceur",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 12.6,
+      "temp_max_c": 14.2,
+      "ecart_normale_c": 5.1,
+      "pression_tendance": "down",
+      "vent": "calme, du S",
+      "pluie_jour_mm": 0
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "observed_at": "2026-10-12T07:43:18-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261012-114315.flac"
+    },
+    "sky": {
+      "phase": "Premier croissant",
+      "illumination": 0.066,
+      "moon_set": "2026-10-13T22:52:12.461Z",
+      "cloud_cover_pct": 82,
+      "planetes_notables": [
+        "Saturne (alt 7°)",
+        "Mercure (alt 0.7°)",
+        "Vénus (sous horizon)"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
