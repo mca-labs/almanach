@@ -1,0 +1,36 @@
+{
+  "entry_date": "2026-10-13",
+  "generated_at": "2026-10-14T09:26:24.429Z",
+  "title": "La vague des juncos",
+  "summary": "Journée d'octobre sous un ciel sans données — le Val compte ses juncos et attend le froid qui vient.",
+  "body_md": "Les capteurs n'ont rien enregistré ce mardi : ni température, ni vent, ni pluie. Ce silence dans les données dit quelque chose tout de même — la saison tourne sans bruit, deux jours après la dernière pluie, et la forêt fait ses affaires sans qu'on ait besoin de la mesurer. C'est à l'oreille que la journée s'est révélée : 216 détections, dix espèces, et par-dessus tout un flot de geais bleus et de juncos qui signait clairement une vague migratoire.\n\nLe roitelet à couronne dorée est arrivé en fin d'après-midi, peu après dix-sept heures. C'est un oiseau de l'ombre et du sous-bois, minuscule, qui fouille l'écorce et les ramilles avec une précision d'horloger. Sa voix fine — presque un sifflet à aiguille — passe souvent inaperçue dans le bruit du vent, mais aujourd'hui le calme l'a laissée traverser. Une bernache du Canada et un grand corbeau ont aussi été entendus, chacun une fois : des présences qui donnent l'échelle, comme deux points d'exclamation muets au bas de la liste.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit s'ouvrira avec un premier croissant de lune — à peine douze pour cent éclairé — qui se couchera vers 19 h 28, heure locale, laissant ensuite le ciel à lui-même. Mais les nuages couvriront plus des deux tiers de la voûte, ce qui rendra Saturne, seule planète en altitude cette nuit, difficile à saisir entre les éclaircies ; Mercure, Vénus, Mars et Jupiter seront sous l'horizon.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "automne",
+    "junco",
+    "roitelet"
+  ],
+  "highlights": {
+    "weather": null,
+    "bird_of_the_day": {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "observed_at": "2026-10-13T17:09:45-04:00",
+      "confidence": 0.8209723234176636,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261013-210945.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "illumination_fraction": 0.12297646216627556,
+      "moon_set": "2026-10-14T23:28:40.576Z",
+      "cloud_cover_pct": 73.11,
+      "notable_planets": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}
