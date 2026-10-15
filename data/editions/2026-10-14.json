@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-10-14",
+  "generated_at": "2026-10-15T09:04:45.037Z",
+  "title": "Journée de gel sous ciel calme",
+  "summary": "Le thermomètre n'a pas dépassé cinq degrés et le vent s'est tu — l'automne fait le point.",
+  "body_md": "Trois jours sans pluie, et ce matin la rosée avait gelé sur l'herbe avant même que la lumière ne s'installe. Le mercure a flirté avec zéro à l'aube, pour n'atteindre que 4,9 degrés en milieu d'après-midi — près de quatre degrés sous les normales. Pas un souffle : la girouette n'a pas bougé de la journée, la pression tenait bon à 963 mb, immobile. Le ciel a laissé entrer assez de lumière pour que l'heure de pointe, aux alentours de 13 h, touche un peu moins de 29 000 lux — une lumière froide, honnête, sans ambition.\n\nLes geais bleus ont dominé la journée avec une constance presque administrative — quatre-vingt-onze détections, la grande majorité concentrées en matinée, leur voix dure et métallique portant loin dans l'air immobile. Pic chevelu, bruant à gorge blanche : quelques présences discrètes, comptées sur les doigts. Et puis, en début d'après-midi, une seule note : le grimpereau brun, descendant en spirale le long d'un tronc, son bec recourbé sondant les fissures de l'écorce. Une seule détection, un seul passage — mais c'est ainsi que cette espèce se signale, sans insistance, comme une signature laissée au bas d'une page.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit du 15 octobre s'ouvrira avec un croissant de lune — à peine 19 % illuminé — qui se couchera vers 20 h 14, heure locale, laissant ensuite le ciel à lui-même. Avec environ 45 % de couverture nuageuse prévue, la visibilité sera partielle : Saturne, bas à l'est en début de soirée, et Mercure très rasant à l'horizon ouest peu après le coucher du soleil vaudront un coup d'œil si les nuages s'écartent.",
+  "theme_tags": [
+    "automne",
+    "gel",
+    "calme",
+    "oiseaux-forestiers",
+    "migration",
+    "grimpereau"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 0.9,
+      "temp_max_c": 4.9,
+      "ecart_normale_c": -4.3,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 3,
+      "vent": "calme plat",
+      "pression_mb": 962.8,
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 1,
+      "observed_at": "2026-10-14T13:58:18-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261014-175818.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 19,
+      "moon_set_local": "20:14",
+      "cloud_cover_night_pct": 45,
+      "planets_notable": [
+        "Mercure",
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne faire face qu'aux faits essentiels de l'existence, et voir si je ne pouvais apprendre ce qu'elle avait à m'enseigner — et ne pas découvrir, à l'heure de mourir, que je n'avais pas vécu."
+}

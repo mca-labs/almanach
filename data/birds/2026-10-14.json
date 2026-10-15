@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-14",
+  "total_detections": 103,
+  "unique_species": 4,
+  "top_species": [
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 91,
+      "max_confidence": 0.9882412552833557,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261014-135443.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 9,
+      "max_confidence": 0.9636459350585938,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261014-133227.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 2,
+      "max_confidence": 0.8347620368003845,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261014-213516.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 1,
+      "max_confidence": 0.6037344932556152,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261014-175818.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Brown Creeper",
+    "taxon_scientific": "Certhia americana",
+    "confidence": 0.6037344932556152,
+    "observed_at": "2026-10-14T13:58:18-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261014-175818.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    68,
+    0,
+    0,
+    20,
+    1,
+    0,
+    12,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
