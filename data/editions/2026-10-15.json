@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-10-15",
+  "generated_at": "2026-10-16T08:57:03.219Z",
+  "title": null,
+  "summary": "Journée froide et calme sous un ciel variable — les bruants et les pics tiennent le Val à bout de voix.",
+  "body_md": "La nuit a déposé du gel : −2,2 °C au plus bas, quatre degrés sous la normale. Le vent soufflait à peine du nord, 2 km/h en moyenne, et la pression descendait lentement — 974,5 mb avec un glissement de presque deux millibars en trois heures, signal discret d'un changement qui s'annonce. Le soleil a tout de même livré ses heures de clarté ; vers midi, les capteurs ont enregistré plus de 80 000 lux, ce genre de lumière d'octobre qui rase et révèle chaque branche dénudée. Le sol restait sec, la semaine aussi — à peine un millimètre de pluie en sept jours, et rien depuis quatre jours déjà.\n\nLes bruants à gorge blanche dominaient la journée, 107 détections à eux seuls, présents dès l'aube puis par vagues tout l'après-midi : c'est leur saison de transit, le Val leur sert de halte avant le grand couloir du sud. Deux pics se partageaient le reste du bois — le grand poilu et le mineur — travaillant méthodiquement les écorces mortes, l'un avec son tambour lourd, l'autre avec ses brèves frappes sèches. Les roitelets à couronne dorée passaient dans les épinettes, fins et pressés, et un grimpereau brun spiralait en silence le long d'un tronc. En fin d'après-midi, le junco ardoisé a pris le relais des bruants. Une bernache du Canada, une bruant des prés, et un gros-bec errant ont complété le compte — treize espèces pour une journée d'automne ordinaire, bien tenue.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit s'ouvrira sous une couverture nuageuse quasi totale — 98 % — et le croissant de lune, à 27 % illuminé, se couchera vers 21 h 09 heure locale sans avoir trouvé la moindre éclaircie. Les Orionides approchent de leur pic, prévu dans cinq jours avec un taux de 20 météores à l'heure : cette nuit le radiant est déjà actif, mais le plafond de nuages effacera toute trace de la pluie d'étoiles.",
+  "theme_tags": [
+    "migration",
+    "oiseaux",
+    "gel",
+    "automne",
+    "bruants",
+    "pics"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.2,
+      "temp_max_c": 8,
+      "ecart_normale_c": -4.4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 4,
+      "vent": "calme, du N",
+      "pression_tendance": "baisse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "detections": 107,
+      "total_species": 13
+    },
+    "sky": {
+      "for_date": "2026-10-16",
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 27,
+      "cloud_cover_pct": 98,
+      "meteor_shower": "Orionides — pic dans 5 j (ZHR 20)"
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est vraiment ouverte."
+}
