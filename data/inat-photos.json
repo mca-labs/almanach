@@ -141,7 +141,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-09-25T09:32:27.706Z"
+    "resolved_at": "2026-10-17T08:28:40.745Z"
   },
   "Cyanocitta cristata": {
     "taxon_inat_id": 8229,
@@ -730,5 +730,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-09-25T09:32:29.769Z"
+  },
+  "Pinicola enucleator": {
+    "taxon_inat_id": 9771,
+    "name_fr": "durbec des sapins",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/599484125/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/599484125/square.jpg",
+    "attribution": "(c) Дмитрий Осипов, some rights reserved (CC BY-NC), uploaded by Дмитрий Осипов",
+    "attribution_name": "Дмитрий Осипов",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-10-17T08:28:42.626Z"
   }
 }

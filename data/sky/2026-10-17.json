@@ -1,0 +1,161 @@
+{
+  "for_date": "2026-10-17",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-10-17T11:04:09.792Z",
+        "sunset": "2026-10-17T21:50:41.352Z",
+        "sun_set_azimuth": 256.8,
+        "sky_map_ref": "2026-10-17T22:21:49.500Z",
+        "twilight": {
+          "civil_start": "2026-10-17T10:32:58.939Z",
+          "nautical_start": "2026-10-17T09:57:22.717Z",
+          "astronomical_start": "2026-10-17T09:21:49.676Z",
+          "astronomical_end": "2026-10-17T23:32:49.679Z",
+          "nautical_end": "2026-10-17T22:57:21.805Z",
+          "civil_end": "2026-10-17T22:21:49.500Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Premier croissant",
+      "detail": {
+        "phase_deg": 73.61474088960298,
+        "illumination_fraction": 0.3605387039146279,
+        "magnitude": -9.347585674520383,
+        "rise": "2026-10-17T18:11:49.204Z",
+        "set": "2026-10-18T02:12:21.806Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -0.021752022148006755,
+        "phase_angle": 88.49256650923587,
+        "helio_dist": 0.41438596087807134,
+        "geo_dist": 0.9174833383378366,
+        "az": 238.8,
+        "alt": 0.5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.21105736397911,
+        "phase_angle": 161.72764814114169,
+        "helio_dist": 0.7251664573042025,
+        "geo_dist": 0.2818592071454505,
+        "az": 250.5,
+        "alt": -8.6
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 1.0149009306806378,
+        "phase_angle": 37.165360560763006,
+        "helio_dist": 1.5776855161593695,
+        "geo_dist": 1.5489257288858815,
+        "az": 336.9,
+        "alt": -20.3
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -1.9411570654162436,
+        "phase_angle": 9.493284019144857,
+        "helio_dist": 5.312265966024248,
+        "geo_dist": 5.714727052932331,
+        "az": 324.9,
+        "alt": -20.5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.2722973458075,
+        "phase_angle": 1.4406841053313144,
+        "helio_dist": 9.429720737916636,
+        "geo_dist": 8.458607572685839,
+        "az": 96.9,
+        "alt": 8.5
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "meteor_shower",
+      "title": "Orionides — pic dans 4 j",
+      "detail": {
+        "peak_date": "2026-10-21",
+        "days_to_peak": 4,
+        "zhr": 20
+      },
+      "notable": true,
+      "propice_a": "guetter les filantes après le crépuscule astronomique",
+      "source": "imo"
+    },
+    {
+      "category": "aurora",
+      "title": "Kp prévu 1.67",
+      "detail": {
+        "kp_max": 1.67,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-10-18T00:00:00",
+            "kp": 1.67
+          },
+          {
+            "time": "2026-10-18T03:00:00",
+            "kp": 1.67
+          },
+          {
+            "time": "2026-10-18T06:00:00",
+            "kp": 1.33
+          },
+          {
+            "time": "2026-10-18T09:00:00",
+            "kp": 1.33
+          },
+          {
+            "time": "2026-10-18T12:00:00",
+            "kp": 1.33
+          }
+        ]
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 19.11111111111111
+}

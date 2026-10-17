@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-10-16",
+  "generated_at": "2026-10-17T08:29:06.900Z",
+  "title": null,
+  "summary": "Gel de part en part, calme plat et ciel bas — les bruants hivernaux ont pris possession du Val.",
+  "body_md": "La journée n'a presque pas dépassé zéro. Le thermomètre a plafonné à un demi-degré en milieu de matinée, puis les données s'arrêtent — comme si l'après-midi avait voulu garder son secret. Le baromètre, lui, s'est mis à glisser vers le bas, trois heures de suite, sept millibars perdus sur une pression déjà basse. Le vent était absent : quelques rafales à peine, le souffle d'un chien endormi. La lumière, mince — un pic à 2 577 lux vers onze heures, moins que ce qu'une journée nuageuse de juillet laisserait filtrer.\n\nC'est dans ce froid arrêté que les bruants ont donné le ton. Le bruant à gorge blanche dominait tout, cent soixante-neuf détections étalées de l'aube jusqu'en début d'après-midi. À ses côtés, le junco ardoisé avait commencé avant lui — noté dès huit heures trente-neuf, il cherchait dans la litière avec cette méthode qui lui est propre, gratter et plonger la tête, indifférent au gel. Le geai bleu criaillait par intermittence. Plus discret, le durbec des sapins s'est fait entendre trois fois, signe que le Nord pousse doucement ses oiseaux vers le bas des vallées. Un pie-grièche boréale a traversé le registre — une mention, une seule, suffisante.",
+  "sky_narrative": "La nuit s'ouvrira sous un ciel en grande partie dégagé — la couverture nuageuse attendue frôle les vingt pour cent — avec un premier croissant de lune qui se couchera peu après deux heures du matin, laissant plusieurs heures d'obscurité franche. Les Orionides approchent de leur pic dans quatre jours, et quelques filantes pourraient déjà traverser la nuit ; Saturne sera la seule planète notable bien placée, basse vers l'est en début de soirée.",
+  "theme_tags": [
+    "hiver",
+    "bruants",
+    "gel",
+    "migration",
+    "pression-basse"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 0.5,
+      "temp_min_c": -1.7,
+      "ecart_normale_c": -7.3,
+      "pression_mb": 958.3,
+      "tendance": "down",
+      "vent": "calme plat",
+      "pluie_mm": 0
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 63,
+      "observed_at": "2026-10-16T08:39:45-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261016-123939.flac"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 36,
+      "moon_set": "2026-10-18T02:12:21.806Z",
+      "cloud_cover_night_pct": 19,
+      "meteor_shower": {
+        "title": "Orionides",
+        "peak_date": "2026-10-21",
+        "days_to_peak": 4,
+        "zhr": 20
+      }
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-2",
+  "fragment_translation_fr": "La masse des hommes mène des vies de désespoir tranquille."
+}
