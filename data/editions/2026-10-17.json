@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-10-17",
+  "generated_at": "2026-10-18T08:47:14.190Z",
+  "title": null,
+  "summary": "Journée de gel en octobre, vent du nord calme et ciel dégagé — les bruants et les pics ont tenu le Val sous des températures qui n'ont pas dépassé 2 °C.",
+  "body_md": "Le thermomètre n'a pas quitté le négatif avant midi, et il y est retourné dès la mi-après-midi. Un vent du nord à peine perceptible — trois kilomètres à l'heure en moyenne — n'a rien adouci ; il a seulement rappelé d'où venait le froid. La pression montait doucement, 978 millibars en remontée, et la lumière du jour, rasante déjà à cette saison, ne dépassait pas 77 000 lux à son pic de treize heures. Six jours sans pluie. La forêt était sèche, figée, sonore.\n\nLes bruants ont dominé la journée — juncos en tête, bruants à gorge blanche bien présents, deux ou trois couronnes blanches venues s'y mêler. C'est une faune de transit et de seuil, des oiseaux qui vivent entre deux saisons sans tout à fait appartenir à l'une. Le pic mineur, lui, ne transite pas : il est d'ici, il restera. On l'entendait marteler méthodiquement dans un arbre mort, cherchant sous l'écorce les larves que le gel n'a pas encore atteintes. Geai bleu, mésange à tête noire, sitelle — les résidents d'hiver prenaient leurs positions. La bernache du Canada a lancé quelques cris en passant au-dessus, sans s'arrêter. — l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — 13 % de couverture — et le croissant de lune, illuminé à 45 %, se couchera vers 23 h 20 (heure locale), laissant plusieurs heures d'obscurité franche avant l'aube. Saturne sera visible en soirée, bas à l'est. Les Orionides approchent de leur pic dans trois jours, avec un zénith horaire attendu d'une vingtaine de filantes : cette nuit, elles commencent à se faire sentir, et la lune couchée tôt laissera le ciel libre pour qui veut guetter vers Orion.",
+  "theme_tags": [
+    "gel",
+    "migration",
+    "bruants",
+    "hiver-precoce",
+    "vent-nord",
+    "pic-mineur"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.4,
+      "temp_max_c": 1.9,
+      "ecart_normale_c": -6.9,
+      "pression_mb": 978.1,
+      "pression_tendance": "up",
+      "vent": "calme, du N, 3 km/h",
+      "pluie_mm": 0,
+      "jours_sans_pluie": 6
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 66,
+      "confidence": 0.983
+    },
+    "sky": {
+      "for_date": "2026-10-18",
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 45,
+      "moon_set_utc": "2026-10-19T03:19:48Z",
+      "cloud_cover_pct": 13,
+      "meteor_shower": "Orionides — pic dans 3 jours (21 oct.), ZHR 20",
+      "planets_notable": [
+        "Saturne (alt. 8,9°, est)"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
