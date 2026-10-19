@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-10-18",
+  "generated_at": "2026-10-19T09:48:10.576Z",
+  "title": null,
+  "summary": "Gel nocturne et journée froide sous un ciel calme — les bruants du passage dominent la forêt depuis l'aube.",
+  "body_md": "La nuit a mordu. Le thermomètre est descendu à −3,7 °C avant l'aube, et le val n'a mis que quelques heures à dégeler — 7,2 °C au mieux, vers la mi-après-midi, sous un soleil pâle qui tenait à peine. Sept jours sans pluie, un vent réduit à rien, une pression stable à 979 hPa : la forêt s'est figée dans cette froidure tranquille, sans tempête ni rafale pour la bousculer. C'est le genre de journée qui se resserre sur elle-même, économe, presque minérale.\n\nLes bruants ont pris toute la place. Juncos ardoisés en tête — 301 détections, l'espèce du jour de loin — suivis des bruants à gorge blanche, toujours fidèles aux couverts denses où ils fouillent la litière. Plus discrets, les bruants hudsoniens et couronnés, quelques bruants des prés et des champs, comme si la migration avait livré d'un coup plusieurs vagues à la fois. Deux pics — chevelu et mineur — travaillaient en silence un peu plus haut dans le bois. Et vers 11 h, les bernaches ont passé haut, leur cri portant loin dans l'air froid et sans vent.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque entièrement dégagée — 3 % de couverture nuageuse seulement — et la Lune, gibbeuse croissante à 55 % d'illumination, se lèvera vers 15 h 08 (heure locale) sans se coucher avant l'aube, ce qui assombrira modérément le ciel dans la seconde moitié de la nuit. Saturne sera visible en début de soirée à l'est, seule planète notable au-dessus de l'horizon. Les Orionides approchent de leur pic — dans deux jours — et sous une telle transparence, quelques filantes pourront s'échapper avant que la Lune ne prenne trop de place.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "gel",
+    "automne",
+    "calme",
+    "secheresse"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -3.7,
+      "temp_max_c": 7.2,
+      "ecart_normale_c": -3.7,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 7,
+      "vent_qualifier": "calme plat",
+      "pression_mb": 979.7,
+      "pression_tendance": "flat"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 17,
+      "observed_at": "2026-10-18T11:03:58-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261018-150355.flac"
+    },
+    "sky": {
+      "for_date": "2026-10-19",
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 55,
+      "cloud_cover_night_pct": 3,
+      "meteor_shower": "Orionides — pic dans 2 jours (21 oct.), ZHR ~20",
+      "planets_notable": [
+        "Saturne (visible, alt +9°)"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-10",
+  "fragment_translation_fr": "C'est cette période qui marque le retour des oiseaux — une ou deux des espèces les plus résistantes ou les plus acclimatées, comme le bruant chanteur et le merlebleu, arrivant généralement en mars, tandis que les espèces des bois, plus rares et plus brillantes, ferment la procession en juin."
+}
