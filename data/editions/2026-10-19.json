@@ -1,0 +1,39 @@
+{
+  "entry_date": "2026-10-19",
+  "generated_at": "2026-10-20T09:21:15.030Z",
+  "title": null,
+  "summary": "Journée sèche et calme sous un ciel qui s'est éclairci — les bruants d'hiver ont pris possession du Val.",
+  "body_md": "L'air a flirté avec le zéro cette nuit, puis le soleil de midi a porté le thermomètre à seize degrés : un écart de seize degrés entre l'aube et l'après-midi, ce contraste propre aux journées d'octobre où la saison hésite encore. Huit jours sans pluie, la pression qui remonte doucement, un vent du sud presque absent — les conditions réunies pour que les migrateurs tardifs s'attardent dans les feuilles mortes et le sous-bois clairsemé.\n\nLes juncos à dos ardoisé et les bruants à gorge blanche ont dominé la journée à eux deux, trois cent vingt-quatre et deux cent quatre-vingt-dix détections respectivement — c'est le basculement d'automne, quand les bruants de l'hiver relèvent ceux de l'été. Le geai bleu a occupé l'avant-scène en milieu de journée, bruyant et décidé, inspectant chaque recoin en quête de glands à cacher pour la saison froide. Les roitelets à couronne dorée, eux, glanaient à voix fine dans les épinettes, discrets comme à leur habitude. Deux grimpereaux bruns et un bernache du Canada complétaient la liste.",
+  "sky_narrative": "Les Orionides atteignent leur pic demain soir — vingt filantes à l'heure en conditions idéales — et la nuit qui vient sera leur répétition générale : la couverture nuageuse ne dépassera pas le tiers du ciel, laissant de larges éclaircies. La lune gibbeuse, éclairée à 64 %, se lèvera en soirée et se couchera tôt dans la nuit, ménageant quelques heures d'obscurité franche vers l'aube, quand Orion sera bien haut. Saturne sera visible en début de nuit, bas dans l'est.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "automne",
+    "sec",
+    "geai-bleu",
+    "orionides"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 0.2,
+      "temp_max_c": 16.2,
+      "pluie_mm": 0,
+      "jours_sans_pluie": 8,
+      "vent": "calme, du S",
+      "pression": "978.5 mb, hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "observed_at": "2026-10-19T11:37:18-04:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261019-153718.flac"
+    },
+    "sky": {
+      "lune": "Gibbeuse croissante, 64 %",
+      "evenement": "Orionides — pic 21 octobre, ZHR 20",
+      "couverture_nuageuse": "33 %"
+    }
+  },
+  "fragment_quote_id": "john-muir-my-8",
+  "fragment_translation_fr": "Et notre première pure journée de montagne, chaude, calme, sans nuages — comme elle paraît immensurable, comme elle est sereinement sauvage !"
+}
