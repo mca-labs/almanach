@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-20",
+  "total_detections": 678,
+  "unique_species": 13,
+  "top_species": [
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 327,
+      "max_confidence": 0.9417577981948853,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-122011.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 109,
+      "max_confidence": 0.9801730513572693,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-170713.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 74,
+      "max_confidence": 0.9919096827507019,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-180431.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 68,
+      "max_confidence": 0.9377586245536804,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-164445.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 51,
+      "max_confidence": 0.9935139417648315,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-181937.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 28,
+      "max_confidence": 0.9888518452644348,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-125647.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 6,
+      "max_confidence": 0.7540261745452881,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-121340.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 6,
+      "max_confidence": 0.8142751455307007,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-132744.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 5,
+      "max_confidence": 0.6887081265449524,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-140723.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 1,
+      "max_confidence": 0.669364869594574,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-212455.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Swamp Sparrow",
+      "taxon_scientific": "Melospiza georgiana",
+      "count": 1
+    },
+    {
+      "taxon_common": "Red-tailed Hawk",
+      "taxon_scientific": "Buteo jamaicensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Common Redpoll",
+      "taxon_scientific": "Acanthis flammea",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Black-capped Chickadee",
+    "taxon_scientific": "Poecile atricapillus",
+    "confidence": 0.9377586245536804,
+    "observed_at": "2026-10-20T12:44:48-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261020-164445.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    64,
+    132,
+    68,
+    44,
+    68,
+    118,
+    27,
+    35,
+    42,
+    28,
+    26,
+    26,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

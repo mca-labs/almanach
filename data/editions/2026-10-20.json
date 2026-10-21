@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-10-20",
+  "generated_at": "2026-10-21T09:17:38.516Z",
+  "title": null,
+  "summary": "Journée sèche et fraîche sous un ciel presque calme — les bruants blancs tiennent le Val depuis l'aube.",
+  "body_md": "Neuf jours sans pluie, et l'air le montre : sec, tranchant le matin, à peine adouci par une accalmie de midi qui a poussé le mercure jusqu'à presque douze degrés avant de le relâcher vers le gel en fin de soirée. Le vent ne valait guère — une poussée du sud-est au pic de lumière, vingt kilomètres à l'heure tout au plus, puis plus rien. La pression est restée à plat, haute et stable, comme une main posée sur la vallée.\n\nLes bruants à gorge blanche ont dominé la journée sans partage — plus de trois cents détections, un flux continu de l'aube à la mi-après-midi. Ils cherchaient sous la litière à la manière des bruants : un double coup de patte en arrière, puis attente. Les juncos ardoisés ont suivi, fidèles à leur réputation de compagnons de gel. Deux espèces plus rares se sont glissées dans le lot : un bruant des prés et un sizerin flammé, premiers de la saison tous les deux. La mésange à tête noire a été retenue comme oiseau du jour — moins nombreuse que les bruants, mais constante, et sa voix courte résume bien ce qu'est une journée d'octobre au Val : concise, sans ornement, présente.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Cette nuit, les Orionides seront à leur pic — vingt filantes à l'heure par ciel dégagé, et la couverture nuageuse prévue ne dépasse pas dix pour cent, ce qui laisse le champ presque libre. La lune gibbeuse croissante, éclairée à près de soixante-quatorze pour cent, se sera couchée avant six heures du matin, offrant quelques heures d'obscurité plus franche en fin de nuit ; Saturne sera visible bas à l'est en début de soirée.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "gel",
+    "secheresse",
+    "octobre",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.4,
+      "temp_max_c": 11.9,
+      "ecart_normale_c": -2.8,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 9,
+      "vent": "calme",
+      "pression": "haute, stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 68,
+      "confidence": 0.9377586245536804
+    },
+    "sky": {
+      "phase": "Lune gibbeuse croissante",
+      "illumination_pct": 73,
+      "moon_set": "05:40 UTC",
+      "evenement_notable": "Pic des Orionides",
+      "cloud_cover_pct": 11
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-3",
+  "fragment_translation_fr": "Simplicité, simplicité, simplicité ! Je dis : que vos affaires soient au nombre de deux ou trois, et non de cent ou de mille."
+}
