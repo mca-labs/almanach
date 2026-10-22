@@ -742,5 +742,29 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-10-17T08:28:42.626Z"
+  },
+  "Poecile hudsonicus": {
+    "taxon_inat_id": 144821,
+    "name_fr": "mésange à tête brune",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/14798745/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/14798745/square.jpg",
+    "attribution": "(c) Mark Dennis, some rights reserved (CC BY-NC), uploaded by Mark Dennis",
+    "attribution_name": "Mark Dennis",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-10-22T09:19:57.698Z"
+  },
+  "Buteo jamaicensis": {
+    "taxon_inat_id": 5212,
+    "name_fr": "Buse à queue rousse",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/101327658/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/101327658/square.jpg",
+    "attribution": "(c) Craig K. Hunt, some rights reserved (CC BY-NC), uploaded by Craig K. Hunt",
+    "attribution_name": "Craig K. Hunt",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-10-22T09:19:58.431Z"
   }
 }

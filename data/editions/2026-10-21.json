@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-10-21",
+  "generated_at": "2026-10-22T09:20:25.142Z",
+  "title": "Les bruants de l'ère froide",
+  "summary": "Gel au sol, ciel dégagé et vent presque inexistant — les bruants d'automne tiennent la forêt à bout de chant.",
+  "body_md": "La nuit avait laissé −3,2 °C dans l'herbe, et le jour n'a jamais vraiment repris le dessus — 9,6 °C au mieux en milieu d'après-midi, sept degrés sous la normale. Dix jours sans pluie. La pression baisse lentement, le vent était si calme qu'une rafale à onze kilomètres-heure, vers midi, a semblé presque un événement. La lumière d'octobre, elle, travaillait : 62 000 lux au zénith, propre et froide, comme si le ciel avait décidé de compenser le manque de chaleur par une clarté d'une netteté inhabituellement franche.\n\nAvant neuf heures, une voix a tranché — fine, descendante, à peine métallique : un bruant hudsonien, le premier de l'automne. Spizelloides arborea revient du Nord chaque octobre pour passer l'hiver plus au sud, et le Val n'est qu'une halte sur ce trajet ; mais ce matin, le chant est resté. Le bruant à gorge blanche dominait en nombre — cent quatre-vingt-dix détections — et le geai bleu, bruyant et insistant, n'était pas loin derrière. Douze espèces en tout, fidèles à une journée de gel sec : la mésange à tête noire, le pic mineur, le grimpeur brun qui spirale dans l'écorce sans jamais s'arrêter. Le grand corbeau, une seule fois, a coupé le fond sonore.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — moins de 2 % de couverture — et c'est précisément la nuit où les Orionides atteignaient leur pic hier : l'essentiel des filantes est passé, mais les dernières traînent encore quelques jours, à raison d'une vingtaine par heure au zénith. La lune gibbeuse, éclairée à 82 %, se lèvera vers 16 h en heure locale et ne se couchera qu'à l'aube, dominant le ciel d'est en ouest ; elle absorbera une bonne partie des météores les moins lumineux. Saturne sera visible en début de nuit, à faible altitude vers l'est.",
+  "theme_tags": [
+    "migration",
+    "gel",
+    "bruants",
+    "froid-intense",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -3.2,
+      "temp_max_c": 9.6,
+      "ecart_normale_c": -7.5,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 10,
+      "vent": "calme plat",
+      "pression_tendance": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 59,
+      "confidence": 0.9977
+    },
+    "sky": {
+      "phase_lune": "Gibbeuse croissante",
+      "illumination_pct": 82,
+      "couverture_nuageuse_pct": 1.8,
+      "meteor_shower": "Orionides — pic passé hier (−1 j), ZHR 20",
+      "planetes_visibles": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}
