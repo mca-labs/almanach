@@ -237,7 +237,7 @@
     "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-01T10:52:21.477Z"
+    "resolved_at": "2026-10-23T09:25:56.273Z"
   },
   "Regulus satrapa": {
     "taxon_inat_id": 117100,
@@ -249,7 +249,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-01T10:52:22.555Z"
+    "resolved_at": "2026-10-23T09:25:59.528Z"
   },
   "Sitta canadensis": {
     "taxon_inat_id": 14823,
@@ -381,7 +381,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-01T10:52:24.774Z"
+    "resolved_at": "2026-10-23T09:25:58.506Z"
   },
   "Setophaga pensylvanica": {
     "taxon_inat_id": 145239,

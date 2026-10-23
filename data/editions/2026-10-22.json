@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-10-22",
+  "generated_at": "2026-10-23T09:26:24.033Z",
+  "title": null,
+  "summary": "Journée froide et calme sous un ciel dégagé — les bruants migrateurs tiennent la vedette, onze jours sans pluie.",
+  "body_md": "Le gel a mordu cette nuit, -2,4 °C au plus bas, et l'air est resté vif toute la matinée avant que le thermomètre ne remonte doucement vers 11 °C en début d'après-midi. Le vent soufflait à peine, du SE, et le baromètre continuait de monter — conditions idéales pour retenir les migrateurs tardifs. Depuis onze jours, pas une goutte de pluie ; le sous-bois craque sous les feuilles sèches, et la lumière de midi, rasante déjà, plaquait de longues ombres sur le sol gelé.\n\nLes bruants à couronne blanche ont dominé la journée. Zonotrichia leucophrys s'est montré partout dès l'aube, 108 détections réparties en deux vagues — une forte entre 9 h et midi, une autre en milieu d'après-midi. Les bruants à gorge blanche leur tenaient compagnie, discrets mais constants, pendant que les bruants hudsoniens, nouveaux venus de la toundra, ajoutaient une note plus nordique. Le geai bleu lançait ses cris par intervalles depuis les conifères. En fin de journée, deux roitelets à couronne dorée, minuscules, filaient entre les branches — l'automne compresse tout, même les voix.",
+  "sky_narrative": "La lune gibbeuse, éclairée à 89 %, se lèvera vers 16 h 20 (heure locale) et ne se couchera qu'à 4 h 04 ; elle dominera une bonne partie de la nuit, mais la couverture nuageuse prévue est presque nulle — environ 11 % — et Saturne, déjà haut dans le ciel en début de soirée, restera visible à l'est. Vénus, Jupiter et Mars seront tous sous l'horizon au moment de la carte du ciel ; c'est donc une nuit de lune haute et de ciel ouvert, où les étoiles de second rang s'effaceront dans le halo blanc.",
+  "theme_tags": [
+    "migration",
+    "bruants",
+    "gel",
+    "secheresse",
+    "automne",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.4,
+      "temp_max_c": 11,
+      "ecart_normale_c": -4.6,
+      "pression_tendance": "up",
+      "vent": "calme, du SE",
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 11
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 108,
+      "confidence": 0.9785
+    },
+    "sky": {
+      "for_date": "2026-10-23",
+      "moon_phase": "Lune gibbeuse croissante",
+      "moon_illumination_pct": 89,
+      "cloud_cover_night_pct": 11,
+      "planetes_notables": [
+        "Saturne (visible, alt 10.9°)"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre avec intention, ne faire face qu'aux faits essentiels de l'existence, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — et non pas découvrir, au moment de mourir, que je n'avais pas vécu."
+}
