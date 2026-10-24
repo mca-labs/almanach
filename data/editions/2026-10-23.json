@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-10-23",
+  "generated_at": "2026-10-24T08:49:01.696Z",
+  "title": "Froid sec, oiseaux d'hiver",
+  "summary": "Froid vif et ciel clair sur le Val — les espèces d'hiver ont pris position.",
+  "body_md": "La journée a démarré sous le gel, le thermomètre à moins de quatre degrés à l'aube, et n'a remonté que lentement vers huit degrés en milieu d'après-midi. Pas un souffle de vent, pas un nuage, pas une goutte de pluie — le douzième jour consécutif sans précipitation. La pression tient, plate comme une surface d'eau dormante, et le froid s'est installé avec l'assurance d'une chose qui ne partira pas avant longtemps. Huit degrés sous la normale pour un 23 octobre : c'est l'hiver qui arrive sans s'annoncer davantage.\n\nLes bruants à couronne blanche étaient partout ce matin, deuxième espèce en nombre après les mésanges à tête noire qui dominent la journée depuis l'aurore. Les juncos ardoisés grattaient sous les branches, les bruants hudsoniens tenaient leur rang, et un grand pic chevelu a signalé sa présence avec ce cri sec et tranchant qu'on reconnaît entre tous — son tambourinage dans un tronc mort résonne comme un coup de couteau dans le silence froid. En lisière, un pie-grièche boréale a été entendu une seule fois : présence discrète, mais qui dit quelque chose sur la saison. Quatorze espèces en tout, et presque toutes des hivernants ou des migrateurs tardifs. Le peloton de printemps est loin derrière.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera d'une clarté totale — zéro pour cent de couverture nuageuse — et la lune gibbeuse, illuminée à près de 95 %, se lèvera en soirée pour dominer le ciel jusqu'à l'aube. Saturne sera visible dans l'est dès la tombée du jour, seule planète bien placée à cette heure ; Vénus, Jupiter et Mars seront tous sous l'horizon. L'activité géomagnétique prévue ne dépassera pas l'indice Kp 3,7, sous le seuil d'aurore visible depuis le Val.",
+  "theme_tags": [
+    "froid",
+    "migration",
+    "hivernants",
+    "secheresse",
+    "oiseaux"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -4.7,
+      "temp_max_c": 8,
+      "ecart_normale_c": -8.1,
+      "pluie_jour_mm": 0,
+      "jours_sans_pluie": 12,
+      "vent": "calme plat",
+      "pression_mb": 985.1,
+      "tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 19,
+      "confidence": 0.9796035885810852,
+      "observed_at": "2026-10-23T10:55:03-04:00"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 95,
+      "moon_set_utc": "2026-10-24T09:19:26Z",
+      "moon_rise_utc": "2026-10-24T20:37:16Z",
+      "cloud_cover_night_pct": 0,
+      "saturne_alt_deg": 11.3,
+      "kp_max_prevu": 3.67
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois, et quand j'ai trouvé le trille en fleur, je sais que la saison est vraiment commencée."
+}
