@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-24",
+  "total_detections": 352,
+  "unique_species": 16,
+  "top_species": [
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 178,
+      "max_confidence": 0.9630919694900513,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-181028.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 62,
+      "max_confidence": 0.9562311172485352,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-113052.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 48,
+      "max_confidence": 0.9932458996772766,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-111651.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 18,
+      "max_confidence": 0.8896355032920837,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-161243.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 15,
+      "max_confidence": 0.9660406112670898,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-203048.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 14,
+      "max_confidence": 0.9909479022026062,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-133510.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 4,
+      "max_confidence": 0.7139559388160706,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-214933.flac"
+    },
+    {
+      "taxon_common": "American Robin",
+      "taxon_scientific": "Turdus migratorius",
+      "count": 3,
+      "max_confidence": 0.7492417097091675,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-133004.flac"
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 2,
+      "max_confidence": 0.8909775614738464,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-112500.flac"
+    },
+    {
+      "taxon_common": "Brown Creeper",
+      "taxon_scientific": "Certhia americana",
+      "count": 2,
+      "max_confidence": 0.7263621687889099,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-110953.flac"
+    }
+  ],
+  "other_species": [
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Red-tailed Hawk",
+      "taxon_scientific": "Buteo jamaicensis",
+      "count": 1
+    },
+    {
+      "taxon_common": "Pileated Woodpecker",
+      "taxon_scientific": "Dryocopus pileatus",
+      "count": 1
+    },
+    {
+      "taxon_common": "Greater Yellowlegs",
+      "taxon_scientific": "Tringa melanoleuca",
+      "count": 1
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 1
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 1
+    }
+  ],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.8896355032920837,
+    "observed_at": "2026-10-24T12:12:47-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261024-161243.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    91,
+    44,
+    72,
+    20,
+    37,
+    22,
+    6,
+    35,
+    7,
+    10,
+    6,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ]
+}

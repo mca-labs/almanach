@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-10-24",
+  "generated_at": "2026-10-25T09:05:17.975Z",
+  "title": null,
+  "summary": "Gel au lever, douceur de midi — treize jours sans pluie et le Val tenu dans un calme presque minéral.",
+  "body_md": "Le thermomètre est descendu à moins quatre et demi avant l'aube, puis la matinée a ouvert lentement, comme une main qui se desserre. À midi, près de onze degrés. L'écart par rapport aux normales reste marqué — quatre degrés sous la moyenne — et le vent, venu de l'est, soufflait à peine : calme presque total, pression stable, ciel suffisamment dégagé pour que le pic lumineux de l'heure de midi atteigne soixante mille lux. Treize jours sans une goutte. Le sol doit sonner creux sous les feuilles mortes.\n\nLa journée a appartenu aux bruants à couronne blanche : cent soixante-dix-huit détections, loin devant tout le reste. Ils cherchaient au sol, dans la litière, grattant méthodiquement comme ils savent le faire avant de reprendre la route vers le sud. Les mésanges à tête noire tenaient leur territoire habituel ; deux pics — le mineur et le chevelu — travaillaient quelque part dans le bois, chacun à sa façon, l'un minutieux, l'autre percutant. Un grimpereau brun a glissé le long d'un tronc, discret à l'extrême. Et vers midi, le bruant ardoisé a signé le jour — voix sèche, petite silhouette sombre — rappelant que l'hiver, depuis quelques jours déjà, a envoyé ses avant-coureurs.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune, à moins de deux degrés de la pleine, s'était couchée en milieu d'après-midi et se lèvera à nouveau peu avant vingt-et-une heures locales, inondant la nuit d'une lumière qui effacera presque tout. Saturne sera la seule planète à tenir un peu au-dessus de l'horizon en début de soirée ; Vénus, Jupiter et Mars seront déjà bien sous l'horizon au moment où le ciel s'assombrira. Environ la moitié du ciel sera couverte de nuages — une nuit mi-close, mi-ouverte, mais que la lune quasi pleine domine de toute façon.",
+  "theme_tags": [
+    "migration",
+    "gel",
+    "secheresse",
+    "bruant",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -4.5,
+      "temp_max_c": 10.9,
+      "ecart_normale_c": -4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 13,
+      "vent": "calme, de l'est",
+      "pression": "stable à 984,5 mb"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "note": "Bruant ardoisé — signe de l'avance hivernale"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante (98,5 % illuminée)",
+      "moon_rise_local": "~17h00 locale",
+      "moon_set_local": "~06h38 locale",
+      "cloud_cover_pct": 44,
+      "planets_visible": [
+        "Saturne (alt. +11,7°)"
+      ],
+      "planets_below_horizon": [
+        "Vénus",
+        "Jupiter",
+        "Mars"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
