@@ -766,5 +766,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-10-22T09:19:58.431Z"
+  },
+  "Loxia leucoptera": {
+    "taxon_inat_id": 10423,
+    "name_fr": "Bec-croisé bifascié",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/353039022/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/353039022/square.jpeg",
+    "attribution": "(c) edporopat, some rights reserved (CC BY-NC), uploaded by edporopat",
+    "attribution_name": "edporopat",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-10-26T10:00:02.367Z"
   }
 }

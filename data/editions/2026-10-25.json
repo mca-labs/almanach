@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-10-25",
+  "generated_at": "2026-10-26T10:00:23.680Z",
+  "title": null,
+  "summary": "Quatorze jours sans pluie, une fraîcheur de gel au lever et dix-sept degrés l'après-midi — l'automne tient encore ses deux extrêmes dans la même journée.",
+  "body_md": "Le thermomètre est tombé sous zéro cette nuit, brièvement, puis la matinée a basculé vers la douceur avec une franchise presque estivale. Dix-sept degrés en milieu d'après-midi, un vent du SE à peine perceptible, le sol sec depuis deux semaines — c'est l'arrière-saison dans ce qu'elle a de plus trompeur : tout sent la fin, rien n'a encore cédé. La pression glissait doucement vers le bas en fin de journée, signe que ce calme ne durera pas.\n\nLes geais bleus ont dominé la journée comme s'ils en avaient reçu mandat — quatre-vingt-quatorze détections, criant d'un bout à l'autre des heures de lumière. Au milieu de ce vacarme, les bruants à gorge blanche se sont signalés plus discrètement, avec leur phrase sifflée à deux tons, douce et légèrement plaintive. C'est leur passage : ils descendent vers le sud en longeant les lisières, s'arrêtant le temps d'une journée dans les sous-bois dégagés par la chute des feuilles. Un roitelet à couronne dorée et un merle d'Amérique ont été entendus une fois chacun, témoins isolés d'une migration qui s'étire.",
+  "sky_narrative": "La pleine lune — à moins d'un degré de la plénitude exacte — se lèvera en soirée et traversera la nuit presque entière, noyant les étoiles faibles sous sa lumière. Avec 74 % de couverture nuageuse prévue, le ciel sera largement voilé ; Saturne, seule planète encore au-dessus de l'horizon en début de nuit, se distinguera difficilement à travers les nuages.",
+  "theme_tags": [
+    "migration",
+    "bruant",
+    "automne",
+    "secheresse",
+    "gel",
+    "geai-bleu",
+    "pleine-lune"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.2,
+      "temp_max_c": 17.5,
+      "rain_mm": 0,
+      "jours_sans_pluie": 14,
+      "pression_mb": 973.8,
+      "pression_tendance": "down",
+      "vent": "calme, SE"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 12,
+      "confidence": 0.808
+    },
+    "sky": {
+      "moon_phase": "Pleine lune",
+      "moon_illumination_pct": 99.8,
+      "cloud_cover_night_pct": 74,
+      "planete_visible": "Saturne (alt. 12°)"
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
