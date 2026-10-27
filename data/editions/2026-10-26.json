@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-10-26",
+  "generated_at": "2026-10-27T09:44:29.836Z",
+  "title": null,
+  "summary": "Journée fraîche et calme sous un ciel variable, le baromètre remonte doucement après une légère pluie matinale.",
+  "body_md": "La pluie avait laissé à peine une trace — le sol encore sombre, l'air lavé, rien de plus. Passé le milieu de la matinée, le vent du SE s'était fait discret et la pression reprenait de la hauteur, lentement, comme quelqu'un qui retrouve ses esprits. Le pic de lumière est arrivé en fin d'avant-midi, un peu maigre pour la saison, mais suffisant pour que le sous-bois s'anime. Il a fait doux pour un 26 octobre : treize degrés l'après-midi, deux à peine avant l'aube.\n\nC'est le pic mineur qui a retenu l'attention, entendu dès le matin, martelant quelque part dans les branches mortes avec cette efficacité tranquille qui lui est propre. Le plus petit de nos pics fouille l'écorce avec méthode, extirpant les larves que les grands laissent passer. Autour de lui, la journée appartenait surtout aux juncos — quatre-vingt-quatre détections, la voix qui revient chaque automne comme un rappel ponctuel — et aux geais bleus, bruyants et présents. Le roitelet à couronne dorée a fait une apparition brève, une seule fois : la saison avance, ces petits voyageurs ne s'attardent plus.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera à moitié couverte — environ quatre dixièmes de ciel dégagé. La Lune, presque pleine, se lèvera peu après le coucher du soleil et dominera les heures claires ; seul Saturne, posé assez haut à l'est en début de soirée, tiendra compagnie sans peine à travers les éclaircies. Vénus et Jupiter seront sous l'horizon pour cette nuit.",
+  "theme_tags": [
+    "oiseaux",
+    "automne",
+    "migration",
+    "calme",
+    "pression"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 1.5,
+      "temp_max_c": 13,
+      "pluie_mm": 0.3,
+      "vent": "calme, SE",
+      "pression": "976 hPa, hausse",
+      "ecart_normale_c": 0.4
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 10,
+      "confidence": 0.99
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse décroissante (98 %)",
+      "moon_set_utc": "2026-10-27T13:25:59Z",
+      "cloud_cover_pct": 44,
+      "planets_visible": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-belette",
+  "fragment_translation_fr": null
+}
