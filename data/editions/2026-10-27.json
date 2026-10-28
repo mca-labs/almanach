@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-10-27",
+  "generated_at": "2026-10-28T10:29:58.554Z",
+  "title": null,
+  "summary": "Journée froide et calme sous un ciel dégagé — le geai bleu a tenu le haut du Val dès l'aube.",
+  "body_md": "La nuit a tout refroidi sans ménagement. À l'aube, le thermomètre marquait −5,5 °C, et la lumière du matin a mis du temps à réchauffer l'air, ne dépassant les zéro qu'en milieu de matinée. Le vent soufflait du nord, presque rien — moins de deux kilomètres-heure en moyenne —, et la pression remontait doucement depuis la veille. Une journée sèche, lumineuse, où l'on entendait nettement chaque bruit dans le sous-bois tranquille.\n\nLes oiseaux ont concentré presque toute leur activité entre sept et neuf heures, avant que le froid ne se lève vraiment. La mésange à tête noire dominait le comptage, fidèle, mais c'est le geai bleu qui donnait le ton : criard, mobile, présent partout à la fois. Le grimpereau brun longeait les écorces en silence, et deux durbecs des sapins — espèce des forêts boréales — ont été entendus en après-midi, passage discret d'une saison qui s'installe. Onze espèces en tout, ni plus ni moins, pour une journée qui sentait déjà l'hiver.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera peu nuageuse — environ 25 % de couverture — et Saturne sera visible bas dans le ciel de l'est. La lune, gibbeuse décroissante à 94 % d'illumination, ne se lèvera qu'après 22 h 43 (heure locale), laissant quelques heures d'obscurité franche pour qui souhaite lever les yeux.",
+  "theme_tags": [
+    "froid",
+    "oiseaux",
+    "automne-tardif",
+    "calme",
+    "migration"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -5.5,
+      "temp_max_c": 3.7,
+      "ecart_normale_c": -4,
+      "pluie_jour_mm": 0,
+      "vent": "calme, du nord",
+      "pression_tendance": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 76,
+      "confidence": 0.99
+    },
+    "sky": {
+      "for_date": "2026-10-28",
+      "moon_phase": "Gibbeuse décroissante",
+      "moon_illumination_pct": 94,
+      "moon_rise_local": "22:43",
+      "cloud_cover_pct": 25,
+      "planetes_notables": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-11",
+  "fragment_translation_fr": "Une chose est juste lorsqu'elle tend à préserver l'intégrité, la stabilité et la beauté de la communauté biotique. Elle est injuste lorsqu'elle tend autrement."
+}
