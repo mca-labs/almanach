@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-10-28",
+  "generated_at": "2026-10-29T10:49:55.054Z",
+  "title": null,
+  "summary": "Froid sec et calme plat sur la vallée — le thermomètre n'a pas dépassé zéro avant la mi-journée.",
+  "body_md": "La nuit avait laissé −6,8 °C dans l'air immobile, et la journée n'a réchauffé le val que par petites doses : zéro atteint vers onze heures, un maigre sommet à 3,6 °C au milieu de l'après-midi, puis la courbe qui redescend dès le milieu de soirée. La lumière du matin était propre et froide, sans vent pour la brouiller. Le baromètre glissait lentement vers le bas — rien d'alarmant encore, mais on prend note.\n\nC'est la mésange à tête noire qui a mené le bal, depuis la première heure de lumière jusqu'au cœur de la matinée : 89 détections, une constance qui ressemble à du travail. Les geais bleus n'étaient jamais loin, criards et mobiles comme à leur habitude. Un pic chevelu tambourinait quelque part dans le bois, méthodique ; son cousin le pic mineur est passé, discret. Deux bruants hudsoniens ont signalé leur présence en fin d'après-midi — des migrateurs tardifs qui descendent du nord quand le froid s'installe pour de bon. Le grosbec du pin, lui, a laissé deux brèves mentions ; on ne sait jamais si ce sont des éclaireurs ou des retardataires. Neuf espèces au total — peu, mais choisies.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera dégagée aux trois quarts, avec seulement 27 % de couverture nuageuse. La lune gibbeuse décroissante — près de 88 % illuminée — ne se lèvera qu'à 23 h 44 heure locale : la première partie de la nuit offrira donc un ciel sombre, où Saturne, posé à l'est à une altitude confortable, sera le point fixe le plus facile à repérer. Vénus et Jupiter seront sous l'horizon dès la tombée de la nuit.",
+  "theme_tags": [
+    "froid",
+    "calme",
+    "migration",
+    "hivernants",
+    "oiseaux",
+    "foret"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -6.8,
+      "temp_max_c": 3.6,
+      "ecart_normale_c": -4.3,
+      "pression_mb": 976.2,
+      "pression_tendance": "down",
+      "vent": "calme plat",
+      "pluie_jour_mm": 0
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 89,
+      "confidence": 0.9645936489105225
+    },
+    "sky": {
+      "for_date": "2026-10-29",
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 88,
+      "moon_rise_local": "23:44",
+      "cloud_cover_night_pct": 27,
+      "planets_notable": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-2",
+  "fragment_translation_fr": "La masse des hommes mènent des vies de désespoir tranquille."
+}

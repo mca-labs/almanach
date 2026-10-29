@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-28",
+  "total_detections": 238,
+  "unique_species": 9,
+  "top_species": [
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 89,
+      "max_confidence": 0.9645936489105225,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-120033.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 62,
+      "max_confidence": 0.9819666147232056,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-122338.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 37,
+      "max_confidence": 0.99639493227005,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-212136.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 25,
+      "max_confidence": 0.9537096619606018,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-172353.flac"
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 15,
+      "max_confidence": 0.9762622117996216,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-203552.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 5,
+      "max_confidence": 0.9817833304405212,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-120306.flac"
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 2,
+      "max_confidence": 0.6407619118690491,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-190006.flac"
+    },
+    {
+      "taxon_common": "Pine Grosbeak",
+      "taxon_scientific": "Pinicola enucleator",
+      "count": 2,
+      "max_confidence": 0.64261794090271,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-132420.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 1,
+      "max_confidence": 0.5796902775764465,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-111738.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Black-capped Chickadee",
+    "taxon_scientific": "Poecile atricapillus",
+    "confidence": 0.9645936489105225,
+    "observed_at": "2026-10-28T08:00:36-04:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261028-120033.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    82,
+    55,
+    12,
+    8,
+    13,
+    3,
+    17,
+    9,
+    10,
+    4,
+    25,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
