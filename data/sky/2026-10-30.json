@@ -1,0 +1,149 @@
+{
+  "for_date": "2026-10-30",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-10-30T11:23:18.981Z",
+        "sunset": "2026-10-30T21:28:16.192Z",
+        "sun_set_azimuth": 250,
+        "sky_map_ref": "2026-10-30T22:00:18.764Z",
+        "twilight": {
+          "civil_start": "2026-10-30T10:51:14.613Z",
+          "nautical_start": "2026-10-30T10:15:05.723Z",
+          "astronomical_start": "2026-10-30T09:39:28.901Z",
+          "astronomical_end": "2026-10-30T23:11:58.518Z",
+          "nautical_end": "2026-10-30T22:36:24.995Z",
+          "civil_end": "2026-10-30T22:00:18.764Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse décroissante",
+      "detail": {
+        "phase_deg": 234.40793670641338,
+        "illumination_fraction": 0.7910449471762936,
+        "magnitude": -11.3913396252013,
+        "rise": "2026-10-31T00:58:44.886Z",
+        "set": "2026-10-30T16:59:08.277Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": 2.2826786059130737,
+        "phase_angle": 143.21058343790494,
+        "helio_dist": 0.34199977863135617,
+        "geo_dist": 0.697914078268553,
+        "az": 245.6,
+        "alt": -2.9
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.19598168279293,
+        "phase_angle": 164.93573759657255,
+        "helio_dist": 0.7234392983389861,
+        "geo_dist": 0.2766116527193119,
+        "az": 263.7,
+        "alt": -14.4
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 0.8973180332627062,
+        "phase_angle": 37.760324436750565,
+        "helio_dist": 1.5923519324671767,
+        "geo_dist": 1.4474098013042616,
+        "az": 336.8,
+        "alt": -22.1
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -2.0079609146663895,
+        "phase_angle": 10.271346006869184,
+        "helio_dist": 5.316415538261937,
+        "geo_dist": 5.527357468226784,
+        "az": 330.2,
+        "alt": -23.1
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.3653607782403778,
+        "phase_angle": 2.7862670817400303,
+        "helio_dist": 9.425762503949857,
+        "geo_dist": 8.533478052766823,
+        "az": 103.4,
+        "alt": 13.8
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Aurores possibles (Kp 5)",
+      "detail": {
+        "kp_max": 5,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-10-31T00:00:00",
+            "kp": 5
+          },
+          {
+            "time": "2026-10-31T03:00:00",
+            "kp": 4.67
+          },
+          {
+            "time": "2026-10-31T06:00:00",
+            "kp": 4.33
+          },
+          {
+            "time": "2026-10-31T09:00:00",
+            "kp": 4
+          },
+          {
+            "time": "2026-10-31T12:00:00",
+            "kp": 3
+          }
+        ]
+      },
+      "notable": true,
+      "propice_a": "guetter les aurores au nord après le crépuscule astronomique",
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 59.666666666666664
+}

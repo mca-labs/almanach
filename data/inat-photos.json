@@ -93,7 +93,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-09-14T09:46:23.702Z"
+    "resolved_at": "2026-10-30T10:48:29.017Z"
   },
   "Setophaga caerulescens": {
     "taxon_inat_id": 199916,
@@ -778,5 +778,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-10-26T10:00:02.367Z"
+  },
+  "Bombycilla garrulus": {
+    "taxon_inat_id": 7429,
+    "name_fr": "Jaseur boréal",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/59611753/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/59611753/square.jpeg",
+    "attribution": "(c) Илья Сухов, some rights reserved (CC BY-NC), uploaded by Илья Сухов",
+    "attribution_name": "Илья Сухов",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-10-30T10:48:29.998Z"
   }
 }
