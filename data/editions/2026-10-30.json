@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-10-30",
+  "generated_at": "2026-10-31T10:18:40.359Z",
+  "title": null,
+  "summary": "Journée fraîche et calme sous un ciel voilé — la forêt tourne au ralenti, mais les corbeaux et les geais n'ont pas dit leur dernier mot.",
+  "body_md": "L'air est resté froid toute la journée, coincé entre six et dix degrés, avec un vent d'ouest si faible qu'on l'oubliait. La lumière est arrivée tôt, timide, et a plafonné vers onze heures à peine au quart de sa force estivale. C'est la lumière d'arrière-saison, celle qui ne promet rien mais qui éclaire honnêtement ce qu'il reste à voir : des arbres presque nus, un sous-bois qui commence à laisser voir loin, et la pression barométrique stable comme un lac gelé. Pas de pluie. Hier il en était tombé un peu, mais aujourd'hui, rien.\n\nLes mésanges à tête noire ont dominé le relevé — soixante-six détections, fidèles à leur rôle de sentinelles permanentes. Puis les corbeaux, nombreux eux aussi, et les geais bleus qui ont continué à crier bien après seize heures dans l'obscurité montante. Un bruant hudsonien s'est fait entendre une seule fois, portant dans sa voix l'odeur de la toundra d'où il arrive. Les deux pics, le grand et le petit, ont travaillé en silence dans les bois morts — chacun sa technique, chacun sa profondeur d'écorce — sans se préoccuper l'un de l'autre. Un dur-bec des sapins aussi, une seule fois : comme une promesse de grand froid.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit du 31 octobre s'ouvrira à moitié couverte — environ 45 % de nuages — ce qui laissera des fenêtres pour observer Saturne, la seule planète notable qui restera au-dessus de l'horizon en soirée, à une hauteur raisonnable vers le sud-est. La lune gibbeuse décroissante, éclairée à près de 70 %, se couchera en fin d'après-midi et ne gênera donc pas l'obscurité de la nuit ; elle ne se lèvera à nouveau qu'après 2 h du matin, laissant plusieurs heures de ciel relativement sombre entre les trouées de nuages.",
+  "theme_tags": [
+    "automne",
+    "oiseaux",
+    "froid",
+    "calme",
+    "foret",
+    "migration"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 6.9,
+      "temp_max_c": 9.9,
+      "ecart_normale_c": 5.6,
+      "vent": "calme, O, rafale max 12,6 km/h",
+      "pluie_mm": 0,
+      "pression": "stable (964,8 mb)"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 54,
+      "confidence": 0.993
+    },
+    "sky": {
+      "for_date": "2026-10-31",
+      "moon_phase": "Gibbeuse décroissante (69 %)",
+      "moon_set": "17h41 HNE",
+      "moon_rise": "02h19 HNE",
+      "cloud_cover_pct": 45,
+      "planete_notable": "Saturne (alt. 14°, SO)"
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Nature sauvage que réside la préservation du monde."
+}

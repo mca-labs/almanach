@@ -621,7 +621,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-08T11:16:36.804Z"
+    "resolved_at": "2026-10-31T10:18:13.997Z"
   },
   "Falco columbarius": {
     "taxon_inat_id": 4672,
@@ -790,5 +790,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-10-30T10:48:29.998Z"
+  },
+  "Ardea alba": {
+    "taxon_inat_id": 144455,
+    "name_fr": "Grande Aigrette",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56653891/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56653891/square.jpg",
+    "attribution": "(c) daverowe, some rights reserved (CC BY-NC)",
+    "attribution_name": "daverowe",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-10-31T10:18:14.958Z"
   }
 }
