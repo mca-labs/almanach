@@ -165,7 +165,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-11T10:44:59.505Z"
+    "resolved_at": "2026-11-01T11:12:04.178Z"
   },
   "Megaceryle alcyon": {
     "taxon_inat_id": 2548,
@@ -802,5 +802,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-10-31T10:18:14.958Z"
+  },
+  "Acanthis flammea": {
+    "taxon_inat_id": 145300,
+    "name_fr": "Sizerin flammé",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/226173/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/226173/square.jpg",
+    "attribution": "(c) Bill Bouton, some rights reserved (CC BY-NC)",
+    "attribution_name": "Bill Bouton",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-11-01T11:12:04.947Z"
   }
 }

@@ -1,0 +1,149 @@
+{
+  "for_date": "2026-11-01",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-11-01T11:26:18.993Z",
+        "sunset": "2026-11-01T21:25:08.385Z",
+        "sun_set_azimuth": 249,
+        "sky_map_ref": "2026-11-01T21:57:21.297Z",
+        "twilight": {
+          "civil_start": "2026-11-01T10:54:04.406Z",
+          "nautical_start": "2026-11-01T10:17:48.308Z",
+          "astronomical_start": "2026-11-01T09:42:08.497Z",
+          "astronomical_end": "2026-11-01T23:09:11.650Z",
+          "nautical_end": "2026-11-01T22:33:34.900Z",
+          "civil_end": "2026-11-01T21:57:21.297Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse décroissante",
+      "detail": {
+        "phase_deg": 261.07379868367417,
+        "illumination_fraction": 0.5787346940218293,
+        "magnitude": -10.539435641883912,
+        "rise": "2026-11-02T03:41:24.702Z",
+        "set": "2026-11-01T18:13:24.122Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": 3.507598379651867,
+        "phase_angle": 155.83502947349623,
+        "helio_dist": 0.3318758477977472,
+        "geo_dist": 0.6805053807833065,
+        "az": 248.7,
+        "alt": -4
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.244976644624371,
+        "phase_angle": 161.35346479738138,
+        "helio_dist": 0.7231662431132757,
+        "geo_dist": 0.2801293029910473,
+        "az": 265.8,
+        "alt": -15.1
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 0.876806003754615,
+        "phase_angle": 37.81802329379296,
+        "helio_dist": 1.594522147352842,
+        "geo_dist": 1.4312416645532182,
+        "az": 336.9,
+        "alt": -22.5
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -2.019117598875644,
+        "phase_angle": 10.359040522572073,
+        "helio_dist": 5.317050242096307,
+        "geo_dist": 5.497265033368149,
+        "az": 331.1,
+        "alt": -23.5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.37992395200871343,
+        "phase_angle": 2.9810261362317876,
+        "helio_dist": 9.425154039400303,
+        "geo_dist": 8.54921966737146,
+        "az": 104.5,
+        "alt": 14.6
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Kp prévu 3",
+      "detail": {
+        "kp_max": 3,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-11-02T00:00:00",
+            "kp": 2.67
+          },
+          {
+            "time": "2026-11-02T03:00:00",
+            "kp": 3
+          },
+          {
+            "time": "2026-11-02T06:00:00",
+            "kp": 3
+          },
+          {
+            "time": "2026-11-02T09:00:00",
+            "kp": 2.67
+          },
+          {
+            "time": "2026-11-02T12:00:00",
+            "kp": 2
+          }
+        ]
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 95.88888888888889
+}
