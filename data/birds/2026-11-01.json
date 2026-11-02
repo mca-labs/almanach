@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-01",
+  "total_detections": 243,
+  "unique_species": 9,
+  "top_species": [
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 123,
+      "max_confidence": 0.9929554462432861,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-115839.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 52,
+      "max_confidence": 0.9235252737998962,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-120107.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 39,
+      "max_confidence": 0.9954493641853333,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-143137.flac"
+    },
+    {
+      "taxon_common": "American Goldfinch",
+      "taxon_scientific": "Spinus tristis",
+      "count": 12,
+      "max_confidence": 0.9679082036018372,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-151327.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 7,
+      "max_confidence": 0.9872310757637024,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-162931.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 6,
+      "max_confidence": 0.8850035667419434,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-122455.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 2,
+      "max_confidence": 0.8292213678359985,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-121515.flac"
+    },
+    {
+      "taxon_common": "American Tree Sparrow",
+      "taxon_scientific": "Spizelloides arborea",
+      "count": 1,
+      "max_confidence": 0.7289276123046875,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-145324.flac"
+    },
+    {
+      "taxon_common": "Pine Grosbeak",
+      "taxon_scientific": "Pinicola enucleator",
+      "count": 1,
+      "max_confidence": 0.9680538773536682,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-111440.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.9929554462432861,
+    "observed_at": "2026-11-01T06:58:39-05:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261101-115839.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    66,
+    56,
+    40,
+    17,
+    18,
+    13,
+    6,
+    8,
+    10,
+    5,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
