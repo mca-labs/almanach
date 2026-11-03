@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-11-02",
+  "generated_at": "2026-11-03T11:49:24.578Z",
+  "title": "Le junco tient le Val",
+  "summary": "Douceur anormale sur la forêt — onze degrés en novembre, vent quasi nul, et les juncos partout.",
+  "body_md": "Quatre jours sans pluie, et ce matin encore le sol était sec sous la litière. Le thermomètre a plafonné à douze degrés — plus de onze degrés au-dessus des normales pour un début novembre — dans un calme presque complet : rafales à peine perceptibles du SE, pression qui tient. La lumière de dix heures était franche, presque printanière dans son aplomb, avant de faiblir doucement le reste de la journée.\n\nSept espèces seulement, et le junco ardoisé les écrase toutes : quatre cent deux détections, une présence qui a commencé avant l'aube et duré jusqu'en milieu d'après-midi. Ces oiseaux hivernent ici, cherchent les graines dans la litière, se déplacent en groupes serrés et nerveux ; cette douceur prolongée ne les presse pas, et ils prennent leur temps. Une buse à queue rousse a crié en début d'après-midi — quatre passages notés, le genre de voix qui traverse l'air clair sans effort. Un bruant à couronne blanche et un bruant hudsonien ont été entendus une fois chacun : des migrateurs encore en route, qui ne feront pas long feu.",
+  "sky_narrative": "La nuit du 2 au 3 novembre s'ouvrira sous un ciel presque entièrement bouché — couverture nuageuse à près de 97 % — qui masquera Saturne, seule planète au-dessus de l'horizon en soirée. Le croissant de lune, éclairé à environ 35 %, se lèvera peu après cinq heures du matin et se couchera avant la fin de l'après-midi suivant ; il ne percera de toute façon guère ces nuages.",
+  "theme_tags": [
+    "douceur-anormale",
+    "oiseaux-hivernants",
+    "migration-tardive",
+    "calme",
+    "novembre"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 12.2,
+      "temp_min_c": 11,
+      "ecart_normale_c": 11.2,
+      "rain_day_mm": 0,
+      "jours_depuis_derniere_pluie": 4,
+      "wind": "calme, SE",
+      "pression_mb": 972.7
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Red-tailed Hawk",
+      "taxon_scientific": "Buteo jamaicensis",
+      "count": 4,
+      "observed_at": "2026-11-02T14:15:37-05:00"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 35,
+      "cloud_cover_night_pct": 97,
+      "planet_notable": [
+        "Saturne (alt 15.5°)"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
