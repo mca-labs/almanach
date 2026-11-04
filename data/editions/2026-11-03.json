@@ -1,0 +1,40 @@
+{
+  "entry_date": "2026-11-03",
+  "generated_at": "2026-11-04T11:59:54.815Z",
+  "title": null,
+  "summary": "Cinq jours sans pluie et neuf espèces présentes — novembre installe sa garde rapprochée au Val.",
+  "body_md": "La saison a fait le ménage. Depuis cinq jours la pluie se fait rare, et ce qui reste au Val, ce sont ceux qui resteront : geai bleu, mésange à tête noire, pic chevelu, pic mineur — la garde d'hiver au complet. Les deux bruants des arbres ont rejoint le groupe, discrets, grappillant ce qu'ils trouvent dans la litière. Cent cinquante-cinq détections ce jour-là, presque toutes concentrées entre l'aube et le milieu de l'après-midi, puis le silence.\n\nLe bruant à gorge blanche a quand même tenu sa note — dix-sept fois entendu, jusqu'en soirée — avec ce sifflement un peu plaintif qui lui appartient. Lui et le bec-croisé à ailes blanches font figure d'invités : des passagers en transit, peut-être, ou des hivernants en train de décider. Quelque part dans le sous-bois, trois becs-croisés cherchaient des cônes, bavards comme ils savent l'être. La forêt ne les a pas encore congédiés.",
+  "sky_narrative": "La nuit sera presque entièrement bouchée — 95 % de couverture nuageuse — et le croissant de lune déclinant se couchera peu après 14 h, heure locale, bien avant que l'obscurité ne soit complète. Saturne sera le seul astre à tenter sa chance à l'est, mais les nuages auront très certainement le dernier mot.",
+  "theme_tags": [
+    "hivernants",
+    "bruants",
+    "becs-croisés",
+    "novembre",
+    "garde-hiver",
+    "nuageux"
+  ],
+  "highlights": {
+    "weather": {
+      "pluie_7j_total_mm": 0.3,
+      "jours_depuis_derniere_pluie": 5,
+      "jours_depuis_dernier_orage": 68
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "confidence": 0.8882091641426086,
+      "observed_at": "2026-11-03T16:01:27-05:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261103-210126.flac"
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "illumination_fraction": 0.2532562199762031,
+      "cloud_cover_night_pct": 95.22222222222223,
+      "notable_planets": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-3",
+  "fragment_translation_fr": "Simplicité, simplicité, simplicité ! Je dis : que vos affaires se réduisent à deux ou trois, et non à cent ou à mille."
+}
