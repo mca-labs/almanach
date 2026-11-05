@@ -1,0 +1,36 @@
+{
+  "entry_date": "2026-11-04",
+  "generated_at": "2026-11-05T12:09:01.859Z",
+  "title": null,
+  "summary": "Début novembre sec et calme au Val — sept espèces fidèles au poste, menées par le geai bleu.",
+  "body_md": "Six jours sans pluie, et l'air porte cette sécheresse légère propre à l'arrière-automne : pas de gel mentionné, pas de vent noté, juste le silence d'une forêt qui s'est dépouillée et attend. L'activité s'est concentrée en deux poussées — une brève à l'aube, une longue entre neuf heures et midi — puis s'est tue l'après-midi comme si la lumière déclinante avait tiré un rideau. Sept espèces, pas une de plus : c'est la liste d'hiver qui s'installe, celle des sédentaires.\n\nLe junco ardoisé dominait en nombre, ses petits cliquetis répandus partout dans les broussailles, mais c'est le geai bleu qui a imposé sa présence. Bruyant, imprévisible, il sait aussi se taire — et quand il se tait, on le remarque autant que quand il crie. Le pic mineur et le pic chevelu travaillaient l'écorce chacun de leur côté, méthodiques, indifférents au calendrier. La mésange à tête noire et le bruant à gorge blanche complétaient ce cercle restreint de fidèles. Une forêt de novembre avec exactement les oiseaux qu'il lui faut.",
+  "sky_narrative": "La nuit qui vient s'ouvre sur un ciel à moitié voilé — environ 55 % de couverture nuageuse, assez pour brouiller les étoiles sans les effacer tout à fait. Un croissant déclinant se lèvera peu après 2 h 30 heure locale et se couchera vers 14 h 30, si bien que les premières heures de la nuit seront les plus sombres. Saturne sera la planète la mieux placée, encore perchée à l'est en début de soirée ; Vénus, Jupiter et Mars seront déjà sous l'horizon à ce moment-là.",
+  "theme_tags": [
+    "oiseaux",
+    "automne",
+    "sédentaires",
+    "silence",
+    "sécheresse"
+  ],
+  "highlights": {
+    "weather": {
+      "note": "Sixième jour sans pluie ; aucune donnée de température ni de vent disponible."
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 65,
+      "max_confidence": 0.9904807209968567
+    },
+    "sky": {
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 17,
+      "cloud_cover_pct": 55,
+      "notable_planets": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la violette fausse-dent quand attendre la grive des bois ; et lorsque j'ai trouvé le trille en fleur, je sais que la saison est bien commencée."
+}
