@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-11-05",
+  "generated_at": "2026-11-06T11:59:27.313Z",
+  "title": null,
+  "summary": "Journée douce et presque sans vent sous un ciel qui s'est dégagé en matinée — cinq degrés au-dessus des normales, et les mésanges partout.",
+  "body_md": "L'air est resté calme toute la journée, à peine troublé par une brise du nord en fin d'après-midi. Le mercure a grimpé jusqu'à 14,4 degrés — cinq degrés au-dessus de ce qu'on attend début novembre — et la lumière de midi, filtrée mais franche, a tenu bon jusqu'à ce que le ciel se referme vers 14 h. Sept jours sans pluie digne de ce nom : le sol sonne creux sous les feuilles mortes, et l'on marche dans un bruit de papier froissé.\n\nLes mésanges à tête noire ont mené la journée de bout en bout, dès l'aube, comme si elles portaient l'agenda de tout le Val. Les geais bleus se sont fait entendre bruyamment, les juncos ardoisés grappillaient dans la litière, et un pic chevelu tambourinait par intermittence sur un tronc mort quelque part dans le sous-bois. Plus discret, le grimpereau brun a fait ses allers-retours le long des écorces dans l'après-midi. Et puis, fugace, un bruant à gorge blanche — une seule détection, tard en soirée, comme une signature posée au bas d'une longue journée ordinaire.",
+  "sky_narrative": "La nuit s'ouvre sur un ciel à moitié couvert — environ 45 % de nuages — ce qui laissera des fenêtres, et c'est heureux : un indice Kp de 5 est prévu aux alentours de minuit, ce qui pourrait porter des aurores boréales au nord de l'horizon si les éclaircies tiennent. Le croissant de lune, à peine 10 % illuminé, se couchera vers 14 h 46, heure locale, et ne gênera pas l'observation ; Saturne brillera dans le secteur est-sud-est, seule planète bien placée cette nuit.",
+  "theme_tags": [
+    "oiseaux",
+    "automne",
+    "chaleur",
+    "silence",
+    "aurore"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 14.4,
+      "temp_min_c": 3.7,
+      "ecart_normale_c": 5.2,
+      "pluie_jour_mm": 0.1,
+      "vent": "calme, du N, rafale max 14,4 km/h",
+      "pression_mb": 960.2,
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 163,
+      "confidence": 0.9553476572036743
+    },
+    "sky": {
+      "for_date": "2026-11-06",
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 9.7,
+      "moon_set_local": "14:46",
+      "aurora_kp_max": 5,
+      "cloud_cover_night_pct": 44.8,
+      "planete_notable": "Saturne (est-sud-est, alt. 16,8°)"
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
