@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-11-06",
+  "generated_at": "2026-11-07T10:58:59.307Z",
+  "title": "Pic mineur, pic majeur — les charpentiers du novembre doux",
+  "summary": "Un vendredi doux et presque sans vent sur le Val, la pression en hausse et l'air sec depuis huit jours.",
+  "body_md": "Huit jours sans pluie, et le sol sonne creux sous les feuilles mortes. La pression a continué de remonter tout au long du jour — 2,7 mb en trois heures — pendant que le vent du sud-est soufflait à peine, moins de deux kilomètres-heure en moyenne. Le mercure a grimpé jusqu'à 13,5 °C en milieu de matinée, soit près de six degrés au-dessus de la normale pour un 6 novembre : une journée presque clémente, posée comme un oubli de saison sur la forêt qui se prépare au froid.\n\nLes pics ont mené la journée. Dryobates villosus a dominé par les chiffres, mais c'est Dryobates pubescens — le pic mineur, plus petit que le poing — qui a retenu l'attention dès le matin. Ces deux espèces travaillent le bois mort différemment : le grand sonde les galeries profondes où les grosses larves hivernent ; le petit s'attaque aux tiges fines, aux rameaux desséchés, aux recoins que son cousin ne peut atteindre. Par un matin sans vent, leurs coups résonnent loin. Les juncos à calotte noire et les bruants à gorge blanche complètent le tableau, discrets parmi les débris de l'automne — quelques-uns, peut-être, en route vers le sud, profitant de ce répit chaud avant le retour du froid.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera largement voilée — près de 87 % de couverture nuageuse — et Saturne, seule planète au-dessus de l'horizon en début de soirée, se glissera entre les éclaircies si elles viennent. La lune, réduite à un mince croissant de 4,5 % d'illumination, se couchera avant la tombée de la nuit astronomique et ne gênera pas l'obscurité ; mais les nuages, eux, feront l'essentiel du travail.",
+  "theme_tags": [
+    "oiseaux",
+    "pic",
+    "automne",
+    "secheresse",
+    "douceur",
+    "novembre"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 13.5,
+      "temp_min_c": 8.3,
+      "ecart_normale_c": 5.8,
+      "pression_tendance": "up",
+      "vent": "calme, du SE",
+      "pluie_mm": 0,
+      "jours_sans_pluie": 8
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 3,
+      "confidence": 0.9777315258979797,
+      "observed_at": "2026-11-06T08:29:40-05:00"
+    },
+    "sky": {
+      "for_date": "2026-11-07",
+      "moon_phase": "Dernier croissant",
+      "moon_illumination_pct": 4.5,
+      "cloud_cover_pct": 87,
+      "planetes_notables": [
+        "Saturne (visible, 17° alt)"
+      ]
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il est des gens qui peuvent vivre sans choses sauvages, et d'autres qui ne le peuvent pas."
+}
