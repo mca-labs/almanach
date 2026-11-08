@@ -1,0 +1,34 @@
+{
+  "entry_date": "2026-11-07",
+  "generated_at": "2026-11-08T11:12:57.073Z",
+  "title": null,
+  "summary": "Neuf jours sans pluie digne de ce nom, et les corvidés tiennent le haut du val.",
+  "body_md": "L'automne s'est installé dans la sécheresse — neuf jours depuis la dernière pluie, et la forêt le porte dans ses feuilles mortes, dans le craquement du sol, dans cette lumière de novembre qui ne chauffe plus. Six espèces seulement au compteur aujourd'hui : la saison a élagué, ne retenant que les sédentaires et les hivernants. Mésanges, sittelles, pic mineur — les habitués reprennent leurs quartiers d'hiver comme si de rien n'était.\n\nMais c'est le grand corbeau qui a donné le ton ce matin, peu après sept heures. Cinq détections en tout, pas davantage — une présence discrète pour un oiseau de cette taille. Le geai bleu, lui, a dominé la journée sans partage : quatre-vingt-deux détections, un tonnerre de voix criardes entre l'aube et midi, puis le silence. Novembre lui appartient peut-être autant qu'au froid.",
+  "sky_narrative": "La nuit sera entièrement couverte — cent pour cent de nuages — et le mince croissant de lune, à peine un pour cent illuminé, se couchera de toute façon avant que le ciel soit bien noir. Saturne sera le seul astre à tenir une position haute, mais derrière cette couche, rien ne percera.",
+  "theme_tags": [
+    "corvidés",
+    "automne",
+    "sécheresse",
+    "hivernants",
+    "novembre"
+  ],
+  "highlights": {
+    "weather": {
+      "pluie_7j_total_mm": 0.1,
+      "jours_depuis_derniere_pluie": 9
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "observed_at": "2026-11-07T07:24:33-05:00",
+      "confidence": 0.8808639049530029
+    },
+    "sky": {
+      "cloud_cover_night_pct": 100,
+      "moon_phase": "Dernier croissant",
+      "moon_illumination": 0.013448158440867775
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}
