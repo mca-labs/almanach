@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-11-09",
+  "generated_at": "2026-11-10T12:28:09.654Z",
+  "title": "Onze jours de gel sec",
+  "summary": "Froid calme et air immobile sur le Val — le geai bleu tient la forêt à lui seul.",
+  "body_md": "La pression remontait lentement depuis le matin, et l'air ne bougeait presque pas — rafales maximales à peine perceptibles vers dix heures, puis plus rien. Sans vent et sans pluie depuis onze jours, le froid s'est installé proprement : un degré sous zéro la nuit, moins de quatre en après-midi, et une lumière franche de mi-novembre qui a atteint son pic vers treize heures. Le Val avait ce calme particulier des journées sèches d'automne avancé, quand l'air est assez transparent pour porter les sons loin.\n\nLes geais bleus ont dominé la journée de bout en bout — plus de deux cents détections, loin devant tout le reste. Mésanges et juncos tenaient leur rang habituel, les deux pics travaillaient à leur affaire dans les bois. Et puis, brièvement, en milieu de matinée, trois jaseurs boréaux ont traversé la liste : des visiteurs hivernaux venus du nord, qui descendent au gré de la disponibilité des fruits. Leur passage a duré ce qu'il a duré. Dans la hiérarchie des voix du Val ce lundi, ça ne changeait rien — le geai avait déjà tranché.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le croissant de lune sera si mince — à peine un pour cent éclairé — qu'il se couchera peu après le soleil, laissant la nuit entière aux étoiles. Avec environ 39 % de couverture nuageuse prévue, les éclaircies devraient être fréquentes : Saturne sera visible en début de soirée, bas sur l'horizon est-sud-est, seule planète accessible cette nuit depuis le Val.",
+  "theme_tags": [
+    "hiver",
+    "geai-bleu",
+    "jaseur-boreal",
+    "calme",
+    "secheresse",
+    "lumiere"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -1.2,
+      "temp_max_c": 3.7,
+      "ecart_normale_c": 1.8,
+      "pression_tendance": "up",
+      "pression_mb": 957.1,
+      "vent": "calme plat",
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 11
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 106,
+      "confidence": 0.9747324585914612,
+      "observed_at": "2026-11-09T14:12:40-05:00"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 1,
+      "moon_set": "2026-11-10T21:26:39.899Z",
+      "cloud_cover_night_pct": 39.1,
+      "planets_notable": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walking-5",
+  "fragment_translation_fr": "…c'est dans la Sauvagerie que réside la préservation du monde."
+}

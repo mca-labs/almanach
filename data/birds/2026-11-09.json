@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-09",
+  "total_detections": 534,
+  "unique_species": 9,
+  "top_species": [
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 211,
+      "max_confidence": 0.9919655323028564,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-185238.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 135,
+      "max_confidence": 0.952580451965332,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-131011.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 106,
+      "max_confidence": 0.9747324585914612,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-191234.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 53,
+      "max_confidence": 0.9927088022232056,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-123847.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 20,
+      "max_confidence": 0.9867947697639465,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-120907.flac"
+    },
+    {
+      "taxon_common": "Red-tailed Hawk",
+      "taxon_scientific": "Buteo jamaicensis",
+      "count": 3,
+      "max_confidence": 0.713282585144043,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-125449.flac"
+    },
+    {
+      "taxon_common": "Bohemian Waxwing",
+      "taxon_scientific": "Bombycilla garrulus",
+      "count": 3,
+      "max_confidence": 0.9949082732200623,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-111847.flac"
+    },
+    {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 2,
+      "max_confidence": 0.8831214308738708,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-120235.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 1,
+      "max_confidence": 0.5201265215873718,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-125644.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Dark-eyed Junco",
+    "taxon_scientific": "Junco hyemalis",
+    "confidence": 0.9747324585914612,
+    "observed_at": "2026-11-09T14:12:40-05:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261109-191234.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    27,
+    197,
+    15,
+    61,
+    0,
+    106,
+    12,
+    32,
+    56,
+    26,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
