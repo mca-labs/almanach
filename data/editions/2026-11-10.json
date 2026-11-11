@@ -1,0 +1,46 @@
+{
+  "entry_date": "2026-11-10",
+  "generated_at": "2026-11-11T11:48:08.025Z",
+  "title": "Novembre tient bon",
+  "summary": "Froid sec et calme plat sur le Val — douze jours sans pluie, et la forêt hivernale garde ses résidents fidèles.",
+  "body_md": "Le mercure n'a pas dépassé deux degrés, et le vent s'est tu presque entièrement — rafale maximale de moins de sept kilomètres à l'heure en matinée, puis rien. La pression restait basse, posée sur la vallée comme une dalle, sans bouger dans un sens ni dans l'autre. La lumière de novembre, courte et oblique, a tout de même atteint son pic vers treize heures, suffisante pour allumer le sous-bois un moment avant de s'effacer. Douze jours sans pluie : la litière craque sous chaque pas, et l'air sent la résine froide.\n\nLe gros-bec errant a donné le ton dès le matin — neuf détections, voix tranchante et métallique dans le silence. C'est un oiseau des hauts plateaux boréaux qui descend certains hivers vers les vallées, suivant les arbres à graines ; sa présence ce jour-là n'avait rien d'assuré, et c'est précisément ce qui la rendait notable. Mésanges à tête noire et geais bleus ont ensuite dominé la journée sans partage — plus de quatre cents détections à eux deux — tandis que le grimpereau brun longeait quelque écorce en spirale, discret jusqu'à l'invisibilité. Un seul passage de buse à queue rousse en fin d'après-midi, puis le silence.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera presque sans nuages — couverture inférieure à sept pour cent — et la lune, à peine trois pour cent éclairée, se couchera peu après vingt-deux heures, laissant plusieurs heures d'obscurité franche. Saturne sera visible dans le secteur sud-est, à dix-neuf degrés de hauteur ; Vénus et Jupiter, eux, seront déjà sous l'horizon au moment où le ciel s'assombrira vraiment.",
+  "theme_tags": [
+    "hiver",
+    "froid-sec",
+    "residents",
+    "silence",
+    "gros-bec",
+    "novembre"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -1.9,
+      "temp_max_c": 2.4,
+      "ecart_normale_c": -1.1,
+      "rain_day_mm": 0,
+      "jours_sans_pluie": 12,
+      "vent": "calme plat",
+      "pression": "basse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 9,
+      "observed_at": "2026-11-10T07:59:04-05:00",
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261110-125903.flac"
+    },
+    "sky": {
+      "for_date": "2026-11-11",
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 3.7,
+      "moon_set": "2026-11-11T22:09:05.897Z",
+      "cloud_cover_night_pct": 6.7,
+      "planets_visible": [
+        "Saturne"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
