@@ -1,0 +1,43 @@
+{
+  "entry_date": "2026-11-11",
+  "generated_at": "2026-11-12T12:31:12.679Z",
+  "title": "Le geai et le silence du froid",
+  "summary": "Journée sèche et calme sous un ciel d'hiver précoce, le mercure à peine au-dessus de zéro — le Val tourne au ralenti.",
+  "body_md": "Le froid s'est installé sans fracas. La température n'a jamais vraiment décollé, stagnant entre le gel et un vague deux degrés, pendant que le vent du nord restait si discret qu'on ne l'entendait presque pas dans les branches. La pression montait lentement — signe que rien de violent ne s'annonce. Treize jours sans pluie, et l'air portait cette sécheresse particulière de novembre, fine et coupante, qui rend les sons plus nets et les silences plus larges.\n\nLes geais bleus ont dominé la journée, bruyants et souverains comme ils savent l'être quand le nombre leur en donne la licence. Les mésanges à tête noire tenaient leur propre compte, fidèles à leur rythme, pendues aux rameaux pour grapiller ce que la saison laisse encore. Deux pics ont répondu de part et d'autre — le grand, Dryobates villosus, s'entendait surtout à mi-journée, son tambourinement bref et net sur l'écorce froide, à la recherche de larves là où le bois commence à céder. Sept espèces en tout, pas une de plus : la liste de novembre, maigre et juste.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera dégagée aux trois quarts — de bonnes conditions pour observer. Saturne sera visible assez haut dans le ciel du soir, altitude proche de 20°, pendant que le premier croissant de lune, à 8 % d'illumination, se couchera peu avant 23 h (heure locale), laissant l'obscurité presque totale jusqu'à l'aube. Les Léonides approchent de leur pic — encore cinq jours — mais les premières filantes sporadiques traverseront déjà la nuit si le ciel reste aussi dégagé.",
+  "theme_tags": [
+    "hiver",
+    "froid",
+    "oiseaux-residents",
+    "calme",
+    "secheresse"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.8,
+      "temp_max_c": 2.3,
+      "pluie_mm": 0,
+      "vent": "calme, du N",
+      "pression_tendance": "hausse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 4,
+      "observed_at": "2026-11-11T12:28:28-05:00"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 8,
+      "moon_set_local": "18:01",
+      "cloud_cover_pct": 22,
+      "planetes_notables": [
+        "Saturne (alt. 19.5°)",
+        "Vénus et Jupiter sous l'horizon"
+      ],
+      "evenement": "Léonides — pic dans 5 jours (ZHR 15)"
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne me confronter qu'aux faits essentiels de l'existence, et voir si je ne pourrais pas apprendre ce qu'elle avait à m'enseigner — pour ne pas, à l'heure de mourir, découvrir que je n'avais pas vécu."
+}

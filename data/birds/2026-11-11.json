@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-11",
+  "total_detections": 525,
+  "unique_species": 7,
+  "top_species": [
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 277,
+      "max_confidence": 0.9932841062545776,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-172637.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 189,
+      "max_confidence": 0.9757929444313049,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-122555.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 38,
+      "max_confidence": 0.9708718061447144,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-194907.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 11,
+      "max_confidence": 0.9806020259857178,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-130020.flac"
+    },
+    {
+      "taxon_common": "Hairy Woodpecker",
+      "taxon_scientific": "Dryobates villosus",
+      "count": 4,
+      "max_confidence": 0.9696370959281921,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-172827.flac"
+    },
+    {
+      "taxon_common": "American Goldfinch",
+      "taxon_scientific": "Spinus tristis",
+      "count": 4,
+      "max_confidence": 0.6859614849090576,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-160500.flac"
+    },
+    {
+      "taxon_common": "Red-tailed Hawk",
+      "taxon_scientific": "Buteo jamaicensis",
+      "count": 2,
+      "max_confidence": 0.7532264590263367,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-145010.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Hairy Woodpecker",
+    "taxon_scientific": "Dryobates villosus",
+    "confidence": 0.9696370959281921,
+    "observed_at": "2026-11-11T12:28:28-05:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261111-172827.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    44,
+    132,
+    33,
+    131,
+    11,
+    6,
+    88,
+    8,
+    35,
+    37,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
