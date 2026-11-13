@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-11-12",
+  "generated_at": "2026-11-13T12:03:50.566Z",
+  "title": null,
+  "summary": "Journée froide et calme sous un ciel pâle — le geai bleu tient la forêt à lui seul.",
+  "body_md": "Quatorze jours sans pluie, et l'air a cette sécheresse particulière de novembre qui fait craquer les branches sous les pieds. La température a flirté avec zéro toute la journée — à peine 3,2 °C au plus chaud, vers midi — avant de replonger sous le point de gel en soirée. Le baromètre descend doucement, sans urgence. Le vent était presque inexistant, quelques rafales légères en début d'après-midi, rien qui dérange.\n\nLes geais bleus ont dominé la journée avec une constance remarquable : plus de trois cents détections, le double des mésanges à tête noire qui leur tenaient compagnie dans le sous-bois. Les pics mineurs et les pics chevelus ont tambouriné par intervalles, creusant en quête de larves cachées sous l'écorce. Un bec-croisé à ailes blanches a lancé un seul appel en fin de journée, bref et métallique, avant de disparaître. Et puis cette note inattendue : un quiscale bronzé, en novembre — un retardataire, ou peut-être quelqu'un qui a mal calculé son départ vers le sud.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Le premier croissant de lune se couchera peu après minuit, laissant la nuit s'assombrir franchement — mais près de la moitié du ciel sera voilée de nuages. Les Léonides approchent de leur pic, dans quatre jours : quelques filantes pourraient traverser les éclaircies cette nuit, à raison d'une quinzaine par heure au zénith dans des conditions idéales, mais la couverture nuageuse en compromettra une bonne part. Saturne sera visible en début de soirée, bas dans le sud-est.",
+  "theme_tags": [
+    "hiver",
+    "geai-bleu",
+    "secheresse",
+    "calme",
+    "oiseaux-residents"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -2.8,
+      "temp_max_c": 3.2,
+      "ecart_normale_c": 2.4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 14,
+      "vent": "calme plat",
+      "pression_tendance": "down"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 313,
+      "confidence": 0.991
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 14,
+      "moon_set": "2026-11-14T00:01:05Z",
+      "cloud_cover_night_pct": 44,
+      "meteor_shower": "Léonides — pic dans 4 jours (17 nov.)",
+      "planets_notable": [
+        "Saturne (visible, alt 19.9°)"
+      ]
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois ; et quand j'ai trouvé le trille en fleur, je sais que la saison est bien commencée."
+}

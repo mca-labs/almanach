@@ -237,7 +237,7 @@
     "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-23T09:25:56.273Z"
+    "resolved_at": "2026-11-13T12:03:24.385Z"
   },
   "Regulus satrapa": {
     "taxon_inat_id": 117100,
@@ -753,7 +753,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-22T09:19:57.698Z"
+    "resolved_at": "2026-11-13T12:03:25.444Z"
   },
   "Buteo jamaicensis": {
     "taxon_inat_id": 5212,
@@ -814,5 +814,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-11-01T11:12:04.947Z"
+  },
+  "Quiscalus quiscula": {
+    "taxon_inat_id": 9602,
+    "name_fr": "quiscale bronzé",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/265296529/medium.jpg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/265296529/square.jpg",
+    "attribution": "(c) brian stahls, some rights reserved (CC BY-NC), uploaded by brian stahls",
+    "attribution_name": "brian stahls",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-11-13T12:03:26.549Z"
   }
 }
