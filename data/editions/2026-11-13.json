@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-11-13",
+  "generated_at": "2026-11-14T11:22:29.347Z",
+  "title": null,
+  "summary": "Froid sec et calme au Val — quinze jours sans pluie, et les hivernants tiennent bon.",
+  "body_md": "L'air est resté immobile toute la journée, presque sans vent, posé sur un ciel qui a laissé passer juste assez de lumière pour tiédir légèrement l'après-midi — le thermomètre a frôlé les trois degrés avant de redescendre sous zéro au crépuscule. La pression stagne, basse, sans bouger d'un souffle. Depuis quinze jours, pas une goutte. Le sol est dur, la litière craque sous le gel, et cette sécheresse hivernale donne au Val un air d'attente tranquille, comme si la forêt avait retenu son souffle.\n\nLes mésanges à tête noire ont dominé la journée, omniprésentes du lever au milieu de l'avant-midi, fouillant l'écorce et les brindilles avec cette énergie précise qui ne leur fait jamais défaut même dans le froid. Les geais bleus ont suivi, bruyants et vigilants. Deux pics ont travaillé en parallèle — le mineur et le chevelu — cherchant les larves dans le bois mort. Un grand corbeau a lancé son cri rauque vers midi, bref et sans réponse. Deux bruants à couronne blanche ont signalé leur présence, discrets, et un junco ardoisé a complété la liste. Sept espèces, pas une de plus — l'hiver distille.",
+  "sky_narrative": "La nuit qui s'ouvre sera presque entièrement voilée — la couverture nuageuse frise les cent pour cent — et le ciel profond restera fermé. Un croissant de lune représentant environ vingt et un pour cent de sa surface éclairée se couchera peu après deux heures du matin, sans percer grand-chose à travers les nuages. Dans trois jours, les Léonides atteindront leur pic : avec un taux zénithal horaire prévu à quinze météores et cette couverture nuageuse persistante, la nuit de ce soir ne sera pas propice à les guetter — il faudra miser sur l'amélioration d'ici le 17.",
+  "theme_tags": [
+    "hiver",
+    "secheresse",
+    "oiseaux-hivernants",
+    "calme",
+    "froid"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 3.1,
+      "temp_min_c": -2.3,
+      "ecart_normale_c": 4.4,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 15,
+      "vent": "calme",
+      "pression": "basse, stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 199,
+      "confidence": 0.9703715443611145
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 21,
+      "moon_set": "2026-11-15T01:06:29Z",
+      "cloud_cover_pct": 99,
+      "meteor_shower": "Léonides — pic dans 3 j (17 nov.)",
+      "planetes_notables": [
+        "Vénus (sous horizon)",
+        "Jupiter (sous horizon)"
+      ]
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-3",
+  "fragment_translation_fr": "Simplicité, simplicité, simplicité ! Je dis : que vos affaires se réduisent à deux ou trois, et non à cent ou à mille."
+}
