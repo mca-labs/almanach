@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-11-14",
+  "generated_at": "2026-11-15T11:53:00.518Z",
+  "title": null,
+  "summary": "Froid sec et calme plat sur le Val — seize jours sans pluie, et l'hiver qui s'installe à pas comptés.",
+  "body_md": "La journée a tenu entre zéro et un degré et demi, sans un souffle de vent — la rafale maximale de la matinée n'a pas dépassé quelques kilomètres à l'heure. La pression monte doucement, le ciel a laissé filtrer assez de lumière pour un pic de huit mille lux vers dix heures, puis s'est refermé sur lui-même. Seize jours sans pluie : le sol doit être dur sous la litière, les mares réduites à leur plus simple expression. L'hiver s'installe, non pas d'un coup, mais par couches successives, comme s'il cherchait à ne pas alarmer.\n\nC'est le geai bleu qui a dominé la journée, loin devant tout le reste — cent dix détections contre soixante-quinze pour la mésange à tête noire, et l'activité s'est concentrée en deux vagues serrées, à l'aurore et en début de matinée. Vers neuf heures trente, quelques bernaches du Canada ont traversé le ciel en criant ; elles ne font que passer, et leur appel porte quelque chose d'administratif, presque pressé. Deux gros-becs errants ont aussi signalé leur présence en fin de matinée — une espèce qui voyage en hiver selon ses propres règles, que ni le froid ni le calendrier ne semblent contraindre tout à fait.",
+  "sky_narrative": "Le premier croissant de lune se lèvera peu après 17 h (heure locale) et se couchera aux premières heures de la nuit suivante, laissant le ciel presque libre dans la seconde moitié de la nuit — une couverture nuageuse d'un tiers suffira à brouiller les secteurs les plus dégagés. Les Léonides approchent de leur pic, dans deux jours : les premières filantes seront déjà possibles cette nuit, après la fin du crépuscule astronomique, mais c'est dans deux nuits qu'il faudra guetter l'essaim dans sa pleine vigueur.",
+  "theme_tags": [
+    "hiver",
+    "migration",
+    "silence",
+    "froid-sec",
+    "oiseaux-residants"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": 0.3,
+      "temp_max_c": 1.5,
+      "ecart_normale_c": 4.3,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 16,
+      "vent": "calme plat",
+      "pression_tendance": "up"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 3,
+      "observed_at": "2026-11-14T09:39:49-05:00"
+    },
+    "sky": {
+      "moon_phase": "Premier croissant",
+      "moon_illumination_pct": 29,
+      "moon_set_local": "2026-11-15T21:14 (heure locale approx.)",
+      "cloud_cover_night_pct": 34,
+      "meteor_shower": "Léonides — pic dans 2 j (ZHR ~15)"
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans choses sauvages, et ceux qui ne le peuvent pas."
+}

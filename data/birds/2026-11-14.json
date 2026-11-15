@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-14",
+  "total_detections": 192,
+  "unique_species": 5,
+  "top_species": [
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 110,
+      "max_confidence": 0.9767990708351135,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261114-135735.flac"
+    },
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 75,
+      "max_confidence": 0.9776216745376587,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261114-192200.flac"
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 3,
+      "max_confidence": 0.6457337141036987,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261114-143949.flac"
+    },
+    {
+      "taxon_common": "Song Sparrow",
+      "taxon_scientific": "Melospiza melodia",
+      "count": 2,
+      "max_confidence": 0.6253349184989929,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261114-164743.flac"
+    },
+    {
+      "taxon_common": "Evening Grosbeak",
+      "taxon_scientific": "Coccothraustes vespertinus",
+      "count": 2,
+      "max_confidence": 0.9084206819534302,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261114-122730.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Canada Goose",
+    "taxon_scientific": "Branta canadensis",
+    "confidence": 0.6457337141036987,
+    "observed_at": "2026-11-14T09:39:49-05:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261114-143949.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    32,
+    102,
+    8,
+    7,
+    13,
+    4,
+    5,
+    2,
+    15,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
