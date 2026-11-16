@@ -826,5 +826,17 @@
     "source": "inaturalist",
     "status": "ok",
     "resolved_at": "2026-11-13T12:03:26.549Z"
+  },
+  "Lanius borealis": {
+    "taxon_inat_id": 558512,
+    "name_fr": "Pie-grièche boréale",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/349208817/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/349208817/square.jpeg",
+    "attribution": "(c) Joe Walewski, some rights reserved (CC BY-NC), uploaded by Joe Walewski",
+    "attribution_name": "Joe Walewski",
+    "license_code": "cc-by-nc",
+    "source": "inaturalist",
+    "status": "ok",
+    "resolved_at": "2026-11-16T12:37:22.237Z"
   }
 }
