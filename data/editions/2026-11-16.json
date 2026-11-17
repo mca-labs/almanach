@@ -1,0 +1,45 @@
+{
+  "entry_date": "2026-11-16",
+  "generated_at": "2026-11-17T13:05:26.428Z",
+  "title": null,
+  "summary": "Journée froide et sèche au Val — le calme plat installe un silence de novembre que les mésanges tiennent à bout de voix.",
+  "body_md": "La gelée a tenu toute la nuit, −4 °C au petit matin, et l'air n'a guère bougé de la journée : vent nul, pression stable à 978 mb, ciel qui s'est ouvert vers onze heures pour laisser passer un peu de lumière avant de se refermer l'après-midi. Dix-huit jours sans pluie — le sol est dur, la litière craque sous les pattes. L'automne finit en longue exhalaison sèche.\n\nLes mésanges à tête noire ont occupé la journée presque à elles seules : deux cent quatre-vingt-quatorze détections, un fond sonore permanent de mi-octobre à la tombée. Les geais bleus leur tenaient compagnie, bruyants et intermittents, et deux pics — le grand et le petit — travaillaient dans le sous-bois, forant l'écorce en silence. Mais l'oiseau du jour est arrivé sur un autre registre : un bruant à gorge blanche, sa note sifflée posée là comme une question sans réponse, curieux attardé de novembre. Un grimpereau brun a glissé le long d'un tronc en fin d'après-midi, presque invisible. Un roitelet à couronne dorée, une seule fois, à midi.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "Cette nuit, le pic des Léonides bat son plein — taux théorique d'une quinzaine de météores à l'heure — et le premier quartier de Lune, à 47 % illuminé, se couchera vers 23 h 32 (heure locale), laissant quelques heures de ciel réellement noir avant l'aube. La couverture nuageuse oscillera autour de 44 %, ce qui devrait laisser des fenêtres : avec de la patience et une exposition au nord-est après minuit, quelques filantes des Léonides passeront peut-être entre les nuages. Saturne sera visible en soirée, à 21° de hauteur vers le sud-est.",
+  "theme_tags": [
+    "hiver",
+    "oiseaux",
+    "secheresse",
+    "calme",
+    "novembre"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -4.2,
+      "temp_max_c": 6,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 18,
+      "vent": "calme plat",
+      "pression_mb": 978,
+      "tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-throated Sparrow",
+      "taxon_scientific": "Zonotrichia albicollis",
+      "count": 10,
+      "observed_at": "2026-11-16T10:07:12-05:00"
+    },
+    "sky": {
+      "for_date": "2026-11-17",
+      "moon_phase": "Premier quartier",
+      "moon_illumination_pct": 47,
+      "moon_set_local": "23:32",
+      "cloud_cover_pct": 44,
+      "meteor_shower": "Pic des Léonides (ZHR ~15)",
+      "planets_notable": [
+        "Saturne (visible, alt 21°)"
+      ]
+    }
+  },
+  "fragment_quote_id": "jules-renard-histoires-naturelles-ver-luisant",
+  "fragment_translation_fr": null
+}
