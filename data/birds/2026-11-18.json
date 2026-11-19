@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-18",
+  "total_detections": 449,
+  "unique_species": 6,
+  "top_species": [
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 319,
+      "max_confidence": 0.9879555702209473,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261118-163932.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 64,
+      "max_confidence": 0.9881026148796082,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261118-180216.flac"
+    },
+    {
+      "taxon_common": "Dark-eyed Junco",
+      "taxon_scientific": "Junco hyemalis",
+      "count": 59,
+      "max_confidence": 0.976586103439331,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261118-152110.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 4,
+      "max_confidence": 0.9866622090339661,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261118-162329.flac"
+    },
+    {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 2,
+      "max_confidence": 0.5413737297058105,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261118-152500.flac"
+    },
+    {
+      "taxon_common": "Golden-crowned Kinglet",
+      "taxon_scientific": "Regulus satrapa",
+      "count": 1,
+      "max_confidence": 0.5398964285850525,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261118-134028.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "White-crowned Sparrow",
+    "taxon_scientific": "Zonotrichia leucophrys",
+    "confidence": 0.5413737297058105,
+    "observed_at": "2026-11-18T10:25:06-05:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261118-152500.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    30,
+    115,
+    48,
+    61,
+    37,
+    55,
+    29,
+    32,
+    7,
+    35,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

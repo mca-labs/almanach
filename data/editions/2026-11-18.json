@@ -1,0 +1,49 @@
+{
+  "entry_date": "2026-11-18",
+  "generated_at": "2026-11-19T12:49:07.872Z",
+  "title": null,
+  "summary": "Journée douce et sèche, le vent presque absent — vingt jours sans pluie, et la forêt se tient immobile dans cet automne attardé.",
+  "body_md": "Vingt jours sans pluie, et la pression ne bouge plus, posée là comme une dalle. Le thermomètre a grimpé jusqu'à dix degrés — dix degrés de plus que la normale pour ce milieu de novembre — dans un air calme venu du sud, presque sans vent. La lumière du matin était froide et franche, puis elle a baissé vers l'après-midi comme à regret, les heures de clarté se comptant désormais sur les doigts d'une main.\n\nSix espèces ce jour-là, ni plus ni moins — le noyau dur de novembre. Les mésanges à tête noire dominaient tout, présentes à chaque heure active de la journée, leur voix familière tenant lieu de fond sonore. Les geais bleus ont suivi, bruyants et intermittents. Au milieu de l'après-midi, parmi les juncos aux yeux noirs qui grattaient tranquillement, une bruant à couronne blanche s'est fait entendre — deux détections seulement, mais suffisantes pour qu'on note le passage. Elle avance tard dans la saison, loin de ses aires habituelles, et ne restera probablement pas.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse croissante, éclairée aux deux tiers, se couchera à 0 h 42 (heure locale) et ne se lèvera qu'en fin d'après-midi demain — mais avec 94 % de couverture nuageuse, le ciel sera de toute façon fermé pour la nuit. Saturne, seul astre à tenir une altitude convenable en début de soirée, restera caché derrière les nuages ; Mercure, Vénus et Jupiter sont sous l'horizon dès le crépuscule.",
+  "theme_tags": [
+    "secheresse",
+    "douceur-anormale",
+    "oiseaux-residents",
+    "migration-tardive",
+    "novembre"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 10.2,
+      "temp_min_c": 6.9,
+      "ecart_normale_c": 10.8,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 20,
+      "vent": "calme, du S",
+      "pression": "haute, stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "White-crowned Sparrow",
+      "taxon_scientific": "Zonotrichia leucophrys",
+      "count": 2,
+      "observed_at": "2026-11-18T10:25:06-05:00"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 67,
+      "moon_set_local": "00:42",
+      "cloud_cover_pct": 94,
+      "planetes_visibles": [
+        "Saturne (alt 22.8°)"
+      ],
+      "planetes_sous_horizon": [
+        "Mercure",
+        "Vénus",
+        "Jupiter",
+        "Mars"
+      ]
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-feuilles-mortes",
+  "fragment_translation_fr": null
+}
