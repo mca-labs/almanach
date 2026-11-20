@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-11-19",
+  "generated_at": "2026-11-20T12:43:39.897Z",
+  "title": null,
+  "summary": "Journée anormalement douce et sèche pour la mi-novembre — le Val sommeille dans une lumière basse et sans vent.",
+  "body_md": "Vingt et un jours sans pluie, et le sol continue de tenir. L'air était presque immobile ce matin — une brise du SE à peine, quelques degrés au-dessus du gel à l'aube, puis la douceur surprenante de l'avant-midi, dix degrés passés comme en octobre. Le baromètre ne bronche pas. La lumière de novembre, basse et latérale même à son pic, posait de longues ombres sur le sous-bois, mais elle était là — assez pour réchauffer qui s'y exposait.\n\nLes geais bleus ont dominé la journée, bruyants et souverains, avec leurs éclats de voix qui se répondaient d'un bout à l'autre du couvert. Les mésanges à tête noire s'affairaient dans leur sillage, moins nombreuses mais constantes. En milieu d'après-midi, quelques chardonneret jaunes ont traversé — plumage d'hiver, discret, loin de l'or de juillet. Un seul gros-bec errant a signalé sa présence, bref et décisif, comme s'il vérifiait quelque chose avant de repartir.",
+  "sky_narrative": "La nuit qui s'ouvre sera dégagée aux trois quarts — seulement 13 % de couverture nuageuse —, et la lune gibbeuse croissante, éclairée à 76 %, se couchera à 1 h 54 (heure locale), laissant quelques heures d'obscurité franche avant l'aube. Saturne sera la planète la mieux placée, à 23 degrés au-dessus de l'horizon vers le SE.",
+  "theme_tags": [
+    "secheresse",
+    "douceur-anormale",
+    "oiseaux-residents",
+    "novembre",
+    "calme"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 10.6,
+      "temp_min_c": 2.3,
+      "ecart_normale_c": 10.7,
+      "pression_mb": 973.1,
+      "vent": "calme, SE",
+      "pluie_mm": 0,
+      "jours_sans_pluie": 21
+    },
+    "bird_of_the_day": {
+      "taxon_common": "American Goldfinch",
+      "taxon_scientific": "Spinus tristis",
+      "count": 4,
+      "confidence": 0.85
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 76,
+      "moon_set_local": "01:54",
+      "cloud_cover_pct": 13,
+      "planete_notable": "Saturne (alt. 23°)"
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-1",
+  "fragment_translation_fr": "Je suis allé dans les bois parce que je voulais vivre délibérément, ne faire face qu'aux faits essentiels de l'existence, et voir si je ne pouvais pas apprendre ce qu'elle avait à m'enseigner — pour ne pas découvrir, au moment de mourir, que je n'avais pas vécu."
+}
