@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-11-20",
+  "generated_at": "2026-11-21T12:27:50.291Z",
+  "title": "Vingt-deux jours sans pluie",
+  "summary": "Journée douce et sèche bien au-dessus des normales — le geai bleu tient la forêt à bout de voix.",
+  "body_md": "La pression monte doucement depuis le matin, le vent soufflait à peine du sud, et l'air portait cette tiédeur un peu irréelle propre aux fins de novembre quand la saison hésite. Onze degrés en après-midi — plus de douze degrés au-dessus de la normale — sur un sol qui n'a pas reçu de pluie depuis vingt-deux jours. Le ciel était lumineux mais jamais éblouissant ; le pic chevelu a cogné quelques coups dans un arbre mort, discret, avant de disparaître dans le couvert.\n\nC'est le geai bleu qui a dominé la journée, présent du lever au début de la soirée, à la fois bruyant et inconstant comme à son habitude. Il cache des graines, inspecte, revient, crie pour le plaisir ou pour prévenir — difficile à dire. La mésange à tête noire et le junco ardoisé lui tenaient compagnie en sous-étage, fidèles à leur rang d'hivernants. Trois gros-becs errants ont survolé le val en matinée, leur cri de vol cassant net la lumière. Un bruant à couronne blanche s'est posé brièvement — présence inattendue à cette date — avant de reprendre sa route.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse croissante, illuminée à près de 85 %, se lèvera en soirée et dominera la nuit jusqu'au petit matin — sa clarté effacera les étoiles les plus faibles et baignera le sous-bois d'une lumière grise et froide. Avec plus de la moitié du ciel couvert, Saturne sera la seule planète notable à pointer au-dessus de l'horizon, vers le sud-est à environ 24 degrés d'altitude ; Mercure, Vénus, Mars et Jupiter resteront sous l'horizon ce soir.",
+  "theme_tags": [
+    "secheresse",
+    "douceur-anormale",
+    "oiseaux-hivernants",
+    "geai-bleu",
+    "pression-montante"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 11.1,
+      "temp_min_c": 2.9,
+      "ecart_normale_c": 12.5,
+      "jours_sans_pluie": 22,
+      "vent": "calme, du S",
+      "pression": "montante — 977,1 mb"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 91,
+      "note": "espèce dominante du jour par la présence et l'intensité sonore"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "illumination_pct": 85,
+      "moon_set_utc": "2026-11-21T08:09:56Z",
+      "cloud_cover_pct": 57,
+      "saturne_visible": true,
+      "saturne_alt_deg": 23.8
+    }
+  },
+  "fragment_quote_id": "john-burroughs-wake-robin-9",
+  "fragment_translation_fr": "Le pissenlit me dit quand guetter l'hirondelle, la dent-de-chien quand attendre la grive des bois ; et lorsque j'ai trouvé le trille en fleur, je sais que la saison est bien commencée."
+}
