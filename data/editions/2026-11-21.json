@@ -1,0 +1,44 @@
+{
+  "entry_date": "2026-11-21",
+  "generated_at": "2026-11-22T12:27:52.191Z",
+  "title": null,
+  "summary": "Journée anormalement douce pour la saison, calme et sèche — vingt-trois jours sans pluie, et les mésanges qui tiennent le fort.",
+  "body_md": "Un vent du sud à peine sensible a maintenu la vallée dans une douceur inhabituelle : 12 degrés en milieu de journée, soit près de 14 degrés au-dessus des normales de novembre. Le baromètre glisse lentement vers le bas depuis quelques heures, mais rien n'a bougé dans le ciel. Vingt-trois jours sans pluie — le sol doit être dur, les feuilles mortes crissent probablement sous chaque pas — et pourtant l'air gardait ce matin une texture presque douce, presque improbable pour la saison.\n\nLa journée a appartenu aux mésanges. Deux cent vingt-neuf détections de Poecile atricapillus entre l'aube et le début d'après-midi, avec un pic soutenu en milieu de matinée — elles cherchaient, fouillaient, réclamaient. Les geais bleus suivaient de près, bruyants et méthodiques. Plus discrets : deux pics mineurs tambourinant dans un arbre mort, deux durbecs des sapins entendus vers midi, et un bruant à couronne blanche signalé en fin d'après-midi, retardataire ou simplement patient. Sept espèces en tout, et cette petite liste dit quelque chose de juste sur un samedi de novembre au Val.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La lune gibbeuse — illuminée à 92 % — se lèvera vers 14 h 20, heure locale, et ne se couchera qu'au milieu de la matinée suivante : elle dominera la nuit entière. Dans deux jours, elle atteindra sa pleine phase au périgée, à 359 335 km de la Terre — une superlune qui commence déjà à gonfler dans le ciel du soir. Saturne sera la seule planète notable au-dessus de l'horizon cette nuit, perchée au sud-est vers 24 degrés d'altitude ; Mercure, Vénus, Mars et Jupiter seront tous sous l'horizon.",
+  "theme_tags": [
+    "douceur-anomale",
+    "secheresse",
+    "mésange",
+    "novembre",
+    "pression-baisse",
+    "superlune"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 12.3,
+      "temp_min_c": 3.8,
+      "ecart_normale_c": 13.8,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 23,
+      "vent": "calme, du S",
+      "pression_tendance": "baisse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 229,
+      "confidence": 0.9519645571708679,
+      "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261121-153105.flac"
+    },
+    "sky": {
+      "moon_phase": "Gibbeuse croissante",
+      "moon_illumination_pct": 92,
+      "moon_set_local": "04:29",
+      "supermoon_in_days": 2,
+      "saturn_alt_deg": 24.2,
+      "cloud_cover_night_pct": null
+    }
+  },
+  "fragment_quote_id": "henry-david-thoreau-walden-3",
+  "fragment_translation_fr": "Simplicité, simplicité, simplicité ! Je dis : que vos affaires se réduisent à deux ou trois, et non à cent ou à mille."
+}
