@@ -1,0 +1,163 @@
+{
+  "for_date": "2026-11-23",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-11-23T11:58:43.705Z",
+        "sunset": "2026-11-23T20:58:41.648Z",
+        "sun_set_azimuth": 239.9,
+        "sky_map_ref": "2026-11-23T21:33:04.606Z",
+        "twilight": {
+          "civil_start": "2026-11-23T11:24:20.090Z",
+          "nautical_start": "2026-11-23T10:46:25.741Z",
+          "astronomical_start": "2026-11-23T10:09:50.006Z",
+          "astronomical_end": "2026-11-23T22:47:32.471Z",
+          "nautical_end": "2026-11-23T22:10:57.996Z",
+          "civil_end": "2026-11-23T21:33:04.606Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse croissante",
+      "detail": {
+        "phase_deg": 160.44146820524816,
+        "illumination_fraction": 0.9695931593416982,
+        "magnitude": -12.32875583636646,
+        "rise": "2026-11-23T19:50:52.578Z",
+        "set": "2026-11-23T10:54:13.721Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -0.6430037916477858,
+        "phase_angle": 69.29816476123841,
+        "helio_dist": 0.3511108706924407,
+        "geo_dist": 1.0554572048142032,
+        "az": 264.3,
+        "alt": -12.6
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.857635409905863,
+        "phase_angle": 125.46578566491998,
+        "helio_dist": 0.720372051138661,
+        "geo_dist": 0.3764008002352748,
+        "az": 280.5,
+        "alt": -21.5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 0.601619272763425,
+        "phase_angle": 37.622605589823756,
+        "helio_dist": 1.6167036169363267,
+        "geo_dist": 1.2453777626490576,
+        "az": 341.9,
+        "alt": -26.6
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -2.154677822437927,
+        "phase_angle": 10.656161685972831,
+        "helio_dist": 5.323978113262451,
+        "geo_dist": 5.154327532443328,
+        "az": 345.2,
+        "alt": -27.5
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.534390045302704,
+        "phase_angle": 4.78765708503991,
+        "helio_dist": 9.41845734623551,
+        "geo_dist": 8.787833334611161,
+        "az": 118.4,
+        "alt": 24.7
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "supermoon",
+      "title": "Superlune dans 1 j",
+      "detail": {
+        "full_moon_utc": "2026-11-24T14:54:04.191Z",
+        "local_date": "2026-11-24",
+        "days_ahead": 1,
+        "perigee_distance_km": 359335,
+        "hours_from_perigee": 30
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Kp prévu 1.67",
+      "detail": {
+        "kp_max": 1.67,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-11-24T00:00:00",
+            "kp": 1.67
+          },
+          {
+            "time": "2026-11-24T03:00:00",
+            "kp": 1.33
+          },
+          {
+            "time": "2026-11-24T06:00:00",
+            "kp": 1.33
+          },
+          {
+            "time": "2026-11-24T09:00:00",
+            "kp": 1.33
+          },
+          {
+            "time": "2026-11-24T12:00:00",
+            "kp": 1.33
+          }
+        ]
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": null
+}

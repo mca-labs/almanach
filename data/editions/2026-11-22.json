@@ -1,0 +1,42 @@
+{
+  "entry_date": "2026-11-22",
+  "generated_at": "2026-11-23T14:23:23.272Z",
+  "title": null,
+  "summary": "Une journée de novembre exceptionnellement douce, sèche depuis vingt-quatre jours, avec une seule voix pour tenir le Val.",
+  "body_md": "La pression baissait depuis le matin, mais rien n'est venu confirmer ce que le baromètre laissait entendre. Pas un millimètre de pluie — le vingt-quatrième jour consécutif ainsi. L'air atteignait presque 14 °C en début d'après-midi, soit plus de treize degrés au-dessus des normales de saison : c'est un fait difficile à habiller autrement que par sa nudité chiffrée. La lumière, elle, ne se laissait pas duper par la douceur — elle est restée celle de novembre, basse et latérale, disparue bien avant 17 h.\n\nUne seule espèce entendue aujourd'hui : la mésange à tête noire, Poecile atricapillus, 226 détections de l'aube jusqu'en début d'après-midi, puis silence. Elle avait tout le Val pour elle. En novembre, ce n'est pas un signe de solitude mais de solidité : la mésange est l'une des rares espèces à hiverner ici sans ambiguïté, sa mémoire spatiale lui permettant de retrouver chacune des centaines de cachettes où elle a dissimulé des graines au fil de l'automne. Ce matin, elle cherchait, méthodique, indifférente à la douceur anachronique.",
+  "sky_narrative": "La nuit qui s'ouvre sera dominée par une lune gibbeuse à près de 97 % de sa pleine face — la pleine lune surviendra demain, à moins de trente heures d'ici, et la Lune sera au plus près de la Terre, en superlune, à environ 359 335 km. Elle se couchera aux premières heures du matin, laissant le ciel un peu de répit avant l'aube. Saturne sera la seule planète notable à s'élever franchement au-dessus de l'horizon cette nuit ; Mercure, Vénus et Jupiter resteront sous la ligne des arbres.",
+  "theme_tags": [
+    "douceur-anomale",
+    "secheresse",
+    "mésange",
+    "novembre",
+    "lumiere-basse",
+    "solitude"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 13.7,
+      "temp_min_c": 7.5,
+      "ecart_normale_c": 13.3,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 24,
+      "vent": "légère brise du NE",
+      "pression_tendance": "en baisse"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "detections": 226,
+      "seule_espece_du_jour": true
+    },
+    "sky": {
+      "lune": "Gibbeuse croissante, 97 % éclairée",
+      "superlune": "dans 1 jour (24 novembre)",
+      "distance_km": 359335,
+      "saturne": "visible (az 118°, alt +24.7°)",
+      "couverture_nuageuse_nuit_pct": null
+    }
+  },
+  "fragment_quote_id": "aldo-leopold-a-13",
+  "fragment_translation_fr": "Il y a ceux qui peuvent vivre sans les choses sauvages, et ceux qui ne le peuvent pas."
+}

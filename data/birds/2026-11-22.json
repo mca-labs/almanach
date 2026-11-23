@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-22",
+  "total_detections": 226,
+  "unique_species": 1,
+  "top_species": [
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 226,
+      "max_confidence": 0.9831937551498413,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261122-175631.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Black-capped Chickadee",
+    "taxon_scientific": "Poecile atricapillus",
+    "confidence": 0.9831937551498413,
+    "observed_at": "2026-11-22T12:56:35-05:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261122-175631.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    94,
+    62,
+    51,
+    0,
+    3,
+    10,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
