@@ -1,0 +1,41 @@
+{
+  "entry_date": "2026-11-23",
+  "generated_at": "2026-11-24T14:44:41.748Z",
+  "title": null,
+  "summary": "Une journée anormalement douce et sans vent pour novembre, avec le baromètre qui remonte après vingt-cinq jours sans pluie significative.",
+  "body_md": "La douceur était presque déplacée pour un 23 novembre. Douze degrés et des poussières en milieu de journée, un vent du sud à peine perceptible, le baromètre qui regagnait quelques millibars depuis le matin : rien, dans l'air, ne ressemblait à l'automne finissant. Les données le confirment froidement — l'écart à la normale frôle quinze degrés. Vingt-cinq jours se sont écoulés depuis la dernière pluie digne de ce nom.\n\nSix espèces seulement se sont manifestées, ce qui est peu, mais le grand corbeau a tenu le haut du jour. Corvus corax est une présence constante ici en toute saison : il prospecte large, mémorise les ressources, se souvient mieux que bien des mammifères de ce qu'il a vu la semaine d'avant. Ce matin, sa voix grave et portante traversait la vallée — une série de notes creuses, presque caverneuses, sans l'urgence du printemps. Les mésanges à tête noire dominaient le reste des détections, fidèles à leur réputation d'hivernants indéracinables, pendant que le geai bleu lançait ses cris brefs par éclats.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera celle de la superlune : la pleine lune atteindra son maximum demain en après-midi, à quelques heures à peine de son périgée à 359 335 km, ce qui en fait l'une des lunes les plus proches et les plus lumineuses de l'année. Elle se lèvera peu après 20 h 30 et ne se couchera qu'aux premières heures de la matinée — sa clarté envahira le ciel toute la nuit. Saturne sera visible en soirée au sud-est, à une hauteur confortable. Mercure, Vénus et Jupiter seront sous l'horizon et ne se montreront pas.",
+  "theme_tags": [
+    "douceur",
+    "anomalie-thermique",
+    "secheresse",
+    "grand-corbeau",
+    "corvides",
+    "superlune"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_max_c": 12.8,
+      "temp_min_c": 5.1,
+      "ecart_normale_c": 14.5,
+      "pression_tendance": "up",
+      "jours_depuis_derniere_pluie": 25,
+      "vent": "calme, du S"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 8,
+      "observed_at": "2026-11-23T09:35:16-05:00"
+    },
+    "sky": {
+      "event": "Superlune",
+      "full_moon_local": "2026-11-24",
+      "perigee_distance_km": 359335,
+      "moon_rise_local": "20:31",
+      "saturne_visible": true
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-corneilles",
+  "fragment_translation_fr": null
+}

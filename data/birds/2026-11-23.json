@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-23",
+  "total_detections": 118,
+  "unique_species": 6,
+  "top_species": [
+    {
+      "taxon_common": "Black-capped Chickadee",
+      "taxon_scientific": "Poecile atricapillus",
+      "count": 85,
+      "max_confidence": 0.9774622917175293,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261123-143009.flac"
+    },
+    {
+      "taxon_common": "Blue Jay",
+      "taxon_scientific": "Cyanocitta cristata",
+      "count": 17,
+      "max_confidence": 0.9604823589324951,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261123-135819.flac"
+    },
+    {
+      "taxon_common": "Common Raven",
+      "taxon_scientific": "Corvus corax",
+      "count": 8,
+      "max_confidence": 0.909596860408783,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261123-143512.flac"
+    },
+    {
+      "taxon_common": "Red-tailed Hawk",
+      "taxon_scientific": "Buteo jamaicensis",
+      "count": 6,
+      "max_confidence": 0.8006176352500916,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261123-143550.flac"
+    },
+    {
+      "taxon_common": "Canada Goose",
+      "taxon_scientific": "Branta canadensis",
+      "count": 1,
+      "max_confidence": 0.515324592590332,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261123-185017.flac"
+    },
+    {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "count": 1,
+      "max_confidence": 0.6368575692176819,
+      "example_media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261123-145317.flac"
+    }
+  ],
+  "other_species": [],
+  "bird_of_the_day": {
+    "taxon_common": "Common Raven",
+    "taxon_scientific": "Corvus corax",
+    "confidence": 0.909596860408783,
+    "observed_at": "2026-11-23T09:35:16-05:00",
+    "media_url": "https://media.birdweather.com/soundscapes/6670/6670-20261123-143512.flac"
+  },
+  "hourly_detections": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    34,
+    19,
+    31,
+    16,
+    8,
+    1,
+    5,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

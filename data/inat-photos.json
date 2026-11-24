@@ -614,14 +614,14 @@
   "Branta canadensis": {
     "taxon_inat_id": 7089,
     "name_fr": "Bernache du Canada",
-    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/239718896/medium.jpeg",
-    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/239718896/square.jpeg",
-    "attribution": "(c) Daniel LaFrance, some rights reserved (CC BY-NC), uploaded by Daniel LaFrance",
-    "attribution_name": "Daniel LaFrance",
+    "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/271239259/medium.jpeg",
+    "photo_square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/271239259/square.jpeg",
+    "attribution": "(c) mhalsted, some rights reserved (CC BY-NC)",
+    "attribution_name": "mhalsted",
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-31T10:18:13.997Z"
+    "resolved_at": "2026-11-24T14:44:09.382Z"
   },
   "Falco columbarius": {
     "taxon_inat_id": 4672,
