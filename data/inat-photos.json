@@ -153,7 +153,7 @@
     "license_code": "cc-by",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-11-04T11:59:30.101Z"
+    "resolved_at": "2026-11-25T14:07:48.303Z"
   },
   "Poecile atricapillus": {
     "taxon_inat_id": 144815,
@@ -369,7 +369,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-10-29T10:49:30.857Z"
+    "resolved_at": "2026-11-25T14:07:50.261Z"
   },
   "Certhia americana": {
     "taxon_inat_id": 7458,
@@ -813,7 +813,7 @@
     "license_code": "cc-by-nc",
     "source": "inaturalist",
     "status": "ok",
-    "resolved_at": "2026-11-01T11:12:04.947Z"
+    "resolved_at": "2026-11-25T14:07:51.352Z"
   },
   "Quiscalus quiscula": {
     "taxon_inat_id": 9602,
