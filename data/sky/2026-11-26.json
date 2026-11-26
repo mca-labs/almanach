@@ -1,0 +1,149 @@
+{
+  "for_date": "2026-11-26",
+  "events": [
+    {
+      "category": "twilight",
+      "title": "Lever et coucher du soleil",
+      "detail": {
+        "sunrise": "2026-11-26T12:02:47.255Z",
+        "sunset": "2026-11-26T20:56:28.029Z",
+        "sun_set_azimuth": 239,
+        "sky_map_ref": "2026-11-26T21:31:08.246Z",
+        "twilight": {
+          "civil_start": "2026-11-26T11:28:06.478Z",
+          "nautical_start": "2026-11-26T10:49:58.662Z",
+          "astronomical_start": "2026-11-26T10:13:14.321Z",
+          "astronomical_end": "2026-11-26T22:45:58.504Z",
+          "nautical_end": "2026-11-26T22:09:15.243Z",
+          "civil_end": "2026-11-26T21:31:08.246Z"
+        }
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "moon",
+      "title": "Lune gibbeuse décroissante",
+      "detail": {
+        "phase_deg": 202.37449842932818,
+        "illumination_fraction": 0.9612700859273139,
+        "magnitude": -12.298406529154407,
+        "rise": "2026-11-26T22:39:47.279Z",
+        "set": "2026-11-26T14:46:47.232Z"
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mercure",
+      "detail": {
+        "magnitude": -0.6524124156474542,
+        "phase_angle": 59.13431954955324,
+        "helio_dist": 0.36829383047917635,
+        "geo_dist": 1.1239357001200823,
+        "az": 262.4,
+        "alt": -12.7
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Vénus",
+      "detail": {
+        "magnitude": -4.865536141900161,
+        "phase_angle": 121.77011651358463,
+        "helio_dist": 0.7200563092157656,
+        "geo_dist": 0.3950894619646864,
+        "az": 281.4,
+        "alt": -22.2
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Mars",
+      "detail": {
+        "magnitude": 0.5566802334184817,
+        "phase_angle": 37.450823816745554,
+        "helio_dist": 1.61945653266315,
+        "geo_dist": 1.219338017326209,
+        "az": 343.2,
+        "alt": -27.2
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Jupiter",
+      "detail": {
+        "magnitude": -2.174466339705396,
+        "phase_angle": 10.592254276426008,
+        "helio_dist": 5.324911333054008,
+        "geo_dist": 5.107426167173969,
+        "az": 347.7,
+        "alt": -28
+      },
+      "notable": true,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "planet",
+      "title": "Saturne",
+      "detail": {
+        "magnitude": 0.553597292589421,
+        "phase_angle": 4.976405677567082,
+        "helio_dist": 9.417547213211375,
+        "geo_dist": 8.828176088183737,
+        "az": 120.7,
+        "alt": 26.2
+      },
+      "notable": false,
+      "propice_a": null,
+      "source": "astronomy-engine"
+    },
+    {
+      "category": "aurora",
+      "title": "Aurores possibles (Kp 5)",
+      "detail": {
+        "kp_max": 5,
+        "threshold": 5,
+        "hours_utc": [
+          {
+            "time": "2026-11-27T00:00:00",
+            "kp": 4.33
+          },
+          {
+            "time": "2026-11-27T03:00:00",
+            "kp": 5
+          },
+          {
+            "time": "2026-11-27T06:00:00",
+            "kp": 3.67
+          },
+          {
+            "time": "2026-11-27T09:00:00",
+            "kp": 3
+          },
+          {
+            "time": "2026-11-27T12:00:00",
+            "kp": 2.67
+          }
+        ]
+      },
+      "notable": true,
+      "propice_a": "guetter les aurores au nord après le crépuscule astronomique",
+      "source": "noaa-swpc"
+    }
+  ],
+  "cloud_cover_night_pct": 44.44444444444444
+}

@@ -1,0 +1,47 @@
+{
+  "entry_date": "2026-11-25",
+  "generated_at": "2026-11-26T13:45:02.690Z",
+  "title": null,
+  "summary": "Froid sec et calme plat sur la vallée — vingt-sept jours sans pluie, et l'hiver qui s'installe sans bruit.",
+  "body_md": "La journée a tenu dans un silence presque parfait : vent nul, baromètre stable à 992 mb, ciel dégagé qui a laissé le froid mordre jusqu'à moins dix au petit matin. Le mercure n'a remonté qu'à deux degrés sous zéro en fin d'avant-midi, soit près de trois degrés sous la normale de saison. Vingt-sept jours depuis la dernière pluie — l'air est sec comme une planche de sapin, et la forêt craque doucement sous ce gel qui ne relâche pas.\n\nCinq espèces seulement, mais elles ont rempli la journée. Les geais bleus et les mésanges à tête noire ont dominé le compteur, agités et bruyants dès l'aube — c'est leur façon de tenir le territoire quand les autres sont partis. Le pic mineur, désigné oiseau du jour, s'est fait entendre vers neuf heures trente : petits coups secs sur l'écorce, méthodiques, le propre d'une espèce qui cherche ses larves dans le bois mort même par grand froid. Une buse à queue rousse a crié une seule fois, quelque part avant le midi. Puis le silence est revenu.\n\n— l'observateur du Val des Loups",
+  "sky_narrative": "La nuit qui s'ouvre sera partiellement voilée — environ 44 % de couverture nuageuse — mais une fenêtre de ciel clair restera possible. L'événement à surveiller : une activité aurorale est attendue, avec un indice Kp qui devrait atteindre 5 vers 22 h (heure locale), ce qui place les aurores boréales à portée des latitudes du Val. La lune gibbeuse décroissante, éclairée à 96 %, ne se lèvera qu'après 17 h 39 (heure locale), laissant quelques heures de noirceur relative en début de nuit pour guetter le nord.",
+  "theme_tags": [
+    "froid",
+    "secheresse",
+    "oiseaux-residents",
+    "hiver",
+    "aurore"
+  ],
+  "highlights": {
+    "weather": {
+      "temp_min_c": -10.6,
+      "temp_max_c": -2.3,
+      "ecart_normale_c": -2.9,
+      "pluie_jour_mm": 0,
+      "jours_depuis_derniere_pluie": 27,
+      "vent": "calme plat",
+      "pression_mb": 992.6,
+      "pression_tendance": "stable"
+    },
+    "bird_of_the_day": {
+      "taxon_common": "Downy Woodpecker",
+      "taxon_scientific": "Dryobates pubescens",
+      "observed_at": "2026-11-25T09:39:13-05:00",
+      "count": 12,
+      "confidence": 0.9855786561965942
+    },
+    "sky": {
+      "for_date": "2026-11-26",
+      "moon_phase": "Lune gibbeuse décroissante",
+      "moon_illumination_pct": 96,
+      "moon_rise_local": "17:39",
+      "cloud_cover_pct": 44,
+      "aurora": {
+        "kp_max": 5,
+        "peak_utc": "2026-11-27T03:00:00"
+      }
+    }
+  },
+  "fragment_quote_id": "marie-victorin-croquis-laurentiens-capes-raides",
+  "fragment_translation_fr": null
+}
